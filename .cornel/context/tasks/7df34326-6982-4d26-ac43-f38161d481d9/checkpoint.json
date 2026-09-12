@@ -2,8 +2,8 @@
   "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
   "branch": "cornel/7df34326-6982-4d26-ac43-f38161d481d9",
   "headSha": "9e38b5257c5ee30390e7109c406a30b0de92698b",
-  "status": "WAITING_CHATGPT",
-  "summary": "Новая тёмная оранжево-красная версия успешно установлена на физический iPhone 15 Pro Max: SUCCEEDED, exitCode 0.\n\nСледующий шаг уже выполнен: отправлен запуск именно этой новой сборки. После RESULT запуска при успехе отправлю finish; установку повторять не буду.\n\n",
+  "status": "DONE",
+  "summary": "Готово. Новая тёмная версия с оранжево-красной палитрой успешно:\n\nсобрана;\n\nустановлена на физический iPhone 15 Pro Max;\n\nзапущена на нём.\n\nПоследний запуск подтверждён worker’ом: SUCCEEDED, exitCode 0.\n\nfinish отправлен для текущей версии.\n\n",
   "commands": [
     {
       "commandId": "inspect-20260912-0445",
@@ -136,7 +136,13 @@
       "status": "SUCCEEDED",
       "headSha": "9e38b5257c5ee30390e7109c406a30b0de92698b",
       "exitCode": 0
+    },
+    {
+      "commandId": "finish-darkred-20260912-0621",
+      "status": "SUCCEEDED",
+      "headSha": "9e38b5257c5ee30390e7109c406a30b0de92698b",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T03:08:31.864Z"
+  "createdAt": "2026-09-12T03:09:13.866Z"
 }

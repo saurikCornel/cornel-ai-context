@@ -1,0 +1,17 @@
+{
+  "id": "7306bd7b-8931-47fd-b9c4-42c3abba3363",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-darkred-20260912-0621",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9e38b5257c5ee30390e7109c406a30b0de92698b",
+    "output": "Экран авторизации обновлён: тёмная тема и оранжево-красная палитра. Новая версия успешно собрана, установлена и запущена на физическом iPhone 15 Pro Max. Build/install/launch завершились SUCCEEDED с exitCode 0.",
+    "outputDigest": "39886aa7c6741bc58218628501adbe98e41612bea4d4d31311eebe71e7765c45",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T03:09:09.056Z"
+}

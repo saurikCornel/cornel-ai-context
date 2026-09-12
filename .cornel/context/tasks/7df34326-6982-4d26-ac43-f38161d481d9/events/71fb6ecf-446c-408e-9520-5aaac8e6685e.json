@@ -1,0 +1,11 @@
+{
+  "id": "71fb6ecf-446c-408e-9520-5aaac8e6685e",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "finish-darkred-20260912-0621",
+    "headSha": "9e38b5257c5ee30390e7109c406a30b0de92698b"
+  },
+  "createdAt": "2026-09-12T03:09:06.919Z"
+}

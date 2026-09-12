@@ -1,0 +1,11 @@
+{
+  "id": "1d876604-f601-4aee-85b9-15deca4933c9",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "finish-darkred-20260912-0621",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-12T03:09:05.849Z"
+}
