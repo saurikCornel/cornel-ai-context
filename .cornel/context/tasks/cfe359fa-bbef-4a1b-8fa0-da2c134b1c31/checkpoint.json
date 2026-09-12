@@ -2,8 +2,8 @@
   "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "headSha": "922f640c2ead144a3b91eda419c368bff602f76a",
-  "status": "WAITING_CHATGPT",
-  "summary": "install-icon-27 завершился ошибкой: FAILED, exitCode=1. Причина — devicectl не принимает строку iPhone 15 Pro Max как идентификатор устройства.\n\nЯ исправил это новым commandId — install-icon-28: команда сама находит CoreDevice UUID подключённого iPhone 15 Pro Max через devicectl list devices, устанавливает новую сборку с иконкой, запускает WeatherFlow и проверяет процесс.\n\nНа свежей проверке RESULT install-icon-28 ещё не опубликован. Поэтому не повторяю установку и не отправляю finish раньше подтверждения.\n\n",
+  "status": "DONE",
+  "summary": "install-icon-28 завершён успешно: SUCCEEDED, exitCode=0. Новая сборка с AppIcon установлена на iPhone, WeatherFlow запущен, процесс подтверждён.\n\nPR #1 уже содержит последний HEAD с Assets.xcassets и иконкой.\n\nФинальный finish-icon-32 отправлен и worker уже начал его выполнение на том же проверенном HEAD. RESULT finish пока ещё не опубликован, поэтому новых команд по протоколу отправлять нельзя.\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -148,7 +148,13 @@
       "status": "SUCCEEDED",
       "headSha": "922f640c2ead144a3b91eda419c368bff602f76a",
       "exitCode": 0
+    },
+    {
+      "commandId": "finish-icon-32",
+      "status": "SUCCEEDED",
+      "headSha": "922f640c2ead144a3b91eda419c368bff602f76a",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T04:00:10.732Z"
+  "createdAt": "2026-09-12T04:02:21.224Z"
 }
