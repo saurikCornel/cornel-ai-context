@@ -1,9 +1,9 @@
 {
   "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
-  "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f",
-  "status": "RUNNING",
-  "summary": "device-build-16 завершился ошибкой до запуска xcodebuild: снова внутренний сбой worker на FETCH_HEAD, exitCode=null. То есть исправленный Team Identifier ещё не был фактически проверен.\n\nЯ исправил sync-состояние ветки пустым fast-forward коммитом без изменения содержимого файлов и отправил новую команду device-build-17 с правильным Team Identifier 29G2Y6GWXQ.\n\nНа свежей проверке для device-build-17 пока опубликована только команда — RESULT ещё отсутствует. Поэтому новую команду по протоколу не отправляю. Следующий шаг после RESULT: при успешной подписи — установка и запуск WeatherFlow на физическом iPhone 15 Pro Max; при реальной signing-ошибке — исправление именно её.\n\n",
+  "headSha": "8a753def00339038efc2e9f7f41efbd5cf339ce1",
+  "status": "WAITING_CHATGPT",
+  "summary": "device-build-17 завершён успешно: SUCCEEDED, exitCode=0. Подписанная сборка для физического iPhone 15 Pro Max действительно получена.\n\nСледующий шаг уже выполнен: отправлена install-launch-18, которая устанавливает готовый WeatherFlow.app на подключённый iPhone, запускает com.cornel.deleteweather и затем проверяет наличие процесса приложения на устройстве.\n\nНа свежей проверке RESULT install-launch-18 ещё не появился, поэтому повторять установку или запуск нельзя. После его результата при успехе останется финальная проверка и finish; при ошибке исправлю конкретную причину новым commandId.\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -91,10 +91,16 @@
     },
     {
       "commandId": "device-build-17",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
+      "headSha": "8a753def00339038efc2e9f7f41efbd5cf339ce1",
+      "exitCode": 0
+    },
+    {
+      "commandId": "install-launch-18",
+      "status": "FAILED",
       "headSha": "8a753def00339038efc2e9f7f41efbd5cf339ce1",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-12T03:46:16.720Z"
+  "createdAt": "2026-09-12T03:47:41.719Z"
 }
