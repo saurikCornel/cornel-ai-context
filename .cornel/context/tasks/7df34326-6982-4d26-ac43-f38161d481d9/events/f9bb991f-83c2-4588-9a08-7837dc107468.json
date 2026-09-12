@@ -1,0 +1,17 @@
+{
+  "id": "f9bb991f-83c2-4588-9a08-7837dc107468",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-device-20260912-0537",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
+    "output": "SwiftUI экран авторизации завершён. Проект успешно собран для физического iPhone, приложение установлено и запущено на подключённом iPhone 15 Pro Max. Проверки: device build SUCCEEDED exitCode 0; install SUCCEEDED exitCode 0; launch SUCCEEDED exitCode 0.",
+    "outputDigest": "1596332884a9c4ceba32d00a1c4905c17e3838074ba61711a4867661566f9d9a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T02:37:26.329Z"
+}
