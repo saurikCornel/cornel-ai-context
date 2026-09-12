@@ -1,0 +1,15 @@
+{
+  "id": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "projectId": "f4c28f22-4628-4a71-8d9c-8cc083d03ff0",
+  "model": "current",
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Напиши экран авторизации на swiftui",
+  "prompt": "Напиши экран авторизации на swiftui",
+  "branch": "cornel/7df34326-6982-4d26-ac43-f38161d481d9",
+  "baseSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
+  "status": "CREATING",
+  "createdAt": "2026-09-12T01:37:48.747Z",
+  "updatedAt": "2026-09-12T01:37:48.747Z",
+  "issue": null,
+  "chatUrl": null
+}
