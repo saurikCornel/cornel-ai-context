@@ -1,9 +1,9 @@
 {
   "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
-  "headSha": "2b0f98ad40cb441df171b0517f5e9f2ad8a28c61",
+  "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f",
   "status": "WAITING_CHATGPT",
-  "summary": "device-build-12 завершился ошибкой до запуска самой сборки: status=FAILED, exitCode=null. Причина — worker не смог подготовить Git-worktree из-за локального FETCH_HEAD; xcodebuild не выполнялся.\n\nHEAD рабочей ветки я отдельно перепроверил — он корректен и не изменился. Поэтому неисполненный шаг повторён новым commandId — device-build-13; успешную компиляцию build-check-11 я не повторял.\n\nНа свежей проверке для device-build-13 пока есть только сама команда — RESULT ещё не опубликован. Следующая развилка после RESULT: при успехе сразу установка .app и запуск на физическом iPhone 15 Pro Max; при ошибке — исправление конкретной причины signing/worker.\n\n",
+  "summary": "device-build-13 действительно завершился ошибкой до запуска xcodebuild: worker снова упал на внутренней подготовке Git-worktree из-за отсутствующего FETCH_HEAD; exitCode=null.\n\nЯ исправил именно эту причину: в назначенной ветке создан пустой fast-forward коммит без изменения содержимого файлов, чтобы принудительно обновить Git-состояние worker. Затем отправлена новая команда device-build-14 на новом HEAD.\n\nНа последней проверке RESULT для device-build-14 ещё не опубликован. Успешную компиляцию приложения не повторял; следующий шаг после RESULT — либо установка и запуск WeatherFlow на физическом iPhone 15 Pro Max, либо исправление конкретной ошибки signing, если она появится.\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -70,7 +70,13 @@
       "status": "FAILED",
       "headSha": "2b0f98ad40cb441df171b0517f5e9f2ad8a28c61",
       "exitCode": null
+    },
+    {
+      "commandId": "device-build-14",
+      "status": "FAILED",
+      "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f",
+      "exitCode": 65
     }
   ],
-  "createdAt": "2026-09-12T03:41:54.720Z"
+  "createdAt": "2026-09-12T03:43:05.863Z"
 }
