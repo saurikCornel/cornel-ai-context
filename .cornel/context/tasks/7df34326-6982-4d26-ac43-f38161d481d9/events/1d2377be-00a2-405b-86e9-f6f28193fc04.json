@@ -1,0 +1,12 @@
+{
+  "id": "1d2377be-00a2-405b-86e9-f6f28193fc04",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда ожидает разрешения в приложении",
+  "detail": {
+    "commandId": "device-inspect-20260912-0457",
+    "operation": "run",
+    "command": "set -e\nprintf '%s\\n' '--- XCODE ---'\nxcodebuild -version\nprintf '%s\\n' '--- DEVICES ---'\nxcrun devicectl list devices || true\nprintf '%s\\n' '--- PROJECT FILES ---'\nfind . -maxdepth 4 \\( -name '*.xcodeproj' -o -name '*.xcworkspace' -o -name 'project.yml' -o -name 'Package.swift' \\) -print | sort\nprintf '%s\\n' '--- GENERATORS ---'\ncommand -v xcodegen || true\ncommand -v tuist || true\nprintf '%s\\n' '--- STATUS ---'\ngit status --short"
+  },
+  "createdAt": "2026-09-12T01:58:42.364Z"
+}
