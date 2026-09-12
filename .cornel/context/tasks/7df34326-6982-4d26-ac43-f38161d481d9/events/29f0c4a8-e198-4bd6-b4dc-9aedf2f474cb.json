@@ -1,0 +1,17 @@
+{
+  "id": "29f0c4a8-e198-4bd6-b4dc-9aedf2f474cb",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "device-build-20260912-0523",
+    "status": "FAILED",
+    "exitCode": 65,
+    "reason": null,
+    "headSha": "f4d7a81a80f7cf55fdacadc5651e8b2ddba1e219",
+    "output": "⚙️  Generating plists...\n⚙️  Generating project...\n⚙️  Writing project...\nCreated project at /Users/alex/Cornel/cornel-ai/.data/worktrees/7df34326-6982-4d26-ac43-f38161d481d9/Delete2.xcodeproj\nCommand line invocation:\n    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Delete2.xcodeproj -scheme Delete2 -configuration Debug -destination platform=iOS,name=iPhone -derivedDataPath .build-device -allowProvisioningUpdates build\n\nComputePackagePrebuildTargetDependencyGraph\n\nPrepare packages\n\nCreateBuildRequest\n\nSendProjectDescription\n\nCreateBuildOperation\n\nComputeTargetDependencyGraph\nnote: Building targets in dependency order\nnote: Target dependency graph (1 target)\n    Target 'Delete2' in project 'Delete2' (no dependencies)\n\nGatherProvisioningInputs\n\nCreateBuildDescription\n\nExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version\n\nExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.1.sdk -x c -c /dev/null\n\nExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details\n\nBuild description signature: d3568fe531971a50722f5047e1a08967\nBuild description path: /Users/alex/Cornel/cornel-ai/.data/worktrees/7df34326-6982-4d26-ac43-f38161d481d9/.build-device/Build/Intermediates.noindex/XCBuildData/d3568fe531971a50722f5047e1a08967.xcbuilddata\n/Users/alex/Cornel/cornel-ai/.data/worktrees/7df34326-6982-4d26-ac43-f38161d481d9/Delete2.xcodeproj: error: No Account for Team \"SP62Y26NYJ\". Add a new account in Accounts settings or verify that your accounts have valid credentials. (in target 'Delete2' from project 'Delete2')\n/Users/alex/Cornel/cornel-ai/.data/worktrees/7df34326-6982-4d26-ac43-f38161d481d9/Delete2.xcodeproj: error: No profiles for 'pro.cornel.Delete2' were found: Xcode couldn't find any iOS App Development provisioning profiles matching 'pro.cornel.Delete2'. (in target 'Delete2' from project 'Delete2')\n** BUILD FAILED **\n\n\nThe following build commands failed:\n\tBuilding project Delete2 with scheme Delete2 and configuration Debug\n(1 failure)\n",
+    "outputDigest": "1bdd4a6cb807a093aa2e22b52bf299219f5fd063e93123a9b3a2cd1e9dedb8ad",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T02:21:42.439Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "74d7718b-93cf-4988-84c2-6515ba5922df",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "device-build-20260912-0523",
+    "output": "⚙️  Generating plists...\n⚙️  Generating project...\n⚙️  Writing project...\nCreated project at /Users/alex/Cornel/cornel-ai/.data/worktrees/7df34326-6982-4d26-ac43-f38161d481d9/Delete2.xcodeproj\nCommand line invocation:\n    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Delete2.xcodeproj -scheme Delete2 -configuration Debug -destination platform=iOS,name=iPhone -derivedDataPath .build-device -allowProvisioningUpdates build\n\nComputePackagePrebuildTargetDependencyGraph\n\nPrepare packages\n\nCreateBuildRequest\n\nSendProjectDescription\n\nCreateBuildOperation\n\nComputeTargetDependencyGraph\nnote: Building targets in dependency order\nnote: Target dependency graph (1 target)\n    Target 'Delete2' in project 'Delete2' (no dependencies)\n\nGatherProvisioningInputs\n"
+  },
+  "createdAt": "2026-09-12T02:21:41.580Z"
+}

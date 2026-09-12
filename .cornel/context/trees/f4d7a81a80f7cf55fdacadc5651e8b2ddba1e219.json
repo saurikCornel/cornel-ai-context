@@ -1,0 +1,11 @@
+{
+  "headSha": "f4d7a81a80f7cf55fdacadc5651e8b2ddba1e219",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "Delete2/Delete2App.swift",
+    "Delete2/LoginView.swift",
+    "project.yml"
+  ]
+}
