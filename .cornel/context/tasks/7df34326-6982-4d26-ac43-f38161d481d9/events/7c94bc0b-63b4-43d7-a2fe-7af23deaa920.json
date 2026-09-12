@@ -1,0 +1,17 @@
+{
+  "id": "7c94bc0b-63b4-43d7-a2fe-7af23deaa920",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "device-install-alert-20260912-0625",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f0913565f949225d10d8149fa514a806831653ea",
+    "output": "06:12:51  Acquired tunnel connection to device.\n06:12:51  Enabling developer disk image services.\n06:12:51  Acquired usage assertion.\nApp installed:\n• bundleID: pro.cornel.Delete2\n• installationURL: file:///private/var/containers/Bundle/Application/4D9AF185-1EBD-48FD-89FC-E9FA7E64B8D4/Delete2.app/\n• launchServicesIdentifier: unknown\n• databaseUUID: 8F6E7CB8-4327-44B6-A983-5AE6855E0277\n• databaseSequenceNumber: 2964\n• options: \n",
+    "outputDigest": "3c625012db9f25a9d11fd015e8cdf5c035db15ac02e87a4b608cc2b9b97b238a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T03:12:53.186Z"
+}

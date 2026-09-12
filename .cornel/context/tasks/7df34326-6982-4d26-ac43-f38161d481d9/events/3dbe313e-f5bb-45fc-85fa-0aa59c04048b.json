@@ -1,0 +1,11 @@
+{
+  "id": "3dbe313e-f5bb-45fc-85fa-0aa59c04048b",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "device-install-alert-20260912-0625",
+    "output": "06:12:51  Acquired tunnel connection to device.\n06:12:51  Enabling developer disk image services.\n"
+  },
+  "createdAt": "2026-09-12T03:12:51.191Z"
+}
