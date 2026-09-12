@@ -1,0 +1,12 @@
+{
+  "id": "35a98f38-7545-4352-ae20-f275a2c39c66",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "device-build-14",
+    "operation": "run",
+    "command": "set -euo pipefail; rm -rf /tmp/WeatherFlowDevice; xcodebuild -project WeatherFlow.xcodeproj -scheme WeatherFlow -configuration Debug -destination 'id=00008130-0001252130E1401C' -derivedDataPath /tmp/WeatherFlowDevice DEVELOPMENT_TEAM=XC5UXN2R37 CODE_SIGN_STYLE=Automatic -allowProvisioningUpdates build | tee /tmp/weatherflow-device-build.log; echo '=== APP ==='; find /tmp/WeatherFlowDevice/Build/Products -maxdepth 3 -type d -name 'WeatherFlow.app' -print; echo '=== SIGNATURE ==='; codesign -dv --verbose=2 /tmp/WeatherFlowDevice/Build/Products/Debug-iphoneos/WeatherFlow.app 2>&1 | grep -E 'Identifier=|TeamIdentifier=|Authority=' || true; echo '=== STATUS ==='; git status --short"
+  },
+  "createdAt": "2026-09-12T03:42:41.185Z"
+}
