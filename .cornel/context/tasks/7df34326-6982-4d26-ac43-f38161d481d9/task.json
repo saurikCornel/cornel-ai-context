@@ -9,7 +9,7 @@
   "baseSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
   "status": "CANCELLED",
   "createdAt": "2026-09-12T01:37:48.747Z",
-  "updatedAt": "2026-09-12T12:19:31.025Z",
+  "updatedAt": "2026-09-12T12:19:38.233Z",
   "issue": 1,
   "chatUrl": "https://chatgpt.com/c/6aa4acfe-2058-83ed-9cc9-ac3561ebe951",
   "error": null,
@@ -18,8 +18,8 @@
   "currentHead": "f0913565f949225d10d8149fa514a806831653ea",
   "workspaceSyncedSha": "f0913565f949225d10d8149fa514a806831653ea",
   "autoRun": true,
-  "effort": "2",
-  "appliedEffort": "2",
-  "browserError": "Регулятор усилия недоступен в текущем чате. Выберите «Текущее» или проверьте настройки ChatGPT.",
+  "effort": "1",
+  "appliedEffort": null,
+  "browserError": null,
   "intentRevision": 3
 }
