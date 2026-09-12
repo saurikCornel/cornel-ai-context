@@ -1,0 +1,11 @@
+{
+  "id": "b39d1129-b1a7-4c0a-9ed9-420ff6f34248",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "install-launch-19",
+    "headSha": "93d3e76f072aff1f4ebb26a08165d0d940b1a49b"
+  },
+  "createdAt": "2026-09-12T03:48:47.045Z"
+}

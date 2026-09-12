@@ -1,0 +1,11 @@
+{
+  "id": "e4da8979-e6d7-47a1-9357-f0358041949b",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "install-launch-19",
+    "output": "=== INSTALL ===\n06:48:50  Acquired tunnel connection to device.\n06:48:50  Enabling developer disk image services.\n06:48:51  Acquired usage assertion.\n"
+  },
+  "createdAt": "2026-09-12T03:48:51.410Z"
+}

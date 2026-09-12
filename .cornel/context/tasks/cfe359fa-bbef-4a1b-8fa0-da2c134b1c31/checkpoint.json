@@ -2,8 +2,8 @@
   "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "headSha": "8a753def00339038efc2e9f7f41efbd5cf339ce1",
-  "status": "WAITING_CHATGPT",
-  "summary": "device-build-17 завершён успешно: SUCCEEDED, exitCode=0. Подписанная сборка для физического iPhone 15 Pro Max действительно получена.\n\nСледующий шаг уже выполнен: отправлена install-launch-18, которая устанавливает готовый WeatherFlow.app на подключённый iPhone, запускает com.cornel.deleteweather и затем проверяет наличие процесса приложения на устройстве.\n\nНа свежей проверке RESULT install-launch-18 ещё не появился, поэтому повторять установку или запуск нельзя. После его результата при успехе останется финальная проверка и finish; при ошибке исправлю конкретную причину новым commandId.\n\n",
+  "status": "RUNNING",
+  "summary": "install-launch-18 не дошёл до установки: worker снова упал на внутреннем FETCH_HEAD, exitCode=null; сама успешная подписанная сборка при этом не затронута.\n\nЯ исправил sync-состояние ветки пустым fast-forward коммитом без изменения файлов и отправил новую команду install-launch-19 для фактической установки, запуска WeatherFlow и проверки процесса на iPhone 15 Pro Max.\n\nНа свежей проверке RESULT для install-launch-19 ещё не появился, поэтому повторять установку нельзя. Следующий шаг после его RESULT: при подтверждённом запуске — PR и finish; при ошибке — исправление конкретной причины.\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -100,7 +100,13 @@
       "status": "FAILED",
       "headSha": "8a753def00339038efc2e9f7f41efbd5cf339ce1",
       "exitCode": null
+    },
+    {
+      "commandId": "install-launch-19",
+      "status": "STARTED",
+      "headSha": "93d3e76f072aff1f4ebb26a08165d0d940b1a49b",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-12T03:47:41.719Z"
+  "createdAt": "2026-09-12T03:48:56.737Z"
 }

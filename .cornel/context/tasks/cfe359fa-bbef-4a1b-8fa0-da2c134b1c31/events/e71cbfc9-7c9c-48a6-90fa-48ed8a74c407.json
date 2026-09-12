@@ -1,0 +1,11 @@
+{
+  "id": "e71cbfc9-7c9c-48a6-90fa-48ed8a74c407",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "install-launch-19",
+    "output": "=== INSTALL ===\n06:48:50  Acquired tunnel connection to device.\n06:48:50  Enabling developer disk image services.\n06:48:51  Acquired usage assertion.\nApp installed:\n• bundleID: com.cornel.deleteweather\n• installationURL: file:///private/var/containers/Bundle/Application/DEE86A41-598E-406F-A6A7-3180AD600A2D/WeatherFlow.app/\n• launchServicesIdentifier: unknown\n• databaseUUID: 8F6E7CB8-4327-44B6-A983-5AE6855E0277\n• databaseSequenceNumber: 2972\n• options: \n=== LAUNCH ===\n06:48:52  Acquired tunnel connection to device.\n06:48:52  Enabling developer disk image services.\n06:48:52  Acquired usage assertion.\nLaunched application with com.cornel.deleteweather bundle identifier.\n"
+  },
+  "createdAt": "2026-09-12T03:48:53.411Z"
+}
