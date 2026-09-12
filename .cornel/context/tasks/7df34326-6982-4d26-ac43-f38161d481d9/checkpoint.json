@@ -2,8 +2,8 @@
   "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
   "branch": "cornel/7df34326-6982-4d26-ac43-f38161d481d9",
   "headSha": "f4d7a81a80f7cf55fdacadc5651e8b2ddba1e219",
-  "status": "WAITING_CHATGPT",
-  "summary": "{\"type\":\"progress\",\"text\":\"Новый этап отправлен: сборка проекта для физического iPhone через Xcode. Полную команду install/launch разделил на отдельный следующий шаг, потому что GitHub-плагин блокировал её как единый комментарий.\"}\nСейчас worker должен выполнить device-build-20260912-0523. После его RESULT продолжу без повторения успешных действий: при успешной сборке — отдельная установка и запуск на iPhone, затем finish; при ошибке — исправлю конкретную причину.\n",
+  "status": "RUNNING",
+  "summary": "Возобновил работу после отмены владельцем. Проект уже переключён на активную Xcode-team, и новая сборка для физического iPhone отправлена отдельной командой.\nСейчас жду RESULT этой сборки. Если она пройдёт — следующим шагом установлю приложение на iPhone 15 Pro Max и запущу его, после чего отправлю finish.\n",
   "commands": [
     {
       "commandId": "inspect-20260912-0445",
@@ -70,7 +70,13 @@
       "status": "FAILED",
       "headSha": "f4d7a81a80f7cf55fdacadc5651e8b2ddba1e219",
       "exitCode": 65
+    },
+    {
+      "commandId": "device-build-20260912-0529",
+      "status": "STARTED",
+      "headSha": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-12T02:21:43.135Z"
+  "createdAt": "2026-09-12T02:34:53.745Z"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "0d3700be-a55a-4bd7-a3a5-f0bf90b60042",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "device-build-20260912-0529",
+    "operation": "run",
+    "command": "xcodegen generate && xcodebuild -project Delete2.xcodeproj -scheme Delete2 -configuration Debug -destination 'platform=iOS,name=iPhone' -derivedDataPath .build-device -allowProvisioningUpdates build"
+  },
+  "createdAt": "2026-09-12T02:34:48.463Z"
+}
