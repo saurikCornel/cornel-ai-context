@@ -1,0 +1,12 @@
+{
+  "id": "42749439-6035-4949-861b-98a832398659",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда ожидает разрешения в приложении",
+  "detail": {
+    "commandId": "typecheck-20260912-0447",
+    "operation": "run",
+    "command": "set -e\nSDK=$(xcrun --sdk iphonesimulator --show-sdk-path)\nxcrun swiftc -typecheck -sdk \"$SDK\" -target arm64-apple-ios17.0-simulator Delete2/LoginView.swift\ngit status --short"
+  },
+  "createdAt": "2026-09-12T01:47:35.272Z"
+}
