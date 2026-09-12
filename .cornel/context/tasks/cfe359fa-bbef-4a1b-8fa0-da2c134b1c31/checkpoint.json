@@ -1,9 +1,9 @@
 {
   "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
-  "headSha": "7ed8d755c755306dae8f0cf2d555068041888b6d",
+  "headSha": "46a8277feac5d08383dbb61c994483a45cbad6a7",
   "status": "WAITING_CHATGPT",
-  "summary": "publish-core-6 завершён успешно: status=SUCCEEDED, exitCode=0; первая часть WeatherFlow опубликована в рабочую ветку отдельным коммитом.\n\nСледующий шаг уже выполнен: на новом HEAD отправлена укороченная команда create-viewmodel-7, которая добавляет LocationManager.swift, WeatherViewModel.swift и генерирует Xcode-проект. Она укладывается в ограничение worker по размеру команды.\n\nНа момент последней проверки RESULT для create-viewmodel-7 ещё не появился, поэтому следующую операцию пока не запускаю.\n\nСводка: опубликованы project.yml, базовые модели и Open-Meteo API; проверка публикации успешна; сейчас выполняется слой геолокации/ViewModel; далее — UI и погодные анимации, публикация, сборка, установка и запуск на физическом iPhone 15 Pro Max.\n\n",
+  "summary": "create-viewmodel-7 завершён успешно: status=SUCCEEDED, exitCode=0. Созданы LocationManager.swift, WeatherViewModel.swift и WeatherFlow.xcodeproj.\n\nСледующий шаг выполнен: отправлена публикация publish-viewmodel-8, чтобы зафиксировать слой геолокации/ViewModel отдельным коммитом. На последней проверке RESULT для неё ещё не появился, поэтому следующую команду по протоколу пока отправлять нельзя.\n\nСводка: базовый слой WeatherFlow уже опубликован; геолокация и ViewModel успешно созданы и сейчас публикуются; следующий шаг после RESULT publish-viewmodel-8 — добавить SwiftUI-интерфейс и погодные анимации, затем собрать и установить приложение на физический iPhone 15 Pro Max.\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -34,7 +34,13 @@
       "status": "SUCCEEDED",
       "headSha": "7ed8d755c755306dae8f0cf2d555068041888b6d",
       "exitCode": 0
+    },
+    {
+      "commandId": "publish-viewmodel-8",
+      "status": "SUCCEEDED",
+      "headSha": "46a8277feac5d08383dbb61c994483a45cbad6a7",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T03:35:10.717Z"
+  "createdAt": "2026-09-12T03:36:06.719Z"
 }
