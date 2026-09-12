@@ -1,0 +1,11 @@
+{
+  "id": "f7247824-41f7-4314-81c4-3762736b10bf",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "env-ios-1",
+    "headSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653"
+  },
+  "createdAt": "2026-09-12T03:18:15.789Z"
+}

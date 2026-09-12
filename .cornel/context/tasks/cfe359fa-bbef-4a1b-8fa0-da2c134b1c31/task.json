@@ -9,10 +9,13 @@
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "baseSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
   "workspaceSyncedSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-12T03:17:23.452Z",
-  "updatedAt": "2026-09-12T03:17:27.279Z",
+  "updatedAt": "2026-09-12T03:18:18.121Z",
   "issue": 2,
   "chatUrl": null,
-  "error": null
+  "error": null,
+  "browserError": null,
+  "appliedEffort": "3",
+  "currentHead": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653"
 }

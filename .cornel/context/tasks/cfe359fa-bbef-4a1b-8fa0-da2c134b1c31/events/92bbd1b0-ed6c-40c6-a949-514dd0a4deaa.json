@@ -1,0 +1,17 @@
+{
+  "id": "92bbd1b0-ed6c-40c6-a949-514dd0a4deaa",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "env-ios-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
+    "output": "=== XCODE ===\nXcode 26.1.1\nBuild version 17B100\n=== MACOS ===\nProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n=== DEVICES ===\nName            Hostname                       Identifier                             State                Model                                     \n-------------   ----------------------------   ------------------------------------   ------------------   ------------------------------------------\nKatherineK      KatherineK.coredevice.local    07DABC8F-D032-52E9-B4C1-1E2E2052A4F8   unavailable          iPhone 16 Pro (iPhone17,1)                \niPhone          iPhone.coredevice.local        102310B0-86E3-5699-9244-D14A10CED058   available (paired)   iPhone 15 Pro Max (iPhone16,2)            \nДровенник (2)   Drovennik-2.coredevice.local   71F271F0-866E-5D22-9493-1B0594124B12   available (paired)   Apple TV 4K (3rd generation) (AppleTV14,1)\n",
+    "outputDigest": "5548adde1ed1b929895caf8cc591ca416d94ba7590ee72f1dbbef731193420a0",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T03:18:18.122Z"
+}
