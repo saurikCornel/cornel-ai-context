@@ -1,9 +1,9 @@
 {
   "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
   "branch": "cornel/7df34326-6982-4d26-ac43-f38161d481d9",
-  "headSha": "f4d7a81a80f7cf55fdacadc5651e8b2ddba1e219",
-  "status": "RUNNING",
-  "summary": "Возобновил работу после отмены владельцем. Проект уже переключён на активную Xcode-team, и новая сборка для физического iPhone отправлена отдельной командой.\nСейчас жду RESULT этой сборки. Если она пройдёт — следующим шагом установлю приложение на iPhone 15 Pro Max и запущу его, после чего отправлю finish.\n",
+  "headSha": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
+  "status": "WAITING_CHATGPT",
+  "summary": "Сборка уже подтверждённо прошла успешно (exitCode 0). Установка на физический iPhone отправлена отдельным шагом; свежего RESULT для неё в Issue пока ещё нет, поэтому не дублирую команду и не запускаю следующий этап раньше времени.\nКак только worker опубликует RESULT установки, следующий шаг будет таким: при успехе — отдельно запустить приложение на iPhone, затем отправить finish; при ошибке — исправить конкретную причину.\n",
   "commands": [
     {
       "commandId": "inspect-20260912-0445",
@@ -73,10 +73,16 @@
     },
     {
       "commandId": "device-build-20260912-0529",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
-      "exitCode": null
+      "exitCode": 0
+    },
+    {
+      "commandId": "device-install-20260912-0531",
+      "status": "SUCCEEDED",
+      "headSha": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T02:34:53.745Z"
+  "createdAt": "2026-09-12T02:36:09.750Z"
 }
