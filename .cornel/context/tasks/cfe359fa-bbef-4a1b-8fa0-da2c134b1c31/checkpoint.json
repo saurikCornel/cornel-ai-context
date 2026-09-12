@@ -3,7 +3,7 @@
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "headSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
   "status": "WAITING_CHATGPT",
-  "summary": "ios-tooling-2 подтверж",
+  "summary": "Фактический статус: задача",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -18,5 +18,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T03:24:34.722Z"
+  "createdAt": "2026-09-12T03:26:52.711Z"
 }
