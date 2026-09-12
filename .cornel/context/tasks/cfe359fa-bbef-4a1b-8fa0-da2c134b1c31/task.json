@@ -9,9 +9,9 @@
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "baseSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
   "workspaceSyncedSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
-  "status": "WAITING_CHATGPT",
+  "status": "NEEDS_ATTENTION",
   "createdAt": "2026-09-12T03:17:23.452Z",
-  "updatedAt": "2026-09-12T03:29:51.690Z",
+  "updatedAt": "2026-09-12T03:30:36.713Z",
   "issue": 2,
   "chatUrl": "https://chatgpt.com/c/6aa4c454-badc-83eb-aa8a-06fbfb0283fe",
   "error": null,
@@ -19,6 +19,6 @@
   "appliedEffort": "3",
   "currentHead": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
   "statusChecks": 1,
-  "attentionReason": null,
+  "attentionReason": "worker_blocked",
   "intentRevision": 1
 }
