@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "device-build-12 завершился ошибкой до запуска самой сборки: status=FAILED, exitCode=null. Причина — worker не смог подготовить Git-worktree из-за локального FETCH_HEAD; xcodebuild не выполнялся.\n\nHEAD рабочей ветки я отдельно перепроверил — он корректен и не изменился. Поэтому неисполненный шаг повторён новым commandId — device-build-13; успешную компиляцию build-check-11 я не повторял.\n\nНа свежей проверке для device-build-13 пока есть только сама команда — RESULT ещё не опубликован. Следующая развилка после RESULT: при успехе сразу установка .app и запуск на физическом iPhone 15 Pro Max; при ошибке — исправление конкретной причины signing/worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-12T03:41:54.719Z"
+}
