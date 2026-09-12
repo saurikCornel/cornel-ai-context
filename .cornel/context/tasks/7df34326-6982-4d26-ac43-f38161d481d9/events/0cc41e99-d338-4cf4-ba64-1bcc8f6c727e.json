@@ -1,0 +1,11 @@
+{
+  "id": "0cc41e99-d338-4cf4-ba64-1bcc8f6c727e",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "device-build-install-20260912-0502",
+    "headSha": "e23350fefddad161f8629298e28df56bdad28d49"
+  },
+  "createdAt": "2026-09-12T02:02:14.255Z"
+}
