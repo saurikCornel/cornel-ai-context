@@ -3,7 +3,7 @@
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "headSha": "922f640c2ead144a3b91eda419c368bff602f76a",
   "status": "WAITING_CHATGPT",
-  "summary": "publish-icon-23 завершён успешно: SUCCEEDED, exitCode=0. Иконка опубликована в рабочую ветку.\n\nСледующий шаг уже запущен: device-build-icon-24 выполняет новую подписанную сборку на физический iPhone-конфигурации и дополнительно проверяет, что AppIcon реально попал в собранный .app через CFBundleIcons/CFBundleIconName и Assets.car.\n\nНа свежей проверке RESULT для device-build-icon-24 ещё не опубликован, поэтому новую команду не отправляю. После успешной сборки останется переустановить обновлённый WeatherFlow на iPhone 15 Pro Max, проверить запуск и выполнить финальный finish.\n\n",
+  "summary": "device-build-icon-24 завершён успешно: SUCCEEDED, exitCode=0. Xcode действительно собрал asset catalog с --app-icon AppIcon, а в готовом Info.plist указано CFBundleIconName = AppIcon.\n\nСразу продолжил: отправлена install-icon-27, которая переустанавливает именно новую сборку с иконкой на физический iPhone 15 Pro Max и запускает WeatherFlow.\n\nНа последней проверке RESULT install-icon-27 ещё не появился. После успешного RESULT останется только финальный finish; PR #1 уже автоматически содержит опубликованный коммит с иконкой.\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -136,7 +136,13 @@
       "status": "SUCCEEDED",
       "headSha": "922f640c2ead144a3b91eda419c368bff602f76a",
       "exitCode": 0
+    },
+    {
+      "commandId": "install-icon-27",
+      "status": "FAILED",
+      "headSha": "922f640c2ead144a3b91eda419c368bff602f76a",
+      "exitCode": 1
     }
   ],
-  "createdAt": "2026-09-12T03:56:58.722Z"
+  "createdAt": "2026-09-12T03:59:05.772Z"
 }

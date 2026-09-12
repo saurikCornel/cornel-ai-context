@@ -1,0 +1,11 @@
+{
+  "id": "44608676-a6ef-4010-8c95-1530832dda52",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "install-icon-27",
+    "headSha": "922f640c2ead144a3b91eda419c368bff602f76a"
+  },
+  "createdAt": "2026-09-12T03:58:53.202Z"
+}

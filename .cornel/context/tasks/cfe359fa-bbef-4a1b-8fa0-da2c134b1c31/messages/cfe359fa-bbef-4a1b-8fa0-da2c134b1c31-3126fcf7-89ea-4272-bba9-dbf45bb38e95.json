@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 3,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "device-build-icon-24 завершён успешно: SUCCEEDED, exitCode=0. Xcode действительно собрал asset catalog с --app-icon AppIcon, а в готовом Info.plist указано CFBundleIconName = AppIcon.\n\nСразу продолжил: отправлена install-icon-27, которая переустанавливает именно новую сборку с иконкой на физический iPhone 15 Pro Max и запускает WeatherFlow.\n\nНа последней проверке RESULT install-icon-27 ещё не появился. После успешного RESULT останется только финальный finish; PR #1 уже автоматически содержит опубликованный коммит с иконкой.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-12T03:59:05.769Z"
+}
