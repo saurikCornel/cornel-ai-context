@@ -1,0 +1,12 @@
+{
+  "id": "d637c9f9-00c8-421c-8707-1da2bbbc1748",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда ожидает разрешения в приложении",
+  "detail": {
+    "commandId": "inspect-20260912-0445",
+    "operation": "run",
+    "command": "git status --short && printf '\\n--- FILES ---\\n' && find . -maxdepth 4 -type f | sort | sed -n '1,220p'"
+  },
+  "createdAt": "2026-09-12T01:45:55.399Z"
+}
