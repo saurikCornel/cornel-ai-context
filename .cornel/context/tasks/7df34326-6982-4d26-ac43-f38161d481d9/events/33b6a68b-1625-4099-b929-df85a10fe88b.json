@@ -1,0 +1,12 @@
+{
+  "id": "33b6a68b-1625-4099-b929-df85a10fe88b",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "В рабочей копии есть изменения. Сначала publish или ручная проверка.",
+  "detail": {
+    "commandId": "device-build-install-20260912-0506",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-12T02:04:51.150Z"
+}
