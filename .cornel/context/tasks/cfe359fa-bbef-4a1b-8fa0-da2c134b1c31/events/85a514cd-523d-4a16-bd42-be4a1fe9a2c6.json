@@ -1,0 +1,11 @@
+{
+  "id": "85a514cd-523d-4a16-bd42-be4a1fe9a2c6",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "device-build-17",
+    "output": "Command line invocation:\n    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project WeatherFlow.xcodeproj -scheme WeatherFlow -configuration Debug -destination id=00008130-0001252130E1401C -derivedDataPath /tmp/WeatherFlowDevice DEVELOPMENT_TEAM=29G2Y6GWXQ CODE_SIGN_STYLE=Automatic -allowProvisioningUpdates -allowProvisioningDeviceRegistration build\n\nBuild settings from command line:\n    CODE_SIGN_STYLE = Automatic\n    DEVELOPMENT_TEAM = 29G2Y6GWXQ\n\n2026-09-12 06:46:14.214 xcodebuild[3349:2216315] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.\nComputePackagePrebuildTargetDependencyGraph\n\nPrepare packages\n\nCreateBuildRequest\n\nSendProjectDescription\n\nCreateBuildOperation\n\nComputeTargetDependencyGraph\nnote: Building targets in dependency order\nnote: Target dependency graph (1 target)\n    Target 'WeatherFlow' in project 'WeatherFlow' (no dependencies)\n\nGatherProvisioningInputs\n"
+  },
+  "createdAt": "2026-09-12T03:46:17.321Z"
+}

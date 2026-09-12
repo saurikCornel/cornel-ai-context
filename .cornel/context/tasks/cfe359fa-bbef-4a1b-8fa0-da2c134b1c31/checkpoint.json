@@ -2,8 +2,8 @@
   "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f",
-  "status": "WAITING_CHATGPT",
-  "summary": "signing-inspect-15 завершён успешно: SUCCEEDED, exitCode=0. Диагностика показала два важных факта: Apple Development сертификаты Alexander Belov установлены, а локального каталога provisioning profiles вообще нет. Для основного сертификата реальный Team Identifier — 29G2Y6GWXQ.\n\nЯ продолжил исправление и запустил device-build-16 уже с правильным Team Identifier, Automatic Signing, разрешением Xcode скачать/создать provisioning profile и зарегистрировать подключённый iPhone при необходимости.\n\nНа свежей проверке RESULT для device-build-16 ещё не опубликован. Если он успешен, следующий шаг — установка .app, запуск WeatherFlow на физическом iPhone 15 Pro Max и проверка работающего процесса. Если Xcode всё ещё потребует аккаунт, это будет уже конкретный локальный блокер авторизации Apple Developer, а не проблема кода.\n\n",
+  "status": "RUNNING",
+  "summary": "device-build-16 завершился ошибкой до запуска xcodebuild: снова внутренний сбой worker на FETCH_HEAD, exitCode=null. То есть исправленный Team Identifier ещё не был фактически проверен.\n\nЯ исправил sync-состояние ветки пустым fast-forward коммитом без изменения содержимого файлов и отправил новую команду device-build-17 с правильным Team Identifier 29G2Y6GWXQ.\n\nНа свежей проверке для device-build-17 пока опубликована только команда — RESULT ещё отсутствует. Поэтому новую команду по протоколу не отправляю. Следующий шаг после RESULT: при успешной подписи — установка и запуск WeatherFlow на физическом iPhone 15 Pro Max; при реальной signing-ошибке — исправление именно её.\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -88,7 +88,13 @@
       "status": "FAILED",
       "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f",
       "exitCode": null
+    },
+    {
+      "commandId": "device-build-17",
+      "status": "STARTED",
+      "headSha": "8a753def00339038efc2e9f7f41efbd5cf339ce1",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-12T03:45:09.714Z"
+  "createdAt": "2026-09-12T03:46:16.720Z"
 }
