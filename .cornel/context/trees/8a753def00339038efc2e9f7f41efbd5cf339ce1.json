@@ -1,0 +1,18 @@
+{
+  "headSha": "8a753def00339038efc2e9f7f41efbd5cf339ce1",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "WeatherFlow.xcodeproj/project.pbxproj",
+    "WeatherFlow.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+    "WeatherFlow/AnimatedWeatherBackground.swift",
+    "WeatherFlow/ContentView.swift",
+    "WeatherFlow/LocationManager.swift",
+    "WeatherFlow/Models.swift",
+    "WeatherFlow/WeatherFlowApp.swift",
+    "WeatherFlow/WeatherService.swift",
+    "WeatherFlow/WeatherViewModel.swift",
+    "project.yml"
+  ]
+}
