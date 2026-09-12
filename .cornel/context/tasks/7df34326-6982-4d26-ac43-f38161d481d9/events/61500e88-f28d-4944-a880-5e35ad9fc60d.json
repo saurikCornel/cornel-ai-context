@@ -1,0 +1,12 @@
+{
+  "id": "61500e88-f28d-4944-a880-5e35ad9fc60d",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "device-launch-20260912-0536",
+    "operation": "run",
+    "command": "xcrun devicectl device process launch --device iPhone pro.cornel.Delete2"
+  },
+  "createdAt": "2026-09-12T02:36:33.463Z"
+}

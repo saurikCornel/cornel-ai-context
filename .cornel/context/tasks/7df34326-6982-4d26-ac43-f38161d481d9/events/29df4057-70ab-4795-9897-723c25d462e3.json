@@ -1,0 +1,11 @@
+{
+  "id": "29df4057-70ab-4795-9897-723c25d462e3",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "device-launch-20260912-0536",
+    "output": "05:36:37  Acquired tunnel connection to device.\n05:36:37  Enabling developer disk image services.\n05:36:38  Acquired usage assertion.\n"
+  },
+  "createdAt": "2026-09-12T02:36:38.174Z"
+}
