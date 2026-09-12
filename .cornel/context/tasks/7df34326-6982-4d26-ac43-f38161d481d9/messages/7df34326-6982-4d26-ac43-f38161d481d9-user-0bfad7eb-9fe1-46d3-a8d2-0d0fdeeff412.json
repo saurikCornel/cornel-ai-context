@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 5,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Да, задача выполнена полностью.\n\nФинальный finish подтверждён worker’ом: SUCCEEDED, exitCode 0. Текущая версия успешно собрана, установлена и запущена на физическом iPhone 15 Pro Max; алерт для незаполненного логина/пароля добавлен.\n\nБольше действий по этой задаче не требуется.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-12T12:30:00.491Z"
+}
