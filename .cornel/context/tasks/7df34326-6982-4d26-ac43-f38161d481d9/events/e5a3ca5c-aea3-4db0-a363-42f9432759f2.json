@@ -1,0 +1,17 @@
+{
+  "id": "e5a3ca5c-aea3-4db0-a363-42f9432759f2",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-layoutfix-20260912-0557",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "82bf7e8f7bbc5bdcd54367de84675bf5c1ecd76d",
+    "output": "Исправлена вёрстка экрана авторизации и добавлен launch-screen metadata для корректного полноэкранного запуска на современных iPhone. Исправленная версия успешно собрана, установлена и запущена на физическом iPhone 15 Pro Max. Проверки: build SUCCEEDED exitCode 0; install SUCCEEDED exitCode 0; launch SUCCEEDED exitCode 0.",
+    "outputDigest": "96ff6df8224acb6a484d210b8c511b8054cfefc344b962ffe1bfcad1c2687ca3",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T02:58:00.191Z"
+}
