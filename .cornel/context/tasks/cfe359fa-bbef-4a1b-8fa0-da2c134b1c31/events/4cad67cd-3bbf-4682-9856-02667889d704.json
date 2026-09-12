@@ -1,0 +1,12 @@
+{
+  "id": "4cad67cd-3bbf-4682-9856-02667889d704",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-launch-18",
+    "operation": "run",
+    "command": "set -euo pipefail; APP=/tmp/WeatherFlowDevice/Build/Products/Debug-iphoneos/WeatherFlow.app; test -d \"$APP\"; echo '=== INSTALL ==='; xcrun devicectl device install app --device 102310B0-86E3-5699-9244-D14A10CED058 \"$APP\"; echo '=== LAUNCH ==='; xcrun devicectl device process launch --device 102310B0-86E3-5699-9244-D14A10CED058 com.cornel.deleteweather; sleep 3; echo '=== PROCESS ==='; xcrun devicectl device info processes --device 102310B0-86E3-5699-9244-D14A10CED058 | grep -E 'WeatherFlow|com.cornel.deleteweather' || true; echo '=== STATUS ==='; git status --short"
+  },
+  "createdAt": "2026-09-12T03:47:25.782Z"
+}

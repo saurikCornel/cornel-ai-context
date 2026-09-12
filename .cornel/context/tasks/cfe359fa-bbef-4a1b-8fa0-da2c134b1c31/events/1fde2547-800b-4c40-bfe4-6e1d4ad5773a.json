@@ -1,0 +1,12 @@
+{
+  "id": "1fde2547-800b-4c40-bfe4-6e1d4ad5773a",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RESULT",
+  "text": "fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\nFETCH_HEAD\n",
+  "detail": {
+    "commandId": "install-launch-18",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-12T03:47:28.617Z"
+}
