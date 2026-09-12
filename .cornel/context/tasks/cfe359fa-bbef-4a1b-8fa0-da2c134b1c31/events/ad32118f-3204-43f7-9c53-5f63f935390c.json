@@ -1,0 +1,11 @@
+{
+  "id": "ad32118f-3204-43f7-9c53-5f63f935390c",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "device-build-12",
+    "headSha": "2b0f98ad40cb441df171b0517f5e9f2ad8a28c61"
+  },
+  "createdAt": "2026-09-12T03:40:21.381Z"
+}
