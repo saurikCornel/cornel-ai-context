@@ -1,9 +1,9 @@
 {
   "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
-  "headSha": "93d3e76f072aff1f4ebb26a08165d0d940b1a49b",
+  "headSha": "922f640c2ead144a3b91eda419c368bff602f76a",
   "status": "WAITING_CHATGPT",
-  "summary": "add-icon-21 завершился ошибкой: FAILED, exitCode=133. Причина — Swift/AppKit-генератор упал на nil при создании bitmap-контекста; исходники приложения не были испорчены.\n\nЯ исправил причину новым commandId — add-icon-22: иконка теперь генерируется через Pillow как RGB PNG 1024×1024 без прозрачности, создаётся AppIcon.appiconset, подключается ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon и пересоздаётся Xcode-проект.\n\nWorker уже принял и начал add-icon-22, но RESULT ещё не опубликован. Поэтому следующую команду пока не отправляю. После успеха сразу: publish → подписанная пересборка → переустановка на iPhone 15 Pro Max → проверка запуска → финальный finish.\n\n",
+  "summary": "add-icon-22 завершён успешно: SUCCEEDED, exitCode=0. Иконка и asset catalog созданы корректно.\n\nЯ сразу отправил publish-icon-23, чтобы зафиксировать иконку в назначенной рабочей ветке. На последней проверке RESULT публикации ещё не появился, поэтому не запускаю пересборку раньше времени.\n\nПосле успешного publish-icon-23: подписанная пересборка → переустановка на iPhone 15 Pro Max → запуск и проверка процесса → обновление PR → финальный finish.\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -124,7 +124,13 @@
       "status": "SUCCEEDED",
       "headSha": "93d3e76f072aff1f4ebb26a08165d0d940b1a49b",
       "exitCode": 0
+    },
+    {
+      "commandId": "publish-icon-23",
+      "status": "SUCCEEDED",
+      "headSha": "922f640c2ead144a3b91eda419c368bff602f76a",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T03:54:54.717Z"
+  "createdAt": "2026-09-12T03:56:00.735Z"
 }
