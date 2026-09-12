@@ -2,8 +2,8 @@
   "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
   "branch": "cornel/7df34326-6982-4d26-ac43-f38161d481d9",
   "headSha": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
-  "status": "WAITING_CHATGPT",
-  "summary": "Установка на физический iPhone завершилась успешно: SUCCEEDED, exitCode 0.\nСледующий шаг уже выполнен: отправлен запуск установленного приложения Delete2 на iPhone. Свежего RESULT для запуска пока ещё нет, поэтому не дублирую команду и не отправляю finish преждевременно.\nИтого на сейчас: сборка успешна, установка успешна, остался только подтверждённый запуск приложения на устройстве; после его RESULT сразу завершу задачу через finish.\n",
+  "status": "DONE",
+  "summary": "Готово по сути задачи: экран авторизации собран, приложение успешно установлено и запущено на физическом iPhone 15 Pro Max. Запуск подтверждён worker’ом с SUCCEEDED и exitCode 0.\nfinish уже отправлен и принят worker’ом; его финальный RESULT пока ещё не опубликован, поэтому не дублирую завершение.\n",
   "commands": [
     {
       "commandId": "inspect-20260912-0445",
@@ -88,7 +88,13 @@
       "status": "SUCCEEDED",
       "headSha": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
       "exitCode": 0
+    },
+    {
+      "commandId": "finish-device-20260912-0537",
+      "status": "SUCCEEDED",
+      "headSha": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T02:36:52.744Z"
+  "createdAt": "2026-09-12T02:39:15.751Z"
 }
