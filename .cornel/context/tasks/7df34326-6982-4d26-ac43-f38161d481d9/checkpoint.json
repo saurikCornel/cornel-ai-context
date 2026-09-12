@@ -2,8 +2,8 @@
   "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
   "branch": "cornel/7df34326-6982-4d26-ac43-f38161d481d9",
   "headSha": "82bf7e8f7bbc5bdcd54367de84675bf5c1ecd76d",
-  "status": "WAITING_CHATGPT",
-  "summary": "Фактический статус",
+  "status": "DONE",
+  "summary": "Исправленная версия успешно собрана, пере",
   "commands": [
     {
       "commandId": "inspect-20260912-0445",
@@ -112,7 +112,13 @@
       "status": "SUCCEEDED",
       "headSha": "82bf7e8f7bbc5bdcd54367de84675bf5c1ecd76d",
       "exitCode": 0
+    },
+    {
+      "commandId": "finish-layoutfix-20260912-0557",
+      "status": "SUCCEEDED",
+      "headSha": "82bf7e8f7bbc5bdcd54367de84675bf5c1ecd76d",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T02:57:22.650Z"
+  "createdAt": "2026-09-12T02:58:33.768Z"
 }
