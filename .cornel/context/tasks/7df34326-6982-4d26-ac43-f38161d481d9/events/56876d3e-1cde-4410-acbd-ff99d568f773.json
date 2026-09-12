@@ -1,0 +1,17 @@
+{
+  "id": "56876d3e-1cde-4410-acbd-ff99d568f773",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "signing-inspect-20260912-0504",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e23350fefddad161f8629298e28df56bdad28d49",
+    "output": "--- IDENTITIES ---\n  1) 16F2AB97C57DFDC09499E42E5255E69F7FE8C400 \"3rd Party Mac Developer Application: QMAX, MCHJ (DWVW33HUD4)\"\n  2) 16F2AB97C57DFDC09499E42E5255E69F7FE8C400 \"3rd Party Mac Developer Application: QMAX, MCHJ (DWVW33HUD4)\"\n  3) 6FDACD0DF39C88A6D36B08913240A329B49829D1 \"Apple Development: Alexander Belov (SP62Y26NYJ)\"\n  4) 6FDACD0DF39C88A6D36B08913240A329B49829D1 \"Apple Development: Alexander Belov (SP62Y26NYJ)\"\n  5) AEF01C8CE8EB73F3407EFB78484A087AC476E891 \"Apple Development: FADIME RAMP (H3C939ACS7)\"\n  6) AEF01C8CE8EB73F3407EFB78484A087AC476E891 \"Apple Development: FADIME RAMP (H3C939ACS7)\"\n  7) CA2D02A18CAE196C7DDCFF07B2C11C252683B3E0 \"Apple Development: FADIME RAMP (H3C939ACS7)\"\n  8) CA2D02A18CAE196C7DDCFF07B2C11C252683B3E0 \"Apple Development: FADIME RAMP (H3C939ACS7)\"\n  9) E17BCA28EC1C853251160EA85E98EDD2D7E04F91 \"Apple Distribution: SPECTIS d.o.o. (NM57VT7W23)\"\n 10) E17BCA28EC1C853251160EA85E98EDD2D7E04F91 \"Apple Distribution: SPECTIS d.o.o. (NM57VT7W23)\"\n 11) 16F2AB97C57DFDC09499E42E5255E69F7FE8C400 \"3rd Party Mac Developer Application: QMAX, MCHJ (DWVW33HUD4)\"\n 12) 16F2AB97C57DFDC09499E42E5255E69F7FE8C400 \"3rd Party Mac Developer Application: QMAX, MCHJ (DWVW33HUD4)\"\n 13) 2813D45F92310DD9AAEA986E32631A76FDBE8ABD \"Developer ID Application: QMAX, MCHJ (DWVW33HUD4)\"\n 14) 559FDAC64CC52A6BA0145AE2C28633605239660D \"Apple Development: Alexander Belov (XC5UXN2R37)\"\n     14 valid identities found\n--- PROVISIONING TEAMS ---\n--- XCODE ACCOUNTS ---\n{\n    \"67FF8808-EFA9-4A91-A9FB-C6AE2E0297B8\" =     (\n                {\n            isFreeProvisioningTeam = 0;\n            teamID = DWVW33HUD4;\n            teamName = \"QMAX, MCHJ\";\n            teamType = Company;\n        },\n                {\n            isFreeProvisioningTeam = 0;\n            teamID = NM57VT7W23;\n            teamName = \"SPECTIS d.o.o.\";\n            teamType = Company;\n        },\n                {\n            isFreeProvisioningTeam = 0;\n            teamID = KJZ93H9B37;\n            teamName = \"Leadfrog GmbH\";\n            teamType = Company;\n        },\n                {\n            isFreeProvisioningTeam = 1;\n            teamID = 29G2Y6GWXQ;\n            teamName = \"Alexander Belov (Personal Team)\";\n            teamType = \"Personal Team\";\n        },\n                {\n            isFreeProvisioningTeam = 0;\n            teamID = D55X6WAS4A;\n            teamName = 208022367;\n            teamType = Company;\n        }\n    );\n}\n",
+    "outputDigest": "d5936bf9af97ab4bc718691f1972fdbebdc54231388108b39f395918d39fad97",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T02:03:31.323Z"
+}
