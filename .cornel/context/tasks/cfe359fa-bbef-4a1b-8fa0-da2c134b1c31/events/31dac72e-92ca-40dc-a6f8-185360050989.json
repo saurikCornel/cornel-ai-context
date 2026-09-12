@@ -1,0 +1,12 @@
+{
+  "id": "31dac72e-92ca-40dc-a6f8-185360050989",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "ios-tooling-2",
+    "operation": "run",
+    "command": "set -e; echo '=== XCODEGEN ==='; (command -v xcodegen && xcodegen --version) || true; echo '=== DEVICE DETAILS ==='; xcrun devicectl device info details --device 102310B0-86E3-5699-9244-D14A10CED058 | sed -n '1,140p'; echo '=== SIGNING IDENTITIES ==='; security find-identity -v -p codesigning | sed -n '1,80p'"
+  },
+  "createdAt": "2026-09-12T03:20:20.056Z"
+}

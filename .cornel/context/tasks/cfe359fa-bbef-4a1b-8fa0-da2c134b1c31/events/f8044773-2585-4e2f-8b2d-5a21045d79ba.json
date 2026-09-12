@@ -1,0 +1,11 @@
+{
+  "id": "f8044773-2585-4e2f-8b2d-5a21045d79ba",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "ios-tooling-2",
+    "headSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653"
+  },
+  "createdAt": "2026-09-12T03:20:20.646Z"
+}
