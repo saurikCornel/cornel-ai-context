@@ -1,0 +1,12 @@
+{
+  "id": "9122c409-d33a-4ea1-860a-8c4ba449cc6a",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "device-build-darkred-resume-20260912-0614",
+    "operation": "run",
+    "command": "xcodegen generate && xcodebuild -project Delete2.xcodeproj -scheme Delete2 -configuration Debug -destination 'platform=iOS,name=iPhone' -derivedDataPath .build-device -allowProvisioningUpdates build"
+  },
+  "createdAt": "2026-09-12T03:06:36.014Z"
+}
