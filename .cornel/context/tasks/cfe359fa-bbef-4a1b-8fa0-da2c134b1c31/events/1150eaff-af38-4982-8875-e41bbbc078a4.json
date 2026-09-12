@@ -1,0 +1,12 @@
+{
+  "id": "1150eaff-af38-4982-8875-e41bbbc078a4",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RESULT",
+  "text": "fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\nFETCH_HEAD\n",
+  "detail": {
+    "commandId": "device-build-16",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-12T03:44:48.558Z"
+}
