@@ -1,0 +1,11 @@
+{
+  "name": "Delete2",
+  "repo": "saurikCornel/Delete2",
+  "baseBranch": "main",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md"
+  ],
+  "instructions": ".cornel/CHATGPT.md"
+}
