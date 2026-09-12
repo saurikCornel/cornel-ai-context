@@ -1,0 +1,17 @@
+{
+  "id": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "projectId": "3ec663c9-1501-4782-b603-1e387b5e0900",
+  "effort": "3",
+  "attachments": [],
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Напиши полнофункциональное приложение погоды с реальными данными и анимациями на ios и запусти на физическом 15 pro max",
+  "prompt": "Напиши полнофункциональное приложение погоды с реальными данными и анимациями на ios и запусти на физическом 15 pro max",
+  "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "baseSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
+  "workspaceSyncedSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
+  "status": "CREATING",
+  "createdAt": "2026-09-12T03:17:23.452Z",
+  "updatedAt": "2026-09-12T03:17:23.452Z",
+  "issue": null,
+  "chatUrl": null
+}
