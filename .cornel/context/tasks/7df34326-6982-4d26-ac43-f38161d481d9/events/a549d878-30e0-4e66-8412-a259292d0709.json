@@ -1,0 +1,11 @@
+{
+  "id": "a549d878-30e0-4e66-8412-a259292d0709",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда ожидает разрешения в приложении",
+  "detail": {
+    "commandId": "publish-sync-20260912-0510",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-12T02:07:12.474Z"
+}
