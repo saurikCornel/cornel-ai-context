@@ -1,9 +1,9 @@
 {
   "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
-  "headSha": "8a753def00339038efc2e9f7f41efbd5cf339ce1",
-  "status": "RUNNING",
-  "summary": "install-launch-18 не дошёл до установки: worker снова упал на внутреннем FETCH_HEAD, exitCode=null; сама успешная подписанная сборка при этом не затронута.\n\nЯ исправил sync-состояние ветки пустым fast-forward коммитом без изменения файлов и отправил новую команду install-launch-19 для фактической установки, запуска WeatherFlow и проверки процесса на iPhone 15 Pro Max.\n\nНа свежей проверке RESULT для install-launch-19 ещё не появился, поэтому повторять установку нельзя. Следующий шаг после его RESULT: при подтверждённом запуске — PR и finish; при ошибке — исправление конкретной причины.\n\n",
+  "headSha": "93d3e76f072aff1f4ebb26a08165d0d940b1a49b",
+  "status": "DONE",
+  "summary": "install-launch-19 завершён успешно: SUCCEEDED, exitCode=0. WeatherFlow фактически установлен на физический iPhone 15 Pro Max, bundle com.cornel.deleteweather запущен, а процесс WeatherFlow подтверждён на устройстве.\n\nСоздан PR #1 — Add WeatherFlow iOS weather app из назначенной рабочей ветки в main; merge не выполнялся.\n\nПосле этого отправлен finish-20 с итогом и всеми фактическими проверками. На последней свежей проверке RESULT для finish-20 ещё не появился, поэтому дополнительных команд не отправляю.\n\nИтог: приложение с реальными данными Open-Meteo, геолокацией, поиском городов, почасовым и многодневным прогнозом и погодными анимациями написано, успешно собрано и подписано, установлено и запущено на физическом iPhone 15 Pro Max. PR: https://github.com/saurikCornel/delete-weather/pull/1\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -103,10 +103,16 @@
     },
     {
       "commandId": "install-launch-19",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "93d3e76f072aff1f4ebb26a08165d0d940b1a49b",
-      "exitCode": null
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-20",
+      "status": "SUCCEEDED",
+      "headSha": "93d3e76f072aff1f4ebb26a08165d0d940b1a49b",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T03:48:56.737Z"
+  "createdAt": "2026-09-12T03:50:22.717Z"
 }
