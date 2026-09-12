@@ -1,0 +1,12 @@
+{
+  "id": "463509fb-109f-4b14-979f-174e6ae926bf",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда ожидает разрешения в приложении",
+  "detail": {
+    "commandId": "signing-inspect-20260912-0504",
+    "operation": "run",
+    "command": "set -e\nprintf '%s\\n' '--- IDENTITIES ---'\nsecurity find-identity -v -p codesigning || true\nprintf '%s\\n' '--- PROVISIONING TEAMS ---'\nfind ~/Library/MobileDevice/Provisioning\\ Profiles -maxdepth 1 -type f 2>/dev/null | head -n 20 | while read f; do security cms -D -i \"$f\" 2>/dev/null | plutil -extract TeamIdentifier.0 raw -o - - 2>/dev/null || true; done | sort -u\nprintf '%s\\n' '--- XCODE ACCOUNTS ---'\ndefaults read com.apple.dt.Xcode IDEProvisioningTeamByIdentifier 2>/dev/null || true"
+  },
+  "createdAt": "2026-09-12T02:03:17.148Z"
+}
