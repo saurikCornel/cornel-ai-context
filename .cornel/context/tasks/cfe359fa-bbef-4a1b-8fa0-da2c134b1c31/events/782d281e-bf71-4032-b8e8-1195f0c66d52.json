@@ -1,0 +1,11 @@
+{
+  "id": "782d281e-bf71-4032-b8e8-1195f0c66d52",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "device-build-icon-24",
+    "output": "Command line invocation:\n    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project WeatherFlow.xcodeproj -scheme WeatherFlow -configuration Debug -destination id=00008130-0001252130E1401C -derivedDataPath /tmp/WeatherFlowDeviceIcon DEVELOPMENT_TEAM=29G2Y6GWXQ CODE_SIGN_STYLE=Automatic -allowProvisioningUpdates -allowProvisioningDeviceRegistration build\n\nBuild settings from command line:\n    CODE_SIGN_STYLE = Automatic\n    DEVELOPMENT_TEAM = 29G2Y6GWXQ\n\n2026-09-12 06:56:40.735 xcodebuild[15870:2242447] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.\nComputePackagePrebuildTargetDependencyGraph\n\nPrepare packages\n\nCreateBuildRequest\n\nSendProjectDescription\n\nCreateBuildOperation\n\nComputeTargetDependencyGraph\nnote: Building targets in dependency order\nnote: Target dependency graph (1 target)\n    Target 'WeatherFlow' in project 'WeatherFlow' (no dependencies)\n\nGatherProvisioningInputs\n\nCreateBuildDescription\n\nExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.1.sdk -x c -c /dev/null\n\nExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/alex/Cornel/cornel-ai/.data/worktrees/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31/WeatherFlow/Assets.xcassets\n\nExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1\n\nExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version\n"
+  },
+  "createdAt": "2026-09-12T03:56:45.795Z"
+}
