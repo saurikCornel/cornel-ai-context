@@ -1,0 +1,12 @@
+{
+  "headSha": "7ed8d755c755306dae8f0cf2d555068041888b6d",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "WeatherFlow/Models.swift",
+    "WeatherFlow/WeatherFlowApp.swift",
+    "WeatherFlow/WeatherService.swift",
+    "project.yml"
+  ]
+}
