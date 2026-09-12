@@ -1,0 +1,10 @@
+{
+  "id": "4b4eaa81-60f8-4122-88ac-5f52b9782f92",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "REJECTED",
+  "text": "[\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_big\",\n    \"maximum\": 12000,\n    \"inclusive\": true,\n    \"path\": [\n      \"command\"\n    ],\n    \"message\": \"Too big: expected string to have <=12000 characters\"\n  }\n]",
+  "detail": {
+    "commentId": 5643135573
+  },
+  "createdAt": "2026-09-12T03:24:00.060Z"
+}
