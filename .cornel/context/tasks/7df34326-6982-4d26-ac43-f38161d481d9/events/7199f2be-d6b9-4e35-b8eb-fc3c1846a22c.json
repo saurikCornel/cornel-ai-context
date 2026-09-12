@@ -1,0 +1,12 @@
+{
+  "id": "7199f2be-d6b9-4e35-b8eb-fc3c1846a22c",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "device-install-darkred-20260912-0617",
+    "operation": "run",
+    "command": "APP_PATH=$(find .build-device/Build/Products/Debug-iphoneos -maxdepth 1 -name '*.app' -print -quit) && test -n \"$APP_PATH\" && xcrun devicectl device install app --device iPhone \"$APP_PATH\""
+  },
+  "createdAt": "2026-09-12T03:07:45.787Z"
+}

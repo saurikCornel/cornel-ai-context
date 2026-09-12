@@ -1,0 +1,17 @@
+{
+  "id": "e1065352-7f9c-4d9e-82d9-87b7ce0f196d",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "device-install-darkred-20260912-0617",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9e38b5257c5ee30390e7109c406a30b0de92698b",
+    "output": "06:07:50  Acquired tunnel connection to device.\n06:07:50  Enabling developer disk image services.\n06:07:50  Acquired usage assertion.\nApp installed:\n• bundleID: pro.cornel.Delete2\n• installationURL: file:///private/var/containers/Bundle/Application/DF5856B5-02E3-4DAD-82AE-87833831EA8C/Delete2.app/\n• launchServicesIdentifier: unknown\n• databaseUUID: 8F6E7CB8-4327-44B6-A983-5AE6855E0277\n• databaseSequenceNumber: 2956\n• options: \n",
+    "outputDigest": "96da9e58414e97e881902dfd97d4127f0f40db5c28d0bd062c34771bc01ca9aa",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T03:07:52.662Z"
+}
