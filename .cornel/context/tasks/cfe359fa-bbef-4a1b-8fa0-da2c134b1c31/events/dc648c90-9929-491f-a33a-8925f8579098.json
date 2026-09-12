@@ -1,0 +1,17 @@
+{
+  "id": "dc648c90-9929-491f-a33a-8925f8579098",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "signing-inspect-15",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f",
+    "output": "=== ALEXANDER CERT SUBJECTS ===\nsubject= /UID=QQ4F78MYK9/CN=Apple Development: Alexander Belov (XC5UXN2R37)/OU=29G2Y6GWXQ/O=Alexander Belov/C=US\nsubject= /UID=QQ4F78MYK9/CN=Apple Development: Alexander Belov (WKD55G3L6Z)/OU=D55X6WAS4A/O=208022367/C=US\nsubject= /UID=QQ4F78MYK9/CN=Apple Development: Alexander Belov (SP62Y26NYJ)/OU=DWVW33HUD4/O=QMAX, MCHJ/C=US\nsubject= /UID=QQ4F78MYK9/CN=Apple Development: Alexander Belov (XC5UXN2R37)/OU=29G2Y6GWXQ/O=Alexander Belov/C=US\nsubject= /UID=QQ4F78MYK9/CN=Apple Development: Alexander Belov (WKD55G3L6Z)/OU=D55X6WAS4A/O=208022367/C=US\nsubject= /UID=QQ4F78MYK9/CN=Apple Development: Alexander Belov (SP62Y26NYJ)/OU=DWVW33HUD4/O=QMAX, MCHJ/C=US\nsubject= /UID=QQ4F78MYK9/CN=Apple Development: Alexander Belov (XC5UXN2R37)/OU=29G2Y6GWXQ/O=Alexander Belov/C=US\n=== PROVISIONING PROFILES ===\nNo provisioning profile directory\n",
+    "outputDigest": "567aa16bf6b382c48b17c801ac26524cad187944330f82450fc019ec00a1afc0",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T03:43:48.735Z"
+}

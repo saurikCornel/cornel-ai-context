@@ -1,0 +1,11 @@
+{
+  "id": "2b945c53-15c0-4672-a98b-798a2e5918c6",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "signing-inspect-15",
+    "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f"
+  },
+  "createdAt": "2026-09-12T03:43:46.633Z"
+}

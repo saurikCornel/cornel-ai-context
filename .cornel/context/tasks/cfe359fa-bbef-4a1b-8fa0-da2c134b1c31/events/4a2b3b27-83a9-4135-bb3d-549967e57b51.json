@@ -1,0 +1,12 @@
+{
+  "id": "4a2b3b27-83a9-4135-bb3d-549967e57b51",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "signing-inspect-15",
+    "operation": "run",
+    "command": "set -euo pipefail; echo '=== ALEXANDER CERT SUBJECTS ==='; security find-certificate -a -c 'Apple Development: Alexander Belov' -p | awk 'BEGIN{n=0}/BEGIN CERTIFICATE/{n++}{print > (\"/tmp/wf-cert-\" n \".pem\")}' || true; for f in /tmp/wf-cert-*.pem; do [ -s \"$f\" ] || continue; openssl x509 -in \"$f\" -noout -subject 2>/dev/null || true; done; echo '=== PROVISIONING PROFILES ==='; PROFILE_DIR=\"$HOME/Library/MobileDevice/Provisioning Profiles\"; if [ -d \"$PROFILE_DIR\" ]; then for p in \"$PROFILE_DIR\"/*.mobileprovision; do [ -f \"$p\" ] || continue; tmp=$(mktemp); if security cms -D -i \"$p\" >\"$tmp\" 2>/dev/null; then /usr/libexec/PlistBuddy -c 'Print :Name' \"$tmp\" 2>/dev/null | sed 's/^/Name: /'; /usr/libexec/PlistBuddy -c 'Print :TeamName' \"$tmp\" 2>/dev/null | sed 's/^/TeamName: /'; /usr/libexec/PlistBuddy -c 'Print :TeamIdentifier:0' \"$tmp\" 2>/dev/null | sed 's/^/TeamIdentifier: /'; /usr/libexec/PlistBuddy -c 'Print :Entitlements:application-identifier' \"$tmp\" 2>/dev/null | sed 's/^/AppIdentifier: /'; /usr/libexec/PlistBuddy -c 'Print :UUID' \"$tmp\" 2>/dev/null | sed 's/^/UUID: /'; /usr/libexec/PlistBuddy -c 'Print :ExpirationDate' \"$tmp\" 2>/dev/null | sed 's/^/Expires: /'; echo '---'; fi; rm -f \"$tmp\"; done; else echo 'No provisioning profile directory'; fi"
+  },
+  "createdAt": "2026-09-12T03:43:45.706Z"
+}
