@@ -1,0 +1,12 @@
+{
+  "id": "05b1bb03-3944-4d0e-91bf-be77a1b60172",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда ожидает разрешения в приложении",
+  "detail": {
+    "commandId": "device-build-install-20260912-0502",
+    "operation": "run",
+    "command": "set -e\nxcodegen generate\nxcodebuild -project Delete2.xcodeproj -scheme Delete2 -configuration Debug -destination 'id=00008130-0001252130E1401C' -derivedDataPath .build-device -allowProvisioningUpdates build\nAPP_PATH=$(find .build-device/Build/Products/Debug-iphoneos -maxdepth 1 -name '*.app' -print -quit)\ntest -n \"$APP_PATH\"\nxcrun devicectl device install app --device 102310B0-86E3-5699-9244-D14A10CED058 \"$APP_PATH\"\nxcrun devicectl device process launch --device 102310B0-86E3-5699-9244-D14A10CED058 pro.cornel.Delete2\nprintf '%s\\n' \"APP_PATH=$APP_PATH\"\ngit status --short"
+  },
+  "createdAt": "2026-09-12T02:02:01.962Z"
+}
