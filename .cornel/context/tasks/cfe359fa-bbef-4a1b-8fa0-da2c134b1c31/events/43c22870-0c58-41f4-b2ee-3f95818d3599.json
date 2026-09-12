@@ -1,0 +1,17 @@
+{
+  "id": "43c22870-0c58-41f4-b2ee-3f95818d3599",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-icon-32",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "922f640c2ead144a3b91eda419c368bff602f76a",
+    "output": "Done. PR #1.",
+    "outputDigest": "8cbf286b3b311dbf385206b7eb76aa41001a3842f7036b6cca993ace1507c47b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T04:01:55.289Z"
+}
