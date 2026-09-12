@@ -1,0 +1,12 @@
+{
+  "id": "a9bfa571-68cd-45c1-b42e-a55538c20d6d",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "В рабочей копии есть изменения. Сначала publish или ручная проверка.",
+  "detail": {
+    "commandId": "publish-sync-20260912-0510",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-12T02:07:31.986Z"
+}
