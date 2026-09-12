@@ -1,0 +1,11 @@
+{
+  "id": "23e62ee4-e7e9-4b1e-8b33-5bb9a8a3f882",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "device-install-layoutfix-20260912-0542",
+    "headSha": "82bf7e8f7bbc5bdcd54367de84675bf5c1ecd76d"
+  },
+  "createdAt": "2026-09-12T02:54:48.662Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "e2458ef1-52cf-45fe-b09d-0eab3d0d4eb3",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "device-install-layoutfix-20260912-0542",
+    "operation": "run",
+    "command": "APP_PATH=$(find .build-device/Build/Products/Debug-iphoneos -maxdepth 1 -name '*.app' -print -quit) && test -n \"$APP_PATH\" && xcrun devicectl device install app --device iPhone \"$APP_PATH\""
+  },
+  "createdAt": "2026-09-12T02:54:47.617Z"
+}

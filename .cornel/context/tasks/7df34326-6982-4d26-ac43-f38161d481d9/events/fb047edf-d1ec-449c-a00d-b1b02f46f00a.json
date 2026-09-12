@@ -1,0 +1,11 @@
+{
+  "id": "fb047edf-d1ec-449c-a00d-b1b02f46f00a",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "device-install-layoutfix-20260912-0542",
+    "output": "05:54:52  Acquired tunnel connection to device.\n05:54:52  Enabling developer disk image services.\n"
+  },
+  "createdAt": "2026-09-12T02:54:52.631Z"
+}
