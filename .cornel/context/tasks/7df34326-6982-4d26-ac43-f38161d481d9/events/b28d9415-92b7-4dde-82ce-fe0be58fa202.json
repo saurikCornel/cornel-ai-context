@@ -1,0 +1,17 @@
+{
+  "id": "b28d9415-92b7-4dde-82ce-fe0be58fa202",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "device-launch-alert-20260912-0628",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f0913565f949225d10d8149fa514a806831653ea",
+    "output": "06:14:24  Acquired tunnel connection to device.\n06:14:24  Enabling developer disk image services.\n06:14:25  Acquired usage assertion.\nLaunched application with pro.cornel.Delete2 bundle identifier.\n",
+    "outputDigest": "55a7ff2ad73bd51cb36261bfa31cdcc31eae6fd05eec94796369f204394bf5f9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T03:14:25.625Z"
+}

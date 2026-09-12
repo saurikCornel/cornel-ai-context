@@ -1,0 +1,11 @@
+{
+  "id": "3d9f69f0-35e1-4ebf-a88b-4cf058bff75b",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "device-launch-alert-20260912-0628",
+    "headSha": "f0913565f949225d10d8149fa514a806831653ea"
+  },
+  "createdAt": "2026-09-12T03:14:22.055Z"
+}
