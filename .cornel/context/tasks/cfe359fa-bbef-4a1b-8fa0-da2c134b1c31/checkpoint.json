@@ -3,7 +3,7 @@
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f",
   "status": "WAITING_CHATGPT",
-  "summary": "device-build-14 дошёл до реального xcodebuild, но завершился FAILED, exitCode=65. Причина теперь точная: Xcode не видит аккаунт для выбранной команды разработчика и не имеет provisioning profile для com.cornel.deleteweather.\n\nПроблема FETCH_HEAD при этом устранена — worker успешно синхронизировал рабочую копию и реально запустил сборку.\n\nЯ уже продолжил исправление: отправил signing-inspect-15, который определит настоящий Team Identifier сертификатов Alexander Belov и доступные локальные provisioning profiles. RESULT этой диагностики пока не появился. После него выберу существующую рабочую пару team/profile и продолжу подписанную сборку, установку и запуск на iPhone 15 Pro Max.\n\nСводка: код компилируется; worker восстановлен; текущий единственный блокер — iOS signing/provisioning.\n\n",
+  "summary": "signing-inspect-15 завершён успешно: SUCCEEDED, exitCode=0. Диагностика показала два важных факта: Apple Development сертификаты Alexander Belov установлены, а локального каталога provisioning profiles вообще нет. Для основного сертификата реальный Team Identifier — 29G2Y6GWXQ.\n\nЯ продолжил исправление и запустил device-build-16 уже с правильным Team Identifier, Automatic Signing, разрешением Xcode скачать/создать provisioning profile и зарегистрировать подключённый iPhone при необходимости.\n\nНа свежей проверке RESULT для device-build-16 ещё не опубликован. Если он успешен, следующий шаг — установка .app, запуск WeatherFlow на физическом iPhone 15 Pro Max и проверка работающего процесса. Если Xcode всё ещё потребует аккаунт, это будет уже конкретный локальный блокер авторизации Apple Developer, а не проблема кода.\n\n",
   "commands": [
     {
       "commandId": "env-ios-1",
@@ -82,7 +82,13 @@
       "status": "SUCCEEDED",
       "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f",
       "exitCode": 0
+    },
+    {
+      "commandId": "device-build-16",
+      "status": "FAILED",
+      "headSha": "ad34e0d408cfc313205ebb6d4e1657648c01e92f",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-12T03:44:05.718Z"
+  "createdAt": "2026-09-12T03:45:09.714Z"
 }
