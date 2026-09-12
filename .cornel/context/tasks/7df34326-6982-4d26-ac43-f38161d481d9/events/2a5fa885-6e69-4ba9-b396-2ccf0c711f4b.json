@@ -1,0 +1,11 @@
+{
+  "id": "2a5fa885-6e69-4ba9-b396-2ccf0c711f4b",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "device-launch-darkred-20260912-0619",
+    "output": "06:08:26  Acquired tunnel connection to device.\n06:08:26  Enabling developer disk image services.\n"
+  },
+  "createdAt": "2026-09-12T03:08:26.568Z"
+}

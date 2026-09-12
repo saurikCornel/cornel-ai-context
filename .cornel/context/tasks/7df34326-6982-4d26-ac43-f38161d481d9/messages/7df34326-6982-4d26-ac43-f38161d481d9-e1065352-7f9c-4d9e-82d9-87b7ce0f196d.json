@@ -1,0 +1,16 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [
+    {
+      "id": "76f4db2f-e288-4e02-bc3a-a41ed20070fb",
+      "name": "Изображение.png",
+      "type": "image/png",
+      "size": 9380,
+      "createdAt": "2026-09-12T03:08:12.931Z"
+    }
+  ],
+  "mediaErrors": [],
+  "text": "Новая тёмная оранжево-красная версия успешно установлена на физический iPhone 15 Pro Max: SUCCEEDED, exitCode 0.\n\nСледующий шаг уже выполнен: отправлен запуск именно этой новой сборки. После RESULT запуска при успехе отправлю finish; установку повторять не буду.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-12T03:08:31.863Z"
+}
