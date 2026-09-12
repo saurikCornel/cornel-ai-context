@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 3,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "publish-icon-23 завершён успешно: SUCCEEDED, exitCode=0. Иконка опубликована в рабочую ветку.\n\nСледующий шаг уже запущен: device-build-icon-24 выполняет новую подписанную сборку на физический iPhone-конфигурации и дополнительно проверяет, что AppIcon реально попал в собранный .app через CFBundleIcons/CFBundleIconName и Assets.car.\n\nНа свежей проверке RESULT для device-build-icon-24 ещё не опубликован, поэтому новую команду не отправляю. После успешной сборки останется переустановить обновлённый WeatherFlow на iPhone 15 Pro Max, проверить запуск и выполнить финальный finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-12T03:56:58.720Z"
+}
