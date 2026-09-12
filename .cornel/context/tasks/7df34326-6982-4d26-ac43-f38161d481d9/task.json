@@ -7,18 +7,18 @@
   "prompt": "Напиши экран авторизации на swiftui",
   "branch": "cornel/7df34326-6982-4d26-ac43-f38161d481d9",
   "baseSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
-  "status": "WAITING_CHATGPT",
+  "status": "DONE",
   "createdAt": "2026-09-12T01:37:48.747Z",
-  "updatedAt": "2026-09-12T02:41:35.652Z",
+  "updatedAt": "2026-09-12T02:43:54.193Z",
   "issue": 1,
   "chatUrl": "https://chatgpt.com/c/6aa4acfe-2058-83ed-9cc9-ac3561ebe951",
   "error": null,
   "attentionReason": null,
   "statusChecks": 0,
   "currentHead": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
-  "workspaceSyncedSha": "a44b93c87af3dc83cd751dccb8fd0a6f32c1ac67",
+  "workspaceSyncedSha": "82bf7e8f7bbc5bdcd54367de84675bf5c1ecd76d",
   "autoRun": true,
   "effort": "2",
   "appliedEffort": "2",
-  "browserError": null
+  "browserError": "Отправка уже началась. Автоматического повтора не будет: проверьте исходную вкладку."
 }
