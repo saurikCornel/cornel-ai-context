@@ -9,7 +9,7 @@
   "baseSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-12T01:37:48.747Z",
-  "updatedAt": "2026-09-12T12:19:46.594Z",
+  "updatedAt": "2026-09-12T12:20:37.179Z",
   "issue": 1,
   "chatUrl": "https://chatgpt.com/c/6aa4acfe-2058-83ed-9cc9-ac3561ebe951",
   "error": null,
@@ -19,7 +19,7 @@
   "workspaceSyncedSha": "f0913565f949225d10d8149fa514a806831653ea",
   "autoRun": true,
   "effort": "1",
-  "appliedEffort": null,
+  "appliedEffort": "1",
   "browserError": null,
   "intentRevision": 4
 }
