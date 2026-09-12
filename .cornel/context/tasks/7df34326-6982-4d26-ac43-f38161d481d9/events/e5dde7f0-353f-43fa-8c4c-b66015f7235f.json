@@ -1,0 +1,17 @@
+{
+  "id": "e5dde7f0-353f-43fa-8c4c-b66015f7235f",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "device-build-install-20260912-0500",
+    "status": "FAILED",
+    "exitCode": 70,
+    "reason": null,
+    "headSha": "e23350fefddad161f8629298e28df56bdad28d49",
+    "output": "⚙️  Generating plists...\n⚙️  Generating project...\n⚙️  Writing project...\nCreated project at /Users/alex/Cornel/cornel-ai/.data/worktrees/7df34326-6982-4d26-ac43-f38161d481d9/Delete2.xcodeproj\nCommand line invocation:\n    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Delete2.xcodeproj -scheme Delete2 -configuration Debug -destination id=102310B0-86E3-5699-9244-D14A10CED058 -derivedDataPath .build-device -allowProvisioningUpdates build\n\n2026-09-12 05:01:22.422 xcodebuild[60650:1802189] Writing error result bundle to /var/folders/wj/g1tzd4210pv9cx6mcy5fpj440000gn/T/ResultBundle_2026-12-09_05-01-0022.xcresult\nxcodebuild: error: Unable to find a device matching the provided destination specifier:\n\t\t{ id:102310B0-86E3-5699-9244-D14A10CED058 }\n\n\tThe requested device could not be found because no available devices matched the request.\n\n\tAvailable destinations for the \"Delete2\" scheme:\n\t\t{ platform:macOS, arch:arm64, variant:Designed for [iPad,iPhone], id:00006001-000009E03C41801E, name:My Mac }\n\t\t{ platform:iOS, arch:arm64, id:00008130-0001252130E1401C, name:iPhone }\n\t\t{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device }\n\t\t{ platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }\n\t\t{ platform:iOS Simulator, arch:arm64, id:48B9161C-FAD1-4C7F-8EE0-E0C459359ED3, OS:26.1, name:Raylight iPhone }\n\t\t{ platform:iOS Simulator, arch:arm64, id:922C603F-D922-4D5F-B806-C753B4649B3D, OS:26.1, name:iPhone 17 Pro }\n",
+    "outputDigest": "f6682f923c151f799ff820ae512d225f5b0971c62def88f00edb82a08cef72e1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T02:01:22.506Z"
+}
