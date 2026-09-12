@@ -1,0 +1,12 @@
+{
+  "id": "34329bd7-51f7-4082-ad63-69f1da69645d",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-icon-28",
+    "operation": "run",
+    "command": "set -euo pipefail; DEV=$(xcrun devicectl list devices | grep 'iPhone 15 Pro Max' | grep -Eo '[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}' | head -1); test -n \"$DEV\"; APP=/tmp/WeatherFlowDeviceIcon/Build/Products/Debug-iphoneos/WeatherFlow.app; test -d \"$APP\"; xcrun devicectl device install app --device \"$DEV\" \"$APP\"; xcrun devicectl device process launch --device \"$DEV\" com.cornel.deleteweather; sleep 2; xcrun devicectl device info processes --device \"$DEV\" | grep WeatherFlow"
+  },
+  "createdAt": "2026-09-12T03:59:51.979Z"
+}

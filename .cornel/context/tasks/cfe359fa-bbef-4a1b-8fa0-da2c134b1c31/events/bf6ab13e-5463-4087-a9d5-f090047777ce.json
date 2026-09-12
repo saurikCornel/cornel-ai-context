@@ -1,0 +1,11 @@
+{
+  "id": "bf6ab13e-5463-4087-a9d5-f090047777ce",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "install-icon-28",
+    "output": "06:59:56  Acquired tunnel connection to device.\n06:59:56  Enabling developer disk image services.\n06:59:56  Acquired usage assertion.\n"
+  },
+  "createdAt": "2026-09-12T03:59:57.207Z"
+}
