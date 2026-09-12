@@ -9,10 +9,11 @@
   "baseSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-12T01:37:48.747Z",
-  "updatedAt": "2026-09-12T01:45:09.867Z",
+  "updatedAt": "2026-09-12T01:46:09.144Z",
   "issue": 1,
   "chatUrl": "https://chatgpt.com/c/6aa4acfe-2058-83ed-9cc9-ac3561ebe951",
   "error": null,
   "attentionReason": null,
-  "statusChecks": 0
+  "statusChecks": 0,
+  "currentHead": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6"
 }
