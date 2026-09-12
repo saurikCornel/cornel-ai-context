@@ -1,0 +1,17 @@
+{
+  "id": "a4145ae1-1bb3-4042-8a14-c8f8be13c1c5",
+  "taskId": "cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "create-core-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
+    "output": "=== STATUS ===\n?? WeatherFlow/\n?? project.yml\n",
+    "outputDigest": "cd518123ddb5537baa8c9b0421dd03a9c0177a15e8fae1c54aef66fbabed9fbf",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T03:33:03.861Z"
+}
