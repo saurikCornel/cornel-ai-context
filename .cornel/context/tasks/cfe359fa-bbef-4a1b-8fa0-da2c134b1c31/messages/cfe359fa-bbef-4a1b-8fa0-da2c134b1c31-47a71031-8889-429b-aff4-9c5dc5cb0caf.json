@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 3,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "install-icon-27 завершился ошибкой: FAILED, exitCode=1. Причина — devicectl не принимает строку iPhone 15 Pro Max как идентификатор устройства.\n\nЯ исправил это новым commandId — install-icon-28: команда сама находит CoreDevice UUID подключённого iPhone 15 Pro Max через devicectl list devices, устанавливает новую сборку с иконкой, запускает WeatherFlow и проверяет процесс.\n\nНа свежей проверке RESULT install-icon-28 ещё не опубликован. Поэтому не повторяю установку и не отправляю finish раньше подтверждения.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-12T04:00:10.730Z"
+}
