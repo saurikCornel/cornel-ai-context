@@ -1,0 +1,17 @@
+{
+  "id": "ec23cfd8-e746-4d21-b591-84b57879d033",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "device-inspect-20260912-0457",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "febb2ef05f4d1c6678d9888136fd1e8bc03e6896",
+    "output": "--- XCODE ---\nXcode 26.1.1\nBuild version 17B100\n--- DEVICES ---\nName            Hostname                       Identifier                             State                Model                                     \n-------------   ----------------------------   ------------------------------------   ------------------   ------------------------------------------\nKatherineK      KatherineK.coredevice.local    07DABC8F-D032-52E9-B4C1-1E2E2052A4F8   unavailable          iPhone 16 Pro (iPhone17,1)                \niPhone          iPhone.coredevice.local        102310B0-86E3-5699-9244-D14A10CED058   available (paired)   iPhone 15 Pro Max (iPhone16,2)            \nДровенник (2)   Drovennik-2.coredevice.local   71F271F0-866E-5D22-9493-1B0594124B12   available (paired)   Apple TV 4K (3rd generation) (AppleTV14,1)\n--- PROJECT FILES ---\n--- GENERATORS ---\n/opt/homebrew/bin/xcodegen\n/opt/homebrew/bin/tuist\n--- STATUS ---\n",
+    "outputDigest": "c47d3a1da5120b8523175eb8b784a3ac663484e9cc26a93cb8f62732503060f1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T01:59:01.971Z"
+}
