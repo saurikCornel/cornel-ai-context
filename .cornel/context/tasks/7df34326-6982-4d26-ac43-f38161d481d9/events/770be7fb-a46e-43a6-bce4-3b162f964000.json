@@ -1,0 +1,17 @@
+{
+  "id": "770be7fb-a46e-43a6-bce4-3b162f964000",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-alert-20260912-0630",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f0913565f949225d10d8149fa514a806831653ea",
+    "output": "Готово: для кнопки «Войти» добавлен alert при незаполненном логине и/или пароле. Сохранена тёмная оранжево-красная тема. Проверки на текущем head: физическая сборка iPhone SUCCEEDED (exitCode 0), установка на iPhone 15 Pro Max SUCCEEDED (exitCode 0), запуск приложения SUCCEEDED (exitCode 0).",
+    "outputDigest": "079a10a98466d6b68d554fb2804f1270ac1e2113786c357d52bf1e08e9c1724c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-12T03:15:24.426Z"
+}

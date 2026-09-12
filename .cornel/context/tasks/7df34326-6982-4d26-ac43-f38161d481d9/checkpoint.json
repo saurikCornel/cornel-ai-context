@@ -2,8 +2,8 @@
   "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
   "branch": "cornel/7df34326-6982-4d26-ac43-f38161d481d9",
   "headSha": "f0913565f949225d10d8149fa514a806831653ea",
-  "status": "WAITING_CHATGPT",
-  "summary": "Установка версии с алертом подтверждена: SUCCEEDED, exitCode 0.\n\nДальше я отправил запуск именно этой сборки на iPhone 15 Pro Max. На момент свежей проверки worker ещё не опубликовал RECEIVED/RESULT для запуска, поэтому я не дублирую команду и не отправляю finish раньше подтверждения.\n\n",
+  "status": "DONE",
+  "summary": "Готово. Версия с алертом успешно:\n\nсобрана;\n\nустановлена на iPhone 15 Pro Max;\n\nзапущена на нём.\n\nПоследний запуск подтверждён: SUCCEEDED, exitCode 0; worker отдельно сообщил, что приложение pro.cornel.Delete2 запущено.\n\nfinish отправлен.\n\n",
   "commands": [
     {
       "commandId": "inspect-20260912-0445",
@@ -160,7 +160,13 @@
       "status": "SUCCEEDED",
       "headSha": "f0913565f949225d10d8149fa514a806831653ea",
       "exitCode": 0
+    },
+    {
+      "commandId": "finish-alert-20260912-0630",
+      "status": "SUCCEEDED",
+      "headSha": "f0913565f949225d10d8149fa514a806831653ea",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-12T03:14:51.069Z"
+  "createdAt": "2026-09-12T03:15:29.071Z"
 }

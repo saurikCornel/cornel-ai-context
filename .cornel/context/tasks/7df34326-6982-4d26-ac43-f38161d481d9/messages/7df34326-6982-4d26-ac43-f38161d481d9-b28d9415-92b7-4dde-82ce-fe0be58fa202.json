@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Готово. Версия с алертом успешно:\n\nсобрана;\n\nустановлена на iPhone 15 Pro Max;\n\nзапущена на нём.\n\nПоследний запуск подтверждён: SUCCEEDED, exitCode 0; worker отдельно сообщил, что приложение pro.cornel.Delete2 запущено.\n\nfinish отправлен.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-12T03:15:29.070Z"
+}
