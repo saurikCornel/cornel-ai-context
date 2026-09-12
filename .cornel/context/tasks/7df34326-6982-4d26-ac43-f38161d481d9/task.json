@@ -1,7 +1,7 @@
 {
   "id": "7df34326-6982-4d26-ac43-f38161d481d9",
   "projectId": "f4c28f22-4628-4a71-8d9c-8cc083d03ff0",
-  "model": "current",
+  "model": "Последняя",
   "issueRepo": "saurikCornel/cornel-ai-context",
   "title": "Напиши экран авторизации на swiftui",
   "prompt": "Напиши экран авторизации на swiftui",
@@ -9,11 +9,12 @@
   "baseSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
   "status": "DONE",
   "createdAt": "2026-09-12T01:37:48.747Z",
-  "updatedAt": "2026-09-12T01:48:54.128Z",
+  "updatedAt": "2026-09-12T01:57:24.633Z",
   "issue": 1,
   "chatUrl": "https://chatgpt.com/c/6aa4acfe-2058-83ed-9cc9-ac3561ebe951",
   "error": null,
   "attentionReason": null,
   "statusChecks": 0,
-  "currentHead": "febb2ef05f4d1c6678d9888136fd1e8bc03e6896"
+  "currentHead": "febb2ef05f4d1c6678d9888136fd1e8bc03e6896",
+  "workspaceSyncedSha": "febb2ef05f4d1c6678d9888136fd1e8bc03e6896"
 }
