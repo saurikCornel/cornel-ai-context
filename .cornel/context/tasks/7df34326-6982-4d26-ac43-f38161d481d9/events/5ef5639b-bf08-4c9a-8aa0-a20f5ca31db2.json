@@ -1,0 +1,11 @@
+{
+  "id": "5ef5639b-bf08-4c9a-8aa0-a20f5ca31db2",
+  "taskId": "7df34326-6982-4d26-ac43-f38161d481d9",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "device-build-alert-20260912-0623",
+    "headSha": "f0913565f949225d10d8149fa514a806831653ea"
+  },
+  "createdAt": "2026-09-12T03:11:14.311Z"
+}
