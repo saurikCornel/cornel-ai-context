@@ -1,0 +1,28 @@
+{
+  "id": "d7c27615-5485-48c4-8db7-4b9c6219aa97",
+  "projectId": "f4c28f22-4628-4a71-8d9c-8cc083d03ff0",
+  "effort": "current",
+  "agent": "chatgpt",
+  "attachments": [],
+  "office": {
+    "kind": "audit",
+    "role": "auditor",
+    "workerId": "auditor",
+    "goalId": "4c84f39c-c599-49ea-aac3-c0c869cd6b41",
+    "base": {
+      "": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Аудит: Надо короче сделать приложение по курс битка на RN, и советы какие вал",
+  "prompt": "Ты — Аудитор, аудитор AI-офиса проекта «Delete2». \n\nТестировщик принял результат задания:\nНадо короче сделать приложение по курс битка на RN, и советы какие валюты покупать\n\nКарточки: Базовый React Native проект; Курсы и рекомендации; Экран курса Bitcoin; Интеграция и финальная проверка.\nЗаключения проверок:\n- Тестировщик PASS: Приёмка завершена. Проверены TypeScript typecheck, Jest (5 suites, 16/16 tests passed), ESLint (0 errors, 2 неблокирующих warning), production iOS JS bundle и live CoinGecko API (HTTP 200, возвращены BTC/ETH/BNB/XRP/SOL). По коду подтверждены реальный источник данных вместо mock, курс Bitcoin, измен\n… (обрезано)\n\nПроведи финальный аудит ветки офиса cornel/office: качество, безопасность (секреты, опасные команды, права), соответствие правилам проекта (AGENTS.md, .cornel), полнота относительно ТЗ, риски; для текстов и документов — точность, целостность, отсутствие противоречий. Проверяй фактами: команды worker, чтение файлов. Ничего не меняй сам. Ответь блоком:\n```json\n{\"cornelReview\":1,\"verdict\":\"PASS\",\"summary\":\"что проверено и что найдено\",\"tasks\":[{\"title\":\"Короткое название дефекта\",\"description\":\"Что исправить, где, как проверить\",\"priority\":\"high\"}]}\n```\nverdict PASS — результат принят и готов к слиянию в основную ветку; FAIL — есть дефекты: перечисли их в tasks как отдельные карточки для работников (каждая — один дефект, с шагами проверки). При PASS tasks пустой.\nЗаверши ответ CORNEL_AI_YIELD.",
+  "branch": "cornel/d7c27615-5485-48c4-8db7-4b9c6219aa97",
+  "baseSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+  "workspaceSyncedSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+  "status": "CREATING",
+  "createdAt": "2026-09-15T23:31:39.111Z",
+  "updatedAt": "2026-09-15T23:31:39.111Z",
+  "issue": null,
+  "chatUrl": null
+}

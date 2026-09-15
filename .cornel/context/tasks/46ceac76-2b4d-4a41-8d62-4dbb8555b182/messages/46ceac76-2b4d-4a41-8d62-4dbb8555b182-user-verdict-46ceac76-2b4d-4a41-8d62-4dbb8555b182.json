@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"cornelReview\":1,\"verdict\":\"PASS\",\"summary\":\"Приёмка завершена. Проверены TypeScript typecheck, Jest (5 suites, 16/16 tests passed), ESLint (0 errors, 2 неблокирующих warning), production iOS JS bundle и live CoinGecko API (HTTP 200, возвращены BTC/ETH/BNB/XRP/SOL). По коду подтверждены реальный источник данных вместо mock, курс Bitcoin, изменение за 24 часа, время обновления, pull-to-refresh/кнопка обновления, список информационных рекомендаций, обработка сетевой ошибки и успешный retry, а также дисклеймер о неперсонализированном характере информации. Исходники при проверке не изменялись; рабочая копия осталась чистой. Критических дефектов по ТЗ не найдено.\",\"tasks\":[]}\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T23:31:36.621Z"
+}
