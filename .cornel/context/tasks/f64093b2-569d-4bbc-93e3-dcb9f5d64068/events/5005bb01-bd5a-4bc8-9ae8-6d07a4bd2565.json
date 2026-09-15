@@ -1,0 +1,12 @@
+{
+  "id": "5005bb01-bd5a-4bc8-9ae8-6d07a4bd2565",
+  "taskId": "f64093b2-569d-4bbc-93e3-dcb9f5d64068",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "ui-check-3",
+    "operation": "run",
+    "command": "test -x node_modules/.bin/jest || npm ci; npm test -- --runInBand && npm run typecheck && npm run lint"
+  },
+  "createdAt": "2026-09-15T22:42:40.412Z"
+}

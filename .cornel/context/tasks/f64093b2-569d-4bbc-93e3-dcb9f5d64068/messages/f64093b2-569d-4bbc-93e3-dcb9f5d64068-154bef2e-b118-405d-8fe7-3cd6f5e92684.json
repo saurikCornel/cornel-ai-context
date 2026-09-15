@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Исправил именно тесты: больше нет JSON.stringify() по дереву с RefreshControl, а кнопка обновления ищется по accessibility-пропам независимо от внутренней реализации Pressable. Рабочую логику экрана и сервисы не менял.\n\nТеперь повторяю полный набор JS/TS-проверок; зависимости переустанавливаются только если локально отсутствуют.\n\nJSON\n{\"version\":1,\"taskId\":\"f64093b2-569d-4bbc-93e3-dcb9f5d64068\",\"commandId\":\"ui-check-3\",\"operation\":\"run\",\"headSha\":\"f81de4db247e23464281c1ceadae37312389ea38\",\"command\":\"test -x node_modules/.bin/jest || npm ci; npm test -- --runInBand && npm run typecheck && npm run lint\",\"timeoutSeconds\":900}\n\nСводка: исправлен __tests__/HomeScreen.test.tsx; предыдущая ошибка локализована в тестовом коде; подтверждения успешных проверок пока нет. После RESULT при успехе перейду к платформенной проверке iOS/Android.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T22:42:38.940Z"
+}
