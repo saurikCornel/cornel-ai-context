@@ -1,0 +1,12 @@
+{
+  "id": "be5d8f43-647b-4538-96ba-dae9057ee8ae",
+  "taskId": "2eba6f70-4587-4bdb-8b16-7232290fde9a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "audit-inventory-20260915-2233",
+    "operation": "run",
+    "command": "git status --short --branch; echo '=== APP ==='; git -C app status --short --branch; git -C app ls-files | head -n 240; echo '=== SERVER ==='; git -C server status --short --branch; git -C server ls-files | head -n 240"
+  },
+  "createdAt": "2026-09-15T19:34:31.660Z"
+}
