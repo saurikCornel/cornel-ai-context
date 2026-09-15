@@ -1,0 +1,12 @@
+{
+  "id": "af7ddc78-823f-4b10-9a3e-2a105730037e",
+  "taskId": "7ef3b31e-5074-459c-bea0-084ee0dbc42b",
+  "type": "RECEIVED",
+  "text": "Команда ожидает разрешения в приложении",
+  "detail": {
+    "commandId": "blender-prereq-1",
+    "operation": "run",
+    "command": "echo '=== uvx ==='; command -v uvx || true; uvx --version 2>/dev/null || true; echo '=== python ==='; command -v python3 || true; python3 --version 2>/dev/null || true; echo '=== homebrew ==='; command -v brew || true; brew --version 2>/dev/null | head -1 || true; echo '=== blender ==='; if [ -x '/Applications/Blender.app/Contents/MacOS/Blender' ]; then echo '/Applications/Blender.app/Contents/MacOS/Blender'; '/Applications/Blender.app/Contents/MacOS/Blender' --version 2>/dev/null | head -1; else echo 'Blender app not found in /Applications'; fi"
+  },
+  "createdAt": "2026-09-15T23:19:18.374Z"
+}

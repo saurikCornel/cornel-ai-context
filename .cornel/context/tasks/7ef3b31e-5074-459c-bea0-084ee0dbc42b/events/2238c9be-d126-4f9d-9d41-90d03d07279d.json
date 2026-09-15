@@ -1,0 +1,11 @@
+{
+  "id": "2238c9be-d126-4f9d-9d41-90d03d07279d",
+  "taskId": "7ef3b31e-5074-459c-bea0-084ee0dbc42b",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "blender-prereq-1",
+    "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2"
+  },
+  "createdAt": "2026-09-15T23:19:22.365Z"
+}
