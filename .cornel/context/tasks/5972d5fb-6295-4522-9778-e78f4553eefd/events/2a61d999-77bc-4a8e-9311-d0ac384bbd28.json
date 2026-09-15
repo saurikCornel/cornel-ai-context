@@ -1,0 +1,12 @@
+{
+  "id": "2a61d999-77bc-4a8e-9311-d0ac384bbd28",
+  "taskId": "5972d5fb-6295-4522-9778-e78f4553eefd",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "integration-verify-3",
+    "operation": "run",
+    "command": "set -o pipefail; printf '\\n=== TYPECHECK ===\\n'; npm run typecheck && printf '\\n=== LINT ===\\n' && npm run lint && printf '\\n=== TESTS ===\\n' && npm test -- --runInBand"
+  },
+  "createdAt": "2026-09-15T22:50:57.044Z"
+}

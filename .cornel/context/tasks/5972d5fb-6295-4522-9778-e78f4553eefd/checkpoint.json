@@ -3,7 +3,7 @@
   "branch": "cornel/5972d5fb-6295-4522-9778-e78f4553eefd",
   "headSha": "ae219399e928ca8d8ba4293e902463d9950b9621",
   "status": "WAITING_CHATGPT",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-2\",\"operation\":\"run\",\"headSha\":\"ae219399e928ca8d8ba4293e902463d9950b9621\",\"command\":\"set -o pipefail; npm ci && printf '\\\\n=== TYPECHECK ===\\\\n' && npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":1200}\n\nСводка: код не менялся; причина предыдущего сбоя — отсутствующие локальные зависимости, а не ошибка интеграции. Следующий шаг — по RESULT либо точечно исправить реальные ошибки компиляции/тестов, либо завершить задачу.\n\n",
+  "summary": "Исправления записаны. Повторяю только проверки, не повторяя уже успешный npm ci.\n\nJSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-3\",\"operation\":\"run\",\"headSha\":\"4f52ab6ccda9950f85e82615d26b3b8d753d0012\",\"command\":\"set -o pipefail; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":600}\n\nСводка: исправлены интеграционный импорт и тип состояния экрана; service-тесты приведены к Jest; бизнес-логика marketService и рекомендаций не менялась. Жду RESULT worker; при успехе перейду к финальной проверке/finish, при ошибке исправлю конкретную причину.\n\n",
   "commands": [
     {
       "commandId": "integration-inspect-1",
@@ -16,7 +16,13 @@
       "status": "FAILED",
       "headSha": "ae219399e928ca8d8ba4293e902463d9950b9621",
       "exitCode": 127
+    },
+    {
+      "commandId": "integration-verify-2",
+      "status": "FAILED",
+      "headSha": "ae219399e928ca8d8ba4293e902463d9950b9621",
+      "exitCode": 2
     }
   ],
-  "createdAt": "2026-09-15T22:48:38.535Z"
+  "createdAt": "2026-09-15T22:50:56.144Z"
 }

@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Исправления записаны. Повторяю только проверки, не повторяя уже успешный npm ci.\n\nJSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-3\",\"operation\":\"run\",\"headSha\":\"4f52ab6ccda9950f85e82615d26b3b8d753d0012\",\"command\":\"set -o pipefail; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":600}\n\nСводка: исправлены интеграционный импорт и тип состояния экрана; service-тесты приведены к Jest; бизнес-логика marketService и рекомендаций не менялась. Жду RESULT worker; при успехе перейду к финальной проверке/finish, при ошибке исправлю конкретную причину.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T22:50:56.133Z"
+}
