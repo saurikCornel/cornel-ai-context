@@ -1,0 +1,11 @@
+{
+  "id": "64f6da6f-39d5-44af-8794-33a7c078e12f",
+  "taskId": "d7c27615-5485-48c4-8db7-4b9c6219aa97",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "audit-final-2",
+    "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2"
+  },
+  "createdAt": "2026-09-15T23:33:27.587Z"
+}

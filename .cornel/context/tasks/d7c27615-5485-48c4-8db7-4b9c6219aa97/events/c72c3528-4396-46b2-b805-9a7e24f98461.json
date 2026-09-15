@@ -1,0 +1,17 @@
+{
+  "id": "c72c3528-4396-46b2-b805-9a7e24f98461",
+  "taskId": "d7c27615-5485-48c4-8db7-4b9c6219aa97",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "audit-final-2",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+    "output": "=== DIFF CHECK VS MAIN (CRLF-AWARE) ===\n=== CHANGED FILES VS MAIN ===\nA\t.bundle/config\nA\t.eslintrc.js\nM\t.gitignore\nA\t.prettierrc.js\nA\t.watchmanconfig\nA\tApp.tsx\nA\tGemfile\nA\tREADME.md\nA\t__tests__/App.test.tsx\nA\t__tests__/HomeScreen.test.tsx\nA\t__tests__/marketTypes.test.ts\nA\tandroid/app/build.gradle\nA\tandroid/app/debug.keystore\nA\tandroid/app/proguard-rules.pro\nA\tandroid/app/src/main/AndroidManifest.xml\nA\tandroid/app/src/main/java/com/delete2/MainActivity.kt\nA\tandroid/app/src/main/java/com/delete2/MainApplication.kt\nA\tandroid/app/src/main/res/drawable/rn_edit_text_material.xml\nA\tandroid/app/src/main/res/mipmap-hdpi/ic_launcher.png\nA\tandroid/app/src/main/res/mipmap-hdpi/ic_launcher_round.png\nA\tandroid/app/src/main/res/mipmap-mdpi/ic_launcher.png\nA\tandroid/app/src/main/res/mipmap-mdpi/ic_launcher_round.png\nA\tandroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png\nA\tandroid/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png\nA\tandroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png\nA\tandroid/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png\nA\tandroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png\nA\tandroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png\nA\tandroid/app/src/main/res/values/strings.xml\nA\tandroid/app/src/main/res/values/styles.xml\nA\tandroid/build.gradle\nA\tandroid/gradle.properties\nA\tandroid/gradle/wrapper/gradle-wrapper.jar\nA\tandroid/gradle/wrapper/gradle-wrapper.properties\nA\tandroid/gradlew\nA\tandroid/gradlew.bat\nA\tandroid/settings.gradle\nA\tapp.json\nA\tbabel.config.js\nA\tindex.js\nA\tios/.xcode.env\nA\tios/Delete2.xcodeproj/project.pbxproj\nA\tios/Delete2.xcodeproj/xcshareddata/xcschemes/Delete2.xcscheme\nA\tios/Delete2/AppDelegate.swift\nA\tios/Delete2/Images.xcassets/AppIcon.appiconset/Contents.json\nA\tios/Delete2/Images.xcassets/Contents.json\nA\tios/Delete2/Info.plist\nA\tios/Delete2/LaunchScreen.storyboard\nA\tios/Delete2/PrivacyInfo.xcprivacy\nA\tios/Podfile\nA\tjest.config.js\nA\tmetro.config.js\nA\tpackage-lock.json\nA\tpackage.json\nA\tsrc/components/MarketPriceCard.tsx\nA\tsrc/components/RecommendationCard.tsx\nA\tsrc/components/SectionCard.tsx\nA\tsrc/components/index.ts\nA\tsrc/hooks/useMarketData.ts\nA\tsrc/models/market.ts\nA\tsrc/screens/HomeScreen.tsx\nA\tsrc/screens/index.ts\nA\tsrc/services/__tests__/marketService.test.ts\nA\tsrc/services/__tests__/recommendation.test.ts\nA\tsrc/services/index.ts\nA\tsrc/services/marketService.ts\nA\tsrc/services/recommendation.ts\nA\tsrc/types/index.ts\nA\tsrc/types/market.ts\nA\ttsconfig.json\n=== TRACKED SECRET-LIKE FILE NAMES ===\n=== POTENTIALLY DANGEROUS CODE FILES ===\n=== ANDROID PERMISSIONS ===\n3:    <uses-permission android:name=\"android.permission.INTERNET\" />\n=== IOS PRIVACY USAGE KEYS ===\n37:\t<key>NSLocationWhenInUseUsageDescription</key>\n=== TYPECHECK ===\n\n> Delete2@0.0.1 typecheck\n> tsc --noEmit\n\nsh: tsc: command not found\n",
+    "outputDigest": "bd19f8e6e68cc15e871551569aa0595246495eb59e5718e7478bd22a761c05e1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T23:33:30.214Z"
+}
