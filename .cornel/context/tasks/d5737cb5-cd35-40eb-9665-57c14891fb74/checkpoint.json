@@ -3,14 +3,20 @@
   "branch": "cornel/d5737cb5-cd35-40eb-9665-57c14891fb74",
   "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
   "status": "WAITING_CHATGPT",
-  "summary": "package.json подтверждает, что TypeScript действительно является devDependency и для проверки предусмотрен штатный npm run typecheck. Значит, предыдущий FAIL — проблема окружения worker, а не дефект приложения. Устанавливаю зависимости строго по lockfile и продолжаю только ещё не выполненные проверки; успешную проверку NSLocation не повторяю.\n\nJSON\n{\"version\":1,\"taskId\":\"d5737cb5-cd35-40eb-9665-57c14891fb74\",\"commandId\":\"acceptance-2\",\"operation\":\"run\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"command\":\"set -e\\nprintf '\\\\n=== INSTALL DEPENDENCIES ===\\\\n'\\nnpm ci\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== JEST ===\\\\n'\\nnpm test -- --runInBand\\nprintf '\\\\n=== LINT ===\\\\n'\\nnpm run lint\\nprintf '\\\\n=== PRODUCTION IOS JS BUNDLE ===\\\\n'\\nrm -rf /tmp/delete2-acceptance-assets /tmp/delete2-acceptance.jsbundle\\nnpx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output /tmp/delete2-acceptance.jsbundle --assets-dest /tmp/delete2-acceptance-assets\\nprintf '\\\\n=== LIVE COINGECKO ===\\\\n'\\nnode -e \\\"fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana,binancecoin,ripple&order=market_cap_desc&sparkline=false&price_change_percentage=24h').then(async r=>{console.log('HTTP',r.status);if(!r.ok)process.exit(2);const x=await r.json();console.log(x.map(v=>v.symbol.toUpperCase()+':'+v.current_price).join(' | '));const ids=new Set(x.map(v=>v.id));for(const id of ['bitcoin','ethereum','solana','binancecoin','ripple'])if(!ids.has(id))throw new Error('missing '+id)}).catch(e=>{console.error(e);process.exit(1)})\\\"\\nprintf '\\\\n=== STATUS AFTER ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":1200}\n\nЖду результат worker; после него вынесу итоговый PASS/FAIL по ТЗ.\n\n",
+  "summary": "JSON\n{\"cornelReview\":1,\"verdict\":\"PASS\",\"summary\":\"Приёмка завершена. Проверены ключевые пункты ТЗ: React Native/TypeScript-приложение использует реальные данные CoinGecko для BTC, ETH, BNB, XRP и SOL; главный экран показывает курс Bitcoin, изменение за 24 часа, время обновления, ручное обновление и pull-to-refresh; присутствуют состояния загрузки, ошибки, пустых данных и повторной загрузки; рекомендации сформулированы как информационные сигналы «Интересно наблюдать / Нейтрально / Повышенный риск» и сопровождаются дисклеймером, без персонализированного указания что покупать. Лишний NSLocation-ключ в iOS Info.plist отсутствует. Фактический прогон worker: typecheck успешен; Jest — 5/5 suites и 16/16 tests passed; ESLint — 0 errors и 2 неблокирующих warning; production iOS JS bundle собран; live CoinGecko вернул HTTP 200 и все 5 требуемых активов; рабочее дерево после проверки чистое. Предыдущая ошибка typecheck была вызвана отсутствующими node_modules в рабочей копии и устранена npm ci без изменений исходников.\",\"tasks\":[]}\n\nИзменённые файлы: нет. Проверки завершены успешно; следующий шаг — завершить карточку тестирования.\n\nJSON\n{\"version\":1,\"taskId\":\"d5737cb5-cd35-40eb-9665-57c14891fb74\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"message\":\"Тестировщик PASS. Проверены typecheck, Jest (5 suites, 16/16), ESLint (0 errors, 2 warning), production iOS JS bundle, live CoinGecko HTTP 200 для BTC/ETH/BNB/XRP/SOL, отсутствие NSLocation в Info.plist и чистота рабочего дерева. По коду подтверждены реальные рыночные данные, BTC-курс и 24h изменение, обновление/pull-to-refresh, состояния loading/error/empty/retry и информационные неперсонализированные рекомендации. Дефектов по ТЗ не найдено.\"}\n\n",
   "commands": [
     {
       "commandId": "acceptance-1",
       "status": "FAILED",
       "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
       "exitCode": 1
+    },
+    {
+      "commandId": "acceptance-2",
+      "status": "SUCCEEDED",
+      "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-15T23:39:51.707Z"
+  "createdAt": "2026-09-15T23:40:43.870Z"
 }
