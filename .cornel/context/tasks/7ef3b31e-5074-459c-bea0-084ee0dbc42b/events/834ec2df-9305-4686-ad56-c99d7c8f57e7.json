@@ -1,0 +1,17 @@
+{
+  "id": "834ec2df-9305-4686-ad56-c99d7c8f57e7",
+  "taskId": "7ef3b31e-5074-459c-bea0-084ee0dbc42b",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "blender-install-1",
+    "status": "CANCELLED",
+    "exitCode": null,
+    "reason": "cancelled",
+    "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+    "output": "==> Auto-updating Homebrew...\nAdjust how often this is run with `$HOMEBREW_AUTO_UPDATE_SECS` or disable with\n`$HOMEBREW_NO_AUTO_UPDATE=1`. Hide these hints with `$HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).\n",
+    "outputDigest": "09dbdb1f37ce7440425967ade0fa46cc6e5b57621726ae4986cbb8b0ea2f8b76",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T23:19:45.641Z"
+}

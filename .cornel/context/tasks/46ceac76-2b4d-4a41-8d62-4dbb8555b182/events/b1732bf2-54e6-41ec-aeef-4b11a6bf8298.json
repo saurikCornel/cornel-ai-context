@@ -1,0 +1,12 @@
+{
+  "id": "b1732bf2-54e6-41ec-aeef-4b11a6bf8298",
+  "taskId": "46ceac76-2b4d-4a41-8d62-4dbb8555b182",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "review-verify-2",
+    "operation": "run",
+    "command": "set -e\nprintf '%s\\n' '=== INSTALL DEPENDENCIES ==='\nnpm ci\nprintf '%s\\n' '=== TYPECHECK ==='\nnpm run typecheck\nprintf '%s\\n' '=== TESTS ==='\nnpm test -- --runInBand\nprintf '%s\\n' '=== LINT ==='\nnpm run lint\nprintf '%s\\n' '=== IOS JS BUNDLE ==='\nrm -rf /tmp/delete2-review-assets /tmp/delete2-review-main.jsbundle\nmkdir -p /tmp/delete2-review-assets\nnpx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output /tmp/delete2-review-main.jsbundle --assets-dest /tmp/delete2-review-assets\nprintf '%s\\n' '=== LIVE MARKET API ==='\nnode - <<'NODE'\nconst ids = 'bitcoin,ethereum,solana,binancecoin,ripple';\nconst url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${ids}&order=market_cap_desc&sparkline=false&price_change_percentage=24h`;\n(async () => {\n  try {\n    const r = await fetch(url);\n    console.log('HTTP', r.status);\n    if (!r.ok) return;\n    const data = await r.json();\n    console.log('assets', Array.isArray(data) ? data.map(x => x.id).join(',') : 'unexpected-payload');\n    const btc = Array.isArray(data) ? data.find(x => x.id === 'bitcoin') : null;\n    console.log('bitcoin_price_usd', btc?.current_price ?? 'missing');\n    console.log('bitcoin_change_24h', btc?.price_change_percentage_24h ?? 'missing');\n  } catch (e) {\n    console.log('LIVE_API_ERROR', e instanceof Error ? e.message : String(e));\n  }\n})();\nNODE\nprintf '%s\\n' '=== GIT STATUS AFTER ==='\ngit status --short"
+  },
+  "createdAt": "2026-09-15T23:19:45.955Z"
+}
