@@ -1,0 +1,17 @@
+{
+  "id": "88b37da1-19f4-4402-82b9-da1a1e4d6644",
+  "taskId": "2eba6f70-4587-4bdb-8b16-7232290fde9a",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-layout-20260915-2238",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "25b18735963b3085c07e9cc94470c4a13ff659d9",
+    "output": "=== APP META ===\ntrue\n25b18735963b3085c07e9cc94470c4a13ff659d9\n=== SERVER META ===\ntrue\n25b18735963b3085c07e9cc94470c4a13ff659d9\n=== PACKAGE MANIFESTS ===\n",
+    "outputDigest": "105e072733632cb3d608637f9b1f0204ad50c9e82f43641acae8a9975debd838",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T19:37:47.807Z"
+}
