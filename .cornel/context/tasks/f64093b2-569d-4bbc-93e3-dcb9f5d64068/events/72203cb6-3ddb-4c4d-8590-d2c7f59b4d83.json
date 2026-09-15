@@ -1,0 +1,11 @@
+{
+  "id": "72203cb6-3ddb-4c4d-8590-d2c7f59b4d83",
+  "taskId": "f64093b2-569d-4bbc-93e3-dcb9f5d64068",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "platform-check-1",
+    "output": "\n                        ▒▒▓▓▓▓▒▒\n                     ▒▓▓▓▒▒░░▒▒▓▓▓▒\n                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒\n                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓\n                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓\n                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓\n                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓\n                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓\n                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓\n                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒\n                     ▒▓▓▓▒░░░░▒▓▓▓▒\n                        ▒▒▓▓▓▓▒▒\n\n\n                Welcome to Metro v0.87.1\n              Fast - Scalable - Integrated\n\n\n WARN  Attempted to import the module \"/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f64093b2-569d-4bbc-93e3-dcb9f5d64068/node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags\" which is not listed in the \"exports\" of \"/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f64093b2-569d-4bbc-93e3-dcb9f5d64068/node_modules/react-native\" under the requested subpath \"./src/private/featureflags/ReactNativeFeatureFlags\". Falling back to file-based resolution. Consider updating the call site or asking the package maintainer(s) to expose this API.\nLOG:Writing bundle output to: /tmp/delete2-ios.jsbundle\nLOG:Done writing bundle output\nWarning: Assets destination folder is not set, skipping...\n\n                        ▒▒▓▓▓▓▒▒\n                     ▒▓▓▓▒▒░░▒▒▓▓▓▒\n                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒\n                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓\n                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓\n                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓\n                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓\n                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓\n                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓\n                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒\n                     ▒▓▓▓▒░░░░▒▓▓▓▒\n                        ▒▒▓▓▓▓▒▒\n\n\n                Welcome to Metro v0.87.1\n              Fast - Scalable - Integrated\n\n\n"
+  },
+  "createdAt": "2026-09-15T22:43:37.138Z"
+}
