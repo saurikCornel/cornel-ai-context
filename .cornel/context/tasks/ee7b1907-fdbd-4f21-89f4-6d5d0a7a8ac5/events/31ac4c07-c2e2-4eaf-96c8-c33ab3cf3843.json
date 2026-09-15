@@ -1,0 +1,11 @@
+{
+  "id": "31ac4c07-c2e2-4eaf-96c8-c33ab3cf3843",
+  "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "bootstrap-rn-2",
+    "output": "--- create React Native template ---\n- Downloading template\n✔ Downloading template\n- Copying template\n✔ Copying template\n- Processing template\n✔ Processing template\n✔ Dependencies installation skipped\n\u001b[0m\n  \n  \u001b[32mRun instructions for \u001b[1mAndroid\u001b[22m\u001b[39m:\n    • Have an Android emulator running (quickest way to get started), or a device connected.\n    • cd \"/tmp/delete2-rn.oGPWXf/app\" && npx react-native run-android\n  \n  \u001b[36mRun instructions for \u001b[1miOS\u001b[22m\u001b[39m:\n    • cd \"/tmp/delete2-rn.oGPWXf/app/ios\"\n    \n    • Install Cocoapods\n      • bundle install # you need to run this only once in your project.\n      • bundle exec pod install\n      • cd ..\n    \n    • npx react-native run-ios\n    \u001b[2m- or -\u001b[22m\n    • Open ../../../tmp/delete2-rn.oGPWXf/app/ios/Delete2.xcodeproj in Xcode or run \"xed -b ios\"\n    • Hit the Run button\n    \n  \u001b[35mRun instructions for \u001b[1mmacOS\u001b[22m\u001b[39m:\n    • See \u001b[4mhttps://microsoft.github.io/react-native-macos\u001b[24m for the latest up-to-date instructions.\n    \n  \u001b[0m\n--- copy scaffold while preserving Cornel technical files ---\n--- install dependencies ---\nnpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\nnpm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead\nnpm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead\n"
+  },
+  "createdAt": "2026-09-15T22:03:57.262Z"
+}
