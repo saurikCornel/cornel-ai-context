@@ -2,8 +2,8 @@
   "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
   "branch": "cornel/ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
   "headSha": "5639331ab4cfea0d36d288116a1f084e5e4bb367",
-  "status": "RUNNING",
-  "summary": "Опубликована финальная проверка verify-build-1 уже на зафиксированном commit: чистота дерева, npm ci, TypeScript, Jest, production Metro bundle и android assembleDebug.\n\nЕсли весь набор пройдёт, следующим сообщением отправлю finish. Если упадёт именно native build — разберу конкретную причину и исправлю её, не повторяя уже успешные проверки без необходимости.\n\nСводка: изменения опубликованы; typecheck/tests уже проходили до публикации; сейчас идёт проверка того же результата после commit и полноценная Android-сборка.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Причина падения подтверждена как нехватка места на диске во время Gradle-загрузок; код до этого этапа собирается Metro успешно.\n\nОтправил disk-check-1: он только измерит свободное место и размеры воспроизводимых кэшей, ничего не удаляя. После RESULT очищу минимально необходимый кэш и повторю только Android assembleDebug, не гоняя заново уже успешные typecheck/Jest/Metro.\n\nСводка: commit опубликован; typecheck, Jest и Metro успешны; Android build заблокирован диском, а не кодом; следующий шаг — точечная очистка по результату disk-check-1.\n\n",
   "commands": [
     {
       "commandId": "env-check-2",
@@ -25,10 +25,10 @@
     },
     {
       "commandId": "verify-build-1",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "5639331ab4cfea0d36d288116a1f084e5e4bb367",
-      "exitCode": null
+      "exitCode": 1
     }
   ],
-  "createdAt": "2026-09-15T22:05:11.555Z"
+  "createdAt": "2026-09-15T22:08:48.565Z"
 }
