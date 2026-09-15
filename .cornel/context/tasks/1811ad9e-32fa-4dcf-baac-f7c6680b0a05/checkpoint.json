@@ -1,9 +1,16 @@
 {
   "taskId": "1811ad9e-32fa-4dcf-baac-f7c6680b0a05",
   "branch": "cornel/1811ad9e-32fa-4dcf-baac-f7c6680b0a05",
-  "headSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
+  "headSha": "d742123f280b332e7486296b3ae0072aca34461c",
   "status": "WAITING_CHATGPT",
-  "summary": "Решение: добавлены модели рынка, сервис CoinGecko, информационная классификация по 24-часовой динамике, loading/error/refresh-хук, источник данных и инвестиционный дисклеймер. Экраны и App.tsx не менялись.\n\nИзменённые файлы: src/models/market.ts, src/services/marketService.ts, src/services/recommendation.ts, src/hooks/useMarketData.ts и два unit-теста. Сейчас отправляю worker проверку успешного ответа API, ошибки API и расчёта рекомендаций. Жду фактический RESULT; успех пока не объявляю.\n\nJSON\n{\"version\":1,\"taskId\":\"1811ad9e-32fa-4dcf-baac-f7c6680b0a05\",\"commandId\":\"market-tests-1\",\"operation\":\"run\",\"headSha\":\"d742123f280b332e7486296b3ae0072aca34461c\",\"command\":\"npx --yes tsx@4.20.5 --test src/services/__tests__/marketService.test.ts src/services/__tests__/recommendation.test.ts && echo '--- git status ---' && git status --short\",\"timeoutSeconds\":300}\n\n",
-  "commands": [],
-  "createdAt": "2026-09-15T22:38:20.735Z"
+  "summary": "Проверка завершена успешно: все 6 unit-тестов прошли, ошибок нет, рабочая копия чистая. Проверены успешный ответ API, HTTP-ошибка и все ветки расчёта рекомендаций. Отдельную RN-сборку сейчас объективно запускать не из чего: назначенная ветка всё ещё не содержит базового React Native-проекта, который параллельно создаётся другой карточкой.\n\nРешения: слой данных изолирован от UI; используется публичный CoinGecko API; рекомендации основаны только на прозрачных порогах изменения цены за 24 часа и прямо обозначены как информационные, без указаний «что покупать». Изменены только src/models, src/services, src/hooks и тесты; App.tsx и экраны не затронуты.\n\nСледующий шаг — завершить карточку для автоматического слияния в офисную ветку.\n\nJSON\n{\"version\":1,\"taskId\":\"1811ad9e-32fa-4dcf-baac-f7c6680b0a05\",\"commandId\":\"finish-market-data-1\",\"operation\":\"finish\",\"headSha\":\"d742123f280b332e7486296b3ae0072aca34461c\",\"message\":\"Реализован слой рыночных данных: CoinGecko API для BTC/ETH/SOL/BNB/XRP, модели, loading/error/refresh hook, прозрачные информационные рекомендации по 24h динамике, источник и дисклеймер. Экраны и App.tsx не менялись. Worker-проверка: 6/6 unit-тестов прошли, git status чистый. RN-сборка не запускалась, поскольку в назначенной ветке ещё отсутствует базовый React Native-проект и package.json; каркас создаётся параллельной карточкой.\"}\n\n",
+  "commands": [
+    {
+      "commandId": "market-tests-1",
+      "status": "SUCCEEDED",
+      "headSha": "d742123f280b332e7486296b3ae0072aca34461c",
+      "exitCode": 0
+    }
+  ],
+  "createdAt": "2026-09-15T22:38:49.578Z"
 }

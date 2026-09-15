@@ -1,0 +1,17 @@
+{
+  "id": "707eec87-a259-4ae3-a91d-53ce10fdd220",
+  "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-rn-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5639331ab4cfea0d36d288116a1f084e5e4bb367",
+    "output": "Базовый React Native/TypeScript проект готов и опубликован. Добавлены App.tsx, src/screens, src/components, src/services, src/types, тестовая конфигурация и интерфейсы MarketAsset/MarketQuote/MarketRecommendation. Проверки: typecheck прошёл; Jest 2/2 suites прошли; Metro production bundle собран; финальная проверка текущего commit завершилась FINAL_VERIFY_OK. Android assembleDebug не повторялся по указанию владельца. PR не требуется.",
+    "outputDigest": "c8e451997badf515020daed71b8555ff7abb3f66fbe2a4444d878d0915d56b5a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T22:38:47.098Z"
+}
