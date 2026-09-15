@@ -1,0 +1,12 @@
+{
+  "id": "f5c1bc80-130e-4f25-bf23-77051c7d1361",
+  "taskId": "f5108c84-c2c1-40d8-b069-9c7d4767c2ed",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-1",
+    "operation": "run",
+    "command": "git status --short && printf '\\n--- files ---\\n' && find . -maxdepth 3 -type f -not -path './.git/*' | sort | head -200"
+  },
+  "createdAt": "2026-09-15T23:59:10.822Z"
+}
