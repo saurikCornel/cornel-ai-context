@@ -1,0 +1,17 @@
+{
+  "id": "0aa008e6-47d8-49b5-a972-b9fadfc9eb3a",
+  "taskId": "093b6828-be08-4365-9740-b1406e4398eb",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "verify-location-1",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+    "output": "=== LOCATION KEYS ===\nOK: no NSLocation keys in Info.plist\n=== PLIST ===\nios/Delete2/Info.plist: OK\n=== TYPECHECK ===\n\n> Delete2@0.0.1 typecheck\n> tsc --noEmit\n\nsh: tsc: command not found\n",
+    "outputDigest": "4a924fcde4de8e7b2db4018d190f1cb92d79dac15a4ff72f64eba9498c39b604",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T23:36:57.006Z"
+}
