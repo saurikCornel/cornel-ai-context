@@ -3,14 +3,20 @@
   "branch": "cornel/093b6828-be08-4365-9740-b1406e4398eb",
   "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
   "status": "WAITING_CHATGPT",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"093b6828-be08-4365-9740-b1406e4398eb\",\"commandId\":\"verify-location-2\",\"operation\":\"run\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"command\":\"set -e\\nif [ ! -x node_modules/.bin/tsc ]; then\\n  echo '=== INSTALL DEPENDENCIES ==='\\n  npm ci\\nfi\\nprintf '%s\\\\n' '=== TYPECHECK ==='\\nnpm run typecheck\\nprintf '%s\\\\n' '=== JEST ==='\\nnpm test -- --runInBand\\nprintf '%s\\\\n' '=== LINT ==='\\nnpm run lint\\nprintf '%s\\\\n' '=== IOS PRODUCTION BUNDLE ==='\\nBUNDLE_DIR=\\\"$(mktemp -d)\\\"\\ntrap 'rm -rf \\\"$BUNDLE_DIR\\\"' EXIT\\nnpx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output \\\"$BUNDLE_DIR/main.jsbundle\\\" --assets-dest \\\"$BUNDLE_DIR/assets\\\"\\ntest -s \\\"$BUNDLE_DIR/main.jsbundle\\\"\\necho 'OK: production iOS bundle generated'\",\"timeoutSeconds\":900}\n\nСводка: лишний NSLocation* уже подтверждён отсутствующим, Info.plist валиден. Ошибка была инфраструктурной — отсутствовали npm-зависимости. Следующий шаг после RESULT — при успешных оставшихся проверках отправить finish.\n\n",
+  "summary": "Проверки прошли успешно: NSLocation* отсутствует, plist валиден, typecheck и все 16 тестов прошли, lint — без ошибок (2 существующих предупреждения), production iOS bundle собран. Карточка выполнена.\n\nJSON\n{\"version\":1,\"taskId\":\"093b6828-be08-4365-9740-b1406e4398eb\",\"commandId\":\"finish-location-1\",\"operation\":\"finish\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"message\":\"Удалён пустой NSLocationWhenInUseUsageDescription из ios/Delete2/Info.plist. Проверено: NSLocation* ключей нет, plutil OK, typecheck OK, Jest 5/5 suites и 16/16 tests passed, lint 0 errors (2 существующих warnings), production iOS bundle успешно собран.\"}\n\nСводка: изменён только ios/Delete2/Info.plist; лишняя декларация геолокации удалена; все требуемые проверки завершены успешно; следующий шаг — сборщик объединит ветку офиса.\n\n",
   "commands": [
     {
       "commandId": "verify-location-1",
       "status": "FAILED",
       "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
       "exitCode": 127
+    },
+    {
+      "commandId": "verify-location-2",
+      "status": "SUCCEEDED",
+      "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-15T23:37:17.438Z"
+  "createdAt": "2026-09-15T23:37:56.518Z"
 }

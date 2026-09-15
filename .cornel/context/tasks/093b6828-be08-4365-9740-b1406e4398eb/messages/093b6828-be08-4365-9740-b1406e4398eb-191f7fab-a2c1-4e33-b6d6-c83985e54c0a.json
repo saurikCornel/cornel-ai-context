@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверки прошли успешно: NSLocation* отсутствует, plist валиден, typecheck и все 16 тестов прошли, lint — без ошибок (2 существующих предупреждения), production iOS bundle собран. Карточка выполнена.\n\nJSON\n{\"version\":1,\"taskId\":\"093b6828-be08-4365-9740-b1406e4398eb\",\"commandId\":\"finish-location-1\",\"operation\":\"finish\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"message\":\"Удалён пустой NSLocationWhenInUseUsageDescription из ios/Delete2/Info.plist. Проверено: NSLocation* ключей нет, plutil OK, typecheck OK, Jest 5/5 suites и 16/16 tests passed, lint 0 errors (2 существующих warnings), production iOS bundle успешно собран.\"}\n\nСводка: изменён только ios/Delete2/Info.plist; лишняя декларация геолокации удалена; все требуемые проверки завершены успешно; следующий шаг — сборщик объединит ветку офиса.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T23:37:56.505Z"
+}
