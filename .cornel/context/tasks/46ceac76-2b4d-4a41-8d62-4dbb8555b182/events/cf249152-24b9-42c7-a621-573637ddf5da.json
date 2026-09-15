@@ -1,0 +1,17 @@
+{
+  "id": "cf249152-24b9-42c7-a621-573637ddf5da",
+  "taskId": "46ceac76-2b4d-4a41-8d62-4dbb8555b182",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "review-verify-1",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+    "output": "=== GIT STATUS BEFORE ===\n=== TYPECHECK ===\n\n> Delete2@0.0.1 typecheck\n> tsc --noEmit\n\nsh: tsc: command not found\n",
+    "outputDigest": "4acacfca74302d945d6dd4932f538a294b2c33f7c9af20167d5f3ec400f521b2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T23:19:30.618Z"
+}

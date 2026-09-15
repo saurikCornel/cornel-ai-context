@@ -1,0 +1,17 @@
+{
+  "id": "46a1eadb-3b58-4f88-8018-11efd2d99be1",
+  "taskId": "7ef3b31e-5074-459c-bea0-084ee0dbc42b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "blender-prereq-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+    "output": "=== uvx ===\n/opt/homebrew/bin/uvx\nuvx 0.8.15 (Homebrew 2025-09-03)\n=== python ===\n/usr/bin/python3\nPython 3.9.6\n=== homebrew ===\n/opt/homebrew/bin/brew\nHomebrew 6.0.22-114-ga40f00d\n=== blender ===\nBlender app not found in /Applications\n",
+    "outputDigest": "ecbd48dc6fe9afcb3a0be0d614fa9109a74ae7bd357b8aaa8e686f10d5efd626",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T23:19:25.288Z"
+}
