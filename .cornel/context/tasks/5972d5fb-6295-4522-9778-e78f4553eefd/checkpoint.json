@@ -1,9 +1,9 @@
 {
   "taskId": "5972d5fb-6295-4522-9778-e78f4553eefd",
   "branch": "cornel/5972d5fb-6295-4522-9778-e78f4553eefd",
-  "headSha": "ae219399e928ca8d8ba4293e902463d9950b9621",
+  "headSha": "4f52ab6ccda9950f85e82615d26b3b8d753d0012",
   "status": "WAITING_CHATGPT",
-  "summary": "Исправления записаны. Повторяю только проверки, не повторяя уже успешный npm ci.\n\nJSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-3\",\"operation\":\"run\",\"headSha\":\"4f52ab6ccda9950f85e82615d26b3b8d753d0012\",\"command\":\"set -o pipefail; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":600}\n\nСводка: исправлены интеграционный импорт и тип состояния экрана; service-тесты приведены к Jest; бизнес-логика marketService и рекомендаций не менялась. Жду RESULT worker; при успехе перейду к финальной проверке/finish, при ошибке исправлю конкретную причину.\n\n",
+  "summary": "Тип matcher исправлен без изменения логики сервиса. Повторяю полный набор проверок на новом commit.\n\nJSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-4\",\"operation\":\"run\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"command\":\"set -o pipefail; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":600}\n\nСводка: изменён только src/services/__tests__/marketService.test.ts; исправлена TypeScript-типизация проверки MarketServiceError; следующий шаг — при успешном RESULT отправить finish, при новой ошибке исправить её точечно.\n\n",
   "commands": [
     {
       "commandId": "integration-inspect-1",
@@ -22,7 +22,13 @@
       "status": "FAILED",
       "headSha": "ae219399e928ca8d8ba4293e902463d9950b9621",
       "exitCode": 2
+    },
+    {
+      "commandId": "integration-verify-3",
+      "status": "FAILED",
+      "headSha": "4f52ab6ccda9950f85e82615d26b3b8d753d0012",
+      "exitCode": 2
     }
   ],
-  "createdAt": "2026-09-15T22:50:56.144Z"
+  "createdAt": "2026-09-15T22:51:36.305Z"
 }

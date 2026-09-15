@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Тип matcher исправлен без изменения логики сервиса. Повторяю полный набор проверок на новом commit.\n\nJSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-4\",\"operation\":\"run\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"command\":\"set -o pipefail; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":600}\n\nСводка: изменён только src/services/__tests__/marketService.test.ts; исправлена TypeScript-типизация проверки MarketServiceError; следующий шаг — при успешном RESULT отправить finish, при новой ошибке исправить её точечно.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T22:51:36.297Z"
+}
