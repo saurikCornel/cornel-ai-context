@@ -1,0 +1,12 @@
+{
+  "id": "14e738fc-0fff-436f-aad6-ca3760788a41",
+  "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-build-1",
+    "operation": "run",
+    "command": "set -euo pipefail\nprintf '%s\\n' '--- clean status ---'\ngit status --short\nprintf '%s\\n' '--- npm ci ---'\nnpm ci\nprintf '%s\\n' '--- typecheck ---'\nnpm run typecheck\nprintf '%s\\n' '--- tests ---'\nnpm test -- --runInBand\nprintf '%s\\n' '--- metro production bundle ---'\nrm -rf /tmp/delete2-bundle /tmp/delete2-assets\nmkdir -p /tmp/delete2-bundle /tmp/delete2-assets\nnpx react-native bundle --platform android --dev false --entry-file index.js --bundle-output /tmp/delete2-bundle/index.android.bundle --assets-dest /tmp/delete2-assets\nprintf '%s\\n' '--- android assembleDebug ---'\ncd android\n./gradlew assembleDebug\nprintf '%s\\n' '--- final status ---'\ncd ..\ngit status --short"
+  },
+  "createdAt": "2026-09-15T22:05:04.703Z"
+}
