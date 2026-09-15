@@ -3,7 +3,14 @@
   "branch": "cornel/7ef3b31e-5074-459c-bea0-084ee0dbc42b",
   "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
   "status": "WAITING_CHATGPT",
-  "summary": "По README blender-mcp запускается через uvx blender-mcp; нужны Blender 3.0+, Python 3.10+ и uv. Отдельные секреты для базового локального подключения не требуются. Сервер соединяется с аддоном Blender по localhost:9876; также доступен безопасный режим BLENDER_MCP_SAFE_MODE=1.\n\nСначала проверю, что уже установлено на Mac: uv/uvx, Python, Homebrew и Blender. Ничего эта команда не устанавливает и не меняет.\n\nСводка: решения — первым подключаем blender-mcp; изменённые файлы — нет; проверки — назначение и head ветки подтверждены, README изучен; следующий шаг — после результата worker установить только отсутствующие предпосылки либо сразу зарегистрировать MCP-сервер.\n\nJSON\n{\"version\":1,\"taskId\":\"7ef3b31e-5074-459c-bea0-084ee0dbc42b\",\"commandId\":\"blender-prereq-1\",\"operation\":\"run\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"command\":\"echo '=== uvx ==='; command -v uvx || true; uvx --version 2>/dev/null || true; echo '=== python ==='; command -v python3 || true; python3 --version 2>/dev/null || true; echo '=== homebrew ==='; command -v brew || true; brew --version 2>/dev/null | head -1 || true; echo '=== blender ==='; if [ -x '/Applications/Blender.app/Contents/MacOS/Blender' ]; then echo '/Applications/Blender.app/Contents/MacOS/Blender'; '/Applications/Blender.app/Contents/MacOS/Blender' --version 2>/dev/null | head -1; else echo 'Blender app not found in /Applications'; fi\",\"timeoutSeconds\":300}\n\n",
-  "commands": [],
-  "createdAt": "2026-09-15T23:19:17.353Z"
+  "summary": "Сводка: uvx готов; отдельный Python не нужен; Blender отсутствует. Следующий шаг — установить Blender, затем поставить MCP-аддон и зарегистрировать сервер.\n\nJSON\n{\"version\":1,\"taskId\":\"7ef3b31e-5074-459c-bea0-084ee0dbc42b\",\"commandId\":\"blender-install-1\",\"operation\":\"run\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"command\":\"brew install --cask blender\",\"timeoutSeconds\":1200}\n\n",
+  "commands": [
+    {
+      "commandId": "blender-prereq-1",
+      "status": "SUCCEEDED",
+      "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+      "exitCode": 0
+    }
+  ],
+  "createdAt": "2026-09-15T23:19:39.194Z"
 }

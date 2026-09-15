@@ -1,0 +1,12 @@
+{
+  "id": "ae2c88c0-cccb-4454-bd0c-2b826a9f47c3",
+  "taskId": "7ef3b31e-5074-459c-bea0-084ee0dbc42b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "blender-install-1",
+    "operation": "run",
+    "command": "brew install --cask blender"
+  },
+  "createdAt": "2026-09-15T23:19:40.193Z"
+}

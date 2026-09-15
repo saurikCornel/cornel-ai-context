@@ -1,0 +1,11 @@
+{
+  "id": "cf0ad76f-7ec0-49a2-8974-df57879ead60",
+  "taskId": "7ef3b31e-5074-459c-bea0-084ee0dbc42b",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "blender-install-1",
+    "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2"
+  },
+  "createdAt": "2026-09-15T23:19:40.816Z"
+}
