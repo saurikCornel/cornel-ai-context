@@ -1,0 +1,12 @@
+{
+  "id": "790decae-77a9-451a-8594-1b5f4c2a0c80",
+  "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "finish-rn-6",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-15T22:37:51.308Z"
+}
