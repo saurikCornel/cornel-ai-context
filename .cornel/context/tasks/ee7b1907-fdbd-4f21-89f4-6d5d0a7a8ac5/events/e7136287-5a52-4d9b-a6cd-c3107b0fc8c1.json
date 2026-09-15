@@ -1,0 +1,12 @@
+{
+  "id": "e7136287-5a52-4d9b-a6cd-c3107b0fc8c1",
+  "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "env-check-2",
+    "operation": "run",
+    "command": "set -e\nprintf '%s\\n' '--- git status ---'\ngit status --short\nprintf '%s\\n' '--- node ---'\nnode --version\nprintf '%s\\n' '--- npm ---'\nnpm --version\nprintf '%s\\n' '--- ruby ---'\nruby --version || true\nprintf '%s\\n' '--- xcode ---'\nxcodebuild -version || true\nprintf '%s\\n' '--- root files ---'\nfind . -maxdepth 2 -type f -not -path './.git/*' | sort"
+  },
+  "createdAt": "2026-09-15T22:01:42.212Z"
+}
