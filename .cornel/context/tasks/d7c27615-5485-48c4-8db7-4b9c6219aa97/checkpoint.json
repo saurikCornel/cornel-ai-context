@@ -3,7 +3,7 @@
   "branch": "cornel/d7c27615-5485-48c4-8db7-4b9c6219aa97",
   "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
   "status": "WAITING_CHATGPT",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"d7c27615-5485-48c4-8db7-4b9c6219aa97\",\"commandId\":\"audit-final-3\",\"operation\":\"run\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"command\":\"set -euo pipefail\\n\\necho '=== GEOLOCATION REFERENCES ==='\\ngit grep -niE 'geolocation|requestLocation|locationManager|CLLocation|ACCESS_(FINE|COARSE|BACKGROUND)_LOCATION|NSLocation' -- ':!package-lock.json' || true\\n\\necho '=== SECRET CONTENT SIGNATURES (FILENAMES ONLY) ==='\\ngit grep -IlE 'AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9_]{20,}|[PRIVATE KEY REDACTED]",
+  "summary": "JSON\n{\"cornelReview\":1,\"verdict\":\"FAIL\",\"summary\":\"Проверены правила AGENTS.md/.cornel, состав изменений относительно main, CRLF-aware diff, секреты и опасные конструкции, разрешения платформ, TypeScript, Jest, ESLint, production iOS bundle, production dependency audit, live CoinGecko и чистота рабочего дерева. Typecheck прошёл; Jest: 5/5 suites, 16/16 tests; ESLint: 0 errors и 2 неблокирующих warning; npm audit --omit=dev: 0 vulnerabilities; production iOS JS bundle собран; CoinGecko ответил HTTP 200 и вернул BTC/ETH/BNB/XRP/SOL; секретоподобных файлов/сигнатур и опасных exec-команд не найдено; Android запрашивает только INTERNET. Блокирующий дефект: ios/Delete2/Info.plist содержит NSLocationWhenInUseUsageDescription с пустым значением, хотя использование геолокации аудитом не обнаружено. Это лишняя privacy-декларация и нарушение принципа минимально необходимых разрешений. Также присутствуют неблокирующие предупреждения о deprecated SafeAreaView и два ESLint warning no-void.\",\"tasks\":[{\"title\":\"Убрать лишнюю декларацию геолокации iOS\",\"description\":\"В ios/Delete2/Info.plist удалить NSLocationWhenInUseUsageDescription с пустой строкой, поскольку приложение не использует геолокацию. Если геолокация всё же планируется, вместо удаления необходимо реализовать её осознанно и указать непустое понятное пользователю описание причины доступа. После исправления проверить отсутствие лишнего NSLocation* ключа, затем повторить typecheck, Jest, lint и production iOS bundle.\",\"priority\":\"high\"}]}\nJSON\n{\"version\":1,\"taskId\":\"d7c27615-5485-48c4-8db7-4b9c6219aa97\",\"commandId\":\"audit-finish-1\",\"operation\":\"finish\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"message\":\"Финальный аудит: FAIL. Все функциональные и сборочные проверки прошли (typecheck; Jest 5/5 suites, 16/16 tests; ESLint 0 errors/2 warnings; npm audit production 0 vulnerabilities; iOS production bundle; CoinGecko HTTP 200 BTC/ETH/BNB/XRP/SOL; рабочее дерево чистое). Найден один дефект: ios/Delete2/Info.plist содержит пустой NSLocationWhenInUseUsageDescription при отсутствии использования геолокации. Требуется удалить лишнюю privacy-декларацию либо, если доступ действительно нужен, добавить реальное использование и корректное непустое описание.\"}\n\n",
   "commands": [
     {
       "commandId": "audit-final-1",
@@ -16,7 +16,13 @@
       "status": "FAILED",
       "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
       "exitCode": 127
+    },
+    {
+      "commandId": "audit-final-3",
+      "status": "SUCCEEDED",
+      "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-15T23:34:04.833Z"
+  "createdAt": "2026-09-15T23:35:31.983Z"
 }
