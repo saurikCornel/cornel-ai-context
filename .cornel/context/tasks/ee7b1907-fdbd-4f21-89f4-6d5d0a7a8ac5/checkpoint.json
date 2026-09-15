@@ -2,15 +2,21 @@
   "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
   "branch": "cornel/ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
   "headSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
-  "status": "WAITING_CHATGPT",
-  "summary": "",
+  "status": "RUNNING",
+  "summary": "Фактический статус: окружение проверено успешно, но bootstrap до этого worker не выполнял. Сейчас команда bootstrap-rn-2 гарантированно опубликована в Issue через GitHub.\n\nОна создаёт RN/TypeScript-каркас, требуемые src/screens, src/components, src/services, src/types, интерфейсы MarketAsset / MarketQuote / MarketRecommendation, базовый экран и тест, после чего запускает npm install, typecheck и tests.\n\nЖду RESULT worker. Успех пока не объявляю.\n\nСводка: код ещё не подтверждён RESULT; защищённые .cornel/* исключены из изменений; следующий шаг — обработать результат bootstrap-rn-2, затем publish и финальная проверка.\n\n",
   "commands": [
     {
       "commandId": "env-check-2",
       "status": "SUCCEEDED",
       "headSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
       "exitCode": 0
+    },
+    {
+      "commandId": "bootstrap-rn-2",
+      "status": "STARTED",
+      "headSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-15T22:02:26.400Z"
+  "createdAt": "2026-09-15T22:03:18.464Z"
 }
