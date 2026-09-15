@@ -1,0 +1,11 @@
+{
+  "name": "fun-golf",
+  "repo": "saurikCornel/fun-golf-cornel-ai",
+  "baseBranch": "main",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md"
+  ],
+  "instructions": ".cornel/CHATGPT.md"
+}
