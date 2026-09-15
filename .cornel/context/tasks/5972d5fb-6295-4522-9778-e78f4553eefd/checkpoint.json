@@ -1,16 +1,22 @@
 {
   "taskId": "5972d5fb-6295-4522-9778-e78f4553eefd",
   "branch": "cornel/5972d5fb-6295-4522-9778-e78f4553eefd",
-  "headSha": "eaaba17cad5678bec27a7b1d7d3ea65d850620ce",
+  "headSha": "ae219399e928ca8d8ba4293e902463d9950b9621",
   "status": "WAITING_CHATGPT",
-  "summary": "Код интеграции уже записан в назначенную ветку через GitHub. Теперь проверяю фактический результат локальным worker: TypeScript, ESLint и весь Jest-набор. Успех пока не объявляю — нужен RESULT этой проверки.\n\nJSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-1\",\"operation\":\"run\",\"headSha\":\"ae219399e928ca8d8ba4293e902463d9950b9621\",\"command\":\"set -o pipefail; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":600}\n\nСводка: сервис CoinGecko подключён к App.tsx; mock-данные удалены из HomeScreen; добавлены состояния загрузки/ошибки/retry и отображение фактических рыночных сигналов; обновлены App.test.tsx и HomeScreen.test.tsx. Следующий шаг — разобрать результаты проверки и либо исправить конкретные ошибки, либо завершить карточку.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-2\",\"operation\":\"run\",\"headSha\":\"ae219399e928ca8d8ba4293e902463d9950b9621\",\"command\":\"set -o pipefail; npm ci && printf '\\\\n=== TYPECHECK ===\\\\n' && npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":1200}\n\nСводка: код не менялся; причина предыдущего сбоя — отсутствующие локальные зависимости, а не ошибка интеграции. Следующий шаг — по RESULT либо точечно исправить реальные ошибки компиляции/тестов, либо завершить задачу.\n\n",
   "commands": [
     {
       "commandId": "integration-inspect-1",
       "status": "SUCCEEDED",
       "headSha": "eaaba17cad5678bec27a7b1d7d3ea65d850620ce",
       "exitCode": 0
+    },
+    {
+      "commandId": "integration-verify-1",
+      "status": "FAILED",
+      "headSha": "ae219399e928ca8d8ba4293e902463d9950b9621",
+      "exitCode": 127
     }
   ],
-  "createdAt": "2026-09-15T22:48:21.534Z"
+  "createdAt": "2026-09-15T22:48:38.535Z"
 }
