@@ -1,0 +1,17 @@
+{
+  "id": "9cce6e48-d3ef-4cc7-aff6-5092b10d757b",
+  "taskId": "d5737cb5-cd35-40eb-9665-57c14891fb74",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+    "output": "Тестировщик PASS. Проверены typecheck, Jest (5 suites, 16/16), ESLint (0 errors, 2 warning), production iOS JS bundle, live CoinGecko HTTP 200 для BTC/ETH/BNB/XRP/SOL, отсутствие NSLocation в Info.plist и чистота рабочего дерева. По коду подтверждены реальные рыночные данные, BTC-курс и 24h изменение, обновление/pull-to-refresh, состояния loading/error/empty/retry и информационные неперсонализированные рекомендации. Дефектов по ТЗ не найдено.",
+    "outputDigest": "b40c7b6afa7c6b12b9f872c0ca79ea773d4cfab0bd0ad77edb1c36cbfa40453f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T23:40:47.793Z"
+}
