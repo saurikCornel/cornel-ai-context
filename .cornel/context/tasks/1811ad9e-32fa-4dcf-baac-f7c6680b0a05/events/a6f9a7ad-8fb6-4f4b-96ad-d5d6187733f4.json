@@ -1,0 +1,11 @@
+{
+  "id": "a6f9a7ad-8fb6-4f4b-96ad-d5d6187733f4",
+  "taskId": "1811ad9e-32fa-4dcf-baac-f7c6680b0a05",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "finish-market-data-1",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-15T22:38:50.413Z"
+}

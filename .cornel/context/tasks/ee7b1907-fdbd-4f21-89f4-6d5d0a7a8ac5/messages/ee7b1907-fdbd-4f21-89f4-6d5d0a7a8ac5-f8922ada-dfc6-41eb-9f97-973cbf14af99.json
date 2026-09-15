@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "finish-rn-7 опубликован в Issue после успешной финальной проверки на текущем commit.\n\nИтог карточки: RN/TypeScript-каркас опубликован; src/screens, src/components, src/services, src/types созданы; интерфейсы MarketAsset, MarketQuote, MarketRecommendation зафиксированы; typecheck, Jest 2/2, Metro bundle и финальная проверка FINAL_VERIFY_OK прошли успешно. Android Gradle build повторно не запускался по указанию владельца.\n\nОжидается только RESULT операции finish-rn-7.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T22:38:53.577Z"
+}
