@@ -1,9 +1,9 @@
 {
   "taskId": "5972d5fb-6295-4522-9778-e78f4553eefd",
   "branch": "cornel/5972d5fb-6295-4522-9778-e78f4553eefd",
-  "headSha": "4f52ab6ccda9950f85e82615d26b3b8d753d0012",
+  "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
   "status": "WAITING_CHATGPT",
-  "summary": "Тип matcher исправлен без изменения логики сервиса. Повторяю полный набор проверок на новом commit.\n\nJSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-4\",\"operation\":\"run\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"command\":\"set -o pipefail; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":600}\n\nСводка: изменён только src/services/__tests__/marketService.test.ts; исправлена TypeScript-типизация проверки MarketServiceError; следующий шаг — при успешном RESULT отправить finish, при новой ошибке исправить её точечно.\n\n",
+  "summary": "Финальная проверка успешна: typecheck прошёл, lint завершился без ошибок (2 предупреждения), все 16 тестов из 5 suites прошли. Проверены стартовая загрузка реальных данных, refresh, ошибка сети и успешный retry. Осталось завершить карточку; PR не нужен по условиям задачи.\n\nJSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"message\":\"Интеграция завершена. Подключён fetchMarketSnapshot/CoinGecko к App и HomeScreen, удалены временные mock-данные экрана, реализованы стартовая загрузка, refresh, состояние ошибки сети и повторная загрузка. UI отображает реальные BTC/market данные и сигналы сервиса. Service-тесты адаптированы к Jest без изменения бизнес-логики. Проверка worker на текущем head: npm run typecheck — успешно; npm run lint — 0 ошибок, 2 предупреждения; npm test -- --runInBand — 5/5 suites, 16/16 tests passed. PR не требуется согласно назначению.\"}\n\nСводка: изменены App.tsx, src/screens/HomeScreen.tsx, __tests__/App.test.tsx, __tests__/HomeScreen.test.tsx и два service-теста. Незавершающих замечания два: ESLint оставляет 2 warnings, а React Native предупреждает о deprecated SafeAreaView; на корректность и тесты они сейчас не влияют. Следующий шаг — автоматическое слияние карточки в cornel/office после finish.\n\n",
   "commands": [
     {
       "commandId": "integration-inspect-1",
@@ -28,7 +28,13 @@
       "status": "FAILED",
       "headSha": "4f52ab6ccda9950f85e82615d26b3b8d753d0012",
       "exitCode": 2
+    },
+    {
+      "commandId": "integration-verify-4",
+      "status": "SUCCEEDED",
+      "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-15T22:51:36.305Z"
+  "createdAt": "2026-09-15T22:52:08.324Z"
 }
