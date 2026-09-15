@@ -1,0 +1,17 @@
+{
+  "id": "14a6cfa3-dee1-42d9-a4e2-1fb2983e92c0",
+  "taskId": "5972d5fb-6295-4522-9778-e78f4553eefd",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "integration-verify-1",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "ae219399e928ca8d8ba4293e902463d9950b9621",
+    "output": "\n=== TYPECHECK ===\n\n> Delete2@0.0.1 typecheck\n> tsc --noEmit\n\nsh: tsc: command not found\n",
+    "outputDigest": "c2078f6085b57736b8d43450007d52ea4ccffc378310638db644010d51239e59",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T22:48:25.775Z"
+}
