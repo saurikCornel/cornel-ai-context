@@ -1,0 +1,15 @@
+{
+  "name": "cornel-mail",
+  "repo": "saurikCornel/cornel-mail",
+  "baseBranch": "main",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "README.md",
+    "app",
+    "server",
+    "server.log"
+  ],
+  "instructions": ".cornel/CHATGPT.md"
+}
