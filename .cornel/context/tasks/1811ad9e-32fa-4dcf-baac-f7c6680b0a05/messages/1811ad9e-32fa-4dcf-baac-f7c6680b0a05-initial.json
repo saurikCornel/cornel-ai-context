@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Решение: добавлены модели рынка, сервис CoinGecko, информационная классификация по 24-часовой динамике, loading/error/refresh-хук, источник данных и инвестиционный дисклеймер. Экраны и App.tsx не менялись.\n\nИзменённые файлы: src/models/market.ts, src/services/marketService.ts, src/services/recommendation.ts, src/hooks/useMarketData.ts и два unit-теста. Сейчас отправляю worker проверку успешного ответа API, ошибки API и расчёта рекомендаций. Жду фактический RESULT; успех пока не объявляю.\n\nJSON\n{\"version\":1,\"taskId\":\"1811ad9e-32fa-4dcf-baac-f7c6680b0a05\",\"commandId\":\"market-tests-1\",\"operation\":\"run\",\"headSha\":\"d742123f280b332e7486296b3ae0072aca34461c\",\"command\":\"npx --yes tsx@4.20.5 --test src/services/__tests__/marketService.test.ts src/services/__tests__/recommendation.test.ts && echo '--- git status ---' && git status --short\",\"timeoutSeconds\":300}\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T22:38:20.728Z"
+}
