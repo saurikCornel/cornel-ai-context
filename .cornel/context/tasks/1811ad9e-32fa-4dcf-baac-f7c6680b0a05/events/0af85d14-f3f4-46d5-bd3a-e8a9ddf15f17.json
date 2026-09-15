@@ -1,0 +1,11 @@
+{
+  "id": "0af85d14-f3f4-46d5-bd3a-e8a9ddf15f17",
+  "taskId": "1811ad9e-32fa-4dcf-baac-f7c6680b0a05",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "finish-market-data-1",
+    "headSha": "d742123f280b332e7486296b3ae0072aca34461c"
+  },
+  "createdAt": "2026-09-15T22:39:03.270Z"
+}

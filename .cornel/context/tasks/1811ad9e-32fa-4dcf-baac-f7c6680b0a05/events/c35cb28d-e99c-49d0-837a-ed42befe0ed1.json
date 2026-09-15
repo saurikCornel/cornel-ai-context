@@ -1,0 +1,17 @@
+{
+  "id": "c35cb28d-e99c-49d0-837a-ed42befe0ed1",
+  "taskId": "1811ad9e-32fa-4dcf-baac-f7c6680b0a05",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-market-data-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d742123f280b332e7486296b3ae0072aca34461c",
+    "output": "Реализован слой рыночных данных: CoinGecko API для BTC/ETH/SOL/BNB/XRP, модели, loading/error/refresh hook, прозрачные информационные рекомендации по 24h динамике, источник и дисклеймер. Экраны и App.tsx не менялись. Worker-проверка: 6/6 unit-тестов прошли, git status чистый. RN-сборка не запускалась, поскольку в назначенной ветке ещё отсутствует базовый React Native-проект и package.json; каркас создаётся параллельной карточкой.",
+    "outputDigest": "b1bca0e3b85efb90aa2288d6b473beb489c75280d995251ca8356b8f873e38a6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T22:39:03.344Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "2e2476ed-1e77-4d74-935c-59c759b1dc1c",
+  "taskId": "1811ad9e-32fa-4dcf-baac-f7c6680b0a05",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "finish-market-data-1",
+    "headSha": "d742123f280b332e7486296b3ae0072aca34461c"
+  },
+  "createdAt": "2026-09-15T22:39:01.090Z"
+}
