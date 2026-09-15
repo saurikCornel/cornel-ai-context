@@ -1,0 +1,17 @@
+{
+  "id": "de2f5e28-737d-4686-a5be-f658b90de840",
+  "taskId": "f64093b2-569d-4bbc-93e3-dcb9f5d64068",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "ui-check-1",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "855bf58ebf5f24abac095e29839d63ebcc522fb4",
+    "output": "\n> Delete2@0.0.1 test\n> jest --runInBand\n\nsh: jest: command not found\n",
+    "outputDigest": "6da2272b7d401e8005b06100d956d86043ae0038141d992008968e474a31465c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T22:41:11.303Z"
+}
