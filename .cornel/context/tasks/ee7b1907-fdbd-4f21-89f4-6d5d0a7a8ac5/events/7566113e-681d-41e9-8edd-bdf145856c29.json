@@ -1,0 +1,11 @@
+{
+  "id": "7566113e-681d-41e9-8edd-bdf145856c29",
+  "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "verify-build-1",
+    "output": "--- clean status ---\n--- npm ci ---\nnpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\nnpm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead\nnpm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead\nnpm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.\n"
+  },
+  "createdAt": "2026-09-15T22:05:17.903Z"
+}
