@@ -22,9 +22,10 @@
   "workspaceSyncedSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-15T23:38:08.196Z",
-  "updatedAt": "2026-09-15T23:39:21.630Z",
+  "updatedAt": "2026-09-15T23:39:26.938Z",
   "issue": 14,
   "chatUrl": "https://chatgpt.com/c/6aa9d6e4-feec-83eb-b367-edc10354a1a3",
   "error": null,
-  "browserError": null
+  "browserError": null,
+  "currentHead": "51b38f0e713aa53ea9cd86f046e0e62f42cae086"
 }

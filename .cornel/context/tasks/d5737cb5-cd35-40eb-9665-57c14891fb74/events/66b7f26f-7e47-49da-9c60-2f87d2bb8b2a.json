@@ -1,0 +1,12 @@
+{
+  "id": "66b7f26f-7e47-49da-9c60-2f87d2bb8b2a",
+  "taskId": "d5737cb5-cd35-40eb-9665-57c14891fb74",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "acceptance-1",
+    "operation": "run",
+    "command": "set -e\nprintf '\\n=== HEAD / STATUS BEFORE ===\\n'\ngit rev-parse HEAD\ngit status --short\nprintf '\\n=== LOCATION PERMISSIONS ===\\n'\nif grep -n 'NSLocation' ios/Delete2/Info.plist; then echo 'ERROR: unexpected NSLocation key found' >&2; exit 1; else echo 'No NSLocation keys in Info.plist'; fi\nprintf '\\n=== TYPECHECK ===\\n'\nnpx tsc --noEmit\nprintf '\\n=== JEST ===\\n'\nnpm test -- --runInBand\nprintf '\\n=== LINT ===\\n'\nnpm run lint\nprintf '\\n=== PRODUCTION IOS JS BUNDLE ===\\n'\nrm -rf /tmp/delete2-acceptance-assets /tmp/delete2-acceptance.jsbundle\nnpx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output /tmp/delete2-acceptance.jsbundle --assets-dest /tmp/delete2-acceptance-assets\nprintf '\\n=== LIVE COINGECKO ===\\n'\nnode -e \"fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana,binancecoin,ripple&order=market_cap_desc&sparkline=false&price_change_percentage=24h').then(async r=>{console.log('HTTP',r.status);if(!r.ok)process.exit(2);const x=await r.json();console.log(x.map(v=>v.symbol.toUpperCase()+':'+v.current_price).join(' | '));const ids=new Set(x.map(v=>v.id));for(const id of ['bitcoin','ethereum','solana','binancecoin','ripple'])if(!ids.has(id))throw new Error('missing '+id)}).catch(e=>{console.error(e);process.exit(1)})\"\nprintf '\\n=== STATUS AFTER ===\\n'\ngit status --short"
+  },
+  "createdAt": "2026-09-15T23:39:22.552Z"
+}

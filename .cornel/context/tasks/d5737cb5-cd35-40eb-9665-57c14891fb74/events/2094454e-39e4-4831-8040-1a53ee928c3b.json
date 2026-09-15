@@ -1,0 +1,17 @@
+{
+  "id": "2094454e-39e4-4831-8040-1a53ee928c3b",
+  "taskId": "d5737cb5-cd35-40eb-9665-57c14891fb74",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "acceptance-1",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+    "output": "\n=== HEAD / STATUS BEFORE ===\n51b38f0e713aa53ea9cd86f046e0e62f42cae086\n\n=== LOCATION PERMISSIONS ===\nNo NSLocation keys in Info.plist\n\n=== TYPECHECK ===\n\n\u001b[41m                                                                               \u001b[0m\n\u001b[41m\u001b[37m                This is not the tsc command you are looking for                \u001b[0m\n\u001b[41m                                                                               \u001b[0m\n\nTo get access to the TypeScript compiler, \u001b[34mtsc\u001b[0m, from the command line either:\n\n- Use \u001b[1mnpm install typescript\u001b[0m to first add TypeScript to your project \u001b[1mbefore\u001b[0m using npx\n- Use \u001b[1myarn\u001b[0m to avoid accidentally running code from un-installed packages\n",
+    "outputDigest": "284247a26f6f667bf5968d6f9f49fbc766a3663b21a21a98ee57cbff4ace577b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T23:39:26.939Z"
+}
