@@ -1,0 +1,17 @@
+{
+  "id": "c49b6ff3-afc6-493d-87f0-3a9c4bda8567",
+  "taskId": "f64093b2-569d-4bbc-93e3-dcb9f5d64068",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "platform-check-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f81de4db247e23464281c1ceadae37312389ea38",
+    "output": "\n                        ▒▒▓▓▓▓▒▒\n                     ▒▓▓▓▒▒░░▒▒▓▓▓▒\n                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒\n                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓\n                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓\n                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓\n                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓\n                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓\n                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓\n                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒\n                     ▒▓▓▓▒░░░░▒▓▓▓▒\n                        ▒▒▓▓▓▓▒▒\n\n\n                Welcome to Metro v0.87.1\n              Fast - Scalable - Integrated\n\n\n WARN  Attempted to import the module \"/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f64093b2-569d-4bbc-93e3-dcb9f5d64068/node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags\" which is not listed in the \"exports\" of \"/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f64093b2-569d-4bbc-93e3-dcb9f5d64068/node_modules/react-native\" under the requested subpath \"./src/private/featureflags/ReactNativeFeatureFlags\". Falling back to file-based resolution. Consider updating the call site or asking the package maintainer(s) to expose this API.\nLOG:Writing bundle output to: /tmp/delete2-ios.jsbundle\nLOG:Done writing bundle output\nWarning: Assets destination folder is not set, skipping...\n\n                        ▒▒▓▓▓▓▒▒\n                     ▒▓▓▓▒▒░░▒▒▓▓▓▒\n                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒\n                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓\n                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓\n                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓\n                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓\n                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓\n                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓\n                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒\n                     ▒▓▓▓▒░░░░▒▓▓▓▒\n                        ▒▒▓▓▓▓▒▒\n\n\n                Welcome to Metro v0.87.1\n              Fast - Scalable - Integrated\n\n\n WARN  Attempted to import the module \"/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f64093b2-569d-4bbc-93e3-dcb9f5d64068/node_modules/react-native/src/private/featureflags/ReactNativeFeatureFlags\" which is not listed in the \"exports\" of \"/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f64093b2-569d-4bbc-93e3-dcb9f5d64068/node_modules/react-native\" under the requested subpath \"./src/private/featureflags/ReactNativeFeatureFlags\". Falling back to file-based resolution. Consider updating the call site or asking the package maintainer(s) to expose this API.\nLOG:Writing bundle output to: /tmp/delete2-android.jsbundle\nLOG:Done writing bundle output\nWarning: Assets destination folder is not set, skipping...\niOS and Android bundles OK\n",
+    "outputDigest": "28c207016de2c0e650f61be5fa5de8647bb2af0a92b953b80da41ef60010e9ac",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T22:43:41.549Z"
+}
