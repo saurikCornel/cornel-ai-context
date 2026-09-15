@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверки завершены успешно: 7/7 тестов, TypeScript и ESLint проходят, production bundle собирается для iOS и Android. Предупреждения Metro и SafeAreaView не блокируют сборку и не влияют на результат карточки.\n\nСводка: реализован экран курса Bitcoin, изменение за 24 часа, время обновления, pull-to-refresh и кнопка обновления, блок «Какие активы посмотреть», состояния loading/error/empty и компонентные тесты. src/services не изменялся. PR не требуется по правилам карточки.\n\nJSON\n{\"version\":1,\"taskId\":\"f64093b2-569d-4bbc-93e3-dcb9f5d64068\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"f81de4db247e23464281c1ceadae37312389ea38\",\"message\":\"Экран курса Bitcoin завершён. Реализованы крупная котировка BTC, изменение за 24 часа, время обновления, pull-to-refresh и кнопка обновления, блок рекомендаций активов, состояния loading/error/empty и компонентные тесты. Проверки worker: 7/7 тестов passed, tsc --noEmit passed, eslint passed, production Metro bundles для iOS и Android успешно собраны. src/services не изменялся. PR не требуется.\"}\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T22:43:59.975Z"
+}

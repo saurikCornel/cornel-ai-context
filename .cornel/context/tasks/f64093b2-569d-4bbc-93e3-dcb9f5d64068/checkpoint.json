@@ -3,7 +3,7 @@
   "branch": "cornel/f64093b2-569d-4bbc-93e3-dcb9f5d64068",
   "headSha": "f81de4db247e23464281c1ceadae37312389ea38",
   "status": "WAITING_CHATGPT",
-  "summary": "Основные проверки пройдены. Для платформенной проверки теперь сделаю отдельные production JS-bundles для iOS и Android — это проверит, что экран и его зависимости корректно собираются для обеих RN-платформ, не изменяя исходники.\n\nJSON\n{\"version\":1,\"taskId\":\"f64093b2-569d-4bbc-93e3-dcb9f5d64068\",\"commandId\":\"platform-check-1\",\"operation\":\"run\",\"headSha\":\"f81de4db247e23464281c1ceadae37312389ea38\",\"command\":\"rm -f /tmp/delete2-ios.jsbundle /tmp/delete2-android.jsbundle; npx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output /tmp/delete2-ios.jsbundle && npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output /tmp/delete2-android.jsbundle && test -s /tmp/delete2-ios.jsbundle && test -s /tmp/delete2-android.jsbundle && echo 'iOS and Android bundles OK'\",\"timeoutSeconds\":900}\n\nСводка: UI готов; 7/7 тестов, TypeScript и ESLint уже подтверждены. Следующий шаг — после успешной платформенной проверки отправлю finish; если сборка выявит платформенную ошибку, исправлю её отдельным коммитом.\n\n",
+  "summary": "Проверки завершены успешно: 7/7 тестов, TypeScript и ESLint проходят, production bundle собирается для iOS и Android. Предупреждения Metro и SafeAreaView не блокируют сборку и не влияют на результат карточки.\n\nСводка: реализован экран курса Bitcoin, изменение за 24 часа, время обновления, pull-to-refresh и кнопка обновления, блок «Какие активы посмотреть», состояния loading/error/empty и компонентные тесты. src/services не изменялся. PR не требуется по правилам карточки.\n\nJSON\n{\"version\":1,\"taskId\":\"f64093b2-569d-4bbc-93e3-dcb9f5d64068\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"f81de4db247e23464281c1ceadae37312389ea38\",\"message\":\"Экран курса Bitcoin завершён. Реализованы крупная котировка BTC, изменение за 24 часа, время обновления, pull-to-refresh и кнопка обновления, блок рекомендаций активов, состояния loading/error/empty и компонентные тесты. Проверки worker: 7/7 тестов passed, tsc --noEmit passed, eslint passed, production Metro bundles для iOS и Android успешно собраны. src/services не изменялся. PR не требуется.\"}\n\n",
   "commands": [
     {
       "commandId": "ui-check-1",
@@ -22,7 +22,13 @@
       "status": "SUCCEEDED",
       "headSha": "f81de4db247e23464281c1ceadae37312389ea38",
       "exitCode": 0
+    },
+    {
+      "commandId": "platform-check-1",
+      "status": "SUCCEEDED",
+      "headSha": "f81de4db247e23464281c1ceadae37312389ea38",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-15T22:43:22.974Z"
+  "createdAt": "2026-09-15T22:43:59.984Z"
 }
