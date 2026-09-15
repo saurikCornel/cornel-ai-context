@@ -1,0 +1,12 @@
+{
+  "id": "59c85ed5-8fe2-4354-b988-f4a191449ae6",
+  "taskId": "5972d5fb-6295-4522-9778-e78f4553eefd",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "integration-inspect-1",
+    "operation": "run",
+    "command": "printf '\\n--- git status ---\\n'; git status --short; printf '\\n--- package scripts ---\\n'; node -e \"const p=require('./package.json'); console.log(JSON.stringify(p.scripts,null,2))\"; printf '\\n--- relevant files ---\\n'; find . -maxdepth 4 -type f \\( -name 'App.tsx' -o -name '*Market*' -o -name '*market*' -o -name '*Bitcoin*' -o -name '*bitcoin*' -o -name '*.test.ts' -o -name '*.test.tsx' \\) -not -path './node_modules/*' | sort; printf '\\n--- App.tsx ---\\n'; sed -n '1,240p' App.tsx; printf '\\n--- src files ---\\n'; find src -maxdepth 4 -type f 2>/dev/null | sort | while read f; do echo \"===== $f =====\"; sed -n '1,260p' \"$f\"; done; printf '\\n--- tests ---\\n'; find __tests__ -maxdepth 3 -type f 2>/dev/null | sort | while read f; do echo \"===== $f =====\"; sed -n '1,300p' \"$f\"; done"
+  },
+  "createdAt": "2026-09-15T22:45:24.184Z"
+}
