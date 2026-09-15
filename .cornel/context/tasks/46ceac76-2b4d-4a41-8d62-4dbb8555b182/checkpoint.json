@@ -3,14 +3,20 @@
   "branch": "cornel/46ceac76-2b4d-4a41-8d62-4dbb8555b182",
   "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
   "status": "WAITING_CHATGPT",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"46ceac76-2b4d-4a41-8d62-4dbb8555b182\",\"commandId\":\"review-verify-2\",\"operation\":\"run\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"command\":\"set -e\\nprintf '%s\\\\n' '=== INSTALL DEPENDENCIES ==='\\nnpm ci\\nprintf '%s\\\\n' '=== TYPECHECK ==='\\nnpm run typecheck\\nprintf '%s\\\\n' '=== TESTS ==='\\nnpm test -- --runInBand\\nprintf '%s\\\\n' '=== LINT ==='\\nnpm run lint\\nprintf '%s\\\\n' '=== IOS JS BUNDLE ==='\\nrm -rf /tmp/delete2-review-assets /tmp/delete2-review-main.jsbundle\\nmkdir -p /tmp/delete2-review-assets\\nnpx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output /tmp/delete2-review-main.jsbundle --assets-dest /tmp/delete2-review-assets\\nprintf '%s\\\\n' '=== LIVE MARKET API ==='\\nnode - <<'NODE'\\nconst ids = 'bitcoin,ethereum,solana,binancecoin,ripple';\\nconst url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${ids}&order=market_cap_desc&sparkline=false&price_change_percentage=24h`;\\n(async () => {\\n  try {\\n    const r = await fetch(url);\\n    console.log('HTTP', r.status);\\n    if (!r.ok) return;\\n    const data = await r.json();\\n    console.log('assets', Array.isArray(data) ? data.map(x => x.id).join(',') : 'unexpected-payload');\\n    const btc = Array.isArray(data) ? data.find(x => x.id === 'bitcoin') : null;\\n    console.log('bitcoin_price_usd', btc?.current_price ?? 'missing');\\n    console.log('bitcoin_change_24h', btc?.price_change_percentage_24h ?? 'missing');\\n  } catch (e) {\\n    console.log('LIVE_API_ERROR', e instanceof Error ? e.message : String(e));\\n  }\\n})();\\nNODE\\nprintf '%s\\\\n' '=== GIT STATUS AFTER ==='\\ngit status --short\",\"timeoutSeconds\":1200}\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"46ceac76-2b4d-4a41-8d62-4dbb8555b182\",\"commandId\":\"review-finish-1\",\"operation\":\"finish\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"message\":\"Приёмка PASS. Проверено на назначенном commit: npm ci; TypeScript typecheck успешно; Jest — 5 suites, 16/16 tests passed; ESLint — 0 errors, 2 non-blocking warnings; production iOS JS bundle собран; live CoinGecko API ответил HTTP 200 и вернул BTC/ETH/BNB/XRP/SOL с актуальной ценой BTC и изменением за 24 часа; интеграционные тесты покрывают первоначальную загрузку, refresh, сетевую ошибку и успешный retry. По коду подтверждены реальный рыночный сервис вместо mock, курс Bitcoin, 24h изменение, время обновления, pull-to-refresh/кнопка, список информационных сигналов и дисклеймер. Исходники не изменялись, git status после проверки чистый.\"}\n\n",
   "commands": [
     {
       "commandId": "review-verify-1",
       "status": "FAILED",
       "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
       "exitCode": 127
+    },
+    {
+      "commandId": "review-verify-2",
+      "status": "SUCCEEDED",
+      "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-15T23:19:45.182Z"
+  "createdAt": "2026-09-15T23:20:30.222Z"
 }

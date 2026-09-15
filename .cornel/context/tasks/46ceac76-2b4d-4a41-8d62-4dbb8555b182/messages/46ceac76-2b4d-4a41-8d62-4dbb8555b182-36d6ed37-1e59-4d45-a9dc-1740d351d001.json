@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"46ceac76-2b4d-4a41-8d62-4dbb8555b182\",\"commandId\":\"review-finish-1\",\"operation\":\"finish\",\"headSha\":\"b907d382e75b6955dbacaeb199fc2b2e1ebd1da2\",\"message\":\"Приёмка PASS. Проверено на назначенном commit: npm ci; TypeScript typecheck успешно; Jest — 5 suites, 16/16 tests passed; ESLint — 0 errors, 2 non-blocking warnings; production iOS JS bundle собран; live CoinGecko API ответил HTTP 200 и вернул BTC/ETH/BNB/XRP/SOL с актуальной ценой BTC и изменением за 24 часа; интеграционные тесты покрывают первоначальную загрузку, refresh, сетевую ошибку и успешный retry. По коду подтверждены реальный рыночный сервис вместо mock, курс Bitcoin, 24h изменение, время обновления, pull-to-refresh/кнопка, список информационных сигналов и дисклеймер. Исходники не изменялись, git status после проверки чистый.\"}\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T23:20:30.212Z"
+}
