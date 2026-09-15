@@ -1,0 +1,17 @@
+{
+  "id": "df7cb4a5-602a-4e9e-b0d9-f17a2a2ad149",
+  "taskId": "d7c27615-5485-48c4-8db7-4b9c6219aa97",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "audit-finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+    "output": "Финальный аудит: FAIL. Все функциональные и сборочные проверки прошли (typecheck; Jest 5/5 suites, 16/16 tests; ESLint 0 errors/2 warnings; npm audit production 0 vulnerabilities; iOS production bundle; CoinGecko HTTP 200 BTC/ETH/BNB/XRP/SOL; рабочее дерево чистое). Найден один дефект: ios/Delete2/Info.plist содержит пустой NSLocationWhenInUseUsageDescription при отсутствии использования геолокации. Требуется удалить лишнюю privacy-декларацию либо, если доступ действительно нужен, добавить реальное использование и корректное непустое описание.",
+    "outputDigest": "760b63a4aac94f53ee3e5071d0f7d27b14d4b1daa33dc7ca69e01f8aa9ca2749",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T23:35:35.848Z"
+}

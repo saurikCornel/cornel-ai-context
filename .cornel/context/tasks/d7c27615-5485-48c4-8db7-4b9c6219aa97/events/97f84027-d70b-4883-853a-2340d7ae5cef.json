@@ -1,0 +1,11 @@
+{
+  "id": "97f84027-d70b-4883-853a-2340d7ae5cef",
+  "taskId": "d7c27615-5485-48c4-8db7-4b9c6219aa97",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "audit-finish-1",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-15T23:35:32.893Z"
+}
