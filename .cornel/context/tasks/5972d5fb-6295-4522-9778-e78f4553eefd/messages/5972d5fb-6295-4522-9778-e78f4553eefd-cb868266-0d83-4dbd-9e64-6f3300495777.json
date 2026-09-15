@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Код интеграции уже записан в назначенную ветку через GitHub. Теперь проверяю фактический результат локальным worker: TypeScript, ESLint и весь Jest-набор. Успех пока не объявляю — нужен RESULT этой проверки.\n\nJSON\n{\"version\":1,\"taskId\":\"5972d5fb-6295-4522-9778-e78f4553eefd\",\"commandId\":\"integration-verify-1\",\"operation\":\"run\",\"headSha\":\"ae219399e928ca8d8ba4293e902463d9950b9621\",\"command\":\"set -o pipefail; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck && printf '\\\\n=== LINT ===\\\\n' && npm run lint && printf '\\\\n=== TESTS ===\\\\n' && npm test -- --runInBand\",\"timeoutSeconds\":600}\n\nСводка: сервис CoinGecko подключён к App.tsx; mock-данные удалены из HomeScreen; добавлены состояния загрузки/ошибки/retry и отображение фактических рыночных сигналов; обновлены App.test.tsx и HomeScreen.test.tsx. Следующий шаг — разобрать результаты проверки и либо исправить конкретные ошибки, либо завершить карточку.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T22:48:21.526Z"
+}
