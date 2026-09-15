@@ -1,0 +1,17 @@
+{
+  "id": "b7acbe86-b841-4385-9ce0-1b095784c5eb",
+  "taskId": "5972d5fb-6295-4522-9778-e78f4553eefd",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "integration-verify-2",
+    "status": "FAILED",
+    "exitCode": 2,
+    "reason": null,
+    "headSha": "ae219399e928ca8d8ba4293e902463d9950b9621",
+    "output": "npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\nnpm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead\nnpm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported\nnpm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\nnpm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead\nnpm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.\n\nadded 865 packages, and audited 866 packages in 6s\n\n183 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n\n=== TYPECHECK ===\n\n> Delete2@0.0.1 typecheck\n> tsc --noEmit\n\n__tests__/App.test.tsx(10,9): error TS2305: Module '\"../src/services\"' has no exported member 'fetchMarketSnapshot'.\nApp.tsx(5,9): error TS2305: Module '\"./src/services\"' has no exported member 'fetchMarketSnapshot'.\nsrc/screens/HomeScreen.tsx(221,25): error TS2322: Type 'ScreenState' is not assignable to type '\"loading\" | \"error\" | \"empty\"'.\n  Type '\"ready\"' is not assignable to type '\"loading\" | \"error\" | \"empty\"'.\nsrc/services/__tests__/marketService.test.ts(1,20): error TS2591: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.\nsrc/services/__tests__/marketService.test.ts(2,18): error TS2591: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.\nsrc/services/__tests__/marketService.test.ts(63,5): error TS7006: Parameter 'error' implicitly has an 'any' type.\nsrc/services/__tests__/recommendation.test.ts(1,20): error TS2591: Cannot find name 'node:assert/strict'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.\nsrc/services/__tests__/recommendation.test.ts(2,18): error TS2591: Cannot find name 'node:test'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.\n",
+    "outputDigest": "1e5debb883b0285c9a2e4be4713f5b6926cafc0cd443b5f31e37558932ac2140",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T22:48:49.053Z"
+}
