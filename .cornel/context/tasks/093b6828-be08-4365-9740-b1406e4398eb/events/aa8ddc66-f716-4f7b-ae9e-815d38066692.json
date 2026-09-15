@@ -1,0 +1,17 @@
+{
+  "id": "aa8ddc66-f716-4f7b-ae9e-815d38066692",
+  "taskId": "093b6828-be08-4365-9740-b1406e4398eb",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-location-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+    "output": "Удалён пустой NSLocationWhenInUseUsageDescription из ios/Delete2/Info.plist. Проверено: NSLocation* ключей нет, plutil OK, typecheck OK, Jest 5/5 suites и 16/16 tests passed, lint 0 errors (2 существующих warnings), production iOS bundle успешно собран.",
+    "outputDigest": "2980292af4eabdf51c142d84cf2e27b4d62ee5cf9f9d7ed7050acec9fdac75c7",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T23:38:00.626Z"
+}
