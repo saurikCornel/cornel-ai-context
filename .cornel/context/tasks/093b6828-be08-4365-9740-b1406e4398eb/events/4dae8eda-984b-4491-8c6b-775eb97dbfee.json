@@ -1,0 +1,12 @@
+{
+  "id": "4dae8eda-984b-4491-8c6b-775eb97dbfee",
+  "taskId": "093b6828-be08-4365-9740-b1406e4398eb",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-location-1",
+    "operation": "run",
+    "command": "set -e\nprintf '%s\\n' '=== LOCATION KEYS ==='\nif grep -n 'NSLocation' ios/Delete2/Info.plist; then\n  echo 'ERROR: unexpected NSLocation key remains in Info.plist'\n  exit 1\nelse\n  echo 'OK: no NSLocation keys in Info.plist'\nfi\nprintf '%s\\n' '=== PLIST ==='\nplutil -lint ios/Delete2/Info.plist\nprintf '%s\\n' '=== TYPECHECK ==='\nnpm run typecheck\nprintf '%s\\n' '=== JEST ==='\nnpm test -- --runInBand\nprintf '%s\\n' '=== LINT ==='\nnpm run lint\nprintf '%s\\n' '=== IOS PRODUCTION BUNDLE ==='\nBUNDLE_DIR=\"$(mktemp -d)\"\ntrap 'rm -rf \"$BUNDLE_DIR\"' EXIT\nnpx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output \"$BUNDLE_DIR/main.jsbundle\" --assets-dest \"$BUNDLE_DIR/assets\"\ntest -s \"$BUNDLE_DIR/main.jsbundle\"\necho 'OK: production iOS bundle generated'"
+  },
+  "createdAt": "2026-09-15T23:36:53.768Z"
+}

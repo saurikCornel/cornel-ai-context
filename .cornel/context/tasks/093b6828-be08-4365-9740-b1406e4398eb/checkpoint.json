@@ -1,0 +1,9 @@
+{
+  "taskId": "093b6828-be08-4365-9740-b1406e4398eb",
+  "branch": "cornel/093b6828-be08-4365-9740-b1406e4398eb",
+  "headSha": "b907d382e75b6955dbacaeb199fc2b2e1ebd1da2",
+  "status": "WAITING_CHATGPT",
+  "summary": "Исправление внесено только в ios/Delete2/Info.plist. Отправляю worker проверку отсутствия NSLocation*, валидности plist, typecheck, Jest, lint и production iOS bundle. Жду RESULT; успех пока не объявляю.\n\nJSON\n{\"version\":1,\"taskId\":\"093b6828-be08-4365-9740-b1406e4398eb\",\"commandId\":\"verify-location-1\",\"operation\":\"run\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"command\":\"set -e\\nprintf '%s\\\\n' '=== LOCATION KEYS ==='\\nif grep -n 'NSLocation' ios/Delete2/Info.plist; then\\n  echo 'ERROR: unexpected NSLocation key remains in Info.plist'\\n  exit 1\\nelse\\n  echo 'OK: no NSLocation keys in Info.plist'\\nfi\\nprintf '%s\\\\n' '=== PLIST ==='\\nplutil -lint ios/Delete2/Info.plist\\nprintf '%s\\\\n' '=== TYPECHECK ==='\\nnpm run typecheck\\nprintf '%s\\\\n' '=== JEST ==='\\nnpm test -- --runInBand\\nprintf '%s\\\\n' '=== LINT ==='\\nnpm run lint\\nprintf '%s\\\\n' '=== IOS PRODUCTION BUNDLE ==='\\nBUNDLE_DIR=\\\"$(mktemp -d)\\\"\\ntrap 'rm -rf \\\"$BUNDLE_DIR\\\"' EXIT\\nnpx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output \\\"$BUNDLE_DIR/main.jsbundle\\\" --assets-dest \\\"$BUNDLE_DIR/assets\\\"\\ntest -s \\\"$BUNDLE_DIR/main.jsbundle\\\"\\necho 'OK: production iOS bundle generated'\",\"timeoutSeconds\":900}\n\nСводка: решение — удалить неиспользуемую декларацию геолокации; изменён только ios/Delete2/Info.plist; проверки отправлены worker; следующий шаг — обработать RESULT и при успехе выполнить finish.\n\n",
+  "commands": [],
+  "createdAt": "2026-09-15T23:36:52.871Z"
+}
