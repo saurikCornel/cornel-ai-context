@@ -1,0 +1,12 @@
+{
+  "id": "d87ffd1b-0f91-455f-92b0-be89bbbcb00c",
+  "taskId": "2eba6f70-4587-4bdb-8b16-7232290fde9a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-layout-20260915-2238",
+    "operation": "run",
+    "command": "printf '%s\\n' '=== APP META ==='; git -C app rev-parse --is-inside-work-tree; git -C app rev-parse HEAD 2>/dev/null || true; find app -maxdepth 3 -type f ! -path '*/node_modules/*' ! -path '*/.git/*' ! -name '.env' ! -name '.env.*' | sort | head -n 320; printf '%s\\n' '=== SERVER META ==='; git -C server rev-parse --is-inside-work-tree; git -C server rev-parse HEAD 2>/dev/null || true; find server -maxdepth 3 -type f ! -path '*/node_modules/*' ! -path '*/.git/*' ! -name '.env' ! -name '.env.*' | sort | head -n 320; printf '%s\\n' '=== PACKAGE MANIFESTS ==='; for f in app/package.json server/package.json; do if [ -f \"$f\" ]; then echo \"--- $f\"; sed -n '1,220p' \"$f\"; fi; done"
+  },
+  "createdAt": "2026-09-15T19:37:44.890Z"
+}
