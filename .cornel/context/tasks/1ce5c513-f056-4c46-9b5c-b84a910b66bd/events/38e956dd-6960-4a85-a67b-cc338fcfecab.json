@@ -1,0 +1,59 @@
+{
+  "id": "38e956dd-6960-4a85-a67b-cc338fcfecab",
+  "taskId": "1ce5c513-f056-4c46-9b5c-b84a910b66bd",
+  "type": "TEAM",
+  "text": "Состав собран менеджером: Координатор, Сборщик, Gameplay & Performance QA, Аудитор, Game Design & Balance Advisor, Gameplay/Physics Engineer, Three.js/Rendering/Camera Engineer, AI/Systems Engineer, Course/Level Designer Engineer, Game Integration Architect",
+  "detail": {
+    "workers": [
+      {
+        "role": "manager",
+        "name": "Менеджер"
+      },
+      {
+        "role": "planner",
+        "name": "Координатор"
+      },
+      {
+        "role": "integrator",
+        "name": "Сборщик"
+      },
+      {
+        "role": "tester",
+        "name": "Gameplay & Performance QA"
+      },
+      {
+        "role": "auditor",
+        "name": "Аудитор"
+      },
+      {
+        "role": "advisor",
+        "name": "Game Design & Balance Advisor"
+      },
+      {
+        "role": "mcp",
+        "name": "Инженер интеграций"
+      },
+      {
+        "role": "developer",
+        "name": "Gameplay/Physics Engineer"
+      },
+      {
+        "role": "developer",
+        "name": "Three.js/Rendering/Camera Engineer"
+      },
+      {
+        "role": "developer",
+        "name": "AI/Systems Engineer"
+      },
+      {
+        "role": "developer",
+        "name": "Course/Level Designer Engineer"
+      },
+      {
+        "role": "reviewer",
+        "name": "Game Integration Architect"
+      }
+    ]
+  },
+  "createdAt": "2026-09-15T23:49:03.259Z"
+}
