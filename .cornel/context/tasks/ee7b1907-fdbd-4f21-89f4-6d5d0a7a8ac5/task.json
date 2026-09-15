@@ -1,0 +1,26 @@
+{
+  "id": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "projectId": "f4c28f22-4628-4a71-8d9c-8cc083d03ff0",
+  "effort": "current",
+  "agent": "chatgpt",
+  "attachments": [],
+  "office": {
+    "kind": "card",
+    "cardId": "3e95c82a-3e77-469e-a629-4bcc6cd62d1c",
+    "role": "developer",
+    "workerId": "dev-1"
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Базовый React Native проект",
+  "prompt": "Ты — Разработчик 1, разработчик AI-офиса проекта «Delete2». \n\nОбщая цель владельца: Надо короче сделать приложение по курс битка на RN, и советы какие валюты покупать\nПодход планировщика: Репозиторий пока без React Native-кода, поэтому сначала создаём базовое RN/TypeScript-приложение, затем параллельно реализуем слой рыночных данных и интерфейс, после чего соединяем их и проверяем сценарий целиком.\n\nТвоя карточка: Базовый React Native проект\nРазвернуть в saurikCornel/Delete2 минимальное React Native приложение на TypeScript. Не изменять защищённые .cornel/* и технические файлы Cornel AI. Создать структуру src/screens, src/components, src/services, src/types; базовый App.tsx и тестовую конфигурацию. Зафиксировать интерфейсы MarketAsset/MarketQuote/MarketRecommendation, чтобы следующие карточки могли работать параллельно. Проверка: приложение собирается и запускается, typecheck/tests проходят.\n\nДругие разработчики параллельно ведут другие карточки в своих ветках: меняй только то, что нужно для твоей карточки. Твоя ветка создана от ветки офиса cornel/office; после finish она будет слита в неё автоматически, PR открывать не нужно. Проверь результат командами worker (тесты, сборка), при локальных правках сделай publish, затем finish с кратким итогом. Если карточку невозможно выполнить, напиши CORNEL_AI_BLOCKED и причину.",
+  "branch": "cornel/ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "baseSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
+  "workspaceSyncedSha": "dac5a7f35580430ee8f57b214e3cd933a16ca1e6",
+  "status": "READY",
+  "createdAt": "2026-09-15T22:00:25.841Z",
+  "updatedAt": "2026-09-15T22:00:32.386Z",
+  "issue": 5,
+  "chatUrl": "https://chatgpt.com/c/6aa9bffe-bc54-83eb-a8fb-44caac674cc5",
+  "error": null
+}
