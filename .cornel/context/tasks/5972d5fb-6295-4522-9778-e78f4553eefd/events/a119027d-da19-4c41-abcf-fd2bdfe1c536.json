@@ -1,0 +1,17 @@
+{
+  "id": "a119027d-da19-4c41-abcf-fd2bdfe1c536",
+  "taskId": "5972d5fb-6295-4522-9778-e78f4553eefd",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "integration-verify-3",
+    "status": "FAILED",
+    "exitCode": 2,
+    "reason": null,
+    "headSha": "4f52ab6ccda9950f85e82615d26b3b8d753d0012",
+    "output": "\n=== TYPECHECK ===\n\n> Delete2@0.0.1 typecheck\n> tsc --noEmit\n\nsrc/services/__tests__/marketService.test.ts(59,90): error TS2345: Argument of type '{ status: number; }' is not assignable to parameter of type 'MarketServiceError'.\n  Type '{ status: number; }' is missing the following properties from type 'MarketServiceError': name, message\n",
+    "outputDigest": "05bd3293caa557471108ef2ad5ef76082b1d98cb05e655cea001b062dc5e1b6e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T22:51:01.105Z"
+}
