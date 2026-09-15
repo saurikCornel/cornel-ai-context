@@ -18,7 +18,7 @@
   "workspaceSyncedSha": "9405a8fa7f670d1da14ee11cb99dd48d3c5bca08",
   "status": "CANCELLED",
   "createdAt": "2026-09-15T23:34:25.489Z",
-  "updatedAt": "2026-09-15T23:49:15.813Z",
+  "updatedAt": "2026-09-15T23:49:27.954Z",
   "issue": 12,
   "chatUrl": "https://chatgpt.com/c/6aa9d606-4f8c-83ed-87ae-bb5c771a7369",
   "error": null,
@@ -27,5 +27,6 @@
   "effortFailed": null,
   "intentRevision": 3,
   "statusChecks": 0,
-  "attentionReason": null
+  "attentionReason": null,
+  "deletedAt": "2026-09-15T23:49:27.941Z"
 }
