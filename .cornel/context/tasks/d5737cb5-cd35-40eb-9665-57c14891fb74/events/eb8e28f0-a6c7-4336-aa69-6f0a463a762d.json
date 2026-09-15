@@ -1,0 +1,12 @@
+{
+  "id": "eb8e28f0-a6c7-4336-aa69-6f0a463a762d",
+  "taskId": "d5737cb5-cd35-40eb-9665-57c14891fb74",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "acceptance-2",
+    "operation": "run",
+    "command": "set -e\nprintf '\\n=== INSTALL DEPENDENCIES ===\\n'\nnpm ci\nprintf '\\n=== TYPECHECK ===\\n'\nnpm run typecheck\nprintf '\\n=== JEST ===\\n'\nnpm test -- --runInBand\nprintf '\\n=== LINT ===\\n'\nnpm run lint\nprintf '\\n=== PRODUCTION IOS JS BUNDLE ===\\n'\nrm -rf /tmp/delete2-acceptance-assets /tmp/delete2-acceptance.jsbundle\nnpx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output /tmp/delete2-acceptance.jsbundle --assets-dest /tmp/delete2-acceptance-assets\nprintf '\\n=== LIVE COINGECKO ===\\n'\nnode -e \"fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana,binancecoin,ripple&order=market_cap_desc&sparkline=false&price_change_percentage=24h').then(async r=>{console.log('HTTP',r.status);if(!r.ok)process.exit(2);const x=await r.json();console.log(x.map(v=>v.symbol.toUpperCase()+':'+v.current_price).join(' | '));const ids=new Set(x.map(v=>v.id));for(const id of ['bitcoin','ethereum','solana','binancecoin','ripple'])if(!ids.has(id))throw new Error('missing '+id)}).catch(e=>{console.error(e);process.exit(1)})\"\nprintf '\\n=== STATUS AFTER ===\\n'\ngit status --short"
+  },
+  "createdAt": "2026-09-15T23:39:52.969Z"
+}
