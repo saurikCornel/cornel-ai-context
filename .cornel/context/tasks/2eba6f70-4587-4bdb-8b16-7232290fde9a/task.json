@@ -1,0 +1,20 @@
+{
+  "id": "2eba6f70-4587-4bdb-8b16-7232290fde9a",
+  "projectId": "58925edf-831d-4768-9136-fac8f5419903",
+  "effort": "4",
+  "attachments": [],
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Подумай что еще не готово и что нужно реализовать",
+  "prompt": "Подумай что еще не готово и что нужно реализовать",
+  "branch": "cornel/2eba6f70-4587-4bdb-8b16-7232290fde9a",
+  "baseSha": "25b18735963b3085c07e9cc94470c4a13ff659d9",
+  "workspaceSyncedSha": "25b18735963b3085c07e9cc94470c4a13ff659d9",
+  "status": "READY",
+  "createdAt": "2026-09-15T19:32:43.752Z",
+  "updatedAt": "2026-09-15T19:32:54.669Z",
+  "issue": 3,
+  "chatUrl": "https://chatgpt.com/c/6aa99d64-4f10-83ed-ae7c-171cd03b360f",
+  "error": null,
+  "appliedEffort": "4",
+  "browserError": null
+}
