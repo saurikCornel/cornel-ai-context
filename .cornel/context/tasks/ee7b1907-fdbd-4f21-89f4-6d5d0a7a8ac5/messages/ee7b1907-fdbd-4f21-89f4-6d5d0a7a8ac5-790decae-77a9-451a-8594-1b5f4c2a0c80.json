@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Причина ошибки finish-rn-6 исправлена: worker требовал отдельную успешную проверочную команду на текущем commit.\n\nЯ отправил verify-final-2. Она ничего не меняет и не повторяет тяжёлые тесты: проверяет чистоту рабочей копии, наличие опубликованных файлов/структуры, интерфейсов MarketAsset, MarketQuote, MarketRecommendation и скриптов typecheck/test.\n\nПосле успешного RESULT этой проверки следующим шагом будет повторный finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-15T22:38:26.525Z"
+}

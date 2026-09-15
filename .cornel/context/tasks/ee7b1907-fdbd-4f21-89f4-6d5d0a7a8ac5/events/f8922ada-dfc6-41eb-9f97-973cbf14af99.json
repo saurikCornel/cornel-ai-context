@@ -1,0 +1,17 @@
+{
+  "id": "f8922ada-dfc6-41eb-9f97-973cbf14af99",
+  "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-final-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5639331ab4cfea0d36d288116a1f084e5e4bb367",
+    "output": "FINAL_VERIFY_OK\n",
+    "outputDigest": "74f4d6091bb95b50d5333fd45280f533ee3482779b3e11a80629cd0909e82ecb",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T22:38:23.266Z"
+}

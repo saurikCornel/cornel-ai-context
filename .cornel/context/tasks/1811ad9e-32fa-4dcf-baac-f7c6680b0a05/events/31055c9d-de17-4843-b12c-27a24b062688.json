@@ -1,0 +1,11 @@
+{
+  "id": "31055c9d-de17-4843-b12c-27a24b062688",
+  "taskId": "1811ad9e-32fa-4dcf-baac-f7c6680b0a05",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "market-tests-1",
+    "headSha": "d742123f280b332e7486296b3ae0072aca34461c"
+  },
+  "createdAt": "2026-09-15T22:38:23.699Z"
+}

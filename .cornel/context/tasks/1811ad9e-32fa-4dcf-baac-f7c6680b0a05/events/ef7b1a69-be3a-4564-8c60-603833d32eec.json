@@ -1,0 +1,12 @@
+{
+  "id": "ef7b1a69-be3a-4564-8c60-603833d32eec",
+  "taskId": "1811ad9e-32fa-4dcf-baac-f7c6680b0a05",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "market-tests-1",
+    "operation": "run",
+    "command": "npx --yes tsx@4.20.5 --test src/services/__tests__/marketService.test.ts src/services/__tests__/recommendation.test.ts && echo '--- git status ---' && git status --short"
+  },
+  "createdAt": "2026-09-15T22:38:23.067Z"
+}
