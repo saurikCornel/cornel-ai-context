@@ -9,12 +9,13 @@
   "branch": "cornel/2eba6f70-4587-4bdb-8b16-7232290fde9a",
   "baseSha": "25b18735963b3085c07e9cc94470c4a13ff659d9",
   "workspaceSyncedSha": "25b18735963b3085c07e9cc94470c4a13ff659d9",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-15T19:32:43.752Z",
-  "updatedAt": "2026-09-15T19:32:54.669Z",
+  "updatedAt": "2026-09-15T19:34:55.530Z",
   "issue": 3,
   "chatUrl": "https://chatgpt.com/c/6aa99d64-4f10-83ed-ae7c-171cd03b360f",
   "error": null,
   "appliedEffort": "4",
-  "browserError": null
+  "browserError": null,
+  "currentHead": "25b18735963b3085c07e9cc94470c4a13ff659d9"
 }

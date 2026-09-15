@@ -1,0 +1,12 @@
+{
+  "headSha": "25b18735963b3085c07e9cc94470c4a13ff659d9",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "README.md",
+    "app",
+    "server",
+    "server.log"
+  ]
+}

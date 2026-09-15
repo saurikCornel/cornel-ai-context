@@ -1,0 +1,11 @@
+{
+  "id": "7e0acccb-28ce-4093-9b39-4644aafa4bf4",
+  "taskId": "2eba6f70-4587-4bdb-8b16-7232290fde9a",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "audit-inventory-20260915-2233",
+    "headSha": "25b18735963b3085c07e9cc94470c4a13ff659d9"
+  },
+  "createdAt": "2026-09-15T19:34:32.362Z"
+}
