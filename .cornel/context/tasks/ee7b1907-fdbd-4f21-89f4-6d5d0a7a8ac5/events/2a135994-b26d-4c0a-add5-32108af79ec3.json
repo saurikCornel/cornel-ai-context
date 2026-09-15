@@ -1,0 +1,11 @@
+{
+  "id": "2a135994-b26d-4c0a-add5-32108af79ec3",
+  "taskId": "ee7b1907-fdbd-4f21-89f4-6d5d0a7a8ac5",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "bootstrap-rn-2",
+    "output": "--- create React Native template ---\n"
+  },
+  "createdAt": "2026-09-15T22:03:27.260Z"
+}
