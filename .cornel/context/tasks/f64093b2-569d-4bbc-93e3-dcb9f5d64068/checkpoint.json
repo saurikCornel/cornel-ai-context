@@ -1,9 +1,16 @@
 {
   "taskId": "f64093b2-569d-4bbc-93e3-dcb9f5d64068",
   "branch": "cornel/f64093b2-569d-4bbc-93e3-dcb9f5d64068",
-  "headSha": "5639331ab4cfea0d36d288116a1f084e5e4bb367",
+  "headSha": "855bf58ebf5f24abac095e29839d63ebcc522fb4",
   "status": "WAITING_CHATGPT",
-  "summary": "UI реализован в назначенной ветке без изменений src/services: добавлены карточка курса BTC, карточки активов, pull-to-refresh/кнопка обновления и состояния loading/error/empty. Добавлены компонентные тесты; теперь проверяю тесты, TypeScript и lint через worker.\n\nИзменённые файлы: src/screens/HomeScreen.tsx, src/components/MarketPriceCard.tsx, src/components/RecommendationCard.tsx, src/components/index.ts, __tests__/HomeScreen.test.tsx.\n\nJSON\n{\"version\":1,\"taskId\":\"f64093b2-569d-4bbc-93e3-dcb9f5d64068\",\"commandId\":\"ui-check-1\",\"operation\":\"run\",\"headSha\":\"855bf58ebf5f24abac095e29839d63ebcc522fb4\",\"command\":\"npm test -- --runInBand && npm run typecheck && npm run lint\",\"timeoutSeconds\":600}\n\nЖду RESULT worker; после него исправлю ошибки либо перейду к проверке платформенной сборки.\n\n",
-  "commands": [],
-  "createdAt": "2026-09-15T22:41:06.845Z"
+  "summary": "package-lock.json есть, поэтому окружение можно восстановить детерминированно через npm ci. Ошибка jest: command not found относится к отсутствующим зависимостям, а не к тестам или UI-коду.\n\nСледующий шаг: установить зависимости из lock-файла и сразу выполнить тесты, typecheck и lint.\n\nJSON\n{\"version\":1,\"taskId\":\"f64093b2-569d-4bbc-93e3-dcb9f5d64068\",\"commandId\":\"ui-check-2\",\"operation\":\"run\",\"headSha\":\"855bf58ebf5f24abac095e29839d63ebcc522fb4\",\"command\":\"npm ci && npm test -- --runInBand && npm run typecheck && npm run lint\",\"timeoutSeconds\":900}\n\nСводка: код не менял; причина предыдущего сбоя установлена; проверки ещё не подтверждены. Следующий шаг после RESULT — либо исправить конкретные ошибки тестов/типов/lint, либо перейти к платформенной проверке.\n\n",
+  "commands": [
+    {
+      "commandId": "ui-check-1",
+      "status": "FAILED",
+      "headSha": "855bf58ebf5f24abac095e29839d63ebcc522fb4",
+      "exitCode": 127
+    }
+  ],
+  "createdAt": "2026-09-15T22:41:29.882Z"
 }
