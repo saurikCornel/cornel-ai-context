@@ -1,0 +1,17 @@
+{
+  "id": "983170f9-65b4-4135-afbd-d4bd937736d9",
+  "taskId": "1811ad9e-32fa-4dcf-baac-f7c6680b0a05",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "market-tests-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d742123f280b332e7486296b3ae0072aca34461c",
+    "output": "✔ fetchMarketSnapshot maps API data, Bitcoin price, source and disclaimer (2.599667ms)\n✔ fetchMarketSnapshot exposes an HTTP error from the public API (0.393084ms)\n✔ marks moderate positive 24h movement as interesting to watch (0.5165ms)\n✔ keeps small movement neutral (0.073667ms)\n✔ marks large movement in either direction as high risk (0.058583ms)\n✔ keeps missing 24h data neutral and explains why (0.050709ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 269.439625\n--- git status ---\n",
+    "outputDigest": "c06c99ac56853cef4fbb5f13b72eae963b43800992ff0171f4e51567f8649310",
+    "truncated": false
+  },
+  "createdAt": "2026-09-15T22:38:34.130Z"
+}

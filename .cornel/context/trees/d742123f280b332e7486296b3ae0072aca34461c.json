@@ -1,0 +1,14 @@
+{
+  "headSha": "d742123f280b332e7486296b3ae0072aca34461c",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "src/hooks/useMarketData.ts",
+    "src/models/market.ts",
+    "src/services/__tests__/marketService.test.ts",
+    "src/services/__tests__/recommendation.test.ts",
+    "src/services/marketService.ts",
+    "src/services/recommendation.ts"
+  ]
+}
