@@ -1,0 +1,12 @@
+{
+  "id": "eeb9fabc-ac5a-4241-b9bb-147e11be38e2",
+  "taskId": "f64093b2-569d-4bbc-93e3-dcb9f5d64068",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "platform-check-1",
+    "operation": "run",
+    "command": "rm -f /tmp/delete2-ios.jsbundle /tmp/delete2-android.jsbundle; npx react-native bundle --platform ios --dev false --entry-file index.js --bundle-output /tmp/delete2-ios.jsbundle && npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output /tmp/delete2-android.jsbundle && test -s /tmp/delete2-ios.jsbundle && test -s /tmp/delete2-android.jsbundle && echo 'iOS and Android bundles OK'"
+  },
+  "createdAt": "2026-09-15T22:43:24.049Z"
+}
