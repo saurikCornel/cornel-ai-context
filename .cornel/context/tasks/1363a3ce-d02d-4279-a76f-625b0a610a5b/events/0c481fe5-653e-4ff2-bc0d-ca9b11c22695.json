@@ -1,0 +1,17 @@
+{
+  "id": "0c481fe5-653e-4ff2-bc0d-ca9b11c22695",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "triggers-recover-8",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+    "output": "src/triggers: 0 файлов",
+    "outputDigest": "76c6006f0cc173bc8ea0449dcf251850e3b5ca1a33a590e83d28ed4c6253281b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:55:01.410Z"
+}
