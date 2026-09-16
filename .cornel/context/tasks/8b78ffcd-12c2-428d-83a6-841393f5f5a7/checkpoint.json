@@ -2,15 +2,15 @@
   "taskId": "8b78ffcd-12c2-428d-83a6-841393f5f5a7",
   "branch": "cornel/render-effekty-i-instrumenty-8b78ff",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "RUNNING",
-  "summary": "Фактический статус: задача не завершена. В Issue #36 сейчас нет опубликованных RESULT/комментариев worker, поэтому предыдущая ls-команда не дала зафиксированного результата в Issue и повторять её как успешную нельзя. Назначение и ветка остаются актуальными.\n\nПродолжаю с новой диагностической командой на текущем head, чтобы получить структуру рабочей копии и двигаться дальше.\n\nJSON\n{\"version\":1,\"taskId\":\"8b78ffcd-12c2-428d-83a6-841393f5f5a7\",\"commandId\":\"inspect-render-status-2\",\"operation\":\"ls\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"path\":\"\",\"maxLines\":400}\n\nСводка: задача открыта; изменений и подтверждённых проверок пока нет; следующий шаг — получить фактическое дерево файлов от worker и после RESULT перейти к чтению нужных core/UI контрактов.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "",
   "commands": [
     {
       "commandId": "inspect-render-status-2",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-      "exitCode": null
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T12:27:49.153Z"
+  "createdAt": "2026-09-16T12:29:34.636Z"
 }
