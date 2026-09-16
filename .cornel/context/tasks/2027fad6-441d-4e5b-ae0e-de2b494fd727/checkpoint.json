@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "WAITING_CHATGPT",
-  "summary": "Локальные ссылки подтверждают: последний известный рабочей копии SHA ветки — `77b38d1…` (создана push-ом), новее ничего не приходило; сетевого доступа к GitHub у меня нет. Отправляю дешёвую read-операцию со списком допустимых голов — если worker примет один из вариантов, сразу продолжу запись тестов.\n\n```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"probe-heads-24\",\"operation\":\"ls\",\"heads\":[\"77b38d1780726161f87e511138beae87cceeb098\",\"9bf2556a277fa1aeb05caec89a277aa6c729492f\"],\"path\":\"src/ai\",\"maxLines\":50}\n```\n\nЖду результат worker в этом чате.\n\nСводка:\n- **Состояние работы (в рабочей копии, не опубликовано):** записаны и подтверждены worker `src/ai/Matchmaking.ts` (рейтинг↔скилл, синтетические профили, детерминированный подбор соперников), патч `src/ai/BotPlanner.ts` (8 секций: hazard type guard, безопасное индексирование поверхностей, fallback-кандидат, `idealPowerForDistance`), `src/gameplay/RatingSystem.ts` (multiplayer-Elo, K-фактор, мост от `MatchStanding`) и экспорт в `src/gameplay/index.ts`.\n- **Осталось:** тесты `src/ai/ai.test.ts` и `src/gameplay/RatingSystem.test.ts`, npm-скрипт `test:ai`, затем typecheck/тесты/сборка, `publish`, `finish`.\n- **Блокирующая причина:** worker отклоняет команды с «headSha не совпадает с GitHub». Проверил локально `.git`: `FETCH_HEAD`, `refs/remotes/origin/cornel/boty-i-reyting-2027fa` и reflog ветки — везде `77b38d1…` (единственная запись «update by push»); голова офиса локально `9bf2556…`. Фактический новый SHA ветки в рабочей копии отсутствует, `fetch`/`ls-remote` мне недоступны.\n- **Следующий шаг:** если `probe-heads-24` снова отклонён — прошу владельца прислать текущий полный SHA ветки `cornel/boty-i-reyting-2027fa` (или разрешить `git fetch` из сессии); с ним я за один проход допишу тесты, прогоню проверки и опубликую.\n\n",
+  "summary": "Последняя уже отправленная команда — probe-heads-24; RESULT/UNKNOWN для неё в переданном журнале отсутствует. Повторять её или обходить новой проверкой нельзя.\n\nФактический статус не изменился: реализация AI matchmaking, патч BotPlanner и RatingSystem подтверждены worker; тесты, typecheck/build, публикация и finish ещё не выполнены. Основная проблема — worker сообщает, что известные SHA не совпадают с текущей головой назначенной ветки.\n\nЖду именно RESULT для probe-heads-24. Если он тоже отклонён, потребуется актуальный полный SHA cornel/boty-i-reyting-2027fa; после его получения продолжу с тестов, не повторяя уже успешные изменения.\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -126,5 +126,5 @@
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:13:26.583Z"
+  "createdAt": "2026-09-16T18:15:09.608Z"
 }
