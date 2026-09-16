@@ -1,0 +1,12 @@
+{
+  "id": "daa33e8f-2ac5-4755-a8fc-65257ea668c0",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "update-vite-config-16",
+    "operation": "run",
+    "command": "cat > vite.config.ts <<'EOF'\nimport { defineConfig } from 'vite';\n\nexport default defineConfig({\n  server: { host: true },\n  build: { target: 'es2022' },\n  test: {\n    deps: {\n      inline: ['@dimforge/rapier3d-compat']\n    }\n  }\n});\nEOF"
+  },
+  "createdAt": "2026-09-16T21:36:35.901Z"
+}
