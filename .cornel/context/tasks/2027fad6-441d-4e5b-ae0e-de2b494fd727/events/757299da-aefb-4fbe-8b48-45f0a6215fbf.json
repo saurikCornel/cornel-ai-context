@@ -1,0 +1,12 @@
+{
+  "id": "757299da-aefb-4fbe-8b48-45f0a6215fbf",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "write-ai-tests-21",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T17:52:41.986Z"
+}
