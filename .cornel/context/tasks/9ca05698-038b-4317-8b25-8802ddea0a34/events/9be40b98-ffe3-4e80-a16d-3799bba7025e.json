@@ -1,0 +1,11 @@
+{
+  "id": "9be40b98-ffe3-4e80-a16d-3799bba7025e",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-physics-world-api-19",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T21:39:23.036Z"
+}
