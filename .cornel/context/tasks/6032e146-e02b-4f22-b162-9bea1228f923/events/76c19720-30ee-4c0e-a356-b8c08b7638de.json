@@ -1,0 +1,11 @@
+{
+  "id": "76c19720-30ee-4c0e-a356-b8c08b7638de",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "inspect-failing-camera-tests-17",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T17:15:56.446Z"
+}
