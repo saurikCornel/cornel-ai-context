@@ -1,0 +1,11 @@
+{
+  "id": "bbee874e-d0ef-4e1b-9c7f-9acbb08b729c",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "write-camera-tests-12",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:45:38.227Z"
+}
