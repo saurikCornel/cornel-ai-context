@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 5,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"cornelResolve\":1,\"card\":\"8ca2ce92-e72b-495a-a4b2-650320d9a41c\",\"action\":\"split\",\"tasks\":[{\"title\":\"Camera modes and transitions\",\"description\":\"Реализовать базовый CameraController и режимы aim/follow/overview/free через существующие contracts/math/game. Добавить damping/lerp/slerp, reset и переключение режимов. Не менять UI/AI/course data. Проверить целевыми тестами, typecheck и build.\"},{\"title\":\"Camera input and zoom\",\"description\":\"Реализовать абстрактные input commands для управления камерой, WASD/free-camera movement и zoom. Использовать существующие input/contracts, не привязывать camera-слой напрямую к UI. Добавить тесты на movement/zoom/reset и выполнить typecheck/build.\"},{\"title\":\"Camera collision prevention\",\"description\":\"Реализовать предотвращение прохождения камеры через геометрию/препятствия, используя доступные существующие physics/scene abstractions без изменения gameplay, AI и course definitions. Проверить корректность fallback-поведения, целевые тесты, typecheck и build.\"}],\"text\":\"Карточка повторно остановилась без ответа, поэтому разделить её на три независимых части. В каждой сначала через ls/read/grep проверить существующий src/camera и контракты, сохранить уже рабочий код и не дублировать реализацию. После зелёных тестов, typecheck и build — publish и finish. UNKNOWN не повторять; FAILED/REJECTED разбирать по фактической причине с новым commandId.\"}\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T13:02:18.255Z"
+}
