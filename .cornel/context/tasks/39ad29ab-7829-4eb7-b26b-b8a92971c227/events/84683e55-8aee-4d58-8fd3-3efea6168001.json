@@ -1,0 +1,12 @@
+{
+  "id": "84683e55-8aee-4d58-8fd3-3efea6168001",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "find-physics-tests-20",
+    "operation": "run",
+    "command": "find src/physics -name \"*.test.ts\" -o -name \"*.spec.ts\" | head -5"
+  },
+  "createdAt": "2026-09-16T21:49:32.820Z"
+}
