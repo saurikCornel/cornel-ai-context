@@ -1,0 +1,17 @@
+{
+  "id": "cfc8a8bb-ca51-4edc-bc01-a2e785e30201",
+  "taskId": "26c082ce-4b29-4482-9ed1-be2b215b4dc5",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "### src/courses/types.ts (строки 1-71 из 71)\n1: import type { Quat, Vec3 } from '../contracts/math';\n2: \n3: export interface TransformDescriptor {\n4:   position: Vec3;\n5:   rotation?: Quat;\n6:   scale?: Vec3;\n7: }\n8: \n9: export type SurfaceMaterial = 'green' | 'rough' | 'sand' | 'ice' | 'wood' | 'stone' | 'metal';\n10: \n11: export interface SurfaceDescriptor {\n12:   id: string;\n13:   transform: TransformDescriptor;\n14:   shape: 'box' | 'ramp' | 'cylinder' | 'mesh';\n15:   size: Vec3;\n16:   material: SurfaceMaterial;\n17:   friction?: number;\n18:   restitution?: number;\n19: }\n20: \n21: export interface ObstacleBase {\n22:   id: string;\n23:   transform: TransformDescriptor;\n24:   enabled?: boolean;\n25: }\n26: \n27: export interface StaticObstacle extends ObstacleBase {\n28:   type: 'wall' | 'bumper' | 'pillar' | 'block';\n29:   size: Vec3;\n30:   restitution?: number;\n31: }\n32: \n33: export interface MovingObstacle extends ObstacleBase {\n34:   type: 'spinner' | 'windmill' | 'gate' | 'platform';\n35:   size: Vec3;\n36:   motion: {\n37:     kind: 'rotate' | 'translate';\n38:     axis: Vec3;\n39:     speed: number;\n40:     distance?: number;\n41:     phase?: number;\n42:   };\n43: }\n44: \n45: export interface HazardObstacle extends ObstacleBase {\n46:   type: 'water' | 'void' | 'reset-zone';\n47:   size: Vec3;\n48:   penaltyStrokes?: number;\n49: }\n50: \n51: export type ObstacleDescriptor = StaticObstacle | MovingObstacle | HazardObstacle;\n52: \n53: export interface Hole {\n54:   id: string;\n55:   name: string;\n56:   par: number;\n57:   spawn: Vec3;\n58:   cup: { position: Vec3; radius: number; captureDepth: number };\n59:   bounds: { min: Vec3; max: Vec3 };\n60:   surfaces: SurfaceDescriptor[];\n61:   obstacles: ObstacleDescriptor[];\n62: }\n63: \n64: export interface Course {\n65:   id: string;\n66:   name: string;\n67:   themeId: string;\n68:   version: number;\n69:   holes: Hole[];\n70: }\n71:",
+    "outputDigest": "c882d4d15c9ce156b1369a50b27fee9283336e8441666f1278c4120ee4e598fe",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:53:38.496Z"
+}
