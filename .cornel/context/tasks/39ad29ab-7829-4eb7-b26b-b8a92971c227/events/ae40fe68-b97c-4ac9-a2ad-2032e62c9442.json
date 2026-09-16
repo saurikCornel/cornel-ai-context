@@ -1,0 +1,11 @@
+{
+  "id": "ae40fe68-b97c-4ac9-a2ad-2032e62c9442",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-rapier-import-18",
+    "operation": "grep"
+  },
+  "createdAt": "2026-09-16T21:42:12.266Z"
+}
