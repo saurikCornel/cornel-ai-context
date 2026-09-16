@@ -1,0 +1,51 @@
+{
+  "id": "62e1d9f6-fa7d-4f67-a142-c6634895b3ef",
+  "taskId": "54ec7c7c-604d-4c80-837d-a327f8a8faf4",
+  "type": "PLANNED",
+  "text": "План принят: 10 карточек",
+  "detail": {
+    "cards": [
+      {
+        "id": "a0b6b074-a9c0-4d62-8f9a-95aad1571a99",
+        "title": "RotatingBar/Windmill/Spinner/Pendulum kinematics"
+      },
+      {
+        "id": "508caee9-e7ed-406d-8112-2667dfff52e5",
+        "title": "MovingPlatform, SlidingWall and Door movers"
+      },
+      {
+        "id": "e0a97174-dd66-4ece-9caf-339728576a01",
+        "title": "Bumper, SpringPad, BoostPad and JumpPad"
+      },
+      {
+        "id": "4f0ff377-acb5-4dca-a081-b85e589d1ade",
+        "title": "Surface friction model (ice, mud, sand)"
+      },
+      {
+        "id": "a85140f2-382d-4c83-aaa2-db235de6fea1",
+        "title": "Ball cosmetics catalog and unlocks"
+      },
+      {
+        "id": "08a71a5d-d3c5-4612-beba-2b7bca20a1c1",
+        "title": "Match rewards: XP and statistics update"
+      },
+      {
+        "id": "22b35ab9-4ef0-4bb4-8263-ceba5db54162",
+        "title": "Bot turn pacing scheduler"
+      },
+      {
+        "id": "23325afa-2d56-475a-b820-515a04e174fb",
+        "title": "In-game minimap projection and renderer"
+      },
+      {
+        "id": "8e16bc28-3024-410e-b1a8-ac88e5dee161",
+        "title": "Three.js hole scene builder"
+      },
+      {
+        "id": "9981fb79-db0e-4c0b-89c3-bf4673da030b",
+        "title": "README and audio placeholder assets"
+      }
+    ]
+  },
+  "createdAt": "2026-09-16T23:46:46.542Z"
+}
