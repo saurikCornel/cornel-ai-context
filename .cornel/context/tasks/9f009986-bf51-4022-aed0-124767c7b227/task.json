@@ -2,7 +2,7 @@
   "id": "9f009986-bf51-4022-aed0-124767c7b227",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "chatgpt",
+  "agent": "claude",
   "attachments": [],
   "office": {
     "kind": "fix",
@@ -22,10 +22,13 @@
   "workspaceSyncedSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T17:03:24.050Z",
-  "updatedAt": "2026-09-16T17:04:06.338Z",
+  "updatedAt": "2026-09-16T17:09:07.815Z",
   "issue": 56,
-  "chatUrl": "https://chatgpt.com/c/6aaacbee-aba8-83eb-84ad-a6b9250ea1de",
+  "chatUrl": null,
   "error": null,
   "browserError": null,
-  "statusChecks": 1
+  "statusChecks": 0,
+  "cliSession": null,
+  "chatUrlBefore": "https://chatgpt.com/c/6aaacbee-aba8-83eb-84ad-a6b9250ea1de",
+  "cliActivity": null
 }
