@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-4\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/courses/types.ts:1-260\",\"src/courses/Course.ts:1-220\",\"src/courses/Hole.ts:1-220\",\"src/courses/data/ancient-temple.ts:1-260\",\"src/courses/data/arctic-base.ts:1-260\",\"src/courses/data/neon-city.ts:1-260\",\"src/courses/data/volcano.ts:1-260\"]}\n\nСводка: изменений пока нет; причина — нужно опереться на фактический контракт, а не на предположения. Следующий шаг после чтения — создать data-validation test с понятными диагностическими сообщениями и затем прогнать его.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T13:56:54.355Z"
+}

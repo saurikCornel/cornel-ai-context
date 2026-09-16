@@ -3,7 +3,7 @@
   "branch": "cornel/validaciya-90-lunok-c85887",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-3\",\"operation\":\"grep\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"pattern\":\"export const|Obstacle|obstacle|type Obstacle|interface Obstacle|maxShots|cup:|spawn:\",\"path\":\"src/courses\"}\n\nСводка: выявлено, что десятый курс пока отсутствует в назначенной ветке и должен прийти из параллельной карточки; изменений ещё нет. Следующий шаг — на основании точных типов сделать тест, который проверяет полный каталог и после интеграции chaos-dimension гарантирует ровно 90 лунок, уникальность идентификаторов и валидность структур.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-4\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/courses/types.ts:1-260\",\"src/courses/Course.ts:1-220\",\"src/courses/Hole.ts:1-220\",\"src/courses/data/ancient-temple.ts:1-260\",\"src/courses/data/arctic-base.ts:1-260\",\"src/courses/data/neon-city.ts:1-260\",\"src/courses/data/volcano.ts:1-260\"]}\n\nСводка: изменений пока нет; причина — нужно опереться на фактический контракт, а не на предположения. Следующий шаг после чтения — создать data-validation test с понятными диагностическими сообщениями и затем прогнать его.\n\n",
   "commands": [
     {
       "commandId": "inspect-validation-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "inspect-validation-3",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-validation-4",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:55:48.812Z"
+  "createdAt": "2026-09-16T13:56:54.358Z"
 }
