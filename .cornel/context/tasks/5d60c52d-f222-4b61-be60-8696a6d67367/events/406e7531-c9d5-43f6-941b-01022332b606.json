@@ -1,0 +1,12 @@
+{
+  "id": "406e7531-c9d5-43f6-941b-01022332b606",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "final-verify-11",
+    "operation": "run",
+    "command": "set -e\nnpm run typecheck\nnpm run build\nprintf '\\n=== COURSE FILES ===\\n'\nfind src/courses/data -maxdepth 1 -type f -name '*.ts' -print | sort\nprintf '\\n=== HOLE COUNTS ===\\n'\nfor spec in 'neon-city.ts neon' 'haunted-mansion.ts haunted' 'space-station.ts space'; do set -- $spec; n=$(grep -o \"id:'$2-[0-9][0-9]'\" \"src/courses/data/$1\" | wc -l | tr -d ' '); printf '%s: %s\\n' \"$1\" \"$n\"; test \"$n\" = 9; done\nprintf '\\n=== DUPLICATE HOLE IDS ===\\n'\nids=$(grep -ho \"id:'\\(neon\\|haunted\\|space\\)-[0-9][0-9]'\" src/courses/data/*.ts | sort); test \"$(printf '%s\\n' \"$ids\" | wc -l | tr -d ' ')\" = 27; test \"$(printf '%s\\n' \"$ids\" | uniq | wc -l | tr -d ' ')\" = 27; echo none\nprintf '\\n=== STATUS ===\\n'\ngit status --short\nprintf '\\n=== CHANGED PATHS ===\\n'\ngit status --short | awk '{print $2}'"
+  },
+  "createdAt": "2026-09-16T11:57:14.329Z"
+}

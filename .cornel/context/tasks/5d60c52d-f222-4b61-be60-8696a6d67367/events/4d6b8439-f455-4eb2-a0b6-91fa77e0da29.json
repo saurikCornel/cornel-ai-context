@@ -1,0 +1,17 @@
+{
+  "id": "4d6b8439-f455-4eb2-a0b6-91fa77e0da29",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "final-verify-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 7 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-C3pwB87Z.css  \u001b[39m\u001b[1m\u001b[2m  0.13 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.12 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-Brb-18Fb.js   \u001b[39m\u001b[1m\u001b[2m467.91 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 117.13 kB\u001b[22m\n\u001b[32m✓ built in 920ms\u001b[39m\n\n=== COURSE FILES ===\nsrc/courses/data/haunted-mansion.ts\nsrc/courses/data/neon-city.ts\nsrc/courses/data/space-station.ts\n\n=== HOLE COUNTS ===\nneon-city.ts: 9\nhaunted-mansion.ts: 9\nspace-station.ts: 9\n\n=== DUPLICATE HOLE IDS ===\nnone\n\n=== STATUS ===\n?? src/courses/data/\n\n=== CHANGED PATHS ===\nsrc/courses/data/\n",
+    "outputDigest": "7fb98ce59488ffeb5b2bf757d8a61256fb244e2055d495c0bc17cbc84261f4dd",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:57:23.291Z"
+}

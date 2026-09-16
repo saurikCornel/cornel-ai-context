@@ -1,0 +1,12 @@
+{
+  "id": "e56334b7-af6a-4bfc-b043-132d7c85ecd0",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "resolve-verify-4",
+    "operation": "run",
+    "command": "set -e\n# Resolve index.ts by keeping the complete office AppUI implementation and appending HUD exports.\ngit show :2:src/ui/index.ts > src/ui/index.ts\ncat >> src/ui/index.ts <<'EOF'\n\nexport { Hud } from './Hud';\nexport { Scoreboard } from './Scoreboard';\nexport { LoadingOverlay, MatchResults, PauseOverlay } from './Overlays';\nexport type { HudState, MatchResultPlayer, MatchResultsState, ScoreboardState, UiPlayer, UiPlayerStatus } from './types';\nEOF\n# Resolve CSS additively: office/menu styles first, HUD/results styles second.\ngit show :2:src/ui/ui.css > src/ui/ui.css\nprintf '\\n' >> src/ui/ui.css\ngit show :3:src/ui/ui.css >> src/ui/ui.css\n\ngit add src/ui/index.ts src/ui/ui.css\n\necho '=== UNMERGED ==='\ngit diff --name-only --diff-filter=U\nif grep -R -nE '^(<<<<<<<|=======|>>>>>>>)' src/ui; then echo 'Conflict markers remain'; exit 1; fi\n\necho '=== PACKAGE SCRIPTS ==='\nnode -e \"console.log(require('./package.json').scripts)\"\n\necho '=== TYPECHECK ==='\nnpm run typecheck\n\necho '=== TEST ==='\nif npm run | grep -qE '^  test($|:)'; then npm test -- --runInBand; else echo 'No test script'; fi\n\necho '=== LINT ==='\nif npm run | grep -qE '^  lint($|:)'; then npm run lint; else echo 'No lint script'; fi\n\necho '=== BUILD ==='\nnpm run build\n\necho '=== STATUS ==='\ngit status --short"
+  },
+  "createdAt": "2026-09-16T11:57:29.344Z"
+}
