@@ -1,0 +1,11 @@
+{
+  "id": "90396786-7898-47b2-a22d-7e747a630063",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "finish-camera-controller-13",
+    "headSha": "34766f93a24ec8ee1e9fab621b721edacfc70263"
+  },
+  "createdAt": "2026-09-16T16:47:27.234Z"
+}

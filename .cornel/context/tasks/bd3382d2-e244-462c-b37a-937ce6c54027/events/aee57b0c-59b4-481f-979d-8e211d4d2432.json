@@ -1,0 +1,11 @@
+{
+  "id": "aee57b0c-59b4-481f-979d-8e211d4d2432",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "finish-camera-controller-13",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T16:47:27.233Z"
+}
