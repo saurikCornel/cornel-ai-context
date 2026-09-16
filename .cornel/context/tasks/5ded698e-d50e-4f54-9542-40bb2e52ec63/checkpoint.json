@@ -3,7 +3,7 @@
   "branch": "cornel/camera-input-and-zoom-5ded69",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-grep-4\",\"operation\":\"grep\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"pattern\":\"InputSnapshot|InputAction|camera|Camera|KeyW|KeyA|KeyS|KeyD|wheel|reset\",\"path\":\"src\"}\n```\n\nСводка: решение — camera input будет отдельным pure command/controller API, использующим существующий input-контракт; изменённые файлы — пока нет; проверки — чтение текущих контрактов завершено; следующий шаг — точечно прочитать совпадения и записать реализацию с тестами.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-read-5\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/input/InputManager.ts:1-180\",\"src/input/InputManager.ts:181-380\",\"src/input/InputManager.test.ts:1-240\",\"src/contracts/game.ts:1-300\",\"src/contracts/services.ts:1-300\",\"tsconfig.json:1-220\",\"vite.config.ts:1-180\"]} \n```\n\nСводка: решение — устраняю неоднозначность поиска прямым чтением исходников; изменённые файлы — пока нет; проверки — успешные read/ls, grep без совпадений; следующий шаг — создать камеру-команды, контроллер и целевые тесты.  \n",
   "commands": [
     {
       "commandId": "camera-input-inspect-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "camera-input-grep-4",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "camera-input-read-5",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:04:04.781Z"
+  "createdAt": "2026-09-16T16:08:07.890Z"
 }
