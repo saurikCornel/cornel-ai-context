@@ -1,0 +1,17 @@
+{
+  "id": "4f103197-1fc9-4c1f-8866-bb36eb11e3b1",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "run-10",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "== src/contracts ==\nevents.ts\ngame.ts\nindex.ts\nmath.ts\nservices.ts\n== src/obstacles ==\nNONE\n== src/physics ==\nCollisionLayers.ts\nGolfBallPhysics.ts\nPhysicsWorld.ts\nShotSystem.ts\nhelpers.ts\nindex.ts\n== src/courses ==\nCourse.ts\nCourseBuilder.ts\nHole.ts\ndata\ntypes.ts\n== physics/index.ts ==\nexport * from './CollisionLayers';\nexport * from './GolfBallPhysics';\nexport * from './helpers';\nexport * from './PhysicsWorld';\nexport * from './ShotSystem';\n== CollisionLayers.ts ==\nexport const CollisionLayers = {\n  BALL: 0x0001,\n  COURSE: 0x0002,\n  OBSTACLE: 0x0004,\n  SENSOR: 0x0008,\n} as const;\n\nexport function collisionGroups(membership: number, filter: number): number {\n  return ((membership & 0xffff) << 16) | (filter & 0xffff);\n}\n\nexport const BALL_COLLISION_GROUPS = collisionGroups(\n  CollisionLayers.BALL,\n  CollisionLayers.COURSE | CollisionLayers.OBSTACLE | CollisionLayers.SENSOR,\n);\n== PhysicsWorld.ts ==\nimport RAPIER from '@dimforge/rapier3d-compat';\nimport { GAME_CONFIG } from '../config/GameConfig';\nimport type { Vec3 } from '../contracts/math';\n\nexport class PhysicsWorld {\n  readonly world: RAPIER.World;\n  private accumulator = 0;\n  readonly fixedStep: number;\n\n  constructor(gravity: Vec3 = GAME_CONFIG.physics.gravity, fixedStep = 1 / GAME_CONFIG.targetFps) {\n    this.world = new RAPIER.World(gravity);\n    this.fixedStep = fixedStep;\n    this.world.timestep = fixedStep;\n  }\n\n  step(deltaSeconds: number, beforeStep?: (dt: number) => void): void {\n    this.accumulator += Math.min(Math.max(deltaSeconds, 0), 0.25);\n    while (this.accumulator >= this.fixedStep) {\n      beforeStep?.(this.fixedStep);\n      this.world.step();\n      this.accumulator -= this.fixedStep;\n    }\n  }\n\n  dispose(): void {\n    this.world.free();\n  }\n}\n",
+    "outputDigest": "91b956d207e2f42faf1ca916854ab79096a49c6c36886de74d2ae1c712b3e6c3",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:59:19.891Z"
+}
