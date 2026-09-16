@@ -1,0 +1,12 @@
+{
+  "id": "9fe641cb-dbe2-476b-8edc-644d2e672fa2",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "rot-obst-a1",
+    "operation": "run",
+    "command": "set -e\nmkdir -p src/obstacles\ncat > src/obstacles/validation.ts <<'EOF'\nimport type { Vec3 } from '../contracts/math';\n\nexport function requireId(id: string, what: string): string {\n  const trimmed = typeof id === 'string' ? id.trim() : '';\n  if (trimmed.length === 0) throw new Error(`${what} requires a non-empty id`);\n  return trimmed;\n}\n\nexport function requireFinite(value: number, what: string): number {\n  if (!Number.isFinite(value)) throw new Error(`${what} must be a finite number`);\n  return value;\n}\n\nexport function requirePositive(value: number, what: string): number {\n  if (!Number.isFinite(value) || value <= 0) throw new Error(`${what} must be a positive finite number`);\n  return value;\n}\n\nexport function requireCount(value: number, what: string, min = 1): number {\n  if (!Number.isInteger(value) || value < min) throw new Error(`${what} must be an integer of at least ${min}`);\n  return value;\n}\n\nexport function requireVec3(value: Vec3, what: string): Vec3 {\n  if (!Number.isFinite(value.x) || !Number.isFinite(value.y) || !Number.isFinite(value.z)) {\n    throw new Error(`${what} must be a finite vector`);\n  }\n  return value;\n}\nEOF\nwc -l src/obstacles/validation.ts"
+  },
+  "createdAt": "2026-09-16T19:46:35.470Z"
+}

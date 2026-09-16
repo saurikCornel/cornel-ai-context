@@ -1,0 +1,17 @@
+{
+  "id": "30cf4366-ed2f-465f-a1b1-6a3e1d62122e",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "rot-obst-a1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "      29 src/obstacles/validation.ts\n",
+    "outputDigest": "e57a1d9c4dac44ea5887fe4bdf86f27874327f0e7c85c1c7acc4fc6c8d2abb75",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T19:46:37.926Z"
+}
