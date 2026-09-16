@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-scene-contracts-3\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/core/SceneManager.ts:1-260\",\"src/contracts/services.ts:1-260\",\"src/contracts/math.ts:1-180\",\"src/contracts/index.ts:1-180\"]}\n\nСводка: подтверждены CollisionLayers.OBSTACLE и существующий Rapier world wrapper; чужие слои менять не потребуется. Следующий шаг — создать src/obstacles с конфигурацией, visual/body/collider binding, update(delta) и идемпотентным dispose, плюс минимальные lifecycle-тесты.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T19:04:53.569Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-abstractions-2\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/contracts/services.ts:1-260\",\"src/contracts/math.ts:1-220\",\"src/contracts/index.ts:1-220\",\"src/core/SceneManager.ts:1-320\",\"src/core/Renderer.ts:1-260\",\"src/physics/PhysicsWorld.ts:1-360\",\"src/physics/CollisionLayers.ts:1-240\",\"src/physics/helpers.ts:1-320\",\"src/physics/index.ts:1-220\",\"package.json:1-220\",\"tsconfig.json:1-220\"]}\n\nСледующий шаг после RESULT: зафиксирую минимальный API DynamicObstacle/factory/config, binding к Three/Rapier, lifecycle create → update → dispose, затем добавлю тесты только этого слоя.\n\nСводка: checkpoint отсутствует, рабочая ветка без локальных изменений; relevant abstractions найдены; сейчас читаются их реальные интерфейсы; следующий шаг — реализация изолированного src/obstacles слоя.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-scene-contracts-3\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/core/SceneManager.ts:1-260\",\"src/contracts/services.ts:1-260\",\"src/contracts/math.ts:1-180\",\"src/contracts/index.ts:1-180\"]}\n\nСводка: подтверждены CollisionLayers.OBSTACLE и существующий Rapier world wrapper; чужие слои менять не потребуется. Следующий шаг — создать src/obstacles с конфигурацией, visual/body/collider binding, update(delta) и идемпотентным dispose, плюс минимальные lifecycle-тесты.\n\n",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "read-abstractions-2",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-scene-contracts-3",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:02:48.080Z"
+  "createdAt": "2026-09-16T19:04:53.572Z"
 }
