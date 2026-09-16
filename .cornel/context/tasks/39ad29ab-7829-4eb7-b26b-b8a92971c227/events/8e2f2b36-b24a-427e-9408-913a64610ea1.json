@@ -1,0 +1,11 @@
+{
+  "id": "8e2f2b36-b24a-427e-9408-913a64610ea1",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "run-obstacles-tests-17",
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72"
+  },
+  "createdAt": "2026-09-16T21:39:13.066Z"
+}
