@@ -1,0 +1,17 @@
+{
+  "id": "89c20a2d-51ee-489e-b8b8-436fe0efe65f",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "obs-read-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "### src/obstacles/types.ts (строки 1-50 из 50)\n1: import type { Vec3 } from '../contracts/math';\n2: \n3: export type ForceObstacleKind = 'teleporter' | 'fan' | 'conveyor';\n4: \n5: /** Read only view of the ball handed to obstacle logic, so the layer stays independent from Rapier. */\n6: export interface BallSample {\n7:   position: Vec3;\n8:   velocity: Vec3;\n9:   radius?: number;\n10: }\n11: \n12: /** Instant relocation requested by a teleporter. */\n13: export interface TeleportEffect {\n14:   position: Vec3;\n15:   velocity: Vec3;\n16:   /** spin is dropped on a jump so the ball does not keep drifting sideways after the portal */\n17:   clearAngularVelocity: boolean;\n18: }\n19: \n20: /** What a single obstacle wants to do to the ball during one physics step. */\n21: export interface ObstacleEffect {\n22:   obstacleId: string;\n23:   kind: ForceObstacleKind;\n24:   /** velocity change in m/s, already integrated over the step */\n25:   deltaVelocity?: Vec3;\n26:   teleport?: TeleportEffect;\n27: }\n28: \n29: export interface ObstacleConfigBase {\n30:   id: string;\n31:   kind: ForceObstacleKind;\n32:   enabled?: boolean;\n33: }\n34: \n35: export interface ObstacleStepContext {\n36:   /** fixed physics step in seconds */\n37:   dt: number;\n38:   /** seconds since the hole started, drives pulsing fans */\n39:   elapsed: number;\n40: }\n41: \n42: export interface BallObstacle<TConfig extends ObstacleConfigBase = ObstacleConfigBase> {\n43:   readonly id: string;\n44:   readonly kind: ForceObstacleKind;\n45:   readonly config: TConfig;\n46:   enabled: boolean;\n47:   update(ball: BallSample, context: ObstacleStepContext): ObstacleEffect | null;\n48:   reset(): void;\n49: }\n50:",
+    "outputDigest": "92d16dbc9650b22cc05e50e3d0b429b748147513a3d6abc280ae811d12fba57a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:27:19.050Z"
+}
