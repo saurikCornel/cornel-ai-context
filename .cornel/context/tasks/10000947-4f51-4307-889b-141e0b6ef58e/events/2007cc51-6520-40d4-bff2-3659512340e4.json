@@ -1,0 +1,17 @@
+{
+  "id": "2007cc51-6520-40d4-bff2-3659512340e4",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "merge-camera-1",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/camera-input-and-zoom-5ded69 -> FETCH_HEAD\nAuto-merging src/camera/index.ts\nCONFLICT (content): Merge conflict in src/camera/index.ts\nAutomatic merge failed; fix conflicts and then commit the result.\n--- STATUS ---\nA  src/camera/CameraInput.test.ts\nA  src/camera/CameraInput.ts\nUU src/camera/index.ts\n--- CONFLICTS ---\nsrc/camera/index.ts\n",
+    "outputDigest": "2e9a946fe8867ae88e05f48aa126ef0961d47471915e3459d8ef25159e82a054",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:04:14.733Z"
+}

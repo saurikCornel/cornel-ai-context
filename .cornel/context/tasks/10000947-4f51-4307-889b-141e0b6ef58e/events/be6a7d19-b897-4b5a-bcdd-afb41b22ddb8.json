@@ -1,0 +1,12 @@
+{
+  "id": "be6a7d19-b897-4b5a-bcdd-afb41b22ddb8",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "merge-camera-1",
+    "operation": "run",
+    "command": "git fetch origin cornel/camera-input-and-zoom-5ded69 && git merge --no-edit FETCH_HEAD; rc=$?; echo '--- STATUS ---'; git status --short; echo '--- CONFLICTS ---'; git diff --name-only --diff-filter=U; exit $rc"
+  },
+  "createdAt": "2026-09-16T17:04:10.355Z"
+}

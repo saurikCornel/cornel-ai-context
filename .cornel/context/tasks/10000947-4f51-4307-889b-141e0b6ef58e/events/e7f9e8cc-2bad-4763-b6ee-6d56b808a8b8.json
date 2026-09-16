@@ -1,0 +1,11 @@
+{
+  "id": "e7f9e8cc-2bad-4763-b6ee-6d56b808a8b8",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "merge-camera-1",
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a"
+  },
+  "createdAt": "2026-09-16T17:04:12.623Z"
+}
