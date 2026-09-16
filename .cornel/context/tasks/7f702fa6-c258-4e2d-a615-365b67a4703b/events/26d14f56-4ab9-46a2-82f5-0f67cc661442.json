@@ -1,0 +1,11 @@
+{
+  "id": "26d14f56-4ab9-46a2-82f5-0f67cc661442",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "ls-gameplay-effects-1",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T21:52:32.044Z"
+}
