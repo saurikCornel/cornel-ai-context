@@ -1,0 +1,12 @@
+{
+  "id": "3c780ab5-294e-4313-951d-cb9a17998eb5",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "final-verify-1",
+    "operation": "run",
+    "command": "set -e; printf '%s\\n' '=== STATUS ==='; git status --short; printf '%s\\n' '=== HOLE COUNTS ==='; for f in src/courses/data/green-hills.ts src/courses/data/pirate-bay.ts src/courses/data/candy-factory.ts; do printf '%s: ' \"$f\"; grep -c 'defineHole({' \"$f\"; done; printf '%s\\n' '=== UNIQUE HOLE IDS ==='; ids=$(grep -h -o \"id:'\\(gh\\|pb\\|cf\\)-[0-9][0-9]-[^']*'\" src/courses/data/*.ts | sed \"s/^id:'//;s/'$//\"); total=$(printf '%s\\n' \"$ids\" | sed '/^$/d' | wc -l | tr -d ' '); unique=$(printf '%s\\n' \"$ids\" | sed '/^$/d' | sort -u | wc -l | tr -d ' '); echo \"total=$total unique=$unique\"; test \"$total\" = 27; test \"$unique\" = 27; printf '%s\\n' '=== TYPECHECK ==='; npm run typecheck; printf '%s\\n' '=== BUILD ==='; npm run build"
+  },
+  "createdAt": "2026-09-16T12:00:01.268Z"
+}
