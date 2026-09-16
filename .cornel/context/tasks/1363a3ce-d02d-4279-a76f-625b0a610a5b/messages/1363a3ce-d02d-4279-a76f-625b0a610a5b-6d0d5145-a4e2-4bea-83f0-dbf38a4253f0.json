@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Контракты курса ясны: материалы поверхностей — фиксированный union, препятствия — три группы, зон/триггеров (spring, boost, jump, teleporter, fan, conveyor, gravity, magnet) в типах ещё нет. Теперь нужен физический API, чтобы триггеры встали в существующий шаг симуляции.\n\n```json\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-grep-3\",\"operation\":\"grep\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"pattern\":\"^export\",\"path\":\"src/physics\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nЧто уже зафиксировано из прочитанного:\n- `SurfaceMaterial` — закрытый union `green | rough | sand | ice | wood | stone | metal`; `ice` есть, `mud`/`lava` отсутствуют, у поверхности есть переопределения `friction`/`restitution`.\n- `StaticObstacle` уже включает `bumper`; `HazardObstacle` покрывает `water | void | reset-zone` со `penaltyStrokes`.\n- Значит мой модуль должен расширять типы аддитивно (новые дескрипторы триггеров/зон + новые материалы), не ломая уже слитые 90 лунок и их валидацию.\n\nСводка: решил строить триггеры как аддитивное расширение существующих дескрипторов Course Builder, а не параллельный формат; файлы пока не менял; проверок не запускал; следующий шаг — прочитать публичный API физического мира и точку шага симуляции, затем реализовать модуль триггеров/поверхностей с targeted-тестами trigger/force/teleport.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:18:35.352Z"
+}

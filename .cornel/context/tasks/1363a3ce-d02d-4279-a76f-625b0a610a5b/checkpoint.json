@@ -3,7 +3,7 @@
   "branch": "cornel/triggery-i-poverhnosti-1363a3",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "status": "RUNNING",
-  "summary": "Продолжаю: нужны точные контракты типов курса и физического API.\n\n```json\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-read-1\",\"operation\":\"read\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"paths\":[\"src/courses/types.ts:1-140\"]}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат. По контрактам `types.ts` (описания препятствий, поверхностей, зон и трансформов) пойму, какие поля уже зарезервированы под bumper/spring/boost/jump/teleporter/fan/conveyor и под материалы ice/mud/water/lava, чтобы новый модуль триггеров читал существующие дескрипторы лунок, а не вводил параллельный формат.\n\nСводка: решения пока не фиксировал; файлы не менял; проверок не запускал; следующий шаг — прочитать `src/courses/types.ts`, затем физический мир (`src/physics/*`) и спроектировать модуль триггеров/поверхностей с targeted-тестами trigger/force/teleport.\n\n",
+  "summary": "Контракты курса ясны: материалы поверхностей — фиксированный union, препятствия — три группы, зон/триггеров (spring, boost, jump, teleporter, fan, conveyor, gravity, magnet) в типах ещё нет. Теперь нужен физический API, чтобы триггеры встали в существующий шаг симуляции.\n\n```json\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-grep-3\",\"operation\":\"grep\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"pattern\":\"^export\",\"path\":\"src/physics\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nЧто уже зафиксировано из прочитанного:\n- `SurfaceMaterial` — закрытый union `green | rough | sand | ice | wood | stone | metal`; `ice` есть, `mud`/`lava` отсутствуют, у поверхности есть переопределения `friction`/`restitution`.\n- `StaticObstacle` уже включает `bumper`; `HazardObstacle` покрывает `water | void | reset-zone` со `penaltyStrokes`.\n- Значит мой модуль должен расширять типы аддитивно (новые дескрипторы триггеров/зон + новые материалы), не ломая уже слитые 90 лунок и их валидацию.\n\nСводка: решил строить триггеры как аддитивное расширение существующих дескрипторов Course Builder, а не параллельный формат; файлы пока не менял; проверок не запускал; следующий шаг — прочитать публичный API физического мира и точку шага симуляции, затем реализовать модуль триггеров/поверхностей с targeted-тестами trigger/force/teleport.\n\n",
   "commands": [
     {
       "commandId": "triggers-inspect-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "triggers-read-1",
+      "status": "SUCCEEDED",
+      "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+      "exitCode": 0
+    },
+    {
+      "commandId": "triggers-grep-3",
       "status": "STARTED",
       "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:17:46.118Z"
+  "createdAt": "2026-09-16T17:18:35.357Z"
 }

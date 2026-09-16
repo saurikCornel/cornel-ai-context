@@ -1,0 +1,17 @@
+{
+  "id": "1d8c912d-1441-4b2c-8c0c-83e00456f632",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "triggers-grep-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+    "output": "src/physics/CollisionLayers.ts:1:export const CollisionLayers = {\nsrc/physics/CollisionLayers.ts:8:export function collisionGroups(membership: number, filter: number): number {\nsrc/physics/CollisionLayers.ts:12:export const BALL_COLLISION_GROUPS = collisionGroups(\nsrc/physics/GolfBallPhysics.ts:8:export interface GolfBallPhysicsOptions {\nsrc/physics/GolfBallPhysics.ts:19:export interface ShotResult {\nsrc/physics/GolfBallPhysics.ts:24:export class GolfBallPhysics {\nsrc/physics/PhysicsWorld.ts:5:export class PhysicsWorld {\nsrc/physics/ShotSystem.ts:4:export interface ShotRequest {\nsrc/physics/ShotSystem.ts:9:export class ShotSystem {\nsrc/physics/helpers.ts:3:export function clamp(value: number, min: number, max: number): number {\nsrc/physics/helpers.ts:7:export function magnitude(v: Vec3): number {\nsrc/physics/helpers.ts:11:export function normalizeHorizontal(direction: Vec3): Vec3 | null {\nsrc/physics/helpers.ts:17:export function shotImpulseFromCharge(\nsrc/physics/helpers.ts:27:export function cappedVelocity(v: Vec3, maxSpeed: number): Vec3 {\nsrc/physics/helpers.ts:34:export function shouldSleep(speed: number, stopThreshold: number, quietSeconds: number, sleepDelaySeconds: number): boolean {\nsrc/physics/index.ts:1:export * from './CollisionLayers';\nsrc/physics/index.ts:2:export * from './GolfBallPhysics';\nsrc/physics/index.ts:3:export * from './helpers';\nsrc/physics/index.ts:4:export * from './PhysicsWorld';\nsrc/physics/index.ts:5:export * from './ShotSystem';",
+    "outputDigest": "ea66516f84cb7c33a7131718620eba453de9f53a4564255dcc97369215a9975f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:18:37.646Z"
+}
