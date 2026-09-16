@@ -1,0 +1,17 @@
+{
+  "id": "6fd7f990-fd83-4029-9535-7bed6ac21c94",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "obs-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "ls: vitest.config.*: No such file or directory\nvite.config.ts\n--- helpers exports\n3:export function clamp(value: number, min: number, max: number): number {\n7:export function magnitude(v: Vec3): number {\n11:export function normalizeHorizontal(direction: Vec3): Vec3 | null {\n17:export function shotImpulseFromCharge(\n27:export function cappedVelocity(v: Vec3, maxSpeed: number): Vec3 {\n34:export function shouldSleep(speed: number, stopThreshold: number, quietSeconds: number, sleepDelaySeconds: number): boolean {\n--- existing test files\nsrc/ai/planner.test.ts\nsrc/ai/skill-rating.test.ts\nsrc/assets/assets.test.ts\nsrc/camera/CameraCollision.test.ts\nsrc/camera/CameraController.test.ts\nsrc/camera/CameraSmoothing.test.ts\nsrc/dev/dev.test.ts\nsrc/effects/ParticleManager.test.ts\nsrc/gameplay/gameplay.test.ts\nsrc/input/InputManager.test.ts\nsrc/ui/ui.test.ts\n",
+    "outputDigest": "4fd5f4a5fea0b01313e9d182b77015d04e0c6e30e9ba73e7ce317bd564d2b15b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:07:01.993Z"
+}
