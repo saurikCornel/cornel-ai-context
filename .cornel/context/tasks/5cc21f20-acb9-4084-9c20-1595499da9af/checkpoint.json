@@ -3,7 +3,7 @@
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "headSha": "eba87cc40c40f4f9a56f5e4f5628c18234543463",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"verify-published-input-dev-17\",\"operation\":\"run\",\"headSha\":\"eba87cc40c40f4f9a56f5e4f5628c18234543463\",\"command\":\"npm run test:input && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: publish уже успешен; требуется лишь подтверждение тестов на опубликованном head. После успешного результата сразу повторю finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"finish-input-dev-18\",\"operation\":\"finish\",\"headSha\":\"eba87cc40c40f4f9a56f5e4f5628c18234543463\",\"message\":\"Реализованы InputManager и developer tooling: ?debug=1, ?course=...&hole=..., F1/F2/F3, FPS/debug overlay, presentation minimap и динамическое подключение diagnostics без обязательной production-зависимости. Добавлены целевые тесты. На опубликованном commit успешно пройдены: 5/5 тестов, npm run typecheck и npm run build. Изменения опубликованы в назначенной ветке.\"}\n\nСводка: задача полностью реализована, опубликована и проверена на текущем head. Следующий шаг — слияние ветки сборщиком офиса.\n\n",
   "commands": [
     {
       "commandId": "input-inventory-1",
@@ -91,10 +91,16 @@
     },
     {
       "commandId": "verify-published-input-dev-17",
+      "status": "SUCCEEDED",
+      "headSha": "eba87cc40c40f4f9a56f5e4f5628c18234543463",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-input-dev-18",
       "status": "STARTED",
       "headSha": "eba87cc40c40f4f9a56f5e4f5628c18234543463",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:44:03.382Z"
+  "createdAt": "2026-09-16T15:44:25.503Z"
 }

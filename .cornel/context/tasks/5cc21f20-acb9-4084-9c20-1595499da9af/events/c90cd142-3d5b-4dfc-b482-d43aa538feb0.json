@@ -1,0 +1,17 @@
+{
+  "id": "c90cd142-3d5b-4dfc-b482-d43aa538feb0",
+  "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-input-dev-18",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "eba87cc40c40f4f9a56f5e4f5628c18234543463",
+    "output": "Реализованы InputManager и developer tooling: ?debug=1, ?course=...&hole=..., F1/F2/F3, FPS/debug overlay, presentation minimap и динамическое подключение diagnostics без обязательной production-зависимости. Добавлены целевые тесты. На опубликованном commit успешно пройдены: 5/5 тестов, npm run typecheck и npm run build. Изменения опубликованы в назначенной ветке.",
+    "outputDigest": "3c960b5472d44a787dc91a43a8ba5ee81a617aaa130a2c8f14ce326855da6367",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T15:44:28.025Z"
+}

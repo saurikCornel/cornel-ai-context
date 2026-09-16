@@ -1,0 +1,13 @@
+{
+  "id": "8cc371d0-90b9-4486-8fda-df57e319f8c2",
+  "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Реализованы InputManager и developer tooling: ?debug=1, ?course=...&hole=..., F1/F2/F3, FPS/debug overlay, presentation minimap и динамическое подключение diagnostics без обязательной production-зависимости. Добавлены целевые тесты. На опубликованном commit успешно пройдены: 5/5 тестов, npm run typecheck и npm run build. Изменения опубликованы в назначенной ветке.",
+  "detail": {
+    "commands": 16,
+    "failed": 3,
+    "headSha": "eba87cc40c40f4f9a56f5e4f5628c18234543463",
+    "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f"
+  },
+  "createdAt": "2026-09-16T15:44:28.026Z"
+}

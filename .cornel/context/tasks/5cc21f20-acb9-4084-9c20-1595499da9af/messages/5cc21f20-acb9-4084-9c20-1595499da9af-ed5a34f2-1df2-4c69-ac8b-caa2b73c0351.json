@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"finish-input-dev-18\",\"operation\":\"finish\",\"headSha\":\"eba87cc40c40f4f9a56f5e4f5628c18234543463\",\"message\":\"Реализованы InputManager и developer tooling: ?debug=1, ?course=...&hole=..., F1/F2/F3, FPS/debug overlay, presentation minimap и динамическое подключение diagnostics без обязательной production-зависимости. Добавлены целевые тесты. На опубликованном commit успешно пройдены: 5/5 тестов, npm run typecheck и npm run build. Изменения опубликованы в назначенной ветке.\"}\n\nСводка: задача полностью реализована, опубликована и проверена на текущем head. Следующий шаг — слияние ветки сборщиком офиса.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T15:44:25.408Z"
+}
