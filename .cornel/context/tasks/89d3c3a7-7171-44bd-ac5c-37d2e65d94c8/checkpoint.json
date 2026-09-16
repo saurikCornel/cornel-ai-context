@@ -2,15 +2,21 @@
   "taskId": "89d3c3a7-7171-44bd-ac5c-37d2e65d94c8",
   "branch": "cornel/camera-input-and-zoom-89d3c3",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "WAITING_CHATGPT",
-  "summary": "",
+  "status": "RUNNING",
+  "summary": "Фактический статус: inspect-3 уже успешно выполнился, но следующая команда read-contracts-4 пока не имеет RESULT в Issue. В Issue по-прежнему видны только прошлые события RATE_LIMIT; UNKNOWN нет.\n\nТо есть задача ещё не завершена: структура проекта изучена, но контракты и конфиг ещё не прочитаны, изменений кода нет, тесты/build не запускались. Повторять успешный inspect-3 не нужно. Повторяю только незавершённое чтение с новым commandId.\n\nJSON\n{\"version\":1,\"taskId\":\"89d3c3a7-7171-44bd-ac5c-37d2e65d94c8\",\"commandId\":\"read-contracts-5\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/contracts/math.ts:1-240\",\"src/contracts/services.ts:1-280\",\"src/contracts/game.ts:1-280\",\"src/contracts/index.ts:1-220\",\"src/config/GameConfig.ts:1-280\",\"package.json:1-220\",\"tsconfig.app.json:1-220\"]}\n\nПосле RESULT перейду непосредственно к реализации camera input/zoom/reset и тестам.\n\n",
   "commands": [
     {
       "commandId": "inspect-3",
       "status": "SUCCEEDED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": 0
+    },
+    {
+      "commandId": "read-contracts-5",
+      "status": "STARTED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:01:11.614Z"
+  "createdAt": "2026-09-16T15:02:00.330Z"
 }

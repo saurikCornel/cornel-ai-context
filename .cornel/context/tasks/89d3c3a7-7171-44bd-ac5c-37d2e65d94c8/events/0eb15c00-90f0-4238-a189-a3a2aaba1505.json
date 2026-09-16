@@ -1,0 +1,11 @@
+{
+  "id": "0eb15c00-90f0-4238-a189-a3a2aaba1505",
+  "taskId": "89d3c3a7-7171-44bd-ac5c-37d2e65d94c8",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-contracts-5",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T15:02:00.329Z"
+}
