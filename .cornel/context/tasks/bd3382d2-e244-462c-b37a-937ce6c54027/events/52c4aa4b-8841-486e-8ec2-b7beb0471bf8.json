@@ -1,0 +1,17 @@
+{
+  "id": "52c4aa4b-8841-486e-8ec2-b7beb0471bf8",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "install-and-verify-camera-8",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "\nadded 84 packages, and audited 85 packages in 2s\n\n17 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/bd3382d2-e244-462c-b37a-937ce6c54027\u001b[39m\n\n \u001b[31m❯\u001b[39m src/camera/CameraController.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m | \u001b[22m\u001b[31m1 failed\u001b[39m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n   \u001b[31m❯\u001b[39m CameraController \u001b[2m(4)\u001b[22m\n     \u001b[32m✓\u001b[39m creates an orbit state and exposes defensive vector copies\u001b[32m 2\u001b[2mms\u001b[22m\u001b[39m\n\u001b[31m     \u001b[31m×\u001b[31m applies pointer orbit, zoom limits and diagonal WASD panning\u001b[39m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n     \u001b[32m✓\u001b[39m restores the configured orbit without losing the followed target\u001b[32m 1\u001b[2mms\u001b[22m\u001b[39m\n     \u001b[32m✓\u001b[39m uses the collision raycaster to keep the camera in front of obstacles\u001b[32m 0\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m src/camera/CameraController.test.ts\u001b[2m > \u001b[22mCameraController\u001b[2m > \u001b[22mapplies pointer orbit, zoom limits and diagonal WASD panning\n\u001b[31m\u001b[1mAssertionError\u001b[22m: expected 1 to be close to 4, received difference is 3, but expected 0.005\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/camera/CameraController.test.ts:\u001b[2m31:56\u001b[22m\u001b[39m\n    \u001b[90m 29|\u001b[39m     expect(state.pitch).toBe(1.25);\n    \u001b[90m 30|\u001b[39m     expect(state.distance).toBe(6);\n    \u001b[90m 31|\u001b[39m     expect(Math.hypot(state.target.x, state.target.z)).toBeCloseTo(4);\n    \u001b[90m   |\u001b[39m                                                        \u001b[31m^\u001b[39m\n    \u001b[90m 32|\u001b[39m   });\n    \u001b[90m 33|\u001b[39m\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 19:21:14\n\u001b[2m   Duration \u001b[22m 169ms\u001b[2m (transform 65%, import 18%, tests 11%, worker 6%)\u001b[22m\n\n",
+    "outputDigest": "db87bb468bc23bc496f4fb242ec3f91cc61d0b99eea67ef93a6640f52b27d8ee",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:21:14.940Z"
+}
