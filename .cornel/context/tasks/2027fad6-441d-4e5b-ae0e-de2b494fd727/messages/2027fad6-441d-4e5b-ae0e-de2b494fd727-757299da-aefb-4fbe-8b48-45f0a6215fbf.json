@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Локальные ссылки устарели, а прямой доступ к сети из моих инструментов не разрешён. Проверяю гипотезу, что назначенная ветка подтянута к голове офиса, дешёвой read-операцией.\n\n```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"probe-head-22\",\"operation\":\"ls\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"path\":\"src/ai\",\"maxLines\":50}\n```\n\nЖду результат worker.\n\nСводка: команда `write-ai-tests-21` отклонена из-за расхождения headSha — ветка на GitHub изменилась, локальные remote-tracking ссылки устарели, сетевые git-команды мне недоступны. Сейчас проверяю актуальность SHA головы офиса (`9bf2556…`) безопасной операцией `ls`. Если SHA верный — повторю запись тестов AI с новым commandId; если нет, попрошу владельца сообщить текущий SHA ветки `cornel/boty-i-reyting-2027fa`. Уже записаны и подтверждены: `src/ai/Matchmaking.ts`, патч `src/ai/BotPlanner.ts`, `src/gameplay/RatingSystem.ts`, экспорт в `src/gameplay/index.ts`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:53:48.568Z"
+}
