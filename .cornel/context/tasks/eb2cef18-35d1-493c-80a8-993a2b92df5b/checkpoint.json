@@ -3,7 +3,7 @@
   "branch": "cornel/chaos-dimension-i-validaciya-90-lunok-eb2cef",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "status": "WAITING_CHATGPT",
-  "summary": "",
+  "summary": "Фактический статус: RESULT для finish-blocked-12 в Issue не появился. Последний подтверждённый worker-статус остаётся REJECTED — Задача не принимает команды.\n\nСледовательно:\n\nfinish не подтверждён;\n\nкарточка не закрыта;\n\nкод не изменён;\n\nтесты и publish не выполнялись.\n\nНовых команд не отправляю, чтобы не повторять неподтверждённые действия и не обходить отсутствие RESULT. Текущая блокировка — worker не исполняет команды этого taskId.\n\n",
   "commands": [],
-  "createdAt": "2026-09-16T13:40:48.787Z"
+  "createdAt": "2026-09-16T13:41:28.825Z"
 }
