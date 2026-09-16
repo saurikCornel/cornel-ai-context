@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"cornelSplit\":1,\"tasks\":[{\"key\":\"dynamic\",\"title\":\"Динамические препятствия\",\"description\":\"Реализовать RotatingBar, Windmill, Spinner, Pendulum, MovingPlatform, SlidingWall и Door: общий lifecycle, визуальная геометрия, Rapier-коллайдеры и обновление движения.\",\"dependsOn\":[],\"priority\":\"high\"},{\"key\":\"triggers\",\"title\":\"Триггеры и поверхности\",\"description\":\"Реализовать Bumper, SpringPad, BoostPad, JumpPad, Teleporter, Fan, Conveyor, IceSurface, MudSurface, WaterZone, LavaZone, KillZone, GravityZone и MagnetZone с API конфигов, физическим поведением и targeted-тестами trigger/force/teleport.\",\"dependsOn\":[],\"priority\":\"high\"},{\"key\":\"factory\",\"title\":\"Фабрика препятствий\",\"description\":\"Реализовать src/obstacles factory и публичные типы: построение всех descriptor-типов CourseBuilder, интеграция lifecycle dispose и тест покрытия всех 90 лунок без неизвестных типов.\",\"dependsOn\":[\"dynamic\",\"triggers\"],\"priority\":\"high\"}]}\n```\n\nРешение: карточка разделена на независимые слои реализации.  \nИзменённые файлы: нет.  \nПроверки: прочитаны правила проекта; checkpoint отсутствует.  \nСледующий шаг: выполнение выделенных подзадач параллельными работниками.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T15:59:50.717Z"
+}

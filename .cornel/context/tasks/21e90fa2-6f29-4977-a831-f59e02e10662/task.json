@@ -17,9 +17,9 @@
   "branch": "cornel/universalnye-prepyatstviya-21e90f",
   "baseSha": "77b38d1780726161f87e511138beae87cceeb098",
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
-  "status": "WAITING_CHATGPT",
+  "status": "CANCELLED",
   "createdAt": "2026-09-16T15:44:46.489Z",
-  "updatedAt": "2026-09-16T15:59:38.370Z",
+  "updatedAt": "2026-09-16T15:59:53.100Z",
   "issue": 46,
   "chatUrl": "cli://codex/01a0aaec-718b-72f3-8250-7dc8bb502b81",
   "error": null,
@@ -27,6 +27,6 @@
   "browserErrorJobId": "21e90fa2-6f29-4977-a831-f59e02e10662-initial",
   "statusChecks": 0,
   "cliSession": "01a0aaec-718b-72f3-8250-7dc8bb502b81",
-  "cliActivity": "Codex CLI: начал ход",
+  "cliActivity": null,
   "currentHead": "77b38d1780726161f87e511138beae87cceeb098"
 }
