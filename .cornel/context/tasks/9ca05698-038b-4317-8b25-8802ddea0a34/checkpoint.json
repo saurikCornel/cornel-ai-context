@@ -3,7 +3,7 @@
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Читаю `ObstacleManager.ts` целиком плюс компактно перечитываю `types.ts`/`index.ts`, чтобы написать тесты строго под фактические сигнатуры.\n\n```json\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-obstacle-manager-13\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/ObstacleManager.ts:1-240\",\"src/obstacles/types.ts:1-44\",\"src/obstacles/index.ts:1-40\"]}\n```\n\nЖду worker: результат придёт отдельным сообщением в этот чат, Issue перечитывать не нужно.\n\nСводка: решение — не писать тесты «вслепую», а сверить фактический API `ObstacleManager` после успешной записи файлов. Изменённые файлы (созданы, не опубликованы): `src/obstacles/{types,descriptor,motion,index,ObstacleManager}.ts`. Проверки: пока только read-only операции worker. Следующий шаг — добавить lifecycle-тесты, затем typecheck и build, после чего publish и finish.\n\n",
+  "summary": "Читаю полные файлы, чтобы написать тесты точно под API и стиль проекта.\n```\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-all-obstacle-files-15\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/descriptor.ts:1-120\",\"src/obstacles/motion.ts:1-120\",\"src/obstacles/ObstacleManager.ts:1-200\",\"src/obstacles/index.ts:1-40\",\"src/effects/ParticleManager.test.ts:1-120\"]}\n```\nCORNEL_AI_YIELD\n\nЧитаю полные файлы, чтобы написать тесты точно под API и стиль проекта.\njson\n1\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-all-obstacle-files-15\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/descriptor.ts:1-120\",\"src/obstacles/motion.ts:1-120\",\"src/obstacles/ObstacleManager.ts:1-200\",\"src/obstacles/index.ts:1-40\",\"src/effects/ParticleManager.test.ts:1-120\"]}\n",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "read-obstacle-manager-13",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-all-obstacle-files-15",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:22:43.350Z"
+  "createdAt": "2026-09-16T21:25:24.558Z"
 }

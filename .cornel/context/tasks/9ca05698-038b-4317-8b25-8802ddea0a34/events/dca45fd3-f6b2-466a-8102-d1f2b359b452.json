@@ -1,0 +1,11 @@
+{
+  "id": "dca45fd3-f6b2-466a-8102-d1f2b359b452",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-all-obstacle-files-15",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T21:25:24.555Z"
+}
