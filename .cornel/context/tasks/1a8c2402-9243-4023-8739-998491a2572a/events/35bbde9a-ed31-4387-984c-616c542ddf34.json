@@ -1,0 +1,11 @@
+{
+  "id": "35bbde9a-ed31-4387-984c-616c542ddf34",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "assets-audio-contracts-3",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T13:55:46.809Z"
+}

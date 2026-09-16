@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"1a8c2402-9243-4023-8739-998491a2572a\",\"commandId\":\"assets-audio-contracts-3\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/contracts/services.ts:1-260\",\"src/contracts/events.ts:1-260\",\"src/contracts/index.ts:1-220\",\"src/config/GameConfig.ts:1-260\",\"src/main.ts:1-260\",\"tsconfig.json:1-220\",\"vite.config.ts:1-220\"],\"maxLines\":500}\n\nЖду результат worker.\nСводка: найдено 56 файлов, отдельного слоя assets/audio нет; изменений пока нет; следующий шаг — после чтения контрактов создать изолированные AssetManager, AudioManager и их тесты без изменений gameplay/AI/course data.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T13:55:46.807Z"
+}

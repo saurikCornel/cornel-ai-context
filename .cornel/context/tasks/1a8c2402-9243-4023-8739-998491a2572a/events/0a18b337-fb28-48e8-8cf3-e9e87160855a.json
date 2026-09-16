@@ -1,0 +1,11 @@
+{
+  "id": "0a18b337-fb28-48e8-8cf3-e9e87160855a",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "assets-audio-contracts-3",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T13:55:46.807Z"
+}
