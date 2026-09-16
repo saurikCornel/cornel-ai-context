@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "82e3cbd79977f7865a89bde4c9c7b6c7b2aef999",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"verify-published-camera-28\",\"operation\":\"run\",\"headSha\":\"82e3cbd79977f7865a89bde4c9c7b6c7b2aef999\",\"command\":\"echo '--- camera tests ---'; npx vitest run src/camera; echo '--- typecheck ---'; npx tsc -b --pretty false; echo '--- build ---'; npm run build\",\"timeoutSeconds\":1200}\n\nСводка: код уже опубликован; нужна лишь обязательная проверка именно на опубликованном head.\nИзменённые файлы: нет.\nПроверки: повторно запускаются vitest src/camera, tsc -b, npm run build на опубликованном commit.\nСледующий шаг: при успешном RESULT — сразу finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"finish-camera-modes-29\",\"operation\":\"finish\",\"headSha\":\"82e3cbd79977f7865a89bde4c9c7b6c7b2aef999\",\"message\":\"Camera modes aim/follow/overview/free реализованы и опубликованы. Добавлены CameraController, переключение режимов и переходы, free movement, интеграция InputManager, collision-aware позиционирование и публичный export. Исправлены pitch при смене режима и разделение zoom minDistance от collision clearance. На опубликованном head подтверждено: 11/11 camera tests passed, tsc -b passed, npm run build passed.\"}\n\nСводка: карточка завершена по коду и проверкам.\nИзменённые файлы: src/camera/CameraController.ts, src/camera/CameraController.test.ts, src/camera/index.ts.\nПроверки на опубликованном head: 11/11 тестов, typecheck и production build — успешно.\nСледующий шаг: finish отправлен.\n\n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -157,10 +157,16 @@
     },
     {
       "commandId": "verify-published-camera-28",
+      "status": "SUCCEEDED",
+      "headSha": "82e3cbd79977f7865a89bde4c9c7b6c7b2aef999",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-camera-modes-29",
       "status": "STARTED",
       "headSha": "82e3cbd79977f7865a89bde4c9c7b6c7b2aef999",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:13:53.470Z"
+  "createdAt": "2026-09-16T18:16:52.703Z"
 }

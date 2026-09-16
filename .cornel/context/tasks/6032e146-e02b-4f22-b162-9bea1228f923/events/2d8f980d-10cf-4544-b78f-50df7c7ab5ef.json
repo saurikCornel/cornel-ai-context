@@ -1,0 +1,11 @@
+{
+  "id": "2d8f980d-10cf-4544-b78f-50df7c7ab5ef",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "finish-camera-modes-29",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T18:16:52.699Z"
+}

@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"finish-camera-modes-29\",\"operation\":\"finish\",\"headSha\":\"82e3cbd79977f7865a89bde4c9c7b6c7b2aef999\",\"message\":\"Camera modes aim/follow/overview/free реализованы и опубликованы. Добавлены CameraController, переключение режимов и переходы, free movement, интеграция InputManager, collision-aware позиционирование и публичный export. Исправлены pitch при смене режима и разделение zoom minDistance от collision clearance. На опубликованном head подтверждено: 11/11 camera tests passed, tsc -b passed, npm run build passed.\"}\n\nСводка: карточка завершена по коду и проверкам.\nИзменённые файлы: src/camera/CameraController.ts, src/camera/CameraController.test.ts, src/camera/index.ts.\nПроверки на опубликованном head: 11/11 тестов, typecheck и production build — успешно.\nСледующий шаг: finish отправлен.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:16:52.699Z"
+}

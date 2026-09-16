@@ -1,0 +1,17 @@
+{
+  "id": "24030070-9a3d-4cec-b59a-790307a3e8b9",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-camera-modes-29",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "82e3cbd79977f7865a89bde4c9c7b6c7b2aef999",
+    "output": "Camera modes aim/follow/overview/free реализованы и опубликованы. Добавлены CameraController, переключение режимов и переходы, free movement, интеграция InputManager, collision-aware позиционирование и публичный export. Исправлены pitch при смене режима и разделение zoom minDistance от collision clearance. На опубликованном head подтверждено: 11/11 camera tests passed, tsc -b passed, npm run build passed.",
+    "outputDigest": "53c491709405cf478f59f09c64ac535f7d3ac2bd953c994aa8539aba56bb4e49",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:16:54.948Z"
+}
