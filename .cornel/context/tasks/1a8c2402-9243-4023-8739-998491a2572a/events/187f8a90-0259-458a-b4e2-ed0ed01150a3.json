@@ -1,0 +1,11 @@
+{
+  "id": "187f8a90-0259-458a-b4e2-ed0ed01150a3",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "assets-audio-checkpoint-1",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T13:54:20.634Z"
+}

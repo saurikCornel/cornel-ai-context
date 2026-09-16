@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"read-core-contracts-2\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"package.json:1-220\",\"tsconfig.json:1-220\",\"src/main.ts:1-240\",\"src/contracts/math.ts:1-220\",\"src/contracts/services.ts:1-260\",\"src/courses/types.ts:1-320\",\"src/config/GameConfig.ts:1-260\"]}\n\nСводка: core-файлы отсутствуют и конфликтов по ним не ожидается; изменений пока нет; следующий шаг — после чтения контрактов сразу создать оба файла с минимально зависимым API и recovery WebGL-контекста.\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T13:54:18.970Z"
+}

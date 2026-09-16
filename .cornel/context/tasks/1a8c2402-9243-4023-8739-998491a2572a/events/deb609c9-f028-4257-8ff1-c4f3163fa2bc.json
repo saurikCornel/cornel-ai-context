@@ -1,0 +1,11 @@
+{
+  "id": "deb609c9-f028-4257-8ff1-c4f3163fa2bc",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "assets-audio-checkpoint-1",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T13:54:20.635Z"
+}
