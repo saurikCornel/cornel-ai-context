@@ -1,0 +1,11 @@
+{
+  "id": "aef7aca4-d92f-4032-9e8c-d72616e64c54",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "CLI_ERROR",
+  "text": "Claude CLI недоступен: Failed to authenticate: OAuth session expired and could not be refreshed",
+  "detail": {
+    "agent": "claude",
+    "attempt": 1
+  },
+  "createdAt": "2026-09-16T15:45:24.786Z"
+}
