@@ -1,0 +1,17 @@
+{
+  "id": "43bc081c-7e07-44cc-9787-ce50137a4f4b",
+  "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "reapply-merge-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9ad84225b6f2a251d18a2fe6833e2d44bda2f86d",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/camera-modes-aim-follow-overview-free-6032e1 -> FETCH_HEAD\nAuto-merging src/camera/CameraController.test.ts\nCONFLICT (add/add): Merge conflict in src/camera/CameraController.test.ts\nAuto-merging src/camera/CameraController.ts\nCONFLICT (add/add): Merge conflict in src/camera/CameraController.ts\nAuto-merging src/camera/index.ts\nCONFLICT (content): Merge conflict in src/camera/index.ts\nAutomatic merge failed; fix conflicts and then commit the result.\n[detached HEAD 9ad8422] Merge branch 'cornel/camera-modes-aim-follow-overview-free-6032e1' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n===MARKERS===\n===STATUS===\n===HEAD===\n9ad8422 Merge branch 'cornel/camera-modes-aim-follow-overview-free-6032e1' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n82e3cbd Implement camera aim follow overview and free modes\n",
+    "outputDigest": "ea06d61e85023a8e2b4d8def69624879f88564ba035a38bbfc27766c2856723f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T19:14:48.720Z"
+}
