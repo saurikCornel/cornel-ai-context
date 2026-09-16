@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-7\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/courses/Hole.ts:1-220\",\"src/courses/CourseBuilder.ts:1-260\",\"src/courses/Course.ts:1-220\"]}\n\nСводка: допустимые obstacle types подтверждены контрактом; выяснилось, что maxShots напрямую в Hole отсутствует. Следующий шаг — установить фактическую семантику лимита ударов и затем создать тест без ложных требований к данным.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T14:00:16.416Z"
+}
