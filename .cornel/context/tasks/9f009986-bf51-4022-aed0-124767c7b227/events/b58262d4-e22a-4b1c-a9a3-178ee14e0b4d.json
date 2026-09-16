@@ -1,0 +1,12 @@
+{
+  "id": "b58262d4-e22a-4b1c-a9a3-178ee14e0b4d",
+  "taskId": "9f009986-bf51-4022-aed0-124767c7b227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-head-2",
+    "operation": "run",
+    "command": "git log --oneline -3; echo '--- remote ---'; git ls-remote origin cornel/slit-cameracontroller-core-9f0099; echo '--- index.ts ---'; cat src/camera/index.ts; echo '--- status ---'; git status --short"
+  },
+  "createdAt": "2026-09-16T17:15:28.231Z"
+}
