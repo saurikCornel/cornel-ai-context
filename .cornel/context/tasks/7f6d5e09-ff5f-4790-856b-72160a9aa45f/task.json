@@ -2,7 +2,7 @@
   "id": "7f6d5e09-ff5f-4790-856b-72160a9aa45f",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "chatgpt",
+  "agent": "claude",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -19,15 +19,15 @@
   "workspaceSyncedSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T17:03:11.645Z",
-  "updatedAt": "2026-09-16T17:59:08.274Z",
+  "updatedAt": "2026-09-16T18:00:04.444Z",
   "issue": 53,
-  "chatUrl": "https://chatgpt.com/c/6aaacbde-9de4-83eb-b72e-0ca925dd9afa",
+  "chatUrl": null,
   "error": null,
   "browserError": null,
   "browserErrorJobId": "7f6d5e09-ff5f-4790-856b-72160a9aa45f-initial",
   "statusChecks": 0,
   "cliSession": null,
   "chatUrlBefore": "https://chatgpt.com/c/6aaacbde-9de4-83eb-b72e-0ca925dd9afa",
-  "cliActivity": null,
+  "cliActivity": "Claude CLI: запускается (opus)",
   "currentHead": "7a57a441ce1b1987fdacc927968c8080ff1af6d3"
 }
