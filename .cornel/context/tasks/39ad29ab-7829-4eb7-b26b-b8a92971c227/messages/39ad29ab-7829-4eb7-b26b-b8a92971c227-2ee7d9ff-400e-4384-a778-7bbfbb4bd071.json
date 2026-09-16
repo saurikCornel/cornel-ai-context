@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "GitHub сейчас снова показывает назначенную ветку на исходном commit, то есть расхождение было в момент синхронизации worker, а не из-за нашего кода. Повторяю только неуспешное чтение с новым commandId.\n\nJSON\n{\"version\":1,\"taskId\":\"39ad29ab-7829-4eb7-b26b-b8a92971c227\",\"commandId\":\"read-physics-contracts-4\",\"operation\":\"read\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"paths\":[\"src/physics/PhysicsWorld.ts:1-260\",\"src/physics/helpers.ts:1-260\",\"src/physics/CollisionLayers.ts:1-220\",\"src/physics/index.ts:1-220\",\"src/contracts/math.ts:1-260\",\"src/contracts/services.ts:1-260\",\"src/contracts/game.ts:1-260\",\"src/contracts/index.ts:1-220\"]}\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T19:53:35.606Z"
+}
