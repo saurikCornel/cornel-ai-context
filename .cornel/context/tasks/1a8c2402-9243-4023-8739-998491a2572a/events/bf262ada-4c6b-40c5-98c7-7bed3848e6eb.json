@@ -1,0 +1,13 @@
+{
+  "id": "bf262ada-4c6b-40c5-98c7-7bed3848e6eb",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Assets and audio fallbacks implemented and published. Added AssetManager with loading progress and generated texture fallback; AudioManager with event registry, music/sfx/ui/ambient categories, master/category/event volume, mute and safe optional-audio fallback. Added public exports and 5 targeted tests. Verified on the published head: 5/5 tests passed, npm run typecheck passed, npm run build passed.",
+  "detail": {
+    "commands": 12,
+    "failed": 2,
+    "headSha": "b9587cf763a14eea234d9cb757923654d3948c9e",
+    "branch": "cornel/assets-and-audio-fallbacks-1a8c24"
+  },
+  "createdAt": "2026-09-16T15:21:43.945Z"
+}
