@@ -17,9 +17,9 @@
   "branch": "cornel/render-effekty-i-instrumenty-8b78ff",
   "baseSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "workspaceSyncedSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "WAITING_CHATGPT",
+  "status": "NEEDS_ATTENTION",
   "createdAt": "2026-09-16T12:22:17.804Z",
-  "updatedAt": "2026-09-16T12:44:11.619Z",
+  "updatedAt": "2026-09-16T12:44:21.627Z",
   "issue": 36,
   "chatUrl": "https://chatgpt.com/c/6aaa8a0d-3d5c-83eb-b0a0-1e2eadb4b278",
   "error": null,
@@ -27,6 +27,6 @@
   "browserErrorJobId": "8b78ffcd-12c2-428d-83a6-841393f5f5a7-initial",
   "statusChecks": 3,
   "currentHead": "768daca05831f4622211da0e377430b36c00f9ff",
-  "attentionReason": null,
+  "attentionReason": "status_timeout",
   "intentRevision": 2
 }

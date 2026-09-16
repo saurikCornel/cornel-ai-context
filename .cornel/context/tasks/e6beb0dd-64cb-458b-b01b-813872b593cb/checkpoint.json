@@ -2,8 +2,8 @@
   "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
   "branch": "cornel/camera-controller-and-controls-e6beb0",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "RUNNING",
-  "summary": "Фактический статус: в Issue #35 по-прежнему нет RESULT по camera-create-11, поэтому успешную запись файлов и typecheck подтвердить нельзя.\n\nЧтобы не повторять потенциально выполненную запись, сначала сверяю локальное состояние рабочей копии.\n\nJSON\n{\"version\":1,\"taskId\":\"e6beb0dd-64cb-458b-b01b-813872b593cb\",\"commandId\":\"camera-status-12\",\"operation\":\"ls\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"path\":\"src/camera\",\"maxLines\":100}\n\nЕсли файлы появились — сразу запускаю проверки и публикую. Если каталог снова пуст — повторю только создание файлов.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "",
   "commands": [
     {
       "commandId": "inspect-camera-2",
@@ -25,10 +25,10 @@
     },
     {
       "commandId": "camera-status-12",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-      "exitCode": null
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T12:42:02.379Z"
+  "createdAt": "2026-09-16T12:44:27.951Z"
 }
