@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-camera-index-8\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/index.ts\"]}\n```\n\nСводка: определён API controller: aim/follow/overview/free, плавные переходы, collision-aware позиции и независимый input state.  \nИзменённые файлы: нет.  \nПроверки: collision API и Vitest-стиль изучены.  \nСледующий шаг: создать controller, публичные exports и режимные unit-тесты.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-input-actions-9\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/input/InputManager.ts:1-40\"]}\n```\n\nСводка: существующие camera exports будут сохранены; controller добавится отдельным модулем.  \nИзменённые файлы: нет.  \nПроверки: публичная структура `src/camera/index.ts` подтверждена.  \nСледующий шаг: привязать controller к точным действиям InputManager и записать реализацию с тестами.  \n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "read-camera-index-8",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-input-actions-9",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:24:19.775Z"
+  "createdAt": "2026-09-16T16:29:07.065Z"
 }
