@@ -1,0 +1,17 @@
+{
+  "id": "ec21d712-ad83-4630-a0d9-7c1ec1ea994b",
+  "taskId": "7f6d5e09-ff5f-4790-856b-72160a9aa45f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+    "output": "src: 85 файлов\nsrc/app/GameState.ts\nsrc/assets/AssetManager.ts\nsrc/assets/AudioManager.ts\nsrc/assets/assets.test.ts\nsrc/assets/index.ts\nsrc/camera/CameraCollision.test.ts\nsrc/camera/CameraCollision.ts\nsrc/camera/CameraPose.ts\nsrc/camera/CameraSmoothing.test.ts\nsrc/camera/CameraTransition.ts\nsrc/camera/Easing.ts\nsrc/camera/RapierCameraCollision.ts\nsrc/camera/SmoothCameraRig.ts\nsrc/camera/Smoothing.ts\nsrc/camera/ThreeCameraBinding.ts\nsrc/camera/index.ts\nsrc/config/GameConfig.ts\nsrc/contracts/events.ts\nsrc/contracts/game.ts\nsrc/contracts/index.ts\nsrc/contracts/math.ts\nsrc/contracts/services.ts\nsrc/core/Renderer.ts\nsrc/core/SaveManager.ts\nsrc/core/SceneManager.ts\nsrc/courses/Course.ts\nsrc/courses/CourseBuilder.ts\nsrc/courses/Hole.ts\nsrc/courses/data/ancient-temple.ts\nsrc/courses/data/arctic-base.ts\nsrc/courses/data/candy-factory.ts\nsrc/courses/data/chaos-dimension.ts\nsrc/courses/data/green-hills.ts\nsrc/courses/data/haunted-mansion.ts\nsrc/courses/data/neon-city.ts\nsrc/courses/data/pirate-bay.ts\nsrc/courses/data/space-station.ts\nsrc/courses/data/volcano.ts\nsrc/courses/types.ts\nsrc/dev/DeveloperDiagnostics.ts\nsrc/dev/LaunchOptions.ts\nsrc/dev/PresentationMinimap.ts\nsrc/dev/dev.test.ts\nsrc/dev/index.ts\nsrc/effects/ParticleManager.test.ts\nsrc/effects/ParticleManager.ts\nsrc/effects/index.ts\nsrc/gameplay/HoleSystem.ts\nsrc/gameplay/MatchManager.ts\nsrc/gameplay/ScoreManager.ts\nsrc/gameplay/ShotSystemAdapter.ts\nsrc/gameplay/StateMachine.ts\nsrc/gameplay/TurnManager.ts\nsrc/gameplay/gameplay.test.ts\nsrc/gameplay/index.ts\nsrc/gameplay/types.ts\nsrc/input/InputManager.test.ts\nsrc/input/InputManager.ts\nsrc/input/index.ts\nsrc/leaderboard/Leaderboard.ts\nsrc/leaderboard/generator.ts\nsrc/leaderboard/index.ts\nsrc/leaderboard/style.css\nsrc/leaderboard/types.ts\nsrc/main.ts\nsrc/physics/CollisionLayers.ts\nsrc/physics/GolfBallPhysics.ts\nsrc/physics/PhysicsWorld.ts\nsrc/physics/ShotSystem.ts\nsrc/physics/helpers.ts\nsrc/physics/index.ts\nsrc/player/index.ts\nsrc/player/profile.ts\nsrc/player/progression.ts\nsrc/player/types.ts\nsrc/style.css\nsrc/ui/Hud.ts\nsrc/ui/Overlays.ts\nsrc/ui/Scoreboard.ts\nsrc/ui/dom.ts\nsrc/ui/domTests.ts\nsrc/ui/index.ts\nsrc/ui/types.ts\nsrc/ui/ui.css\nsrc/ui/ui.test.ts",
+    "outputDigest": "5fe25329fed74058d09a6b0c99e2860f344faad7da6a278b3ff18f61b553e36b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:09:33.944Z"
+}
