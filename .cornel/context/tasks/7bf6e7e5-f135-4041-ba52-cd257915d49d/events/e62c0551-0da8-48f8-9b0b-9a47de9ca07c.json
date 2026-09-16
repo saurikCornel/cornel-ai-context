@@ -1,0 +1,17 @@
+{
+  "id": "e62c0551-0da8-48f8-9b0b-9a47de9ca07c",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "obs-create-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "Files created successfully\n",
+    "outputDigest": "add1b11a0faa9feae8626b80006398e9b557fa819212af5989a58fee4196a78c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:33:27.601Z"
+}

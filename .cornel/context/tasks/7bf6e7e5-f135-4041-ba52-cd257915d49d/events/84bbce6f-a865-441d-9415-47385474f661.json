@@ -1,0 +1,11 @@
+{
+  "id": "84bbce6f-a865-441d-9415-47385474f661",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "obs-create-1",
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72"
+  },
+  "createdAt": "2026-09-16T21:33:25.208Z"
+}
