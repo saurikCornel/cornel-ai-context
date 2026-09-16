@@ -1,0 +1,12 @@
+{
+  "id": "b74775f8-c8b3-4f40-8fa0-1d405d132a89",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-collision-types-5",
+    "operation": "run",
+    "command": "find node_modules/@dimforge/rapier3d-compat -type f \\( -name '*.d.ts' -o -name '*.ts' \\) -maxdepth 4 -print0 | xargs -0 grep -n \"castRay\" | head -40"
+  },
+  "createdAt": "2026-09-16T13:58:51.154Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "f678ebc8-e97a-403d-90ec-534df0b96664",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-collision-types-5",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T13:58:51.155Z"
+}
