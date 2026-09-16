@@ -3,7 +3,7 @@
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Читаю ObstacleManager.ts и types.ts полностью, чтобы точно реализовать фабрики RapierObstacleBodies и ThreeObstacleVisuals.\n```\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-obstacle-types-and-manager-full-23\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"set -e\\necho '=== types.ts ==='\\ncat src/obstacles/types.ts\\necho '=== ObstacleManager.ts ==='\\ncat src/obstacles/ObstacleManager.ts\\necho '=== index.ts ==='\\ncat src/obstacles/index.ts\",\"timeoutSeconds\":300}\n```\nCORNEL_AI_YIELD\n\nЧитаю ObstacleManager.ts и types.ts полностью, чтобы точно реализовать фабрики RapierObstacleBodies и ThreeObstacleVisuals.\njson\n1\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-obstacle-types-and-manager-full-23\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"set -e\\necho '=== types.ts ==='\\ncat src/obstacles/types.ts\\necho '=== ObstacleManager.ts ==='\\ncat src/obstacles/ObstacleManager.ts\\necho '=== index.ts ==='\\ncat src/obstacles/index.ts\",\"timeoutSeconds\":300}\n",
+  "summary": "Читаю package.json и CourseBuilder.ts (чтобы увидеть примеры дескрипторов препятствий в уровне) локально.\n```\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-pkg-and-coursebuilder-24\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"set -e\\necho '=== package.json ==='\\ncat package.json\\necho '=== courses/types.ts ==='\\ncat src/courses/types.ts\",\"timeoutSeconds\":300}\n```\nCORNEL_AI_YIELD\n\nЧитаю package.json и CourseBuilder.ts (чтобы увидеть примеры дескрипторов препятствий в уровне) локально.\njson\n1\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-pkg-and-coursebuilder-24\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"set -e\\necho '=== package.json ==='\\ncat package.json\\necho '=== courses/types.ts ==='\\ncat src/courses/types.ts\",\"timeoutSeconds\":300}\n",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -121,10 +121,16 @@
     },
     {
       "commandId": "read-obstacle-types-and-manager-full-23",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-pkg-and-coursebuilder-24",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:58:35.108Z"
+  "createdAt": "2026-09-16T21:59:57.758Z"
 }
