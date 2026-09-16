@@ -1,0 +1,17 @@
+{
+  "id": "dbf96a83-dd8f-44c1-8f85-19e3e98a7091",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "typecheck-21",
+    "status": "FAILED",
+    "exitCode": 2,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nvite.config.ts(6,3): error TS2769: No overload matches this call.\n  The last overload gave the following error.\n    Object literal may only specify known properties, and 'test' does not exist in type 'UserConfigExport'.\n",
+    "outputDigest": "30954ebcd4b5c246fe1bdadd2f4345a8bc6d8c931d38e2d637558a73087f5591",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:55:16.014Z"
+}
