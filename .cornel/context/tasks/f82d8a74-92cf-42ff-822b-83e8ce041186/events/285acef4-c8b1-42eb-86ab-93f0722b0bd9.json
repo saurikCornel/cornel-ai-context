@@ -1,0 +1,12 @@
+{
+  "id": "285acef4-c8b1-42eb-86ab-93f0722b0bd9",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-verify-on-published-head",
+    "operation": "run",
+    "command": "set -e\nnpm run typecheck\nnpm run test:camera\nnpm run test:ui\nnpm run test:input"
+  },
+  "createdAt": "2026-09-16T16:35:08.278Z"
+}
