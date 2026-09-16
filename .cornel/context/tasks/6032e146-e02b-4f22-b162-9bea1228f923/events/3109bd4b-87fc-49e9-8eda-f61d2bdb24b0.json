@@ -1,0 +1,11 @@
+{
+  "id": "3109bd4b-87fc-49e9-8eda-f61d2bdb24b0",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-collision-source-7",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:19:07.010Z"
+}

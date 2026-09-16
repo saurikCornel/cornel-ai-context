@@ -1,0 +1,11 @@
+{
+  "id": "bfed1ea5-8d73-46ba-89fe-db86046e81ab",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-collision-source-7",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T16:19:07.008Z"
+}
