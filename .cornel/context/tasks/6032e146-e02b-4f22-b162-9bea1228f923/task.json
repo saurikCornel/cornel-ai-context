@@ -19,8 +19,10 @@
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "READY",
   "createdAt": "2026-09-16T15:45:09.379Z",
-  "updatedAt": "2026-09-16T15:45:13.023Z",
+  "updatedAt": "2026-09-16T15:48:25.046Z",
   "issue": 50,
-  "chatUrl": null,
-  "error": null
+  "chatUrl": "https://chatgpt.com/c/6aaaba45-2008-83eb-93bc-fe4f6da911af",
+  "error": null,
+  "browserError": "Для новой задачи нужен пустой чат",
+  "browserErrorJobId": "6032e146-e02b-4f22-b162-9bea1228f923-initial"
 }
