@@ -1,9 +1,9 @@
 {
   "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
   "branch": "cornel/slit-camera-modes-aim-follow-overview-fr-b80e34",
-  "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+  "headSha": "ca89747a5aaf317a145209d9cb419f74c7ecf7cc",
   "status": "RUNNING",
-  "summary": "Смерджил — конфликт add/add в трёх файлах: в ветке офиса уже есть свой `CameraController` (renderer-agnostic орбита + коллизии), во входящей ветке — совсем другой класс с режимами aim/follow/overview/free и привязкой к Three-камере. Внешних потребителей ни у одной версии пока нет (`git grep` вне `src/camera` пуст), поэтому сохраняю обе реализации: версия офиса остаётся `CameraController`, входящая переезжает в `CameraModeController` (с переименованием конфликтующих типов `CameraControllerOptions`/`CameraTransitionOptions`/локальных `CameraPose`/`CameraTransition`), баррель экспортирует обе. Тесты входящей ветки сохраняю целиком в `CameraModeController.test.ts`.\n\n```json\n{\"version\":1,\"taskId\":\"b80e347b-e8e2-48c2-8ab9-17093b56685b\",\"commandId\":\"resolve-1\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"set -e; git checkout --ours -- src/camera/CameraController.ts src/camera/CameraController.test.ts; git show FETCH_HEAD:src/camera/CameraController.ts | sed -e s/CameraControllerOptions/CameraModeControllerOptions/g -e s/CameraTransitionOptions/CameraModeTransitionOptions/g -e s/CameraController/CameraModeController/g -e s/CameraTransition/ModeTransition/g -e s/CameraPose/ModePose/g > src/camera/CameraModeController.ts; { printf '%s\\\\n' \\\"// Mode-driven camera rig (aim/follow/overview/free) merged from cornel/camera-modes-aim-follow-overview-free-6032e1.\\\" \\\"// Complements the renderer-agnostic orbit CameraController in ./CameraController.\\\" \\\"\\\"; cat src/camera/CameraModeController.ts; } > src/camera/.cmc.tmp; mv src/camera/.cmc.tmp src/camera/CameraModeController.ts; git show FETCH_HEAD:src/camera/CameraController.test.ts | sed -e s/CameraController/CameraModeController/g > src/camera/CameraModeController.test.ts; printf '%s\\\\n' \\\"export * from './CameraCollision';\\\" \\\"export * from './CameraController';\\\" \\\"export * from './CameraModeController';\\\" \\\"export * from './CameraPose';\\\" \\\"export * from './CameraTransition';\\\" \\\"export * from './Easing';\\\" \\\"export * from './RapierCameraCollision';\\\" \\\"export * from './SmoothCameraRig';\\\" \\\"export * from './Smoothing';\\\" \\\"export * from './ThreeCameraBinding';\\\" > src/camera/index.ts; grep -rn '<<<<<<<\\\\|>>>>>>>' src/camera || echo NO_CONFLICT_MARKERS; git add -A; git commit --no-edit; set +e; echo ===TYPECHECK===; npm run typecheck; echo TYPECHECK_EXIT=$?; echo ===TEST_CAMERA===; npx vitest run src/camera; echo TEST_CAMERA_EXIT=$?; echo ===TEST_UI===; npm run test:ui; echo TEST_UI_EXIT=$?; echo ===TEST_INPUT===; npm run test:input; echo TEST_INPUT_EXIT=$?; echo ===BUILD===; npm run build; echo BUILD_EXIT=$?; git status --short\",\"timeoutSeconds\":900}\n```\n\nЖду результат `resolve-1` от worker — он придёт отдельным сообщением в этот чат.\n\nСводка: конфликт разрешён объединением, а не выбором стороны — обе реализации камеры сохранены под разными именами, баррель `src/camera/index.ts` собран из обоих списков экспортов. Изменённые файлы: `src/camera/CameraController.ts` (версия офиса), `src/camera/CameraController.test.ts` (версия офиса), новые `src/camera/CameraModeController.ts` и `src/camera/CameraModeController.test.ts` (работа входящей ветки), `src/camera/index.ts`. Проверки: typecheck, vitest по src/camera, src/ui, src/input и сборка — запущены той же командой. Следующий шаг: по результатам проверок исправить ошибки (если будут), затем publish и finish.\n\n",
+  "summary": "Слияние зафиксировано (merge commit `ca89747`, маркеров конфликтов нет). Проверки упали не из-за кода — в рабочей копии просто нет `node_modules` (`tsc`/`vitest`/`vite` не найдены). Ставлю зависимости и повторяю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"b80e347b-e8e2-48c2-8ab9-17093b56685b\",\"commandId\":\"checks-2\",\"operation\":\"run\",\"headSha\":\"ca89747a5aaf317a145209d9cb419f74c7ecf7cc\",\"command\":\"set +e; echo ===INSTALL===; npm ci --no-audit --no-fund 2>&1 | tail -5; echo INSTALL_EXIT=$?; echo ===TYPECHECK===; npm run typecheck 2>&1 | tail -30; echo ===TEST_CAMERA===; npx vitest run src/camera 2>&1 | tail -40; echo ===TEST_UI===; npm run test:ui 2>&1 | tail -15; echo ===TEST_INPUT===; npm run test:input 2>&1 | tail -15; echo ===BUILD===; npm run build 2>&1 | tail -15; git status --short\",\"timeoutSeconds\":1800}\n```\n\nЖду результат `checks-2` от worker — он придёт отдельным сообщением в этот чат.\n\nСводка: конфликт разрешён (обе реализации камеры сохранены: `CameraController` из офиса и `CameraModeController` из входящей ветки, баррель объединён), merge-коммит создан. Сейчас ставлю зависимости и прогоняю typecheck, тесты camera/ui/input и сборку. Следующий шаг: при зелёных проверках — publish и finish.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "resolve-1",
+      "status": "SUCCEEDED",
+      "headSha": "ca89747a5aaf317a145209d9cb419f74c7ecf7cc",
+      "exitCode": 0
+    },
+    {
+      "commandId": "checks-2",
       "status": "STARTED",
-      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "headSha": "ca89747a5aaf317a145209d9cb419f74c7ecf7cc",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:48:37.977Z"
+  "createdAt": "2026-09-16T18:49:17.849Z"
 }
