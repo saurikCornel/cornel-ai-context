@@ -1,0 +1,17 @@
+{
+  "id": "488870d8-80bf-423e-9e3e-0296cece9231",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-12",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1bb641198d5780807973ef2542fcd56dab46226e",
+    "output": "Слияние карточки «Игровой HUD и результаты» завершено и опубликовано. Конфликты src/ui/index.ts и src/ui/ui.css разрешены аддитивно: сохранён существующий AppUI и добавлены HUD/Scoreboard/Overlays/types; CSS обеих сторон объединён без потери функциональности. Финальная проверка этого состояния успешна: рабочее дерево чистое, конфликтных маркеров нет, typecheck успешен, UI-тесты 5/5 успешны, production build успешен; lint-скрипт отсутствует. FETCH_HEAD дополнительно синхронизирован и совпадает с текущей головой ветки.",
+    "outputDigest": "4f09d22d163ba674af9ba5f0985b93569dfd419755c3a722254003514cd61abd",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:01:14.592Z"
+}
