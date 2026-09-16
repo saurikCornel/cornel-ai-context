@@ -1,0 +1,11 @@
+{
+  "id": "22087b3e-d996-44da-9a96-725517a35cdf",
+  "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "finish-core-rendering-11",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T14:35:55.354Z"
+}
