@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"verify-published-camera-28\",\"operation\":\"run\",\"headSha\":\"82e3cbd79977f7865a89bde4c9c7b6c7b2aef999\",\"command\":\"echo '--- camera tests ---'; npx vitest run src/camera; echo '--- typecheck ---'; npx tsc -b --pretty false; echo '--- build ---'; npm run build\",\"timeoutSeconds\":1200}\n\nСводка: код уже опубликован; нужна лишь обязательная проверка именно на опубликованном head.\nИзменённые файлы: нет.\nПроверки: повторно запускаются vitest src/camera, tsc -b, npm run build на опубликованном commit.\nСледующий шаг: при успешном RESULT — сразу finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:13:53.467Z"
+}

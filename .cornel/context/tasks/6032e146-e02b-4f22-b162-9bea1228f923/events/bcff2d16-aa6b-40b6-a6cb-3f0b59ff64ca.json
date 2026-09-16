@@ -1,0 +1,12 @@
+{
+  "id": "bcff2d16-aa6b-40b6-a6cb-3f0b59ff64ca",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-published-camera-28",
+    "operation": "run",
+    "command": "echo '--- camera tests ---'; npx vitest run src/camera; echo '--- typecheck ---'; npx tsc -b --pretty false; echo '--- build ---'; npm run build"
+  },
+  "createdAt": "2026-09-16T18:13:53.468Z"
+}
