@@ -2,8 +2,8 @@
   "taskId": "eb2cef18-35d1-493c-80a8-993a2b92df5b",
   "branch": "cornel/chaos-dimension-i-validaciya-90-lunok-eb2cef",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "NEEDS_ATTENTION",
-  "summary": "Фактический статус: задача ещё не выполнена; новых RESULT после восстановления доступа пока не было. Команду проверки worker повторно отправил через Issue #33 с новым commandId.\n\nСледующий шаг — дождаться RESULT этой проверки. При успехе сразу читаю контракты и данные курсов, затем реализую Chaos Dimension и тест валидации 90 лунок. При новом REJECTED зафиксирую CORNEL_AI_BLOCKED_ACCESS с точной причиной.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "",
   "commands": [],
-  "createdAt": "2026-09-16T12:28:29.227Z"
+  "createdAt": "2026-09-16T12:29:19.228Z"
 }
