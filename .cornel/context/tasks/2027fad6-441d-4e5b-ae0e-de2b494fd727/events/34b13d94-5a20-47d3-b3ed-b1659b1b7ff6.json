@@ -1,0 +1,11 @@
+{
+  "id": "34b13d94-5a20-47d3-b3ed-b1659b1b7ff6",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-ai-core-14",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T17:18:07.799Z"
+}
