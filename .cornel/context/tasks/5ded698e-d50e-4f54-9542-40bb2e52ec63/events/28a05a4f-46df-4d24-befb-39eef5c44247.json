@@ -1,0 +1,12 @@
+{
+  "id": "28a05a4f-46df-4d24-befb-39eef5c44247",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-input-final-verify-12",
+    "operation": "run",
+    "command": "npm run typecheck && npx vitest run src/camera && npm run build"
+  },
+  "createdAt": "2026-09-16T16:41:27.056Z"
+}
