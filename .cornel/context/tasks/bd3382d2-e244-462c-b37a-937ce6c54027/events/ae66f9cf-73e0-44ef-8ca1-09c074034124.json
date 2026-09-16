@@ -1,0 +1,12 @@
+{
+  "id": "ae66f9cf-73e0-44ef-8ca1-09c074034124",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: src/camera/index.ts",
+  "detail": {
+    "files": [
+      "src/camera/index.ts"
+    ]
+  },
+  "createdAt": "2026-09-16T16:47:34.187Z"
+}

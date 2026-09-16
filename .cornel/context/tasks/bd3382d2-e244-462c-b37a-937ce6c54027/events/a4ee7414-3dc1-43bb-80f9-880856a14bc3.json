@@ -1,0 +1,13 @@
+{
+  "id": "a4ee7414-3dc1-43bb-80f9-880856a14bc3",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "SUMMARY",
+  "text": "Чат завершён: CameraController core опубликован в 34766f93a24ec8ee1e9fab621b721edacfc70263: renderer-agnostic orbit state, безопасный reset/target API, mouse/wheel/WASD input, collision raycaster и unit-тесты. Проверки на опубликованном SHA: npx vitest run src/camera/CameraController.test.ts (4/4) и npm run build — успешно.",
+  "detail": {
+    "commands": 13,
+    "failed": 3,
+    "headSha": "34766f93a24ec8ee1e9fab621b721edacfc70263",
+    "branch": "cornel/cameracontroller-core-bd3382"
+  },
+  "createdAt": "2026-09-16T16:47:30.024Z"
+}

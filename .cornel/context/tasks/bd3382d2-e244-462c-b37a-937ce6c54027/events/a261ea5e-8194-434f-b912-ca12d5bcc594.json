@@ -1,0 +1,11 @@
+{
+  "id": "a261ea5e-8194-434f-b912-ca12d5bcc594",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "finish-camera-controller-13",
+    "headSha": "34766f93a24ec8ee1e9fab621b721edacfc70263"
+  },
+  "createdAt": "2026-09-16T16:47:29.925Z"
+}
