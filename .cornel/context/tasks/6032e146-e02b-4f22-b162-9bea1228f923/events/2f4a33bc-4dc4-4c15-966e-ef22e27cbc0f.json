@@ -1,0 +1,17 @@
+{
+  "id": "2f4a33bc-4dc4-4c15-966e-ef22e27cbc0f",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "publish-camera-modes-25",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "82e3cbd79977f7865a89bde4c9c7b6c7b2aef999",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:03:33.154Z"
+}

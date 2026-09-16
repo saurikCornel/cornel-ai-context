@@ -17,9 +17,9 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "baseSha": "77b38d1780726161f87e511138beae87cceeb098",
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
-  "status": "RUNNING",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T15:45:09.379Z",
-  "updatedAt": "2026-09-16T18:03:27.821Z",
+  "updatedAt": "2026-09-16T18:03:33.153Z",
   "issue": 50,
   "chatUrl": "https://chatgpt.com/c/6aaacbd0-2988-83ed-9f28-343a0b84d32b",
   "error": null,
@@ -28,6 +28,6 @@
   "cliSession": null,
   "cliActivity": null,
   "statusChecks": 0,
-  "currentHead": "77b38d1780726161f87e511138beae87cceeb098",
+  "currentHead": "82e3cbd79977f7865a89bde4c9c7b6c7b2aef999",
   "chatUrlBefore": "https://chatgpt.com/c/6aaacbd0-2988-83ed-9f28-343a0b84d32b"
 }
