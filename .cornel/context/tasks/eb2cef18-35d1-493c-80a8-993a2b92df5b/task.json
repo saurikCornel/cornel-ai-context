@@ -17,14 +17,14 @@
   "branch": "cornel/chaos-dimension-i-validaciya-90-lunok-eb2cef",
   "baseSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "workspaceSyncedSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "WAITING_CHATGPT",
+  "status": "NEEDS_ATTENTION",
   "createdAt": "2026-09-16T12:22:00.813Z",
-  "updatedAt": "2026-09-16T12:38:24.731Z",
+  "updatedAt": "2026-09-16T12:39:15.548Z",
   "issue": 33,
   "chatUrl": "https://chatgpt.com/c/6aaa89f0-0ea0-83eb-927b-3df20c2f1d83",
   "error": null,
   "browserError": null,
   "statusChecks": 0,
-  "attentionReason": null,
+  "attentionReason": "github_access",
   "intentRevision": 8
 }
