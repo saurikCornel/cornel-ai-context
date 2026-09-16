@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикация успешна. Теперь нужна обязательная чистая проверка именно опубликованного commit: typecheck, production build, тесты и отсутствие незакоммиченных изменений. Уберу неоднозначность прошлого запуска, вызывая локальные бинарники явно.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-final-verify-1\",\"operation\":\"run\",\"headSha\":\"eb5dda16ef9de4aec9d2cd50755ebf79c425fe48\",\"command\":\"set -e; printf '\\\\n=== TYPECHECK ===\\\\n'; ./node_modules/.bin/tsc -b --pretty false; printf '\\\\n=== BUILD ===\\\\n'; ./node_modules/.bin/vite build; printf '\\\\n=== TESTS ===\\\\n'; node --experimental-strip-types --test tests/*.test.ts; printf '\\\\n=== STATUS ===\\\\n'; test -z \\\"$(git status --porcelain)\\\"; git status --short; printf '\\\\nALL_LEADERBOARD_CHECKS_OK\\\\n'\",\"timeoutSeconds\":300}\n\nЖду результат worker. При успешном результате следующим действием будет finish.\n\nСводка: изменения опубликованы; реализованы AI-профили, рейтинг/статистика, Leaderboard UI и тесты; сейчас выполняется финальная проверка опубликованного состояния; следующий шаг — finish при exitCode 0.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T00:14:10.270Z"
+}

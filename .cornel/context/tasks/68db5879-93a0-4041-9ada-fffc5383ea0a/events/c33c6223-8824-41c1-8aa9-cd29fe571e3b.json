@@ -1,0 +1,17 @@
+{
+  "id": "c33c6223-8824-41c1-8aa9-cd29fe571e3b",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "physics-publish-6",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5083163a13b4f8087ab90da1cc9e1ca7c7b9bcae",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:13:22.205Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "660bb887-c336-4ad0-9265-53168d0ad47f",
+  "taskId": "0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "implement-courses-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+    "output": "=== CREATED ===\n     120 src/courses/data/ancient-temple.ts\n     120 src/courses/data/arctic-base.ts\n     120 src/courses/data/volcano.ts\n     360 total\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n=== COUNTS ===\nsrc/courses/data/ancient-temple.ts: 9\nsrc/courses/data/arctic-base.ts: 9\nsrc/courses/data/volcano.ts: 9\n=== STATUS ===\n?? src/courses/data/\nsh: tsc: command not found\nsh: tsc: command not found\n",
+    "outputDigest": "935c61bdb5249658e0f9b5734b5eaaf6da3d9bf30abdd195fae5379468b05492",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:13:52.623Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "0cf0903d-0597-4c65-a6b6-95acd1d32b48",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "contracts-1",
+    "operation": "run",
+    "command": "printf '%s\\n' '=== Hole.ts ==='; cat src/courses/Hole.ts; printf '%s\\n' '=== types.ts ==='; cat src/courses/types.ts; printf '%s\\n' '=== package.json ==='; cat package.json"
+  },
+  "createdAt": "2026-09-16T00:14:27.089Z"
+}

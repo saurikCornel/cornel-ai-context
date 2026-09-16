@@ -1,9 +1,9 @@
 {
   "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
   "branch": "cornel/09e22a81-1674-4c2b-988f-df38f528724c",
-  "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+  "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
   "status": "WAITING_CHATGPT",
-  "summary": "Диагностика подтвердила: локальный HEAD и удалённая назначенная ветка совпадают, а все изменения карточки сохранены локально как незакоммиченные файлы. Причина предыдущего отказа publish больше не воспроизводится по состоянию репозитория, поэтому отправляю исправленный запрос публикации с новым commandId.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-publish-2\",\"operation\":\"publish\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"message\":\"Implement deterministic AI leaderboard profiles and UI\"}\n\nЖду результат worker. После успешной публикации выполню финальную проверку уже на новом commit и только затем finish.\n\nСводка: рассинхронизация проверена; локальный и remote HEAD идентичны; src/leaderboard/ и tests/ сохранены; отправлена повторная публикация после подтверждённой диагностики; следующий шаг — финальные тесты на опубликованном commit.\n\n",
+  "summary": "Публикация успешна. Теперь нужна обязательная чистая проверка именно опубликованного commit: typecheck, production build, тесты и отсутствие незакоммиченных изменений. Уберу неоднозначность прошлого запуска, вызывая локальные бинарники явно.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-final-verify-1\",\"operation\":\"run\",\"headSha\":\"eb5dda16ef9de4aec9d2cd50755ebf79c425fe48\",\"command\":\"set -e; printf '\\\\n=== TYPECHECK ===\\\\n'; ./node_modules/.bin/tsc -b --pretty false; printf '\\\\n=== BUILD ===\\\\n'; ./node_modules/.bin/vite build; printf '\\\\n=== TESTS ===\\\\n'; node --experimental-strip-types --test tests/*.test.ts; printf '\\\\n=== STATUS ===\\\\n'; test -z \\\"$(git status --porcelain)\\\"; git status --short; printf '\\\\nALL_LEADERBOARD_CHECKS_OK\\\\n'\",\"timeoutSeconds\":300}\n\nЖду результат worker. При успешном результате следующим действием будет finish.\n\nСводка: изменения опубликованы; реализованы AI-профили, рейтинг/статистика, Leaderboard UI и тесты; сейчас выполняется финальная проверка опубликованного состояния; следующий шаг — finish при exitCode 0.\n\n",
   "commands": [
     {
       "commandId": "leaderboard-inspect-1",
@@ -28,7 +28,13 @@
       "status": "SUCCEEDED",
       "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
       "exitCode": 0
+    },
+    {
+      "commandId": "leaderboard-publish-2",
+      "status": "SUCCEEDED",
+      "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:10:22.985Z"
+  "createdAt": "2026-09-16T00:14:10.282Z"
 }

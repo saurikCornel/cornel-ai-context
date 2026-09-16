@@ -1,0 +1,32 @@
+{
+  "headSha": "5083163a13b4f8087ab90da1cc9e1ca7c7b9bcae",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "src/app/GameState.ts",
+    "src/config/GameConfig.ts",
+    "src/contracts/events.ts",
+    "src/contracts/game.ts",
+    "src/contracts/index.ts",
+    "src/contracts/math.ts",
+    "src/contracts/services.ts",
+    "src/courses/types.ts",
+    "src/main.ts",
+    "src/physics/CollisionLayers.ts",
+    "src/physics/GolfBallPhysics.ts",
+    "src/physics/PhysicsWorld.ts",
+    "src/physics/ShotSystem.ts",
+    "src/physics/helpers.ts",
+    "src/physics/index.ts",
+    "src/style.css",
+    "tests/physics/helpers.test.ts",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "vite.config.ts"
+  ]
+}

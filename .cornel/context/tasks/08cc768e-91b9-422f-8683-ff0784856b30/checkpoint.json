@@ -3,14 +3,20 @@
   "branch": "cornel/08cc768e-91b9-422f-8683-ff0784856b30",
   "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
   "status": "WAITING_CHATGPT",
-  "summary": "Сбой произошёл до выполнения самой диагностической команды: worker не смог синхронизировать указанный commit через FETCH_HEAD. Исходники не менялись, поэтому повторяю именно диагностику с новым commandId; это не повтор успешного действия.\n\nJSON\n{\"version\":1,\"taskId\":\"08cc768e-91b9-422f-8683-ff0784856b30\",\"commandId\":\"inspect-2\",\"operation\":\"run\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"command\":\"git status --short && printf '\\\\n=== SOURCE TREE ===\\\\n' && find src -maxdepth 4 -type f -print | sort && printf '\\\\n=== COURSE LEVEL BUILDER FILES ===\\\\n' && find src -type f \\\\( -iname '*course*' -o -iname '*level*' -o -iname '*builder*' \\\\) -print | sort | while IFS= read -r f; do echo \\\"--- $f\\\"; sed -n '1,260p' \\\"$f\\\"; done\",\"timeoutSeconds\":300}\n\nЖду новый RESULT. Если снова будет ошибка синхронизации до запуска команды, это уже укажет на проблему доступности commit/ветки для worker, а не на содержимое команды.\n\nСводка: изменений файлов нет; inspect-1 фактически не стартовал из-за ошибки FETCH_HEAD; отправлена исправленная диагностическая попытка inspect-2; после успешной инспекции следующий шаг — реализация 27 лунок.\n\n",
+  "summary": "Инспекция успешна, но вывод обрезал ключевые типы Hole.ts и types.ts. Перед созданием данных нужно точно знать допустимые формы геометрии и obstacle descriptors, иначе можно записать несовместимые структуры. Читаю только эти контракты — уже выполненную общую инспекцию не повторяю.\n\nJSON\n{\"version\":1,\"taskId\":\"08cc768e-91b9-422f-8683-ff0784856b30\",\"commandId\":\"contracts-1\",\"operation\":\"run\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"command\":\"printf '%s\\\\n' '=== Hole.ts ==='; cat src/courses/Hole.ts; printf '%s\\\\n' '=== types.ts ==='; cat src/courses/types.ts; printf '%s\\\\n' '=== package.json ==='; cat package.json\",\"timeoutSeconds\":300}\n\nЖду RESULT. После него можно будет сразу создавать три course-модуля по фактическим типам API.\n\nСводка: структура Course Builder подтверждена; файлов пока не менял; inspect-2 успешно выполнен; сейчас уточняются только недостающие контракты Hole/геометрии/препятствий и доступные команды проверки.\n\n",
   "commands": [
     {
       "commandId": "inspect-1",
       "status": "FAILED",
       "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
       "exitCode": null
+    },
+    {
+      "commandId": "inspect-2",
+      "status": "SUCCEEDED",
+      "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:08:47.843Z"
+  "createdAt": "2026-09-16T00:12:21.057Z"
 }

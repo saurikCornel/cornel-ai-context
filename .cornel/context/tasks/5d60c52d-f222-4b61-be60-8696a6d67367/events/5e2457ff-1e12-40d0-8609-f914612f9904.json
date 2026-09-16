@@ -1,0 +1,12 @@
+{
+  "id": "5e2457ff-1e12-40d0-8609-f914612f9904",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-api-2",
+    "operation": "run",
+    "command": "printf '%s\\n' '=== TYPES ==='; cat src/courses/types.ts; printf '%s\\n' '=== BUILDER ==='; cat src/courses/CourseBuilder.ts; printf '%s\\n' '=== HOLE ==='; cat src/courses/Hole.ts; printf '%s\\n' '=== COURSE ==='; cat src/courses/Course.ts; printf '%s\\n' '=== EXISTING COURSE FILES ==='; find src/courses -type f -maxdepth 3 -print | sort"
+  },
+  "createdAt": "2026-09-16T00:12:15.081Z"
+}

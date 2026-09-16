@@ -1,0 +1,11 @@
+{
+  "id": "9ee88b85-31d0-48cd-90f9-ff0e937c71c1",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "leaderboard-publish-2",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-16T00:12:45.642Z"
+}

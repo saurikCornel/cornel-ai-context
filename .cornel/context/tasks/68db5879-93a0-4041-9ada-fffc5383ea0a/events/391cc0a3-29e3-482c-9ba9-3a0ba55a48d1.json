@@ -1,0 +1,11 @@
+{
+  "id": "391cc0a3-29e3-482c-9ba9-3a0ba55a48d1",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "physics-publish-6",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-16T00:12:50.574Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "38e1a018-d552-4a12-9ea6-784da14f8dd1",
+  "taskId": "5a950f35-46c6-4633-b39b-bd238e85b022",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "ui-verify-1",
+    "operation": "run",
+    "command": "npm install && printf '\\n=== TYPECHECK ===\\n' && npm run typecheck && printf '\\n=== BUILD ===\\n' && npm run build && printf '\\n=== UI FILES ===\\n' && find src/ui -maxdepth 1 -type f -print | sort && printf '\\n=== STATUS ===\\n' && git status --short"
+  },
+  "createdAt": "2026-09-16T00:14:03.881Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "33a12dde-bf33-472f-b58e-1f17d09e3677",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "physics-publish-6",
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9"
+  },
+  "createdAt": "2026-09-16T00:13:01.884Z"
+}

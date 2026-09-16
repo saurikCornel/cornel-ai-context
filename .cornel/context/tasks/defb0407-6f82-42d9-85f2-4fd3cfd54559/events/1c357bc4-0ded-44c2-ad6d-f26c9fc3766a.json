@@ -1,0 +1,11 @@
+{
+  "id": "1c357bc4-0ded-44c2-ad6d-f26c9fc3766a",
+  "taskId": "defb0407-6f82-42d9-85f2-4fd3cfd54559",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "ui-resume-4",
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9"
+  },
+  "createdAt": "2026-09-16T00:13:18.553Z"
+}
