@@ -1,0 +1,12 @@
+{
+  "id": "2de5701d-ed0c-4b36-8568-4c7c148a7ba1",
+  "taskId": "8b78ffcd-12c2-428d-83a6-841393f5f5a7",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "render-status-11",
+    "operation": "run",
+    "command": "git status --short && printf '\\n--- expected files ---\\n' && for f in src/core/Renderer.ts src/core/SceneManager.ts src/core/InputManager.ts src/core/AudioManager.ts src/core/AssetManager.ts src/effects/ParticleManager.ts src/dev/query.ts src/dev/DeveloperTools.ts src/dev/query.test.ts src/core/fallbacks.test.ts; do if [ -f \"$f\" ]; then echo \"FOUND $f\"; else echo \"MISSING $f\"; fi; done"
+  },
+  "createdAt": "2026-09-16T12:45:30.773Z"
+}
