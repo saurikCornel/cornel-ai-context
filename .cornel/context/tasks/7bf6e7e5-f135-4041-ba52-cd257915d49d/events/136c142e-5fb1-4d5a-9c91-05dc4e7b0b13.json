@@ -1,0 +1,12 @@
+{
+  "id": "136c142e-5fb1-4d5a-9c91-05dc4e7b0b13",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "test-obs-1",
+    "operation": "run",
+    "command": "npx vitest run src/obstacles"
+  },
+  "createdAt": "2026-09-16T21:44:36.491Z"
+}
