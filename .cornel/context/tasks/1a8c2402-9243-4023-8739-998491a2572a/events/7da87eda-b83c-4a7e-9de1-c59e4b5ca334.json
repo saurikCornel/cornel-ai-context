@@ -1,0 +1,11 @@
+{
+  "id": "7da87eda-b83c-4a7e-9de1-c59e4b5ca334",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "assets-manager-write-6",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T14:00:46.474Z"
+}
