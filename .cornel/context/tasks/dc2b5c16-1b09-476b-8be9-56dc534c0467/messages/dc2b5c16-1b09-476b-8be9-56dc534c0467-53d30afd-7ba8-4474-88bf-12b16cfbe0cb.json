@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"verify-particles-6\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npm run test -- --run src/effects/ParticleManager.test.ts && npm exec tsc -- -b --pretty false && npm run build\",\"timeoutSeconds\":300}\n```\n\nРешение: реализация готова к фактической верификации. Изменённые файлы: `src/effects/ParticleManager.ts`, `src/effects/index.ts`, `src/effects/ParticleManager.test.ts`. Проверки: запущены worker. Следующий шаг: разобрать результат проверок, при успехе опубликовать commit.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T15:52:50.326Z"
+}

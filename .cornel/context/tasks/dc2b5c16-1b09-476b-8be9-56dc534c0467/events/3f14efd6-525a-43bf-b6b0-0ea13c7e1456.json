@@ -1,0 +1,12 @@
+{
+  "id": "3f14efd6-525a-43bf-b6b0-0ea13c7e1456",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-particles-6",
+    "operation": "run",
+    "command": "npm run test -- --run src/effects/ParticleManager.test.ts && npm exec tsc -- -b --pretty false && npm run build"
+  },
+  "createdAt": "2026-09-16T15:52:50.327Z"
+}

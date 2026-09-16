@@ -1,0 +1,17 @@
+{
+  "id": "3cd2a2ba-1466-4254-a6fc-4805f9ec3281",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "verify-particles-6",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "npm error Missing script: \"test\"\nnpm error\nnpm error To see a list of scripts, run:\nnpm error   npm run\nnpm error A complete log of this run can be found in: /Users/alex/.npm/_logs/2026-09-16T15_52_53_016Z-debug-0.log\n",
+    "outputDigest": "088962698ed2944da477867a2e5c446bd99b89775c13e07802d4f64efb946af2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T15:52:53.189Z"
+}
