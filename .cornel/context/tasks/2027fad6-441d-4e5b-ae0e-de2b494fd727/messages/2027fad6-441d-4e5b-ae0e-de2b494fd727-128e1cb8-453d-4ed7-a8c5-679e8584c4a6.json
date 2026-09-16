@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 4,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "grep не поддержал выражение как ожидаемый regex, поэтому не повторяю его. Читаю нужные файлы небольшими диапазонами, чтобы API гарантированно попал в RESULT.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-ai-api-ranges-28\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/ai/BotPlanner.ts:1-140\",\"src/ai/BotPlanner.ts:141-300\",\"src/ai/Matchmaking.ts:1-220\",\"src/ai/BotProfiles.ts:1-180\",\"src/ai/types.ts:1-160\"]}\n\nСводка: код не менялся; это последняя точечная проверка сигнатур перед тестами. После RESULT — запись AI/rating тестов и полный прогон проверок.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:34:02.108Z"
+}
