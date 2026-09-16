@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"list-camera-context-2\",\"operation\":\"ls\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"path\":\"\",\"maxLines\":400}\n```\n\nСводка: подтверждены инструкции Cornel; checkpoint отсутствует.  \nИзменённые файлы: нет.  \nПроверки: чтение обязательных инструкций успешно.  \nСледующий шаг: определить расположение `CameraController`, контрактов и тестов.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"grep-camera-integration-3\",\"operation\":\"grep\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"pattern\":\"CameraController|camera|Camera\",\"path\":\"src\"}\n```\n\nСводка: выявлены модули камеры, физики, ввода и gameplay; отдельного `CameraController` пока не найдено по дереву.  \nИзменённые файлы: нет.  \nПроверки: структура репозитория прочитана успешно.  \nСледующий шаг: изучить найденные точки интеграции и существующие contracts.  \n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "list-camera-context-2",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "grep-camera-integration-3",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:56:48.591Z"
+  "createdAt": "2026-09-16T16:02:46.090Z"
 }

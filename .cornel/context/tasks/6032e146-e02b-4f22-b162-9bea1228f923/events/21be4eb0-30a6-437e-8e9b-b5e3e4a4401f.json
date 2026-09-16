@@ -1,0 +1,11 @@
+{
+  "id": "21be4eb0-30a6-437e-8e9b-b5e3e4a4401f",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "grep-camera-integration-3",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:02:48.670Z"
+}
