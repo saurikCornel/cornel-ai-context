@@ -1,0 +1,11 @@
+{
+  "id": "90b7a247-5e33-4387-bfc3-ba4d9f7a27a2",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "chaos-read-types-4",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T13:56:11.860Z"
+}

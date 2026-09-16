@@ -1,0 +1,11 @@
+{
+  "id": "4d54707c-304e-4fd2-bdec-72e7ce19828a",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chaos-read-types-4",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T13:56:11.859Z"
+}

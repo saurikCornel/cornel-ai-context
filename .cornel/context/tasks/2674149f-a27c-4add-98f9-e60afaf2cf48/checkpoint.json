@@ -2,8 +2,8 @@
   "taskId": "2674149f-a27c-4add-98f9-e60afaf2cf48",
   "branch": "cornel/camera-modes-and-transitions-267414",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "NEEDS_ATTENTION",
-  "summary": "Фактический статус: Issue #38 по-прежнему не содержит ни RESULT, ни вообще комментариев worker. Значит, обе отправленные команды чтения (camera-ls-1 и camera-ls-2) не дошли до журнала выполнения, и подтвердить ни успех, ни ошибку, ни UNKNOWN невозможно.\n\nCORNEL_AI_BLOCKED: локальный worker не публикует RESULT для команд этой задачи, поэтому продолжать изменять код или отправлять finish небезопасно. Нужна проверка владельцем работы Cornel AI worker/доставки команд для taskId 2674149f-a27c-4add-98f9-e60afaf2cf48.\n\nСводка: изменений файлов нет; проверок кода нет; publish/finish не выполнялись; следующий шаг — восстановить доставку команд worker и после этого продолжить с чтения src.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "",
   "commands": [],
-  "createdAt": "2026-09-16T13:55:23.762Z"
+  "createdAt": "2026-09-16T13:56:02.840Z"
 }

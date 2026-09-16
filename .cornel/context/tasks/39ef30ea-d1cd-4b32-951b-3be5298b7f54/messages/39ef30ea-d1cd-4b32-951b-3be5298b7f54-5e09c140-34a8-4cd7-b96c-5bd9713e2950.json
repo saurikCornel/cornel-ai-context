@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-read-types-4\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/courses/types.ts:1-260\"]}\n\nСводка: поиск не дал совпадений из-за формулировки типов; изменений файлов пока нет; следующий шаг — сразу записать chaos-dimension.ts по точным контрактам и затем проверить сборкой.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T13:56:11.858Z"
+}

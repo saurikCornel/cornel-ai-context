@@ -1,0 +1,11 @@
+{
+  "id": "0ecf4e11-696a-458a-841c-506cb293e25e",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "camera-collision-read-3",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T13:56:10.425Z"
+}
