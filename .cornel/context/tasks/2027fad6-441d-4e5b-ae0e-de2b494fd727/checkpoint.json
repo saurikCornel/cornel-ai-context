@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-obstacle-shapes-8\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/courses/types.ts:1-80\",\"src/courses/data/green-hills.ts:1-180\",\"src/gameplay/gameplay.test.ts:1-260\",\"src/assets/assets.test.ts:1-120\"]}\n```\n\nСводка: найдены существующие `ShotCommand`, `Hole` и `PlayerProfile` — AI сможет возвращать совместимую команду без доступа к клавиатуре или «идеальному» решению. Изменений нет. Следующий шаг — реализовать новые изолированные модули и покрыть детерминированными тестами профиль навыков, штрафы кандидатов и Elo.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-course-types-only-9\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/courses/types.ts:1-100\"]}\n```\n\nСводка: игровые тесты подтверждают семантику `ShotCommand`; геймплей отделяет выдачу команды от исполнения симуляции. Изменений нет. Следующий шаг — получить форму препятствий для корректных OOB/hazard/obstacle штрафов в планировщике.  \n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "read-obstacle-shapes-8",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-course-types-only-9",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:26:57.354Z"
+  "createdAt": "2026-09-16T16:32:07.670Z"
 }
