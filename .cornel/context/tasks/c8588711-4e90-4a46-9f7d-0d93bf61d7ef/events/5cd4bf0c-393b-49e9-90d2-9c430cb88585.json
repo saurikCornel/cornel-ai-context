@@ -1,0 +1,11 @@
+{
+  "id": "5cd4bf0c-393b-49e9-90d2-9c430cb88585",
+  "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "fix-course-imports-12",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T14:56:16.239Z"
+}

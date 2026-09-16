@@ -1,0 +1,11 @@
+{
+  "id": "91edbf61-7f17-4b84-afdf-3cbf376d64ec",
+  "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "fix-course-imports-12",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T14:56:18.459Z"
+}
