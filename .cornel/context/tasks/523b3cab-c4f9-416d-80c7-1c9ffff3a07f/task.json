@@ -18,9 +18,9 @@
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T12:42:51.284Z",
-  "updatedAt": "2026-09-16T23:22:09.572Z",
+  "updatedAt": "2026-09-16T23:23:12.017Z",
   "issue": 37,
-  "chatUrl": null,
+  "chatUrl": "cli://claude/42a73e30-65f5-4ff2-966d-5ba4a9251e2b",
   "error": null,
   "intentRevision": 28,
   "statusChecks": 0,
@@ -31,6 +31,6 @@
   "chatEpoch": 1,
   "appliedEffort": null,
   "effortFailed": null,
-  "cliSession": null,
-  "cliActivity": "Claude CLI: Bash"
+  "cliSession": "42a73e30-65f5-4ff2-966d-5ba4a9251e2b",
+  "cliActivity": null
 }
