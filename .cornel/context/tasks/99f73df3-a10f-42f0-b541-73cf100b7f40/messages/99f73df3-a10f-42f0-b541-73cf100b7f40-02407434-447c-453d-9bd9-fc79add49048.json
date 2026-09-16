@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Посмотрю, как в проекте пишутся тесты с использованием Rapier, чтобы правильно создать тесты для DoorObstacle.\n```\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"read-6\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/camera/CameraCollision.test.ts\"]}\n```\n\nПосмотрю, как в проекте пишутся тесты с использованием Rapier, чтобы правильно создать тесты для DoorObstacle.\njson\n1\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"read-6\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/camera/CameraCollision.test.ts\"]}",
+  "createdAt": "2026-09-16T21:41:48.214Z"
+}
