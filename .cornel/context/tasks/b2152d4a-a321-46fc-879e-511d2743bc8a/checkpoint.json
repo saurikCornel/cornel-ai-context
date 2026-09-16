@@ -2,8 +2,8 @@
   "taskId": "b2152d4a-a321-46fc-879e-511d2743bc8a",
   "branch": "cornel/moving-obstacles-b2152d",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
-  "status": "WAITING_CHATGPT",
-  "summary": "Фактический статус не изменился: подтверждён только успешный mo-1-install. Для уже отправленной mo-2-inspect по-прежнему нет RESULT и нет UNKNOWN, поэтому следующий worker-шаг отправлять нельзя — это создало бы обход незавершённой команды.\n\nЗадача остаётся незавершённой: реализация Pendulum, MovingPlatform, SlidingWall, targeted-тесты, typecheck, build, publish и finish ещё не подтверждены.\n\nСледующее действие допустимо только после статуса mo-2-inspect:\n\nSUCCEEDED → продолжаю реализацию;\n\nFAILED/REJECTED → исправляю конкретную причину новым commandId;\n\nUNKNOWN → останавливаюсь для проверки владельцем.\n\n",
+  "status": "NEEDS_ATTENTION",
+  "summary": "CORNEL_AI_BLOCKED: состояние задачи не изменилось. Подтверждён только успешный mo-1-install; для уже отправленной mo-2-inspect всё ещё нет ни RESULT, ни UNKNOWN.\n\nПо протоколу я не могу:\n\nповторить mo-2-inspect под новым commandId;\n\nотправить следующую worker-команду;\n\nперейти к реализации, тестам, publish или finish без статуса предыдущей команды.\n\nНужна проверка владельцем/приложением именно команды mo-2-inspect. После SUCCEEDED продолжу реализацию Moving obstacles; после FAILED/REJECTED исправлю конкретную ошибку; после UNKNOWN повторять действие не буду.\n\n",
   "commands": [
     {
       "commandId": "mo-1-install",
@@ -12,5 +12,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T19:22:35.082Z"
+  "createdAt": "2026-09-16T19:35:55.415Z"
 }
