@@ -3,7 +3,7 @@
   "branch": "cornel/6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
   "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
   "status": "RUNNING",
-  "summary": "Продолжаю с незавершённого шага: profile-tests-6 ещё не имеет RESULT в текущем чате, поэтому не запускаю новую альтернативную проверку и не дублирую действия. Повторно отправляю именно ожидавшую исполнения исправленную unit-проверку с новым commandId.\n\nJSON\n{\"version\":1,\"taskId\":\"6d1e0ba8-f3c5-43c8-ac38-6452635d1604\",\"commandId\":\"profile-tests-7\",\"operation\":\"run\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"command\":\"rm -rf .test-build; ./node_modules/.bin/tsc src/core/SaveManager.ts src/player/types.ts src/player/progression.ts src/player/profile.ts --outDir .test-build --module ESNext --moduleResolution bundler --target ES2022 --skipLibCheck || exit 1; for f in .test-build/core/*.js .test-build/player/*.js; do perl -0pi -e \\\"s/(from\\\\\\\\s+['\\\\\\\"](?:\\\\\\\\.\\\\\\\\.?\\\\\\\\/)[^'\\\\\\\"]+)(['\\\\\\\"])/\\\\\\\\$1.js\\\\\\\\$2/g\\\" \\\"$f\\\"; done; node --test tests/save-manager.test.mjs; rc=$?; rm -rf .test-build; printf '%s\\\\n' '=== STATUS ==='; git status --short; exit $rc\",\"timeoutSeconds\":300}\n\nСводка: production typecheck и build ранее успешны; локальная реализация сохранена. Сейчас проверяются только SaveManager/migrations. При успехе следующий шаг — publish.\n\n",
+  "summary": "Ошибка теперь только в моей Perl-подстановке: production-код не затронут. Убираю хрупкую shell-регулярку и исправляю импорты временной сборки маленьким Node-скриптом, после чего запускаю только unit-тесты.\n\nJSON\n{\"version\":1,\"taskId\":\"6d1e0ba8-f3c5-43c8-ac38-6452635d1604\",\"commandId\":\"profile-tests-8\",\"operation\":\"run\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"command\":\"rm -rf .test-build; ./node_modules/.bin/tsc src/core/SaveManager.ts src/player/types.ts src/player/progression.ts src/player/profile.ts --outDir .test-build --module ESNext --moduleResolution bundler --target ES2022 --skipLibCheck || exit 1; node - <<'NODE'\\nconst fs=require('fs');\\nfor(const dir of ['.test-build/core','.test-build/player']) for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.js'))){const p=dir+'/'+name;let s=fs.readFileSync(p,'utf8');s=s.replace(/(from\\\\s+['\\\"])(\\\\.\\\\.?\\\\/[^'\\\"]+)(['\\\"])/g,(m,a,b,c)=>a+(b.endsWith('.js')?b:b+'.js')+c);fs.writeFileSync(p,s);}\\nNODE\\nnode --test tests/save-manager.test.mjs; rc=$?; rm -rf .test-build; printf '%s\\\\n' '=== STATUS ==='; git status --short; exit $rc\",\"timeoutSeconds\":300}\n\nСводка: typecheck и production build остаются подтверждёнными; последние сбои относятся исключительно к тестовому ESM harness. При успехе этой проверки сразу перехожу к publish.\n\n",
   "commands": [
     {
       "commandId": "inspect-profile-1",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "profile-tests-7",
+      "status": "FAILED",
+      "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+      "exitCode": 1
+    },
+    {
+      "commandId": "profile-tests-8",
       "status": "STARTED",
       "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T11:54:49.676Z"
+  "createdAt": "2026-09-16T11:55:30.280Z"
 }

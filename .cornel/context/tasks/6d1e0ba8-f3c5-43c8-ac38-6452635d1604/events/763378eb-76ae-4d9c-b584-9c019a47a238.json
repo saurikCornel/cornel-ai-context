@@ -1,0 +1,17 @@
+{
+  "id": "763378eb-76ae-4d9c-b584-9c019a47a238",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "profile-tests-8",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "✔ XP curve covers levels 1 through 50 (0.899042ms)\n✔ SaveManager round trips and derives level from XP (3.24525ms)\n✔ corrupt JSON safely falls back (0.138375ms)\n✔ v1 migration accepts flat XP and old hold control scheme (0.093708ms)\n✔ future version safely falls back (0.082583ms)\n✔ storage write failure is safe (0.115875ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 95.445459\n=== STATUS ===\n?? src/core/\n?? src/player/\n?? tests/\n",
+    "outputDigest": "7152112175764b83b7679acec2c441105698dcf8e6d95a136dc8ff0e0fb12ffc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:55:34.489Z"
+}
