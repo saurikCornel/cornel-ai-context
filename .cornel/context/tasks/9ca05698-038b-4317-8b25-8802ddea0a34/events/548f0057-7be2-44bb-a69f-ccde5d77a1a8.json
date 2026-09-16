@@ -1,0 +1,17 @@
+{
+  "id": "548f0057-7be2-44bb-a69f-ccde5d77a1a8",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-core-api-22",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "=== PhysicsWorld.ts ===\nimport RAPIER from '@dimforge/rapier3d-compat';\nimport { GAME_CONFIG } from '../config/GameConfig';\nimport type { Vec3 } from '../contracts/math';\n\nexport class PhysicsWorld {\n  readonly world: RAPIER.World;\n  private accumulator = 0;\n  readonly fixedStep: number;\n\n  constructor(gravity: Vec3 = GAME_CONFIG.physics.gravity, fixedStep = 1 / GAME_CONFIG.targetFps) {\n    this.world = new RAPIER.World(gravity);\n    this.fixedStep = fixedStep;\n    this.world.timestep = fixedStep;\n  }\n\n  step(deltaSeconds: number, beforeStep?: (dt: number) => void): void {\n    this.accumulator += Math.min(Math.max(deltaSeconds, 0), 0.25);\n    while (this.accumulator >= this.fixedStep) {\n      beforeStep?.(this.fixedStep);\n      this.world.step();\n      this.accumulator -= this.fixedStep;\n    }\n  }\n\n  dispose(): void {\n    this.world.free();\n  }\n}\n=== obstacles/types.ts ===\nimport type { Quat, Vec3 } from '../contracts/math';\nimport type { ObstacleDescriptor } from '../courses/types';\n\n/** World-space placement shared by an obstacle visual and its physics body. */\nexport interface ObstaclePose {\n  position: Vec3;\n  rotation: Quat;\n}\n\n/** Renderable half of an obstacle, owned by the factory that created it. */\nexport interface ObstacleVisual {\n  setPose(pose: ObstaclePose): void;\n  setEnabled(enabled: boolean): void;\n  dispose(): void;\n}\n\n/** Physics half of an obstacle, owned by the factory that created it. */\nexport interface ObstacleBody {\n  setPose(pose: ObstaclePose): void;\n  setEnabled(enabled: boolean): void;\n  dispose(): void;\n}\n\nexport interface ObstacleVisualFactory {\n  create(descriptor: ObstacleDescriptor): ObstacleVisual;\n}\n\nexport interface ObstacleBodyFactory {\n  create(descriptor: ObstacleDescriptor): ObstacleBody;\n}\n\n/** Read-only view of one live obstacle held by the ObstacleManager. */\nexport interface ObstacleInstance {\n  readonly id: string;\n  readonly descriptor: ObstacleDescriptor;\n  readonly basePose: ObstaclePose;\n  readonly pose: ObstaclePose;\n  readonly enabled: boolean;\n  readonly elapsedSeconds: number;\n  readonly moving: boolean;\n  readonly visual: ObstacleVisual | null;\n  readonly body: ObstacleBody | null;\n}\n=== obstacles/index.ts ===\nexport * from './descriptor';\nexport * from './motion';\nexport * from './ObstacleManager';\nexport * from './RapierObstacleBodies';\nexport * from './ThreeObstacleVisuals';\nexport * from './types';\n",
+    "outputDigest": "e0299b60f837d5b99797f8859766873df7166a9d87aa7f48ba48d1400a6ed9eb",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:57:04.968Z"
+}

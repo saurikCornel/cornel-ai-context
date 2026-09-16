@@ -3,7 +3,7 @@
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Читаю PhysicsWorld.ts и RapierCameraCollision.ts, чтобы понять, как создаются коллайдеры и тела в проекте, и реализовать недостающие фабрики RapierObstacleBodies.ts и ThreeObstacleVisuals.ts.\n```\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-physics-world-and-camera-collision-21\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/physics/PhysicsWorld.ts:1-150\",\"src/camera/RapierCameraCollision.ts:1-150\"]}\n```\nCORNEL_AI_YIELD\n\nЧитаю PhysicsWorld.ts и RapierCameraCollision.ts, чтобы понять, как создаются коллайдеры и тела в проекте, и реализовать недостающие фабрики RapierObstacleBodies.ts и ThreeObstacleVisuals.ts.\njson\n1\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-physics-world-and-camera-collision-21\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/physics/PhysicsWorld.ts:1-150\",\"src/camera/RapierCameraCollision.ts:1-150\"]}\n",
+  "summary": "Читаю оставшиеся файлы: полный `PhysicsWorld.ts`, публичный API препятствий и типы — чтобы дописать недостающие фабрики строго под фактические сигнатуры.\n\n```json\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-core-api-22\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"set -e\\necho '=== PhysicsWorld.ts ==='\\ncat src/physics/PhysicsWorld.ts\\necho '=== obstacles/types.ts ==='\\ncat src/obstacles/types.ts\\necho '=== obstacles/index.ts ==='\\ncat src/obstacles/index.ts\",\"timeoutSeconds\":300}\n```\n\nЖду worker: результат придёт отдельным сообщением в этот чат, Issue перечитывать не нужно.\n\nСводка: решение — восстановить недостающие модули `RapierObstacleBodies.ts` и `ThreeObstacleVisuals.ts`, на которые уже ссылается барrel `src/obstacles/index.ts`, опираясь на фактический API `PhysicsWorld` (поле `world`, фиксированный шаг). Изменённые файлы (созданы, ещё не опубликованы): `src/obstacles/{types,descriptor,motion,index,ObstacleManager}.ts`. Проверки: пока только read-only операции worker. Следующий шаг — дописать две фабрики, добавить lifecycle-тесты, затем typecheck и build, после чего publish и finish.\n\n",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -109,10 +109,16 @@
     },
     {
       "commandId": "read-physics-world-and-camera-collision-21",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-core-api-22",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:47:28.669Z"
+  "createdAt": "2026-09-16T21:57:02.596Z"
 }
