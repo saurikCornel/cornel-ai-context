@@ -1,0 +1,11 @@
+{
+  "id": "ec7e9691-18f9-4efe-a4a0-a28a58930454",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "triggers-read-local-10",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T18:11:46.084Z"
+}
