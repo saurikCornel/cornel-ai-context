@@ -1,0 +1,17 @@
+{
+  "id": "78eb3409-8344-4b42-b08f-306bc8d61fa4",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "rot-obst-i1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "c0219512b2b27069ba03af0b48bf9a1ca019ff11",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T23:23:14.517Z"
+}
