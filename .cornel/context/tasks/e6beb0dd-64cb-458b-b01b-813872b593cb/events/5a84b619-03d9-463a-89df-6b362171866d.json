@@ -1,0 +1,17 @@
+{
+  "id": "5a84b619-03d9-463a-89df-6b362171866d",
+  "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-status-22",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+    "output": "src/camera: 0 файлов",
+    "outputDigest": "11b25f10ade3c673e16a92c98e75dd7fed7d2b94ee03ee1341551b1023416038",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:53:58.081Z"
+}
