@@ -1,0 +1,17 @@
+{
+  "id": "052bf7d6-991e-405b-8107-4ec5f8f11dc3",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
+    "output": "Реализованы Teleporter, Fan и Conveyor с API конфигов, физическим поведением и targeted-тестами. Typecheck и 12 тестов пройдены успешно. Опубликован коммит 78c7677.",
+    "outputDigest": "9fc354b65dda147d8e38e2af044ec02b1d7a8c92d0c1d58d9d69ccc01247c77e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:58:10.365Z"
+}

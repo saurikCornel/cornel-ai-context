@@ -1,0 +1,13 @@
+{
+  "id": "53d8e313-78c3-4530-bab0-a8e66290fb0f",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Реализованы Teleporter, Fan и Conveyor с API конфигов, физическим поведением и targeted-тестами. Typecheck и 12 тестов пройдены успешно. Опубликован коммит 78c7677.",
+  "detail": {
+    "commands": 16,
+    "failed": 2,
+    "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
+    "branch": "cornel/teleporter-and-force-volumes-7bf6e7"
+  },
+  "createdAt": "2026-09-16T21:58:10.365Z"
+}
