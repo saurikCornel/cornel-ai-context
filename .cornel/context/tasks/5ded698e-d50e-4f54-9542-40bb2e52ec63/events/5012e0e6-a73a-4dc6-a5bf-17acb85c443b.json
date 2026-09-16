@@ -1,0 +1,17 @@
+{
+  "id": "5012e0e6-a73a-4dc6-a5bf-17acb85c443b",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "camera-input-contract-refine-9",
+    "status": "FAILED",
+    "exitCode": 2,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsrc/camera/CameraInput.test.ts(8,5): error TS2739: Type '{ wheel: number; }' is missing the following properties from type 'PointerSnapshot': x, y, deltaX, deltaY, primaryDown\n",
+    "outputDigest": "f29043e8ea241e3f7fb1e871294c9e6b964501bd61377b7dc6c95fbd768e8bd5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:25:09.642Z"
+}
