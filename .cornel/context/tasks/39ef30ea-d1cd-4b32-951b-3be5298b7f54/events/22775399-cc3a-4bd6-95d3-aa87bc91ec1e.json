@@ -1,0 +1,11 @@
+{
+  "id": "22775399-cc3a-4bd6-95d3-aa87bc91ec1e",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "chaos-read-contracts-2",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T13:54:37.678Z"
+}
