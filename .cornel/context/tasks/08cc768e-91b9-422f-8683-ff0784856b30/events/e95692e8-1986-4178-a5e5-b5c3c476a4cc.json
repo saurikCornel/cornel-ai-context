@@ -1,0 +1,17 @@
+{
+  "id": "e95692e8-1986-4178-a5e5-b5c3c476a4cc",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+    "output": "\n=== SOURCE TREE ===\nsrc/app/GameState.ts\nsrc/config/GameConfig.ts\nsrc/contracts/events.ts\nsrc/contracts/game.ts\nsrc/contracts/index.ts\nsrc/contracts/math.ts\nsrc/contracts/services.ts\nsrc/courses/Course.ts\nsrc/courses/CourseBuilder.ts\nsrc/courses/Hole.ts\nsrc/courses/types.ts\nsrc/main.ts\nsrc/style.css\n\n=== COURSE LEVEL BUILDER FILES ===\n--- src/courses/Course.ts\nimport type { Course as CourseDescriptor } from './types';\nimport { validateHole } from './Hole';\n\n/** Input accepted by the level builder for a complete course. */\nexport type CourseDefinition = CourseDescriptor;\n\n/** Keeps course data as plain serializable objects and retains literal types. */\nexport function defineCourse<const T extends CourseDefinition>(course: T): T {\n  validateCourse(course);\n  return course;\n}\n\nexport function validateCourse(course: CourseDefinition): void {\n  if (!course.id.trim()) throw new Error('Course id must not be empty');\n  if (!course.name.trim()) throw new Error(`Course ${course.id}: name must not be empty`);\n  if (!course.themeId.trim()) throw new Error(`Course ${course.id}: themeId must not be empty`);\n  if (!Number.isInteger(course.version) || course.version < 1) {\n    throw new Error(`Course ${course.id}: version must be a positive integer`);\n  }\n  if (course.holes.length === 0) throw new Error(`Course ${course.id}: at least one hole is required`);\n\n  const ids = new Set<string>();\n  for (const hole of course.holes) {\n    validateHole(hole);\n    if (ids.has(hole.id)) throw new Error(`Course ${course.id}: duplicate hole id \"${hole.id}\"`);\n    ids.add(hole.id);\n  }\n}\n--- src/courses/CourseBuilder.ts\nimport { defineCourse } from './Course';\nimport type { HoleDefinition } from './Hole';\nimport type { Course } from './types';\n\nexport interface CourseBuilderOptions {\n  id: string;\n  name: string;\n  themeId: string;\n  version?: number;\n}\n\n/**\n * Small fluent API used by course-data modules. It intentionally only builds\n * descriptors; obstacle behavior belongs to runtime obstacle implementations.\n */\nexport class CourseBuilder {\n  private readonly holes: HoleDefinition[] = [];\n  private readonly options: Required<CourseBuilderOptions>;\n\n  constructor(options: CourseBuilderOptions) {\n    this.options = { ...options, version: options.version ?? 1 };\n  }\n\n  addHole(hole: HoleDefinition): this {\n    this.holes.push(hole);\n    return this;\n  }\n\n  addHoles(holes: readonly HoleDefinition[]): this {\n    this.holes.push(...holes);\n    return this;\n  }\n\n  build(): Course {\n    return defineCourse({\n      id: this.options.id,\n      name: this.options.name,\n      themeId: this.options.themeId,\n      version: this.options.version,\n      holes: [...this.holes],\n    });\n  }\n}\n\nexport function createCourseBuilder(options: CourseBuilderOptions): CourseBuilder {\n  return new CourseBuilder(options);\n}\n",
+    "outputDigest": "483ff867018adc68099150fd8c0e864959f38a27e0ba5dd775cb7f5e96b258db",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:11:16.350Z"
+}

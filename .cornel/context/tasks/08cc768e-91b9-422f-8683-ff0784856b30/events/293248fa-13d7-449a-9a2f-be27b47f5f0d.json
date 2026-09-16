@@ -1,0 +1,12 @@
+{
+  "id": "293248fa-13d7-449a-9a2f-be27b47f5f0d",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "FETCH_HEAD\nfatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n",
+  "detail": {
+    "commandId": "inspect-1",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T00:07:53.737Z"
+}

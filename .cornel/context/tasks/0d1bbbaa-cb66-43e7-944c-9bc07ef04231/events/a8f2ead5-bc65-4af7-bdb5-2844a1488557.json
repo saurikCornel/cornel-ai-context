@@ -1,0 +1,12 @@
+{
+  "id": "a8f2ead5-bc65-4af7-bdb5-2844a1488557",
+  "taskId": "0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-1",
+    "operation": "run",
+    "command": "printf '%s\\n' '=== STATUS ==='; git status --short; printf '%s\\n' '=== COURSE TREE ==='; find src/courses -maxdepth 3 -type f -print | sort; printf '%s\\n' '=== PACKAGE ==='; cat package.json"
+  },
+  "createdAt": "2026-09-16T00:07:37.999Z"
+}

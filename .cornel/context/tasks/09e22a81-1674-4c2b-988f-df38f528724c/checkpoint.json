@@ -3,7 +3,7 @@
   "branch": "cornel/09e22a81-1674-4c2b-988f-df38f528724c",
   "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
   "status": "WAITING_CHATGPT",
-  "summary": "Проверил назначенную ветку напрямую в GitHub: её фактический HEAD по-прежнему исходный commit. Значит, ошибка publish возникла из-за рассинхронизации проверки worker/GitHub, а не из-за реально опубликованного изменения ветки. Запрошу у worker безопасную диагностику без изменения файлов; локальные незакоммиченные изменения должны сохраниться.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-sync-check-2\",\"operation\":\"run\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"command\":\"printf '%s\\\\n' '=== LOCAL HEAD ==='; git rev-parse HEAD; printf '%s\\\\n' '=== BRANCH ==='; git branch --show-current; printf '%s\\\\n' '=== REMOTE ASSIGNED BRANCH ==='; git ls-remote origin refs/heads/cornel/09e22a81-1674-4c2b-988f-df38f528724c; printf '%s\\\\n' '=== STATUS ==='; git status --short\",\"timeoutSeconds\":300}\n\nЖду результат worker. Если локальный и удалённый HEAD совпадают, повторю именно publish новым commandId; это будет исправление причины после подтверждённой диагностики, а не слепой повтор.\n\nСводка: код карточки остаётся локально подготовленным; GitHub показывает назначенную ветку на ожидаемом commit; publish не состоялся; выполняется диагностика синхронизации; следующий шаг — публикация после подтверждения состояния.\n\n",
+  "summary": "Диагностика подтвердила: локальный HEAD и удалённая назначенная ветка совпадают, а все изменения карточки сохранены локально как незакоммиченные файлы. Причина предыдущего отказа publish больше не воспроизводится по состоянию репозитория, поэтому отправляю исправленный запрос публикации с новым commandId.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-publish-2\",\"operation\":\"publish\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"message\":\"Implement deterministic AI leaderboard profiles and UI\"}\n\nЖду результат worker. После успешной публикации выполню финальную проверку уже на новом commit и только затем finish.\n\nСводка: рассинхронизация проверена; локальный и remote HEAD идентичны; src/leaderboard/ и tests/ сохранены; отправлена повторная публикация после подтверждённой диагностики; следующий шаг — финальные тесты на опубликованном commit.\n\n",
   "commands": [
     {
       "commandId": "leaderboard-inspect-1",
@@ -22,7 +22,13 @@
       "status": "FAILED",
       "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
       "exitCode": null
+    },
+    {
+      "commandId": "leaderboard-sync-check-2",
+      "status": "SUCCEEDED",
+      "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:07:22.390Z"
+  "createdAt": "2026-09-16T00:10:22.985Z"
 }

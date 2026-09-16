@@ -1,0 +1,17 @@
+{
+  "id": "f86f3df2-ddeb-4177-a280-022d0e3fed51",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "physics-tests-fix-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "=== PHYSICS UNIT TESTS ===\n\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.4 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/68db5879-93a0-4041-9ada-fffc5383ea0a\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/physics/helpers.test.ts\u001b[2m > \u001b[22mphysics helpers\u001b[2m > \u001b[22mclamps shot power and follows configured curve endpoints\u001b[32m 1\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/physics/helpers.test.ts\u001b[2m > \u001b[22mphysics helpers\u001b[2m > \u001b[22mcaps speed while preserving direction\u001b[32m 0\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/physics/helpers.test.ts\u001b[2m > \u001b[22mphysics helpers\u001b[2m > \u001b[22mrequires low speed and sufficient quiet time before sleep\u001b[32m 0\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 03:09:31\n\u001b[2m   Duration \u001b[22m 634ms\u001b[2m (transform 39ms, setup 0ms, collect 34ms, tests 2ms, environment 0ms, prepare 124ms)\u001b[22m\n\n=== STATUS ===\n?? src/physics/\n?? tests/\n",
+    "outputDigest": "4eb0811ff4b65441235a2ca4842abbbefd5c90d9902b3e55aca04037daa523fc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:09:40.643Z"
+}

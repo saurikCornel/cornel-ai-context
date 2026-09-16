@@ -1,0 +1,17 @@
+{
+  "id": "6fdec927-f81f-4f90-aba7-f1e876bc4e8c",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "refresh-head-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "7b77018b6fefb54423442e83f9b04ba27e4560a9\n",
+    "outputDigest": "9a87d2dacdb38442aa75d040b8a37a9796ad57c0ba0fce6fc6da2edc1c429282",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:07:36.618Z"
+}

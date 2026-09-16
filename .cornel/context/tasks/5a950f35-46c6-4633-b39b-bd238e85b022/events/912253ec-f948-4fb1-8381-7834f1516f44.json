@@ -1,0 +1,17 @@
+{
+  "id": "912253ec-f948-4fb1-8381-7834f1516f44",
+  "taskId": "5a950f35-46c6-4633-b39b-bd238e85b022",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "ui-implement-2",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "\n=== CHANGED ===\n M src/main.ts\n?? src/ui/\n\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\nsh: tsc: command not found\nsh: tsc: command not found\n",
+    "outputDigest": "d559be76054d8d2b9062f700e58e7fa970e7f6c34a0ff93f1c44229c098ebce0",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:10:06.753Z"
+}

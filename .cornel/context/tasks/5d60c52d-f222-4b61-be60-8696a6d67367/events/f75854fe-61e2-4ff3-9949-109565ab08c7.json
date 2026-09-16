@@ -1,0 +1,12 @@
+{
+  "id": "f75854fe-61e2-4ff3-9949-109565ab08c7",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-courses-1",
+    "operation": "run",
+    "command": "printf '%s\\n' '=== STATUS ==='; git status --short; printf '%s\\n' '=== SOURCE TREE ==='; find src -maxdepth 4 -type f -print | sort; printf '%s\\n' '=== COURSE/LEVEL API ==='; grep -RInE 'Course|Hole|Level|Descriptor|Obstacle|builder|Builder' src --include='*.ts' --include='*.tsx' | head -n 500; printf '%s\\n' '=== PACKAGE ==='; cat package.json"
+  },
+  "createdAt": "2026-09-16T00:07:53.736Z"
+}
