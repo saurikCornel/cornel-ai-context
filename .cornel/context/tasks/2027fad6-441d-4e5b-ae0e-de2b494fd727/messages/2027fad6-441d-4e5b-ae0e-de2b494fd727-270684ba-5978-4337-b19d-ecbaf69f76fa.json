@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Ядро на месте, `index.ts` уже экспортирует `./BotPlanner` — его нужно создать. Перед реализацией читаю контракты и полные типы лунки, чтобы планировщик корректно считал OOB/hazard/obstacle.\n\n```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-contracts-15\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/contracts/math.ts\",\"src/contracts/game.ts\",\"src/courses/types.ts\"]}\n```\n\nЖду результат worker.\n\nСводка: решение — дописать `src/ai/BotPlanner.ts`, `src/ai/ShotEvaluator.ts` (если понадобится отдельно), `src/gameplay/RatingSystem.ts` и тесты; ядро AI не трогаю. В этом шаге файлы не менялись, проверки не запускались. Следующий шаг — по контрактам написать планировщик и рейтинг, затем детерминированные тесты и typecheck/build.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:18:53.256Z"
+}
