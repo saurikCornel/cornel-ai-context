@@ -2,8 +2,8 @@
   "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
   "branch": "cornel/triggery-i-poverhnosti-1363a3",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
-  "status": "RUNNING",
-  "summary": "Проверяю, дошла ли предыдущая команда записи: результата для `triggers-implement-6` в чат не приходило, поэтому перед повторной записью смотрю фактическое состояние рабочей копии (операция чтения, без побочных эффектов).\n\n```json\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-ls-7\",\"operation\":\"ls\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"path\":\"src\",\"maxLines\":200}\n```\n\nЖду RESULT worker — он придёт отдельным сообщением в этот чат.\n\nЧто делаю дальше в зависимости от ответа:\n- если каталога `src/triggers/` нет — отправлю одну крупную команду записи, создающую весь модуль целиком (типы конфигов, геометрия зон, чистое ядро эффектов, runtime с cooldown/enter-state, Rapier-адаптер) и файлы тестов, чтобы не дробить работу на серию мелких команд;\n- если часть файлов уже создана — допишу недостающее и не буду переписывать готовое.\n\nЗафиксированные проектные решения (по прочитанным контрактам):\n- пишу только в `src/triggers/`, общий `src/courses/types.ts` не трогаю — данные 90 лунок и их валидация уже слиты другим работником, правка общего union дала бы конфликт;\n- ядро оперирует `Vec3` и скалярами и тестируется без Rapier/WebGL; адаптер подключается к `PhysicsWorld` перед шагом симуляции и читает `position`/`velocity`/`body` у `GolfBallPhysics`;\n- 14 элементов сгруппированы по поведению: импульсные (Bumper, SpringPad, BoostPad, JumpPad), непрерывные силовые (Fan, Conveyor, GravityZone, MagnetZone), переносы и состояния (Teleporter, WaterZone, LavaZone, KillZone), материалы трения/restitution (IceSurface, MudSurface);\n- ограничения скорости беру из `GAME_CONFIG.physics` (`maxBallSpeed`, `ballStopThreshold`), чтобы триггеры не выбрасывали шар за пределы допустимой скорости.\n\nСводка: решения — изоляция модуля в `src/triggers/` и разделение «чистое ядро + адаптер»; файлы пока не изменены (результат команды записи не подтверждён); проверок не запускал; следующий шаг — по результату `ls` выполнить запись модуля и targeted-тестов trigger/force/teleport, затем прогнать vitest и сборку, сделать publish и finish.\n\n",
+  "status": "NEEDS_ATTENTION",
+  "summary": "Есть рассинхронизация ветки: worker сообщает, что назначенный head уже изменился, но новый SHA в RESULT не указан. Старый headSha повторно использовать нельзя, а повторять triggers-implement-6 без знания его фактических последствий тоже нельзя.\n\nCORNEL_AI_BLOCKED: нужен фактический текущий SHA ветки cornel/triggery-i-poverhnosti-1363a3 либо RESULT команды triggers-implement-6. После этого продолжу с текущего состояния, не повторяя потенциально уже выполненную запись.\n\nСводка: архитектура и реализация подготовлены; triggers-implement-6 была отправлена, но её RESULT отсутствует; последующая проверка отклонена из-за изменения head; следующий шаг — получить актуальный head/RESULT и проверить созданные файлы перед тестами и publish.\n\n",
   "commands": [
     {
       "commandId": "triggers-inspect-1",
@@ -55,10 +55,10 @@
     },
     {
       "commandId": "triggers-ls-7",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:48:45.429Z"
+  "createdAt": "2026-09-16T17:53:56.826Z"
 }
