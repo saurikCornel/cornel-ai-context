@@ -1,0 +1,12 @@
+{
+  "id": "3d5c5fa6-f7e0-4c86-b9df-a493ce0fe4f7",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-and-verify-9",
+    "operation": "run",
+    "command": "npm install && npx vitest run src/effects/ParticleManager.test.ts && npm run typecheck && npm run build"
+  },
+  "createdAt": "2026-09-16T16:27:57.069Z"
+}

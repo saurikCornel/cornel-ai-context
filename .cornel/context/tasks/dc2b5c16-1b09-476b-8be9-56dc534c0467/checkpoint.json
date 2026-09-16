@@ -3,7 +3,7 @@
   "branch": "cornel/particle-effects-dc2b5c",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"verify-particles-8\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npx vitest run src/effects/ParticleManager.test.ts && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n```\n\nРешение: применяю фактически доступный test-runner без добавления лишних scripts. Изменённые файлы: `src/effects/ParticleManager.ts`, `src/effects/index.ts`, `src/effects/ParticleManager.test.ts`. Проверки: запущены worker. Следующий шаг: при успехе опубликовать единственный commit; при ошибке исправить причину.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"install-and-verify-9\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npm install && npx vitest run src/effects/ParticleManager.test.ts && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n```\n\nРешение: источник ошибки — отсутствующий `node_modules`; запускаю штатную установку зависимостей. Изменённые файлы: исходный код без изменений с предыдущего шага. Проверки: будут выполнены после install. Следующий шаг: по результату исправить тест/код либо publish.  \n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "verify-particles-8",
+      "status": "FAILED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 1
+    },
+    {
+      "commandId": "install-and-verify-9",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:22:52.491Z"
+  "createdAt": "2026-09-16T16:27:57.072Z"
 }
