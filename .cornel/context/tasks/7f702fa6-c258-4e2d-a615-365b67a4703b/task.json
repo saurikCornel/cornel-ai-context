@@ -17,9 +17,10 @@
   "branch": "cornel/hazard-and-field-zones-7f702f",
   "baseSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
   "workspaceSyncedSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-16T19:44:48.484Z",
-  "updatedAt": "2026-09-16T19:44:48.484Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-16T19:44:51.682Z",
+  "issue": 65,
+  "chatUrl": null,
+  "error": null
 }
