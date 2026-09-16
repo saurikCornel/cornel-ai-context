@@ -1,0 +1,17 @@
+{
+  "id": "53839060-0d2b-469e-9444-d047e142937d",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-zones-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "--- dirs ---\nsrc\nsrc/ai\nsrc/app\nsrc/assets\nsrc/camera\nsrc/config\nsrc/contracts\nsrc/core\nsrc/courses\nsrc/courses/data\nsrc/dev\nsrc/effects\nsrc/gameplay\nsrc/input\nsrc/leaderboard\nsrc/physics\nsrc/player\nsrc/ui\n--- physics ---\nsrc/physics/CollisionLayers.ts\nsrc/physics/GolfBallPhysics.ts\nsrc/physics/PhysicsWorld.ts\nsrc/physics/ShotSystem.ts\nsrc/physics/helpers.ts\nsrc/physics/index.ts\n",
+    "outputDigest": "4afde73671d336759fe117daeffb78515ac672e9775dc2f8579a232f6e0e0c8a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:06:38.673Z"
+}
