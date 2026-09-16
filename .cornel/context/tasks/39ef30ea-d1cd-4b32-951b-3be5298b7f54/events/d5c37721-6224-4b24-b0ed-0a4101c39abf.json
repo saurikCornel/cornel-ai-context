@@ -1,0 +1,11 @@
+{
+  "id": "d5c37721-6224-4b24-b0ed-0a4101c39abf",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "chaos-publish-8",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T14:01:41.267Z"
+}

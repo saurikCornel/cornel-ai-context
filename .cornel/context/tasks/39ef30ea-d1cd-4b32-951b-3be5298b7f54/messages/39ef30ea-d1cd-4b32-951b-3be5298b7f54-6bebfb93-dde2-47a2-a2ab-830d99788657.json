@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-publish-8\",\"operation\":\"publish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Add Chaos Dimension course with 9 holes\"}\n\nСводка: создан src/courses/data/chaos-dimension.ts с ровно 9 оригинальными лунками; первые 6 — самостоятельные механики, последние 3 — комбинированные испытания; структурная проверка, npm run typecheck и npm run build прошли успешно; следующий шаг — finish после подтверждения publish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T14:01:41.266Z"
+}

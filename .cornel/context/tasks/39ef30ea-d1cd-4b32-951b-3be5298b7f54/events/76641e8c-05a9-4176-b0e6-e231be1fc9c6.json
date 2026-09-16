@@ -1,0 +1,11 @@
+{
+  "id": "76641e8c-05a9-4176-b0e6-e231be1fc9c6",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chaos-publish-8",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-16T14:01:41.267Z"
+}

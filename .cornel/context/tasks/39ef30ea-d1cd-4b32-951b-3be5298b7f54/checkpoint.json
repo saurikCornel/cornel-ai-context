@@ -3,7 +3,7 @@
   "branch": "cornel/chaos-dimension-9-lunok-39ef30",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-install-verify-7\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"set -e\\nnpm install\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== STATUS ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":300}\n\nСводка: курс структурно валиден; причина сбоя — отсутствующие node_modules, а не TypeScript-ошибка; изменён только src/courses/data/chaos-dimension.ts; следующий шаг при успешной проверке — publish и finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-publish-8\",\"operation\":\"publish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Add Chaos Dimension course with 9 holes\"}\n\nСводка: создан src/courses/data/chaos-dimension.ts с ровно 9 оригинальными лунками; первые 6 — самостоятельные механики, последние 3 — комбинированные испытания; структурная проверка, npm run typecheck и npm run build прошли успешно; следующий шаг — finish после подтверждения publish.\n\n",
   "commands": [
     {
       "commandId": "chaos-inspect-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "chaos-install-verify-7",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "chaos-publish-8",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T14:00:33.453Z"
+  "createdAt": "2026-09-16T14:01:41.269Z"
 }
