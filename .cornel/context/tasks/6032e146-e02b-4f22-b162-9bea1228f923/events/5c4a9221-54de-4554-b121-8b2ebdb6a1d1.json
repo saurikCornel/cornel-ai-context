@@ -1,0 +1,11 @@
+{
+  "id": "5c4a9221-54de-4554-b121-8b2ebdb6a1d1",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-fail-plain-21",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T17:43:25.747Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "d5189145-e34d-439e-af35-7ed1f5eff621",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-fail-plain-21",
+    "operation": "run",
+    "command": "NO_COLOR=1 npx vitest run src/camera/CameraController.test.ts --reporter=verbose 2>&1 | sed -E 's/\\x1B\\[[0-9;]*[mK]//g' | awk '/AssertionError|expected|received|overview|collision-aware|collision/{print NR \":\" $0}' | head -n 80"
+  },
+  "createdAt": "2026-09-16T17:43:25.745Z"
+}

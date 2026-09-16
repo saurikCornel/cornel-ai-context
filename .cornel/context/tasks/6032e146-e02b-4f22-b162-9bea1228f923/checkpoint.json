@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"camera-fail-values-20\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npx vitest run src/camera/CameraController.test.ts --reporter=verbose 2>&1 | grep -E -A6 -B3 'AssertionError|expected|received|FAIL|×|overview|collision' | head -n 120\",\"timeoutSeconds\":900}\n\nСводка: typecheck и build уже чистые; запрашиваю только компактные expected/received для двух оставшихся падений, потому что предыдущий полный диагностический вывод был усечён.\nИзменённые файлы: без новых изменений.\nПроверки: 4/6 тестов CameraController и все 5 CameraCollision уже проходят; остаются 2 assertions.\nСледующий шаг: одним минимальным патчем исправить фактическую причину, затем финально прогнать camera tests + typecheck + build, publish и finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"camera-fail-plain-21\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"NO_COLOR=1 npx vitest run src/camera/CameraController.test.ts --reporter=verbose 2>&1 | sed -E 's/\\\\x1B\\\\[[0-9;]*[mK]//g' | awk '/AssertionError|expected|received|overview|collision-aware|collision/{print NR \\\":\\\" $0}' | head -n 80\",\"timeoutSeconds\":900}\n\nСводка: архитектура контроллера, typecheck и build уже подтверждены; локализованы ровно 2 тестовых расхождения.\nИзменённые файлы: новых изменений нет.\nПроверки: 4/6 CameraController + 5/5 CameraCollision проходят; typecheck/build проходят.\nСледующий шаг: по точным expected/received внести один минимальный патч, затем финальная проверка, publish и finish.\n\n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -115,10 +115,16 @@
     },
     {
       "commandId": "camera-fail-values-20",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "camera-fail-plain-21",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:35:39.948Z"
+  "createdAt": "2026-09-16T17:43:25.748Z"
 }
