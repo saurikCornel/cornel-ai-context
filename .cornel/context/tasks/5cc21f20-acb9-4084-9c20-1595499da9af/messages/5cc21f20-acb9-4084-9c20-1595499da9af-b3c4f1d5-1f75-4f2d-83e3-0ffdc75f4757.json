@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"input-read-bootstrap-4\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/main.ts:1-260\",\"src/ui/index.ts:1-320\"]}\n\nСводка: архитектура зафиксирована — InputManager с action-state API, launch/debug options через query string, developer overlay с F1/F2/F3 и отдельная presentation minimap; gameplay/AI/course definitions не затрагиваются. Следующий шаг — сразу внести реализацию и тесты.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T13:58:18.092Z"
+}
