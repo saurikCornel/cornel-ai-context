@@ -19,16 +19,17 @@
   "workspaceSyncedSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T19:01:22.837Z",
-  "updatedAt": "2026-09-16T19:51:05.020Z",
+  "updatedAt": "2026-09-16T19:51:27.009Z",
   "issue": 62,
-  "chatUrl": null,
+  "chatUrl": "https://chatgpt.com/c/6aaaf33c-290c-83ed-b0c0-ca1e11bfa8c0",
   "error": null,
   "cliSession": null,
-  "browserError": null,
+  "browserError": "Для новой задачи нужен пустой чат",
   "cliActivity": null,
   "statusChecks": 0,
   "chatEpoch": 7,
   "appliedEffort": null,
   "effortFailed": null,
-  "currentHead": "2711f9e6cac19128adede9bf29adb37faff86a72"
+  "currentHead": "2711f9e6cac19128adede9bf29adb37faff86a72",
+  "browserErrorJobId": "39ad29ab-7829-4eb7-b26b-b8a92971c227-handback-d8a8cfa8"
 }
