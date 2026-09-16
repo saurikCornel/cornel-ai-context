@@ -2,8 +2,8 @@
   "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
   "branch": "cornel/triggery-i-poverhnosti-1363a3",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
-  "status": "WAITING_CHATGPT",
-  "summary": "Проверил Issue #54: новых RESULT/UNKNOWN для последней worker-команды там нет; присутствуют только события ограничения частоты запросов. Поэтому задача фактически остаётся незавершённой, а повторять triggers-signatures-12 нельзя — её результат неизвестен.\n\nТекущий подтверждённый прогресс: локально успешно созданы src/triggers/types.ts, vec.ts, zones.ts. Не завершены effects/runtime/surfaces/adapter, targeted-тесты, typecheck, build, publish и finish. Ошибки реализации пока не зафиксировано — сейчас ожидание RESULT последней операции.\n\nСводка: проверка Issue выполнена; новых результатов worker нет; успешные команды не повторяю; следующий шаг — продолжить сразу после RESULT triggers-signatures-12.\n\n",
+  "status": "NEEDS_ATTENTION",
+  "summary": "Повторная статус-проверка не меняет фактическое состояние: последняя worker-команда triggers-signatures-12 всё ещё не имеет RESULT/UNKNOWN, а успешные предыдущие операции повторять запрещено. Поэтому сейчас нет безопасного нового действия через worker: новая запись могла бы обойти неизвестный результат предыдущей команды.\n\nПодтверждённо готовы локальные types.ts, vec.ts, zones.ts. Карточка ещё не завершена: остаются эффекты/runtime/адаптер, targeted-тесты, typecheck, build, publish и finish.\n\nCORNEL_AI_BLOCKED: worker не вернул RESULT/UNKNOWN для triggers-signatures-12; продолжение до появления результата нарушило бы требование не обходить неизвестное состояние команды.\n\nСводка: изменений после последнего подтверждённого этапа нет; finish отправлять преждевременно; следующий шаг — обработать RESULT triggers-signatures-12, когда worker его вернёт.\n\n",
   "commands": [
     {
       "commandId": "triggers-inspect-1",
@@ -84,5 +84,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T18:32:23.918Z"
+  "createdAt": "2026-09-16T18:34:38.768Z"
 }
