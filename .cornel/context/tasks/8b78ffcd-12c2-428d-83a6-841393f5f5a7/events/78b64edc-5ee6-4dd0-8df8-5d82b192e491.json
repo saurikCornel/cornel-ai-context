@@ -1,0 +1,17 @@
+{
+  "id": "78b64edc-5ee6-4dd0-8df8-5d82b192e491",
+  "taskId": "8b78ffcd-12c2-428d-83a6-841393f5f5a7",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "render-status-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+    "output": "\n--- expected files ---\nMISSING src/core/Renderer.ts\nMISSING src/core/SceneManager.ts\nMISSING src/core/InputManager.ts\nMISSING src/core/AudioManager.ts\nMISSING src/core/AssetManager.ts\nMISSING src/effects/ParticleManager.ts\nMISSING src/dev/query.ts\nMISSING src/dev/DeveloperTools.ts\nMISSING src/dev/query.test.ts\nMISSING src/core/fallbacks.test.ts\n",
+    "outputDigest": "e21a7853312880b729627cbc725d71b97910b48cd6cac5dd545bacdc425fe1ed",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:45:33.212Z"
+}
