@@ -1,9 +1,9 @@
 {
   "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
   "branch": "cornel/slit-camera-input-and-zoom-100009",
-  "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+  "headSha": "1c9d29a52e8247ce0fde5c714f07ee5aa10818ce",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"publish-merge-11\",\"operation\":\"publish\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"message\":\"Merge camera input and zoom into office camera stack\"}\n\nЖду RESULT worker. При успехе сразу отправлю finish.\n\nСводка: конфликт разрешён; проверки прошли; предыдущий publish фактически не состоялся; сейчас выполняется только публикация готового merge.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"finish-12\",\"operation\":\"finish\",\"headSha\":\"1c9d29a52e8247ce0fde5c714f07ee5aa10818ce\",\"message\":\"Готово. Ветка camera input and zoom слита в ветку сборщика. Конфликт в src/camera/index.ts разрешён объединением экспортов обеих сторон: сохранены CameraInput и существующие SmoothCameraRig, Smoothing, ThreeCameraBinding вместе с остальными camera-модулями. Добавлены CameraInput.ts и CameraInput.test.ts. Успешно выполнены npm run typecheck, npm run test:camera, npm run test:ui, npm run test:input и npm run build. Отдельного lint-скрипта в package.json нет. Изменения опубликованы в назначенную ветку.\"}\n\nСводка: merge завершён и опубликован; конфликт разрешён без потери работы обеих сторон; все доступные проверки успешны; следующий шаг не требуется.\n\n",
   "commands": [
     {
       "commandId": "merge-camera-1",
@@ -85,10 +85,16 @@
     },
     {
       "commandId": "publish-merge-11",
+      "status": "SUCCEEDED",
+      "headSha": "1c9d29a52e8247ce0fde5c714f07ee5aa10818ce",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-12",
       "status": "STARTED",
-      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "headSha": "1c9d29a52e8247ce0fde5c714f07ee5aa10818ce",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:32:53.647Z"
+  "createdAt": "2026-09-16T18:35:11.822Z"
 }
