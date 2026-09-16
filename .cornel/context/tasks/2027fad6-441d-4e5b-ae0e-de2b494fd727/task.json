@@ -17,17 +17,18 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "baseSha": "77b38d1780726161f87e511138beae87cceeb098",
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
-  "status": "NEEDS_ATTENTION",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T15:44:52.241Z",
-  "updatedAt": "2026-09-16T17:07:00.624Z",
+  "updatedAt": "2026-09-16T17:07:21.758Z",
   "issue": 47,
   "chatUrl": "https://chatgpt.com/c/6aaacbcf-6200-83eb-ba83-f66a9bfed10a",
   "error": null,
   "browserError": null,
-  "statusChecks": 1,
+  "statusChecks": 0,
   "cliSession": null,
   "cliActivity": null,
   "currentHead": "77b38d1780726161f87e511138beae87cceeb098",
   "browserErrorJobId": "2027fad6-441d-4e5b-ae0e-de2b494fd727-handback-3a8f7d89",
-  "attentionReason": "github_access"
+  "attentionReason": null,
+  "intentRevision": 2
 }
