@@ -3,14 +3,20 @@
   "branch": "cornel/cameracontroller-core-bd3382",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"read-checkpoint-1\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\".cornel/context/tasks/bd3382d2-e244-462c-b37a-937ce6c54027/checkpoint.json\"],\"maxLines\":300}\n```\n\nРешения: начинаю с обязательной контрольной точки.  \nИзменённые файлы: нет.  \nПроверки: ожидается результат чтения worker.  \nСледующий шаг: изучить актуальные контракты и структуру `src`.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"list-project-2\",\"operation\":\"ls\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"path\":\".\",\"maxLines\":300}\n```\n\nРешения: контрольная точка отсутствует; продолжаю по назначению.  \nИзменённые файлы: нет.  \nПроверки: чтение checkpoint успешно.  \nСледующий шаг: найти проектные инструкции и исходные контракты.  \n",
   "commands": [
     {
       "commandId": "read-checkpoint-1",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "list-project-2",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:50:49.880Z"
+  "createdAt": "2026-09-16T15:54:48.837Z"
 }
