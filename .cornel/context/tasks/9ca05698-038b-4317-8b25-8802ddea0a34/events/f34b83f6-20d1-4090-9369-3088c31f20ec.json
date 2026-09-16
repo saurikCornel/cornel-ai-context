@@ -1,0 +1,11 @@
+{
+  "id": "f34b83f6-20d1-4090-9369-3088c31f20ec",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-obstacle-manager-13",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T21:22:43.347Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Файлы ядра записаны. Читаю их, чтобы написать lifecycle-тесты точно под фактический API.\n\n```json\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-obstacles-core-12\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/types.ts\",\"src/obstacles/descriptor.ts\",\"src/obstacles/motion.ts\",\"src/obstacles/index.ts\"]}\n```\n\nЖду worker: результат придёт отдельным сообщением в этот чат.\n\nСводка: решение — не переписывать уже созданные файлы, а сверить их фактический API перед тестами. Изменённые файлы: `src/obstacles/{types,descriptor,motion,index,ObstacleManager}.ts` (созданы, ещё не опубликованы). Проверки: пока только read-only. Следующий шаг — прочитать `ObstacleManager.ts`, добавить lifecycle-тесты, затем typecheck, build, publish, finish.\n\n",
+  "summary": "Читаю `ObstacleManager.ts` целиком плюс компактно перечитываю `types.ts`/`index.ts`, чтобы написать тесты строго под фактические сигнатуры.\n\n```json\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-obstacle-manager-13\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/ObstacleManager.ts:1-240\",\"src/obstacles/types.ts:1-44\",\"src/obstacles/index.ts:1-40\"]}\n```\n\nЖду worker: результат придёт отдельным сообщением в этот чат, Issue перечитывать не нужно.\n\nСводка: решение — не писать тесты «вслепую», а сверить фактический API `ObstacleManager` после успешной записи файлов. Изменённые файлы (созданы, не опубликованы): `src/obstacles/{types,descriptor,motion,index,ObstacleManager}.ts`. Проверки: пока только read-only операции worker. Следующий шаг — добавить lifecycle-тесты, затем typecheck и build, после чего publish и finish.\n\n",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "read-obstacles-core-12",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-obstacle-manager-13",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:13:35.501Z"
+  "createdAt": "2026-09-16T21:22:43.350Z"
 }
