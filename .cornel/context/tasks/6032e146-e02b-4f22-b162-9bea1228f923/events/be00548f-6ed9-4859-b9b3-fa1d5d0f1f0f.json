@@ -1,0 +1,12 @@
+{
+  "id": "be00548f-6ed9-4859-b9b3-fa1d5d0f1f0f",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-fail-values-20",
+    "operation": "run",
+    "command": "npx vitest run src/camera/CameraController.test.ts --reporter=verbose 2>&1 | grep -E -A6 -B3 'AssertionError|expected|received|FAIL|×|overview|collision' | head -n 120"
+  },
+  "createdAt": "2026-09-16T17:35:39.943Z"
+}
