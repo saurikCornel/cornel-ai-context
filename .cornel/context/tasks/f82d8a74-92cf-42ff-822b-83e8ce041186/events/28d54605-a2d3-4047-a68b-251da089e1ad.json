@@ -1,0 +1,11 @@
+{
+  "id": "28d54605-a2d3-4047-a68b-251da089e1ad",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-tests-part-a",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:28:17.119Z"
+}
