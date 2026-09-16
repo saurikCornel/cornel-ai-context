@@ -1,0 +1,17 @@
+{
+  "id": "157ad736-89cf-486f-bfd2-ddb676e063c7",
+  "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-core-rendering-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
+    "output": "Core rendering and scene infrastructure completed and published. Added src/core/Renderer.ts and src/core/SceneManager.ts with stylized low-poly rendering defaults, optimized lights/shadows/fog, shared resource caches, instancing-ready API, WebGL context loss/restoration handling, and asset-free scene roots. Published head verified successfully with npm run typecheck and npm run build; remote branch currently points to the same head.",
+    "outputDigest": "7272da728d4d7e4101d5c391a8d94d3acf5a65010bd442b756b28bef2b3359c1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T14:35:57.727Z"
+}
