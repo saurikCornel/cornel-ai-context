@@ -2,8 +2,8 @@
   "taskId": "eb2cef18-35d1-493c-80a8-993a2b92df5b",
   "branch": "cornel/chaos-dimension-i-validaciya-90-lunok-eb2cef",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "WAITING_USER",
-  "summary": "Карточка не выполнена и не проверена, поэтому finish отправлять нельзя.\n\nНужен ответ владельца: можете подтвердить, что taskId eb2cef18-35d1-493c-80a8-993a2b92df5b снова активирован в worker и принимает команды? Последний подтверждённый статус — worker отклонял команды этой задачи, а последующие команды не возвращали RESULT.\n\nПосле подтверждения продолжу с чтения src, затем реализую Chaos Dimension, data-validation test, запущу проверки, выполню publish и finish.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "",
   "commands": [],
-  "createdAt": "2026-09-16T12:45:24.759Z"
+  "createdAt": "2026-09-16T13:38:45.596Z"
 }
