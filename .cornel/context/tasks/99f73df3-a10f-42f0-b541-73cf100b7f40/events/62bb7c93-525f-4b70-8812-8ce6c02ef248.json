@@ -1,0 +1,12 @@
+{
+  "id": "62bb7c93-525f-4b70-8812-8ce6c02ef248",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "HANDOVER",
+  "text": "Чат передан Claude CLI",
+  "detail": {
+    "from": "chatgpt",
+    "to": "claude",
+    "cancelled": 1
+  },
+  "createdAt": "2026-09-16T19:22:28.120Z"
+}
