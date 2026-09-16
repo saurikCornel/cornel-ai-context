@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "`publish` прошёл: новый head `c0219512b2b27069ba03af0b48bf9a1ca019ff11`. Перед `finish` прогоняю проверки уже на опубликованном коммите — требуется успешная проверка worker именно на текущем headSha.\n\n```json\n{\"version\":1,\"taskId\":\"322e983d-bbe5-4693-b8c1-2d62f9d1aeb4\",\"commandId\":\"rot-obst-j1\",\"operation\":\"run\",\"headSha\":\"c0219512b2b27069ba03af0b48bf9a1ca019ff11\",\"timeoutSeconds\":900,\"command\":\"npx tsc -b --pretty false; echo \\\"typecheck exit: $?\\\"\\nnpx vitest run src/obstacles 2>&1 | tail -10; echo \\\"vitest pipeline done\\\"\\nnpm run build 2>&1 | tail -8; echo \\\"build exit: $?\\\"\\ngit status --short\"}\n```\n\nЖду worker — результат придёт сюда отдельным сообщением.\n\nСводка: решения — подтвердить зелёные проверки на фактически опубликованном коммите, а не только на докоммитной рабочей копии; вывод не пишу в файлы, чтобы не занимать место на диске (guard worker близок к порогу). Изменённые файлы (опубликованы): `src/obstacles/{types,validation,rotation,RotatingObstacle,RotatingBar,Spinner,Windmill,RapierObstaclePhysics,index}.ts` и `src/obstacles/{rotation,obstacles,spinnerWindmill}.test.ts`. Проверки: до публикации — typecheck exit 0, vitest 24/24, `npm run build` успешен; сейчас повторяю их на `c021951`. Следующий шаг — при зелёном результате отправить `finish` с итогом карточки.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T23:23:55.180Z"
+}

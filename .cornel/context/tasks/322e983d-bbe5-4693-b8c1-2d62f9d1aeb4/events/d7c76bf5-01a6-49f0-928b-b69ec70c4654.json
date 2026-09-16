@@ -1,0 +1,12 @@
+{
+  "id": "d7c76bf5-01a6-49f0-928b-b69ec70c4654",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "rot-obst-j1",
+    "operation": "run",
+    "command": "npx tsc -b --pretty false; echo \"typecheck exit: $?\"\nnpx vitest run src/obstacles 2>&1 | tail -10; echo \"vitest pipeline done\"\nnpm run build 2>&1 | tail -8; echo \"build exit: $?\"\ngit status --short"
+  },
+  "createdAt": "2026-09-16T23:23:55.180Z"
+}
