@@ -1,0 +1,17 @@
+{
+  "id": "4dedc1be-00ff-4bd1-8bc6-a194697609c4",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-published-ai-rating-38",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "ad52dc77fc129a471d27ac8059aa0ddae67f4fd5",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/2027fad6-441d-4e5b-ae0e-de2b494fd727\u001b[39m\n\n \u001b[32m✓\u001b[39m src/ai/skill-rating.test.ts \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ai/planner.test.ts \u001b[2m(\u001b[22m\u001b[2m10 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 24\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m17 passed\u001b[39m\u001b[22m\u001b[90m (17)\u001b[39m\n\u001b[2m   Start at \u001b[22m 22:00:03\n\u001b[2m   Duration \u001b[22m 200ms\u001b[2m (transform 65%, tests 16%, import 14%, worker 4%)\u001b[22m\n\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 20 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-Bb53Nhb8.css  \u001b[39m\u001b[1m\u001b[2m  7.01 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.32 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-ESTV255h.js   \u001b[39m\u001b[1m\u001b[2m  2.61 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   1.21 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-B2ei82-g.js   \u001b[39m\u001b[1m\u001b[2m477.15 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 120.43 kB\u001b[22m\n\u001b[32m✓ built in 677ms\u001b[39m\n",
+    "outputDigest": "7f0528f40e20471f506bc91e4df340e71bf63a1e221821206486721dbf2eda65",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T19:00:06.696Z"
+}
