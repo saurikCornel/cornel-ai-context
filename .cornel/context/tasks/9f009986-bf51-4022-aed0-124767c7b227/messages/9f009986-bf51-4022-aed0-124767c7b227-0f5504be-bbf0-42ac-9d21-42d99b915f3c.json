@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Конфликт чисто «barrel»-файла: обе стороны добавили свои реэкспорты. Объединяю оба набора в алфавитном порядке.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"resolve-1\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"cat > src/camera/index.ts <<'EOF'\\nexport * from './CameraCollision';\\nexport * from './CameraController';\\nexport * from './CameraPose';\\nexport * from './CameraTransition';\\nexport * from './Easing';\\nexport * from './RapierCameraCollision';\\nexport * from './SmoothCameraRig';\\nexport * from './Smoothing';\\nexport * from './ThreeCameraBinding';\\nEOF\\ngrep -rn '<<<<<<<\\\\|>>>>>>>\\\\|^=======$' src/ || echo 'NO_CONFLICT_MARKERS'\\nls src/camera/\\ncat src/camera/index.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат от worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:12:32.748Z"
+}

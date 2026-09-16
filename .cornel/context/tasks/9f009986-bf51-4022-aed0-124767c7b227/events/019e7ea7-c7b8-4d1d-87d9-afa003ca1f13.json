@@ -1,0 +1,12 @@
+{
+  "id": "019e7ea7-c7b8-4d1d-87d9-afa003ca1f13",
+  "taskId": "9f009986-bf51-4022-aed0-124767c7b227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "resolve-1",
+    "operation": "run",
+    "command": "cat > src/camera/index.ts <<'EOF'\nexport * from './CameraCollision';\nexport * from './CameraController';\nexport * from './CameraPose';\nexport * from './CameraTransition';\nexport * from './Easing';\nexport * from './RapierCameraCollision';\nexport * from './SmoothCameraRig';\nexport * from './Smoothing';\nexport * from './ThreeCameraBinding';\nEOF\ngrep -rn '<<<<<<<\\|>>>>>>>\\|^=======$' src/ || echo 'NO_CONFLICT_MARKERS'\nls src/camera/\ncat src/camera/index.ts"
+  },
+  "createdAt": "2026-09-16T17:12:32.749Z"
+}
