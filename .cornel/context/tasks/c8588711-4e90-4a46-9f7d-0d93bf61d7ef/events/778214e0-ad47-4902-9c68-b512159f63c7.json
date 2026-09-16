@@ -1,0 +1,11 @@
+{
+  "id": "778214e0-ad47-4902-9c68-b512159f63c7",
+  "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "dedupe-course-exports-13",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T15:00:21.206Z"
+}

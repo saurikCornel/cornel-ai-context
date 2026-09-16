@@ -1,0 +1,12 @@
+{
+  "id": "33ed80a7-1729-4196-b41a-203789ddfe50",
+  "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "dedupe-course-exports-13",
+    "operation": "run",
+    "command": "python3 - <<'PY'\nfrom pathlib import Path\np=Path('tests/course-data-validation.test.ts')\ns=p.read_text()\ns=s.replace(\"\"\"    const candidates = Object.values(module).filter(\\n      (value): value is Course =>\\n        typeof value === 'object' &&\\n        value !== null &&\\n        'id' in value &&\\n        'holes' in value &&\\n        Array.isArray((value as Course).holes),\\n    );\\n\"\"\",\"\"\"    const candidates = [...new Set(Object.values(module).filter(\\n      (value): value is Course =>\\n        typeof value === 'object' &&\\n        value !== null &&\\n        'id' in value &&\\n        'holes' in value &&\\n        Array.isArray((value as Course).holes),\\n    ))];\\n\"\"\")\np.write_text(s)\nPY\nnpx vitest run tests/course-data-validation.test.ts"
+  },
+  "createdAt": "2026-09-16T15:00:21.205Z"
+}

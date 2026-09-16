@@ -3,7 +3,7 @@
   "branch": "cornel/validaciya-90-lunok-c85887",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"fix-course-imports-12\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"python3 - <<'PY'\\nfrom pathlib import Path\\np=Path('tests/course-data-validation.test.ts')\\ns=p.read_text()\\nold=\\\"\\\"\\\"const courseModules = import.meta.glob('../src/courses/data/*.ts', {\\\\n  eager: true,\\\\n  import: 'default',\\\\n}) as Record<string, Course>;\\\\n\\\\nconst courses = Object.entries(courseModules)\\\\n  .map(([path, course]) => ({ path, course }))\\\\n  .sort((a, b) => a.path.localeCompare(b.path));\\\\n\\\"\\\"\\\"\\nnew=\\\"\\\"\\\"const courseModules = import.meta.glob('../src/courses/data/*.ts', { eager: true }) as Record<\\\\n  string,\\\\n  Record<string, unknown>\\\\n>;\\\\n\\\\nconst courses = Object.entries(courseModules)\\\\n  .map(([path, module]) => {\\\\n    const candidates = Object.values(module).filter(\\\\n      (value): value is Course =>\\\\n        typeof value === 'object' &&\\\\n        value !== null &&\\\\n        'id' in value &&\\\\n        'holes' in value &&\\\\n        Array.isArray((value as Course).holes),\\\\n    );\\\\n\\\\n    expect(\\\\n      candidates.length,\\\\n      `${path}: expected exactly one exported Course descriptor, found ${candidates.length}`,\\\\n    ).toBe(1);\\\\n\\\\n    return { path, course: candidates[0]! };\\\\n  })\\\\n  .sort((a, b) => a.path.localeCompare(b.path));\\\\n\\\"\\\"\\\"\\nif old not in s:\\n    raise SystemExit('target block not found')\\np.write_text(s.replace(old,new))\\nPY\\nnpx vitest run tests/course-data-validation.test.ts\",\"timeoutSeconds\":300}\n\nСводка: зависимости установлены; первая версия теста выявила ошибку импорта модулей и подтвердила отсутствие десятого курса. Сейчас исправляется только импорт существующих курсов; после результата будет видно, есть ли реальные ошибки в 81 уже присутствующей лунке.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"dedupe-course-exports-13\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"python3 - <<'PY'\\nfrom pathlib import Path\\np=Path('tests/course-data-validation.test.ts')\\ns=p.read_text()\\ns=s.replace(\\\"\\\"\\\"    const candidates = Object.values(module).filter(\\\\n      (value): value is Course =>\\\\n        typeof value === 'object' &&\\\\n        value !== null &&\\\\n        'id' in value &&\\\\n        'holes' in value &&\\\\n        Array.isArray((value as Course).holes),\\\\n    );\\\\n\\\"\\\"\\\",\\\"\\\"\\\"    const candidates = [...new Set(Object.values(module).filter(\\\\n      (value): value is Course =>\\\\n        typeof value === 'object' &&\\\\n        value !== null &&\\\\n        'id' in value &&\\\\n        'holes' in value &&\\\\n        Array.isArray((value as Course).holes),\\\\n    ))];\\\\n\\\"\\\"\\\")\\np.write_text(s)\\nPY\\nnpx vitest run tests/course-data-validation.test.ts\",\"timeoutSeconds\":300}\n\nСводка: исправляется только обнаружение двойного экспорта одного курса; игровые файлы не затронуты. Следующий шаг — по результату отделить реальные дефекты 81 существующей лунки от ожидаемого отсутствия десятого курса.\n\n",
   "commands": [
     {
       "commandId": "inspect-validation-1",
@@ -73,10 +73,16 @@
     },
     {
       "commandId": "fix-course-imports-12",
+      "status": "FAILED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 1
+    },
+    {
+      "commandId": "dedupe-course-exports-13",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T14:56:16.240Z"
+  "createdAt": "2026-09-16T15:00:21.209Z"
 }
