@@ -3,7 +3,7 @@
   "branch": "cornel/cameracontroller-core-bd3382",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"verify-camera-controller-7\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npx vitest run src/camera/CameraController.test.ts && npm run build\",\"timeoutSeconds\":300}\n```\n\nРешения: первая правка сохранена; причина сбоя — в проекте нет `npm test`, поэтому использую установленный Vitest напрямую.  \nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.  \nПроверки: предыдущая команда не выполнила тесты из-за отсутствующего script.  \nСледующий шаг: получить фактические результаты Vitest и build.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"install-and-verify-camera-8\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npm install && npx vitest run src/camera/CameraController.test.ts && npm run build\",\"timeoutSeconds\":300}\n```\n\nРешения: подтверждена внешняя причина сбоя — отсутствующие зависимости; исходники не менялись после первой реализации.  \nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.  \nПроверки: запуск Vitest заблокирован до `npm install`.  \nСледующий шаг: проверить реальный результат после установки зависимостей.  \n",
   "commands": [
     {
       "commandId": "read-checkpoint-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "verify-camera-controller-7",
+      "status": "FAILED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 1
+    },
+    {
+      "commandId": "install-and-verify-camera-8",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:17:09.409Z"
+  "createdAt": "2026-09-16T16:21:08.419Z"
 }

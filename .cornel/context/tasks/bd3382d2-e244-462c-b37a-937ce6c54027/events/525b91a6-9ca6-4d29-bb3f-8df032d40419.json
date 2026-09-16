@@ -1,0 +1,11 @@
+{
+  "id": "525b91a6-9ca6-4d29-bb3f-8df032d40419",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "install-and-verify-camera-8",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:21:08.417Z"
+}
