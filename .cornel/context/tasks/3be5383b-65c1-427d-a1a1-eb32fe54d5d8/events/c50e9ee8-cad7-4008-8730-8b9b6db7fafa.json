@@ -1,0 +1,11 @@
+{
+  "id": "c50e9ee8-cad7-4008-8730-8b9b6db7fafa",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-test-setup-4",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T12:24:50.888Z"
+}
