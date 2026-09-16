@@ -1,0 +1,12 @@
+{
+  "id": "fcce8dec-41cf-4b3c-bbf3-ddd5b1d08c7f",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "assets-audio-finish-12",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T15:21:07.609Z"
+}
