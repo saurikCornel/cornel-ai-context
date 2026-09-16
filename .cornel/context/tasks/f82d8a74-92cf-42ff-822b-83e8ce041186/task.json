@@ -19,10 +19,10 @@
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "READY",
   "createdAt": "2026-09-16T15:45:15.154Z",
-  "updatedAt": "2026-09-16T15:55:29.862Z",
+  "updatedAt": "2026-09-16T15:55:34.700Z",
   "issue": 51,
   "chatUrl": null,
   "error": null,
-  "cliActivity": "Claude CLI: запускается (opus)",
+  "cliActivity": null,
   "browserError": "Claude CLI недоступен: Failed to authenticate: OAuth session expired and could not be refreshed"
 }

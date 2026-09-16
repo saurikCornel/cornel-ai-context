@@ -19,12 +19,12 @@
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T15:44:52.241Z",
-  "updatedAt": "2026-09-16T15:50:56.236Z",
+  "updatedAt": "2026-09-16T15:55:39.116Z",
   "issue": 47,
   "chatUrl": null,
   "error": null,
   "browserError": null,
   "statusChecks": 0,
   "cliSession": null,
-  "cliActivity": null
+  "cliActivity": "Codex CLI: начал ход"
 }
