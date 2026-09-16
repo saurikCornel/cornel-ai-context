@@ -17,9 +17,10 @@
   "branch": "cornel/rotatingbar-windmill-spinner-pendulum-ki-babe14",
   "baseSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-16T23:46:49.649Z",
-  "updatedAt": "2026-09-16T23:46:49.649Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-16T23:46:52.882Z",
+  "issue": 73,
+  "chatUrl": null,
+  "error": null
 }

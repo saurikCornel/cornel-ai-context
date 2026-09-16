@@ -17,13 +17,14 @@
   "branch": "cornel/plan-ty-senior-game-developer-gameplay-p-54ec7c",
   "baseSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "WAITING_CHATGPT",
+  "status": "WAITING_USER",
   "createdAt": "2026-09-16T23:38:00.641Z",
-  "updatedAt": "2026-09-16T23:46:46.545Z",
+  "updatedAt": "2026-09-16T23:46:58.330Z",
   "issue": 72,
   "chatUrl": "cli://claude/cce0b4ff-fd2b-428f-a83f-2141869e099b",
   "error": null,
   "cliActivity": null,
   "cliSession": "cce0b4ff-fd2b-428f-a83f-2141869e099b",
-  "browserError": null
+  "browserError": null,
+  "statusChecks": 0
 }
