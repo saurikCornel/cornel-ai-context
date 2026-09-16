@@ -3,7 +3,7 @@
   "branch": "cornel/f5108c84-c2c1-40d8-b069-9c7d4767c2ed",
   "headSha": "c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23",
   "status": "WAITING_CHATGPT",
-  "summary": "Проверка прошла полностью: зависимости установлены без найденных уязвимостей, TypeScript — без ошибок, production build — успешен. Перед публикацией убираю только генерируемые артефакты dist и *.tsbuildinfo через .gitignore; исходники и package-lock.json сохраняются.\n\nJSON\n{\"version\":1,\"taskId\":\"f5108c84-c2c1-40d8-b069-9c7d4767c2ed\",\"commandId\":\"prepare-publish-1\",\"operation\":\"run\",\"headSha\":\"c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23\",\"command\":\"set -e\\nprintf '\\\\n# Build artifacts\\\\ndist/\\\\n*.tsbuildinfo\\\\n' >> .gitignore\\nrm -rf dist tsconfig.app.tsbuildinfo tsconfig.node.tsbuildinfo\\nprintf '%s\\\\n' '=== STATUS BEFORE PUBLISH ==='\\ngit status --short\\nprintf '%s\\\\n' '=== IGNORE CHECK ==='\\ngit check-ignore dist/ tsconfig.app.tsbuildinfo tsconfig.node.tsbuildinfo || true\",\"timeoutSeconds\":300}\n\nЖду результат worker; после него выполню publish, а затем контрольную сборку на опубликованном commit.\n\nСводка: npm install, npm run typecheck и npm run build фактически успешны; создан минимальный bootstrap и общие контракты карточки; сейчас готовится чистый набор файлов для коммита без build-артефактов; следующий шаг — publish.\n\n",
+  "summary": "Набор для коммита подготовлен корректно: build-артефакты исключены, package-lock.json остаётся в проекте. Публикую проверенные изменения в назначенную ветку.\n\nJSON\n{\"version\":1,\"taskId\":\"f5108c84-c2c1-40d8-b069-9c7d4767c2ed\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23\",\"message\":\"Add game scaffold and shared contracts\"}\n\nЖду результат publish. После получения нового head выполню контрольные typecheck и build уже на опубликованном состоянии; только затем отправлю finish.\n\nСводка: каркас и контракты готовы; предварительные TypeScript/build проверки успешны; генерируемые файлы исключены через .gitignore; сейчас выполняется публикация в рабочую ветку.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -22,7 +22,13 @@
       "status": "SUCCEEDED",
       "headSha": "c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23",
       "exitCode": 0
+    },
+    {
+      "commandId": "prepare-publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:00:49.189Z"
+  "createdAt": "2026-09-16T00:01:06.216Z"
 }
