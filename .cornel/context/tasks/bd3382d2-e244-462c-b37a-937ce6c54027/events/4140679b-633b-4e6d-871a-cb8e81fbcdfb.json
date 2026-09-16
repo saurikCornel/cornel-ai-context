@@ -1,0 +1,17 @@
+{
+  "id": "4140679b-633b-4e6d-871a-cb8e81fbcdfb",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "implement-camera-controller-6",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "npm error Missing script: \"test\"\nnpm error\nnpm error To see a list of scripts, run:\nnpm error   npm run\nnpm error A complete log of this run can be found in: /Users/alex/.npm/_logs/2026-09-16T16_13_47_720Z-debug-0.log\n",
+    "outputDigest": "125d46763b9c6f82ee85c164b6685bc905bd459287dc160aea9d4237bca0f927",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:13:47.857Z"
+}

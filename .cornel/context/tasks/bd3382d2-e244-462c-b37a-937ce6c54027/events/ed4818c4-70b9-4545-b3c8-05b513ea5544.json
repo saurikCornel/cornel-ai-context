@@ -1,0 +1,11 @@
+{
+  "id": "ed4818c4-70b9-4545-b3c8-05b513ea5544",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "implement-camera-controller-6",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:13:45.383Z"
+}

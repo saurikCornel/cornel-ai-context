@@ -1,0 +1,11 @@
+{
+  "id": "f5acde92-7101-460d-aca6-8bfee82f69b6",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "CLI_TURN",
+  "text": "Codex CLI ответил",
+  "detail": {
+    "agent": "codex",
+    "model": ""
+  },
+  "createdAt": "2026-09-16T16:13:45.387Z"
+}
