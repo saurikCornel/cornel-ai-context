@@ -1,0 +1,6 @@
+{
+  "role": "user",
+  "attachments": [],
+  "text": "Координатор: Не обходи зависшую triggers-signatures-12 и не отправляй новых worker-команд, пока для неё не появится RESULT или UNKNOWN. Уже подтверждённые types.ts, vec.ts и zones.ts сохраняй как есть и не повторяй успешные действия. Если придёт SUCCEEDED — продолжи с оставшихся runtime/effects/adapter, затем targeted-тесты trigger/force/teleport, typecheck, build, publish и finish. Если придёт FAILED/REJECTED — устрани конкретную причину и повтори только неуспешный шаг с новым commandId. Если придёт UNKNOWN — действие не повторять, требуется проверка владельцем. До появления статуса finish не отправлять и карточку выполненной не считать.",
+  "createdAt": "2026-09-16T18:35:38.859Z"
+}

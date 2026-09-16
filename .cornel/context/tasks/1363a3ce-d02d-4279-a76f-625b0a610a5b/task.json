@@ -17,9 +17,9 @@
   "branch": "cornel/triggery-i-poverhnosti-1363a3",
   "baseSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "workspaceSyncedSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
-  "status": "NEEDS_ATTENTION",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T17:03:17.294Z",
-  "updatedAt": "2026-09-16T18:34:38.767Z",
+  "updatedAt": "2026-09-16T18:35:38.857Z",
   "issue": 54,
   "chatUrl": "https://chatgpt.com/c/6aaacbde-384c-83eb-81ef-8df2d6cba1f2",
   "error": null,
@@ -28,7 +28,7 @@
   "cliSession": null,
   "chatUrlBefore": "https://chatgpt.com/c/6aaacbde-384c-83eb-81ef-8df2d6cba1f2",
   "cliActivity": null,
-  "statusChecks": 3,
-  "attentionReason": "worker_blocked",
-  "intentRevision": 2
+  "statusChecks": 0,
+  "attentionReason": null,
+  "intentRevision": 4
 }
