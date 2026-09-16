@@ -1,0 +1,17 @@
+{
+  "id": "ed5a34f2-1df2-4c69-ac8b-caa2b73c0351",
+  "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-published-input-dev-17",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "eba87cc40c40f4f9a56f5e4f5628c18234543463",
+    "output": "\n> crazy-putt-arena@0.1.0 test:input\n> vitest run src/input src/dev\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/5cc21f20-acb9-4084-9c20-1595499da9af\u001b[39m\n\n \u001b[32m✓\u001b[39m src/input/InputManager.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/dev/dev.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:44:06\n\u001b[2m   Duration \u001b[22m 1.42s\u001b[2m (environment 94%, transform 4%, import 1%, tests 1%)\u001b[22m\n\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 20 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-Bb53Nhb8.css  \u001b[39m\u001b[1m\u001b[2m  7.01 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.32 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-ESTV255h.js   \u001b[39m\u001b[1m\u001b[2m  2.61 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   1.21 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-B2ei82-g.js   \u001b[39m\u001b[1m\u001b[2m477.15 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 120.43 kB\u001b[22m\n\u001b[32m✓ built in 924ms\u001b[39m\n",
+    "outputDigest": "dac041aba078beeb80ea397a485a2259d73ab7acd7846450bc846e9eaf5897ed",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T15:44:12.605Z"
+}
