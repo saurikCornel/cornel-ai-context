@@ -1,0 +1,12 @@
+{
+  "id": "03d8eee8-1bb2-4a8d-bcd6-a902a3e8f8cb",
+  "taskId": "26c082ce-4b29-4482-9ed1-be2b215b4dc5",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "run-2",
+    "operation": "run",
+    "command": "sed -i \"s/export type SurfaceMaterial = 'green' | 'rough' | 'sand' | 'ice' | 'wood' | 'stone' | 'metal';/export type SurfaceMaterial = 'green' | 'rough' | 'sand' | 'ice' | 'mud' | 'wood' | 'stone' | 'metal';/\" src/courses/types.ts"
+  },
+  "createdAt": "2026-09-16T21:45:00.672Z"
+}
