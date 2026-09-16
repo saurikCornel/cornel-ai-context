@@ -1,0 +1,17 @@
+{
+  "id": "78c4fc3a-9faa-48a5-8463-3b489cadb8ff",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-fail-plain-21",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "5: × src/camera/CameraController.test.ts > CameraController modes > follows a moving ball and uses an independent overview target 3ms\n6:   → expected -4.828078792603348 to be greater than 10\n10:   → expected 2.1 to be close to 1.82, received difference is 0.28, but expected 0.005\n15: FAIL  src/camera/CameraController.test.ts > CameraController modes > follows a moving ball and uses an independent overview target\n16:AssertionError: expected -4.828078792603348 to be greater than 10\n20:     22|     controller.setMode('overview');const overview=controller.snapshot(…\n28:AssertionError: expected 2.1 to be close to 1.82, received difference is 0.28, but expected 0.005\n",
+    "outputDigest": "61d835c87d5c3b62c80771a1ef0203e56da7f0625979f98c257b818593624851",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:43:29.706Z"
+}
