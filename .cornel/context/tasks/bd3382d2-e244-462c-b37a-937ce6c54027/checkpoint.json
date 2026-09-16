@@ -1,9 +1,9 @@
 {
   "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
   "branch": "cornel/cameracontroller-core-bd3382",
-  "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+  "headSha": "34766f93a24ec8ee1e9fab621b721edacfc70263",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"publish-camera-controller-11\",\"operation\":\"publish\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"message\":\"Add renderer-agnostic camera controller\"}\n```\n\nРешения: проверен и публикуется изолированный camera core.  \nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.  \nПроверки: `CameraController.test.ts` — 4/4 успешно; `npm run build` — успешно; `git diff --check` — успешно.  \nСледующий шаг: дождаться SHA publish-коммита и завершить карточку.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"verify-published-camera-12\",\"operation\":\"run\",\"headSha\":\"34766f93a24ec8ee1e9fab621b721edacfc70263\",\"command\":\"npx vitest run src/camera/CameraController.test.ts && npm run build\",\"timeoutSeconds\":300}\n```\n\nРешения: camera core опубликован одним коммитом `34766f93a24ec8ee1e9fab621b721edacfc70263`.  \nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.  \nПроверки: до publish 4/4 unit-теста и production build прошли; запрошено подтверждение на опубликованном SHA.  \nСледующий шаг: получить результат и выполнить `finish`.  \n",
   "commands": [
     {
       "commandId": "read-checkpoint-1",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "publish-camera-controller-11",
+      "status": "SUCCEEDED",
+      "headSha": "34766f93a24ec8ee1e9fab621b721edacfc70263",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-published-camera-12",
       "status": "STARTED",
-      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "headSha": "34766f93a24ec8ee1e9fab621b721edacfc70263",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:36:44.256Z"
+  "createdAt": "2026-09-16T16:42:29.444Z"
 }
