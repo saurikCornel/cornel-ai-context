@@ -1,0 +1,17 @@
+{
+  "id": "97d5b631-7d8c-459c-9d8f-f044a5bab1d7",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-contracts-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "src/contracts: 5 файлов\nsrc/contracts/events.ts\nsrc/contracts/game.ts\nsrc/contracts/index.ts\nsrc/contracts/math.ts\nsrc/contracts/services.ts",
+    "outputDigest": "225dc5bf9a53c6934f4c559ade68ee0b294d1817dbbbebec71489bfc38b5c28c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:35:38.357Z"
+}
