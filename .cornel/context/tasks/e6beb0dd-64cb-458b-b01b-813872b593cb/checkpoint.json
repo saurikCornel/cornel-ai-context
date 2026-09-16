@@ -2,8 +2,8 @@
   "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
   "branch": "cornel/camera-controller-and-controls-e6beb0",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "RUNNING",
-  "summary": "Фактический статус: структура src уже успешно прочитана командой inspect-camera-2, но для следующей команды чтения контрактов подтверждённого RESULT нет — в Issue #35 сейчас нет комментариев/результатов worker. Поэтому успешное действие не повторяю, а продолжаю с новым commandId на чтение только необходимых файлов.\n\nJSON\n{\"version\":1,\"taskId\":\"e6beb0dd-64cb-458b-b01b-813872b593cb\",\"commandId\":\"read-camera-contracts-4\",\"operation\":\"read\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"paths\":[\"src/contracts/math.ts:1-240\",\"src/contracts/game.ts:1-320\",\"src/contracts/index.ts:1-220\",\"src/config/GameConfig.ts:1-260\",\"src/main.ts:1-260\",\"src/app/GameState.ts:1-320\",\"package.json:1-220\",\"tsconfig.json:1-220\"]}\n\nСводка: src/camera отсутствует и будет добавлен изолированно; код ещё не изменён; подтверждена только структура проекта; следующий шаг после RESULT — реализовать CameraController, input-command типы и exports, затем выполнить typecheck/build.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "",
   "commands": [
     {
       "commandId": "inspect-camera-2",
@@ -13,10 +13,10 @@
     },
     {
       "commandId": "read-camera-contracts-4",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-      "exitCode": null
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T12:31:29.924Z"
+  "createdAt": "2026-09-16T12:33:02.749Z"
 }
