@@ -1,0 +1,11 @@
+{
+  "id": "c5b69d3e-836c-4158-ab21-c12fea282246",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "fix-particle-types-12",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:45:02.628Z"
+}
