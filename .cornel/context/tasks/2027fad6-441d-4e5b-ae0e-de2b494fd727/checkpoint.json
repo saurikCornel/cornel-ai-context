@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "grep не поддержал выражение как ожидаемый regex, поэтому не повторяю его. Читаю нужные файлы небольшими диапазонами, чтобы API гарантированно попал в RESULT.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-ai-api-ranges-28\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/ai/BotPlanner.ts:1-140\",\"src/ai/BotPlanner.ts:141-300\",\"src/ai/Matchmaking.ts:1-220\",\"src/ai/BotProfiles.ts:1-180\",\"src/ai/types.ts:1-160\"]}\n\nСводка: код не менялся; это последняя точечная проверка сигнатур перед тестами. После RESULT — запись AI/rating тестов и полный прогон проверок.\n\n",
+  "summary": "Профили подтверждены: 24 бота, все пять рангов и требуемые skill-параметры присутствуют. Для тестов планировщика нужен только точный список его экспортов; предыдущий сложный pattern не сработал, поэтому использую простой поиск export.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"find-planner-exports-29\",\"operation\":\"grep\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"pattern\":\"export\",\"path\":\"src/ai/BotPlanner.ts\"}\n\nСводка: подтверждены 24 bot profiles и плавный rating→skill/matchmaking API. Следующий RESULT даст точные функции BotPlanner; после него — без дополнительных инвентаризаций записываю тесты и запускаю полный validation.\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -145,10 +145,16 @@
     },
     {
       "commandId": "read-ai-api-ranges-28",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "find-planner-exports-29",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:34:02.114Z"
+  "createdAt": "2026-09-16T18:37:21.029Z"
 }

@@ -1,0 +1,11 @@
+{
+  "id": "d145f12d-25e4-4625-b742-c72a3942f788",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "find-planner-exports-29",
+    "operation": "grep"
+  },
+  "createdAt": "2026-09-16T18:37:21.025Z"
+}

@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 4,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Профили подтверждены: 24 бота, все пять рангов и требуемые skill-параметры присутствуют. Для тестов планировщика нужен только точный список его экспортов; предыдущий сложный pattern не сработал, поэтому использую простой поиск export.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"find-planner-exports-29\",\"operation\":\"grep\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"pattern\":\"export\",\"path\":\"src/ai/BotPlanner.ts\"}\n\nСводка: подтверждены 24 bot profiles и плавный rating→skill/matchmaking API. Следующий RESULT даст точные функции BotPlanner; после него — без дополнительных инвентаризаций записываю тесты и запускаю полный validation.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:37:21.025Z"
+}
