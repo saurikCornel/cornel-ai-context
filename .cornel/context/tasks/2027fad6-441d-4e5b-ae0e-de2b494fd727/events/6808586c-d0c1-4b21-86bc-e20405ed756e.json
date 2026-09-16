@@ -1,0 +1,11 @@
+{
+  "id": "6808586c-d0c1-4b21-86bc-e20405ed756e",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-hole-shot-contracts-32",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T18:51:36.050Z"
+}
