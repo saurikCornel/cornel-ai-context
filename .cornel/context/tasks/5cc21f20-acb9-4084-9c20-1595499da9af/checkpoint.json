@@ -2,8 +2,8 @@
   "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "WAITING_CHATGPT",
-  "summary": "Результат пришёл повторно только для уже успешно выполненного input-write-core-7. Для dev-write-tools-8 результата ещё нет, поэтому я не повторяю команду и не запускаю следующий шаг, чтобы не продублировать возможную запись файлов.\n\nТекущий фактический статус: InputManager записан; developer tooling ещё не подтверждён worker. Жду именно RESULT для dev-write-tools-8.\n\n",
+  "status": "RUNNING",
+  "summary": "В Issue нет RESULT для dev-write-tools-8; там видны только служебные события ограничения запросов. Значит считать developer tooling выполненным нельзя. Чтобы не повторять потенциально исполненную запись, проверяю фактическую рабочую копию через ls — это безопасная проверка состояния, а не повтор действия.\n\nJSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"dev-state-check-9\",\"operation\":\"ls\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"path\":\"src/dev\",\"maxLines\":100}\n\nФактический подтверждённый статус сейчас: src/input/InputManager.ts и src/input/index.ts записаны успешно; developer tooling, интеграция, тесты, typecheck/build и publish ещё не подтверждены.\n\n",
   "commands": [
     {
       "commandId": "input-inventory-1",
@@ -40,7 +40,13 @@
       "status": "SUCCEEDED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": 0
+    },
+    {
+      "commandId": "dev-state-check-9",
+      "status": "STARTED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:40:37.123Z"
+  "createdAt": "2026-09-16T15:41:02.164Z"
 }
