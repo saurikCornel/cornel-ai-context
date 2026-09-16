@@ -1,0 +1,17 @@
+{
+  "id": "8da4e9ff-501a-4f01-b801-d3f6fd71bf9b",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "find-planner-exports-29",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "src/ai/BotPlanner.ts:8:export const MAX_SHOT_SPEED = 18;\nsrc/ai/BotPlanner.ts:9:export const MIN_NORMALIZED_POWER = 0.06;\nsrc/ai/BotPlanner.ts:10:export const CUP_CAPTURE_SPEED = 4.5;\nsrc/ai/BotPlanner.ts:48:export function powerToSpeed(normalizedPower: number): number {\nsrc/ai/BotPlanner.ts:52:export function speedToPower(speed: number): number {\nsrc/ai/BotPlanner.ts:57:export function idealPowerForDistance(distance: number): number {\nsrc/ai/BotPlanner.ts:82:export function simulateShot(hole: Hole, from: Vec3, direction: Vec3, normalizedPower: number): { landing: Vec3; analysis: PathAnalysis } {\nsrc/ai/BotPlanner.ts:158:export function scoreCandidate(hole: Hole, from: Vec3, profile: BotProfile, analysis: PathAnalysis): number {\nsrc/ai/BotPlanner.ts:187:export function generateCandidates(hole: Hole, from: Vec3, profile: BotProfile, random: RandomSource): ShotCandidate[] {\nsrc/ai/BotPlanner.ts:212:export function planShot(profile: BotProfile, context: BotPlanningContext): BotPlan {",
+    "outputDigest": "59cc6086d2092302041000d636fcafbc4e49464ad6ad75623d323600a48a9981",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:37:23.303Z"
+}
