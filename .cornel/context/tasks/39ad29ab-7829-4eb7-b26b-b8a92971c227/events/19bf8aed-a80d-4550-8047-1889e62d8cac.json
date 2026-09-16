@@ -1,0 +1,11 @@
+{
+  "id": "19bf8aed-a80d-4550-8047-1889e62d8cac",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-ball-test-surface-5",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T20:00:25.176Z"
+}

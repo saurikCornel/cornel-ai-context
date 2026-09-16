@@ -3,7 +3,7 @@
   "branch": "cornel/pads-and-bumper-39ad29",
   "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
   "status": "RUNNING",
-  "summary": "GitHub сейчас снова показывает назначенную ветку на исходном commit, то есть расхождение было в момент синхронизации worker, а не из-за нашего кода. Повторяю только неуспешное чтение с новым commandId.\n\nJSON\n{\"version\":1,\"taskId\":\"39ad29ab-7829-4eb7-b26b-b8a92971c227\",\"commandId\":\"read-physics-contracts-4\",\"operation\":\"read\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"paths\":[\"src/physics/PhysicsWorld.ts:1-260\",\"src/physics/helpers.ts:1-260\",\"src/physics/CollisionLayers.ts:1-220\",\"src/physics/index.ts:1-220\",\"src/contracts/math.ts:1-260\",\"src/contracts/services.ts:1-260\",\"src/contracts/game.ts:1-260\",\"src/contracts/index.ts:1-220\"]}\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ad29ab-7829-4eb7-b26b-b8a92971c227\",\"commandId\":\"read-ball-test-surface-5\",\"operation\":\"read\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"paths\":[\"src/physics/GolfBallPhysics.ts:1-320\",\"src/physics/helpers.ts:1-260\",\"src/physics/CollisionLayers.ts:1-220\",\"src/contracts/math.ts:1-220\",\"src/config/GameConfig.ts:1-280\",\"package.json:1-220\"]}\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "read-physics-contracts-4",
+      "status": "SUCCEEDED",
+      "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-ball-test-surface-5",
       "status": "STARTED",
       "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:53:35.610Z"
+  "createdAt": "2026-09-16T20:00:25.201Z"
 }
