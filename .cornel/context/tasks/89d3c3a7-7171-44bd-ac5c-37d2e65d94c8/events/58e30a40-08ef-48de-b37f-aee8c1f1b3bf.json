@@ -1,0 +1,11 @@
+{
+  "id": "58e30a40-08ef-48de-b37f-aee8c1f1b3bf",
+  "taskId": "89d3c3a7-7171-44bd-ac5c-37d2e65d94c8",
+  "type": "CLI_ERROR",
+  "text": "Codex CLI: Codex CLI завершился с кодом 2: error: unexpected argument '-s' found\n\n  tip: to pass '-s' as a value, use '-- -s'\n\nUsage: codex exec resume [OPTIONS] [SESSION_ID] [PROMPT]\n\nFor more information, try '--help'.",
+  "detail": {
+    "agent": "codex",
+    "attempt": 1
+  },
+  "createdAt": "2026-09-16T15:25:17.531Z"
+}
