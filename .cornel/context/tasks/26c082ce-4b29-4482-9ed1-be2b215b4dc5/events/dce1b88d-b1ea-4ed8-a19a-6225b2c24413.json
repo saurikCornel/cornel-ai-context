@@ -1,0 +1,17 @@
+{
+  "id": "dce1b88d-b1ea-4ed8-a19a-6225b2c24413",
+  "taskId": "26c082ce-4b29-4482-9ed1-be2b215b4dc5",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "### src/physics/PhysicsWorld.ts (строки 1-29 из 29)\n1: import RAPIER from '@dimforge/rapier3d-compat';\n2: import { GAME_CONFIG } from '../config/GameConfig';\n3: import type { Vec3 } from '../contracts/math';\n4: \n5: export class PhysicsWorld {\n6:   readonly world: RAPIER.World;\n7:   private accumulator = 0;\n8:   readonly fixedStep: number;\n9: \n10:   constructor(gravity: Vec3 = GAME_CONFIG.physics.gravity, fixedStep = 1 / GAME_CONFIG.targetFps) {\n11:     this.world = new RAPIER.World(gravity);\n12:     this.fixedStep = fixedStep;\n13:     this.world.timestep = fixedStep;\n14:   }\n15: \n16:   step(deltaSeconds: number, beforeStep?: (dt: number) => void): void {\n17:     this.accumulator += Math.min(Math.max(deltaSeconds, 0), 0.25);\n18:     while (this.accumulator >= this.fixedStep) {\n19:       beforeStep?.(this.fixedStep);\n20:       this.world.step();\n21:       this.accumulator -= this.fixedStep;\n22:     }\n23:   }\n24: \n25:   dispose(): void {\n26:     this.world.free();\n27:   }\n28: }\n29: \n\n### src/physics/helpers.ts (строки 1-37 из 37)\n1: import type { Vec3 } from '../contracts/math';\n2: \n3: export function clamp(value: number, min: number, max: number): number {\n4:   return Math.min(max, Math.max(min, value));\n5: }\n6: \n7: export function magnitude(v: Vec3): number {\n8:   return Math.hypot(v.x, v.y, v.z);\n9: }\n10: \n11: export function normalizeHorizontal(direction: Vec3): Vec3 | null {\n12:   const length = Math.hypot(direction.x, direction.z);\n13:   if (length < 1e-8) return null;\n14:   return { x: direction.x / length, y: 0, z: direction.z / length };\n15: }\n16: \n17: export function shotImpulseFromCharge(\n18:   charge: number,\n19:   minPower: number,\n20:   maxPower: number,\n21:   exponent: number,\n22: ): number {\n23:   const t = clamp(charge, 0, 1);\n24:   return minPower + (maxPower - minPower) * Math.pow(t, exponent);\n25: }\n26: \n27: export function cappedVelocity(v: Vec3, maxSpeed: number): Vec3 {\n28:   const speed = magnitude(v);\n29:   if (speed <= maxSpeed || speed < 1e-8) return { ...v };\n30:   const scale = maxSpeed / speed;\n31:   return { x: v.x * scale, y: v.y * scale, z: v.z * scale };\n32: }\n33: \n34: export function shouldSleep(speed: number, stopThreshold: number, quietSeconds: number, sleepDelaySeconds: number): boolean {\n35:   return speed <= stopThreshold && quietSeconds >= sleepDelaySeconds;\n36: }\n37:",
+    "outputDigest": "75710f436cbce97c366dae0d503b083c689ad61983b3e6edccb13ba68a3c4846",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:40:56.248Z"
+}
