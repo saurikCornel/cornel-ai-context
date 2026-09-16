@@ -1,0 +1,12 @@
+{
+  "id": "48c679a9-d83d-411d-87ab-26a0460d66d3",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-particles-8",
+    "operation": "run",
+    "command": "npx vitest run src/effects/ParticleManager.test.ts && npm run typecheck && npm run build"
+  },
+  "createdAt": "2026-09-16T16:22:52.487Z"
+}
