@@ -1,0 +1,11 @@
+{
+  "id": "428f3248-7894-4dcb-81e0-61413943a64c",
+  "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-camera-contracts-4",
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff"
+  },
+  "createdAt": "2026-09-16T12:31:29.923Z"
+}

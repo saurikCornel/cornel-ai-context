@@ -1,0 +1,11 @@
+{
+  "id": "add8a7fc-8f31-4e57-b9b7-c66122c0e2b8",
+  "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-camera-contracts-4",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T12:31:29.922Z"
+}
