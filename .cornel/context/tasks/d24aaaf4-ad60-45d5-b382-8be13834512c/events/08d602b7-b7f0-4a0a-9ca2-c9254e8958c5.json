@@ -1,0 +1,11 @@
+{
+  "id": "08d602b7-b7f0-4a0a-9ca2-c9254e8958c5",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-collision-finish-12",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T14:55:54.519Z"
+}
