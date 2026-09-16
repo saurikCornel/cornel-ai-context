@@ -3,7 +3,7 @@
   "branch": "cornel/validaciya-90-lunok-c85887",
   "headSha": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"verify-published-validation-16\",\"operation\":\"run\",\"headSha\":\"397a7043ee8b73064049079e8e02d4df5b7b6d1a\",\"command\":\"npm run typecheck && npm run build && git status --short\",\"timeoutSeconds\":300}\n\nДопущение зафиксировано: моя карточка реализует и публикует валидатор; отсутствующий десятый курс является внешней зависимостью и не должен создаваться в этой ветке.\n\nСводка: tests/course-data-validation.test.ts опубликован; полный тест корректно требует 10×9=90 и сейчас обнаруживает 9×9=81. После успешной проверки опубликованного head отправлю finish с этим ограничением.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"finish-validation-17\",\"operation\":\"finish\",\"headSha\":\"397a7043ee8b73064049079e8e02d4df5b7b6d1a\",\"message\":\"Добавлен tests/course-data-validation.test.ts для полного набора 10×9=90: проверяются количество курсов/лунок, глобальная уникальность course/hole IDs, локальная уникальность element IDs, par и совместимость с maxShots/strokeLimit, конечность и корректность spawn/cup/bounds/size, допустимые surface shapes и obstacle types, а также motion-параметры. На текущих 9 курсах две содержательные группы проверок проходят; полный count-test корректно сообщает 9 вместо 10. Допущение: создание десятого курса относится к параллельной карточке и не выполняется здесь. После интеграции десятого курса следует повторно запустить npx vitest run tests/course-data-validation.test.ts. npm run typecheck — успешно; npm run build — успешно.\"}\n\nСводка: изменён только tests/course-data-validation.test.ts; опубликовано; typecheck и build прошли. Полная проверка 90 лунок ожидает интеграцию десятого курса.\n\n",
   "commands": [
     {
       "commandId": "inspect-validation-1",
@@ -97,10 +97,16 @@
     },
     {
       "commandId": "verify-published-validation-16",
+      "status": "SUCCEEDED",
+      "headSha": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-validation-17",
       "status": "STARTED",
       "headSha": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:22:04.127Z"
+  "createdAt": "2026-09-16T15:22:25.126Z"
 }
