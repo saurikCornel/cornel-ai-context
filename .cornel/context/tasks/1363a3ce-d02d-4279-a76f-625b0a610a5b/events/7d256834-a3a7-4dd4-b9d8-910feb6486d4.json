@@ -1,0 +1,11 @@
+{
+  "id": "7d256834-a3a7-4dd4-b9d8-910feb6486d4",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "triggers-recover-8",
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3"
+  },
+  "createdAt": "2026-09-16T17:54:58.962Z"
+}
