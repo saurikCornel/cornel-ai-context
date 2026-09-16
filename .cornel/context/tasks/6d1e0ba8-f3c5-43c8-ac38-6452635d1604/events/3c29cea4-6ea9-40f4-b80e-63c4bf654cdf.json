@@ -1,0 +1,13 @@
+{
+  "id": "3c29cea4-6ea9-40f4-b80e-63c4bf654cdf",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Реализованы профиль игрока, cosmetics, statistics, settings, XP/levels 1–50 и versioned localStorage persistence с миграцией v1→v2 и безопасным fallback для повреждённых/неподдерживаемых сохранений. Добавлены unit-тесты SaveManager и migrations. Проверки: npm run typecheck — успешно; npm run build — успешно; опубликованный commit повторно проверен, unit tests 6/6 успешно. PR не создавался согласно карточке — ветку заберёт сборщик.",
+  "detail": {
+    "commands": 15,
+    "failed": 8,
+    "headSha": "e51f8b24994e4e50c3b11fb6788b1f96e53574ff",
+    "branch": "cornel/6d1e0ba8-f3c5-43c8-ac38-6452635d1604"
+  },
+  "createdAt": "2026-09-16T11:57:08.143Z"
+}

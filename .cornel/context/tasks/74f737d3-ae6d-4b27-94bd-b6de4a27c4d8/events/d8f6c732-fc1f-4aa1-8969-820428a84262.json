@@ -1,0 +1,12 @@
+{
+  "id": "d8f6c732-fc1f-4aa1-8969-820428a84262",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-index-3",
+    "operation": "run",
+    "command": "echo '=== INDEX CONFLICT WITH NUMBERS ==='; nl -ba src/ui/index.ts; echo '=== INDEX OURS EXPORTS ==='; git show :2:src/ui/index.ts | grep -nE '^(export|import)'; echo '=== INDEX THEIRS EXPORTS ==='; git show :3:src/ui/index.ts | grep -nE '^(export|import)'; echo '=== CSS CONFLICT MARKERS ==='; grep -nE '^(<<<<<<<|=======|>>>>>>>)' src/ui/ui.css"
+  },
+  "createdAt": "2026-09-16T11:56:49.309Z"
+}
