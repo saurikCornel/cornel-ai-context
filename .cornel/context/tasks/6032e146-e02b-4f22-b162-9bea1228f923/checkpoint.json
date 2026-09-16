@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-mode-apply-23\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/CameraController.ts:48-93\",\"src/camera/CameraCollision.ts:20-55\",\"src/camera/CameraController.test.ts:18-34\"]}\n\nСводка: две причины падений локализованы — мгновенное переключение режима и минимальная дистанция collision.\nИзменённые файлы: новых правок пока нет.\nПроверки: typecheck/build проходят; 9 camera-тестов проходят, 2 падают.\nСледующий шаг: внести точечный патч и сразу выполнить финальный vitest src/camera, typecheck и build.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"fix-camera-mode-collision-24\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"python3 - <<'PY'\\nfrom pathlib import Path\\np=Path('src/camera/CameraController.ts')\\ns=p.read_text()\\nneedle='this.modeValue=mode;'\\nif needle not in s:\\n    raise SystemExit('mode assignment pattern not found')\\nif \\\"this.pitch=this.profile[mode].pitch;\\\" not in s:\\n    s=s.replace(needle, needle+\\\"if(mode!=='free')this.pitch=this.profile[mode].pitch;\\\", 1)\\nold=\\\"resolveCameraPosition(target,desired,this.collision,{minDistance:p.minDistance})\\\"\\nif old not in s:\\n    raise SystemExit('collision pattern not found')\\ns=s.replace(old,\\\"resolveCameraPosition(target,desired,this.collision)\\\",1)\\np.write_text(s)\\nPY\\necho '--- camera tests ---'\\nnpx vitest run src/camera\\necho '--- typecheck ---'\\nnpx tsc -b --pretty false\\necho '--- build ---'\\nnpm run build\",\"timeoutSeconds\":1200}\n\nСводка: исправляются две реальные причины падений — профильный pitch при переключении режима и смешение zoom-min-distance с collision clearance.\nИзменённые файлы: src/camera/CameraController.ts плюс ранее созданные CameraController.test.ts и экспорт в src/camera/index.ts.\nПроверки: запущены camera tests, typecheck и production build.\nСледующий шаг: если всё зелёное — publish, затем finish.\n\n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -127,10 +127,16 @@
     },
     {
       "commandId": "read-mode-apply-23",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "fix-camera-mode-collision-24",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:50:21.536Z"
+  "createdAt": "2026-09-16T17:58:43.263Z"
 }

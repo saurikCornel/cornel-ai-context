@@ -1,0 +1,12 @@
+{
+  "id": "79b62614-655a-4a93-8c32-b8b22e471d74",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "fix-camera-mode-collision-24",
+    "operation": "run",
+    "command": "python3 - <<'PY'\nfrom pathlib import Path\np=Path('src/camera/CameraController.ts')\ns=p.read_text()\nneedle='this.modeValue=mode;'\nif needle not in s:\n    raise SystemExit('mode assignment pattern not found')\nif \"this.pitch=this.profile[mode].pitch;\" not in s:\n    s=s.replace(needle, needle+\"if(mode!=='free')this.pitch=this.profile[mode].pitch;\", 1)\nold=\"resolveCameraPosition(target,desired,this.collision,{minDistance:p.minDistance})\"\nif old not in s:\n    raise SystemExit('collision pattern not found')\ns=s.replace(old,\"resolveCameraPosition(target,desired,this.collision)\",1)\np.write_text(s)\nPY\necho '--- camera tests ---'\nnpx vitest run src/camera\necho '--- typecheck ---'\nnpx tsc -b --pretty false\necho '--- build ---'\nnpm run build"
+  },
+  "createdAt": "2026-09-16T17:58:43.260Z"
+}
