@@ -1,0 +1,11 @@
+{
+  "id": "f3951b58-4df8-46a7-93ca-52389de6416a",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "write-obstacle-factories-and-tests-25",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T22:03:04.549Z"
+}
