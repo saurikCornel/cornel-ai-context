@@ -2,8 +2,8 @@
   "taskId": "7f6d5e09-ff5f-4790-856b-72160a9aa45f",
   "branch": "cornel/dinamicheskie-prepyatstviya-7f6d5e",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
-  "status": "WAITING_CHATGPT",
-  "summary": "",
+  "status": "NEEDS_ATTENTION",
+  "summary": "Фактический статус: задача не завершена. Последний подтверждённый worker-результат — успешный list-3; после него в Issue нет ни RESULT, ни UNKNOWN по дальнейшим командам, только повторяющиеся события RATE_LIMIT. Код src/obstacles ещё не создан, publish и проверки не выполнялись.\n\nCORNEL_AI_BLOCKED — выполнение заблокировано ограничением частоты запросов ChatGPT/Cornel AI: worker-команды после list-3 не получают RESULT, поэтому продолжать отправлять новые commandId означало бы зациклиться без подтверждённого исполнения.\n\nСводка: решения — определено, что готового obstacle-слоя нет; изменённые файлы — нет; выполненные проверки — инвентаризация src, чтение базовых типов, grep препятствий, компактный список файлов; следующий шаг после снятия rate limit — прочитать src/physics, реализовать семь препятствий, выполнить typecheck/tests/build, publish и finish.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -36,5 +36,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T18:33:29.679Z"
+  "createdAt": "2026-09-16T18:36:42.318Z"
 }

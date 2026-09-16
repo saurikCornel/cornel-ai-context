@@ -17,9 +17,9 @@
   "branch": "cornel/dinamicheskie-prepyatstviya-7f6d5e",
   "baseSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "workspaceSyncedSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
-  "status": "WAITING_CHATGPT",
+  "status": "NEEDS_ATTENTION",
   "createdAt": "2026-09-16T17:03:11.645Z",
-  "updatedAt": "2026-09-16T18:33:39.693Z",
+  "updatedAt": "2026-09-16T18:36:42.317Z",
   "issue": 53,
   "chatUrl": "https://chatgpt.com/c/6aaacbde-9de4-83eb-b72e-0ca925dd9afa",
   "error": null,
@@ -29,5 +29,6 @@
   "cliSession": null,
   "chatUrlBefore": "https://chatgpt.com/c/6aaacbde-9de4-83eb-b72e-0ca925dd9afa",
   "cliActivity": null,
-  "currentHead": "7a57a441ce1b1987fdacc927968c8080ff1af6d3"
+  "currentHead": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+  "attentionReason": "worker_blocked"
 }
