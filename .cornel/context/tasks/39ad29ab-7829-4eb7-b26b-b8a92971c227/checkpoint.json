@@ -3,7 +3,7 @@
   "branch": "cornel/pads-and-bumper-39ad29",
   "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ad29ab-7829-4eb7-b26b-b8a92971c227\",\"commandId\":\"ls-physics-2\",\"operation\":\"ls\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"path\":\"src/physics\",\"maxLines\":300}\n\nЖду RESULT worker; после него прочитаю только найденные types.ts/vec.ts и связанные контракты, не повторяя уже успешные проверки.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ad29ab-7829-4eb7-b26b-b8a92971c227\",\"commandId\":\"read-physics-contracts-3\",\"operation\":\"read\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"paths\":[\"src/physics/PhysicsWorld.ts:1-260\",\"src/physics/helpers.ts:1-260\",\"src/physics/CollisionLayers.ts:1-220\",\"src/physics/index.ts:1-220\",\"src/contracts/math.ts:1-260\",\"src/contracts/services.ts:1-260\",\"src/contracts/game.ts:1-260\",\"src/contracts/index.ts:1-220\"]}\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "ls-physics-2",
+      "status": "SUCCEEDED",
+      "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-physics-contracts-3",
       "status": "STARTED",
       "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:51:34.463Z"
+  "createdAt": "2026-09-16T19:52:40.578Z"
 }
