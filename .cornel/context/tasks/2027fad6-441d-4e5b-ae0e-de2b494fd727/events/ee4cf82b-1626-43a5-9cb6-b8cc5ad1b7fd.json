@@ -1,0 +1,12 @@
+{
+  "id": "ee4cf82b-1626-43a5-9cb6-b8cc5ad1b7fd",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "validate-ai-rating-35",
+    "operation": "run",
+    "command": "set -e\nnpx vitest run src/ai\nnpm run typecheck\nnpm run build"
+  },
+  "createdAt": "2026-09-16T18:54:48.432Z"
+}
