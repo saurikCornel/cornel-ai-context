@@ -2,8 +2,8 @@
   "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
   "branch": "cornel/camera-controller-and-controls-e6beb0",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "RUNNING",
-  "summary": "Фактический статус: camera-input-grep-27 не получил подтверждённого RESULT, а в Issue #35 новых worker-комментариев нет. Поэтому успешным этот grep не считаю.\n\nПродолжаю безопасно с новой операцией grep, поскольку предыдущая не подтверждена и результат нужен перед реализацией:\n\nJSON\n{\"version\":1,\"taskId\":\"e6beb0dd-64cb-458b-b01b-813872b593cb\",\"commandId\":\"camera-input-grep-28\",\"operation\":\"grep\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"pattern\":\"Input|Command|keydown|keyup|pointer|mouse|wheel|WASD|camera-reset-requested\",\"path\":\"src\"}\n\nПосле RESULT адаптирую camera-слой к найденным input abstractions либо, если общего слоя нет, введу локальные абстрактные camera-команды без изменения UI/AI/course data.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "",
   "commands": [
     {
       "commandId": "inspect-camera-2",
@@ -55,10 +55,10 @@
     },
     {
       "commandId": "camera-input-grep-28",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-      "exitCode": null
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T13:00:20.026Z"
+  "createdAt": "2026-09-16T13:01:31.023Z"
 }
