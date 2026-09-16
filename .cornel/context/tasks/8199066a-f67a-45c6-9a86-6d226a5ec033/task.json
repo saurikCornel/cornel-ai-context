@@ -17,9 +17,10 @@
   "branch": "cornel/surface-modifiers-tipy-i-konfigi-819906",
   "baseSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-16T23:31:55.110Z",
-  "updatedAt": "2026-09-16T23:31:55.110Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-16T23:31:58.824Z",
+  "issue": 69,
+  "chatUrl": null,
+  "error": null
 }
