@@ -1,0 +1,11 @@
+{
+  "id": "4af24a9a-4d86-49ce-b2f4-ac159a7a37cf",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-collision-write-9",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T14:35:29.302Z"
+}
