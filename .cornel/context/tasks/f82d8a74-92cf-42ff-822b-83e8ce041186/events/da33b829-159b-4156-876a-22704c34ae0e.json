@@ -1,0 +1,17 @@
+{
+  "id": "da33b829-159b-4156-876a-22704c34ae0e",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-tests-fix-handoff",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n> crazy-putt-arena@0.1.0 test:camera\n> vitest run src/camera\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f82d8a74-92cf-42ff-822b-83e8ce041186\u001b[39m\n\n \u001b[32m✓\u001b[39m src/camera/CameraCollision.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/camera/CameraSmoothing.test.ts \u001b[2m(\u001b[22m\u001b[2m23 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m28 passed\u001b[39m\u001b[22m\u001b[90m (28)\u001b[39m\n\u001b[2m   Start at \u001b[22m 19:31:47\n\u001b[2m   Duration \u001b[22m 202ms\u001b[2m (transform 70%, import 18%, tests 7%, worker 5%)\u001b[22m\n\n",
+    "outputDigest": "8261275ac3c867537d059e0caab39d9198bb4f934d1b33b9874d4eafd24f60d6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:31:48.287Z"
+}
