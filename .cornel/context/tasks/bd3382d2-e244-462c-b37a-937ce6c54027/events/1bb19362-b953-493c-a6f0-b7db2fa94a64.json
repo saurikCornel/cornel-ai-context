@@ -1,0 +1,11 @@
+{
+  "id": "1bb19362-b953-493c-a6f0-b7db2fa94a64",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "fix-camera-test-and-verify-9",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:25:58.279Z"
+}

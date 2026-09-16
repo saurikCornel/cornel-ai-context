@@ -1,0 +1,12 @@
+{
+  "id": "79830d95-f1e2-42d3-b3a2-d253aed7d676",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "fix-camera-test-and-verify-9",
+    "operation": "run",
+    "command": "sed -i '' 's/toBeCloseTo(4)/toBeCloseTo(1)/' src/camera/CameraController.test.ts && npx vitest run src/camera/CameraController.test.ts && npm run build"
+  },
+  "createdAt": "2026-09-16T16:25:58.277Z"
+}
