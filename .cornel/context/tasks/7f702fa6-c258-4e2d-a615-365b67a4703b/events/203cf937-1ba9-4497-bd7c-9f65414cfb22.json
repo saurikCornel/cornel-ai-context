@@ -1,0 +1,12 @@
+{
+  "id": "203cf937-1ba9-4497-bd7c-9f65414cfb22",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "ls-zones-1",
+    "operation": "run",
+    "command": "git ls-files src | grep -i zone; echo '--- all ---'; git ls-files src"
+  },
+  "createdAt": "2026-09-16T20:10:45.593Z"
+}
