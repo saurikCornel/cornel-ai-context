@@ -3,7 +3,7 @@
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "WAITING_USER",
-  "summary": "Запускаю typecheck, чтобы убедиться, что созданные файлы корректно интегрируются с проектом.\n```\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"run-typecheck-26\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"npm run typecheck\",\"timeoutSeconds\":120}\n```\nCORNEL_AI_YIELD\n\nЗапускаю typecheck, чтобы убедиться, что созданные файлы корректно интегрируются с проектом.\njson\n1\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"run-typecheck-26\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"npm run typecheck\",\"timeoutSeconds\":120}\n",
+  "summary": "Oops! There was an issue connecting to Qwen3.7-Plus.\nYou've reached the upper limit for today's usage. Please try again tomorrow.",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -144,5 +144,5 @@
       "exitCode": 127
     }
   ],
-  "createdAt": "2026-09-16T23:14:09.976Z"
+  "createdAt": "2026-09-16T23:15:05.037Z"
 }
