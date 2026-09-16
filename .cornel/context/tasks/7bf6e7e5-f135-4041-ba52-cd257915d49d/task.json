@@ -2,7 +2,7 @@
   "id": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "claude",
+  "agent": "chatgpt",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -19,7 +19,7 @@
   "workspaceSyncedSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T19:25:41.422Z",
-  "updatedAt": "2026-09-16T20:10:15.179Z",
+  "updatedAt": "2026-09-16T20:10:34.632Z",
   "issue": 63,
   "chatUrl": null,
   "error": null,
@@ -27,7 +27,7 @@
   "browserError": null,
   "cliActivity": null,
   "statusChecks": 0,
-  "chatEpoch": 5,
+  "chatEpoch": 6,
   "appliedEffort": null,
   "effortFailed": null,
   "currentHead": "2711f9e6cac19128adede9bf29adb37faff86a72"
