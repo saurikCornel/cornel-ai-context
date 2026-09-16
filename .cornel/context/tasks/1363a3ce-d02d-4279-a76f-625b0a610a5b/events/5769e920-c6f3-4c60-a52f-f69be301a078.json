@@ -1,0 +1,11 @@
+{
+  "id": "5769e920-c6f3-4c60-a52f-f69be301a078",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "triggers-inspect-1",
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3"
+  },
+  "createdAt": "2026-09-16T17:03:39.879Z"
+}

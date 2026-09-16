@@ -1,0 +1,11 @@
+{
+  "id": "b5682b84-3c78-4642-9547-09e1ab8c832e",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "triggers-inspect-1",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T17:03:39.878Z"
+}

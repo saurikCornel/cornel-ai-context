@@ -17,12 +17,12 @@
   "branch": "cornel/dinamicheskie-prepyatstviya-7f6d5e",
   "baseSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "workspaceSyncedSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T17:03:11.645Z",
-  "updatedAt": "2026-09-16T17:03:29.379Z",
+  "updatedAt": "2026-09-16T17:03:40.061Z",
   "issue": 53,
   "chatUrl": "https://chatgpt.com/c/6aaacbde-9de4-83eb-b72e-0ca925dd9afa",
   "error": null,
-  "browserError": "Для новой задачи нужен пустой чат",
+  "browserError": null,
   "browserErrorJobId": "7f6d5e09-ff5f-4790-856b-72160a9aa45f-initial"
 }
