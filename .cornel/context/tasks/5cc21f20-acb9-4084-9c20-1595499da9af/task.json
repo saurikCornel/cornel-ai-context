@@ -19,11 +19,11 @@
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T13:43:28.478Z",
-  "updatedAt": "2026-09-16T15:32:41.088Z",
+  "updatedAt": "2026-09-16T15:40:37.119Z",
   "issue": 44,
   "chatUrl": "https://chatgpt.com/c/6aaa9f5e-7b94-83ed-9fca-34b669b4dfdb",
   "error": null,
-  "browserError": "Отправка уже началась. Автоматического повтора не будет: проверьте исходную вкладку.",
+  "browserError": null,
   "browserErrorJobId": "5cc21f20-acb9-4084-9c20-1595499da9af-status-5cc21f20-acb9-4084-9c20-1595499da9af-0ab8bd2d-8e8b-4d80-a214-a5c1967370b2-retry",
   "currentHead": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "statusChecks": 1
