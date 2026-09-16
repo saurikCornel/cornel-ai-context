@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикация прошла, но нужно подтвердить фактический SHA ветки на GitHub.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"check-head-1\",\"operation\":\"run\",\"heads\":[\"c00eea41dad5a84c210312426591780870e73ee2\",\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\"],\"command\":\"git log --oneline -3; echo '--- remote ---'; git ls-remote origin cornel/slit-cameracontroller-core-9f0099; echo '--- index.ts ---'; cat src/camera/index.ts; echo '--- status ---'; git status --short\",\"timeoutSeconds\":300}\n```\n\nЖду результат от worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:15:16.224Z"
+}
