@@ -2,8 +2,8 @@
   "taskId": "eb2cef18-35d1-493c-80a8-993a2b92df5b",
   "branch": "cornel/chaos-dimension-i-validaciya-90-lunok-eb2cef",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "WAITING_CHATGPT",
-  "summary": "",
+  "status": "NEEDS_ATTENTION",
+  "summary": "CORNEL_AI_BLOCKED\n\nФактический последний RESULT: REJECTED — Задача не принимает команды. Это уже не проблема доступа к GitHub: Issue и ветка доступны, но worker сейчас не принимает команды для taskId eb2cef18-35d1-493c-80a8-993a2b92df5b.\n\nИз-за этого я не могу по требуемому протоколу прочитать рабочую копию, внести изменения, запустить тесты, сделать publish и завершить через finish.\n\nНужно снова активировать эту задачу в Cornel AI/worker так, чтобы она принимала команды, либо выдать новое действующее назначение/taskId. После этого продолжу с текущей ветки без повторения уже отклонённых команд.\n\n",
   "commands": [],
-  "createdAt": "2026-09-16T12:29:19.228Z"
+  "createdAt": "2026-09-16T12:29:49.229Z"
 }
