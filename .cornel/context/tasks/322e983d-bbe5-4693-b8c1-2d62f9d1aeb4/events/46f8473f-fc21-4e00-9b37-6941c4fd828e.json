@@ -1,0 +1,17 @@
+{
+  "id": "46f8473f-fc21-4e00-9b37-6941c4fd828e",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "rot-obstacles-inspect-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "src/obstacles: 0 файлов",
+    "outputDigest": "1a4018534103d3fc3fa08da9862924810b2e42a9b3bcdf8f5ee8003616a92ec6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T19:18:19.536Z"
+}
