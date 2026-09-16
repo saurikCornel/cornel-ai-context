@@ -3,7 +3,7 @@
   "branch": "cornel/rotating-obstacles-322e98",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Хвост вывода дошёл, начало обрезано. Дочитываю недостающие части и заодно фиксирую: в `RotatingBar.ts` остался неиспользуемый импорт `Vec3` — уберу его следующей командой записи.\n\n```json\n{\"version\":1,\"taskId\":\"322e983d-bbe5-4693-b8c1-2d62f9d1aeb4\",\"commandId\":\"rot-obst-b3-read\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/types.ts:1-90\",\"src/obstacles/rotation.ts:40-120\",\"src/obstacles/RotatingObstacle.ts:1-62\"]}\n```\n\nЖду worker — результат придёт сюда отдельным сообщением.\n\nСводка: решения — дочитать `types.ts`, хвост `rotation.ts` и голову `RotatingObstacle.ts` (первый read вернул только конец), затем одним заходом barrel + удаление неиспользуемого импорта; изменённые файлы: `src/obstacles/{validation,rotation,types,RotatingObstacle,RotatingBar,Spinner,Windmill,RapierObstaclePhysics}.ts`; проверки: пока не запускались; следующий шаг — barrel и targeted-тесты, затем typecheck/build, publish, finish.\n\n",
+  "summary": "Полная картина по базовому слою есть. Дочитываю `Windmill.ts` и `validation.ts` — тесты должны опираться на фактический API, а не на память.\n\n```json\n{\"version\":1,\"taskId\":\"322e983d-bbe5-4693-b8c1-2d62f9d1aeb4\",\"commandId\":\"rot-obst-b4-read\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/Windmill.ts:30-124\",\"src/obstacles/validation.ts:1-60\"]}\n```\n\nЖду worker — результат придёт сюда отдельным сообщением.\n\nСводка: решения — тесты писать строго по фактическому API `Windmill`/`validation`, package.json не трогать (тесты запущу через `npx vitest run src/obstacles`, чтобы не конфликтовать с чужими ветками); изменённые файлы: `src/obstacles/{validation,rotation,types,RotatingObstacle,RotatingBar,Spinner,Windmill,RapierObstaclePhysics}.ts`; проверки: пока не запускались; следующий шаг — barrel `index.ts`, удаление неиспользуемого импорта `Vec3` в `RotatingBar.ts`, тесты вращения и конфигурации, затем vitest + typecheck + build, publish, finish.\n\n",
   "commands": [
     {
       "commandId": "rot-obstacles-inspect-2",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "rot-obst-b3-read",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "rot-obst-b4-read",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:28:32.303Z"
+  "createdAt": "2026-09-16T21:29:09.754Z"
 }
