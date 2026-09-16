@@ -1,0 +1,12 @@
+{
+  "id": "763f06fd-c717-4c82-9974-b9dd9fe0532d",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-state-8",
+    "operation": "run",
+    "command": "ls -la src/obstacles 2>/dev/null || echo NO_OBSTACLES_DIR; [ -d node_modules ] && echo HAS_NODE_MODULES || echo NO_NODE_MODULES; [ -d node_modules/vite ] && echo HAS_VITE || echo NO_VITE; [ -d node_modules/vitest ] && echo HAS_VITEST || echo NO_VITEST; ls vitest.config.* vite.config.* 2>/dev/null; git status --short"
+  },
+  "createdAt": "2026-09-16T21:00:35.175Z"
+}
