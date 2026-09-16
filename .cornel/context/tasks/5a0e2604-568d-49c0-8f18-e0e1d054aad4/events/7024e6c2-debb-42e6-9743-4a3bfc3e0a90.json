@@ -1,0 +1,10 @@
+{
+  "id": "7024e6c2-debb-42e6-9743-4a3bfc3e0a90",
+  "taskId": "5a0e2604-568d-49c0-8f18-e0e1d054aad4",
+  "type": "RESEND",
+  "text": "ChatGPT не ответил на сообщение за 20 минут; отправляю его заново",
+  "detail": {
+    "job": "5a0e2604-568d-49c0-8f18-e0e1d054aad4-handback-9e354eff"
+  },
+  "createdAt": "2026-09-16T22:22:55.025Z"
+}
