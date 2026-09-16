@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Продолжаю изучение: смотрю, как описаны препятствия в типах курса и где их строит CourseBuilder.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"run-4\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"echo '=== FILES ==='; find src -type f | sort; echo; echo '=== types.ts ==='; cat src/courses/types.ts; echo; echo '=== obstacle mentions ==='; grep -rniE \\\"obstacle|windmill|door|kinematic\\\" src --include=*.ts -l | sort\",\"timeoutSeconds\":120}\n```\n\nЖду результат от worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T20:03:59.558Z"
+}
