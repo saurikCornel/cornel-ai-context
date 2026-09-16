@@ -1,0 +1,11 @@
+{
+  "id": "dddb4721-d7ac-46df-a810-981cf36b7ced",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "finish-particles-16",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T16:50:12.003Z"
+}

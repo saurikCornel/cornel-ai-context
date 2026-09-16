@@ -1,0 +1,11 @@
+{
+  "id": "12de50fc-34cd-4384-a092-e754313e59df",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "finish-particles-16",
+    "headSha": "db73400a5139cf8b2861c4cd634d81e9858ff328"
+  },
+  "createdAt": "2026-09-16T16:50:12.004Z"
+}

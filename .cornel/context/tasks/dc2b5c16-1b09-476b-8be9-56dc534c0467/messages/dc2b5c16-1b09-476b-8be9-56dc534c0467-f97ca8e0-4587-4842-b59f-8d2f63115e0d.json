@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверка опубликованной ветки полностью успешна: 4/4 теста, typecheck и production build прошли. Теперь карточку можно корректно завершить.\n\nJSON\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"finish-particles-16\",\"operation\":\"finish\",\"headSha\":\"db73400a5139cf8b2861c4cd634d81e9858ff328\",\"message\":\"Particle effects завершены. Реализован lightweight pooled ParticleManager на THREE.Points с фиксированной ёмкостью, переиспользуемыми typed arrays и API emit/update/clear/dispose; добавлены exports и целевые unit-тесты. На опубликованном head подтверждены проверки worker: 4/4 теста пройдены, npm run typecheck успешен, npm run build успешен. Изменения опубликованы в назначенную ветку.\"}\n\nИтог: код опубликован, обязательная post-publish проверка пройдена, дополнительных изменений не требуется.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:50:12.002Z"
+}
