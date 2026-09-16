@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Структура ясна — каталога `src/obstacles` ещё нет. Читаю контракты и типы курсов, чтобы встроиться в существующие интерфейсы.\n\n```json\n{\"version\":1,\"taskId\":\"7f6d5e09-ff5f-4790-856b-72160a9aa45f\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"paths\":[\"src/courses/types.ts\",\"src/contracts/math.ts\"]}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:11:04.790Z"
+}
