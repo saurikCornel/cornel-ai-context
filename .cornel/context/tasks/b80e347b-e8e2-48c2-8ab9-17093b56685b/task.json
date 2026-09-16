@@ -20,9 +20,10 @@
   "branch": "cornel/slit-camera-modes-aim-follow-overview-fr-b80e34",
   "baseSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "workspaceSyncedSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-16T18:17:00.633Z",
-  "updatedAt": "2026-09-16T18:17:00.633Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-16T18:17:04.131Z",
+  "issue": 57,
+  "chatUrl": null,
+  "error": null
 }
