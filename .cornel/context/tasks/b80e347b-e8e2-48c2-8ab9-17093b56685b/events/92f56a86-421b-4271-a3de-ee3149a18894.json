@@ -1,0 +1,12 @@
+{
+  "id": "92f56a86-421b-4271-a3de-ee3149a18894",
+  "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "resolve-1",
+    "operation": "run",
+    "command": "set -e; git checkout --ours -- src/camera/CameraController.ts src/camera/CameraController.test.ts; git show FETCH_HEAD:src/camera/CameraController.ts | sed -e s/CameraControllerOptions/CameraModeControllerOptions/g -e s/CameraTransitionOptions/CameraModeTransitionOptions/g -e s/CameraController/CameraModeController/g -e s/CameraTransition/ModeTransition/g -e s/CameraPose/ModePose/g > src/camera/CameraModeController.ts; { printf '%s\\n' \"// Mode-driven camera rig (aim/follow/overview/free) merged from cornel/camera-modes-aim-follow-overview-free-6032e1.\" \"// Complements the renderer-agnostic orbit CameraController in ./CameraController.\" \"\"; cat src/camera/CameraModeController.ts; } > src/camera/.cmc.tmp; mv src/camera/.cmc.tmp src/camera/CameraModeController.ts; git show FETCH_HEAD:src/camera/CameraController.test.ts | sed -e s/CameraController/CameraModeController/g > src/camera/CameraModeController.test.ts; printf '%s\\n' \"export * from './CameraCollision';\" \"export * from './CameraController';\" \"export * from './CameraModeController';\" \"export * from './CameraPose';\" \"export * from './CameraTransition';\" \"export * from './Easing';\" \"export * from './RapierCameraCollision';\" \"export * from './SmoothCameraRig';\" \"export * from './Smoothing';\" \"export * from './ThreeCameraBinding';\" > src/camera/index.ts; grep -rn '<<<<<<<\\|>>>>>>>' src/camera || echo NO_CONFLICT_MARKERS; git add -A; git commit --no-edit; set +e; echo ===TYPECHECK===; npm run typecheck; echo TYPECHECK_EXIT=$?; echo ===TEST_CAMERA===; npx vitest run src/camera; echo TEST_CAMERA_EXIT=$?; echo ===TEST_UI===; npm run test:ui; echo TEST_UI_EXIT=$?; echo ===TEST_INPUT===; npm run test:input; echo TEST_INPUT_EXIT=$?; echo ===BUILD===; npm run build; echo BUILD_EXIT=$?; git status --short"
+  },
+  "createdAt": "2026-09-16T18:48:37.975Z"
+}
