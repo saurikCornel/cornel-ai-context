@@ -2,7 +2,7 @@
   "id": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "qwen",
+  "agent": "claude",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -19,9 +19,9 @@
   "workspaceSyncedSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T18:40:28.130Z",
-  "updatedAt": "2026-09-16T20:57:15.668Z",
+  "updatedAt": "2026-09-16T20:59:20.103Z",
   "issue": 59,
-  "chatUrl": "https://chat.qwen.ai/c/4f8fe685-18a3-4405-99b1-7dd9b0cacfcb",
+  "chatUrl": null,
   "error": null,
   "cliSession": null,
   "browserError": null,
@@ -32,5 +32,5 @@
   "effortFailed": null,
   "browserErrorJobId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4-handback-016520e8",
   "currentHead": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
-  "chatUrlBefore": "https://chatgpt.com/c/6aaaeb49-1e34-83eb-9d26-c13eefc38992"
+  "chatUrlBefore": "https://chat.qwen.ai/c/4f8fe685-18a3-4405-99b1-7dd9b0cacfcb"
 }
