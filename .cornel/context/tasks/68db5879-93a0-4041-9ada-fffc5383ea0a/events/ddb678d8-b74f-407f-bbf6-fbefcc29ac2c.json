@@ -1,0 +1,11 @@
+{
+  "id": "ddb678d8-b74f-407f-bbf6-fbefcc29ac2c",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "physics-finish-8",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T00:23:02.320Z"
+}

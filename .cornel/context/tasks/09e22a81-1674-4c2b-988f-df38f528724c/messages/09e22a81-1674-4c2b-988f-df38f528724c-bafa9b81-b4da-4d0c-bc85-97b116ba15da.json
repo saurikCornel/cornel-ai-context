@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Исправление подтверждено фактическими проверками: TypeScript typecheck прошёл, production build собран, все 3 теста прошли, git diff --check чистый. Публикую единственное исправление строгой типизации.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-publish-fix-1\",\"operation\":\"publish\",\"headSha\":\"eb5dda16ef9de4aec9d2cd50755ebf79c425fe48\",\"message\":\"Fix strict leaderboard profile indexing\"}\n\nЖду результат worker. После успешного publish останется финальная проверка на новом commit и finish.\n\nСводка: исправлены две ошибки строгой типизации в генераторе; локально подтверждены typecheck, build и 3/3 теста; изменён только src/leaderboard/generator.ts; следующий шаг — финальная проверка опубликованного commit.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T00:26:15.824Z"
+}

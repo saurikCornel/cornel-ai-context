@@ -1,0 +1,12 @@
+{
+  "id": "14968f70-e813-4035-82e1-a944d259fcad",
+  "taskId": "0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "final-verify-courses-1",
+    "operation": "run",
+    "command": "npm install && npm run typecheck && npm run build && printf '%s\\n' '=== COURSE COUNTS ===' && for f in src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; do printf '%s: ' \"$f\"; grep -Ec \"^    id: '.*-[1-9]'\" \"$f\"; done && printf '%s\\n' '=== STATUS ===' && git status --short"
+  },
+  "createdAt": "2026-09-16T00:28:23.994Z"
+}

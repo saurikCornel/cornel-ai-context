@@ -1,9 +1,9 @@
 {
   "taskId": "defb0407-6f82-42d9-85f2-4fd3cfd54559",
   "branch": "cornel/defb0407-6f82-42d9-85f2-4fd3cfd54559",
-  "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+  "headSha": "79b56e35f5f502680e2301c972132109c65a4d3a",
   "status": "WAITING_CHATGPT",
-  "summary": "DOM-проверка подтверждена: все 5 тестов прошли, после добавления тестовой инфраструктуры также повторно успешно прошли typecheck и production build. Теперь публикую проверенные изменения в назначенную ветку; это отдельный обязательный шаг перед финальной проверкой commit.\n\nJSON\n{\"version\":1,\"taskId\":\"defb0407-6f82-42d9-85f2-4fd3cfd54559\",\"commandId\":\"ui-publish-6\",\"operation\":\"publish\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"message\":\"Implement game HUD, overlays, scoreboard and UI DOM tests\"}\n\nСводка: реализованы HUD/power meter, Scoreboard на 1–8 игроков, Pause, Loading и MatchResults; добавлены UI DTO и адаптивные стили; фактически прошли 5/5 DOM tests, typecheck и build; следующий шаг после результата publish — финальная проверка уже опубликованного commit и finish.\n\n",
+  "summary": "Публикация прошла успешно. Требование протокола — перед finish нужна успешная проверка worker именно на опубликованном commit. Предыдущие тесты были до публикации, поэтому сейчас выполняю финальный прогон без изменения исходников.\n\nJSON\n{\"version\":1,\"taskId\":\"defb0407-6f82-42d9-85f2-4fd3cfd54559\",\"commandId\":\"ui-final-verify-7\",\"operation\":\"run\",\"headSha\":\"79b56e35f5f502680e2301c972132109c65a4d3a\",\"command\":\"set -e\\nprintf '\\\\n=== UI TESTS ===\\\\n'\\nnpm run test:ui\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== WORKTREE ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":300}\n\nСводка: изменения опубликованы в назначенную ветку; до публикации подтверждены 5/5 DOM-тестов, typecheck и build; сейчас выполняется обязательная финальная проверка опубликованного состояния; при успехе следующий шаг — finish.\n\n",
   "commands": [
     {
       "commandId": "ui-inspect-1",
@@ -40,7 +40,13 @@
       "status": "SUCCEEDED",
       "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
       "exitCode": 0
+    },
+    {
+      "commandId": "ui-publish-6",
+      "status": "SUCCEEDED",
+      "headSha": "79b56e35f5f502680e2301c972132109c65a4d3a",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:21:00.178Z"
+  "createdAt": "2026-09-16T00:25:31.401Z"
 }

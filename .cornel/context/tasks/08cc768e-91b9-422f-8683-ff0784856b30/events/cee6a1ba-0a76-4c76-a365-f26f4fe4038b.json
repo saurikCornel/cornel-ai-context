@@ -1,0 +1,17 @@
+{
+  "id": "cee6a1ba-0a76-4c76-a365-f26f4fe4038b",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "green-hills-verify-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+    "output": "\nadded 25 packages, and audited 26 packages in 3s\n\n5 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n\n=== GREEN HILLS FILE ===\n9\n\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "991d34708c82b658c3aa7827e2617252e8e197b47112c0328c1855f26578ef94",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:26:03.327Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "44c339f0-b356-499e-95ec-8db3d344a9ed",
+  "taskId": "5a950f35-46c6-4633-b39b-bd238e85b022",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ui-final-verify-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f8291bcbdde7e111876a5434ed2a6313c1aab7ca",
+    "output": "\n=== STATUS ===\n\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 9 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-B6dI7W75.css  \u001b[39m\u001b[1m\u001b[2m  2.80 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   1.15 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-hYmuCUOU.js   \u001b[39m\u001b[1m\u001b[2m472.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 118.94 kB\u001b[22m\n\u001b[32m✓ built in 811ms\u001b[39m\n\n=== UI FILES ===\nsrc/ui/domTests.ts\nsrc/ui/index.ts\nsrc/ui/ui.css\n",
+    "outputDigest": "0e00db35f67aefacc9af563048a66d2ddf688e0545bc5eb6051c8233a4e50b58",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:24:35.915Z"
+}

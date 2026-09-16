@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикация прошла успешно. Требование протокола — перед finish нужна успешная проверка worker именно на опубликованном commit. Предыдущие тесты были до публикации, поэтому сейчас выполняю финальный прогон без изменения исходников.\n\nJSON\n{\"version\":1,\"taskId\":\"defb0407-6f82-42d9-85f2-4fd3cfd54559\",\"commandId\":\"ui-final-verify-7\",\"operation\":\"run\",\"headSha\":\"79b56e35f5f502680e2301c972132109c65a4d3a\",\"command\":\"set -e\\nprintf '\\\\n=== UI TESTS ===\\\\n'\\nnpm run test:ui\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== WORKTREE ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":300}\n\nСводка: изменения опубликованы в назначенную ветку; до публикации подтверждены 5/5 DOM-тестов, typecheck и build; сейчас выполняется обязательная финальная проверка опубликованного состояния; при успехе следующий шаг — finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T00:25:31.386Z"
+}

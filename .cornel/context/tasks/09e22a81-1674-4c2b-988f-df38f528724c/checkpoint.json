@@ -3,7 +3,7 @@
   "branch": "cornel/09e22a81-1674-4c2b-988f-df38f528724c",
   "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
   "status": "WAITING_CHATGPT",
-  "summary": "Причина ясна: после синхронизации опубликованного commit рабочая копия оказалась без node_modules; это проблема окружения проверки, а не исходников. Исправляю её установкой зависимостей из lock-файла, после чего выполняю полный набор проверок одной командой.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-final-verify-2\",\"operation\":\"run\",\"headSha\":\"eb5dda16ef9de4aec9d2cd50755ebf79c425fe48\",\"command\":\"set -e; printf '\\\\n=== INSTALL ===\\\\n'; npm ci; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck; printf '\\\\n=== BUILD ===\\\\n'; npm run build; printf '\\\\n=== TESTS ===\\\\n'; node --experimental-strip-types --test tests/*.test.ts; printf '\\\\n=== STATUS ===\\\\n'; test -z \\\"$(git status --porcelain)\\\"; git status --short; printf '\\\\nALL_LEADERBOARD_CHECKS_OK\\\\n'\",\"timeoutSeconds\":300}\n\nЖду worker. При exitCode 0 отправлю finish, не повторяя проверки.\n\nСводка: опубликованный код не менялся; предыдущая финальная проверка остановилась до компиляции из-за отсутствующих зависимостей; новый запуск сначала восстанавливает зависимости через npm ci, затем проверяет typecheck, build, 3 теста и чистоту дерева; следующий шаг — finish.\n\n",
+  "summary": "Исправление подтверждено фактическими проверками: TypeScript typecheck прошёл, production build собран, все 3 теста прошли, git diff --check чистый. Публикую единственное исправление строгой типизации.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-publish-fix-1\",\"operation\":\"publish\",\"headSha\":\"eb5dda16ef9de4aec9d2cd50755ebf79c425fe48\",\"message\":\"Fix strict leaderboard profile indexing\"}\n\nЖду результат worker. После успешного publish останется финальная проверка на новом commit и finish.\n\nСводка: исправлены две ошибки строгой типизации в генераторе; локально подтверждены typecheck, build и 3/3 теста; изменён только src/leaderboard/generator.ts; следующий шаг — финальная проверка опубликованного commit.\n\n",
   "commands": [
     {
       "commandId": "leaderboard-inspect-1",
@@ -40,7 +40,19 @@
       "status": "FAILED",
       "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
       "exitCode": 1
+    },
+    {
+      "commandId": "leaderboard-final-verify-2",
+      "status": "FAILED",
+      "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
+      "exitCode": 2
+    },
+    {
+      "commandId": "leaderboard-fix-types-1",
+      "status": "SUCCEEDED",
+      "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:18:29.330Z"
+  "createdAt": "2026-09-16T00:26:15.837Z"
 }

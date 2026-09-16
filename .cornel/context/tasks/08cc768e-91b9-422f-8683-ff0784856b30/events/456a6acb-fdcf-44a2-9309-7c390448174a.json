@@ -1,0 +1,11 @@
+{
+  "id": "456a6acb-fdcf-44a2-9309-7c390448174a",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "green-hills-1",
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa"
+  },
+  "createdAt": "2026-09-16T00:22:08.827Z"
+}

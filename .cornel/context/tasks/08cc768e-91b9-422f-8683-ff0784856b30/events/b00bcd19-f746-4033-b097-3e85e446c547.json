@@ -1,0 +1,17 @@
+{
+  "id": "b00bcd19-f746-4033-b097-3e85e446c547",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "green-hills-1",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+    "output": "\n\u001b[41m                                                                               \u001b[0m\n\u001b[41m\u001b[37m                This is not the tsc command you are looking for                \u001b[0m\n\u001b[41m                                                                               \u001b[0m\n\nTo get access to the TypeScript compiler, \u001b[34mtsc\u001b[0m, from the command line either:\n\n- Use \u001b[1mnpm install typescript\u001b[0m to first add TypeScript to your project \u001b[1mbefore\u001b[0m using npx\n- Use \u001b[1myarn\u001b[0m to avoid accidentally running code from un-installed packages\n",
+    "outputDigest": "7c15b3332e4499e079231e6358190fe040a1ade2fd0c51233afa399fbc42411f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:22:29.036Z"
+}

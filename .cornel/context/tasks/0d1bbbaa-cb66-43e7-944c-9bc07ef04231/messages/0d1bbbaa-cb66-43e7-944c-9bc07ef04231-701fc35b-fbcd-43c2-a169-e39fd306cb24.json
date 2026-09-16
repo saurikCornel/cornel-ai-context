@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикация успешна. Теперь выполняю обязательную финальную проверку непосредственно на опубликованном commit: typecheck, production build, количество лунок и чистота рабочего дерева. После успешного RESULT можно будет отправлять finish.\n\nJSON\n{\"version\":1,\"taskId\":\"0d1bbbaa-cb66-43e7-944c-9bc07ef04231\",\"commandId\":\"final-verify-courses-1\",\"operation\":\"run\",\"headSha\":\"a188d851f4912c55d0dce96f3f00b929a5693a23\",\"command\":\"npm install && npm run typecheck && npm run build && printf '%s\\\\n' '=== COURSE COUNTS ===' && for f in src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; do printf '%s: ' \\\"$f\\\"; grep -Ec \\\"^    id: '.*-[1-9]'\\\" \\\"$f\\\"; done && printf '%s\\\\n' '=== STATUS ===' && git status --short\",\"timeoutSeconds\":300}\n\nЖду финальный RESULT worker.\n\nСводка: три course-data модуля опубликованы; 27 лунок уже прошли предварительные typecheck/build; сейчас выполняется контрольная проверка опубликованной версии; при успехе следующий шаг — finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T00:25:24.910Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "7b010cfd-b420-4005-b403-888ef628d84f",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "leaderboard-fix-types-1",
+    "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48"
+  },
+  "createdAt": "2026-09-16T00:25:02.224Z"
+}

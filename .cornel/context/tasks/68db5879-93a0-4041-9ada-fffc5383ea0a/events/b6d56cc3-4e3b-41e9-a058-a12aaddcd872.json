@@ -1,0 +1,17 @@
+{
+  "id": "b6d56cc3-4e3b-41e9-a058-a12aaddcd872",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "physics-finish-8",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5083163a13b4f8087ab90da1cc9e1ca7c7b9bcae",
+    "output": "Реализован изолированный physics-слой: PhysicsWorld, GolfBallPhysics, CollisionLayers, ShotSystem-compatible API и чистые helpers. Добавлены Rapier rigid body/collider, масса, friction/restitution, damping/rolling resistance, gravity/slope-ready physics, power curve, min/max shot impulse, speed cap, stop/sleep logic, lastSafePosition и safe reset. Physics helper unit tests: 3/3 passed. npm run typecheck: passed. npm run build: passed. Рабочее дерево после финальной проверки чистое.",
+    "outputDigest": "44f09eace9b16465dd909700345dbb1b13e92b2c88f37e3bddd0e255ed021fc1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:23:27.075Z"
+}
