@@ -1,0 +1,11 @@
+{
+  "id": "5b6673a3-cba5-42a8-83ea-003f83827e0a",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-final-ai-api-26",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T18:26:35.376Z"
+}
