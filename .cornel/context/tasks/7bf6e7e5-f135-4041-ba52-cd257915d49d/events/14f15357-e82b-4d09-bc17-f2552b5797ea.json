@@ -1,0 +1,17 @@
+{
+  "id": "14f15357-e82b-4d09-bc17-f2552b5797ea",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "=== office\n=== dynamic-obstacles-core-lifecycle-9ca056\n=== universalnye-prepyatstviya-21e90f\n=== pads-and-bumper-39ad29\n=== surface-modifiers-26c082\n=== door-obstacle-99f73d\n=== rotating-obstacles-322e98\n=== moving-obstacles-b2152d\n=== teleporter-and-force-volumes-7bf6e7\n=== dinamicheskie-prepyatstviya-7f6d5e\n=== triggery-i-poverhnosti-1363a3\n",
+    "outputDigest": "0e6046b99983c175ed5620cade1292685c8d1b6628aa780b23c1bf341419b8c3",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T19:38:50.062Z"
+}
