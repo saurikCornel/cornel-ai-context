@@ -1,0 +1,17 @@
+{
+  "id": "df5c5328-51a5-425b-a565-22ca0ae50ab9",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "restore-merge-and-resolve-4",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+    "output": "/bin/sh: line 2: .git/MERGE_HEAD: Not a directory\n",
+    "outputDigest": "292adf96e069d479e6cd72d49c944f9a8ed8d478bf524ff781a6e03e7a7e7e4c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:54:35.185Z"
+}

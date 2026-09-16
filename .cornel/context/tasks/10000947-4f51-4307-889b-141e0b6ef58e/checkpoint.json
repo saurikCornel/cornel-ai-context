@@ -3,7 +3,7 @@
   "branch": "cornel/slit-camera-input-and-zoom-100009",
   "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"inspect-merge-state-3\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"echo '--- STATUS ---'; git status --short; echo '--- MERGE_HEAD ---'; if test -f .git/MERGE_HEAD; then cat .git/MERGE_HEAD; else echo none; fi; echo '--- UNMERGED ---'; git diff --name-only --diff-filter=U; echo '--- CAMERA INDEX ---'; cat -n src/camera/index.ts 2>/dev/null || true\",\"timeoutSeconds\":120}\n\nЖду RESULT worker. Если MERGE_HEAD и конфликт сохранились, завершу именно этот merge; если worker восстановил чистую ветку, выберу следующий шаг по фактическому состоянию, не повторяя действия вслепую.\n\nСводка: Issue открыт; подтверждённого завершения merge/publish нет; последняя ошибка связана с недоступным FETCH_HEAD; следующий шаг — установить реальное состояние рабочей копии без использования FETCH_HEAD.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"restore-merge-and-resolve-4\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"set -e\\nincoming=$(git rev-parse 8aab53119ae674d439b81094e70eb2abcb9d7dcb)\\nprintf '%s\\\\n' \\\"$incoming\\\" > .git/MERGE_HEAD\\nprintf \\\"Merge branch 'cornel/camera-input-and-zoom-5ded69' into cornel/slit-camera-input-and-zoom-100009\\\\n\\\" > .git/MERGE_MSG\\ncat > src/camera/index.ts <<'EOF'\\nexport * from './CameraCollision';\\nexport * from './CameraInput';\\nexport * from './CameraPose';\\nexport * from './CameraTransition';\\nexport * from './Easing';\\nexport * from './RapierCameraCollision';\\nexport * from './SmoothCameraRig';\\nexport * from './Smoothing';\\nexport * from './ThreeCameraBinding';\\nEOF\\ngit add -A\\necho '--- STATUS ---'\\ngit status --short\\necho '--- UNMERGED ---'\\ngit diff --name-only --diff-filter=U\\necho '--- MERGE_HEAD ---'\\ncat .git/MERGE_HEAD\\necho '--- INDEX FILE ---'\\ncat -n src/camera/index.ts\",\"timeoutSeconds\":120}\n\nЖду RESULT worker. Если конфликт снят и MERGE_HEAD восстановлен корректно, следующим шагом прогоню проверки проекта и затем publish.\n\nСводка: причина ошибки найдена — потерян MERGE_HEAD; решение — восстановить merge-метаданные на уже известный входящий commit и объединить оба набора экспортов; следующий шаг — подтвердить чистый индекс без UU.\n\n",
   "commands": [
     {
       "commandId": "merge-camera-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "inspect-merge-state-3",
+      "status": "SUCCEEDED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "restore-merge-and-resolve-4",
       "status": "STARTED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:50:01.117Z"
+  "createdAt": "2026-09-16T17:54:32.844Z"
 }
