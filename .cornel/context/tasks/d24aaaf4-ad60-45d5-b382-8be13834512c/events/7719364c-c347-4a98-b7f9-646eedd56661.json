@@ -1,0 +1,12 @@
+{
+  "id": "7719364c-c347-4a98-b7f9-646eedd56661",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "camera-collision-write-8",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T14:02:41.735Z"
+}
