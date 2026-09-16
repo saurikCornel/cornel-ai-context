@@ -1,0 +1,11 @@
+{
+  "id": "a1f7aca4-b149-42dc-9c94-12c2d3cff4bf",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "list-camera-context-2",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T15:56:48.584Z"
+}

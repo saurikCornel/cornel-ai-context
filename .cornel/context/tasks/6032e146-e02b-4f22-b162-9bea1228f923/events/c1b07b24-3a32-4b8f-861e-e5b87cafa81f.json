@@ -1,0 +1,11 @@
+{
+  "id": "c1b07b24-3a32-4b8f-861e-e5b87cafa81f",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "list-camera-context-2",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T15:56:48.585Z"
+}
