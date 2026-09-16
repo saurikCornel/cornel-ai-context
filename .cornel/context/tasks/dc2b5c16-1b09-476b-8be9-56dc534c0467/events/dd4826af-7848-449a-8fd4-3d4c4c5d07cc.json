@@ -1,0 +1,17 @@
+{
+  "id": "dd4826af-7848-449a-8fd4-3d4c4c5d07cc",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "publish-particles-13",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "db73400a5139cf8b2861c4cd634d81e9858ff328",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:48:59.257Z"
+}
