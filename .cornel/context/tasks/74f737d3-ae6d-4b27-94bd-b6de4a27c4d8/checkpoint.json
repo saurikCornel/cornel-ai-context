@@ -3,7 +3,7 @@
   "branch": "cornel/74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
   "headSha": "1bb641198d5780807973ef2542fcd56dab46226e",
   "status": "RUNNING",
-  "summary": "Финальная проверка опубликованной ветки успешна: рабочее дерево чистое, конфликтных маркеров нет, TypeScript-проверка проходит, все 5 UI-тестов проходят, production build собирается. Lint в проекте не определён.\n\nКонфликт разрешён с сохранением обеих сторон: существующий AppUI оставлен, к нему добавлены экспорты Hud, Scoreboard, overlays и UI-типы; в ui.css сохранены как стили экранов/меню, так и стили игрового HUD, power meter, scoreboard и результатов.\n\nJSON\n{\"version\":1,\"taskId\":\"74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\",\"commandId\":\"finish-8\",\"operation\":\"finish\",\"headSha\":\"1bb641198d5780807973ef2542fcd56dab46226e\",\"message\":\"Слияние карточки «Игровой HUD и результаты» завершено и опубликовано. Конфликты src/ui/index.ts и src/ui/ui.css разрешены аддитивно: сохранён существующий AppUI и добавлены экспорты HUD/Scoreboard/Overlays/types; CSS обеих сторон объединён без удаления функциональности. Финальная проверка опубликованного состояния: рабочее дерево чистое, конфликтных маркеров нет, npm run typecheck — успешно, npm run test:ui — 5/5 тестов успешно, npm run build — успешно. Lint-скрипт в package.json отсутствует.\"}\n\nСводка: решение опубликовано; конфликтные UI-файлы объединены; финальные проверки успешны; карточка передана в finish.\n\n",
+  "summary": "finish отклонён только потому, что удалённая ветка успела измениться после нашей финальной проверки. Успешные merge/publish/test действия не повторяю. Сначала определяю актуальную голову и проверяю, что именно добавилось относительно проверенного состояния.\n\nJSON\n{\"version\":1,\"taskId\":\"74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\",\"commandId\":\"head-sync-9\",\"operation\":\"run\",\"headSha\":\"1bb641198d5780807973ef2542fcd56dab46226e\",\"command\":\"set -e\\ngit fetch origin cornel/74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\\necho '=== REMOTE HEAD ==='\\ngit rev-parse FETCH_HEAD\\necho '=== COMMITS SINCE VERIFIED HEAD ==='\\ngit log --oneline --decorate 1bb641198d5780807973ef2542fcd56dab46226e..FETCH_HEAD\\necho '=== CHANGED FILES SINCE VERIFIED HEAD ==='\\ngit diff --name-status 1bb641198d5780807973ef2542fcd56dab46226e..FETCH_HEAD\",\"timeoutSeconds\":300}\n\nЕсли изменение — ожидаемая служебная синхронизация без изменения кода, завершу на актуальной голове; если код изменился, проверю только затронутое состояние перед новым finish.\n\nСводка: код был опубликован и полностью проверен; finish не прошёл из-за рассинхронизации головы ветки; сейчас выясняется актуальная версия без повторения успешных действий.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "finish-8",
+      "status": "FAILED",
+      "headSha": "1bb641198d5780807973ef2542fcd56dab46226e",
+      "exitCode": null
+    },
+    {
+      "commandId": "head-sync-9",
       "status": "STARTED",
       "headSha": "1bb641198d5780807973ef2542fcd56dab46226e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T12:00:04.123Z"
+  "createdAt": "2026-09-16T12:00:22.298Z"
 }

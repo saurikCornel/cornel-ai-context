@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "finish отклонён только потому, что удалённая ветка успела измениться после нашей финальной проверки. Успешные merge/publish/test действия не повторяю. Сначала определяю актуальную голову и проверяю, что именно добавилось относительно проверенного состояния.\n\nJSON\n{\"version\":1,\"taskId\":\"74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\",\"commandId\":\"head-sync-9\",\"operation\":\"run\",\"headSha\":\"1bb641198d5780807973ef2542fcd56dab46226e\",\"command\":\"set -e\\ngit fetch origin cornel/74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\\necho '=== REMOTE HEAD ==='\\ngit rev-parse FETCH_HEAD\\necho '=== COMMITS SINCE VERIFIED HEAD ==='\\ngit log --oneline --decorate 1bb641198d5780807973ef2542fcd56dab46226e..FETCH_HEAD\\necho '=== CHANGED FILES SINCE VERIFIED HEAD ==='\\ngit diff --name-status 1bb641198d5780807973ef2542fcd56dab46226e..FETCH_HEAD\",\"timeoutSeconds\":300}\n\nЕсли изменение — ожидаемая служебная синхронизация без изменения кода, завершу на актуальной голове; если код изменился, проверю только затронутое состояние перед новым finish.\n\nСводка: код был опубликован и полностью проверен; finish не прошёл из-за рассинхронизации головы ветки; сейчас выясняется актуальная версия без повторения успешных действий.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T12:00:22.288Z"
+}
