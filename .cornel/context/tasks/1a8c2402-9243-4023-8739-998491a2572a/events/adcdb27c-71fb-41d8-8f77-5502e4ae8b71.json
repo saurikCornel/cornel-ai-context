@@ -1,0 +1,11 @@
+{
+  "id": "adcdb27c-71fb-41d8-8f77-5502e4ae8b71",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "assets-audio-inventory-2",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T13:55:03.724Z"
+}

@@ -3,14 +3,20 @@
   "branch": "cornel/assets-and-audio-fallbacks-1a8c24",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"1a8c2402-9243-4023-8739-998491a2572a\",\"commandId\":\"assets-audio-checkpoint-1\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\".cornel/context/tasks/1a8c2402-9243-4023-8739-998491a2572a/checkpoint.json\",\"package.json\",\"src:1-240\"],\"maxLines\":400}\n\nЖду результат worker; он придёт сюда отдельным сообщением.\nСводка: решение — сначала проверить checkpoint и фактическую структуру; изменённые файлы — пока нет; проверки — ещё не запускались; следующий шаг — определить существующие контракты и точки размещения AssetManager/AudioManager, затем реализовать и проверить missing-asset fallbacks.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"1a8c2402-9243-4023-8739-998491a2572a\",\"commandId\":\"assets-audio-inventory-2\",\"operation\":\"ls\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"path\":\"src\",\"maxLines\":300}\n\nЖду результат worker.\nСводка: checkpoint отсутствует; package.json подтверждает Three.js, Vitest и TypeScript; изменений пока нет. Следующий шаг — по дереву src прочитать только связанные контракты/менеджеры и реализовать fallbacks с тестами.\n\n",
   "commands": [
     {
       "commandId": "assets-audio-checkpoint-1",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "assets-audio-inventory-2",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:54:20.639Z"
+  "createdAt": "2026-09-16T13:55:03.727Z"
 }
