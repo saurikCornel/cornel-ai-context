@@ -2,8 +2,8 @@
   "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
-  "status": "WAITING_CHATGPT",
-  "summary": "Жду результат implement-bot-planner-12. Повторно команду не отправляю: предыдущие успешные действия уже подтверждены, а дублирование может перезаписать локальные изменения.\n\nСводка: AI-ядро уже создано (types.ts, random.ts, BotProfiles.ts, index.ts). Следующий шаг после RESULT планировщика — проверить получившиеся файлы, добавить детерминированные тесты для scoring/skill/rating, выполнить typecheck/tests/build, затем publish и finish.\n\n",
+  "status": "NEEDS_ATTENTION",
+  "summary": "Фактический статус по последним доступным RESULT: implement-ai-core-11 завершён успешно. Для implement-bot-planner-12 подтверждённого RESULT/UNKNOWN в переданном журнале нет, поэтому повторять потенциально уже выполненную команду нельзя. Задача пока не готова к finish: планировщик, RatingSystem и проверки ещё не подтверждены worker.\n\nНужно получить/восстановить именно результат ранее отправленной implement-bot-planner-12; до этого безопасно продолжить изменения нельзя.\n\nCORNEL_AI_BLOCKED: отсутствует RESULT/UNKNOWN ранее отправленной команды implement-bot-planner-12, поэтому её нельзя ни повторить, ни считать выполненной.\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -66,5 +66,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T17:03:21.276Z"
+  "createdAt": "2026-09-16T17:07:00.627Z"
 }
