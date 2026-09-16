@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Локальный merge-коммит ещё не запушен, поэтому worker сверяет headSha с GitHub. Повторяю с актуальным SHA ветки на GitHub.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"verify-3\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"git log --oneline -2; npm install --no-audit --no-fund 2>&1 | tail -5; npm run typecheck; echo \\\"TYPECHECK_EXIT=$?\\\"; npx vitest run 2>&1 | tail -40; echo \\\"ALL_TESTS_EXIT=$?\\\"; npm run build 2>&1 | tail -20; echo \\\"BUILD_EXIT=$?\\\"\",\"timeoutSeconds\":1800}\n```\n\nЖду результат от worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:13:31.158Z"
+}
