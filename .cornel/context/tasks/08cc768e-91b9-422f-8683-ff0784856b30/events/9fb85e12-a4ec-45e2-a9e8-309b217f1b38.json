@@ -1,0 +1,12 @@
+{
+  "id": "9fb85e12-a4ec-45e2-a9e8-309b217f1b38",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "resume-inspect-1",
+    "operation": "run",
+    "command": "printf '%s\\n' '=== STATUS ==='; git status --short; printf '%s\\n' '=== COURSE DATA ==='; ls -l src/courses/data 2>/dev/null || true; printf 'Green Hills holes: '; test -f src/courses/data/green-hills.ts && grep -c 'defineHole({' src/courses/data/green-hills.ts || echo 0; printf 'Pirate Bay holes: '; test -f src/courses/data/pirate-bay.ts && grep -c 'defineHole({' src/courses/data/pirate-bay.ts || echo 0; printf 'Candy Factory holes: '; test -f src/courses/data/candy-factory.ts && grep -c 'defineHole({' src/courses/data/candy-factory.ts || echo 0"
+  },
+  "createdAt": "2026-09-16T11:55:54.722Z"
+}

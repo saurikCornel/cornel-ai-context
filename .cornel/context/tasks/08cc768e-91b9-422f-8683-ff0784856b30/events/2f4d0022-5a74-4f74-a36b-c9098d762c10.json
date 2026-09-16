@@ -1,0 +1,11 @@
+{
+  "id": "2f4d0022-5a74-4f74-a36b-c9098d762c10",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "resume-inspect-1",
+    "headSha": "f9d45eaac1309251d846cf98819c37739dd5cb87"
+  },
+  "createdAt": "2026-09-16T11:55:54.726Z"
+}
