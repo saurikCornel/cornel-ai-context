@@ -1,0 +1,17 @@
+{
+  "id": "54f8e4a4-0a9c-4186-a224-a5980dc1cbd5",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-publish-state-10",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+    "output": "--- LOCAL HEAD ---\n525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\n--- REMOTE HEAD ---\n525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\trefs/heads/cornel/slit-camera-input-and-zoom-100009\n--- STATUS ---\nA  src/camera/CameraInput.test.ts\nA  src/camera/CameraInput.ts\nM  src/camera/index.ts\n--- MERGE HEAD ---\n8aab53119ae674d439b81094e70eb2abcb9d7dcb\n--- RECENT LOG ---\n525f353 (HEAD, origin/cornel/slit-camera-input-and-zoom-100009) Implement camera smoothing and transitions\n77b38d1 (origin/cornel/universalnye-prepyatstviya-21e90f, origin/cornel/boty-i-reyting-2027fa) Merge «Input, developer controls and diagnostics» (5cc21f20-acb9-4084-9c20-1595499da9af)\neba87cc Implement input manager and developer diagnostics\n",
+    "outputDigest": "1f842899f795a3430be25c3d1cba34ec5a13fd3129c2ad41d6adcccf4c41404c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:27:44.006Z"
+}
