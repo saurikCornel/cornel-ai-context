@@ -1,0 +1,11 @@
+{
+  "id": "0e3b4af5-a7fa-4928-beb4-9cb141daced9",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "read-obstacle-manager-13",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T21:22:45.801Z"
+}
