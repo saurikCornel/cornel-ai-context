@@ -19,7 +19,7 @@
   "workspaceSyncedSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T21:58:20.459Z",
-  "updatedAt": "2026-09-16T22:02:38.554Z",
+  "updatedAt": "2026-09-16T22:05:28.374Z",
   "issue": 66,
   "chatUrl": "https://chat.qwen.ai/c/89725186-767a-4e56-bbf6-3fc8d3e2cc78",
   "error": null,
@@ -30,5 +30,6 @@
   "chatEpoch": 1,
   "appliedEffort": null,
   "effortFailed": null,
-  "statusChecks": 0
+  "statusChecks": 0,
+  "browserErrorJobId": "5a0e2604-568d-49c0-8f18-e0e1d054aad4-handback-9e354eff"
 }
