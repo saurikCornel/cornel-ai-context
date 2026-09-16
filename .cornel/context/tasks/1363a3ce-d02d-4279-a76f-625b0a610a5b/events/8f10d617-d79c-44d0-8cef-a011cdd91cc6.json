@@ -1,0 +1,11 @@
+{
+  "id": "8f10d617-d79c-44d0-8cef-a011cdd91cc6",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "triggers-read-contracts-11",
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3"
+  },
+  "createdAt": "2026-09-16T18:17:28.655Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "c21427db-adee-4cc9-ab7c-6174adf16410",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "triggers-read-contracts-11",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T18:17:26.194Z"
+}
