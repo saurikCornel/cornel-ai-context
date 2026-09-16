@@ -1,0 +1,17 @@
+{
+  "id": "35a8741e-b0f0-4d98-885e-a65b1a6c24ce",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-obstacle-descriptor-exact-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "src/courses/types.ts:51:export type ObstacleDescriptor = StaticObstacle | MovingObstacle | HazardObstacle;\nsrc/courses/types.ts:61:  obstacles: ObstacleDescriptor[];",
+    "outputDigest": "9fcd8e2a96c1f8bb13d4a376e2891f93b2f8c10bcb81d8de5ebfad0241734841",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T20:01:52.531Z"
+}
