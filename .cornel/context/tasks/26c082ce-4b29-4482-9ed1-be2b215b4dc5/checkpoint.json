@@ -3,7 +3,7 @@
   "branch": "cornel/surface-modifiers-26c082",
   "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
   "status": "RUNNING",
-  "summary": "Продолжаю. Смотрю, что уже есть по поверхностям в физике и типах курса.\n\n```json\n{\"version\":1,\"taskId\":\"26c082ce-4b29-4482-9ed1-be2b215b4dc5\",\"commandId\":\"grep-1\",\"operation\":\"grep\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"pattern\":\"-iE (surface|SurfaceType|ice|mud|friction)\",\"path\":\"src\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "Продолжаю осмотр: похоже, прошлый grep принял флаги как часть шаблона. Повторяю с чистым регулярным выражением.\n\n```json\n{\"version\":1,\"taskId\":\"26c082ce-4b29-4482-9ed1-be2b215b4dc5\",\"commandId\":\"grep-2\",\"operation\":\"grep\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"pattern\":\"[Ss]urface|friction|Friction\",\"path\":\"src\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "grep-1",
+      "status": "SUCCEEDED",
+      "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+      "exitCode": 0
+    },
+    {
+      "commandId": "grep-2",
       "status": "STARTED",
       "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T20:10:21.361Z"
+  "createdAt": "2026-09-16T21:01:14.845Z"
 }
