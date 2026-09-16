@@ -2,8 +2,8 @@
   "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
-  "status": "RUNNING",
-  "summary": "Локальные ссылки устарели, а прямой доступ к сети из моих инструментов не разрешён. Проверяю гипотезу, что назначенная ветка подтянута к голове офиса, дешёвой read-операцией.\n\n```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"probe-head-22\",\"operation\":\"ls\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"path\":\"src/ai\",\"maxLines\":50}\n```\n\nЖду результат worker.\n\nСводка: команда `write-ai-tests-21` отклонена из-за расхождения headSha — ветка на GitHub изменилась, локальные remote-tracking ссылки устарели, сетевые git-команды мне недоступны. Сейчас проверяю актуальность SHA головы офиса (`9bf2556…`) безопасной операцией `ls`. Если SHA верный — повторю запись тестов AI с новым commandId; если нет, попрошу владельца сообщить текущий SHA ветки `cornel/boty-i-reyting-2027fa`. Уже записаны и подтверждены: `src/ai/Matchmaking.ts`, патч `src/ai/BotPlanner.ts`, `src/gameplay/RatingSystem.ts`, экспорт в `src/gameplay/index.ts`.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Расхождение SHA сохраняется: голова назначенной ветки на GitHub отличается и от `77b38d1…`, и от известной мне головы офиса `9bf2556…`. Локальные remote-tracking ссылки в рабочей копии устарели, а сетевые git-команды (`git ls-remote`/`git fetch`) мне в этой сессии не разрешены, поэтому определить фактический SHA самостоятельно я не могу, а слать команды с заведомо неверным headSha — значит получать те же отказы.\n\nПрошу владельца сообщить одно из двух:\n- текущий полный SHA ветки `cornel/boty-i-reyting-2027fa` (тогда сразу продолжу с новым commandId), либо\n- разрешение на `git fetch`/`git ls-remote` из моей сессии, чтобы я взял SHA сам.\n\nСостояние работы (в рабочей копии, ещё не опубликовано):\n- `src/ai/Matchmaking.ts` — плавное отображение рейтинг↔скилл, синтетические профили, детерминированный подбор поля ботов — записан, подтверждён worker;\n- `src/ai/BotPlanner.ts` — патч из 8 секций (type guard для hazard, безопасное индексирование поверхностей, гарантированный fallback-кандидат, общий `idealPowerForDistance`) — подтверждён worker;\n- `src/gameplay/RatingSystem.ts` + экспорт в `src/gameplay/index.ts` — multiplayer-Elo по всем парам соперников с усреднением, K-фактор по опыту/элитному рейтингу/типу игрока, мост от `MatchStanding` — подтверждён worker;\n- осталось: тесты `src/ai/ai.test.ts` (первая половина была отклонена только из-за headSha) и `src/gameplay/RatingSystem.test.ts`, npm-скрипт `test:ai`, затем `npm install`, typecheck, тесты, сборка, publish, finish.\n\nСводка: блокирует только несовпадение headSha — как только получу актуальный SHA ветки, повторю запись тестов с новым commandId и доведу карточку до проверок и публикации.\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -121,10 +121,10 @@
     },
     {
       "commandId": "probe-head-22",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:53:48.574Z"
+  "createdAt": "2026-09-16T17:54:26.636Z"
 }
