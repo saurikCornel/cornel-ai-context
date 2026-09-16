@@ -1,0 +1,17 @@
+{
+  "id": "314559e6-d46a-4eff-947a-3a6856ad4892",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-planner-tests-34",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "total 96\ndrwxr-xr-x@ 10 alex  staff    320 Sep 16 21:53 .\ndrwxr-xr-x@ 19 alex  staff    608 Sep 16 19:43 ..\n-rw-r--r--@  1 alex  staff  10371 Sep 16 20:50 BotPlanner.ts\n-rw-r--r--@  1 alex  staff   2128 Sep 16 19:43 BotProfiles.ts\n-rw-r--r--@  1 alex  staff   5959 Sep 16 20:48 Matchmaking.ts\n-rw-r--r--@  1 alex  staff    143 Sep 16 20:48 index.ts\n-rw-r--r--@  1 alex  staff   6594 Sep 16 21:53 planner.test.ts\n-rw-r--r--@  1 alex  staff    644 Sep 16 19:43 random.ts\n-rw-r--r--@  1 alex  staff   3521 Sep 16 21:45 skill-rating.test.ts\n-rw-r--r--@  1 alex  staff   1273 Sep 16 20:22 types.ts\n",
+    "outputDigest": "361151757cb61cd2902cf672f52d13b7be193886cd822a06aef0ed24ed084e8a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:53:20.095Z"
+}
