@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"find-contracts-3\",\"operation\":\"grep\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"pattern\":\"ShotCommand|Bot|Rating|PlayerProfile|HoleDefinition\",\"path\":\"src\"}\n```\n\nСводка: структура подтверждает отсутствие готовых модулей `src/ai`; интегрироваться нужно с gameplay, physics, player и course-типами. Изменений нет. Следующий шаг — прочитать найденные контракты и существующие параметры физики.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-integration-4\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"package.json\",\"src/courses/types.ts\",\"src/courses/Hole.ts\",\"src/contracts/game.ts\",\"src/contracts/math.ts\",\"src/gameplay/types.ts\",\"src/gameplay/MatchManager.ts\",\"src/gameplay/TurnManager.ts\",\"src/physics/ShotSystem.ts\",\"src/physics/GolfBallPhysics.ts\",\"src/config/GameConfig.ts\",\"src/player/types.ts\",\"src/player/profile.ts\",\"src/gameplay/index.ts\",\"src/physics/index.ts\"]}\n```\n\nСводка: поиск по предполагаемым именам не дал совпадений — AI и рейтинг действительно следует вводить как новые, изолированные контракты. Изменений нет. Следующий шаг — согласовать новые типы с фактической моделью лунки, удара и матча.  \n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "find-contracts-3",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-integration-4",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:06:15.014Z"
+  "createdAt": "2026-09-16T16:10:06.255Z"
 }

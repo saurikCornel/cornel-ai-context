@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-integration-4\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"package.json\",\"src/courses/types.ts\",\"src/courses/Hole.ts\",\"src/contracts/game.ts\",\"src/contracts/math.ts\",\"src/gameplay/types.ts\",\"src/gameplay/MatchManager.ts\",\"src/gameplay/TurnManager.ts\",\"src/physics/ShotSystem.ts\",\"src/physics/GolfBallPhysics.ts\",\"src/config/GameConfig.ts\",\"src/player/types.ts\",\"src/player/profile.ts\",\"src/gameplay/index.ts\",\"src/physics/index.ts\"]}\n```\n\nСводка: поиск по предполагаемым именам не дал совпадений — AI и рейтинг действительно следует вводить как новые, изолированные контракты. Изменений нет. Следующий шаг — согласовать новые типы с фактической моделью лунки, удара и матча.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:10:06.249Z"
+}
