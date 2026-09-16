@@ -1,0 +1,11 @@
+{
+  "id": "b7bdaf7c-f6fd-4e61-ad92-d613d18b0abc",
+  "taskId": "523b3cab-c4f9-416d-80c7-1c9ffff3a07f",
+  "type": "RATE_LIMIT",
+  "text": "ChatGPT сообщил о лимите тарифа: пауза 15 мин, отправки продолжатся автоматически («CORNEL_AI_TURN:523b3cab-c4f9-416d-80c7-1c9ffff3a07f-handback-33fb25bc # Cornel AI · чат офиса - Проект: fun-golf - Репозитории: saurikCornel/fun-golf-cornel-ai »)",
+  "detail": {
+    "kind": "usage",
+    "text": "CORNEL_AI_TURN:523b3cab-c4f9-416d-80c7-1c9ffff3a07f-handback-33fb25bc # Cornel AI · чат офиса - Проект: fun-golf - Репозитории: saurikCornel/fun-golf-cornel-ai (main) - Issue: https://github.com/sauri"
+  },
+  "createdAt": "2026-09-16T22:30:34.603Z"
+}
