@@ -3,7 +3,7 @@
   "branch": "cornel/slit-cameracontroller-core-9f0099",
   "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "RUNNING",
-  "summary": "Конфликт чисто «barrel»-файла: обе стороны добавили свои реэкспорты. Объединяю оба набора в алфавитном порядке.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"resolve-1\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"cat > src/camera/index.ts <<'EOF'\\nexport * from './CameraCollision';\\nexport * from './CameraController';\\nexport * from './CameraPose';\\nexport * from './CameraTransition';\\nexport * from './Easing';\\nexport * from './RapierCameraCollision';\\nexport * from './SmoothCameraRig';\\nexport * from './Smoothing';\\nexport * from './ThreeCameraBinding';\\nEOF\\ngrep -rn '<<<<<<<\\\\|>>>>>>>\\\\|^=======$' src/ || echo 'NO_CONFLICT_MARKERS'\\nls src/camera/\\ncat src/camera/index.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат от worker.\n\n",
+  "summary": "Маркеры сняты. Завершаю слияние и прогоняю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"git add -A && git commit --no-edit && git log --oneline -3 && npm run typecheck; echo \\\"TYPECHECK_EXIT=$?\\\"; npx vitest run src/camera; echo \\\"CAMERA_TESTS_EXIT=$?\\\"; npx vitest run; echo \\\"ALL_TESTS_EXIT=$?\\\"; npm run build; echo \\\"BUILD_EXIT=$?\\\"\",\"timeoutSeconds\":900}\n```\n\nЖду результат от worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "resolve-1",
+      "status": "SUCCEEDED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-1",
       "status": "STARTED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:12:32.753Z"
+  "createdAt": "2026-09-16T17:12:50.486Z"
 }
