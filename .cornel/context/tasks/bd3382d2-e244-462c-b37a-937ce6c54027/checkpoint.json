@@ -3,7 +3,7 @@
   "branch": "cornel/cameracontroller-core-bd3382",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"review-camera-diff-10\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"git diff --check && git status --short\",\"timeoutSeconds\":300}\n```\n\nРешения: controller готов к публикации после проверки состава правок.  \nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.  \nПроверки: `CameraController.test.ts` — 4/4 успешно; `npm run build` — успешно.  \nСледующий шаг: подтвердить чистоту diff и создать publish-коммит.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"publish-camera-controller-11\",\"operation\":\"publish\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"message\":\"Add renderer-agnostic camera controller\"}\n```\n\nРешения: проверен и публикуется изолированный camera core.  \nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.  \nПроверки: `CameraController.test.ts` — 4/4 успешно; `npm run build` — успешно; `git diff --check` — успешно.  \nСледующий шаг: дождаться SHA publish-коммита и завершить карточку.  \n",
   "commands": [
     {
       "commandId": "read-checkpoint-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "review-camera-diff-10",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-camera-controller-11",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:31:04.757Z"
+  "createdAt": "2026-09-16T16:36:44.256Z"
 }
