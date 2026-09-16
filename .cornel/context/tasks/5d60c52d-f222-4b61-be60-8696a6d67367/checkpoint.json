@@ -2,8 +2,8 @@
   "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
   "branch": "cornel/5d60c52d-f222-4b61-be60-8696a6d67367",
   "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
-  "status": "NEEDS_ATTENTION",
-  "summary": "CORNEL_AI_BLOCKED — worker два раза подряд не смог даже начать новую команду: синхронизация назначенного headSha падает на отсутствующем FETCH_HEAD. Это уже не ошибка TypeScript и не проблема команды fix-haunted; повторять её третьим commandId бессмысленно.\n\nФактический статус: Neon City локально создан и успешно прошёл typecheck, подтверждено ровно 9 лунок. Haunted Mansion локально создан, но его точечная TypeScript-правка ещё не выполнена/не проверена из-за сбоя worker. Space Station ещё не создан. Publish и finish не выполнялись.\n\nНужно восстановить синхронизацию Git worker для назначенной ветки/commit. После этого продолжение возможно с исправления Haunted Mansion, без повторения уже успешно выполненной работы.\n\n",
+  "status": "RUNNING",
+  "summary": "Продолжаю с точки остановки. Успешный Neon City не трогаю. Сначала проверяю, сохранились ли локальные файлы после восстановления worker, и применяю только ещё не выполненную правку Haunted Mansion с повторной типизацией.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"resume-haunted-9\",\"operation\":\"run\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"command\":\"test -f src/courses/data/neon-city.ts && test -f src/courses/data/haunted-mansion.ts || { echo 'Expected local course files are missing'; exit 3; }; python3 - <<'PY'\\np='src/courses/data/haunted-mansion.ts'\\ns=open(p).read()\\nold='[[-1.6,7],[1.6,11],[-1.3,15]].map'\\nnew='([[-1.6,7],[1.6,11],[-1.3,15]] as [number,number][]).map'\\nif old in s:\\n    s=s.replace(old,new,1)\\nelif new not in s:\\n    raise SystemExit('Expected Candle Hall expression not found')\\nopen(p,'w').write(s)\\nPY\\nnpm run typecheck && printf '\\\\n=== HAUNTED HOLES ===\\\\n' && grep -o \\\"id:'haunted-[0-9][0-9]'\\\" src/courses/data/haunted-mansion.ts | wc -l && printf '\\\\n=== STATUS ===\\\\n' && git status --short\",\"timeoutSeconds\":300}\n\nСводка: Neon City ранее подтверждён — 9 лунок и успешный typecheck; Haunted Mansion требует завершения одной уже выявленной типовой правки; Space Station остаётся следующим этапом. После результата — не возвращаюсь к успешно проверенным действиям.\n\n",
   "commands": [
     {
       "commandId": "inspect-courses-1",
@@ -46,7 +46,13 @@
       "status": "FAILED",
       "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
       "exitCode": null
+    },
+    {
+      "commandId": "resume-haunted-9",
+      "status": "STARTED",
+      "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T00:34:11.894Z"
+  "createdAt": "2026-09-16T11:55:09.104Z"
 }

@@ -1,0 +1,17 @@
+{
+  "id": "3cf8e3cd-d4ca-4c00-a4f8-a8151f1f16ad",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "profile-tests-7",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "Substitution replacement not terminated at -e line 1.\nSubstitution replacement not terminated at -e line 1.\nSubstitution replacement not terminated at -e line 1.\nSubstitution replacement not terminated at -e line 1.\nnode:internal/modules/esm/resolve:274\n    throw new ERR_MODULE_NOT_FOUND(\n          ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/6d1e0ba8-f3c5-43c8-ac38-6452635d1604/.test-build/player/profile' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/6d1e0ba8-f3c5-43c8-ac38-6452635d1604/.test-build/core/SaveManager.js\n    at finalizeResolution (node:internal/modules/esm/resolve:274:11)\n    at moduleResolve (node:internal/modules/esm/resolve:864:10)\n    at defaultResolve (node:internal/modules/esm/resolve:990:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:768:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:745:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:318:38)\n    at #link (node:internal/modules/esm/module_job:208:49) {\n  code: 'ERR_MODULE_NOT_FOUND',\n  url: 'file:///Users/alex/Library/Application%20Support/Cornel%20AI/workspace/worktrees/6d1e0ba8-f3c5-43c8-ac38-6452635d1604/.test-build/player/profile'\n}\n\nNode.js v24.8.0\n✖ tests/save-manager.test.mjs (68.017416ms)\nℹ tests 1\nℹ suites 0\nℹ pass 0\nℹ fail 1\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 76.216458\n\n✖ failing tests:\n\ntest at tests/save-manager.test.mjs:1:1\n✖ tests/save-manager.test.mjs (68.017416ms)\n  'test failed'\n=== STATUS ===\n?? src/core/\n?? src/player/\n?? tests/\n",
+    "outputDigest": "33018ede53bc4190bac1d5c46af7506c6356424d897c11e961e545c314c1d88d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:54:55.167Z"
+}

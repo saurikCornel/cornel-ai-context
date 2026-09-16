@@ -1,0 +1,12 @@
+{
+  "id": "a4dbc91e-8550-4026-9959-55fdd5ba2456",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "resume-haunted-9",
+    "operation": "run",
+    "command": "test -f src/courses/data/neon-city.ts && test -f src/courses/data/haunted-mansion.ts || { echo 'Expected local course files are missing'; exit 3; }; python3 - <<'PY'\np='src/courses/data/haunted-mansion.ts'\ns=open(p).read()\nold='[[-1.6,7],[1.6,11],[-1.3,15]].map'\nnew='([[-1.6,7],[1.6,11],[-1.3,15]] as [number,number][]).map'\nif old in s:\n    s=s.replace(old,new,1)\nelif new not in s:\n    raise SystemExit('Expected Candle Hall expression not found')\nopen(p,'w').write(s)\nPY\nnpm run typecheck && printf '\\n=== HAUNTED HOLES ===\\n' && grep -o \"id:'haunted-[0-9][0-9]'\" src/courses/data/haunted-mansion.ts | wc -l && printf '\\n=== STATUS ===\\n' && git status --short"
+  },
+  "createdAt": "2026-09-16T11:55:09.095Z"
+}

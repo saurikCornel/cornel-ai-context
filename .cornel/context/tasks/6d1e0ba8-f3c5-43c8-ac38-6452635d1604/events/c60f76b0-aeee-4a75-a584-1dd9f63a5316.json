@@ -1,0 +1,12 @@
+{
+  "id": "c60f76b0-aeee-4a75-a584-1dd9f63a5316",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "profile-tests-7",
+    "operation": "run",
+    "command": "rm -rf .test-build; ./node_modules/.bin/tsc src/core/SaveManager.ts src/player/types.ts src/player/progression.ts src/player/profile.ts --outDir .test-build --module ESNext --moduleResolution bundler --target ES2022 --skipLibCheck || exit 1; for f in .test-build/core/*.js .test-build/player/*.js; do perl -0pi -e \"s/(from\\\\s+['\\\"](?:\\\\.\\\\.?\\\\/)[^'\\\"]+)(['\\\"])/\\\\$1.js\\\\$2/g\" \"$f\"; done; node --test tests/save-manager.test.mjs; rc=$?; rm -rf .test-build; printf '%s\\n' '=== STATUS ==='; git status --short; exit $rc"
+  },
+  "createdAt": "2026-09-16T11:54:49.666Z"
+}
