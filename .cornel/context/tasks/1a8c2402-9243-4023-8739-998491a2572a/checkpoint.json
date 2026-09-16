@@ -3,7 +3,7 @@
   "branch": "cornel/assets-and-audio-fallbacks-1a8c24",
   "headSha": "b9587cf763a14eea234d9cb757923654d3948c9e",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"1a8c2402-9243-4023-8739-998491a2572a\",\"commandId\":\"assets-audio-postpublish-verify-13\",\"operation\":\"run\",\"headSha\":\"b9587cf763a14eea234d9cb757923654d3948c9e\",\"command\":\"npm exec vitest run src/assets/assets.test.ts && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: код уже опубликован; finish не прошёл из-за формального требования проверки именно на текущем head. Сейчас выполняется пост-публикационная верификация на этом commit; следующий шаг — при успехе сразу finish.\n\n",
+  "summary": "Пост-публикационная проверка прошла полностью: 5/5 тестов, typecheck и production build успешны. Теперь завершаю карточку.\n\nJSON\n{\"version\":1,\"taskId\":\"1a8c2402-9243-4023-8739-998491a2572a\",\"commandId\":\"assets-audio-finish-14\",\"operation\":\"finish\",\"headSha\":\"b9587cf763a14eea234d9cb757923654d3948c9e\",\"message\":\"Assets and audio fallbacks implemented and published. Added AssetManager with loading progress and generated texture fallback; AudioManager with event registry, music/sfx/ui/ambient categories, master/category/event volume, mute and safe optional-audio fallback. Added public exports and 5 targeted tests. Verified on the published head: 5/5 tests passed, npm run typecheck passed, npm run build passed.\"}\n\nСводка: решение опубликовано и повторно проверено уже на текущем head; изменены только src/assets/AssetManager.ts, AudioManager.ts, index.ts, assets.test.ts; все требуемые проверки успешны; следующий шаг — слияние ветки сборщиком офиса.\n\n",
   "commands": [
     {
       "commandId": "assets-audio-checkpoint-1",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "assets-audio-postpublish-verify-13",
+      "status": "SUCCEEDED",
+      "headSha": "b9587cf763a14eea234d9cb757923654d3948c9e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "assets-audio-finish-14",
       "status": "STARTED",
       "headSha": "b9587cf763a14eea234d9cb757923654d3948c9e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:21:19.397Z"
+  "createdAt": "2026-09-16T15:21:41.129Z"
 }

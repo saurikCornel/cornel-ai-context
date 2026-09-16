@@ -17,14 +17,16 @@
   "branch": "cornel/validaciya-90-lunok-c85887",
   "baseSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "NEEDS_ATTENTION",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T13:43:17.138Z",
-  "updatedAt": "2026-09-16T15:21:16.118Z",
+  "updatedAt": "2026-09-16T15:21:37.423Z",
   "issue": 42,
   "chatUrl": "https://chatgpt.com/c/6aaa9f43-22d8-83ed-956e-18ac3e01d831",
   "error": null,
   "browserError": null,
   "browserErrorJobId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef-initial",
   "currentHead": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
-  "attentionReason": "worker_blocked"
+  "attentionReason": null,
+  "statusChecks": 0,
+  "intentRevision": 2
 }

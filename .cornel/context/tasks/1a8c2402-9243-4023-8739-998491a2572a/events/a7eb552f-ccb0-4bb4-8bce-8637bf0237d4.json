@@ -1,0 +1,11 @@
+{
+  "id": "a7eb552f-ccb0-4bb4-8bce-8637bf0237d4",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "assets-audio-finish-14",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T15:21:41.122Z"
+}
