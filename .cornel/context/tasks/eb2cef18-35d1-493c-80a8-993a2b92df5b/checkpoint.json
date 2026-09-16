@@ -2,8 +2,8 @@
   "taskId": "eb2cef18-35d1-493c-80a8-993a2b92df5b",
   "branch": "cornel/chaos-dimension-i-validaciya-90-lunok-eb2cef",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "WAITING_CHATGPT",
-  "summary": "",
+  "status": "NEEDS_ATTENTION",
+  "summary": "CORNEL_AI_BLOCKED\n\nДля новой безопасной команды probe-worker-11 RESULT не появился. Последний подтверждённый worker-статус остаётся: REJECTED — Задача не принимает команды.\n\nПо указанию координатора новые команды больше не повторяю. Блокировка относится именно к исполнению worker для taskId eb2cef18-35d1-493c-80a8-993a2b92df5b, а не к GitHub-доступу.\n\nКарточка не реализована и не проверена; publish и finish сейчас отправлять нельзя.\n\n",
   "commands": [],
-  "createdAt": "2026-09-16T13:38:45.596Z"
+  "createdAt": "2026-09-16T13:39:23.654Z"
 }
