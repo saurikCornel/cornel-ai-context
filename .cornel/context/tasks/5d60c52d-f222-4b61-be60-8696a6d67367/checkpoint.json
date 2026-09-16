@@ -3,7 +3,7 @@
   "branch": "cornel/5d60c52d-f222-4b61-be60-8696a6d67367",
   "headSha": "17395f6f0a9b73cd4944b501e2ff1ec57bd60a90",
   "status": "RUNNING",
-  "summary": "Публикация успешна. Карточка выполнена: добавлены три независимых курса — Neon City, Haunted Mansion и Space Station, по 9 оригинальных лунок каждый. Проверены typecheck, production build, количество 9+9+9 и уникальность всех 27 идентификаторов. PR по инструкции карточки не требуется — ветку заберёт сборщик.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"finish-courses-13\",\"operation\":\"finish\",\"headSha\":\"17395f6f0a9b73cd4944b501e2ff1ec57bd60a90\",\"message\":\"Готово: добавлены независимые course data модули Neon City, Haunted Mansion и Space Station — ровно по 9 оригинальных лунок, всего 27. Сложность постепенно растёт; используются существующие descriptors для static/moving obstacles, gates, spinners, moving platforms, water/void/reset hazards и тематических поверхностей. Проверки успешны: npm run typecheck, npm run build, 9+9+9 лунок, все 27 hole ID уникальны. Изменения ограничены src/courses/data/. PR не создавался согласно инструкции карточки.\"}\n\nСводка: решение реализовано и опубликовано; изменены только три course-data файла; все предусмотренные проверки успешны; следующий шаг — слияние ветки сборщиком.\n\n",
+  "summary": "Finish отклонён только потому, что предыдущая успешная проверка была выполнена до publish, на старом head. Код уже опубликован. Нужна одна контрольная проверка именно опубликованного состояния; выполняю её без изменений исходников.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"published-verify-14\",\"operation\":\"run\",\"headSha\":\"17395f6f0a9b73cd4944b501e2ff1ec57bd60a90\",\"command\":\"set -e\\nnpm install\\nnpm run typecheck\\nnpm run build\\nprintf '\\\\n=== PUBLISHED COURSE COUNTS ===\\\\n'\\nfor spec in 'neon-city.ts neon' 'haunted-mansion.ts haunted' 'space-station.ts space'; do set -- $spec; n=$(grep -o \\\"id:'$2-[0-9][0-9]'\\\" \\\"src/courses/data/$1\\\" | wc -l | tr -d ' '); printf '%s: %s\\\\n' \\\"$1\\\" \\\"$n\\\"; test \\\"$n\\\" = 9; done\\nids=$(grep -ho \\\"id:'\\\\(neon\\\\|haunted\\\\|space\\\\)-[0-9][0-9]'\\\" src/courses/data/*.ts | sort); test \\\"$(printf '%s\\\\n' \\\"$ids\\\" | wc -l | tr -d ' ')\\\" = 27; test \\\"$(printf '%s\\\\n' \\\"$ids\\\" | uniq | wc -l | tr -d ' ')\\\" = 27\\nprintf 'unique hole ids: 27\\\\n'\\nprintf '\\\\n=== STATUS ===\\\\n'; git status --short\",\"timeoutSeconds\":600}\n\nСводка: реализация и publish уже завершены; finish не принят исключительно из-за требования проверки на новом опубликованном head; сейчас выполняется такая проверка. После успешного RESULT сразу повторю finish, не меняя код.\n\n",
   "commands": [
     {
       "commandId": "inspect-courses-1",
@@ -73,10 +73,16 @@
     },
     {
       "commandId": "finish-courses-13",
+      "status": "FAILED",
+      "headSha": "17395f6f0a9b73cd4944b501e2ff1ec57bd60a90",
+      "exitCode": null
+    },
+    {
+      "commandId": "published-verify-14",
       "status": "STARTED",
       "headSha": "17395f6f0a9b73cd4944b501e2ff1ec57bd60a90",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T11:58:02.269Z"
+  "createdAt": "2026-09-16T11:58:20.097Z"
 }

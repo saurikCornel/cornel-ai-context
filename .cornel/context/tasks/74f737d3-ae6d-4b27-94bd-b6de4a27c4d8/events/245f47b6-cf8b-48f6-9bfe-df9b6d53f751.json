@@ -1,0 +1,12 @@
+{
+  "id": "245f47b6-cf8b-48f6-9bfe-df9b6d53f751",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "deps-verify-5",
+    "operation": "run",
+    "command": "set -e\necho '=== INSTALL ==='\nif [ -f package-lock.json ]; then npm ci; else npm install; fi\n\necho '=== TYPECHECK ==='\nnpm run typecheck\n\necho '=== UI TESTS ==='\nnpm run test:ui\n\necho '=== LINT ==='\nif npm run | grep -qE '^  lint($|:)'; then npm run lint; else echo 'No lint script'; fi\n\necho '=== BUILD ==='\nnpm run build\n\necho '=== CONFLICT CHECK ==='\nif git diff --name-only --diff-filter=U | grep -q .; then git diff --name-only --diff-filter=U; exit 1; fi\nif grep -R -nE '^(<<<<<<<|=======|>>>>>>>)' src/ui; then exit 1; fi\n\necho '=== STATUS ==='\ngit status --short"
+  },
+  "createdAt": "2026-09-16T11:58:12.262Z"
+}
