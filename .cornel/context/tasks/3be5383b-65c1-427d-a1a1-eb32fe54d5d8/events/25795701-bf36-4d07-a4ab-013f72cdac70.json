@@ -1,0 +1,17 @@
+{
+  "id": "25795701-bf36-4d07-a4ab-013f72cdac70",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "publish-gameplay-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:30:15.321Z"
+}
