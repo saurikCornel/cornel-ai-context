@@ -17,9 +17,10 @@
   "branch": "cornel/camera-controller-and-controls-e6beb0",
   "baseSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "workspaceSyncedSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-16T12:22:12.027Z",
-  "updatedAt": "2026-09-16T12:22:12.027Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-16T12:22:15.551Z",
+  "issue": 35,
+  "chatUrl": null,
+  "error": null
 }
