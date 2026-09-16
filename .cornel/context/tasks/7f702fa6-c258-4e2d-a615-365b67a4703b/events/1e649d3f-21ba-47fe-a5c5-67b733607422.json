@@ -1,0 +1,11 @@
+{
+  "id": "1e649d3f-21ba-47fe-a5c5-67b733607422",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RATE_LIMIT",
+  "text": "ChatGPT сообщил о лимите тарифа: пауза 15 мин, отправки продолжатся автоматически («CORNEL_AI_TURN:7f702fa6-c258-4e2d-a615-365b67a4703b-45951741-984e-441b-b6c0-4f864e158b06 Результат worker для read-contracts-1: status SUCCEEDED, exitCode 0, he»)",
+  "detail": {
+    "kind": "usage",
+    "text": "CORNEL_AI_TURN:7f702fa6-c258-4e2d-a615-365b67a4703b-45951741-984e-441b-b6c0-4f864e158b06 Результат worker для read-contracts-1: status SUCCEEDED, exitCode 0, head 2711f9e6cac19128adede9bf29adb37faff86"
+  },
+  "createdAt": "2026-09-16T22:22:40.007Z"
+}
