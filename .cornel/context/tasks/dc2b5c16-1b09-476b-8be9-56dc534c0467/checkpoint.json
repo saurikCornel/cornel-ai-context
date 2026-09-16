@@ -3,7 +3,7 @@
   "branch": "cornel/particle-effects-dc2b5c",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"list-project-2\",\"operation\":\"ls\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"path\":\"\",\"maxLines\":400}\n```\n\nРешение: checkpoint отсутствует, продолжаю по назначению. Изменённые файлы: нет. Проверки: чтение обязательных инструкций выполнено worker. Следующий шаг: изучить дерево исходников и конфигурацию тестов.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"read-interfaces-3\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"package.json\",\"vite.config.ts\",\"tsconfig.app.json\",\"src/core/Renderer.ts\",\"src/core/SceneManager.ts\",\"src/physics/GolfBallPhysics.ts\",\"src/physics/PhysicsWorld.ts\",\"src/contracts/math.ts\",\"src/assets/assets.test.ts\",\"src/camera/CameraCollision.test.ts\"]}\n```\n\nРешение: интеграция будет ограничена новым модулем эффектов и его тестами. Изменённые файлы: нет. Проверки: структура проекта изучена. Следующий шаг: согласовать API с renderer/scene после чтения контрактов.  \n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "list-project-2",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-interfaces-3",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:46:39.045Z"
+  "createdAt": "2026-09-16T15:47:40.038Z"
 }
