@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Фактический статус подтверждён повторной проверкой Issue #58: write-obstacles-core-4 в журнале отсутствует, RESULT и UNKNOWN для неё нет. Видны только события rate-limit. Поэтому задача не завершена, но повторять команду нельзя: неизвестно, была ли она принята локальным worker до потери результата.\n\nCORNEL_AI_BLOCKED: потерян статус worker-команды write-obstacles-core-4; без RESULT/UNKNOWN нельзя безопасно продолжать, повторять запись или отправлять finish.\n\nСводка: успешны только read-only проверки contracts/physics/scene; изменения кода и тесты не подтверждены; требуется восстановление/появление статуса этой worker-команды владельцем/системой.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T19:55:13.827Z"
+}
