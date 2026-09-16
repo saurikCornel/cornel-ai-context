@@ -1,0 +1,17 @@
+{
+  "id": "6214a50a-af4b-41aa-a499-d9842c11a520",
+  "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "dev-tests-13",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "\n> crazy-putt-arena@0.1.0 test:input\n> vitest run src/input src/dev\n\nsh: vitest: command not found\n",
+    "outputDigest": "6394e39e0432d08f50e698e87c8c8367423fa28b6de42b606fbbf86de9e0edd9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T15:42:52.887Z"
+}
