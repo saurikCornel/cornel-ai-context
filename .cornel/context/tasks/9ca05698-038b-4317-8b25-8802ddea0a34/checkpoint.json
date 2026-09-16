@@ -3,7 +3,7 @@
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Мне нужны фактические сигнатуры `ObstacleManager` и барреля — предыдущий вывод пришёл усечённым, поэтому читаю точечно, узкими диапазонами.\n\n```json\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-manager-api-16\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/index.ts\",\"src/obstacles/ObstacleManager.ts:1-90\"]}\n```\n\nЖду worker: результат придёт отдельным сообщением в этот чат, Issue перечитывать не нужно.\n\nСводка: решение — не писать тесты по усечённому выводу, а получить точный публичный API (`index.ts`) и первую половину `ObstacleManager.ts`. Изменённые файлы (созданы, не опубликованы): `src/obstacles/{types,descriptor,motion,index,ObstacleManager}.ts`. Проверки: пока только read-only операции worker. Следующий шаг — дочитать вторую половину `ObstacleManager.ts`, добавить lifecycle-тесты, затем typecheck и build, после чего publish и finish.\n\n",
+  "summary": "Барrel ссылается на `RapierObstacleBodies` и `ThreeObstacleVisuals`, но в каталоге их нет — предыдущая запись оборвалась. Дочитываю остаток ядра, чтобы дописать недостающие фабрики строго под API.\n\n```json\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-core-tail-17\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/ObstacleManager.ts:90-174\",\"src/obstacles/descriptor.ts\",\"src/obstacles/types.ts\"]}\n```\n\nЖду worker: результат придёт отдельным сообщением в этот чат.\n\nСводка: решение — восстановить недостающие файлы `RapierObstacleBodies.ts` и `ThreeObstacleVisuals.ts`, на которые уже ссылается `src/obstacles/index.ts` (иначе typecheck упадёт). Изменённые файлы (созданы, не опубликованы): `src/obstacles/{types,descriptor,motion,index,ObstacleManager}.ts`. Проверки: пока только read-only. Следующий шаг — дописать две фабрики, добавить lifecycle-тесты, затем typecheck/build, publish, finish.\n\n",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "read-manager-api-16",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-core-tail-17",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:32:12.565Z"
+  "createdAt": "2026-09-16T21:33:10.915Z"
 }
