@@ -2,8 +2,15 @@
   "taskId": "21e90fa2-6f29-4977-a831-f59e02e10662",
   "branch": "cornel/universalnye-prepyatstviya-21e90f",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
-  "status": "WAITING_CHATGPT",
-  "summary": "",
-  "commands": [],
-  "createdAt": "2026-09-16T15:45:32.882Z"
+  "status": "RUNNING",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"21e90fa2-6f29-4977-a831-f59e02e10662\",\"commandId\":\"read-context-1\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\".cornel/CHATGPT.md\",\".cornel/context/tasks/21e90fa2-6f29-4977-a831-f59e02e10662/checkpoint.json\"]}\n```\n\nЖду результат worker; он придёт в этот чат.  \n",
+  "commands": [
+    {
+      "commandId": "read-context-1",
+      "status": "STARTED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-16T15:53:49.279Z"
 }

@@ -19,13 +19,14 @@
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T15:44:46.489Z",
-  "updatedAt": "2026-09-16T15:53:37.939Z",
+  "updatedAt": "2026-09-16T15:53:52.145Z",
   "issue": 46,
-  "chatUrl": null,
+  "chatUrl": "cli://codex/01a0aaec-718b-72f3-8250-7dc8bb502b81",
   "error": null,
   "browserError": null,
   "browserErrorJobId": "21e90fa2-6f29-4977-a831-f59e02e10662-initial",
   "statusChecks": 0,
-  "cliSession": null,
-  "cliActivity": "Codex CLI: начал ход"
+  "cliSession": "01a0aaec-718b-72f3-8250-7dc8bb502b81",
+  "cliActivity": null,
+  "currentHead": "77b38d1780726161f87e511138beae87cceeb098"
 }
