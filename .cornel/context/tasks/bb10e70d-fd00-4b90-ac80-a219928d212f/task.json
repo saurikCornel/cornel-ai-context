@@ -19,9 +19,9 @@
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "READY",
   "createdAt": "2026-09-16T23:46:55.230Z",
-  "updatedAt": "2026-09-16T23:56:44.055Z",
+  "updatedAt": "2026-09-16T23:59:29.548Z",
   "issue": 74,
   "chatUrl": null,
   "error": null,
-  "cliActivity": "Apple Intelligence: думает"
+  "cliActivity": "Apple Intelligence: listDirectory src/obstacles"
 }
