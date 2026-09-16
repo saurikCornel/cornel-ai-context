@@ -1,0 +1,17 @@
+{
+  "id": "42c74d3e-f3cc-4194-8d36-2a8208d9bc80",
+  "taskId": "9f009986-bf51-4022-aed0-124767c7b227",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-final",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "997be1acdd323385521ce6921f6f39fb4ffce4e2",
+    "output": "997be1a Merge CameraController core: объединён barrel src/camera/index.ts\n525f353 Implement camera smoothing and transitions\n77b38d1 Merge «Input, developer controls and diagnostics» (5cc21f20-acb9-4084-9c20-1595499da9af)\n--- status ---\n--- barrel ---\nexport * from './CameraCollision';\nexport * from './CameraController';\nexport * from './CameraPose';\nexport * from './CameraTransition';\nexport * from './Easing';\nexport * from './RapierCameraCollision';\nexport * from './SmoothCameraRig';\nexport * from './Smoothing';\nexport * from './ThreeCameraBinding';\nNO_CONFLICT_MARKERS\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nTYPECHECK_EXIT=0\n \u001b[32m✓\u001b[39m src/camera/CameraController.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/camera/CameraSmoothing.test.ts \u001b[2m(\u001b[22m\u001b[2m23 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m32 passed\u001b[39m\u001b[22m\u001b[90m (32)\u001b[39m\n\u001b[2m   Start at \u001b[22m 20:25:59\n\u001b[2m   Duration \u001b[22m 235ms\u001b[2m (transform 70%, import 15%, tests 8%, worker 7%)\u001b[22m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m3 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m10 passed\u001b[39m\u001b[22m\u001b[90m (13)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m58 passed\u001b[39m\u001b[22m\u001b[90m (58)\u001b[39m\n\u001b[2m   Start at \u001b[22m 20:26:00\n\u001b[2m   Duration \u001b[22m 1.92s\u001b[2m (environment 68%, transform 21%, import 6%, tests 4%, worker 1%)\u001b[22m\n\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-Bb53Nhb8.css  \u001b[39m\u001b[1m\u001b[2m  7.01 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.32 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-ESTV255h.js   \u001b[39m\u001b[1m\u001b[2m  2.61 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   1.21 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-B2ei82-g.js   \u001b[39m\u001b[1m\u001b[2m477.15 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 120.43 kB\u001b[22m\n\u001b[32m✓ built in 873ms\u001b[39m\n",
+    "outputDigest": "556f21d03fb8d91c65fca19d9e959a627ca9cdb64a5bde4754186363f7a896bc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:26:05.445Z"
+}
