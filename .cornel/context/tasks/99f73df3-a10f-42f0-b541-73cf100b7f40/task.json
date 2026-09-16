@@ -2,7 +2,7 @@
   "id": "99f73df3-a10f-42f0-b541-73cf100b7f40",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "claude",
+  "agent": "chatgpt",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -17,17 +17,18 @@
   "branch": "cornel/door-obstacle-99f73d",
   "baseSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "workspaceSyncedSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T18:49:05.679Z",
-  "updatedAt": "2026-09-16T19:22:34.344Z",
+  "updatedAt": "2026-09-16T19:22:48.139Z",
   "issue": 61,
   "chatUrl": null,
   "error": null,
-  "chatEpoch": 5,
+  "chatEpoch": 6,
   "appliedEffort": null,
   "effortFailed": null,
   "cliSession": null,
-  "cliActivity": "Claude CLI: начал ход (claude-opus-5)",
+  "cliActivity": null,
   "browserError": null,
-  "statusChecks": 0
+  "statusChecks": 0,
+  "currentHead": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
 }
