@@ -1,0 +1,11 @@
+{
+  "id": "5a5e5f93-a48d-48b1-a721-0c800c8976ac",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "ls-courses-1",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T21:45:34.945Z"
+}
