@@ -1,9 +1,9 @@
 {
   "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
   "branch": "cornel/particle-effects-dc2b5c",
-  "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+  "headSha": "db73400a5139cf8b2861c4cd634d81e9858ff328",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"publish-particles-13\",\"operation\":\"publish\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"message\":\"Implement pooled particle effects system\"}\n\nРешение: ParticleManager реализован как фиксированный pooled particle system с одним THREE.Points, переиспользуемыми typed arrays и минимальными аллокациями.\nИзменённые файлы: src/effects/ParticleManager.ts, src/effects/index.ts, src/effects/ParticleManager.test.ts.\nПроверки: 4/4 целевых теста прошли, npm run typecheck прошёл, npm run build прошёл.\nСледующий шаг: дождаться результата публикации и затем отправить finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"finish-particles-14\",\"operation\":\"finish\",\"headSha\":\"db73400a5139cf8b2861c4cd634d81e9858ff328\",\"message\":\"Particle effects завершены: реализован lightweight pooled ParticleManager на THREE.Points с фиксированной ёмкостью, переиспользуемыми typed arrays и API emit/update/clear/dispose; добавлены exports и целевые unit-тесты. Проверки подтверждены worker: 4/4 теста пройдены, typecheck успешен, production build успешен. Изменения опубликованы в назначенную ветку.\"}\n\nИтог: карточка Particle effects выполнена полностью. Изменены src/effects/ParticleManager.ts, src/effects/index.ts, src/effects/ParticleManager.test.ts; gameplay, AI и course definitions не затронуты.\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "publish-particles-13",
+      "status": "SUCCEEDED",
+      "headSha": "db73400a5139cf8b2861c4cd634d81e9858ff328",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-particles-14",
       "status": "STARTED",
-      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "headSha": "db73400a5139cf8b2861c4cd634d81e9858ff328",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:48:53.901Z"
+  "createdAt": "2026-09-16T16:49:18.941Z"
 }

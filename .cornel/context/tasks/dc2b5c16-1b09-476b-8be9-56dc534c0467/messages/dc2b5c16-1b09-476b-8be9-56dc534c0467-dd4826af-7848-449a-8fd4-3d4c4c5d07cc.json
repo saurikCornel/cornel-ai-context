@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"finish-particles-14\",\"operation\":\"finish\",\"headSha\":\"db73400a5139cf8b2861c4cd634d81e9858ff328\",\"message\":\"Particle effects завершены: реализован lightweight pooled ParticleManager на THREE.Points с фиксированной ёмкостью, переиспользуемыми typed arrays и API emit/update/clear/dispose; добавлены exports и целевые unit-тесты. Проверки подтверждены worker: 4/4 теста пройдены, typecheck успешен, production build успешен. Изменения опубликованы в назначенную ветку.\"}\n\nИтог: карточка Particle effects выполнена полностью. Изменены src/effects/ParticleManager.ts, src/effects/index.ts, src/effects/ParticleManager.test.ts; gameplay, AI и course definitions не затронуты.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:49:18.938Z"
+}

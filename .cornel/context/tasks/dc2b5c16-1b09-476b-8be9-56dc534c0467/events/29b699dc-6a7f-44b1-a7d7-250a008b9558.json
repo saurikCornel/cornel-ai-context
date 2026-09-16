@@ -1,0 +1,12 @@
+{
+  "id": "29b699dc-6a7f-44b1-a7d7-250a008b9558",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "finish-particles-14",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T16:49:21.281Z"
+}
