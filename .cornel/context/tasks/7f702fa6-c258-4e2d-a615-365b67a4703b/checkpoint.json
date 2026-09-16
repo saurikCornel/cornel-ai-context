@@ -3,7 +3,7 @@
   "branch": "cornel/hazard-and-field-zones-7f702f",
   "headSha": "c51058406814ce3edfa339d8c7193374e2c6f9d2",
   "status": "RUNNING",
-  "summary": "Опубликовано, новый head `c510584`. Прогоняю проверки на опубликованном коммите, чтобы finish опирался на тот же headSha:\n\n```json\n{\"version\":1,\"taskId\":\"7f702fa6-c258-4e2d-a615-365b67a4703b\",\"commandId\":\"verify-head-1\",\"operation\":\"run\",\"headSha\":\"c51058406814ce3edfa339d8c7193374e2c6f9d2\",\"command\":\"npx vitest run src/gameplay/zones && npm run typecheck && npm run build\",\"timeoutSeconds\":600}\n```\n\nЖду RESULT по `verify-head-1`, затем отправлю `finish` с итогом.\n\n",
+  "summary": "Диск опять просел — свободно 785 МБ (порог worker 1024 МБ), команда не запущена. Код уже полностью проверен на этом же содержимом до публикации (`test-zones-3`: 7/7, `typecheck-2`: typecheck + build, exit 0), commit `c510584` содержит ровно эту рабочую копию — но для finish нужна успешная проверка на опубликованном headSha.\n\n**Владелец: освободи, пожалуйста, ~2 ГБ на диске** (очистка корзины / кэшей / `npm cache clean --force`). Ниже облегчённая проверка без `vite build`, чтобы не писать лишнее на диск:\n\n```json\n{\"version\":1,\"taskId\":\"7f702fa6-c258-4e2d-a615-365b67a4703b\",\"commandId\":\"verify-head-2\",\"operation\":\"run\",\"headSha\":\"c51058406814ce3edfa339d8c7193374e2c6f9d2\",\"command\":\"npx vitest run src/gameplay/zones && npm run typecheck\",\"timeoutSeconds\":600}\n```\n\nЖду RESULT по `verify-head-2`; сразу после успеха отправлю `finish`.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -133,10 +133,16 @@
     },
     {
       "commandId": "verify-head-1",
+      "status": "FAILED",
+      "headSha": "c51058406814ce3edfa339d8c7193374e2c6f9d2",
+      "exitCode": null
+    },
+    {
+      "commandId": "verify-head-2",
       "status": "STARTED",
       "headSha": "c51058406814ce3edfa339d8c7193374e2c6f9d2",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T23:30:45.786Z"
+  "createdAt": "2026-09-16T23:31:08.574Z"
 }

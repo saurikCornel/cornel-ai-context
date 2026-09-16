@@ -1,0 +1,17 @@
+{
+  "id": "7296656c-1322-4076-83d8-864c2335936c",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-head-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "c51058406814ce3edfa339d8c7193374e2c6f9d2",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/7f702fa6-c258-4e2d-a615-365b67a4703b\u001b[39m\n\n \u001b[32m✓\u001b[39m src/gameplay/zones/zones.test.ts \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m7 passed\u001b[39m\u001b[22m\u001b[90m (7)\u001b[39m\n\u001b[2m   Start at \u001b[22m 02:31:11\n\u001b[2m   Duration \u001b[22m 204ms\u001b[2m (transform 81%, import 13%, tests 3%, worker 3%)\u001b[22m\n\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "886a1404e5f5a9a29cea9c7ccb5e091ea6ce32b0eea958f34ca7a48af53e5f97",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T23:31:13.365Z"
+}
