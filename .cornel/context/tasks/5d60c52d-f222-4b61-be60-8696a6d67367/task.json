@@ -17,14 +17,15 @@
   "branch": "cornel/5d60c52d-f222-4b61-be60-8696a6d67367",
   "baseSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
   "workspaceSyncedSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
-  "status": "CANCELLED",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T00:06:29.830Z",
-  "updatedAt": "2026-09-16T00:38:00.885Z",
+  "updatedAt": "2026-09-16T11:54:36.560Z",
   "issue": 30,
   "chatUrl": "https://chatgpt.com/c/6aa9dd90-4eb4-83eb-b92b-393c5ca8bfa3",
   "error": null,
   "browserError": null,
   "currentHead": "6e30db9402be899044498f36e7f547d09e45e6fa",
-  "statusChecks": 1,
-  "attentionReason": "worker_blocked"
+  "statusChecks": 0,
+  "attentionReason": null,
+  "intentRevision": 1
 }
