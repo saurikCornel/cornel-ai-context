@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 38,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Десятый заход, состояние ровно то же самое: тот же `finish-14`, прогресса нет. Указание отправить короткий `finish` не изменило ничего — значит, проблема не в работнике и не в коде, а в регистрации завершающей команды, и дальнейшие попытки будут крутить тот же цикл. Как и предупреждал в прошлый раз, закрываю карточку.\n\nФактическое состояние работы: конфликт в `src/camera/index.ts` разрешён объединением экспортов обеих сторон (`CameraInput` плюс `SmoothCameraRig`, `Smoothing`, `ThreeCameraBinding` и остальные camera-модули офисной ветки), merge-коммит сделан на ветке сборщика `cornel/slit-camera-input-and-zoom-100009`, файлы `src/camera/CameraInput.ts` и `CameraInput.test.ts` добавлены, проверки `typecheck`, `test:camera`, `test:ui`, `test:input` и `build` пройдены на опубликованном head `1c9d29a5`. Цель карточки достигнута, теряется только формальная отметка.\n\n```json\n{\"cornelResolve\":1,\"card\":\"5f3006d5-0d86-4e0d-b25c-cb9baa435bd8\",\"action\":\"cancel\"}\n```\n\nКоординатору: при следующей сборке проверить, что `cornel/camera-input-and-zoom-5ded69` действительно влита в `cornel/office` — если merge остался только на ветке сборщика, поставить новую карточку слияния уже без разрешения конфликта, простым fast-forward от `1c9d29a5`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T23:34:16.153Z"
+}
