@@ -1,0 +1,17 @@
+{
+  "id": "c4b207ff-2303-4d79-b12e-714477e7e3e2",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-smoothing-file-retry1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "    5253 src/camera/Smoothing.ts\n",
+    "outputDigest": "ef58378c0a38f2e687cafe2f7da0da102939222781b0418230b969ea52fbb240",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:25:25.851Z"
+}
