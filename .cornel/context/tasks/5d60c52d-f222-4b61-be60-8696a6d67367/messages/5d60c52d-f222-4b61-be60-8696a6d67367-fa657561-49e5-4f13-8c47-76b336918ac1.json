@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Опубликованное состояние подтверждено: рабочее дерево чистое, typecheck и production build успешны, каждый курс содержит ровно 9 лунок, все 27 ID уникальны. Теперь завершаю карточку.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"finish-courses-15\",\"operation\":\"finish\",\"headSha\":\"17395f6f0a9b73cd4944b501e2ff1ec57bd60a90\",\"message\":\"Готово: опубликованы Neon City, Haunted Mansion и Space Station — три независимых course data модуля по 9 оригинальных лунок, всего 27. Использованы существующие Course Builder/descriptors, тематические static/moving obstacles, gates, spinners, platforms, water/void/reset hazards и различные поверхности с постепенным ростом сложности. На опубликованном состоянии успешно выполнены npm run typecheck и npm run build; подтверждено 9+9+9 лунок, 27 уникальных hole ID и чистое рабочее дерево. Изменения ограничены src/courses/data/. PR не создавался согласно инструкции карточки.\"}\n\nСводка: три файла реализованы и опубликованы; финальная проверка выполнена уже на опубликованном состоянии; дополнительных изменений не требуется; следующий шаг — слияние ветки сборщиком.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T11:58:57.589Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "eda3777e-b845-4483-9f07-45103b2cf9f0",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "pirate-bay-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f9d45eaac1309251d846cf98819c37739dd5cb87",
+    "output": "Pirate Bay holes: 9\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "08645ff53bac4ee27090610c44603b8e8210906f97ad62258c213cdf4d99ac0a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:58:38.582Z"
+}
