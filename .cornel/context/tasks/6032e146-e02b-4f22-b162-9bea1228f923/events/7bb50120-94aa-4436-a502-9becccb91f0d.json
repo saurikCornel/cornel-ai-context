@@ -1,0 +1,12 @@
+{
+  "id": "7bb50120-94aa-4436-a502-9becccb91f0d",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "diagnose-camera-failures-19",
+    "operation": "run",
+    "command": "npx vitest run src/camera/CameraController.test.ts --reporter=verbose 2>&1 | sed -n '1,160p'; echo '=== TEST FILE ==='; cat -n src/camera/CameraController.test.ts; echo '=== CONTROLLER ==='; cat -n src/camera/CameraController.ts; echo '=== COLLISION ==='; cat -n src/camera/CameraCollision.ts"
+  },
+  "createdAt": "2026-09-16T17:33:52.254Z"
+}
