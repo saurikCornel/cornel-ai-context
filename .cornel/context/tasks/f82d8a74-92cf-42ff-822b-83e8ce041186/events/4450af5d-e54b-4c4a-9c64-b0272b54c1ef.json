@@ -1,0 +1,17 @@
+{
+  "id": "4450af5d-e54b-4c4a-9c64-b0272b54c1ef",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "camera-tests-part-b",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "ec4e86728618e3cc8b2fd7cb596ee94dc753c69fc529f44f1b7d23b0e310cce6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:29:18.302Z"
+}
