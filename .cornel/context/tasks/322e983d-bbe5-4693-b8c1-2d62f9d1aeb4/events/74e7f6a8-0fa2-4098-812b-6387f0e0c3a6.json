@@ -1,0 +1,12 @@
+{
+  "id": "74e7f6a8-0fa2-4098-812b-6387f0e0c3a6",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "rot-obst-k1",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T23:24:57.823Z"
+}

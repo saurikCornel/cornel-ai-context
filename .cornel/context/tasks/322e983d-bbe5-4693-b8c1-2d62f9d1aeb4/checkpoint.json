@@ -3,7 +3,7 @@
   "branch": "cornel/rotating-obstacles-322e98",
   "headSha": "c0219512b2b27069ba03af0b48bf9a1ca019ff11",
   "status": "RUNNING",
-  "summary": "`publish` прошёл: новый head `c0219512b2b27069ba03af0b48bf9a1ca019ff11`. Перед `finish` прогоняю проверки уже на опубликованном коммите — требуется успешная проверка worker именно на текущем headSha.\n\n```json\n{\"version\":1,\"taskId\":\"322e983d-bbe5-4693-b8c1-2d62f9d1aeb4\",\"commandId\":\"rot-obst-j1\",\"operation\":\"run\",\"headSha\":\"c0219512b2b27069ba03af0b48bf9a1ca019ff11\",\"timeoutSeconds\":900,\"command\":\"npx tsc -b --pretty false; echo \\\"typecheck exit: $?\\\"\\nnpx vitest run src/obstacles 2>&1 | tail -10; echo \\\"vitest pipeline done\\\"\\nnpm run build 2>&1 | tail -8; echo \\\"build exit: $?\\\"\\ngit status --short\"}\n```\n\nЖду worker — результат придёт сюда отдельным сообщением.\n\nСводка: решения — подтвердить зелёные проверки на фактически опубликованном коммите, а не только на докоммитной рабочей копии; вывод не пишу в файлы, чтобы не занимать место на диске (guard worker близок к порогу). Изменённые файлы (опубликованы): `src/obstacles/{types,validation,rotation,RotatingObstacle,RotatingBar,Spinner,Windmill,RapierObstaclePhysics,index}.ts` и `src/obstacles/{rotation,obstacles,spinnerWindmill}.test.ts`. Проверки: до публикации — typecheck exit 0, vitest 24/24, `npm run build` успешен; сейчас повторяю их на `c021951`. Следующий шаг — при зелёном результате отправить `finish` с итогом карточки.\n\n",
+  "summary": "Дисковый guard блокирует только `operation=run` (при 946 МБ `run` отказал, а `publish` на том же уровне прошёл), поэтому отправляю `finish`. Важное уточнение по честности проверок: зелёные typecheck/vitest/build получены на рабочей копии **непосредственно перед** публикацией, и с тех пор ни одной правки файлов не было — опубликованный коммит `c021951` содержит ровно то дерево, которое проверялось. Повторить прогон уже на самом коммите worker не дал — не из-за кода, а из-за нехватки места на диске.\n\n```json\n{\"version\":1,\"taskId\":\"322e983d-bbe5-4693-b8c1-2d62f9d1aeb4\",\"commandId\":\"rot-obst-k1\",\"operation\":\"finish\",\"headSha\":\"c0219512b2b27069ba03af0b48bf9a1ca019ff11\",\"message\":\"Карточка «Rotating obstacles» выполнена. Реализованы RotatingBar, Windmill и Spinner на общем lifecycle.\\n\\nФайлы (src/obstacles/): types.ts (контракты конфигов, ObstaclePhysicsAdapter/ObstacleBodyHandle), rotation.ts (детерминированная математика: axis-angle кватернионы, wrap по TAU, фазовые сдвиги), validation.ts (явные ошибки конфигурации), RotatingObstacle.ts (базовый lifecycle: визуал, коллайдеры, update, dispose), RotatingBar.ts, Windmill.ts, Spinner.ts, RapierObstaclePhysics.ts (кинематические тела Rapier), index.ts (barrel).\\n\\nТесты: rotation.test.ts (11), obstacles.test.ts (7), spinnerWindmill.test.ts (6) — покрывают математику вращения, вывод half-extents коллайдеров из визуальных размеров, детерминированность движения и валидацию конфигов.\\n\\nПроверки (фактические прогоны worker, commandId rot-obst-h1, на том же дереве файлов, что опубликовано): npx tsc -b --pretty false — exit 0; npx vitest run src/obstacles — 3 файла, 24/24 passed; npm run build — vite build успешен (built in 853ms). Повторный прогон уже на коммите c021951 (rot-obst-j1) worker отклонил до запуска из-за нехватки места на диске (688 МБ при минимуме 1024 МБ) — это инфраструктурное ограничение, не ошибка кода.\\n\\nPR не открывался: слияние ветки cornel/rotating-obstacles-322e98 выполняет сборщик.\"}\n```\n\nЖду worker — результат придёт сюда отдельным сообщением.\n\n**Для владельца:** свободное место на системном диске продолжает падать (1.0 ГБ → 946 МБ → 688 МБ). Пока его меньше 1024 МБ, worker будет отказывать в любой команде `run` — в этой задаче и в остальных. Стоит освободить хотя бы 2–3 ГБ (корзина, `~/Library/Caches`, старые `node_modules`/`dist` в неактивных worktrees, загрузки).\n\nСводка: решения — не зацикливаться на блокированном `run`, отправить `finish` (non-run операции guard пропускает) и прямо указать в итоге, что проверки выполнены на идентичном дереве до коммита, а повтор на самом коммите заблокирован диском. Изменённые файлы: 9 исходников и 3 теста в `src/obstacles/`, опубликованы коммитом `c021951`. Проверки: typecheck exit 0, vitest 24/24, `npm run build` успешен. Следующий шаг — по результату `finish` карточка закрывается; при отказе guard нужна очистка диска владельцем.\n\n",
   "commands": [
     {
       "commandId": "rot-obstacles-inspect-2",
@@ -163,10 +163,16 @@
     },
     {
       "commandId": "rot-obst-j1",
+      "status": "FAILED",
+      "headSha": "c0219512b2b27069ba03af0b48bf9a1ca019ff11",
+      "exitCode": null
+    },
+    {
+      "commandId": "rot-obst-k1",
       "status": "STARTED",
       "headSha": "c0219512b2b27069ba03af0b48bf9a1ca019ff11",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T23:23:55.184Z"
+  "createdAt": "2026-09-16T23:24:55.295Z"
 }
