@@ -1,0 +1,17 @@
+{
+  "id": "9fd330ca-700c-4f57-849c-c903b3151982",
+  "taskId": "26c082ce-4b29-4482-9ed1-be2b215b4dc5",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "run-3",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "sed: 1: \"src/courses/types.ts\n\": unescaped newline inside substitute pattern\n",
+    "outputDigest": "9538c39794b2a476e72af76b97da0302b45af0711cb283676f1169e248939b08",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:51:40.276Z"
+}
