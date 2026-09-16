@@ -1,0 +1,11 @@
+{
+  "id": "e4d524aa-6261-4b06-ab1e-e2d392d5007f",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-ball-head-6",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T20:02:36.856Z"
+}
