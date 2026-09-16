@@ -1,0 +1,11 @@
+{
+  "id": "d953d82d-438f-4bff-8a57-d3eec2eebd07",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-collision-publish-10",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-16T14:42:00.993Z"
+}
