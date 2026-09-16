@@ -17,14 +17,15 @@
   "branch": "cornel/camera-input-and-zoom-89d3c3",
   "baseSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "WAITING_CHATGPT",
+  "status": "NEEDS_ATTENTION",
   "createdAt": "2026-09-16T13:42:59.614Z",
-  "updatedAt": "2026-09-16T15:22:07.890Z",
+  "updatedAt": "2026-09-16T15:24:12.680Z",
   "issue": 39,
   "chatUrl": "https://chatgpt.com/c/6aaa9cf0-e2c8-83eb-b468-d1bb6eeac5a9",
   "error": null,
-  "browserError": "Ответ из другого чата",
+  "browserError": "Codex CLI завершился с кодом 2: error: unexpected argument '-s' found\n\n  tip: to pass '-s' as a value, use '-- -s'\n\nUsage: codex exec resume [OPTIONS] [SESSION_ID] [PROMPT]\n\nFor more information, try '--help'.",
   "statusChecks": 0,
   "currentHead": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "cliSession": "01a0aacf-71cf-7220-b00a-e03b75343b78"
+  "cliSession": "01a0aacf-71cf-7220-b00a-e03b75343b78",
+  "attentionReason": "worker_blocked"
 }
