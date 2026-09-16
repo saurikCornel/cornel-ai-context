@@ -1,0 +1,11 @@
+{
+  "id": "c2d2ec51-81e5-48fb-96e6-5d151e7ba208",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-input-finish-13",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T16:46:27.233Z"
+}

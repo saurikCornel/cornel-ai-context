@@ -17,15 +17,15 @@
   "branch": "cornel/camera-input-and-zoom-5ded69",
   "baseSha": "77b38d1780726161f87e511138beae87cceeb098",
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
-  "status": "WAITING_CHATGPT",
+  "status": "DONE",
   "createdAt": "2026-09-16T15:44:57.841Z",
-  "updatedAt": "2026-09-16T16:46:16.661Z",
+  "updatedAt": "2026-09-16T16:46:29.726Z",
   "issue": 48,
   "chatUrl": "cli://codex/01a0aaf1-06f7-7501-8bec-0f3336e61b75",
   "error": null,
   "browserError": null,
   "currentHead": "8aab53119ae674d439b81094e70eb2abcb9d7dcb",
   "cliSession": "01a0aaf1-06f7-7501-8bec-0f3336e61b75",
-  "cliActivity": "Codex CLI: начал ход",
+  "cliActivity": null,
   "statusChecks": 0
 }

@@ -3,7 +3,7 @@
   "branch": "cornel/camera-input-and-zoom-5ded69",
   "headSha": "8aab53119ae674d439b81094e70eb2abcb9d7dcb",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-final-verify-12\",\"operation\":\"run\",\"headSha\":\"8aab53119ae674d439b81094e70eb2abcb9d7dcb\",\"command\":\"npm run typecheck && npx vitest run src/camera && npm run build\",\"timeoutSeconds\":300}\n```\n\nСводка: решение — изменения опубликованы commit `8aab53119ae674d439b81094e70eb2abcb9d7dcb`; изменённые файлы — `src/camera/CameraInput.ts`, `src/camera/CameraInput.test.ts`, `src/camera/index.ts`; проверки — ранее успешны, запускается требуемое финальное подтверждение на опубликованном SHA; следующий шаг — `finish` с результатом этой проверки.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-finish-13\",\"operation\":\"finish\",\"headSha\":\"8aab53119ae674d439b81094e70eb2abcb9d7dcb\",\"message\":\"Реализован UI-независимый CameraInput поверх InputAction/InputSnapshot: нормализованное WASD-движение, ограниченный wheel zoom и reset по кадру. Добавлены 4 целевых теста; на commit 8aab53119ae674d439b81094e70eb2abcb9d7dcb успешны npm run typecheck, npx vitest run src/camera (9/9) и npm run build.\"}\n```\n\nСводка: решение — `CameraInput` преобразует существующий ввод в команды свободного движения, zoom и reset без привязки к UI/DOM; изменённые файлы — `src/camera/CameraInput.ts`, `src/camera/CameraInput.test.ts`, `src/camera/index.ts`; проверки — на опубликованном SHA успешны typecheck, 9/9 camera-тестов и production build; следующий шаг — интеграция карточки сборщиком.  \n",
   "commands": [
     {
       "commandId": "camera-input-inspect-1",
@@ -73,10 +73,16 @@
     },
     {
       "commandId": "camera-input-final-verify-12",
+      "status": "SUCCEEDED",
+      "headSha": "8aab53119ae674d439b81094e70eb2abcb9d7dcb",
+      "exitCode": 0
+    },
+    {
+      "commandId": "camera-input-finish-13",
       "status": "STARTED",
       "headSha": "8aab53119ae674d439b81094e70eb2abcb9d7dcb",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:41:27.059Z"
+  "createdAt": "2026-09-16T16:46:27.236Z"
 }

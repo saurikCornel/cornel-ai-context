@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-finish-13\",\"operation\":\"finish\",\"headSha\":\"8aab53119ae674d439b81094e70eb2abcb9d7dcb\",\"message\":\"Реализован UI-независимый CameraInput поверх InputAction/InputSnapshot: нормализованное WASD-движение, ограниченный wheel zoom и reset по кадру. Добавлены 4 целевых теста; на commit 8aab53119ae674d439b81094e70eb2abcb9d7dcb успешны npm run typecheck, npx vitest run src/camera (9/9) и npm run build.\"}\n```\n\nСводка: решение — `CameraInput` преобразует существующий ввод в команды свободного движения, zoom и reset без привязки к UI/DOM; изменённые файлы — `src/camera/CameraInput.ts`, `src/camera/CameraInput.test.ts`, `src/camera/index.ts`; проверки — на опубликованном SHA успешны typecheck, 9/9 camera-тестов и production build; следующий шаг — интеграция карточки сборщиком.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:46:27.232Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "4b0f37f2-cce1-41ce-a85e-64e4f47965a6",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-input-finish-13",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "8aab53119ae674d439b81094e70eb2abcb9d7dcb",
+    "output": "Реализован UI-независимый CameraInput поверх InputAction/InputSnapshot: нормализованное WASD-движение, ограниченный wheel zoom и reset по кадру. Добавлены 4 целевых теста; на commit 8aab53119ae674d439b81094e70eb2abcb9d7dcb успешны npm run typecheck, npx vitest run src/camera (9/9) и npm run build.",
+    "outputDigest": "c762797373e4ebf8e0cea5252f8e634b91f010fbaa5737e2d35fc0c4bcff8bcb",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:46:29.726Z"
+}
