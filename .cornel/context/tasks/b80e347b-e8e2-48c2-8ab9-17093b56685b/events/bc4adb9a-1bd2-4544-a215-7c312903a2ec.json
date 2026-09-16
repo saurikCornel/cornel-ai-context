@@ -1,0 +1,12 @@
+{
+  "id": "bc4adb9a-1bd2-4544-a215-7c312903a2ec",
+  "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "checks-3",
+    "operation": "run",
+    "command": "set +e; echo ===HEAD===; git log --oneline -3; echo ===INSTALL===; (npm ci --no-audit --no-fund || npm install --no-audit --no-fund) > /tmp/cornel-install.log 2>&1; echo INSTALL_EXIT=$?; tail -5 /tmp/cornel-install.log; echo ===TYPECHECK===; npm run typecheck 2>&1 | tail -30; echo ===TEST_CAMERA===; npx vitest run src/camera 2>&1 | tail -40; echo ===TEST_UI===; npm run test:ui 2>&1 | tail -15; echo ===TEST_INPUT===; npm run test:input 2>&1 | tail -15; echo ===BUILD===; npm run build 2>&1 | tail -15; echo ===STATUS===; git status --short"
+  },
+  "createdAt": "2026-09-16T18:55:06.432Z"
+}

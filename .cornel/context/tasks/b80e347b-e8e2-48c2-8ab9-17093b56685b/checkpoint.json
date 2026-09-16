@@ -3,7 +3,7 @@
   "branch": "cornel/slit-camera-modes-aim-follow-overview-fr-b80e34",
   "headSha": "ca89747a5aaf317a145209d9cb419f74c7ecf7cc",
   "status": "RUNNING",
-  "summary": "Слияние зафиксировано (merge commit `ca89747`, маркеров конфликтов нет). Проверки упали не из-за кода — в рабочей копии просто нет `node_modules` (`tsc`/`vitest`/`vite` не найдены). Ставлю зависимости и повторяю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"b80e347b-e8e2-48c2-8ab9-17093b56685b\",\"commandId\":\"checks-2\",\"operation\":\"run\",\"headSha\":\"ca89747a5aaf317a145209d9cb419f74c7ecf7cc\",\"command\":\"set +e; echo ===INSTALL===; npm ci --no-audit --no-fund 2>&1 | tail -5; echo INSTALL_EXIT=$?; echo ===TYPECHECK===; npm run typecheck 2>&1 | tail -30; echo ===TEST_CAMERA===; npx vitest run src/camera 2>&1 | tail -40; echo ===TEST_UI===; npm run test:ui 2>&1 | tail -15; echo ===TEST_INPUT===; npm run test:input 2>&1 | tail -15; echo ===BUILD===; npm run build 2>&1 | tail -15; git status --short\",\"timeoutSeconds\":1800}\n```\n\nЖду результат `checks-2` от worker — он придёт отдельным сообщением в этот чат.\n\nСводка: конфликт разрешён (обе реализации камеры сохранены: `CameraController` из офиса и `CameraModeController` из входящей ветки, баррель объединён), merge-коммит создан. Сейчас ставлю зависимости и прогоняю typecheck, тесты camera/ui/input и сборку. Следующий шаг: при зелёных проверках — publish и finish.\n\n",
+  "summary": "Понял: `checks-2` отклонён из-за headSha — merge-коммит `ca89747` ещё локальный, на GitHub ветка стоит на `9bf2556`. Повторяю проверки с исходным headSha (локальные правки, как показал `resolve-1`, worker не сбрасывает).\n\n```json\n{\"version\":1,\"taskId\":\"b80e347b-e8e2-48c2-8ab9-17093b56685b\",\"commandId\":\"checks-3\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"set +e; echo ===HEAD===; git log --oneline -3; echo ===INSTALL===; (npm ci --no-audit --no-fund || npm install --no-audit --no-fund) > /tmp/cornel-install.log 2>&1; echo INSTALL_EXIT=$?; tail -5 /tmp/cornel-install.log; echo ===TYPECHECK===; npm run typecheck 2>&1 | tail -30; echo ===TEST_CAMERA===; npx vitest run src/camera 2>&1 | tail -40; echo ===TEST_UI===; npm run test:ui 2>&1 | tail -15; echo ===TEST_INPUT===; npm run test:input 2>&1 | tail -15; echo ===BUILD===; npm run build 2>&1 | tail -15; echo ===STATUS===; git status --short\",\"timeoutSeconds\":1800}\n```\n\nЖду результат `checks-3` от worker — он придёт отдельным сообщением в этот чат, Issue перечитывать не нужно.\n\nСводка: конфликт add/add в `src/camera` разрешён без потери чужой работы — версия офиса осталась `CameraController` (renderer-agnostic орбита + коллизии), входящая переехала в `CameraModeController` (режимы aim/follow/overview/free) с переименованием конфликтующих типов, её тесты сохранены в `CameraModeController.test.ts`, баррель `src/camera/index.ts` экспортирует обе реализации; merge-коммит `ca89747` создан, маркеров конфликтов нет. Изменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/CameraModeController.ts`, `src/camera/CameraModeController.test.ts`, `src/camera/index.ts`. Проверки: прошлый запуск упал только из-за отсутствия `node_modules`; сейчас идёт установка зависимостей + typecheck/тесты/сборка. Следующий шаг: при зелёных проверках — `publish`, затем `finish`.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "checks-2",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "ca89747a5aaf317a145209d9cb419f74c7ecf7cc",
+      "exitCode": null
+    },
+    {
+      "commandId": "checks-3",
+      "status": "STARTED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:49:17.849Z"
+  "createdAt": "2026-09-16T18:55:06.434Z"
 }
