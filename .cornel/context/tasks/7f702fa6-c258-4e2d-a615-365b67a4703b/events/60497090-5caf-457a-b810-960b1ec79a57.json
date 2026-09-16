@@ -1,0 +1,17 @@
+{
+  "id": "60497090-5caf-457a-b810-960b1ec79a57",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-effects-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "src/effects: 3 файлов\nsrc/effects/ParticleManager.test.ts\nsrc/effects/ParticleManager.ts\nsrc/effects/index.ts",
+    "outputDigest": "08afd0cc8ca092775d346273d6cb48922a0bbfd8a7a09521436209a1ffcda608",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:54:44.079Z"
+}
