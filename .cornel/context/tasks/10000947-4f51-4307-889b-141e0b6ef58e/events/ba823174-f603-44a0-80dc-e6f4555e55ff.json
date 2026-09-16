@@ -1,0 +1,11 @@
+{
+  "id": "ba823174-f603-44a0-80dc-e6f4555e55ff",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "HANDBACK",
+  "text": "Чат возвращён в ChatGPT (прежний разговор)",
+  "detail": {
+    "from": "claude",
+    "cancelled": 1
+  },
+  "createdAt": "2026-09-16T17:35:11.752Z"
+}

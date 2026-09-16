@@ -1,0 +1,17 @@
+{
+  "id": "2f2c3bf7-5828-4702-b7b6-b42b3cfe6795",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-rating-write-18",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "src/gameplay: 9 файлов\nsrc/gameplay/HoleSystem.ts\nsrc/gameplay/MatchManager.ts\nsrc/gameplay/ScoreManager.ts\nsrc/gameplay/ShotSystemAdapter.ts\nsrc/gameplay/StateMachine.ts\nsrc/gameplay/TurnManager.ts\nsrc/gameplay/gameplay.test.ts\nsrc/gameplay/index.ts\nsrc/gameplay/types.ts",
+    "outputDigest": "8117fc6882bd169e7fa6a11e6475d60a3faae01bbe6461fa60b560ecf1ae9800",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:35:11.754Z"
+}
