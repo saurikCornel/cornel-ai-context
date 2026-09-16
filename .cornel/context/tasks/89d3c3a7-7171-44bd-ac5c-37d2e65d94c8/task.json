@@ -17,9 +17,10 @@
   "branch": "cornel/camera-input-and-zoom-89d3c3",
   "baseSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-16T13:42:59.614Z",
-  "updatedAt": "2026-09-16T13:42:59.614Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-16T13:43:03.021Z",
+  "issue": 39,
+  "chatUrl": null,
+  "error": null
 }
