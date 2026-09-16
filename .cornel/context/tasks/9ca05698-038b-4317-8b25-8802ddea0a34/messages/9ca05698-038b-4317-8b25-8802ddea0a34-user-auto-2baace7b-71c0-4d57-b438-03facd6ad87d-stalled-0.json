@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 8,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Oops! There was an issue connecting to Qwen3.7-Plus.\nYou've reached the upper limit for today's usage. Please try again tomorrow.",
+  "createdAt": "2026-09-16T23:17:25.205Z"
+}
