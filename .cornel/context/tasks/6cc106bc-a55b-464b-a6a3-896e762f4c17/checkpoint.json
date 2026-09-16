@@ -1,0 +1,16 @@
+{
+  "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
+  "branch": "cornel/core-rendering-and-scene-infrastructure-6cc106",
+  "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+  "status": "RUNNING",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"inspect-core-1\",\"operation\":\"ls\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"path\":\"src\",\"maxLines\":300}\n\nЖду результат worker; он придёт сюда отдельным сообщением, Issue перечитывать не нужно.\n\nСводка: начал с инвентаризации src; изменений пока нет; проверки ещё не запускались; следующий шаг — точечно прочитать существующие core-контракты и package/tsconfig.\n",
+  "commands": [
+    {
+      "commandId": "inspect-core-1",
+      "status": "STARTED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-16T13:53:35.913Z"
+}

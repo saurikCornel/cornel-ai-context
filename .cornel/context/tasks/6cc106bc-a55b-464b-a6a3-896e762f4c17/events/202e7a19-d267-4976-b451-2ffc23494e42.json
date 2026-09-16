@@ -1,0 +1,11 @@
+{
+  "id": "202e7a19-d267-4976-b451-2ffc23494e42",
+  "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-core-1",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T13:53:35.910Z"
+}
