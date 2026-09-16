@@ -1,0 +1,11 @@
+{
+  "id": "f7bd65cc-a21e-4a4f-b0c4-fde9dbca61b5",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-smoothing-finish",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T16:34:19.054Z"
+}

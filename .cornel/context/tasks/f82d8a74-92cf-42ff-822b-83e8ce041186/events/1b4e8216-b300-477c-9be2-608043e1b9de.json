@@ -1,0 +1,12 @@
+{
+  "id": "1b4e8216-b300-477c-9be2-608043e1b9de",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "camera-smoothing-finish",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T16:34:21.379Z"
+}
