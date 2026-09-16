@@ -3,7 +3,7 @@
   "branch": "cornel/triggery-i-poverhnosti-1363a3",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "status": "WAITING_CHATGPT",
-  "summary": "",
+  "summary": "Фактический статус: задача ещё не завершена. Успешно созданы локальные src/triggers/types.ts, vec.ts, zones.ts; поведенческое ядро, runtime, физический адаптер, targeted-тесты, проверки и publish ещё не выполнены. Последняя отправленная операция — чтение компактных сигнатур; её RESULT в переданном состоянии отсутствует, поэтому не повторяю её и жду именно этот результат.\n\nСводка: базовый API конфигов и геометрия зон готовы локально; опубликованного commit пока нет; следующий шаг после RESULT triggers-signatures-12 — дописать эффекты/runtime/адаптер и тесты, затем typecheck, build, publish и finish.\n\n",
   "commands": [
     {
       "commandId": "triggers-inspect-1",
@@ -84,5 +84,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T18:24:13.889Z"
+  "createdAt": "2026-09-16T18:27:09.082Z"
 }
