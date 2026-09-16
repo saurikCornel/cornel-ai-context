@@ -1,0 +1,11 @@
+{
+  "id": "f8308836-e7b2-45fd-9d68-afbaef7ce363",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "read-physics-world-and-camera-collision-21",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T21:47:31.289Z"
+}

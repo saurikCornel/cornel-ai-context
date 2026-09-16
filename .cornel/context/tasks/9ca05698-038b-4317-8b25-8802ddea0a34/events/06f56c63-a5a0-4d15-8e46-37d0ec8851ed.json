@@ -1,0 +1,17 @@
+{
+  "id": "06f56c63-a5a0-4d15-8e46-37d0ec8851ed",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-physics-world-and-camera-collision-21",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "### src/physics/PhysicsWorld.ts (строки 1-29 из 29)\n1: import RAPIER from '@dimforge/rapier3d-compat';\n2: import { GAME_CONFIG } from '../config/GameConfig';\n3: import type { Vec3 } from '../contracts/math';\n4: \n5: export class PhysicsWorld {\n6:   readonly world: RAPIER.World;\n7:   private accumulator = 0;\n8:   readonly fixedStep: number;\n9: \n10:   constructor(gravity: Vec3 = GAME_CONFIG.physics.gravity, fixedStep = 1 / GAME_CONFIG.targetFps) {\n11:     this.world = new RAPIER.World(gravity);\n12:     this.fixedStep = fixedStep;\n13:     this.world.timestep = fixedStep;\n14:   }\n15: \n16:   step(deltaSeconds: number, beforeStep?: (dt: number) => void): void {\n17:     this.accumulator += Math.min(Math.max(deltaSeconds, 0), 0.25);\n18:     while (this.accumulator >= this.fixedStep) {\n19:       beforeStep?.(this.fixedStep);\n20:       this.world.step();\n21:       this.accumulator -= this.fixedStep;\n22:     }\n23:   }\n24: \n25:   dispose(): void {\n26:     this.world.free();\n27:   }\n28: }\n29: \n\n### src/camera/RapierCameraCollision.ts (строки 1-27 из 27)\n1: import RAPIER from '@dimforge/rapier3d-compat';\n2: import type { Vec3 } from '../contracts/math';\n3: import type { PhysicsWorld } from '../physics/PhysicsWorld';\n4: import type { CameraRaycastHit, CameraRaycaster } from './CameraCollision';\n5: \n6: export class RapierCameraRaycaster implements CameraRaycaster {\n7:   constructor(private readonly physics: PhysicsWorld) {}\n8: \n9:   cast(origin: Vec3, direction: Vec3, maxDistance: number): CameraRaycastHit | null {\n10:     if (!Number.isFinite(maxDistance) || maxDistance <= 0) return null;\n11: \n12:     const ray = new RAPIER.Ray(origin, direction);\n13:     const hit = this.physics.world.castRay(\n14:       ray,\n15:       maxDistance,\n16:       true,\n17:       undefined,\n18:       undefined,\n19:       undefined,\n20:       undefined,\n21:       (collider) => !collider.isSensor(),\n22:     );\n23: \n24:     return hit ? { distance: hit.timeOfImpact } : null;\n25:   }\n26: }\n27:",
+    "outputDigest": "75db2b0edd516c28856e97dc975123a837746b085386a79e8d6f0dd9accb0c80",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:47:31.346Z"
+}
