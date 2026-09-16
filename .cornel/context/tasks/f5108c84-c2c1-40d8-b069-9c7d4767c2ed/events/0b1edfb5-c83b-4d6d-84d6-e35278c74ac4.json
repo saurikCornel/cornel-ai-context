@@ -1,0 +1,17 @@
+{
+  "id": "0b1edfb5-c83b-4d6d-84d6-e35278c74ac4",
+  "taskId": "f5108c84-c2c1-40d8-b069-9c7d4767c2ed",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "Каркас и общие контракты Crazy Putt Arena готовы и опубликованы. Добавлены Vite/TypeScript/Three.js/Rapier dependencies и конфигурация, минимальный WebGL bootstrap canvas, GameConfig, GameState, Player/Match/Shot DTO, Course/Hole/Obstacle descriptors, simulation/presentation events и публичные интерфейсы сервисов. package-lock.json зафиксирован, build-артефакты исключены из Git. Проверено worker на опубликованном состоянии: npm run typecheck — успешно; npm run build — успешно; git status до и после проверки — чистый. PR не создавался: по назначению ветку далее сливает сборщик.",
+    "outputDigest": "13e3514adbf2b18e43ae06f92cc6e36d65bee2170f111e5b1f8787984c7bcb85",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:01:52.198Z"
+}
