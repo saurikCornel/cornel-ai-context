@@ -1,0 +1,17 @@
+{
+  "id": "141c1062-8f40-4796-baeb-9103dd0bdd52",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-scripts-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "### package.json (строки 1-25 из 25)\n1: {\n2:   \"name\": \"crazy-putt-arena\",\n3:   \"private\": true,\n4:   \"version\": \"0.1.0\",\n5:   \"type\": \"module\",\n6:   \"scripts\": {\n7:     \"dev\": \"vite\",\n8:     \"build\": \"tsc -b && vite build\",\n9:     \"typecheck\": \"tsc -b --pretty false\",\n10:     \"test:ui\": \"vitest run src/ui\",\n11:     \"test:input\": \"vitest run src/input src/dev\"\n12:   },\n13:   \"dependencies\": {\n14:     \"@dimforge/rapier3d-compat\": \"^0.17.3\",\n15:     \"three\": \"^0.180.0\"\n16:   },\n17:   \"devDependencies\": {\n18:     \"@types/three\": \"^0.180.0\",\n19:     \"jsdom\": \"^29.1.1\",\n20:     \"typescript\": \"^5.9.2\",\n21:     \"vite\": \"^7.1.5\",\n22:     \"vitest\": \"^5.0.1\"\n23:   }\n24: }\n25:",
+    "outputDigest": "e037c81329f0278d02fac80b7f42338fa376379ab3716f6950bea84782c90b75",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T15:57:50.864Z"
+}
