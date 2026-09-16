@@ -1,0 +1,17 @@
+{
+  "id": "83117984-7ce8-4f0b-9edf-6f897c016be4",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "run-obstacles-tests-14",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/39ad29ab-7829-4eb7-b26b-b8a92971c227\u001b[39m\n\n \u001b[31m❯\u001b[39m src/obstacles/obstacles.test.ts \u001b[2m(\u001b[22m\u001b[2m0 test\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m src/obstacles/obstacles.test.ts\u001b[2m [ src/obstacles/obstacles.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mReferenceError\u001b[22m: exports is not defined in ES module scope\nThis file is being treated as an ES module because it has a '.js' file extension and '/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/39ad29ab-7829-4eb7-b26b-b8a92971c227/node_modules/@dimforge/rapier3d-compat/package.json' contains \"type\": \"module\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m ../../../../../Application%20Support/Cornel%20AI/workspace/worktrees/39ad29ab-7829-4eb7-b26b-b8a92971c227/node_modules/@dimforge/rapier3d-compat/rapier.cjs.js:\u001b[2m1:42\u001b[22m\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/obstacles/obstacles.test.ts:\u001b[2m1:1\u001b[22m\u001b[39m\n    \u001b[90m  1|\u001b[39m import RAPIER from '@dimforge/rapier3d-compat';\n    \u001b[90m   |\u001b[39m \u001b[31m^\u001b[39m\n    \u001b[90m  2|\u001b[39m import { beforeAll, describe, expect, it } from 'vitest';\n    \u001b[90m  3|\u001b[39m import { GolfBallPhysics } from '../physics/GolfBallPhysics';\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[2mno tests\u001b[22m\n\u001b[2m   Start at \u001b[22m 00:28:20\n\u001b[2m   Duration \u001b[22m 163ms\u001b[2m (worker 98%, environment 2%)\u001b[22m\n\n",
+    "outputDigest": "3f8244e427d61f878f8a5f230ac1946d9546d76d721bf3591ccc92d282824044",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:28:20.995Z"
+}
