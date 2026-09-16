@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Candy Factory тоже готов локально: 9 лунок, typecheck проходит. Теперь публикую Pirate Bay и Candy Factory одним коммитом. Green Hills уже опубликован ранее и повторно в изменения не входит.\n\nJSON\n{\"version\":1,\"taskId\":\"08cc768e-91b9-422f-8683-ff0784856b30\",\"commandId\":\"publish-courses-2\",\"operation\":\"publish\",\"headSha\":\"f9d45eaac1309251d846cf98819c37739dd5cb87\",\"message\":\"Add Pirate Bay and Candy Factory course data\"}\n\nПосле успешного publish выполню финальную проверку уже на опубликованном HEAD: ровно 9+9+9 лунок, уникальность course/hole IDs, typecheck и production build.\n\nОтдельное интеграционное замечание остаётся: исходный общий Hole API не содержит поля maxShots, поэтому я не расширял чужой контракт в своей карточке.\n\nСводка: green-hills.ts опубликован; pirate-bay.ts и candy-factory.ts созданы по 9 лунок и прошли typecheck; сейчас публикуются два последних модуля; следующий шаг — финальная проверка и finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T11:59:40.327Z"
+}

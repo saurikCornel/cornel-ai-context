@@ -1,0 +1,31 @@
+{
+  "headSha": "8f8986215aced22fdab61f8adf9e78929a9d3275",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "src/app/GameState.ts",
+    "src/config/GameConfig.ts",
+    "src/contracts/events.ts",
+    "src/contracts/game.ts",
+    "src/contracts/index.ts",
+    "src/contracts/math.ts",
+    "src/contracts/services.ts",
+    "src/courses/Course.ts",
+    "src/courses/CourseBuilder.ts",
+    "src/courses/Hole.ts",
+    "src/courses/data/candy-factory.ts",
+    "src/courses/data/green-hills.ts",
+    "src/courses/data/pirate-bay.ts",
+    "src/courses/types.ts",
+    "src/main.ts",
+    "src/style.css",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "vite.config.ts"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "5f2e2c9a-7eeb-4fd5-a1fb-64f61794e0d4",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "final-verify-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1bb641198d5780807973ef2542fcd56dab46226e",
+    "output": "=== STATUS ===\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== UI TESTS ===\n\n> crazy-putt-arena@0.1.0 test:ui\n> vitest run src/ui\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\u001b[39m\n\n \u001b[32m✓\u001b[39m src/ui/ui.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 42\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:59:40\n\u001b[2m   Duration \u001b[22m 1.35s\u001b[2m (environment 90%, transform 5%, tests 4%, import 1%)\u001b[22m\n\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 13 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-A_zxEyNx.css  \u001b[39m\u001b[1m\u001b[2m  6.34 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.12 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-BpuLOeG6.js   \u001b[39m\u001b[1m\u001b[2m472.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 118.94 kB\u001b[22m\n\u001b[32m✓ built in 1.39s\u001b[39m\n=== FINAL STATUS ===\n",
+    "outputDigest": "f102358cfad53464d06b6109b8779545a513207a9c88be1a93e8b53af38c48af",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:59:45.602Z"
+}
