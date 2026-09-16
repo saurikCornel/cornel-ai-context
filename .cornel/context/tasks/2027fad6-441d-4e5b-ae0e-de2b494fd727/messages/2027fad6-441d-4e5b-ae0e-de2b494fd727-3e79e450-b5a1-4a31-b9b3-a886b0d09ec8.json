@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 4,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Контракты Hole/ShotCommand получены. Остался один неизвестный момент для корректных assert'ов — направление шкалы `score` и правило выбора кандидата. Читаю только блок анализа/скоринга.\n\n```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-planner-scoring-33\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/ai/BotPlanner.ts:60-210\"]}\n```\n\nЖду RESULT от worker — он придёт отдельным сообщением в этот чат.\n\nСводка: подтверждено, что `Hole` содержит `bounds`, `cup`, `obstacles` (включая `water|void|reset-zone` с `penaltyStrokes`), а `ShotCommand` — `direction/normalizedPower/clientSequence/issuedAt`; этого достаточно, чтобы строить тестовую лунку с водой и стеной. Следующий шаг — `src/ai/planner.test.ts` (детерминизм по seed, ≥30 кандидатов, штрафы за hazard/OOB/obstacle, разница Rookie vs Legend), затем typecheck + vitest + build → publish → finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:52:09.173Z"
+}

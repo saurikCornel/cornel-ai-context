@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "Контракт типов AI подтверждён. Для теста планировщика нужно построить валидный `Hole` и проверить поля `ShotCommand` — читаю оба контракта одним запросом.\n\n```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-hole-shot-contracts-32\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/courses/types.ts:1-120\",\"src/contracts/game.ts:1-80\"]}\n```\n\nЖду RESULT от worker — он придёт отдельным сообщением в этот чат.\n\nСводка: `BotPlanningContext`/`BotPlan`/`PathAnalysis` подтверждены (hazardPenalty, outOfBounds, obstacleHits — есть, значит penalties можно проверять напрямую). Следующий шаг — написать `src/ai/planner.test.ts` по фактическим типам Hole/ShotCommand, затем typecheck + vitest + build → publish → finish.\n\n",
+  "summary": "Контракты Hole/ShotCommand получены. Остался один неизвестный момент для корректных assert'ов — направление шкалы `score` и правило выбора кандидата. Читаю только блок анализа/скоринга.\n\n```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-planner-scoring-33\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/ai/BotPlanner.ts:60-210\"]}\n```\n\nЖду RESULT от worker — он придёт отдельным сообщением в этот чат.\n\nСводка: подтверждено, что `Hole` содержит `bounds`, `cup`, `obstacles` (включая `water|void|reset-zone` с `penaltyStrokes`), а `ShotCommand` — `direction/normalizedPower/clientSequence/issuedAt`; этого достаточно, чтобы строить тестовую лунку с водой и стеной. Следующий шаг — `src/ai/planner.test.ts` (детерминизм по seed, ≥30 кандидатов, штрафы за hazard/OOB/obstacle, разница Rookie vs Legend), затем typecheck + vitest + build → publish → finish.\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -169,10 +169,16 @@
     },
     {
       "commandId": "read-hole-shot-contracts-32",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-planner-scoring-33",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:51:36.052Z"
+  "createdAt": "2026-09-16T18:52:09.176Z"
 }

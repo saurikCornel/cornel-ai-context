@@ -1,0 +1,11 @@
+{
+  "id": "785fd1e6-164e-45e3-bd5e-9d83dc626f3a",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-planner-scoring-33",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T18:52:09.173Z"
+}

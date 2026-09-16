@@ -1,0 +1,11 @@
+{
+  "id": "cf407fdb-3a6e-4d00-9d74-e570d675a233",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-planner-scoring-33",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T18:52:09.175Z"
+}
