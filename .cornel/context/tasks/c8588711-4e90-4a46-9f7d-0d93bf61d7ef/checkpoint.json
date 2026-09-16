@@ -2,8 +2,8 @@
   "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
   "branch": "cornel/validaciya-90-lunok-c85887",
   "headSha": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
-  "status": "NEEDS_ATTENTION",
-  "summary": "CORNEL_AI_BLOCKED: валидатор опубликован и готов к интеграции, но завершить карточку успешным finish сейчас нельзя: в назначенной ветке присутствуют только 9 курсов (81 лунка), а задача требует фактически подтвердить 10 курсов × 9 = 90 лунок.\n\nПроверки на текущем состоянии: typecheck — успешно; production build — успешно; проверки уникальности ID, геометрии, par/maxShots и поддерживаемых типов препятствий для имеющихся 81 лунок — успешно. Единственный оставшийся провал целевого теста — expected 10 courses, found 9.\n\nИзменён и опубликован только tests/course-data-validation.test.ts. Следующий шаг сборщика — слить ветку с десятым курсом и эту ветку, после чего повторно запустить npx vitest run tests/course-data-validation.test.ts.\n\n",
+  "status": "RUNNING",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"verify-published-validation-16\",\"operation\":\"run\",\"headSha\":\"397a7043ee8b73064049079e8e02d4df5b7b6d1a\",\"command\":\"npm run typecheck && npm run build && git status --short\",\"timeoutSeconds\":300}\n\nДопущение зафиксировано: моя карточка реализует и публикует валидатор; отсутствующий десятый курс является внешней зависимостью и не должен создаваться в этой ветке.\n\nСводка: tests/course-data-validation.test.ts опубликован; полный тест корректно требует 10×9=90 и сейчас обнаруживает 9×9=81. После успешной проверки опубликованного head отправлю finish с этим ограничением.\n\n",
   "commands": [
     {
       "commandId": "inspect-validation-1",
@@ -94,7 +94,13 @@
       "status": "SUCCEEDED",
       "headSha": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
       "exitCode": 0
+    },
+    {
+      "commandId": "verify-published-validation-16",
+      "status": "STARTED",
+      "headSha": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:21:16.119Z"
+  "createdAt": "2026-09-16T15:22:04.127Z"
 }
