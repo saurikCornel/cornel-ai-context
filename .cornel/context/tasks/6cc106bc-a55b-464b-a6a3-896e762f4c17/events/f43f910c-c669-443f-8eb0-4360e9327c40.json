@@ -1,0 +1,12 @@
+{
+  "id": "f43f910c-c669-443f-8eb0-4360e9327c40",
+  "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-published-core-7",
+    "operation": "run",
+    "command": "npm run typecheck && npm run build"
+  },
+  "createdAt": "2026-09-16T13:59:24.227Z"
+}

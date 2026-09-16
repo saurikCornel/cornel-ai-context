@@ -1,0 +1,17 @@
+{
+  "id": "660f8b32-f0c0-4833-a9b3-7e8ffb65d1bb",
+  "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "input-read-main-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "### src/main.ts (строки 1-32 из 32)\n1: import * as THREE from 'three';\n2: import { GAME_CONFIG } from './config/GameConfig';\n3: import './style.css';\n4: import { AppUI } from './ui';\n5: \n6: const root = document.querySelector<HTMLDivElement>('#app');\n7: if (!root) throw new Error('Missing #app bootstrap element');\n8: \n9: document.title = GAME_CONFIG.title;\n10: \n11: const renderer = new THREE.WebGLRenderer({ antialias: true });\n12: renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));\n13: renderer.setSize(window.innerWidth, window.innerHeight);\n14: root.append(renderer.domElement);\n15: const uiRoot = document.createElement('div');\n16: uiRoot.className = 'cpa-layer';\n17: root.append(uiRoot);\n18: new AppUI(uiRoot);\n19: \n20: const scene = new THREE.Scene();\n21: const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);\n22: camera.position.set(0, 2, 5);\n23: \n24: const resize = () => {\n25:   camera.aspect = window.innerWidth / window.innerHeight;\n26:   camera.updateProjectionMatrix();\n27:   renderer.setSize(window.innerWidth, window.innerHeight);\n28: };\n29: window.addEventListener('resize', resize);\n30: \n31: renderer.setAnimationLoop(() => renderer.render(scene, camera));\n32:",
+    "outputDigest": "c99f86abea3d0aa3e375ef7e6d5fd29b9cfe5289f18358ff6cf00a50d25c80ac",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T13:59:16.351Z"
+}
