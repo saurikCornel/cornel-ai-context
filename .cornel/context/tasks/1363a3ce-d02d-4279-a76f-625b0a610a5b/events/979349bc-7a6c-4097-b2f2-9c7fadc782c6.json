@@ -1,0 +1,17 @@
+{
+  "id": "979349bc-7a6c-4097-b2f2-9c7fadc782c6",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "triggers-write-types-9",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+    "output": "total 32\n-rw-r--r--@ 1 alex  staff  5031 Sep 16 21:03 types.ts\n-rw-r--r--@ 1 alex  staff  1759 Sep 16 21:03 vec.ts\n-rw-r--r--@ 1 alex  staff  1291 Sep 16 21:03 zones.ts\n",
+    "outputDigest": "413c0b8b02f0c1147b478baad09db014d3575237a12cbc446c5a803623234147",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:03:55.232Z"
+}
