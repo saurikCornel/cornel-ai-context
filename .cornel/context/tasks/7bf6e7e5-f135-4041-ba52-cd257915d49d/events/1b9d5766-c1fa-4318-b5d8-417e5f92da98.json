@@ -1,0 +1,17 @@
+{
+  "id": "1b9d5766-c1fa-4318-b5d8-417e5f92da98",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "install-deps",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "\nadded 84 packages, and audited 85 packages in 4s\n\n17 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n",
+    "outputDigest": "70eb154f0c8c62c23c9d5731566e696313775ca028e1b1877cf12352056994be",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:40:06.552Z"
+}
