@@ -1,0 +1,17 @@
+{
+  "id": "4bad1f7d-8323-43f4-98f8-6359403af308",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "run-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "== math.ts ==\nexport interface Vec2 { x: number; y: number }\nexport interface Vec3 { x: number; y: number; z: number }\nexport interface Quat { x: number; y: number; z: number; w: number }\n== GameConfig 1-60 ==\nexport const GAME_CONFIG = {\n  title: 'Crazy Putt Arena',\n  maxPlayers: 8,\n  targetFps: 60,\n  physics: {\n    gravity: { x: 0, y: -9.81, z: 0 },\n    ballRadius: 0.22,\n    ballMass: 0.045,\n    ballStopThreshold: 0.075,\n    sleepDelaySeconds: 0.6,\n    minShotPower: 0.6,\n    maxShotPower: 14,\n    maxBallSpeed: 24,\n    powerExponent: 1.65,\n  },\n} as const;\n\nexport type GameConfig = typeof GAME_CONFIG;\n== root ==\nAGENTS.md\nindex.html\npackage-lock.json\npackage.json\nsrc\ntests\ntsconfig.app.json\ntsconfig.json\ntsconfig.node.json\nvite.config.ts\n== vitest config ==\n== tsconfig.json ==\n{\n  \"files\": [],\n  \"references\": [{ \"path\": \"./tsconfig.app.json\" }, { \"path\": \"./tsconfig.node.json\" }]\n}\n== tsconfig refs ==\ntsconfig.app.json\ntsconfig.json\ntsconfig.node.json\n",
+    "outputDigest": "76fc476fedc81c4879fd19964e7fd279bfb281638dc7e32171941bb520980e5b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T22:00:25.750Z"
+}

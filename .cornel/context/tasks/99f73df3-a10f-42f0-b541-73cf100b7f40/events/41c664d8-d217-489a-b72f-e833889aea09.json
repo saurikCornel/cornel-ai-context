@@ -1,0 +1,12 @@
+{
+  "id": "41c664d8-d217-489a-b72f-e833889aea09",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "run-11",
+    "operation": "run",
+    "command": "echo '== math.ts =='; cat src/contracts/math.ts; echo '== GameConfig 1-60 =='; sed -n '1,60p' src/config/GameConfig.ts; echo '== root =='; ls -1; echo '== vitest config =='; cat vitest.config.* 2>/dev/null; echo '== tsconfig.json =='; cat tsconfig.json; echo '== tsconfig refs =='; ls -1 tsconfig*.json"
+  },
+  "createdAt": "2026-09-16T22:00:23.543Z"
+}
