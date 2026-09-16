@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Конфликт в одном файле. Читаю его.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"paths\":[\"src/camera/index.ts\"]}\n```\n\nЖду результат от worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:11:34.856Z"
+}
