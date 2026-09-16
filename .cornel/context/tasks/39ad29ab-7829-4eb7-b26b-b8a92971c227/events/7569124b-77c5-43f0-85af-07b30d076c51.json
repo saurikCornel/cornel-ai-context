@@ -1,0 +1,17 @@
+{
+  "id": "7569124b-77c5-43f0-85af-07b30d076c51",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-vite-config-15",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "### vite.config.ts (строки 1-7 из 7)\n1: import { defineConfig } from 'vite';\n2: \n3: export default defineConfig({\n4:   server: { host: true },\n5:   build: { target: 'es2022' },\n6: });\n7: \n\n### vitest.config.ts\n(нет файла)",
+    "outputDigest": "ff1dfd109d0b494b54c97cdefdb0462d6b36de1ec2141d6ebf7262a7285ef769",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:33:37.527Z"
+}
