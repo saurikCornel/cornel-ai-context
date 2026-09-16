@@ -1,0 +1,17 @@
+{
+  "id": "5c40d685-e89b-4e59-b51a-655552016169",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-gameplay-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+    "output": "src: 47 файлов\nsrc/app/GameState.ts\nsrc/config/GameConfig.ts\nsrc/contracts/events.ts\nsrc/contracts/game.ts\nsrc/contracts/index.ts\nsrc/contracts/math.ts\nsrc/contracts/services.ts\nsrc/core/SaveManager.ts\nsrc/courses/Course.ts\nsrc/courses/CourseBuilder.ts\nsrc/courses/Hole.ts\nsrc/courses/data/ancient-temple.ts\nsrc/courses/data/arctic-base.ts\nsrc/courses/data/candy-factory.ts\nsrc/courses/data/green-hills.ts\nsrc/courses/data/haunted-mansion.ts\nsrc/courses/data/neon-city.ts\nsrc/courses/data/pirate-bay.ts\nsrc/courses/data/space-station.ts\nsrc/courses/data/volcano.ts\nsrc/courses/types.ts\nsrc/leaderboard/Leaderboard.ts\nsrc/leaderboard/generator.ts\nsrc/leaderboard/index.ts\nsrc/leaderboard/style.css\nsrc/leaderboard/types.ts\nsrc/main.ts\nsrc/physics/CollisionLayers.ts\nsrc/physics/GolfBallPhysics.ts\nsrc/physics/PhysicsWorld.ts\nsrc/physics/ShotSystem.ts\nsrc/physics/helpers.ts\nsrc/physics/index.ts\nsrc/player/index.ts\nsrc/player/profile.ts\nsrc/player/progression.ts\nsrc/player/types.ts\nsrc/style.css\nsrc/ui/Hud.ts\nsrc/ui/Overlays.ts\nsrc/ui/Scoreboard.ts\nsrc/ui/dom.ts\nsrc/ui/domTests.ts\nsrc/ui/index.ts\nsrc/ui/types.ts\nsrc/ui/ui.css\nsrc/ui/ui.test.ts",
+    "outputDigest": "40755e3da04e6091273e2636d8a51946eaee02f4c3663d7d9a194a9ac47e3e02",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:22:36.023Z"
+}
