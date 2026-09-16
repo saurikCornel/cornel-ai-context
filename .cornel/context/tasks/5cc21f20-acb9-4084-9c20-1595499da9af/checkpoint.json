@@ -3,14 +3,20 @@
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"input-inventory-1\",\"operation\":\"ls\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"path\":\"src\",\"maxLines\":400}\n\nЖду результат worker; он придёт сюда отдельным сообщением. После инвентаризации перейду к точечному чтению нужных файлов, не затрагивая gameplay/AI/course definitions.\n\nСводка: решение — сначала проверить фактическую структуру ветки; изменённые файлы — пока нет; проверки — пока нет; следующий шаг — определить существующие контракты input/debug/UI и тестовый стек по результату ls.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"input-read-core-2\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/main.ts:1-260\",\"src/config/GameConfig.ts:1-260\",\"src/contracts/services.ts:1-320\",\"src/contracts/events.ts:1-280\",\"src/ui/dom.ts:1-320\",\"src/ui/types.ts:1-260\",\"src/style.css:1-320\",\"package.json:1-240\"]}\n\nСводка: найден подходящий путь — отдельные input/ и dev/ модули с минимальной интеграцией через существующий bootstrap; изменённых файлов пока нет. Следующий шаг — по прочитанным контрактам определить API InputManager, способ включения query-параметров/F-клавиш и тестовый каркас.\n\n",
   "commands": [
     {
       "commandId": "input-inventory-1",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "input-read-core-2",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:53:47.578Z"
+  "createdAt": "2026-09-16T13:55:10.736Z"
 }
