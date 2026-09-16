@@ -3,7 +3,7 @@
   "branch": "cornel/moving-obstacles-b2152d",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "WAITING_CHATGPT",
-  "summary": "",
+  "summary": "Фактический статус: задача не завершена. Последняя отправленная команда — mo-2-inspect; RESULT для неё в доступном журнале/Issue отсутствует. Реализация Pendulum, MovingPlatform, SlidingWall, targeted-тесты, typecheck, build, publish и finish после неё не подтверждены.\n\nУспешный mo-1-install повторять не буду. Новую worker-команду сейчас тоже не отправляю: по протоколу сначала должен появиться RESULT либо UNKNOWN для уже отправленной mo-2-inspect. UNKNOWN не зафиксирован, ошибки для исправления тоже пока нет.\n\nСледующий шаг после RESULT mo-2-inspect: при SUCCEEDED — продолжить реализацию; при FAILED/REJECTED — исправить конкретную причину новым commandId; при UNKNOWN — остановиться для проверки владельцем.\n\n",
   "commands": [
     {
       "commandId": "mo-1-install",
@@ -12,5 +12,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T18:59:29.809Z"
+  "createdAt": "2026-09-16T19:02:54.454Z"
 }
