@@ -2,7 +2,7 @@
   "id": "523b3cab-c4f9-416d-80c7-1c9ffff3a07f",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "qwen",
+  "agent": "claude",
   "attachments": [],
   "office": {
     "kind": "manager",
@@ -18,19 +18,19 @@
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T12:42:51.284Z",
-  "updatedAt": "2026-09-16T23:20:38.737Z",
+  "updatedAt": "2026-09-16T23:21:49.124Z",
   "issue": 37,
-  "chatUrl": "https://chat.qwen.ai/c/d10e1efe-18c7-446a-a6e6-823ba6179366",
+  "chatUrl": null,
   "error": null,
   "intentRevision": 28,
   "statusChecks": 0,
   "browserError": null,
   "browserErrorJobId": "523b3cab-c4f9-416d-80c7-1c9ffff3a07f-handback-33fb25bc",
   "attentionReason": null,
-  "chatUrlBefore": "https://chatgpt.com/c/6aaa8ed4-367c-83ed-a7b6-2d71b54d3a8a",
+  "chatUrlBefore": "https://chat.qwen.ai/c/d10e1efe-18c7-446a-a6e6-823ba6179366",
   "chatEpoch": 1,
   "appliedEffort": null,
   "effortFailed": null,
   "cliSession": null,
-  "cliActivity": null
+  "cliActivity": "Claude CLI: начал ход (claude-opus-5)"
 }
