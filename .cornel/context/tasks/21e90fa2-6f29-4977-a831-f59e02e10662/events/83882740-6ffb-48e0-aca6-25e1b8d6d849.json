@@ -1,0 +1,12 @@
+{
+  "id": "83882740-6ffb-48e0-aca6-25e1b8d6d849",
+  "taskId": "21e90fa2-6f29-4977-a831-f59e02e10662",
+  "type": "HANDOVER",
+  "text": "Чат передан Codex CLI",
+  "detail": {
+    "from": "chatgpt",
+    "to": "codex",
+    "cancelled": 1
+  },
+  "createdAt": "2026-09-16T15:50:44.232Z"
+}

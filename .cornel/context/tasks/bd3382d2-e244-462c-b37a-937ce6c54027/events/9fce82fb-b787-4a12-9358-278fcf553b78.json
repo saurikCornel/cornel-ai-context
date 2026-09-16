@@ -1,0 +1,11 @@
+{
+  "id": "9fce82fb-b787-4a12-9358-278fcf553b78",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-checkpoint-1",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T15:50:49.874Z"
+}
