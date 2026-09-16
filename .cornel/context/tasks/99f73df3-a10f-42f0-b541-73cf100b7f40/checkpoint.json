@@ -3,7 +3,7 @@
   "branch": "cornel/door-obstacle-99f73d",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Каталога `src/obstacles` нет. Ищу, где определён контракт препятствий.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"grep-1\",\"operation\":\"grep\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"pattern\":\"Obstacle|obstacle\",\"path\":\"src\"}\n```\n\nЖду результат от worker.\n\n",
+  "summary": "Результат для `run-1` не пришёл — отправляю заново с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"run-2\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"find src -type f | sort\",\"timeoutSeconds\":120}\n```\n\nЖду результат от worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "grep-1",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "run-2",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:40:46.926Z"
+  "createdAt": "2026-09-16T19:41:48.406Z"
 }
