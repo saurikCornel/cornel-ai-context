@@ -1,0 +1,11 @@
+{
+  "id": "7d3c8e8c-cc4a-44db-94f9-38b66095c393",
+  "taskId": "b2152d4a-a321-46fc-879e-511d2743bc8a",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "mo-1-install",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T18:58:08.337Z"
+}

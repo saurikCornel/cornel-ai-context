@@ -1,0 +1,17 @@
+{
+  "id": "066a1fd2-58ad-4a26-a3d7-d8b28b70d279",
+  "taskId": "b2152d4a-a321-46fc-879e-511d2743bc8a",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "mo-1-install",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "install exit: 0\ncoarena.d.ts\ncontrol\ndynamics\nexports.d.ts\ngeometry\ninit.d.ts\nmath.d.ts\npackage.json\npipeline\nrapier.cjs.js\nrapier.cjs.js.map\nrapier.d.ts\nrapier.es.js\nrapier.es.js.map\nrapier_wasm3d.d.ts\nrapier_wasm3d.js\nrapier_wasm3d_bg.wasm\nrapier_wasm3d_bg.wasm.d.ts\nraw.d.ts\n--- api ---\n",
+    "outputDigest": "f993e897c1a8c0f6e6245d6fa413d8c4e6b3e0ed92ebd9aea0263a2c37751d9b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:58:12.876Z"
+}

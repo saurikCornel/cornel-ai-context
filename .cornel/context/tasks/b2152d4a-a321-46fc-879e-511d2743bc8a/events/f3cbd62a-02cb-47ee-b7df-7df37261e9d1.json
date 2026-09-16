@@ -1,0 +1,11 @@
+{
+  "id": "f3cbd62a-02cb-47ee-b7df-7df37261e9d1",
+  "taskId": "b2152d4a-a321-46fc-879e-511d2743bc8a",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "mo-1-install",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T18:58:10.661Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "430cf9ff-700c-4f80-9d0e-3ae747dc14e4",
+  "taskId": "b2152d4a-a321-46fc-879e-511d2743bc8a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "mo-1-install",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund >/dev/null 2>&1; echo \"install exit: $?\"; ls node_modules/@dimforge/rapier3d-compat/ | head -20; echo '--- api ---'; grep -n \"kinematicPositionBased\\|setNextKinematicTranslation\\|setNextKinematicRotation\\|setEnabled(\\|removeRigidBody\\|removeCollider\" node_modules/@dimforge/rapier3d-compat/rapier.d.ts | head -40"
+  },
+  "createdAt": "2026-09-16T18:58:08.337Z"
+}
