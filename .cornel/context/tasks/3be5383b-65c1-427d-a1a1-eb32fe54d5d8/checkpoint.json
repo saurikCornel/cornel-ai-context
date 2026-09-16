@@ -3,7 +3,7 @@
   "branch": "cornel/gameplay-state-scoring-and-hole-flow-3be538",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"3be5383b-65c1-427d-a1a1-eb32fe54d5d8\",\"commandId\":\"inspect-after-core-7\",\"operation\":\"ls\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"path\":\"src/gameplay\",\"maxLines\":100}\n\nСводка: причина сбоя — отсутствующий node_modules, а не TypeScript-ошибка; базовые gameplay-файлы были записаны до проверки. Следующий шаг — подтвердить их наличие, установить зависимости и завершить оставшиеся модули и тесты.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"3be5383b-65c1-427d-a1a1-eb32fe54d5d8\",\"commandId\":\"implement-gameplay-support-8\",\"operation\":\"run\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"command\":\"npm install && cat > src/gameplay/HoleSystem.ts <<'EOF'\\nimport type { PlayerId } from '../contracts/game';\\nimport type { Vec3 } from '../contracts/math';\\nimport type { HazardObstacle, Hole } from '../courses/types';\\n\\nexport interface HazardResolution {\\n  playerId: PlayerId;\\n  resetPosition: Vec3;\\n  penaltyStrokes: number;\\n}\\n\\nexport class HoleSystem {\\n  private readonly lastSafePositions = new Map<PlayerId, Vec3>();\\n\\n  constructor(private readonly maxCupCaptureSpeed = 1.5) {}\\n\\n  setInitialSafePosition(playerId: PlayerId, position: Vec3): void {\\n    this.lastSafePositions.set(playerId, { ...position });\\n  }\\n\\n  markSafePosition(playerId: PlayerId, position: Vec3): void {\\n    this.lastSafePositions.set(playerId, { ...position });\\n  }\\n\\n  getLastSafePosition(playerId: PlayerId, fallback: Vec3): Vec3 {\\n    return { ...(this.lastSafePositions.get(playerId) ?? fallback) };\\n  }\\n\\n  isBallHoled(hole: Hole, position: Vec3, speed: number): boolean {\\n    if (speed > this.maxCupCaptureSpeed) return false;\\n    const dx = position.x - hole.cup.position.x;\\n    const dz = position.z - hole.cup.position.z;\\n    const horizontalDistance = Math.hypot(dx, dz);\\n    const verticalDelta = position.y - hole.cup.position.y;\\n    return horizontalDistance <= hole.cup.radius && verticalDelta <= hole.cup.captureDepth && verticalDelta >= -hole.cup.captureDepth;\\n  }\\n\\n  isOutsideBounds(hole: Hole, position: Vec3): boolean {\\n    return position.x < hole.bounds.min.x || position.x > hole.bounds.max.x ||\\n      position.y < hole.bounds.min.y || position.y > hole.bounds.max.y ||\\n      position.z < hole.bounds.min.z || position.z > hole.bounds.max.z;\\n  }\\n\\n  resolveHazard(playerId: PlayerId, hole: Hole, hazard?: HazardObstacle): HazardResolution {\\n    return {\\n      playerId,\\n      resetPosition: this.getLastSafePosition(playerId, hole.spawn),\\n      penaltyStrokes: hazard?.penaltyStrokes ?? 1,\\n    };\\n  }\\n}\\nEOF\\ncat > src/gameplay/ShotSystemAdapter.ts <<'EOF'\\nimport type { SimulationService } from '../contracts/services';\\nimport type { GameplayShotRequest } from './types';\\n\\nexport interface ShotValidationResult {\\n  accepted: boolean;\\n  reason?: string;\\n}\\n\\nexport class ShotSystemAdapter {\\n  constructor(\\n    private readonly simulation: SimulationService,\\n    private readonly stopThreshold: number,\\n  ) {}\\n\\n  submit(request: GameplayShotRequest): ShotValidationResult {\\n    const { command, phase, activePlayerId, ballSpeed } = request;\\n    if (phase !== 'aiming') return { accepted: false, reason: 'match-not-aiming' };\\n    if (activePlayerId !== command.playerId) return { accepted: false, reason: 'not-active-player' };\\n    if (ballSpeed > this.stopThreshold) return { accepted: false, reason: 'ball-moving' };\\n    if (!(command.normalizedPower > 0 && command.normalizedPower <= 1)) return { accepted: false, reason: 'invalid-power' };\\n    return this.simulation.submitShot(command)\\n      ? { accepted: true }\\n      : { accepted: false, reason: 'simulation-rejected' };\\n  }\\n}\\nEOF\\ncat > src/gameplay/index.ts <<'EOF'\\nexport * from './HoleSystem';\\nexport * from './MatchManager';\\nexport * from './ScoreManager';\\nexport * from './ShotSystemAdapter';\\nexport * from './StateMachine';\\nexport * from './TurnManager';\\nexport * from './types';\\nEOF\\nnpm run typecheck\",\"timeoutSeconds\":300}\n\nЖду результат worker. Если типизация пройдёт, следующим шагом добавлю MatchManager и тесты gameplay-flow.\n\n",
   "commands": [
     {
       "commandId": "inspect-gameplay-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "inspect-after-core-7",
+      "status": "SUCCEEDED",
+      "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+      "exitCode": 0
+    },
+    {
+      "commandId": "implement-gameplay-support-8",
       "status": "STARTED",
       "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T12:27:24.166Z"
+  "createdAt": "2026-09-16T12:28:00.166Z"
 }

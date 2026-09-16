@@ -1,0 +1,17 @@
+{
+  "id": "cb3e07fb-a1ef-409c-8186-1428b7a37db9",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "implement-gameplay-support-8",
+    "status": "FAILED",
+    "exitCode": 2,
+    "reason": null,
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+    "output": "\nadded 84 packages, and audited 85 packages in 6s\n\n17 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsrc/gameplay/index.ts(2,15): error TS2307: Cannot find module './MatchManager' or its corresponding type declarations.\n",
+    "outputDigest": "b25b42d557254a5e51f1fb59b9961a8f28d7f0cda59a78331cc8ee34cb3f260d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:28:11.907Z"
+}
