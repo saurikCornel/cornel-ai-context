@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-domain-model-5\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/courses/types.ts\",\"src/courses/Hole.ts\",\"src/contracts/game.ts\",\"src/contracts/math.ts\",\"src/gameplay/types.ts\",\"src/gameplay/MatchManager.ts\",\"src/gameplay/TurnManager.ts\",\"src/physics/ShotSystem.ts\",\"src/physics/helpers.ts\",\"src/leaderboard/types.ts\",\"src/leaderboard/Leaderboard.ts\",\"tsconfig.json\",\"vite.config.ts\"]}\n```\n\nСводка: физический удар принимает горизонтальное направление и нормированную `charge`; AI будет выдавать независимую `ShotCommand`, не обращаясь к вводу или физическому телу. Изменений нет. Следующий шаг — уточнить геометрию лунок и тестовую конфигурацию перед реализацией модулей.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:14:07.928Z"
+}

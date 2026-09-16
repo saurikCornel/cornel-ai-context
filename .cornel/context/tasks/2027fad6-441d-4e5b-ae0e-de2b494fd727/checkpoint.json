@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-integration-4\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"package.json\",\"src/courses/types.ts\",\"src/courses/Hole.ts\",\"src/contracts/game.ts\",\"src/contracts/math.ts\",\"src/gameplay/types.ts\",\"src/gameplay/MatchManager.ts\",\"src/gameplay/TurnManager.ts\",\"src/physics/ShotSystem.ts\",\"src/physics/GolfBallPhysics.ts\",\"src/config/GameConfig.ts\",\"src/player/types.ts\",\"src/player/profile.ts\",\"src/gameplay/index.ts\",\"src/physics/index.ts\"]}\n```\n\nСводка: поиск по предполагаемым именам не дал совпадений — AI и рейтинг действительно следует вводить как новые, изолированные контракты. Изменений нет. Следующий шаг — согласовать новые типы с фактической моделью лунки, удара и матча.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-domain-model-5\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/courses/types.ts\",\"src/courses/Hole.ts\",\"src/contracts/game.ts\",\"src/contracts/math.ts\",\"src/gameplay/types.ts\",\"src/gameplay/MatchManager.ts\",\"src/gameplay/TurnManager.ts\",\"src/physics/ShotSystem.ts\",\"src/physics/helpers.ts\",\"src/leaderboard/types.ts\",\"src/leaderboard/Leaderboard.ts\",\"tsconfig.json\",\"vite.config.ts\"]}\n```\n\nСводка: физический удар принимает горизонтальное направление и нормированную `charge`; AI будет выдавать независимую `ShotCommand`, не обращаясь к вводу или физическому телу. Изменений нет. Следующий шаг — уточнить геометрию лунок и тестовую конфигурацию перед реализацией модулей.  \n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "read-integration-4",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-domain-model-5",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:10:06.255Z"
+  "createdAt": "2026-09-16T16:14:07.932Z"
 }
