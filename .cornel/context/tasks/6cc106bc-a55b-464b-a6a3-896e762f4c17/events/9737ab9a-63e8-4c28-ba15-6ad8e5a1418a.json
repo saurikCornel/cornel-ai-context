@@ -1,0 +1,17 @@
+{
+  "id": "9737ab9a-63e8-4c28-ba15-6ad8e5a1418a",
+  "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "remote-head-check-10",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
+    "output": "5c034e09eb377a457c5c04648fd28dbe3602e3a2\trefs/heads/cornel/core-rendering-and-scene-infrastructure-6cc106\n",
+    "outputDigest": "5e89a3ca3dc3ca1bfb4537b428e1176fe32d384711b31c016ccdc606426336c2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T14:23:39.486Z"
+}

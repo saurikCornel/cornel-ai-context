@@ -3,7 +3,7 @@
   "branch": "cornel/validaciya-90-lunok-c85887",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-8\",\"operation\":\"grep\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"pattern\":\"maxShots|strokeLimitPerHole|strokeLimit|max-shots|max shots\",\"path\":\"src\"}\n\nСводка: подтвердил, что Hole и CourseBuilder не содержат maxShots; изменённых файлов пока нет. Следующий шаг — привязать проверку лимита к реальному источнику конфигурации и затем сразу добавить data-validation test.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-9\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/config/GameConfig.ts:1-220\",\"src/gameplay/types.ts:1-220\",\"src/contracts/game.ts:1-220\"]}\n\nСводка: структура курсов и obstacle types уже подтверждены; осталось установить реальный источник maxShots/strokeLimitPerHole. Следующий шаг — создать тестовый файл и сразу перейти к целевому запуску.\n\n",
   "commands": [
     {
       "commandId": "inspect-validation-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "inspect-validation-8",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-validation-9",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T14:01:16.528Z"
+  "createdAt": "2026-09-16T14:23:38.827Z"
 }
