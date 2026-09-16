@@ -1,0 +1,12 @@
+{
+  "id": "9d74577d-0ecd-42da-858f-da1ab7c42288",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "restore-vite-config-22",
+    "operation": "run",
+    "command": "cat > vite.config.ts <<'EOF'\nimport { defineConfig } from 'vite';\n\nexport default defineConfig({\n  server: { host: true },\n  build: { target: 'es2022' },\n});\nEOF"
+  },
+  "createdAt": "2026-09-16T21:57:07.970Z"
+}
