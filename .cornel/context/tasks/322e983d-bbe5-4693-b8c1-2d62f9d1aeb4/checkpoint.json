@@ -3,14 +3,20 @@
   "branch": "cornel/rotating-obstacles-322e98",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "rot-obstacles-1 не повторяю. По checkpoint задача всё ещё на исходном head и в состоянии WAITING_CHATGPT; следующий безопасный шаг — проверить созданные локально файлы src/obstacles через worker, не меняя код и не повторяя запись.\n\nJSON\n{\"version\":1,\"taskId\":\"322e983d-bbe5-4693-b8c1-2d62f9d1aeb4\",\"commandId\":\"rot-obstacles-inspect-2\",\"operation\":\"ls\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"path\":\"src/obstacles\",\"maxLines\":200}\n\nСводка: решение — не повторять уже отправленную реализацию; изменённые файлы пока не объявляю подтверждёнными до ответа worker; проверки ещё не подтверждены; следующий шаг после RESULT — точечно прочитать созданные файлы/ошибки и затем запустить targeted-тесты, typecheck и build.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"322e983d-bbe5-4693-b8c1-2d62f9d1aeb4\",\"commandId\":\"rot-obstacles-contracts-3\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/courses/types.ts:1-260\",\"src/contracts/math.ts:1-220\",\"src/physics/index.ts:1-220\",\"src/physics/RapierPhysics.ts:1-300\",\"package.json:1-220\",\"tsconfig.json:1-220\"]}\n\nСводка: src/obstacles подтверждённо пуст, поэтому реализацию ещё нельзя считать созданной. Следующий шаг после чтения контрактов — заново записать RotatingBar, Windmill, Spinner, общий lifecycle/Rapier-адаптер и targeted-тесты, затем выполнить test/typecheck/build.\n\n",
   "commands": [
     {
       "commandId": "rot-obstacles-inspect-2",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "rot-obstacles-contracts-3",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:18:17.085Z"
+  "createdAt": "2026-09-16T19:20:26.911Z"
 }

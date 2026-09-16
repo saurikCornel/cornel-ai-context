@@ -1,0 +1,11 @@
+{
+  "id": "40fd3546-c8e4-4ed4-9ad8-ade3ba3abdc7",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "rot-obstacles-contracts-3",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T19:20:26.909Z"
+}
