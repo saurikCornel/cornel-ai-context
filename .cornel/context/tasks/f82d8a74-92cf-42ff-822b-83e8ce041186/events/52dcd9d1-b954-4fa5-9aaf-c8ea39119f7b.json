@@ -1,0 +1,11 @@
+{
+  "id": "52dcd9d1-b954-4fa5-9aaf-c8ea39119f7b",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-smoothing-publish",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:33:12.109Z"
+}

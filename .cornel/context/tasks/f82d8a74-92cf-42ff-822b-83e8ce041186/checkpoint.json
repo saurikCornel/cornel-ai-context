@@ -3,7 +3,7 @@
   "branch": "cornel/camera-smoothing-transitions-f82d8a",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "Всё зелёное: `tsc -b` без ошибок, 28/28 тестов (`src/camera`). Прогоняю соседние наборы как регрессию перед публикацией.\n\n```json\n{\n  \"version\": 1,\n  \"taskId\": \"f82d8a74-92cf-42ff-822b-83e8ce041186\",\n  \"commandId\": \"camera-regression-suites\",\n  \"operation\": \"run\",\n  \"headSha\": \"77b38d1780726161f87e511138beae87cceeb098\",\n  \"command\": \"set -e\\nnpm run test:ui\\nnpm run test:input\\ngit status --short\"\n}\n```\n\n",
+  "summary": "Регрессия чистая (ui 5/5, input+dev 5/5), `node_modules` под .gitignore. Публикую.\n\n```json\n{\n  \"version\": 1,\n  \"taskId\": \"f82d8a74-92cf-42ff-822b-83e8ce041186\",\n  \"commandId\": \"camera-smoothing-publish\",\n  \"operation\": \"publish\",\n  \"headSha\": \"77b38d1780726161f87e511138beae87cceeb098\",\n  \"message\": \"Implement camera smoothing and transitions\\n\\nAdd a renderer-agnostic smoothing layer under src/camera:\\n- Easing: named curves plus resolveEasing with a safe fallback\\n- Smoothing: frame-rate independent damping, shortest-arc angle damping,\\n  critically damped springs (smoothDamp/smoothDampVec3) and a frame delta\\n  clamp so a stalled tab cannot teleport the camera\\n- CameraPose: position/target/fov pose with lerp and distance helpers\\n- CameraTransition: timed blend from a frozen start pose toward a live\\n  destination, interruptible and restartable without a jump\\n- SmoothCameraRig: springs + transitions + the existing collision resolver,\\n  handing transition momentum to the springs on completion\\n- ThreeCameraBinding: apply/read a pose on a THREE.PerspectiveCamera\\n\\nCamera modes stay out of scope; the rig takes a desired pose per frame.\\nCovered by src/camera/CameraSmoothing.test.ts (23 tests) and a test:camera script.\"\n}\n```\n\n",
   "commands": [
     {
       "commandId": "camera-easing-file",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "camera-regression-suites",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "camera-smoothing-publish",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:32:12.540Z"
+  "createdAt": "2026-09-16T16:33:12.110Z"
 }

@@ -1,0 +1,11 @@
+{
+  "id": "cd51aa79-e251-4b6a-9c31-1bdf73662eb7",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "camera-smoothing-publish",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:33:14.462Z"
+}

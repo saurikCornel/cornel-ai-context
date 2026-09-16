@@ -1,0 +1,11 @@
+{
+  "id": "2536cedd-a314-47f3-8169-2631108e3ef0",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "fix-particle-test-10",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:33:11.919Z"
+}

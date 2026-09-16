@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Регрессия чистая (ui 5/5, input+dev 5/5), `node_modules` под .gitignore. Публикую.\n\n```json\n{\n  \"version\": 1,\n  \"taskId\": \"f82d8a74-92cf-42ff-822b-83e8ce041186\",\n  \"commandId\": \"camera-smoothing-publish\",\n  \"operation\": \"publish\",\n  \"headSha\": \"77b38d1780726161f87e511138beae87cceeb098\",\n  \"message\": \"Implement camera smoothing and transitions\\n\\nAdd a renderer-agnostic smoothing layer under src/camera:\\n- Easing: named curves plus resolveEasing with a safe fallback\\n- Smoothing: frame-rate independent damping, shortest-arc angle damping,\\n  critically damped springs (smoothDamp/smoothDampVec3) and a frame delta\\n  clamp so a stalled tab cannot teleport the camera\\n- CameraPose: position/target/fov pose with lerp and distance helpers\\n- CameraTransition: timed blend from a frozen start pose toward a live\\n  destination, interruptible and restartable without a jump\\n- SmoothCameraRig: springs + transitions + the existing collision resolver,\\n  handing transition momentum to the springs on completion\\n- ThreeCameraBinding: apply/read a pose on a THREE.PerspectiveCamera\\n\\nCamera modes stay out of scope; the rig takes a desired pose per frame.\\nCovered by src/camera/CameraSmoothing.test.ts (23 tests) and a test:camera script.\"\n}\n```\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:33:12.108Z"
+}

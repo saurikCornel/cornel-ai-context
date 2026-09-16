@@ -1,0 +1,12 @@
+{
+  "id": "f065a267-8dd7-491b-b154-eaf3564ba7cf",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "fix-particle-test-10",
+    "operation": "run",
+    "command": "perl -0pi -e 's/manager\\.update\\(0\\.05\\);/manager.update(0.051);/' src/effects/ParticleManager.test.ts\nnpx vitest run src/effects/ParticleManager.test.ts && npm run typecheck && npm run build"
+  },
+  "createdAt": "2026-09-16T16:33:11.918Z"
+}
