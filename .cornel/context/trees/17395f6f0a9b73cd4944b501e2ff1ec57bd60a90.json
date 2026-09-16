@@ -1,0 +1,31 @@
+{
+  "headSha": "17395f6f0a9b73cd4944b501e2ff1ec57bd60a90",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "src/app/GameState.ts",
+    "src/config/GameConfig.ts",
+    "src/contracts/events.ts",
+    "src/contracts/game.ts",
+    "src/contracts/index.ts",
+    "src/contracts/math.ts",
+    "src/contracts/services.ts",
+    "src/courses/Course.ts",
+    "src/courses/CourseBuilder.ts",
+    "src/courses/Hole.ts",
+    "src/courses/data/haunted-mansion.ts",
+    "src/courses/data/neon-city.ts",
+    "src/courses/data/space-station.ts",
+    "src/courses/types.ts",
+    "src/main.ts",
+    "src/style.css",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "vite.config.ts"
+  ]
+}

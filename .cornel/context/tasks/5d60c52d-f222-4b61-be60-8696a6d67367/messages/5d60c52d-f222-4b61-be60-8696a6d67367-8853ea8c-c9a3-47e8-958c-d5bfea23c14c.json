@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикация успешна. Карточка выполнена: добавлены три независимых курса — Neon City, Haunted Mansion и Space Station, по 9 оригинальных лунок каждый. Проверены typecheck, production build, количество 9+9+9 и уникальность всех 27 идентификаторов. PR по инструкции карточки не требуется — ветку заберёт сборщик.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"finish-courses-13\",\"operation\":\"finish\",\"headSha\":\"17395f6f0a9b73cd4944b501e2ff1ec57bd60a90\",\"message\":\"Готово: добавлены независимые course data модули Neon City, Haunted Mansion и Space Station — ровно по 9 оригинальных лунок, всего 27. Сложность постепенно растёт; используются существующие descriptors для static/moving obstacles, gates, spinners, moving platforms, water/void/reset hazards и тематических поверхностей. Проверки успешны: npm run typecheck, npm run build, 9+9+9 лунок, все 27 hole ID уникальны. Изменения ограничены src/courses/data/. PR не создавался согласно инструкции карточки.\"}\n\nСводка: решение реализовано и опубликовано; изменены только три course-data файла; все предусмотренные проверки успешны; следующий шаг — слияние ветки сборщиком.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T11:58:02.256Z"
+}

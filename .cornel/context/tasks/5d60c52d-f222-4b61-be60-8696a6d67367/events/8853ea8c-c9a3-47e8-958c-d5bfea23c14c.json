@@ -1,0 +1,17 @@
+{
+  "id": "8853ea8c-c9a3-47e8-958c-d5bfea23c14c",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "publish-courses-12",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "17395f6f0a9b73cd4944b501e2ff1ec57bd60a90",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:57:48.267Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "21a2c723-06bf-4921-9a10-d8f97b464684",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "sync-head-1",
+    "operation": "run",
+    "command": "git rev-parse HEAD; git status --short"
+  },
+  "createdAt": "2026-09-16T11:57:49.169Z"
+}

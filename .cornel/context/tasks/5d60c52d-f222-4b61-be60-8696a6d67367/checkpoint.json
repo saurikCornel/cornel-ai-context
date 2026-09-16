@@ -1,9 +1,9 @@
 {
   "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
   "branch": "cornel/5d60c52d-f222-4b61-be60-8696a6d67367",
-  "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+  "headSha": "17395f6f0a9b73cd4944b501e2ff1ec57bd60a90",
   "status": "RUNNING",
-  "summary": "Финальная проверка полностью успешна: typecheck и production build проходят; три назначенных файла содержат ровно 9+9+9 лунок, все 27 hole ID уникальны; изменений вне src/courses/data/ нет. Публикую проверенный результат в назначенную ветку.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"publish-courses-12\",\"operation\":\"publish\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"message\":\"Add Neon City, Haunted Mansion and Space Station courses\"}\n\nСводка: готовы neon-city.ts, haunted-mansion.ts, space-station.ts; всего 27 оригинальных лунок с тематическими static/moving/hazard механиками и ростом сложности; npm run typecheck и npm run build успешны; уникальность 27 ID проверена. После подтверждения publish останется отправить finish.\n\n",
+  "summary": "Публикация успешна. Карточка выполнена: добавлены три независимых курса — Neon City, Haunted Mansion и Space Station, по 9 оригинальных лунок каждый. Проверены typecheck, production build, количество 9+9+9 и уникальность всех 27 идентификаторов. PR по инструкции карточки не требуется — ветку заберёт сборщик.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"finish-courses-13\",\"operation\":\"finish\",\"headSha\":\"17395f6f0a9b73cd4944b501e2ff1ec57bd60a90\",\"message\":\"Готово: добавлены независимые course data модули Neon City, Haunted Mansion и Space Station — ровно по 9 оригинальных лунок, всего 27. Сложность постепенно растёт; используются существующие descriptors для static/moving obstacles, gates, spinners, moving platforms, water/void/reset hazards и тематических поверхностей. Проверки успешны: npm run typecheck, npm run build, 9+9+9 лунок, все 27 hole ID уникальны. Изменения ограничены src/courses/data/. PR не создавался согласно инструкции карточки.\"}\n\nСводка: решение реализовано и опубликовано; изменены только три course-data файла; все предусмотренные проверки успешны; следующий шаг — слияние ветки сборщиком.\n\n",
   "commands": [
     {
       "commandId": "inspect-courses-1",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "publish-courses-12",
+      "status": "SUCCEEDED",
+      "headSha": "17395f6f0a9b73cd4944b501e2ff1ec57bd60a90",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-courses-13",
       "status": "STARTED",
-      "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+      "headSha": "17395f6f0a9b73cd4944b501e2ff1ec57bd60a90",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T11:57:42.374Z"
+  "createdAt": "2026-09-16T11:58:02.269Z"
 }

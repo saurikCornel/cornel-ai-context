@@ -1,0 +1,17 @@
+{
+  "id": "ce88d057-0f63-4ca6-a3c1-d573ed29a63f",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "sync-head-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f9d45eaac1309251d846cf98819c37739dd5cb87",
+    "output": "f9d45eaac1309251d846cf98819c37739dd5cb87\n",
+    "outputDigest": "3c7d6c04ce6cb6768bdc1f4152698faa560dbacf4ebc77c18aeca2a3fe7ea8ce",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:57:52.420Z"
+}
