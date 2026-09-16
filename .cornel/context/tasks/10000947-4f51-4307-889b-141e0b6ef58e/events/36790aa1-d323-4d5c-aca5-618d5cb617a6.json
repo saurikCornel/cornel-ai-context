@@ -1,0 +1,12 @@
+{
+  "id": "36790aa1-d323-4d5c-aca5-618d5cb617a6",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-and-verify-8",
+    "operation": "run",
+    "command": "set -e\nif test -f package-lock.json; then npm ci; else npm install; fi\nnpm run typecheck\nnpm run test:camera\nnpm run test:ui\nnpm run test:input\nnpm run build\necho '--- STATUS ---'\ngit status --short\necho '--- UNMERGED ---'\ngit diff --name-only --diff-filter=U"
+  },
+  "createdAt": "2026-09-16T18:13:36.732Z"
+}

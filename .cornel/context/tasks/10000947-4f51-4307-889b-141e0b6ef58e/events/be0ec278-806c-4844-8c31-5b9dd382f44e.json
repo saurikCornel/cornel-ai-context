@@ -1,0 +1,11 @@
+{
+  "id": "be0ec278-806c-4844-8c31-5b9dd382f44e",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "install-and-verify-8",
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a"
+  },
+  "createdAt": "2026-09-16T18:13:36.733Z"
+}
