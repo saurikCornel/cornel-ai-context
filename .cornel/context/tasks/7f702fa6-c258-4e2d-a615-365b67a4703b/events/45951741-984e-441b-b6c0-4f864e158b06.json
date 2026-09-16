@@ -1,0 +1,17 @@
+{
+  "id": "45951741-984e-441b-b6c0-4f864e158b06",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-contracts-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "### src/contracts/game.ts (строки 1-65 из 65)\n1: import type { Vec3 } from './math';\n2: import type { Course, Hole } from '../courses/types';\n3: \n4: export type PlayerId = string;\n5: export type MatchId = string;\n6: export type ControlScheme = 'drag-power' | 'hold-to-charge';\n7: export type PlayerKind = 'human' | 'bot' | 'remote';\n8: export type MatchPhase = 'lobby' | 'hole-intro' | 'aiming' | 'simulating' | 'hole-results' | 'match-results' | 'paused';\n9: \n10: export interface PlayerProfile {\n11:   id: PlayerId;\n12:   displayName: string;\n13:   kind: PlayerKind;\n14:   ballStyleId: string;\n15:   rating: number;\n16: }\n17: \n18: export interface PlayerHoleScore {\n19:   playerId: PlayerId;\n20:   holeId: string;\n21:   strokes: number;\n22:   completed: boolean;\n23:   completionTimeMs?: number;\n24:   penaltyStrokes: number;\n25: }\n26: \n27: export interface MatchPlayer extends PlayerProfile {\n28:   connected: boolean;\n29:   totalStrokes: number;\n30:   holeScores: PlayerHoleScore[];\n31: }\n32: \n33: export interface MatchSettings {\n34:   courseId: string;\n35:   maxPlayers: number;\n36:   strokeLimitPerHole: number;\n37:   turnTimeLimitSeconds?: number;\n38: }\n39: \n40: export interface MatchDTO {\n41:   id: MatchId;\n42:   phase: MatchPhase;\n43:   settings: MatchSettings;\n44:   players: MatchPlayer[];\n45:   currentHoleIndex: number;\n46:   activePlayerId?: PlayerId;\n47:   startedAt?: number;\n48:   finishedAt?: number;\n49: }\n50: \n51: export interface ShotCommand {\n52:   playerId: PlayerId;\n53:   holeId: string;\n54:   direction: Vec3;\n55:   normalizedPower: number;\n56:   clientSequence: number;\n57:   issuedAt: number;\n58: }\n59: \n60: export interface GameSessionDTO {\n61:   match: MatchDTO;\n62:   course: Course;\n63:   hole: Hole;\n64: }\n65: \n\n### src/physics/PhysicsWorld.ts (строки 1-29 из 29)\n1: import RAPIER from '@dimforge/rapier3d-compat';\n2: import { GAME_CONFIG } from '../config/GameConfig';\n3: import type { Vec3 } from '../contracts/math';\n4: \n5: export class PhysicsWorld {\n6:   readonly world: RAPIER.World;\n7:   private accumulator = 0;\n8:   readonly fixedStep: number;\n9: \n10:   constructor(gravity: Vec3 = GAME_CONFIG.physics.gravity, fixedStep = 1 / GAME_CONFIG.targetFps) {\n11:     this.world = new RAPIER.World(gravity);\n12:     this.fixedStep = fixedStep;\n13:     this.world.timestep = fixedStep;\n14:   }\n15: \n16:   step(deltaSeconds: number, beforeStep?: (dt: number) => void): void {\n17:     this.accumulator += Math.min(Math.max(deltaSeconds, 0), 0.25);\n18:     while (this.accumulator >= this.fixedStep) {\n19:       beforeStep?.(this.fixedStep);\n20:       this.world.step();\n21:       this.accumulator -= this.fixedStep;\n22:     }\n23:   }\n24: \n25:   dispose(): void {\n26:     this.world.free();\n27:   }\n28: }\n29:",
+    "outputDigest": "6af3c88f7d7135bcc51bf367218db64907e0d7961bde1a9cce0434a5af29c68b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:38:58.645Z"
+}
