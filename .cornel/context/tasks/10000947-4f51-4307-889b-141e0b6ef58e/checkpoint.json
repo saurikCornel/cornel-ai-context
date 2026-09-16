@@ -2,8 +2,8 @@
   "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
   "branch": "cornel/slit-camera-input-and-zoom-100009",
   "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
-  "status": "WAITING_CHATGPT",
-  "summary": "RESULT для inspect-merge-state-2 по-прежнему не пришёл. Поэтому я не отправляю новую команду: состояние рабочей копии после неудачного resolve-and-verify-1 пока не подтверждено, а повторять merge или запись вслепую нельзя.\n\nСводка: способ разрешения конфликта определён — итоговый src/camera/index.ts должен экспортировать и CameraInput, и офисные SmoothCameraRig / Smoothing / ThreeCameraBinding; фактическое состояние merge после ошибки ещё не подтверждено; проверки и publish не выполнены; следующий шаг — получить RESULT inspect-merge-state-2 и продолжить строго из подтверждённого состояния.\n\n",
+  "status": "RUNNING",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"inspect-merge-state-3\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"echo '--- STATUS ---'; git status --short; echo '--- MERGE_HEAD ---'; if test -f .git/MERGE_HEAD; then cat .git/MERGE_HEAD; else echo none; fi; echo '--- UNMERGED ---'; git diff --name-only --diff-filter=U; echo '--- CAMERA INDEX ---'; cat -n src/camera/index.ts 2>/dev/null || true\",\"timeoutSeconds\":120}\n\nЖду RESULT worker. Если MERGE_HEAD и конфликт сохранились, завершу именно этот merge; если worker восстановил чистую ветку, выберу следующий шаг по фактическому состоянию, не повторяя действия вслепую.\n\nСводка: Issue открыт; подтверждённого завершения merge/publish нет; последняя ошибка связана с недоступным FETCH_HEAD; следующий шаг — установить реальное состояние рабочей копии без использования FETCH_HEAD.\n\n",
   "commands": [
     {
       "commandId": "merge-camera-1",
@@ -40,7 +40,13 @@
       "status": "FAILED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
+    },
+    {
+      "commandId": "inspect-merge-state-3",
+      "status": "STARTED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:47:12.112Z"
+  "createdAt": "2026-09-16T17:50:01.117Z"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "b70b7ceb-4f64-49a7-9d6a-4e5fb01d255d",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-merge-state-3",
+    "operation": "run",
+    "command": "echo '--- STATUS ---'; git status --short; echo '--- MERGE_HEAD ---'; if test -f .git/MERGE_HEAD; then cat .git/MERGE_HEAD; else echo none; fi; echo '--- UNMERGED ---'; git diff --name-only --diff-filter=U; echo '--- CAMERA INDEX ---'; cat -n src/camera/index.ts 2>/dev/null || true"
+  },
+  "createdAt": "2026-09-16T17:50:01.112Z"
+}
