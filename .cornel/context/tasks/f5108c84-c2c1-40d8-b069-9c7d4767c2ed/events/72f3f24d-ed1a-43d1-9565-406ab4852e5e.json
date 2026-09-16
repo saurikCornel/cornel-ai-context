@@ -1,0 +1,12 @@
+{
+  "id": "72f3f24d-ed1a-43d1-9565-406ab4852e5e",
+  "taskId": "f5108c84-c2c1-40d8-b069-9c7d4767c2ed",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "prepare-publish-1",
+    "operation": "run",
+    "command": "set -e\nprintf '\\n# Build artifacts\\ndist/\\n*.tsbuildinfo\\n' >> .gitignore\nrm -rf dist tsconfig.app.tsbuildinfo tsconfig.node.tsbuildinfo\nprintf '%s\\n' '=== STATUS BEFORE PUBLISH ==='\ngit status --short\nprintf '%s\\n' '=== IGNORE CHECK ==='\ngit check-ignore dist/ tsconfig.app.tsbuildinfo tsconfig.node.tsbuildinfo || true"
+  },
+  "createdAt": "2026-09-16T00:00:50.175Z"
+}

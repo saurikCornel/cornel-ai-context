@@ -3,7 +3,7 @@
   "branch": "cornel/f5108c84-c2c1-40d8-b069-9c7d4767c2ed",
   "headSha": "c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23",
   "status": "WAITING_CHATGPT",
-  "summary": "Каркас создан локально успешно. Теперь нужна обязательная фактическая проверка: установка зафиксирует lock-файл, затем одним прогоном проверим TypeScript и production build. Если обнаружатся ошибки контрактов или конфигурации, исправлю их до публикации.\n\nJSON\n{\"version\":1,\"taskId\":\"f5108c84-c2c1-40d8-b069-9c7d4767c2ed\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23\",\"command\":\"set -e\\nnpm install\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== STATUS ===\\\\n'\\ngit status --short\\nprintf '\\\\n=== DIST ===\\\\n'\\nfind dist -maxdepth 2 -type f -print | sort\",\"timeoutSeconds\":600}\n\nЖду результат worker. При успехе опубликую проверенный каркас вместе с package-lock.json, затем выполню финальную проверку уже на опубликованном commit.\n\nСводка: созданы конфигурация Vite/TypeScript, минимальный WebGL bootstrap, GameConfig, GameState, DTO матча/игроков/ударов, типы Course/Hole/Obstacle, события и публичные сервисные интерфейсы; gameplay/UI/AI/карты не реализовывались согласно границам карточки; сейчас запускаются npm install, TypeScript и production build; следующий шаг — publish после подтверждённого успеха.\n\n",
+  "summary": "Проверка прошла полностью: зависимости установлены без найденных уязвимостей, TypeScript — без ошибок, production build — успешен. Перед публикацией убираю только генерируемые артефакты dist и *.tsbuildinfo через .gitignore; исходники и package-lock.json сохраняются.\n\nJSON\n{\"version\":1,\"taskId\":\"f5108c84-c2c1-40d8-b069-9c7d4767c2ed\",\"commandId\":\"prepare-publish-1\",\"operation\":\"run\",\"headSha\":\"c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23\",\"command\":\"set -e\\nprintf '\\\\n# Build artifacts\\\\ndist/\\\\n*.tsbuildinfo\\\\n' >> .gitignore\\nrm -rf dist tsconfig.app.tsbuildinfo tsconfig.node.tsbuildinfo\\nprintf '%s\\\\n' '=== STATUS BEFORE PUBLISH ==='\\ngit status --short\\nprintf '%s\\\\n' '=== IGNORE CHECK ==='\\ngit check-ignore dist/ tsconfig.app.tsbuildinfo tsconfig.node.tsbuildinfo || true\",\"timeoutSeconds\":300}\n\nЖду результат worker; после него выполню publish, а затем контрольную сборку на опубликованном commit.\n\nСводка: npm install, npm run typecheck и npm run build фактически успешны; создан минимальный bootstrap и общие контракты карточки; сейчас готовится чистый набор файлов для коммита без build-артефактов; следующий шаг — publish.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -16,7 +16,13 @@
       "status": "SUCCEEDED",
       "headSha": "c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23",
       "exitCode": 0
+    },
+    {
+      "commandId": "verify-1",
+      "status": "SUCCEEDED",
+      "headSha": "c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:00:16.128Z"
+  "createdAt": "2026-09-16T00:00:49.189Z"
 }
