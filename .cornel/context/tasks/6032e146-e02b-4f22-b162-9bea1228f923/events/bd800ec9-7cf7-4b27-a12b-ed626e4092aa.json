@@ -1,0 +1,12 @@
+{
+  "id": "bd800ec9-7cf7-4b27-a12b-ed626e4092aa",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-and-verify-camera-15",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund 2>&1 | tail -n 15; echo '--- vitest camera ---'; npx vitest run src/camera 2>&1 | tail -n 60; echo '--- typecheck ---'; npx tsc -b --pretty false 2>&1 | tail -n 40; echo '--- build ---'; npm run build 2>&1 | tail -n 30"
+  },
+  "createdAt": "2026-09-16T17:09:47.672Z"
+}

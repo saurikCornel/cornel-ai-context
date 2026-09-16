@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Зависимости в рабочей копии не установлены (`tsc` отсутствует). Устанавливаю их и повторяю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"install-and-verify-camera-15\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npm install --no-audit --no-fund 2>&1 | tail -n 15; echo '--- vitest camera ---'; npx vitest run src/camera 2>&1 | tail -n 60; echo '--- typecheck ---'; npx tsc -b --pretty false 2>&1 | tail -n 40; echo '--- build ---'; npm run build 2>&1 | tail -n 30\",\"timeoutSeconds\":1800}\n```\n\nСводка: причина сбоя — не установленные npm-зависимости в рабочей копии, а не ошибка кода; экспорт `CameraController` в `src/camera/index.ts` добавлен успешно.\nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.\nПроверки: `npm install`, затем тесты камеры, typecheck и build — запущены, результат ещё не получен.\nСледующий шаг: по выводу исправить ошибки компиляции/тестов либо выполнить `publish` и `finish`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:09:47.671Z"
+}

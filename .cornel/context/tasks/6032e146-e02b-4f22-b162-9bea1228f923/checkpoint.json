@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"export-and-verify-camera-14\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"grep -q \\\"CameraController\\\" src/camera/index.ts || printf \\\"export * from './CameraController';\\\\n\\\" >> src/camera/index.ts; cat src/camera/index.ts; echo '--- vitest camera ---'; npm run test:camera --silent; echo '--- typecheck ---'; npm run typecheck --silent; echo '--- build ---'; npm run build --silent\",\"timeoutSeconds\":900}\n```\n\nОтправил worker: добавляю экспорт `CameraController` в `src/camera/index.ts` и сразу прогоняю тесты камеры, typecheck и production build. Жду результат worker — он придёт сюда отдельным сообщением.\n\nСводка: контроллер и тесты записаны, осталось подключить публичный экспорт и получить фактическое подтверждение проверок.\nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.\nПроверки: запущены (результат ещё не получен) — `npm run test:camera`, `npm run typecheck`, `npm run build`.\nСледующий шаг: по результату исправить ошибки либо выполнить `publish` и `finish`.\n\n",
+  "summary": "Зависимости в рабочей копии не установлены (`tsc` отсутствует). Устанавливаю их и повторяю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"install-and-verify-camera-15\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npm install --no-audit --no-fund 2>&1 | tail -n 15; echo '--- vitest camera ---'; npx vitest run src/camera 2>&1 | tail -n 60; echo '--- typecheck ---'; npx tsc -b --pretty false 2>&1 | tail -n 40; echo '--- build ---'; npm run build 2>&1 | tail -n 30\",\"timeoutSeconds\":1800}\n```\n\nСводка: причина сбоя — не установленные npm-зависимости в рабочей копии, а не ошибка кода; экспорт `CameraController` в `src/camera/index.ts` добавлен успешно.\nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.\nПроверки: `npm install`, затем тесты камеры, typecheck и build — запущены, результат ещё не получен.\nСледующий шаг: по выводу исправить ошибки компиляции/тестов либо выполнить `publish` и `finish`.\n\n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "export-and-verify-camera-14",
+      "status": "FAILED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 127
+    },
+    {
+      "commandId": "install-and-verify-camera-15",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:08:52.408Z"
+  "createdAt": "2026-09-16T17:09:47.676Z"
 }

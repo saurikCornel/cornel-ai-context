@@ -1,0 +1,11 @@
+{
+  "id": "603f1c39-a64c-4ab1-8806-ea2b2add4fbe",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "install-and-verify-camera-15",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T17:09:47.673Z"
+}
