@@ -1,0 +1,13 @@
+{
+  "id": "079e3aab-5fe2-4e17-832b-e24675ba876f",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: src/obstacles/index.ts, src/obstacles/types.ts",
+  "detail": {
+    "files": [
+      "src/obstacles/index.ts",
+      "src/obstacles/types.ts"
+    ]
+  },
+  "createdAt": "2026-09-16T23:28:18.301Z"
+}

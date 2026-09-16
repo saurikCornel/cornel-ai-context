@@ -1,0 +1,13 @@
+{
+  "id": "71e17290-c3a3-4920-9bcf-9d3398a9afb7",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Карточка «Rotating obstacles» выполнена. Ветка cornel/rotating-obstacles-322e98, коммит c0219512b2b27069ba03af0b48bf9a1ca019ff11.\n\nРеализовано: RotatingBar, Windmill и Spinner на общем lifecycle.\n- src/obstacles/types.ts — контракты конфигов и портов физики (ObstaclePhysicsAdapter, ObstacleBodyHandle, ObstacleBodySpec)\n- src/obstacles/rotation.ts — детерминированная математика вращения: кватернионы из оси и угла, wrap по TAU, фазовые сдвиги, знак направления\n- src/obstacles/validation.ts — валидация конфигурации с явными ошибками\n- src/obstacles/RotatingObstacle.ts — базовый класс: визуальная геометрия, набор коллайдеров, детерминированный update(delta), dispose\n- src/obstacles/RotatingBar.ts, Windmill.ts, Spinner.ts — конкретные препятствия\n- src/obstacles/RapierObstaclePhysics.ts — адаптер Rapier для кинематических тел препятствий\n- src/obstacles/index.ts — barrel\n\nТесты (targeted): rotation.test.ts (11), obstacles.test.ts (7), spinnerWindmill.test.ts (6) — математика вращения и wrap, вывод half-extents коллайдеров из визуальных размеров, детерминированность движения при фиксированном шаге, фазовые сдвиги лопастей, валидация конфигов. Физика тестируется через фейковый адаптер, без зависимости от Rapier-рантайма.\n\nПроверки на этом headSha (worker, commandId rot-obst-l1): git rev-parse HEAD = c0219512b2b27069ba03af0b48bf9a1ca019ff11; npx tsc -b --pretty false — exit 0; npx vitest run src/obstacles — 3 файла, 24/24 passed; npm run build — vite build успешен (built in 625ms).\n\nЧужие файлы и слои не затрагивались: изменения только в новом каталоге src/obstacles/. PR не открывался — слияние ветки выполняет сборщик.\n\nПримечание для владельца: на системном диске критически мало места (колеблется около 0.7–1.1 ГБ). Guard worker отказывает в любой команде run при свободном месте ниже 1024 МБ — из-за этого часть шагов пришлось повторять. Стоит освободить несколько ГБ, иначе будут тормозить и другие карточки.",
+  "detail": {
+    "commands": 30,
+    "failed": 4,
+    "headSha": "c0219512b2b27069ba03af0b48bf9a1ca019ff11",
+    "branch": "cornel/rotating-obstacles-322e98"
+  },
+  "createdAt": "2026-09-16T23:28:14.989Z"
+}
