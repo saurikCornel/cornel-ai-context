@@ -1,0 +1,31 @@
+{
+  "headSha": "e51f8b24994e4e50c3b11fb6788b1f96e53574ff",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "src/app/GameState.ts",
+    "src/config/GameConfig.ts",
+    "src/contracts/events.ts",
+    "src/contracts/game.ts",
+    "src/contracts/index.ts",
+    "src/contracts/math.ts",
+    "src/contracts/services.ts",
+    "src/core/SaveManager.ts",
+    "src/courses/types.ts",
+    "src/main.ts",
+    "src/player/index.ts",
+    "src/player/profile.ts",
+    "src/player/progression.ts",
+    "src/player/types.ts",
+    "src/style.css",
+    "tests/save-manager.test.mjs",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "vite.config.ts"
+  ]
+}

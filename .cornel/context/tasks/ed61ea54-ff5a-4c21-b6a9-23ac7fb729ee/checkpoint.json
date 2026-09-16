@@ -2,8 +2,8 @@
   "taskId": "ed61ea54-ff5a-4c21-b6a9-23ac7fb729ee",
   "branch": "cornel/ed61ea54-ff5a-4c21-b6a9-23ac7fb729ee",
   "headSha": "0b7d48d5228f03108022180cdee56da5268fd918",
-  "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"ed61ea54-ff5a-4c21-b6a9-23ac7fb729ee\",\"commandId\":\"inspect-3\",\"operation\":\"read\",\"headSha\":\"0b7d48d5228f03108022180cdee56da5268fd918\",\"paths\":[\"src/app/GameState.ts:1-260\",\"src/config/GameConfig.ts:1-320\",\"src/contracts/game.ts:1-360\",\"src/contracts/events.ts:1-320\",\"src/contracts/services.ts:1-360\",\"src/courses/types.ts:1-380\",\"src/physics/ShotSystem.ts:1-320\"]}\n\nСводка: физический слой совместим с карточкой и уже покрывает ключевые операции шара; правок там не требуется. Следующий шаг после чтения контрактов — создать gameplay/camera модули и тесты, затем прогнать typecheck/build.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Карточка действительно хорошо делится на независимые слои без пересечения файлов: gameplay/state/scoring и camera/input. Разделяю до внесения изменений, как требует протокол проекта.\n\nJSON\n{\"cornelSplit\":1,\"tasks\":[{\"key\":\"gameplay\",\"title\":\"Gameplay state, scoring and hole flow\",\"description\":\"Реализовать src/gameplay/*: MatchManager, TurnManager, ShotSystem adapter, HoleSystem, ScoreManager и централизованную state machine. Добавить hole trigger с ограничением скорости, PAR labels, maxShots penalty, hazard +1/reset lastSafePosition, match results/tiebreak и абстрактные touch-ready input commands для двух aim styles. Не менять UI/AI/course data. Добавить unit tests для ScoreManager, PAR, match results и state transitions.\",\"dependsOn\":[],\"priority\":\"high\"},{\"key\":\"camera\",\"title\":\"Camera controller and controls\",\"description\":\"Реализовать src/camera/*: CameraController с aim/follow/overview/free режимами, damping/lerp/slerp, zoom, reset, WASD/free-camera controls и camera collision prevention. Интеграцию строить через существующие contracts/math/game и абстрактные input commands, не менять UI/AI/course data.\",\"dependsOn\":[],\"priority\":\"high\"},{\"key\":\"integration\",\"title\":\"Gameplay-camera integration verification\",\"description\":\"После готовности gameplay и camera слоёв проверить их экспорт/совместимость, устранить только интеграционные ошибки в назначенных модулях, прогнать unit tests, typecheck и production build.\",\"dependsOn\":[\"gameplay\",\"camera\"],\"priority\":\"high\"}]}\n\nСводка: существующие contracts/course/physics API проверены; изменений в код ещё не вносилось. Карточка разделена на два независимых слоя и финальную интеграционную проверку.\n\n",
   "commands": [
     {
       "commandId": "inspect-1",
@@ -19,10 +19,10 @@
     },
     {
       "commandId": "inspect-3",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "0b7d48d5228f03108022180cdee56da5268fd918",
-      "exitCode": null
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T11:55:16.272Z"
+  "createdAt": "2026-09-16T11:56:24.392Z"
 }
