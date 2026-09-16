@@ -1,0 +1,11 @@
+{
+  "id": "3791113f-aaa3-416f-8c89-9b10d0db60e9",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "rot-obst-g1",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T21:45:25.583Z"
+}
