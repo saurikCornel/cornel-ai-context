@@ -1,0 +1,17 @@
+{
+  "id": "2b239e7b-adcb-4139-a437-2878df03a8c3",
+  "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/camera-modes-aim-follow-overview-free-6032e1 -> FETCH_HEAD\nAuto-merging src/camera/CameraController.test.ts\nCONFLICT (add/add): Merge conflict in src/camera/CameraController.test.ts\nAuto-merging src/camera/CameraController.ts\nCONFLICT (add/add): Merge conflict in src/camera/CameraController.ts\nAuto-merging src/camera/index.ts\nCONFLICT (content): Merge conflict in src/camera/index.ts\nAutomatic merge failed; fix conflicts and then commit the result.\nMERGE_EXIT=1\nAA src/camera/CameraController.test.ts\nAA src/camera/CameraController.ts\nUU src/camera/index.ts\n",
+    "outputDigest": "9832e227e75f1ec8decf333736537c24ff589b2c9171127a31065d3e9f9c52cf",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:22:41.672Z"
+}
