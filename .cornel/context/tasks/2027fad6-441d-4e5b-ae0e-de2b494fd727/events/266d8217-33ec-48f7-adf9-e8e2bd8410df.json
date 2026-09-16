@@ -1,0 +1,17 @@
+{
+  "id": "266d8217-33ec-48f7-adf9-e8e2bd8410df",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-ai-types-31",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "### src/ai/types.ts (строки 1-58 из 58)\n1: import type { ShotCommand } from '../contracts/game';\n2: import type { Vec3 } from '../contracts/math';\n3: import type { Hole } from '../courses/types';\n4: \n5: export type BotRank = 'Rookie' | 'Amateur' | 'Pro' | 'Master' | 'Legend';\n6: \n7: export interface BotSkill {\n8:   aimError: number;\n9:   powerError: number;\n10:   simulationSamples: number;\n11:   riskTolerance: number;\n12:   shortcutAwareness: number;\n13:   planningDepth: number;\n14: }\n15: \n16: export type BotPersonality = 'careful' | 'balanced' | 'bold' | 'trickster';\n17: \n18: export interface BotProfile {\n19:   id: string;\n20:   displayName: string;\n21:   rank: BotRank;\n22:   rating: number;\n23:   skill: BotSkill;\n24:   personality: BotPersonality;\n25: }\n26: \n27: export interface PathAnalysis {\n28:   holed: boolean;\n29:   outOfBounds: boolean;\n30:   hazardPenalty: number;\n31:   obstacleHits: number;\n32:   estimatedTravelDistance: number;\n33:   estimatedRemainingDistance: number;\n34: }\n35: \n36: export interface ShotCandidate {\n37:   direction: Vec3;\n38:   normalizedPower: number;\n39:   landing: Vec3;\n40:   analysis: PathAnalysis;\n41:   score: number;\n42: }\n43: \n44: export interface BotPlanningContext {\n45:   playerId: string;\n46:   hole: Hole;\n47:   ballPosition: Vec3;\n48:   clientSequence: number;\n49:   issuedAt: number;\n50:   seed?: number | string;\n51: }\n52: \n53: export interface BotPlan {\n54:   command: ShotCommand;\n55:   chosenCandidate: ShotCandidate;\n56:   candidates: readonly ShotCandidate[];\n57: }\n58:",
+    "outputDigest": "028cf4457fe6e6b6f70dcb9f560827e2a561176d22f3927504b02f5ece8cf40e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:51:19.814Z"
+}
