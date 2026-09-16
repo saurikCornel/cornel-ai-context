@@ -3,7 +3,7 @@
   "branch": "cornel/6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
   "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
   "status": "WAITING_CHATGPT",
-  "summary": "Причина теперь точная: тестовая компиляция использовала NodeNext, тогда как сам Vite-проект корректно работает с bundler-style imports. Production-код менять не требуется. Перекомпилирую только тестовую копию с moduleResolution: bundler; затем Node запускается с --experimental-specifier-resolution=node, чтобы разрешить extensionless imports в сгенерированном ESM.\n\nJSON\n{\"version\":1,\"taskId\":\"6d1e0ba8-f3c5-43c8-ac38-6452635d1604\",\"commandId\":\"profile-tests-4\",\"operation\":\"run\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"command\":\"rm -rf .test-build; ./node_modules/.bin/tsc src/core/SaveManager.ts src/player/types.ts src/player/progression.ts src/player/profile.ts --outDir .test-build --module ESNext --moduleResolution bundler --target ES2022 --skipLibCheck || exit 1; node --experimental-specifier-resolution=node --test tests/save-manager.test.mjs; rc=$?; rm -rf .test-build; printf '%s\\\\n' '=== STATUS ==='; git status --short; exit $rc\",\"timeoutSeconds\":300}\n\nСводка: штатные typecheck и production build уже подтверждены; production-код после них не менялся. Текущая команда исправляет только тестовый harness. При успешных unit-тестах следующий шаг — publish, контрольная проверка commit и finish.\n\n",
+  "summary": "GitHub снова показывает назначенную ветку на том же commit; опубликованных изменений в ней нет. Это повторное рассогласование worker/GitHub, поэтому сначала синхронизирую состояние короткой безопасной командой, как уже сработало ранее. После её RESULT продолжу unit-тест, не повторяя уже успешные typecheck/build.\n\nJSON\n{\"version\":1,\"taskId\":\"6d1e0ba8-f3c5-43c8-ac38-6452635d1604\",\"commandId\":\"refresh-head-3\",\"operation\":\"run\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"command\":\"git rev-parse HEAD; git status --short\",\"timeoutSeconds\":300}\n\nСводка: production-код и тесты остаются локальными; GitHub commit не изменён. Typecheck/build ранее успешны. Текущая задача — восстановить согласованность worker перед оставшейся unit-проверкой.\n\n",
   "commands": [
     {
       "commandId": "inspect-profile-1",
@@ -46,7 +46,13 @@
       "status": "FAILED",
       "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
       "exitCode": 1
+    },
+    {
+      "commandId": "profile-tests-4",
+      "status": "FAILED",
+      "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T00:26:06.766Z"
+  "createdAt": "2026-09-16T00:30:20.345Z"
 }

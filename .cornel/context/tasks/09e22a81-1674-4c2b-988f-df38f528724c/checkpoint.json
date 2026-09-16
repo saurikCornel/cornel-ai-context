@@ -1,9 +1,9 @@
 {
   "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
   "branch": "cornel/09e22a81-1674-4c2b-988f-df38f528724c",
-  "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
+  "headSha": "882e100cf11168d750e45a6cce77cbf5ebd436aa",
   "status": "WAITING_CHATGPT",
-  "summary": "Исправление подтверждено фактическими проверками: TypeScript typecheck прошёл, production build собран, все 3 теста прошли, git diff --check чистый. Публикую единственное исправление строгой типизации.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-publish-fix-1\",\"operation\":\"publish\",\"headSha\":\"eb5dda16ef9de4aec9d2cd50755ebf79c425fe48\",\"message\":\"Fix strict leaderboard profile indexing\"}\n\nЖду результат worker. После успешного publish останется финальная проверка на новом commit и finish.\n\nСводка: исправлены две ошибки строгой типизации в генераторе; локально подтверждены typecheck, build и 3/3 теста; изменён только src/leaderboard/generator.ts; следующий шаг — финальная проверка опубликованного commit.\n\n",
+  "summary": "Исправленный commit опубликован. Выполняю последнюю проверку именно этого состояния ветки. Зависимости устанавливаю заново, потому что worker синхронизирует commit в чистую рабочую копию.\n\nJSON\n{\"version\":1,\"taskId\":\"09e22a81-1674-4c2b-988f-df38f528724c\",\"commandId\":\"leaderboard-final-verify-3\",\"operation\":\"run\",\"headSha\":\"882e100cf11168d750e45a6cce77cbf5ebd436aa\",\"command\":\"set -e; npm ci >/dev/null; printf '\\\\n=== TYPECHECK ===\\\\n'; npm run typecheck; printf '\\\\n=== BUILD ===\\\\n'; npm run build; printf '\\\\n=== TESTS ===\\\\n'; node --experimental-strip-types --test tests/*.test.ts; printf '\\\\n=== CLEAN TREE ===\\\\n'; test -z \\\"$(git status --porcelain)\\\"; git status --short; printf '\\\\nALL_LEADERBOARD_CHECKS_OK\\\\n'\",\"timeoutSeconds\":300}\n\nЖду worker. При exitCode 0 следующий шаг — сразу finish.\n\nСводка: оба commits карточки опубликованы; строгая типизация исправлена; предыдущая локальная проверка уже дала успешные typecheck/build/3 теста; сейчас подтверждается опубликованный итоговый commit и чистота дерева.\n\n",
   "commands": [
     {
       "commandId": "leaderboard-inspect-1",
@@ -52,7 +52,13 @@
       "status": "SUCCEEDED",
       "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
       "exitCode": 0
+    },
+    {
+      "commandId": "leaderboard-publish-fix-1",
+      "status": "SUCCEEDED",
+      "headSha": "882e100cf11168d750e45a6cce77cbf5ebd436aa",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:26:15.837Z"
+  "createdAt": "2026-09-16T00:31:01.101Z"
 }

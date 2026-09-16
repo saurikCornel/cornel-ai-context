@@ -1,0 +1,17 @@
+{
+  "id": "ffdf0263-2ada-464c-b1e5-e0d8e6f9b7be",
+  "taskId": "0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-courses-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a188d851f4912c55d0dce96f3f00b929a5693a23",
+    "output": "Готово: добавлены независимые course-data модули Ancient Temple, Arctic Base и Volcano — по 9 оригинальных лунок, всего 27. Использованы только поддерживаемые SurfaceDescriptor/ObstacleDescriptor, предусмотрено последовательное усложнение и тематические механики. Финальная проверка опубликованного commit: npm run typecheck — успешно; npm run build — успешно; структурная проверка — 9/9/9 лунок; git status — чистый. PR не создавался согласно назначению; ветка готова для сборщика.",
+    "outputDigest": "42ac54abfad80ed5dc97002ef3a423d42261d1ceb029d71028b2e7439e88e118",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:32:08.815Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/defb0407-6f82-42d9-85f2-4fd3cfd54559",
   "headSha": "79b56e35f5f502680e2301c972132109c65a4d3a",
   "status": "WAITING_CHATGPT",
-  "summary": "Публикация прошла успешно. Требование протокола — перед finish нужна успешная проверка worker именно на опубликованном commit. Предыдущие тесты были до публикации, поэтому сейчас выполняю финальный прогон без изменения исходников.\n\nJSON\n{\"version\":1,\"taskId\":\"defb0407-6f82-42d9-85f2-4fd3cfd54559\",\"commandId\":\"ui-final-verify-7\",\"operation\":\"run\",\"headSha\":\"79b56e35f5f502680e2301c972132109c65a4d3a\",\"command\":\"set -e\\nprintf '\\\\n=== UI TESTS ===\\\\n'\\nnpm run test:ui\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== WORKTREE ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":300}\n\nСводка: изменения опубликованы в назначенную ветку; до публикации подтверждены 5/5 DOM-тестов, typecheck и build; сейчас выполняется обязательная финальная проверка опубликованного состояния; при успехе следующий шаг — finish.\n\n",
+  "summary": "После исправления продолжаю ровно с незавершённого шага: код уже опубликован, поэтому ничего не переписываю и повторно не публикую. Требуется только финальная проверка опубликованного состояния; предыдущая такая команда фактически не запускалась из-за блокировки worker.\n\nJSON\n{\"version\":1,\"taskId\":\"defb0407-6f82-42d9-85f2-4fd3cfd54559\",\"commandId\":\"ui-final-verify-8\",\"operation\":\"run\",\"headSha\":\"79b56e35f5f502680e2301c972132109c65a4d3a\",\"command\":\"set -e\\nprintf '\\\\n=== UI TESTS ===\\\\n'\\nnpm run test:ui\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== WORKTREE ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":300}\n\nСводка: реализация и publish уже завершены; ранее подтверждены 5/5 DOM tests, typecheck и build до публикации; сейчас выполняется только обязательная проверка опубликованного commit; при успехе сразу отправлю finish.\n\n",
   "commands": [
     {
       "commandId": "ui-inspect-1",
@@ -46,7 +46,13 @@
       "status": "SUCCEEDED",
       "headSha": "79b56e35f5f502680e2301c972132109c65a4d3a",
       "exitCode": 0
+    },
+    {
+      "commandId": "ui-final-verify-7",
+      "status": "FAILED",
+      "headSha": "79b56e35f5f502680e2301c972132109c65a4d3a",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T00:25:31.401Z"
+  "createdAt": "2026-09-16T00:30:18.710Z"
 }

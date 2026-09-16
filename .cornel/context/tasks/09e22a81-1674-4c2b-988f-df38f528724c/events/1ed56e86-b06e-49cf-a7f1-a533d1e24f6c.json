@@ -1,0 +1,12 @@
+{
+  "id": "1ed56e86-b06e-49cf-a7f1-a533d1e24f6c",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "leaderboard-final-verify-3",
+    "operation": "run",
+    "command": "set -e; npm ci >/dev/null; printf '\\n=== TYPECHECK ===\\n'; npm run typecheck; printf '\\n=== BUILD ===\\n'; npm run build; printf '\\n=== TESTS ===\\n'; node --experimental-strip-types --test tests/*.test.ts; printf '\\n=== CLEAN TREE ===\\n'; test -z \"$(git status --porcelain)\"; git status --short; printf '\\nALL_LEADERBOARD_CHECKS_OK\\n'"
+  },
+  "createdAt": "2026-09-16T00:32:15.543Z"
+}

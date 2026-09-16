@@ -1,0 +1,17 @@
+{
+  "id": "1fa4ebbf-e132-461c-9120-df383b48348d",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "create-haunted-6",
+    "status": "FAILED",
+    "exitCode": 2,
+    "reason": null,
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsrc/courses/data/haunted-mansion.ts(8,239): error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.\n  Type 'undefined' is not assignable to type 'number'.\n",
+    "outputDigest": "cd569760d27ceb244e9d01eab8798921777d24ef0589132b44f99cb185e2cca6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:29:18.907Z"
+}

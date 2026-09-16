@@ -1,0 +1,11 @@
+{
+  "id": "b53c0c57-5652-4e7c-8c6b-fcba3ce4caf7",
+  "taskId": "0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "final-verify-courses-1",
+    "headSha": "a188d851f4912c55d0dce96f3f00b929a5693a23"
+  },
+  "createdAt": "2026-09-16T00:28:34.189Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "015975f3-5236-4057-8717-db0a55d98730",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "refresh-head-3",
+    "operation": "run",
+    "command": "git rev-parse HEAD; git status --short"
+  },
+  "createdAt": "2026-09-16T00:32:08.812Z"
+}

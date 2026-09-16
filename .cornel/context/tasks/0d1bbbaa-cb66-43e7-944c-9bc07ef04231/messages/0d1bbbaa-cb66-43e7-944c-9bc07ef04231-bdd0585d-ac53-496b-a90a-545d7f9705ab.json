@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Финальная проверка опубликованной версии успешна: typecheck и production build завершились с exitCode 0, каждый из трёх курсов содержит ровно 9 лунок, рабочее дерево чистое. Карточка готова к передаче сборщику.\n\nJSON\n{\"version\":1,\"taskId\":\"0d1bbbaa-cb66-43e7-944c-9bc07ef04231\",\"commandId\":\"finish-courses-1\",\"operation\":\"finish\",\"headSha\":\"a188d851f4912c55d0dce96f3f00b929a5693a23\",\"message\":\"Готово: добавлены независимые course-data модули Ancient Temple, Arctic Base и Volcano — по 9 оригинальных лунок, всего 27. Использованы только поддерживаемые SurfaceDescriptor/ObstacleDescriptor, предусмотрено последовательное усложнение и тематические механики. Финальная проверка опубликованного commit: npm run typecheck — успешно; npm run build — успешно; структурная проверка — 9/9/9 лунок; git status — чистый. PR не создавался согласно назначению; ветка готова для сборщика.\"}\n\nСводка: изменены ancient-temple.ts, arctic-base.ts, volcano.ts; опубликовано 27 лунок; все предусмотренные проверки успешны; следующий шаг — слияние ветки сборщиком.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T00:29:50.501Z"
+}

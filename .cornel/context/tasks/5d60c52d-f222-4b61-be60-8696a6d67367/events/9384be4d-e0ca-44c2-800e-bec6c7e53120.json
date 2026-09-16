@@ -1,0 +1,11 @@
+{
+  "id": "9384be4d-e0ca-44c2-800e-bec6c7e53120",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "fix-haunted-7",
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa"
+  },
+  "createdAt": "2026-09-16T00:32:07.391Z"
+}

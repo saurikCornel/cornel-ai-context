@@ -1,0 +1,17 @@
+{
+  "id": "b33af2ee-5da3-452e-824c-5f4e295c4383",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "leaderboard-publish-fix-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "882e100cf11168d750e45a6cce77cbf5ebd436aa",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:29:50.842Z"
+}

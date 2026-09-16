@@ -1,0 +1,17 @@
+{
+  "id": "6502b937-5654-4138-8c72-13c6f2706147",
+  "taskId": "5a950f35-46c6-4633-b39b-bd238e85b022",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ui-finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f8291bcbdde7e111876a5434ed2a6313c1aab7ca",
+    "output": "Реализованы Main Menu, Quick Play, Custom Game, Ranked setup, Settings и Profile в src/ui; UI использует публичные контракты/mock DTO и не зависит от gameplay internals. Добавлены responsive/touch-ready стили, навигация, настройки схемы управления и DOM smoke tests; UI подключён к bootstrap. Финальная проверка опубликованного состояния: git status чистый, npm run typecheck — успешно, npm run build — успешно. PR не требуется по инструкции карточки.",
+    "outputDigest": "4a030ae59973384fb49d335330e0fa08c1f01cfc7da46106cf3a33be78e888f9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:28:59.806Z"
+}
