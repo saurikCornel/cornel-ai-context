@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "git grep пропускает unmerged-файл; ищу маркеры через shell.\n\n```json\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"scan-conflict-1\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"wc -l src/camera/index.ts src/camera/*.ts; echo '--- MARKERS ---'; grep -n -e '^<<<<<<<' -e '^=======' -e '^>>>>>>>' src/camera/index.ts; echo '--- LS ---'; ls -1 src/camera\",\"timeoutSeconds\":120}\n```\n\nЖду RESULT worker.\n\nСводка: `git grep` не видит unmerged-файл, поэтому перешёл на shell-скан маркеров; следующий шаг — прочитать обе стороны конфликта по найденным диапазонам.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:11:52.278Z"
+}

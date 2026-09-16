@@ -3,7 +3,7 @@
   "branch": "cornel/slit-camera-input-and-zoom-100009",
   "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "RUNNING",
-  "summary": "Отправляю чтение конфликтных маркеров.\n\n```json\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"grep-markers-1\",\"operation\":\"grep\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"pattern\":\"^(<<<<<<<|=======|>>>>>>>)\",\"path\":\"src/camera\"}\n```\n\nЖду RESULT worker — он придёт сюда отдельным сообщением.\n\nСводка: merge уже выполнен, конфликт только в `src/camera/index.ts`; следующий шаг — найти границы конфликтных блоков и прочитать обе версии по диапазонам.\n\n",
+  "summary": "git grep пропускает unmerged-файл; ищу маркеры через shell.\n\n```json\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"scan-conflict-1\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"wc -l src/camera/index.ts src/camera/*.ts; echo '--- MARKERS ---'; grep -n -e '^<<<<<<<' -e '^=======' -e '^>>>>>>>' src/camera/index.ts; echo '--- LS ---'; ls -1 src/camera\",\"timeoutSeconds\":120}\n```\n\nЖду RESULT worker.\n\nСводка: `git grep` не видит unmerged-файл, поэтому перешёл на shell-скан маркеров; следующий шаг — прочитать обе стороны конфликта по найденным диапазонам.\n\n",
   "commands": [
     {
       "commandId": "merge-camera-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "grep-markers-1",
+      "status": "SUCCEEDED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "scan-conflict-1",
       "status": "STARTED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:10:28.810Z"
+  "createdAt": "2026-09-16T17:11:52.281Z"
 }

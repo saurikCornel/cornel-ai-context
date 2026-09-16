@@ -1,0 +1,17 @@
+{
+  "id": "ac0e2090-a59e-4eae-86cc-70f5b493ea2d",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "scan-conflict-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+    "output": "      12 src/camera/index.ts\n      47 src/camera/CameraCollision.test.ts\n      48 src/camera/CameraCollision.ts\n      35 src/camera/CameraInput.test.ts\n      57 src/camera/CameraInput.ts\n      43 src/camera/CameraPose.ts\n     225 src/camera/CameraSmoothing.test.ts\n      63 src/camera/CameraTransition.ts\n      43 src/camera/Easing.ts\n      26 src/camera/RapierCameraCollision.ts\n     136 src/camera/SmoothCameraRig.ts\n     156 src/camera/Smoothing.ts\n      26 src/camera/ThreeCameraBinding.ts\n      12 src/camera/index.ts\n     929 total\n--- MARKERS ---\n6:<<<<<<< HEAD\n10:=======\n12:>>>>>>> 8aab53119ae674d439b81094e70eb2abcb9d7dcb\n--- LS ---\nCameraCollision.test.ts\nCameraCollision.ts\nCameraInput.test.ts\nCameraInput.ts\nCameraPose.ts\nCameraSmoothing.test.ts\nCameraTransition.ts\nEasing.ts\nRapierCameraCollision.ts\nSmoothCameraRig.ts\nSmoothing.ts\nThreeCameraBinding.ts\nindex.ts\n",
+    "outputDigest": "776bcf891acffb50fa3e26ce424caea3cf2982665debab80102904d65f44353e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:11:54.722Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "57b3775f-ac87-4928-bacc-8c246c05563d",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "scan-conflict-1",
+    "operation": "run",
+    "command": "wc -l src/camera/index.ts src/camera/*.ts; echo '--- MARKERS ---'; grep -n -e '^<<<<<<<' -e '^=======' -e '^>>>>>>>' src/camera/index.ts; echo '--- LS ---'; ls -1 src/camera"
+  },
+  "createdAt": "2026-09-16T17:11:52.280Z"
+}
