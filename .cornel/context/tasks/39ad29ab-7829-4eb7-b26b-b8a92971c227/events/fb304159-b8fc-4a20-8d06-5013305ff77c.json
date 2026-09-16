@@ -1,0 +1,12 @@
+{
+  "id": "fb304159-b8fc-4a20-8d06-5013305ff77c",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RESULT",
+  "text": "fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\nFETCH_HEAD\n",
+  "detail": {
+    "commandId": "typecheck-24",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T21:58:35.169Z"
+}
