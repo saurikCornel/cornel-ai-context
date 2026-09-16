@@ -1,0 +1,12 @@
+{
+  "id": "e5ab38cf-60fa-412b-960e-1b01e3e7df66",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-collision-install-inspect-6",
+    "operation": "run",
+    "command": "npm install && find node_modules/@dimforge/rapier3d-compat -type f -name '*.d.ts' -print0 | xargs -0 grep -n \"castRay\" | head -60"
+  },
+  "createdAt": "2026-09-16T13:59:57.381Z"
+}

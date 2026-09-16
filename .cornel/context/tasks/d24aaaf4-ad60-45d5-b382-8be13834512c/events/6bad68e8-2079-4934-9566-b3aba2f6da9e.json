@@ -1,0 +1,11 @@
+{
+  "id": "6bad68e8-2079-4934-9566-b3aba2f6da9e",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-collision-install-inspect-6",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T13:59:57.382Z"
+}
