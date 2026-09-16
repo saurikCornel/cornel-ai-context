@@ -1,0 +1,11 @@
+{
+  "id": "4dba394e-66b2-404b-ad5a-44306347774e",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "finish-gameplay-12",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T12:30:30.491Z"
+}

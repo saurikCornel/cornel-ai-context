@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"3be5383b-65c1-427d-a1a1-eb32fe54d5d8\",\"commandId\":\"finish-gameplay-12\",\"operation\":\"finish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Реализован gameplay state/scoring/hole flow: MatchManager, TurnManager, ScoreManager, HoleSystem, ShotSystemAdapter, централизованная state machine и touch-ready input commands для двух control schemes. Добавлены cup capture с ограничением скорости, PAR labels, stroke-limit completion, hazard penalty/reset к lastSafePosition, детерминированные match standings/tiebreak. Добавлены unit tests для scoring/PAR, tiebreak, hole capture/hazard, state transitions и полного hole/match flow. Проверки worker: vitest src/gameplay — 5/5 passed; npm run typecheck — успешно; npm run build — успешно. Изменения опубликованы в назначенную ветку. PR не создавался согласно инструкции.\"}\n\nСводка: карточка выполнена и опубликована. Изменены только src/gameplay/*; UI, AI и данные курсов не затрагивались. Проверки: 5/5 тестов, typecheck и production build — успешно. Следующий шаг — слияние ветки сборщиком.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T12:30:30.491Z"
+}
