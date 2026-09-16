@@ -1,0 +1,11 @@
+{
+  "id": "ba2c15a0-5d2a-40f3-81c7-094ab7000cbd",
+  "taskId": "26c082ce-4b29-4482-9ed1-be2b215b4dc5",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-1",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T21:38:23.514Z"
+}
