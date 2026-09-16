@@ -1,0 +1,17 @@
+{
+  "id": "13104852-3652-4330-b7c6-b8860353258d",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "triggers-grep-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+    "output": "src/courses/Course.ts:5:export type CourseDefinition = CourseDescriptor;\nsrc/courses/CourseBuilder.ts:5:export interface CourseBuilderOptions {\nsrc/courses/Hole.ts:4:export type HoleDefinition = HoleDescriptor;\nsrc/courses/types.ts:3:export interface TransformDescriptor {\nsrc/courses/types.ts:9:export type SurfaceMaterial = 'green' | 'rough' | 'sand' | 'ice' | 'wood' | 'stone' | 'metal';\nsrc/courses/types.ts:11:export interface SurfaceDescriptor {\nsrc/courses/types.ts:21:export interface ObstacleBase {\nsrc/courses/types.ts:27:export interface StaticObstacle extends ObstacleBase {\nsrc/courses/types.ts:33:export interface MovingObstacle extends ObstacleBase {\nsrc/courses/types.ts:45:export interface HazardObstacle extends ObstacleBase {\nsrc/courses/types.ts:51:export type ObstacleDescriptor = StaticObstacle | MovingObstacle | HazardObstacle;\nsrc/courses/types.ts:53:export interface Hole {\nsrc/courses/types.ts:64:export interface Course {",
+    "outputDigest": "89521e2b470300b4cfa0d14de473bd43cac8352a172a437fad1a648c04d8c4a4",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:10:52.481Z"
+}
