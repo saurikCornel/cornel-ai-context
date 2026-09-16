@@ -20,9 +20,9 @@
   "branch": "cornel/slit-cameracontroller-core-9f0099",
   "baseSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "workspaceSyncedSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
-  "status": "WAITING_CHATGPT",
+  "status": "RUNNING",
   "createdAt": "2026-09-16T17:03:24.050Z",
-  "updatedAt": "2026-09-16T17:13:49.364Z",
+  "updatedAt": "2026-09-16T17:14:26.419Z",
   "issue": 56,
   "chatUrl": "cli://claude/ccef99f0-2302-460f-8481-37c085abc533",
   "error": null,
@@ -30,6 +30,6 @@
   "statusChecks": 0,
   "cliSession": "ccef99f0-2302-460f-8481-37c085abc533",
   "chatUrlBefore": "https://chatgpt.com/c/6aaacbee-aba8-83eb-84ad-a6b9250ea1de",
-  "cliActivity": "Claude CLI: начал ход (claude-opus-5)",
+  "cliActivity": null,
   "currentHead": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a"
 }

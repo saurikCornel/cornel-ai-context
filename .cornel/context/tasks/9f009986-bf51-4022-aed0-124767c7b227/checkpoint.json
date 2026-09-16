@@ -1,9 +1,9 @@
 {
   "taskId": "9f009986-bf51-4022-aed0-124767c7b227",
   "branch": "cornel/slit-cameracontroller-core-9f0099",
-  "headSha": "60b0900119e11d14062f09e533420fa5cdebc647",
+  "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "RUNNING",
-  "summary": "Локальный merge-коммит ещё не запушен, поэтому worker сверяет headSha с GitHub. Повторяю с актуальным SHA ветки на GitHub.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"verify-3\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"git log --oneline -2; npm install --no-audit --no-fund 2>&1 | tail -5; npm run typecheck; echo \\\"TYPECHECK_EXIT=$?\\\"; npx vitest run 2>&1 | tail -40; echo \\\"ALL_TESTS_EXIT=$?\\\"; npm run build 2>&1 | tail -20; echo \\\"BUILD_EXIT=$?\\\"\",\"timeoutSeconds\":1800}\n```\n\nЖду результат от worker.\n\n",
+  "summary": "Важно: worker пересинхронизировал рабочую копию на SHA из запроса, и локальный merge-коммит 60b0900 был отброшен — проверки выше прошли на доmerge-состоянии и не считаются. Повторяю слияние, разрешение и проверки одной командой, после чего сразу публикую.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"merge-2\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"set -e\\ngit fetch origin cornel/cameracontroller-core-bd3382\\ngit merge --no-edit FETCH_HEAD || true\\ncat > src/camera/index.ts <<'EOF'\\nexport * from './CameraCollision';\\nexport * from './CameraController';\\nexport * from './CameraPose';\\nexport * from './CameraTransition';\\nexport * from './Easing';\\nexport * from './RapierCameraCollision';\\nexport * from './SmoothCameraRig';\\nexport * from './Smoothing';\\nexport * from './ThreeCameraBinding';\\nEOF\\ngrep -rn '<<<<<<<\\\\|>>>>>>>' src/ || echo NO_CONFLICT_MARKERS\\ngit add -A\\ngit commit --no-edit\\ngit log --oneline -3\\nset +e\\nnpm run typecheck; echo \\\"TYPECHECK_EXIT=$?\\\"\\nnpx vitest run src/camera 2>&1 | tail -20; echo \\\"CAMERA_TESTS_EXIT=$?\\\"\\nnpx vitest run 2>&1 | tail -12; echo \\\"ALL_TESTS_EXIT=$?\\\"\\nnpm run build 2>&1 | tail -8; echo \\\"BUILD_EXIT=$?\\\"\",\"timeoutSeconds\":1800}\n```\n\nЖду результат от worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "verify-3",
+      "status": "SUCCEEDED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "merge-2",
       "status": "STARTED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:13:31.163Z"
+  "createdAt": "2026-09-16T17:14:26.419Z"
 }

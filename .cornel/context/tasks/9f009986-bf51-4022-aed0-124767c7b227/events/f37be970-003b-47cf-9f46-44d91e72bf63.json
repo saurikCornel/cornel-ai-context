@@ -1,0 +1,12 @@
+{
+  "id": "f37be970-003b-47cf-9f46-44d91e72bf63",
+  "taskId": "9f009986-bf51-4022-aed0-124767c7b227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "merge-2",
+    "operation": "run",
+    "command": "set -e\ngit fetch origin cornel/cameracontroller-core-bd3382\ngit merge --no-edit FETCH_HEAD || true\ncat > src/camera/index.ts <<'EOF'\nexport * from './CameraCollision';\nexport * from './CameraController';\nexport * from './CameraPose';\nexport * from './CameraTransition';\nexport * from './Easing';\nexport * from './RapierCameraCollision';\nexport * from './SmoothCameraRig';\nexport * from './Smoothing';\nexport * from './ThreeCameraBinding';\nEOF\ngrep -rn '<<<<<<<\\|>>>>>>>' src/ || echo NO_CONFLICT_MARKERS\ngit add -A\ngit commit --no-edit\ngit log --oneline -3\nset +e\nnpm run typecheck; echo \"TYPECHECK_EXIT=$?\"\nnpx vitest run src/camera 2>&1 | tail -20; echo \"CAMERA_TESTS_EXIT=$?\"\nnpx vitest run 2>&1 | tail -12; echo \"ALL_TESTS_EXIT=$?\"\nnpm run build 2>&1 | tail -8; echo \"BUILD_EXIT=$?\""
+  },
+  "createdAt": "2026-09-16T17:14:26.416Z"
+}
