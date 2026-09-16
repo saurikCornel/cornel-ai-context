@@ -1,0 +1,11 @@
+{
+  "id": "97ae0def-4798-4307-9f17-85324e934701",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "leaderboard-implement-1",
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9"
+  },
+  "createdAt": "2026-09-16T00:05:43.388Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "e313696a-078e-460b-a9be-7cf2316161bb",
+  "taskId": "e59f62e3-409d-4f43-8005-b50d0bfb0dd5",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "course-builder-finish-3",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T00:05:41.045Z"
+}

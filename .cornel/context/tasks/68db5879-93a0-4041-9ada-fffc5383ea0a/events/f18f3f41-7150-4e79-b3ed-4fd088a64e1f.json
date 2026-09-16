@@ -1,0 +1,12 @@
+{
+  "id": "f18f3f41-7150-4e79-b3ed-4fd088a64e1f",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "physics-tests-fix-4",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T00:06:44.725Z"
+}

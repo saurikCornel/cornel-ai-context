@@ -1,0 +1,11 @@
+{
+  "id": "aae90b67-63f4-434d-8fb8-540bc989b7ac",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "physics-tests-fix-4",
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9"
+  },
+  "createdAt": "2026-09-16T00:06:40.217Z"
+}

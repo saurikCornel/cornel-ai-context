@@ -1,0 +1,12 @@
+{
+  "id": "a0865b9b-ea7e-42ee-a67a-61fa9876f8fe",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "physics-tests-fix-4",
+    "operation": "run",
+    "command": "set -e\ncat > tests/physics/helpers.test.ts <<'EOF'\nimport { describe, expect, it } from 'vitest';\nimport { cappedVelocity, magnitude, shotImpulseFromCharge, shouldSleep } from '../../src/physics/helpers';\n\ndescribe('physics helpers', () => {\n  it('clamps shot power and follows configured curve endpoints', () => {\n    expect(shotImpulseFromCharge(-1, 0.6, 14, 1.65)).toBe(0.6);\n    expect(shotImpulseFromCharge(1, 0.6, 14, 1.65)).toBe(14);\n    const half = shotImpulseFromCharge(0.5, 0.6, 14, 1.65);\n    expect(half).toBeGreaterThan(0.6);\n    expect(half).toBeLessThan(7.3);\n  });\n\n  it('caps speed while preserving direction', () => {\n    const capped = cappedVelocity({ x: 30, y: 0, z: 40 }, 20);\n    expect(magnitude(capped)).toBeCloseTo(20, 9);\n    expect(capped.x / capped.z).toBeCloseTo(0.75, 9);\n  });\n\n  it('requires low speed and sufficient quiet time before sleep', () => {\n    expect(shouldSleep(0.05, 0.075, 0.7, 0.6)).toBe(true);\n    expect(shouldSleep(0.08, 0.075, 1, 0.6)).toBe(false);\n    expect(shouldSleep(0.05, 0.075, 0.3, 0.6)).toBe(false);\n  });\n});\nEOF\ncat > tests/physics/ball.test.ts <<'EOF'\nimport { describe, expect, it } from 'vitest';\nimport { GolfBallPhysics } from '../../src/physics/GolfBallPhysics';\nimport { PhysicsWorld } from '../../src/physics/PhysicsWorld';\n\ndescribe('GolfBallPhysics', () => {\n  it('accepts a shot at rest and safe reset clears motion', () => {\n    const physics = new PhysicsWorld();\n    const ball = new GolfBallPhysics(physics, { x: 1, y: 2, z: 3 });\n    const shot = ball.applyShot({ x: 1, y: 0, z: 0 }, 1);\n    expect(shot.accepted).toBe(true);\n    expect(shot.impulse).toBeGreaterThan(0);\n\n    ball.markSafePosition({ x: 4, y: 5, z: 6 });\n    ball.reset();\n    expect(ball.position).toEqual({ x: 4, y: 5, z: 6 });\n    expect(ball.speed).toBe(0);\n    expect(ball.body.isSleeping()).toBe(true);\n    physics.dispose();\n  });\n});\nEOF\nprintf '%s\\n' '=== PHYSICS UNIT TESTS ==='\nnpx --yes vitest@3.2.4 run tests/physics --reporter=verbose\nprintf '%s\\n' '=== TYPECHECK ==='\nnpm run typecheck\nprintf '%s\\n' '=== BUILD ==='\nnpm run build\nprintf '%s\\n' '=== STATUS ==='\ngit status --short"
+  },
+  "createdAt": "2026-09-16T00:06:03.364Z"
+}

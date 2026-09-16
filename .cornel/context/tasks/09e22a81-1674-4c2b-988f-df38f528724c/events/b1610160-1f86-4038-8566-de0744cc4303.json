@@ -1,0 +1,17 @@
+{
+  "id": "b1610160-1f86-4038-8566-de0744cc4303",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "leaderboard-implement-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\n=== TESTS ===\nsh: tsc: command not found\nsh: tsc: command not found\n✔ generates 50+ deterministic AI leaderboard entries (3.735209ms)\n✔ entries satisfy profile and statistics invariants (0.698542ms)\n✔ leaderboard renderer exposes accessible table structure and key statistics (4.418041ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 156.155292\n\n=== STATUS ===\n?? src/leaderboard/\n?? tests/\n",
+    "outputDigest": "93ecc1ca66c1d831cba27cbbf3254758ae4058bf5695f7da99da547dac7c8cf4",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:05:51.762Z"
+}

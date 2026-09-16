@@ -1,0 +1,9 @@
+{
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "branch": "cornel/08cc768e-91b9-422f-8683-ff0784856b30",
+  "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+  "status": "WAITING_CHATGPT",
+  "summary": "Начинаю с проверки структуры Level Builder API и текущего состояния назначенной ветки. После результата worker создам три независимых набора по 9 лунок, не затрагивая чужие модули.\n\nJSON\n{\"version\":1,\"taskId\":\"08cc768e-91b9-422f-8683-ff0784856b30\",\"commandId\":\"inspect-1\",\"operation\":\"run\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"command\":\"printf '\\\\n=== STATUS ===\\\\n'; git status --short; printf '\\\\n=== SOURCE TREE ===\\\\n'; find src -maxdepth 4 -type f -print | sort; printf '\\\\n=== COURSE/LEVEL API ===\\\\n'; for f in $(find src -type f \\\\( -iname '*course*' -o -iname '*level*' -o -iname '*builder*' \\\\) | sort); do echo \\\"--- $f\\\"; sed -n '1,260p' \\\"$f\\\"; done\",\"timeoutSeconds\":300}\n\nЖду результат worker. Следующий шаг — реализация данных Green Hills, Pirate Bay и Candy Factory строго по фактическому API.\n\nСводка: решение — сначала зафиксировать реальные контракты Level Builder; изменённые файлы — пока нет; проверка — git status, дерево src, чтение course/level API; следующий шаг — 27 оригинальных лунок и затем typecheck/build.\n\n",
+  "commands": [],
+  "createdAt": "2026-09-16T00:06:53.632Z"
+}

@@ -1,0 +1,9 @@
+{
+  "taskId": "0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
+  "branch": "cornel/0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
+  "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+  "status": "WAITING_CHATGPT",
+  "summary": "Контракты курса проверены: поддерживаются поверхности и препятствия, необходимые для трёх тематических наборов. Контрольной точки для новой задачи ещё нет, что соответствует инструкции. Сначала проверяю фактическое состояние назначенной ветки и структуру исходников перед добавлением 27 лунок.\n\nJSON\n{\"version\":1,\"taskId\":\"0d1bbbaa-cb66-43e7-944c-9bc07ef04231\",\"commandId\":\"inspect-1\",\"operation\":\"run\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"command\":\"printf '%s\\\\n' '=== STATUS ==='; git status --short; printf '%s\\\\n' '=== COURSE TREE ==='; find src/courses -maxdepth 3 -type f -print | sort; printf '%s\\\\n' '=== PACKAGE ==='; cat package.json\",\"timeoutSeconds\":300}\n\nЖду результат worker. Следующий шаг после него — создать независимые ancient-temple, arctic-base и volcano course-data модули, затем выполнить typecheck/build и структурную проверку количества лунок.\n\nСводка: решение — опираться строго на существующий Course/Hole/ObstacleDescriptor; изменённых файлов пока нет; GitHub-контракты просмотрены; сейчас проверяется локальное состояние ветки.\n\n",
+  "commands": [],
+  "createdAt": "2026-09-16T00:07:00.159Z"
+}
