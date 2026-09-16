@@ -1,0 +1,17 @@
+{
+  "id": "2073937e-bf2d-474d-b0f3-a776b51094d2",
+  "taskId": "e59f62e3-409d-4f43-8005-b50d0bfb0dd5",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "course-builder-check-1",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "=== STATUS ===\n=== COURSE FILES ===\nsrc/courses/types.ts\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "37483bf8e849dd776cf5f1e5c86880e7ba5c09fec6ab26a4559ffdeebb55eb18",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:03:31.884Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "590bbaf4-7efc-49d9-8bb0-9412e8588efc",
+  "taskId": "e59f62e3-409d-4f43-8005-b50d0bfb0dd5",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "course-builder-check-1",
+    "operation": "run",
+    "command": "printf '%s\\n' '=== STATUS ==='; git status --short; printf '%s\\n' '=== COURSE FILES ==='; find src/courses -maxdepth 2 -type f -print | sort; printf '%s\\n' '=== TYPECHECK ==='; npm run typecheck"
+  },
+  "createdAt": "2026-09-16T00:03:24.225Z"
+}

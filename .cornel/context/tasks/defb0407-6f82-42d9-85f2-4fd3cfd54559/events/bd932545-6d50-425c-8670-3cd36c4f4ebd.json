@@ -1,0 +1,12 @@
+{
+  "id": "bd932545-6d50-425c-8670-3cd36c4f4ebd",
+  "taskId": "defb0407-6f82-42d9-85f2-4fd3cfd54559",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "ui-inspect-1",
+    "operation": "run",
+    "command": "printf '\\n=== STATUS ===\\n'; git status --short; printf '\\n=== FILES ===\\n'; find src -maxdepth 3 -type f -print | sort; printf '\\n=== PACKAGE ===\\n'; cat package.json; printf '\\n=== CONTRACTS ===\\n'; find src -maxdepth 3 -type f \\( -iname '*contract*' -o -iname '*dto*' -o -iname '*type*' \\) -print -exec sh -c 'echo \"--- $1\"; sed -n \"1,240p\" \"$1\"' _ {} \\;"
+  },
+  "createdAt": "2026-09-16T00:03:30.343Z"
+}

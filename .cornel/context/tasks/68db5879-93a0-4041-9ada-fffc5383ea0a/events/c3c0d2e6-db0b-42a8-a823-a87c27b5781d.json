@@ -1,0 +1,12 @@
+{
+  "id": "c3c0d2e6-db0b-42a8-a823-a87c27b5781d",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "physics-tests-3",
+    "operation": "run",
+    "command": "set -e\nprintf '%s\\n' '=== PHYSICS UNIT TESTS ==='\nnpx --yes vitest@3.2.4 run tests/physics --reporter=verbose\nprintf '%s\\n' '=== PACKAGE CHANGES ==='\ngit diff -- package.json package-lock.json\nprintf '%s\\n' '=== STATUS ==='\ngit status --short"
+  },
+  "createdAt": "2026-09-16T00:04:51.071Z"
+}

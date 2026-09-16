@@ -1,0 +1,12 @@
+{
+  "id": "03c20607-7783-4cf6-a4e0-fce8c6aa4e6a",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "leaderboard-inspect-1",
+    "operation": "run",
+    "command": "printf '\\n=== STATUS ===\\n'; git status --short; printf '\\n=== PACKAGE ===\\n'; cat package.json; printf '\\n=== SOURCE FILES ===\\n'; find src -maxdepth 3 -type f -print | sort; printf '\\n=== CONTRACTS ===\\n'; cat src/contracts/game.ts; printf '\\n=== MAIN ===\\n'; cat src/main.ts; printf '\\n=== STYLE ===\\n'; cat src/style.css"
+  },
+  "createdAt": "2026-09-16T00:03:57.434Z"
+}

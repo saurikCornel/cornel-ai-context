@@ -1,0 +1,28 @@
+{
+  "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md",
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "src/app/GameState.ts",
+    "src/config/GameConfig.ts",
+    "src/contracts/events.ts",
+    "src/contracts/game.ts",
+    "src/contracts/index.ts",
+    "src/contracts/math.ts",
+    "src/contracts/services.ts",
+    "src/courses/Course.ts",
+    "src/courses/CourseBuilder.ts",
+    "src/courses/Hole.ts",
+    "src/courses/types.ts",
+    "src/main.ts",
+    "src/style.css",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "vite.config.ts"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "e01fe8dc-c97c-4738-aa91-0abc710bc288",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "physics-implement-1",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== BUILD ===\nsh: tsc: command not found\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n=== PHYSICS TEST COMPILE/RUN ===\nsh: tsc: command not found\n\n\u001b[41m                                                                               \u001b[0m\n\u001b[41m\u001b[37m                This is not the tsc command you are looking for                \u001b[0m\n\u001b[41m                                                                               \u001b[0m\n\nTo get access to the TypeScript compiler, \u001b[34mtsc\u001b[0m, from the command line either:\n\n- Use \u001b[1mnpm install typescript\u001b[0m to first add TypeScript to your project \u001b[1mbefore\u001b[0m using npx\n- Use \u001b[1myarn\u001b[0m to avoid accidentally running code from un-installed packages\n=== STATUS ===\n?? src/physics/\n?? tests/\n",
+    "outputDigest": "abb73533c3e37bc2f983599330eeb96070496df430a7eae743402590a5cc2a01",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:03:32.813Z"
+}

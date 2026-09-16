@@ -1,0 +1,11 @@
+{
+  "id": "0158fc7c-5fc2-4096-90ff-63f777ff040e",
+  "taskId": "e59f62e3-409d-4f43-8005-b50d0bfb0dd5",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "course-builder-verify-2",
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa"
+  },
+  "createdAt": "2026-09-16T00:04:40.220Z"
+}

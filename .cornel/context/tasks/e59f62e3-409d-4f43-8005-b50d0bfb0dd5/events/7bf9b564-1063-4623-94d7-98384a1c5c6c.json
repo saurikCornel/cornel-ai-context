@@ -1,0 +1,12 @@
+{
+  "id": "7bf9b564-1063-4623-94d7-98384a1c5c6c",
+  "taskId": "e59f62e3-409d-4f43-8005-b50d0bfb0dd5",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "course-builder-verify-2",
+    "operation": "run",
+    "command": "npm install && npm run typecheck && npm run build && git status --short"
+  },
+  "createdAt": "2026-09-16T00:04:37.303Z"
+}

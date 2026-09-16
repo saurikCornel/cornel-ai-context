@@ -1,9 +1,22 @@
 {
   "taskId": "e59f62e3-409d-4f43-8005-b50d0bfb0dd5",
   "branch": "cornel/e59f62e3-409d-4f43-8005-b50d0bfb0dd5",
-  "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+  "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
   "status": "WAITING_CHATGPT",
-  "summary": "Контракты курса проверены: базовые Course, Hole, поверхности и типизированные obstacle descriptors уже присутствуют; файлов реализации Course.ts, Hole.ts, CourseBuilder.ts в назначенной ветке пока нет. Следующим шагом проверю локальное состояние и затем реализую карточку без классов препятствий.\n\nJSON\n{\"version\":1,\"taskId\":\"e59f62e3-409d-4f43-8005-b50d0bfb0dd5\",\"commandId\":\"course-builder-check-1\",\"operation\":\"run\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"command\":\"printf '%s\\\\n' '=== STATUS ==='; git status --short; printf '%s\\\\n' '=== COURSE FILES ==='; find src/courses -maxdepth 2 -type f -print | sort; printf '%s\\\\n' '=== TYPECHECK ==='; npm run typecheck\",\"timeoutSeconds\":300}\n\nЖду результат worker.\n\nСводка: решение — строить Course Builder поверх уже слитых descriptor-контрактов; изменённых файлов пока нет; GitHub-структура и types.ts проверены; следующий шаг — получить исходный baseline typecheck и реализовать три назначенных файла.\n\n",
-  "commands": [],
-  "createdAt": "2026-09-16T00:03:14.546Z"
+  "summary": "Проверка завершилась успешно: зависимости установлены, TypeScript typecheck прошёл, production build Vite собран без ошибок. Карточка Course Builder готова к передаче сборщику; PR по условиям задания не требуется.\n\nJSON\n{\"version\":1,\"taskId\":\"e59f62e3-409d-4f43-8005-b50d0bfb0dd5\",\"commandId\":\"course-builder-finish-3\",\"operation\":\"finish\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"message\":\"Course Builder и базовые типы реализованы: добавлены src/courses/Course.ts, Hole.ts и CourseBuilder.ts поверх существующих descriptor-контрактов, без реализации obstacle classes. Проверено worker: npm install — успешно, npm run typecheck — успешно, npm run build — успешно. Ветка готова к слиянию сборщиком.\"}\n\nСводка: карточка выполнена; изменены Course.ts, Hole.ts, CourseBuilder.ts; typecheck и production build фактически подтверждены worker; следующий шаг — слияние ветки сборщиком.\n\n",
+  "commands": [
+    {
+      "commandId": "course-builder-check-1",
+      "status": "FAILED",
+      "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+      "exitCode": 127
+    },
+    {
+      "commandId": "course-builder-verify-2",
+      "status": "SUCCEEDED",
+      "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+      "exitCode": 0
+    }
+  ],
+  "createdAt": "2026-09-16T00:05:24.410Z"
 }
