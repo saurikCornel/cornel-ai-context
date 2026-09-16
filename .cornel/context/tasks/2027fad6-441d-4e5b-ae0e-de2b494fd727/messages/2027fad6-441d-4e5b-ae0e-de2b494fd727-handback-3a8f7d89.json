@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Жду результат implement-bot-planner-12. Повторно команду не отправляю: предыдущие успешные действия уже подтверждены, а дублирование может перезаписать локальные изменения.\n\nСводка: AI-ядро уже создано (types.ts, random.ts, BotProfiles.ts, index.ts). Следующий шаг после RESULT планировщика — проверить получившиеся файлы, добавить детерминированные тесты для scoring/skill/rating, выполнить typecheck/tests/build, затем publish и finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:03:21.275Z"
+}

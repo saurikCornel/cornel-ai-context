@@ -1,0 +1,28 @@
+{
+  "id": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "chatgpt",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "5f3006d5-0d86-4e0d-b25c-cb9baa435bd8",
+    "base": {
+      "": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: Camera input and zoom",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/camera-input-and-zoom-5ded69 (карточка «Camera input and zoom») не сливается в ветку офиса cornel/office: конфликт в файлах src/camera/index.ts.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/camera-input-and-zoom-5ded69 && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/slit-camera-input-and-zoom-100009",
+  "baseSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+  "workspaceSyncedSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+  "status": "CREATING",
+  "createdAt": "2026-09-16T17:03:20.561Z",
+  "updatedAt": "2026-09-16T17:03:20.561Z",
+  "issue": null,
+  "chatUrl": null
+}
