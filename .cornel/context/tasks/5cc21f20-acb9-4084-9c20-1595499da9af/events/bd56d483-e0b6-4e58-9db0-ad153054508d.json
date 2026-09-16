@@ -1,0 +1,11 @@
+{
+  "id": "bd56d483-e0b6-4e58-9db0-ad153054508d",
+  "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "install-and-verify-14",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T15:43:06.651Z"
+}

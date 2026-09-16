@@ -3,7 +3,7 @@
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"dev-tests-13\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"cat > src/input/InputManager.test.ts <<'EOF'\\n// @vitest-environment jsdom\\nimport {describe,expect,it} from 'vitest';\\nimport {InputManager} from './InputManager';\\ndescribe('InputManager',()=>{it('tracks keyboard actions',()=>{const i=new InputManager({target:window,pointerTarget:document});window.dispatchEvent(new KeyboardEvent('keydown',{code:'KeyW'}));expect(i.isDown('camera-forward')).toBe(true);expect(i.wasPressed('camera-forward')).toBe(true);i.endFrame();expect(i.wasPressed('camera-forward')).toBe(false);window.dispatchEvent(new KeyboardEvent('keyup',{code:'KeyW'}));expect(i.wasReleased('camera-forward')).toBe(true);i.dispose()});it('tracks pointer and wheel',()=>{const i=new InputManager({target:window,pointerTarget:document});document.dispatchEvent(new PointerEvent('pointerdown',{button:0,clientX:12,clientY:34}));expect(i.pointer.primaryDown).toBe(true);document.dispatchEvent(new WheelEvent('wheel',{deltaY:120,cancelable:true}));expect(i.pointer.wheel).toBe(120);i.endFrame();expect(i.pointer.wheel).toBe(0);i.dispose()})});\\nEOF\\ncat > src/dev/dev.test.ts <<'EOF'\\n// @vitest-environment jsdom\\nimport {describe,expect,it} from 'vitest';\\nimport {parseLaunchOptions} from './LaunchOptions';\\nimport {PresentationMinimap} from './PresentationMinimap';\\ndescribe('launch options',()=>{it('parses debug/course/hole',()=>{expect(parseLaunchOptions('?debug=1&course=neon-city&hole=7')).toEqual({debug:true,courseId:'neon-city',hole:7})});it('ignores invalid hole',()=>{expect(parseLaunchOptions('?course=green-hills&hole=0')).toEqual({debug:false,courseId:'green-hills'})})});describe('minimap',()=>{it('toggles visibility',()=>{const m=new PresentationMinimap();expect(m.visible).toBe(false);m.setVisible(true);expect(m.visible).toBe(true)})});\\nEOF\\nnpm run test:input && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: код input/debug уже записан; этот шаг повторяет только ранее неисполненную запись тестов и валидацию. После успешного результата останутся publish и finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"install-and-verify-14\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"npm install && npm run test:input && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: код и тесты уже записаны; текущая проблема — отсутствующие node_modules. Этот шаг устанавливает зависимости и запускает валидацию. После успешного результата останутся publish и finish.\n\n",
   "commands": [
     {
       "commandId": "input-inventory-1",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "dev-tests-13",
+      "status": "FAILED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 127
+    },
+    {
+      "commandId": "install-and-verify-14",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:42:50.296Z"
+  "createdAt": "2026-09-16T15:43:04.312Z"
 }

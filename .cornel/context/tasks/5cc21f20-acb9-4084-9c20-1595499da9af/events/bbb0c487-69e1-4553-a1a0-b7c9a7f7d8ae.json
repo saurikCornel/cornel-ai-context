@@ -1,0 +1,12 @@
+{
+  "id": "bbb0c487-69e1-4553-a1a0-b7c9a7f7d8ae",
+  "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-and-verify-14",
+    "operation": "run",
+    "command": "npm install && npm run test:input && npm run typecheck && npm run build"
+  },
+  "createdAt": "2026-09-16T15:43:04.305Z"
+}
