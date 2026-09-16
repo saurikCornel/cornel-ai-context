@@ -1,0 +1,11 @@
+{
+  "id": "3aaf0cc4-e5e3-4d03-8c00-c6c73979f34a",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "triggers-grep-1",
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3"
+  },
+  "createdAt": "2026-09-16T17:09:20.962Z"
+}

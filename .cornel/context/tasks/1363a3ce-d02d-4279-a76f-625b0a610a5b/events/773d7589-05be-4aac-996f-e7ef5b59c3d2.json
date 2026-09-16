@@ -1,0 +1,17 @@
+{
+  "id": "773d7589-05be-4aac-996f-e7ef5b59c3d2",
+  "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "triggers-grep-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+    "output": "src/courses/data/candy-factory.ts:16:defineHole({id:'cf-07-conveyor-crunch',name:'Conveyor Crunch',par:5,spawn:v(-3,.45,1),cup:cup(3,23),bounds:bounds(15,24),surfaces:[floor('entry',-3,5,6,10,'metal'),floor('conveyor',0,13,10,7,'metal'),floor('exit',3,20,6,8,'metal')],obstacles:[{id:'pusher-a',type:'gate',transform:{position:v(-1.5,1,12)},size:v(4,1.5,.5),motion:{kind:'translate',axis:v(1,0,0),speed:1.4,distance:2}},{id:'pusher-b',type:'gate',transform:{position:v(1.5,1,15)},size:v(4,1.5,.5),motion:{kind:'translate',axis:v(1,0,0),speed:1.15,distance:2}},reset('crusher-reset',0,13,2,7)]}),",
+    "outputDigest": "706b69f6100aa883c78f3da4ab8edbcbf22e62cb05566b5b75b8598be6471ae6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:09:21.048Z"
+}
