@@ -1,0 +1,11 @@
+{
+  "id": "e59bfbd9-2fc3-4dff-8af2-6646854ede4e",
+  "taskId": "89d3c3a7-7171-44bd-ac5c-37d2e65d94c8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-3",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T15:00:03.191Z"
+}
