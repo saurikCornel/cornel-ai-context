@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-8\",\"operation\":\"grep\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"pattern\":\"maxShots|strokeLimitPerHole|strokeLimit|max-shots|max shots\",\"path\":\"src\"}\n\nСводка: подтвердил, что Hole и CourseBuilder не содержат maxShots; изменённых файлов пока нет. Следующий шаг — привязать проверку лимита к реальному источнику конфигурации и затем сразу добавить data-validation test.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T14:01:16.525Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/validaciya-90-lunok-c85887",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-7\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/courses/Hole.ts:1-220\",\"src/courses/CourseBuilder.ts:1-260\",\"src/courses/Course.ts:1-220\"]}\n\nСводка: допустимые obstacle types подтверждены контрактом; выяснилось, что maxShots напрямую в Hole отсутствует. Следующий шаг — установить фактическую семантику лимита ударов и затем создать тест без ложных требований к данным.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-8\",\"operation\":\"grep\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"pattern\":\"maxShots|strokeLimitPerHole|strokeLimit|max-shots|max shots\",\"path\":\"src\"}\n\nСводка: подтвердил, что Hole и CourseBuilder не содержат maxShots; изменённых файлов пока нет. Следующий шаг — привязать проверку лимита к реальному источнику конфигурации и затем сразу добавить data-validation test.\n\n",
   "commands": [
     {
       "commandId": "inspect-validation-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "inspect-validation-7",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-validation-8",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T14:00:16.419Z"
+  "createdAt": "2026-09-16T14:01:16.528Z"
 }
