@@ -2,7 +2,7 @@
   "id": "99f73df3-a10f-42f0-b541-73cf100b7f40",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "qwen",
+  "agent": "claude",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -19,17 +19,18 @@
   "workspaceSyncedSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T18:49:05.679Z",
-  "updatedAt": "2026-09-16T21:01:33.785Z",
+  "updatedAt": "2026-09-16T21:10:29.423Z",
   "issue": 61,
-  "chatUrl": "https://chat.qwen.ai/c/f2427bd7-96c4-49f5-9375-f512c7b1931c",
+  "chatUrl": null,
   "error": null,
   "chatEpoch": 14,
   "appliedEffort": null,
   "effortFailed": null,
   "cliSession": null,
-  "cliActivity": null,
-  "browserError": "Отправка не сработала: текст остался в поле ввода — повторю",
+  "cliActivity": "Claude CLI: запускается (opus)",
+  "browserError": null,
   "statusChecks": 0,
   "currentHead": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
-  "browserErrorJobId": "99f73df3-a10f-42f0-b541-73cf100b7f40-handback-ded669f4"
+  "browserErrorJobId": "99f73df3-a10f-42f0-b541-73cf100b7f40-handback-ded669f4",
+  "chatUrlBefore": "https://chat.qwen.ai/c/f2427bd7-96c4-49f5-9375-f512c7b1931c"
 }
