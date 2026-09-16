@@ -1,0 +1,11 @@
+{
+  "id": "a26f823c-4570-45b0-9569-fbbd89a66305",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "camera-tests-part-a",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:28:19.548Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "125517ba-d894-4718-bad2-6c66f049cdf5",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-tests-part-a",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "    3668 src/camera/CameraSmoothing.test.ts\n",
+    "outputDigest": "b34504522b92066834fbaa5b35cfbe91b0429c734ce4d67e3e905dc8cc719c2c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:28:19.627Z"
+}
