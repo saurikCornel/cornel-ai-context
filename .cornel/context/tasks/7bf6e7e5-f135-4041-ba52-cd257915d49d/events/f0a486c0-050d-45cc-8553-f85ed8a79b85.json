@@ -1,0 +1,12 @@
+{
+  "id": "f0a486c0-050d-45cc-8553-f85ed8a79b85",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-scripts",
+    "operation": "run",
+    "command": "cat package.json | grep -A 10 '\"scripts\"'"
+  },
+  "createdAt": "2026-09-16T21:34:40.296Z"
+}
