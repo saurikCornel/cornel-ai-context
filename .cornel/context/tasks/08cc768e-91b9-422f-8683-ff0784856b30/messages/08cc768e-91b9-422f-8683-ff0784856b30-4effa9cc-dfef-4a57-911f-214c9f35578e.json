@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Финальная проверка полностью успешна: Green Hills, Pirate Bay и Candy Factory содержат ровно по 9 лунок, все 27 ID уникальны, рабочая копия чистая, typecheck и production build проходят. Отправляю карточку на завершение.\n\nJSON\n{\"version\":1,\"taskId\":\"08cc768e-91b9-422f-8683-ff0784856b30\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"8f8986215aced22fdab61f8adf9e78929a9d3275\",\"message\":\"Готово: добавлены независимые course data модули Green Hills, Pirate Bay и Candy Factory — по 9 оригинальных лунок, всего 27. Лунки имеют уникальные id/name, par, spawn/cup, bounds, surfaces и obstacle descriptors; сложность последовательно растёт, используются статические, движущиеся и hazard-препятствия. Проверено на опубликованном HEAD: 9+9+9 лунок, 27/27 уникальных hole ID, чистый git status, npm run typecheck успешно, npm run build успешно. Примечание для интеграции: предоставленный базовый Hole API не содержит поля maxShots, поэтому общий контракт чужой карточки не изменялся.\"}\n\nСводка: изменены src/courses/data/green-hills.ts, pirate-bay.ts, candy-factory.ts; все 27 лунок опубликованы и проверены; production build успешен; следующий шаг — сборщик может сливать ветку карточки.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T12:00:26.290Z"
+}

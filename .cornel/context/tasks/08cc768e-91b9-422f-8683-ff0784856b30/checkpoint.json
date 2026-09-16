@@ -3,7 +3,7 @@
   "branch": "cornel/08cc768e-91b9-422f-8683-ff0784856b30",
   "headSha": "8f8986215aced22fdab61f8adf9e78929a9d3275",
   "status": "RUNNING",
-  "summary": "Все три модуля теперь опубликованы. Выполняю финальную проверку именно опубликованного состояния: чистота рабочей копии, 9 лунок в каждом модуле, отсутствие повторяющихся hole ID, typecheck и production build.\n\nJSON\n{\"version\":1,\"taskId\":\"08cc768e-91b9-422f-8683-ff0784856b30\",\"commandId\":\"final-verify-1\",\"operation\":\"run\",\"headSha\":\"8f8986215aced22fdab61f8adf9e78929a9d3275\",\"command\":\"set -e; printf '%s\\\\n' '=== STATUS ==='; git status --short; printf '%s\\\\n' '=== HOLE COUNTS ==='; for f in src/courses/data/green-hills.ts src/courses/data/pirate-bay.ts src/courses/data/candy-factory.ts; do printf '%s: ' \\\"$f\\\"; grep -c 'defineHole({' \\\"$f\\\"; done; printf '%s\\\\n' '=== UNIQUE HOLE IDS ==='; ids=$(grep -h -o \\\"id:'\\\\(gh\\\\|pb\\\\|cf\\\\)-[0-9][0-9]-[^']*'\\\" src/courses/data/*.ts | sed \\\"s/^id:'//;s/'$//\\\"); total=$(printf '%s\\\\n' \\\"$ids\\\" | sed '/^$/d' | wc -l | tr -d ' '); unique=$(printf '%s\\\\n' \\\"$ids\\\" | sed '/^$/d' | sort -u | wc -l | tr -d ' '); echo \\\"total=$total unique=$unique\\\"; test \\\"$total\\\" = 27; test \\\"$unique\\\" = 27; printf '%s\\\\n' '=== TYPECHECK ==='; npm run typecheck; printf '%s\\\\n' '=== BUILD ==='; npm run build\",\"timeoutSeconds\":300}\n\nЕсли эта проверка завершится успешно, следующим действием будет finish. Интеграционное замечание о maxShots включу в итог: текущий предоставленный Hole контракт такого свойства не имеет, поэтому чужой базовый API в этой карточке не изменялся.\n\nСводка: три course-модуля опубликованы; всего ожидается 27 оригинальных лунок; сейчас идёт финальная проверка структуры, уникальности, типов и production build; следующий шаг — finish при успешном RESULT.\n\n",
+  "summary": "Финальная проверка полностью успешна: Green Hills, Pirate Bay и Candy Factory содержат ровно по 9 лунок, все 27 ID уникальны, рабочая копия чистая, typecheck и production build проходят. Отправляю карточку на завершение.\n\nJSON\n{\"version\":1,\"taskId\":\"08cc768e-91b9-422f-8683-ff0784856b30\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"8f8986215aced22fdab61f8adf9e78929a9d3275\",\"message\":\"Готово: добавлены независимые course data модули Green Hills, Pirate Bay и Candy Factory — по 9 оригинальных лунок, всего 27. Лунки имеют уникальные id/name, par, spawn/cup, bounds, surfaces и obstacle descriptors; сложность последовательно растёт, используются статические, движущиеся и hazard-препятствия. Проверено на опубликованном HEAD: 9+9+9 лунок, 27/27 уникальных hole ID, чистый git status, npm run typecheck успешно, npm run build успешно. Примечание для интеграции: предоставленный базовый Hole API не содержит поля maxShots, поэтому общий контракт чужой карточки не изменялся.\"}\n\nСводка: изменены src/courses/data/green-hills.ts, pirate-bay.ts, candy-factory.ts; все 27 лунок опубликованы и проверены; production build успешен; следующий шаг — сборщик может сливать ветку карточки.\n\n",
   "commands": [
     {
       "commandId": "inspect-1",
@@ -91,10 +91,16 @@
     },
     {
       "commandId": "final-verify-1",
+      "status": "SUCCEEDED",
+      "headSha": "8f8986215aced22fdab61f8adf9e78929a9d3275",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
       "headSha": "8f8986215aced22fdab61f8adf9e78929a9d3275",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T12:00:01.279Z"
+  "createdAt": "2026-09-16T12:00:26.301Z"
 }

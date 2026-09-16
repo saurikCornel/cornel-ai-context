@@ -1,0 +1,17 @@
+{
+  "id": "0c8246f3-7fd0-4a18-8527-1f77f0913539",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "8f8986215aced22fdab61f8adf9e78929a9d3275",
+    "output": "Готово: добавлены независимые course data модули Green Hills, Pirate Bay и Candy Factory — по 9 оригинальных лунок, всего 27. Лунки имеют уникальные id/name, par, spawn/cup, bounds, surfaces и obstacle descriptors; сложность последовательно растёт, используются статические, движущиеся и hazard-препятствия. Проверено на опубликованном HEAD: 9+9+9 лунок, 27/27 уникальных hole ID, чистый git status, npm run typecheck успешно, npm run build успешно. Примечание для интеграции: предоставленный базовый Hole API не содержит поля maxShots, поэтому общий контракт чужой карточки не изменялся.",
+    "outputDigest": "999b557ad2cecdaffeda635ba13d6bc9ace8e610619bfb5cf54fdcaef28cd502",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:00:29.059Z"
+}
