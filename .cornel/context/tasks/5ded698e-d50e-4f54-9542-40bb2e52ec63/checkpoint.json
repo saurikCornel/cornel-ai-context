@@ -3,14 +3,20 @@
   "branch": "cornel/camera-input-and-zoom-5ded69",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "Начинаю с инвентаризации текущей рабочей ветки: найду существующие input/contracts, camera и тестовую структуру, чтобы реализовать карточку без пересечения с чужими слоями.\n\nJSON\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-inspect-1\",\"operation\":\"ls\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"path\":\"src\",\"maxLines\":300}\n\nЖду результат worker; он придёт сюда отдельным сообщением. Затем точечно прочитаю найденные контракты и существующие camera/input файлы.\n\nСводка: решение — сначала инвентаризация src; изменённые файлы — пока нет; проверки — пока не запускались; следующий шаг — прочитать существующие camera/input/contracts и реализовать movement/zoom/reset с тестами.\n\n",
+  "summary": "Структура найдена. Уже есть InputManager с тестами и отдельный camera-слой с collision-компонентами. Теперь читаю их интерфейсы и математические контракты, чтобы добавить camera commands без прямой связи с UI и не ломать параллельную работу над CameraController.\n\nJSON\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-read-2\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/input/InputManager.ts:1-320\",\"src/input/InputManager.test.ts:1-320\",\"src/input/index.ts:1-200\",\"src/camera/index.ts:1-200\",\"src/camera/CameraCollision.ts:1-260\",\"src/contracts/math.ts:1-260\",\"src/contracts/game.ts:1-260\",\"src/contracts/services.ts:1-320\",\"src/contracts/events.ts:1-260\",\"src/contracts/index.ts:1-200\",\"src/config/GameConfig.ts:1-260\",\"package.json:1-220\"]}\n\nСводка: решений по API пока не фиксирую до чтения существующих контрактов; изменённых файлов нет; следующий шаг — спроектировать минимальный command/controller слой для WASD, zoom и reset, затем добавить целевые тесты.\n\n",
   "commands": [
     {
       "commandId": "camera-input-inspect-1",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "camera-input-read-2",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:45:14.801Z"
+  "createdAt": "2026-09-16T15:48:32.533Z"
 }
