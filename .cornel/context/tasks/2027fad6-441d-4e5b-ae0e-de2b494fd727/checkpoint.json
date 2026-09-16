@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "Оба набора тестов теперь записаны. Запускаю единый validation: AI-тесты, TypeScript и production build. Это даст конкретные ошибки, если остались несовпадения контрактов.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"validate-ai-rating-35\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"set -e\\nnpx vitest run src/ai\\nnpm run typecheck\\nnpm run build\",\"timeoutSeconds\":300}\n\nСводка: реализованы и покрыты тестами bot profiles/skill progression, seeded matchmaking, multiplayer-Elo, candidate generation и planner scoring penalties. Сейчас выполняется фактическая проверка. При успехе останутся publish и проверка опубликованной головы перед finish; при ошибке исправлю только конкретную причину.\n\n",
+  "summary": "Ошибка инфраструктурная: зависимости ещё не установлены, поэтому Vitest/Vite даже не стартовали. Исходники тестами пока не проверялись. Устанавливаю зависимости и затем в той же команде запускаю весь validation заново — это повтор неуспешного шага после устранения конкретной причины.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"install-and-validate-ai-rating-36\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"set -e\\nnpm install\\nnpx vitest run src/ai\\nnpm run typecheck\\nnpm run build\",\"timeoutSeconds\":300}\n\nСводка: validate-ai-rating-35 не дошёл до тестов из-за отсутствующего vite; кодовая ошибка не установлена. Сейчас устраняется именно эта причина установкой зависимостей и выполняется фактическая проверка.\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -187,10 +187,16 @@
     },
     {
       "commandId": "validate-ai-rating-35",
+      "status": "FAILED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 1
+    },
+    {
+      "commandId": "install-and-validate-ai-rating-36",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:54:48.434Z"
+  "createdAt": "2026-09-16T18:55:49.483Z"
 }

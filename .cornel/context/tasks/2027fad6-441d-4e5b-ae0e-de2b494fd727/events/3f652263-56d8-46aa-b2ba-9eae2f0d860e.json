@@ -1,0 +1,12 @@
+{
+  "id": "3f652263-56d8-46aa-b2ba-9eae2f0d860e",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-and-validate-ai-rating-36",
+    "operation": "run",
+    "command": "set -e\nnpm install\nnpx vitest run src/ai\nnpm run typecheck\nnpm run build"
+  },
+  "createdAt": "2026-09-16T18:55:49.461Z"
+}
