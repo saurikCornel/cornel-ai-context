@@ -1,0 +1,14 @@
+{
+  "id": "911a4a0e-c84d-4328-b098-1f47e33d7342",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: src/camera/CameraController.test.ts, src/camera/CameraController.ts, src/camera/index.ts",
+  "detail": {
+    "files": [
+      "src/camera/CameraController.test.ts",
+      "src/camera/CameraController.ts",
+      "src/camera/index.ts"
+    ]
+  },
+  "createdAt": "2026-09-16T18:16:58.225Z"
+}

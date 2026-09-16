@@ -1,0 +1,28 @@
+{
+  "id": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "chatgpt",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "0bbe0e01-0b69-487a-b90f-57ce23690141",
+    "base": {
+      "": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: Camera modes: aim/follow/overview/free",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/camera-modes-aim-follow-overview-free-6032e1 (карточка «Camera modes: aim/follow/overview/free») не сливается в ветку офиса cornel/office: конфликт в файлах src/camera/CameraController.test.ts, src/camera/CameraController.ts, src/camera/index.ts.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/camera-modes-aim-follow-overview-free-6032e1 && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/slit-camera-modes-aim-follow-overview-fr-b80e34",
+  "baseSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+  "workspaceSyncedSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+  "status": "CREATING",
+  "createdAt": "2026-09-16T18:17:00.633Z",
+  "updatedAt": "2026-09-16T18:17:00.633Z",
+  "issue": null,
+  "chatUrl": null
+}
