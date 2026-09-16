@@ -1,0 +1,17 @@
+{
+  "id": "46cc728e-455e-401a-a9f6-1cf269bf984c",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-smoothing-finish-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+    "output": "Карточка «Плавность камеры и переходы» выполнена и опубликована (head 525f3534).\n\nДопущение (владелец недоступен): карточку определил по имени рабочей ветки cornel/camera-smoothing-transitions-f82d8a, совпадающей с taskId. Режимы камеры (aim/follow/overview/free) и CameraController намеренно не трогал — это соседние карточки; риг не знает о режимах и принимает желаемую позу каждый кадр.\n\nДобавлено в src/camera:\n- Easing.ts — кривые (linear…easeOutBack), clamp01, resolveEasing с безопасным фолбэком.\n- Smoothing.ts — кадронезависимое затухание (dampFactor/damp/dampVec3), wrapAngle/dampAngle по короткой дуге, критически задемпфированные пружины smoothDamp/smoothDampVec3 (без перелёта, скорость сохраняется между кадрами), clampDeltaSeconds против телепорта после залипшего кадра.\n- CameraPose.ts — поза position/target/fov без зависимости от рендера, lerp и метрика расстояния.\n- CameraTransition.ts — таймерный переход от замороженной стартовой позы к «живой» цели (мяч продолжает катиться), прерывается и перезапускается без рывка; неположительная длительность = мгновенный срез.\n- SmoothCameraRig.ts — пружины + переходы + существующий resolveCameraPosition (антиклиппинг); при завершении перехода его скорость передаётся пружинам, чтобы камера не замирала на последнем кадре.\n- ThreeCameraBinding.ts — applyCameraPose/readCameraPose для THREE.PerspectiveCamera.\n- index.ts дополнен экспортами; в package.json добавлен скрипт test:camera.\n\nФактические результаты worker на опубликованном head 525f3534:\n- npm run typecheck — без ошибок;\n- npm run test:camera — 28/28 (23 новых теста + 5 существующих CameraCollision);\n- npm run test:ui — 5/5; npm run test:input — 5/5.\n\nОсталось соседним карточкам: подключить риг к реальной камере в игровом цикле и задать пресеты режимов — API готов: update(dt, desiredPose), transitionTo(options), snapTo(pose), configure({ raycaster, collision, smoothTime… }).",
+    "outputDigest": "9014943087738a9d6d6e570a2093bee50192c0b8a3beb3387233fe1eca22c814",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:36:22.945Z"
+}
