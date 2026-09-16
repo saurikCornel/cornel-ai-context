@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-camera-index-8\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/index.ts\"]}\n```\n\nСводка: определён API controller: aim/follow/overview/free, плавные переходы, collision-aware позиции и независимый input state.  \nИзменённые файлы: нет.  \nПроверки: collision API и Vitest-стиль изучены.  \nСледующий шаг: создать controller, публичные exports и режимные unit-тесты.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:24:19.772Z"
+}

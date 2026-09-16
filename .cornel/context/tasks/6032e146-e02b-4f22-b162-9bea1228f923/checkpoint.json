@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-collision-source-7\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/CameraCollision.ts\",\"src/camera/RapierCameraCollision.ts\",\"src/camera/CameraCollision.test.ts\",\"src/contracts/math.ts\"]}\n```\n\nСводка: тесты используют Vitest; добавлю режимные проверки без DOM/WebGL-зависимости.  \nИзменённые файлы: нет.  \nПроверки: определён доступный test runner (`vitest`).  \nСледующий шаг: реализовать controller поверх точного collision API.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-camera-index-8\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/index.ts\"]}\n```\n\nСводка: определён API controller: aim/follow/overview/free, плавные переходы, collision-aware позиции и независимый input state.  \nИзменённые файлы: нет.  \nПроверки: collision API и Vitest-стиль изучены.  \nСледующий шаг: создать controller, публичные exports и режимные unit-тесты.  \n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "read-collision-source-7",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-camera-index-8",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:19:07.012Z"
+  "createdAt": "2026-09-16T16:24:19.775Z"
 }
