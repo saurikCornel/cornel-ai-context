@@ -3,7 +3,7 @@
   "branch": "cornel/camera-input-and-zoom-5ded69",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-verify-7\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npm install && npm run typecheck && npx vitest run src/camera && npm run build && git diff --check && git status --short\",\"timeoutSeconds\":300}\n```\n\nСводка: решение — источник не меняется; восстанавливаю отсутствующие зависимости и выполняю полный typecheck, camera-тесты, build и проверку whitespace; изменённые файлы — `src/camera/CameraInput.ts`, `src/camera/CameraInput.test.ts`, `src/camera/index.ts`; проверки — первая попытка остановилась до тестов из-за отсутствия `tsc`; следующий шаг — зафиксировать результат проверки и опубликовать изменения при успехе.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-contract-check-8\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/input/InputManager.ts:1-80\"]} \n```\n\nСводка: решение — реализация и тесты успешны; дополнительно проверяю совместимость action names с существующим `InputManager`; изменённые файлы — `src/camera/CameraInput.ts`, `src/camera/CameraInput.test.ts`, `src/camera/index.ts`; проверки — typecheck, 9/9 camera-тестов, build, diff whitespace успешны; следующий шаг — publish после подтверждения контракта.  \n",
   "commands": [
     {
       "commandId": "camera-input-inspect-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "camera-input-verify-7",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "camera-input-contract-check-8",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:16:09.621Z"
+  "createdAt": "2026-09-16T16:20:09.657Z"
 }

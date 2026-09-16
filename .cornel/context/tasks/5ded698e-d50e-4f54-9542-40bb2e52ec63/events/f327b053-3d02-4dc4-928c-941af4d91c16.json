@@ -1,0 +1,11 @@
+{
+  "id": "f327b053-3d02-4dc4-928c-941af4d91c16",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "camera-input-contract-check-8",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:20:11.899Z"
+}

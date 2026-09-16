@@ -1,0 +1,11 @@
+{
+  "id": "be35a93c-d4fa-4c02-ab76-7cb8f34c55bf",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-input-contract-check-8",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T16:20:09.653Z"
+}
