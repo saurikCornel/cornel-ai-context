@@ -1,0 +1,17 @@
+{
+  "id": "3d6a1a4f-e117-4a7b-a8d4-9bdbaa7eb0c7",
+  "taskId": "9f009986-bf51-4022-aed0-124767c7b227",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+    "output": "HEAD\n525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\nFrom github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/cameracontroller-core-bd3382 -> FETCH_HEAD\nAuto-merging src/camera/index.ts\nCONFLICT (content): Merge conflict in src/camera/index.ts\nAutomatic merge failed; fix conflicts and then commit the result.\nMERGE_EXIT=1\nA  src/camera/CameraController.test.ts\nA  src/camera/CameraController.ts\nUU src/camera/index.ts\n",
+    "outputDigest": "75ff7cc6484d002d5c1825a8cf8072721243ac7a56428017df38b8a2de63ac3b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:10:13.544Z"
+}

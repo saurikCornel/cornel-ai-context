@@ -1,0 +1,12 @@
+{
+  "id": "41978479-3034-48f9-9744-249858b069ec",
+  "taskId": "9f009986-bf51-4022-aed0-124767c7b227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "merge-1",
+    "operation": "run",
+    "command": "git rev-parse --abbrev-ref HEAD && git rev-parse HEAD && git fetch origin cornel/cameracontroller-core-bd3382 && git merge --no-edit FETCH_HEAD; echo \"MERGE_EXIT=$?\"; git status --short"
+  },
+  "createdAt": "2026-09-16T17:10:08.810Z"
+}
