@@ -1,0 +1,11 @@
+{
+  "id": "2b0a9861-e165-4e8b-82d9-348e46e83d56",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-abstractions-2",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T19:02:48.078Z"
+}
