@@ -1,0 +1,17 @@
+{
+  "id": "731c1801-e11a-4e49-90cc-f3058bc09aef",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "rot-obst-l1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "c0219512b2b27069ba03af0b48bf9a1ca019ff11",
+    "output": "/dev/disk3s1   460Gi   433Gi   1.1Gi   100%    4.6M   11M   29%   /System/Volumes/Data\nc0219512b2b27069ba03af0b48bf9a1ca019ff11\ntypecheck exit: 0\n \u001b[32m✓\u001b[39m src/obstacles/obstacles.test.ts \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/obstacles/spinnerWindmill.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m24 passed\u001b[39m\u001b[22m\u001b[90m (24)\u001b[39m\n\u001b[2m   Start at \u001b[22m 02:27:01\n\u001b[2m   Duration \u001b[22m 368ms\u001b[2m (transform 75%, import 19%, tests 4%, worker 2%)\u001b[22m\n\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-Bb53Nhb8.css  \u001b[39m\u001b[1m\u001b[2m  7.01 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.32 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-ESTV255h.js   \u001b[39m\u001b[1m\u001b[2m  2.61 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   1.21 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-B2ei82-g.js   \u001b[39m\u001b[1m\u001b[2m477.15 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 120.43 kB\u001b[22m\n\u001b[32m✓ built in 625ms\u001b[39m\n",
+    "outputDigest": "f45053338f90b481c5a45f7b4bdfcb0e3a6e3531b67739d390d14ebf37d77b90",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T23:27:03.768Z"
+}
