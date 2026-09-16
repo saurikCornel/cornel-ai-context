@@ -3,7 +3,7 @@
   "branch": "cornel/slit-camera-input-and-zoom-100009",
   "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"read-camera-index-1\",\"operation\":\"read\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"paths\":[\"src/camera/index.ts:1-40\"]}\n\nЖду RESULT worker. После чтения объединю конфликтующие экспорты, сниму маркеры и продолжу к проверкам.\n\nСводка: конфликт только в src/camera/index.ts; новые файлы CameraInput.ts и CameraInput.test.ts уже вошли без конфликта; проверки ещё не запускались; следующий шаг — разрешить index.ts.\n\n",
+  "summary": "Дочитываю вторую сторону конфликта.\n\n```json\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"read-camera-index-2\",\"operation\":\"read\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"paths\":[\"src/camera/index.ts:6-13\"]}\n```\n\nЖду RESULT worker — он придёт в этот чат отдельным сообщением.\n\nСводка: конфликт локализован в `src/camera/index.ts` (13 строк, один блок маркеров с строки 6); HEAD-сторона экспортирует `SmoothCameraRig`, `Smoothing`, `ThreeCameraBinding`, встречная — `CameraInput` и, возможно, ещё модули; следующий шаг — объединить оба набора экспортов, снять маркеры, завершить merge и прогнать `typecheck`/`test:camera`/`build`.\n\n",
   "commands": [
     {
       "commandId": "merge-camera-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "read-camera-index-1",
+      "status": "SUCCEEDED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-camera-index-2",
       "status": "STARTED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:15:45.350Z"
+  "createdAt": "2026-09-16T17:33:30.302Z"
 }

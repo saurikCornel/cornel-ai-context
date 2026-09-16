@@ -1,0 +1,11 @@
+{
+  "id": "9f06a1a3-edd1-4509-b844-d170ee17e648",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-camera-index-2",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T17:33:30.299Z"
+}

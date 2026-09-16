@@ -1,0 +1,17 @@
+{
+  "id": "59300ba5-1cef-41d0-b529-594aae89279f",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-camera-index-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+    "output": "### src/camera/index.ts (строки 6-13 из 13)\n6: <<<<<<< HEAD\n7: export * from './SmoothCameraRig';\n8: export * from './Smoothing';\n9: export * from './ThreeCameraBinding';\n10: =======\n11: export * from './CameraInput';\n12: >>>>>>> 8aab53119ae674d439b81094e70eb2abcb9d7dcb\n13:",
+    "outputDigest": "1ec9fd22e2333aed974a9a957f0934e58568443d70deb18083c63e98fd1b59c1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:33:32.859Z"
+}

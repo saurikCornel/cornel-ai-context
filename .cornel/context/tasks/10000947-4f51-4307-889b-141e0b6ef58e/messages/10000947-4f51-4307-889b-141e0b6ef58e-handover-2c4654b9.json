@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Дочитываю вторую сторону конфликта.\n\n```json\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"read-camera-index-2\",\"operation\":\"read\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"paths\":[\"src/camera/index.ts:6-13\"]}\n```\n\nЖду RESULT worker — он придёт в этот чат отдельным сообщением.\n\nСводка: конфликт локализован в `src/camera/index.ts` (13 строк, один блок маркеров с строки 6); HEAD-сторона экспортирует `SmoothCameraRig`, `Smoothing`, `ThreeCameraBinding`, встречная — `CameraInput` и, возможно, ещё модули; следующий шаг — объединить оба набора экспортов, снять маркеры, завершить merge и прогнать `typecheck`/`test:camera`/`build`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:33:30.298Z"
+}
