@@ -1,0 +1,11 @@
+{
+  "id": "3a78fde7-c1a2-4aa1-9560-56ef0af4e59b",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "rot-obstacles-inspect-2",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T19:18:17.083Z"
+}
