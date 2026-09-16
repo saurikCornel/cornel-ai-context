@@ -1,0 +1,17 @@
+{
+  "id": "42d2638e-abb1-4ded-a022-6ebe5cb101f0",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "resume-inspect-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f9d45eaac1309251d846cf98819c37739dd5cb87",
+    "output": "=== STATUS ===\n=== COURSE DATA ===\ntotal 16\n-rw-r--r--@ 1 alex  staff  4352 Sep 16 03:22 green-hills.ts\nGreen Hills holes: 9\nPirate Bay holes: 0\nCandy Factory holes: 0\n",
+    "outputDigest": "96d6778c7190cb2f7b6043172349a05db538193b20532412ecf49d5404a3091e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:55:58.267Z"
+}

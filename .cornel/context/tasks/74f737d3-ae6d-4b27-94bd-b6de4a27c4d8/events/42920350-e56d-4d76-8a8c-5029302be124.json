@@ -1,0 +1,12 @@
+{
+  "id": "42920350-e56d-4d76-8a8c-5029302be124",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-conflicts-2",
+    "operation": "run",
+    "command": "echo '=== STATUS ==='; git status --short; echo '=== INDEX OURS ==='; git show :2:src/ui/index.ts; echo '=== INDEX THEIRS ==='; git show :3:src/ui/index.ts; echo '=== CSS OURS ==='; git show :2:src/ui/ui.css; echo '=== CSS THEIRS ==='; git show :3:src/ui/ui.css"
+  },
+  "createdAt": "2026-09-16T11:56:03.612Z"
+}

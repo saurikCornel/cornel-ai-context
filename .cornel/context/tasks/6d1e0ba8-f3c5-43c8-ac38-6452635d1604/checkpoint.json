@@ -3,7 +3,7 @@
   "branch": "cornel/6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
   "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
   "status": "RUNNING",
-  "summary": "Ошибка теперь только в моей Perl-подстановке: production-код не затронут. Убираю хрупкую shell-регулярку и исправляю импорты временной сборки маленьким Node-скриптом, после чего запускаю только unit-тесты.\n\nJSON\n{\"version\":1,\"taskId\":\"6d1e0ba8-f3c5-43c8-ac38-6452635d1604\",\"commandId\":\"profile-tests-8\",\"operation\":\"run\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"command\":\"rm -rf .test-build; ./node_modules/.bin/tsc src/core/SaveManager.ts src/player/types.ts src/player/progression.ts src/player/profile.ts --outDir .test-build --module ESNext --moduleResolution bundler --target ES2022 --skipLibCheck || exit 1; node - <<'NODE'\\nconst fs=require('fs');\\nfor(const dir of ['.test-build/core','.test-build/player']) for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.js'))){const p=dir+'/'+name;let s=fs.readFileSync(p,'utf8');s=s.replace(/(from\\\\s+['\\\"])(\\\\.\\\\.?\\\\/[^'\\\"]+)(['\\\"])/g,(m,a,b,c)=>a+(b.endsWith('.js')?b:b+'.js')+c);fs.writeFileSync(p,s);}\\nNODE\\nnode --test tests/save-manager.test.mjs; rc=$?; rm -rf .test-build; printf '%s\\\\n' '=== STATUS ==='; git status --short; exit $rc\",\"timeoutSeconds\":300}\n\nСводка: typecheck и production build остаются подтверждёнными; последние сбои относятся исключительно к тестовому ESM harness. При успехе этой проверки сразу перехожу к publish.\n\n",
+  "summary": "Все требуемые проверки локальных изменений теперь подтверждены: ранее прошли штатные typecheck/build, сейчас — 6/6 unit-тестов SaveManager и миграций. Публикую только файлы карточки в назначенную ветку.\n\nJSON\n{\"version\":1,\"taskId\":\"6d1e0ba8-f3c5-43c8-ac38-6452635d1604\",\"commandId\":\"profile-publish-1\",\"operation\":\"publish\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"message\":\"Implement player profile XP and save persistence\"}\n\nСводка: реализованы src/player/*, src/core/SaveManager.ts, тесты SaveManager/migrations. Проверки: typecheck — успешно, production build — успешно, unit tests — 6/6. Следующий шаг после RESULT publish — контрольная проверка опубликованного commit и finish.\n\n",
   "commands": [
     {
       "commandId": "inspect-profile-1",
@@ -73,10 +73,16 @@
     },
     {
       "commandId": "profile-tests-8",
+      "status": "SUCCEEDED",
+      "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+      "exitCode": 0
+    },
+    {
+      "commandId": "profile-publish-1",
       "status": "STARTED",
       "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T11:55:30.280Z"
+  "createdAt": "2026-09-16T11:56:07.306Z"
 }
