@@ -1,9 +1,9 @@
 {
   "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
   "branch": "cornel/core-rendering-and-scene-infrastructure-6cc106",
-  "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+  "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"publish-core-rendering-5\",\"operation\":\"publish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Implement core renderer and scene infrastructure\"}\n\nСводка: реализованы src/core/Renderer.ts и src/core/SceneManager.ts; typecheck и build прошли успешно; сейчас публикуется итоговый коммит.\n",
+  "summary": "Готово: core rendering/scene infrastructure реализованы и опубликованы.\n\nЧто сделано: Renderer с ACES/sRGB, ограничением pixel ratio, shadow policy, resize API, shared geometry/material cache, instancing-ready API и восстановлением после потери WebGL-контекста; SceneManager с low-poly lighting rig, directional shadows, fog, тематизацией и разделёнными roots для static/dynamic/transient объектов.\n\nПроверки: npm run typecheck — успешно; npm run build — успешно.\n\nJSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"finish-core-rendering-6\",\"operation\":\"finish\",\"headSha\":\"5c034e09eb377a457c5c04648fd28dbe3602e3a2\",\"message\":\"Implemented src/core/Renderer.ts and src/core/SceneManager.ts with stylized low-poly rendering defaults, optimized lighting/shadows/fog, shared resource caches and instancing-ready API, WebGL context lost/restored recovery, and asset-free scene infrastructure. Verified with npm run typecheck and npm run build; both succeeded.\"}\n\nСводка: изменены src/core/Renderer.ts и src/core/SceneManager.ts; проверки пройдены; следующий шаг — сборщик офиса может сливать ветку.\n\n",
   "commands": [
     {
       "commandId": "inspect-core-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "publish-core-rendering-5",
+      "status": "SUCCEEDED",
+      "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-core-rendering-6",
       "status": "STARTED",
-      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:57:24.016Z"
+  "createdAt": "2026-09-16T13:58:34.119Z"
 }
