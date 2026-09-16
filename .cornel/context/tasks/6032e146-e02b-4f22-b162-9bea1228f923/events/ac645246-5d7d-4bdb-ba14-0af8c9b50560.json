@@ -1,0 +1,11 @@
+{
+  "id": "ac645246-5d7d-4bdb-ba14-0af8c9b50560",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "publish-camera-modes-25",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-16T18:03:27.820Z"
+}
