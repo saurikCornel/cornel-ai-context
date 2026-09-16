@@ -1,0 +1,11 @@
+{
+  "id": "12c0f277-3689-457a-a144-bf804b1a4f57",
+  "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-camera-2",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T12:29:10.558Z"
+}

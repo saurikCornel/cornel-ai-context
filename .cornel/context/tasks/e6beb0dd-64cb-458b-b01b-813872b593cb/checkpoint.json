@@ -2,8 +2,15 @@
   "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
   "branch": "cornel/camera-controller-and-controls-e6beb0",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "WAITING_CHATGPT",
-  "summary": "",
-  "commands": [],
-  "createdAt": "2026-09-16T12:28:31.450Z"
+  "status": "RUNNING",
+  "summary": "Фактический статус: задача не завершена. В Issue #35 нет ни RESULT, ни комментариев worker по команде inspect-camera-1; значит подтверждённого выполнения этой команды нет. Это не UNKNOWN и не успешный результат, поэтому продолжаю с новой командой чтения рабочей копии.\n\nСводка: код пока не изменён; подтверждённых проверок нет; следующий шаг — получить фактическую структуру src и затем читать только нужные camera/contracts/input файлы.\n\nJSON\n{\"version\":1,\"taskId\":\"e6beb0dd-64cb-458b-b01b-813872b593cb\",\"commandId\":\"inspect-camera-2\",\"operation\":\"ls\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"path\":\"src\",\"maxLines\":300}\n\nЖду RESULT worker в этом чате.\n\n",
+  "commands": [
+    {
+      "commandId": "inspect-camera-2",
+      "status": "STARTED",
+      "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-16T12:29:10.560Z"
 }

@@ -1,0 +1,11 @@
+{
+  "id": "a947a25f-fba5-4d2e-9f6c-dcb6152b14f7",
+  "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "inspect-camera-2",
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff"
+  },
+  "createdAt": "2026-09-16T12:29:10.559Z"
+}
