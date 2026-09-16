@@ -1,0 +1,12 @@
+{
+  "id": "adf0aa31-a0dc-4aaf-bde0-c0d32c1798d0",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "final-verify-7",
+    "operation": "run",
+    "command": "set -e\necho '=== STATUS ==='\ngit status --short\nif git status --short | grep -q .; then echo 'Working tree is not clean'; exit 1; fi\nif grep -R -nE '^(<<<<<<<|=======|>>>>>>>)' src/ui; then echo 'Conflict markers remain'; exit 1; fi\necho '=== TYPECHECK ==='\nnpm run typecheck\necho '=== UI TESTS ==='\nnpm run test:ui\necho '=== BUILD ==='\nnpm run build\necho '=== FINAL STATUS ==='\ngit status --short"
+  },
+  "createdAt": "2026-09-16T11:59:34.544Z"
+}

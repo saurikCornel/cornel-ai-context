@@ -1,0 +1,11 @@
+{
+  "id": "e2bb61a6-134a-4158-a15f-5f255f13098b",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "candy-factory-1",
+    "headSha": "f9d45eaac1309251d846cf98819c37739dd5cb87"
+  },
+  "createdAt": "2026-09-16T11:59:23.033Z"
+}

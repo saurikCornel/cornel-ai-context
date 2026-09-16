@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикация успешна. Перед finish выполняю обязательную проверку уже опубликованного состояния на той же голове: рабочее дерево, отсутствие конфликтных маркеров, typecheck, UI-тесты и build.\n\nJSON\n{\"version\":1,\"taskId\":\"74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\",\"commandId\":\"final-verify-7\",\"operation\":\"run\",\"headSha\":\"1bb641198d5780807973ef2542fcd56dab46226e\",\"command\":\"set -e\\necho '=== STATUS ==='\\ngit status --short\\nif git status --short | grep -q .; then echo 'Working tree is not clean'; exit 1; fi\\nif grep -R -nE '^(<<<<<<<|=======|>>>>>>>)' src/ui; then echo 'Conflict markers remain'; exit 1; fi\\necho '=== TYPECHECK ==='\\nnpm run typecheck\\necho '=== UI TESTS ==='\\nnpm run test:ui\\necho '=== BUILD ==='\\nnpm run build\\necho '=== FINAL STATUS ==='\\ngit status --short\",\"timeoutSeconds\":600}\n\nСводка: объединённые изменения опубликованы; функциональность AppUI и HUD/results сохранена совместно; предыдущие проверки прошли; сейчас выполняется финальная проверка опубликованного состояния. При успехе следующий шаг — finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T11:59:34.543Z"
+}

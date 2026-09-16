@@ -1,0 +1,17 @@
+{
+  "id": "da95a205-7de8-4445-a1ca-2f4f32233cd7",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "candy-factory-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f9d45eaac1309251d846cf98819c37739dd5cb87",
+    "output": "Candy Factory holes: 9\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "339c01646d8930bd5ea1a86abb9a3828a2246f203234fe17f48e48575528cd8a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:59:24.535Z"
+}
