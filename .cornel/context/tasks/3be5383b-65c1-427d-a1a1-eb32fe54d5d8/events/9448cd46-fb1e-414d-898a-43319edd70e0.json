@@ -1,0 +1,17 @@
+{
+  "id": "9448cd46-fb1e-414d-898a-43319edd70e0",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "implement-match-manager-9",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "d072115986b4742b475bf8be86b37259d7203903732cea8a682bbf12cd8d4a68",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:28:47.423Z"
+}
