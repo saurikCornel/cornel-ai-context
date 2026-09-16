@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-camera-dependencies-4\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"package.json\",\"src/camera/index.ts\",\"src/camera/CameraCollision.ts\",\"src/camera/RapierCameraCollision.ts\",\"src/contracts/game.ts\",\"src/contracts/math.ts\",\"src/contracts/index.ts\",\"src/core/Renderer.ts\",\"src/core/SceneManager.ts\",\"src/input/InputManager.ts\",\"src/input/index.ts\",\"src/main.ts\",\"src/config/GameConfig.ts\",\"tsconfig.app.json\",\"vite.config.ts\"]}\n```\n\nСводка: `CameraController` действительно отсутствует в текущем head; карточка требует создать его с независимой интеграцией.  \nИзменённые файлы: нет.  \nПроверки: подтверждено отсутствие camera-кода вне collision-модулей.  \nСледующий шаг: спроектировать API по существующим контрактам и добавить unit-тесты переходов.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-camera-api-5\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"package.json\",\"src/camera/CameraCollision.ts\",\"src/camera/RapierCameraCollision.ts\",\"src/camera/CameraCollision.test.ts\",\"src/contracts/math.ts\",\"src/contracts/game.ts\",\"src/input/InputManager.ts\",\"src/physics/GolfBallPhysics.ts\",\"src/physics/PhysicsWorld.ts\"]}\n```\n\nСводка: controller будет работать с существующей Three.js камерой и InputManager, сохраняя интеграцию необязательной для основного bootstrap.  \nИзменённые файлы: нет.  \nПроверки: зависимости и bootstrapping частично изучены; без изменений.  \nСледующий шаг: завершить проектирование по collision API и test scripts.  \n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "read-camera-dependencies-4",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-camera-api-5",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:07:15.874Z"
+  "createdAt": "2026-09-16T16:11:08.125Z"
 }
