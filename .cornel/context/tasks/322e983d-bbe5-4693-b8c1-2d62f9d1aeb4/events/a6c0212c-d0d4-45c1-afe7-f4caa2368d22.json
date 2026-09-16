@@ -1,0 +1,17 @@
+{
+  "id": "a6c0212c-d0d4-45c1-afe7-f4caa2368d22",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "rot-obst-b1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "      64 src/obstacles/RapierObstaclePhysics.ts\n",
+    "outputDigest": "e55ede9ac60fd82837fe39e6024f2a5f282adfb8fa0825d66e58e4fbe5fec6d2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:15:24.810Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/rotating-obstacles-322e98",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Проверяю, дошёл ли `rot-obst-a7`: результат в чат ещё не приходил, поэтому смотрю фактический состав `src/obstacles` перед следующим шагом.\n\n```json\n{\"version\":1,\"taskId\":\"322e983d-bbe5-4693-b8c1-2d62f9d1aeb4\",\"commandId\":\"rot-obst-a8-ls\",\"operation\":\"ls\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"path\":\"src/obstacles\",\"maxLines\":200}\n```\n\nЖду worker — результат придёт сюда отдельным сообщением, Issue перечитывать не нужно.\n\nСводка: решения — не дублировать `rot-obst-a7` до подтверждения его состояния, проверять каталог read-only операцией; изменённые файлы (подтверждено): `src/obstacles/validation.ts`, `rotation.ts`, `types.ts`, `RotatingObstacle.ts`, `RotatingBar.ts`, `Spinner.ts`, `Windmill.ts`; проверки: пока не запускались; следующий шаг — по итогу `ls` дописать Rapier-адаптер (если его нет), затем barrel/factory, targeted-тесты в стиле `effects/ParticleManager.test.ts`, после них typecheck и build, затем publish и finish.\n\n",
+  "summary": "Файлы на месте, контракты прочитал. `rot-obst-a7` не исполнился — отправляю адаптер отдельной небольшой командой с новым id.\n\n```json\n{\"version\":1,\"taskId\":\"322e983d-bbe5-4693-b8c1-2d62f9d1aeb4\",\"commandId\":\"rot-obst-b1\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"timeoutSeconds\":300,\"command\":\"set -e\\ncat > src/obstacles/RapierObstaclePhysics.ts <<'EOF'\\nimport RAPIER from '@dimforge/rapier3d-compat';\\nimport type { Quat } from '../contracts/math';\\nimport { CollisionLayers, collisionGroups } from '../physics/CollisionLayers';\\nimport type { PhysicsWorld } from '../physics/PhysicsWorld';\\nimport { IDENTITY_QUATERNION } from './types';\\nimport type { ObstacleBodyHandle, ObstacleBodySpec, ObstaclePhysicsAdapter } from './types';\\n\\nexport const OBSTACLE_COLLISION_GROUPS = collisionGroups(\\n  CollisionLayers.OBSTACLE,\\n  CollisionLayers.BALL,\\n);\\n\\nexport interface RapierObstaclePhysicsOptions {\\n  friction?: number;\\n  restitution?: number;\\n  collisionGroups?: number;\\n}\\n\\nexport class RapierObstaclePhysics implements ObstaclePhysicsAdapter {\\n  private readonly defaultFriction: number;\\n  private readonly defaultRestitution: number;\\n  private readonly groups: number;\\n\\n  constructor(private readonly physics: PhysicsWorld, options: RapierObstaclePhysicsOptions = {}) {\\n    this.defaultFriction = options.friction ?? 0.4;\\n    this.defaultRestitution = options.restitution ?? 0.65;\\n    this.groups = options.collisionGroups ?? OBSTACLE_COLLISION_GROUPS;\\n  }\\n\\n  createBody(spec: ObstacleBodySpec): ObstacleBodyHandle {\\n    const world = this.physics.world;\\n    const kinematic = spec.kind === 'kinematic';\\n    const desc = (kinematic ? RAPIER.RigidBodyDesc.kinematicPositionBased() : RAPIER.RigidBodyDesc.fixed())\\n      .setTranslation(spec.position.x, spec.position.y, spec.position.z)\\n      .setRotation(spec.rotation);\\n    const body = world.createRigidBody(desc);\\n\\n    for (const collider of spec.colliders) {\\n      world.createCollider(\\n        RAPIER.ColliderDesc.cuboid(collider.halfExtents.x, collider.halfExtents.y, collider.halfExtents.z)\\n          .setTranslation(collider.offset.x, collider.offset.y, collider.offset.z)\\n          .setRotation(collider.rotation ?? IDENTITY_QUATERNION)\\n          .setFriction(collider.friction ?? this.defaultFriction)\\n          .setRestitution(collider.restitution ?? this.defaultRestitution)\\n          .setCollisionGroups(this.groups),\\n        body,\\n      );\\n    }\\n\\n    let removed = false;\\n    return {\\n      setNextRotation(rotation: Quat): void {\\n        if (removed) return;\\n        if (kinematic) body.setNextKinematicRotation(rotation);\\n        else body.setRotation(rotation, true);\\n      },\\n      dispose(): void {\\n        if (removed) return;\\n        removed = true;\\n        world.removeRigidBody(body);\\n      },\\n    };\\n  }\\n}\\nEOF\\nwc -l src/obstacles/RapierObstaclePhysics.ts\"}\n```\n\nЖду worker — результат придёт сюда отдельным сообщением.\n\nСводка: подтвердил read-only, что `rot-obst-a7` не исполнился (в `src/obstacles` 7 файлов, адаптера нет); сверил контракты — `CollisionLayers.OBSTACLE`, `PhysicsWorld.world`, `Quat/Vec3`, tsconfig без `exactOptionalPropertyTypes`, но с `noUnusedLocals` (нужно снять неиспользуемый импорт `Vec3` в `RotatingBar.ts`). Изменённые файлы: пока прежние семь. Проверки: не запускались. Следующий шаг — после RESULT: убрать лишний импорт, добавить `factory.ts` (из `MovingObstacle`), `ObstacleField` и barrel, затем тесты `src/obstacles/*.test.ts`, скрипт `test:obstacles`, typecheck/build, publish, finish.\n\n",
   "commands": [
     {
       "commandId": "rot-obstacles-inspect-2",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "rot-obst-a8-ls",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "rot-obst-b1",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:00:06.445Z"
+  "createdAt": "2026-09-16T21:15:22.445Z"
 }
