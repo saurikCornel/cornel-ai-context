@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"publish-merge-11\",\"operation\":\"publish\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"message\":\"Merge camera input and zoom into office camera stack\"}\n\nЖду RESULT worker. При успехе сразу отправлю finish.\n\nСводка: конфликт разрешён; проверки прошли; предыдущий publish фактически не состоялся; сейчас выполняется только публикация готового merge.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:32:53.642Z"
+}
