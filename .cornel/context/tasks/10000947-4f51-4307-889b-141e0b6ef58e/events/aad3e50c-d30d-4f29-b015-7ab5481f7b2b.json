@@ -1,0 +1,12 @@
+{
+  "id": "aad3e50c-d30d-4f29-b015-7ab5481f7b2b",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-publish-state-10",
+    "operation": "run",
+    "command": "echo '--- LOCAL HEAD ---'; git rev-parse HEAD; echo '--- REMOTE HEAD ---'; git ls-remote origin refs/heads/cornel/slit-camera-input-and-zoom-100009; echo '--- STATUS ---'; git status --short; echo '--- MERGE HEAD ---'; p=$(git rev-parse --git-path MERGE_HEAD); if test -f \"$p\"; then cat \"$p\"; else echo none; fi; echo '--- RECENT LOG ---'; git log --oneline --decorate -3"
+  },
+  "createdAt": "2026-09-16T18:27:39.488Z"
+}

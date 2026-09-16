@@ -2,8 +2,8 @@
   "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
   "branch": "cornel/slit-camera-input-and-zoom-100009",
   "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
-  "status": "WAITING_CHATGPT",
-  "summary": "JSON\n{\"version\":1,\"",
+  "status": "RUNNING",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"verify-publish-state-10\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"echo '--- LOCAL HEAD ---'; git rev-parse HEAD; echo '--- REMOTE HEAD ---'; git ls-remote origin refs/heads/cornel/slit-camera-input-and-zoom-100009; echo '--- STATUS ---'; git status --short; echo '--- MERGE HEAD ---'; p=$(git rev-parse --git-path MERGE_HEAD); if test -f \\\"$p\\\"; then cat \\\"$p\\\"; else echo none; fi; echo '--- RECENT LOG ---'; git log --oneline --decorate -3\",\"timeoutSeconds\":120}\n\nЖду RESULT worker. Если удалённая ветка уже содержит опубликованный merge-коммит и worktree чистый, сразу отправлю finish; если нет — исправлю только недостающий шаг.\n\nСводка: код и все штатные проверки уже успешны; неопределён только результат publish-merge-9; следующий шаг — подтвердить удалённую голову без повторной публикации.\n\n",
   "commands": [
     {
       "commandId": "merge-camera-1",
@@ -76,7 +76,13 @@
       "status": "SUCCEEDED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": 0
+    },
+    {
+      "commandId": "verify-publish-state-10",
+      "status": "STARTED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:24:37.669Z"
+  "createdAt": "2026-09-16T18:27:39.492Z"
 }
