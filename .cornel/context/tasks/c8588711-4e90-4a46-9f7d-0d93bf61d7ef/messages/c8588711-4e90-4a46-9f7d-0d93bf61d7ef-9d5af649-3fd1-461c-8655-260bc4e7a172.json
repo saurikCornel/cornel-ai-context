@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"publish-validation-15\",\"operation\":\"publish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Add validation test for complete 90-hole course data set\"}\n\nСводка: изменён только tests/course-data-validation.test.ts. Проверено: typecheck — успешно; production build — успешно; 81 существующая лунка проходит проверки уникальности, геометрии, par/maxShots и типов препятствий. Полный целевой тест пока закономерно падает на 9 courses вместо 10, поэтому после публикации успешный finish возможен только когда в ветке появится десятый курс из параллельной карточки.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T15:20:52.121Z"
+}
