@@ -3,14 +3,20 @@
   "branch": "cornel/gameplay-state-scoring-and-hole-flow-3be538",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"3be5383b-65c1-427d-a1a1-eb32fe54d5d8\",\"commandId\":\"inspect-gameplay-1\",\"operation\":\"ls\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"path\":\"src\",\"maxLines\":300}\n\nЖду результат worker — он придёт сюда отдельным сообщением. По нему сразу перейду к точечному чтению контрактов и физики.\n\nСводка: решений по коду пока не фиксировал; изменённых файлов нет; проверки ещё не запускались; следующий шаг — прочитать фактическую структуру src и необходимые контракты.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"3be5383b-65c1-427d-a1a1-eb32fe54d5d8\",\"commandId\":\"inspect-gameplay-contracts-2\",\"operation\":\"read\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"paths\":[\"src/contracts/game.ts:1-260\",\"src/contracts/events.ts:1-260\",\"src/contracts/services.ts:1-260\",\"src/contracts/math.ts:1-180\",\"src/app/GameState.ts:1-260\",\"src/physics/ShotSystem.ts:1-300\",\"src/physics/GolfBallPhysics.ts:1-320\",\"src/physics/index.ts:1-200\",\"src/courses/types.ts:1-320\",\"src/courses/Hole.ts:1-260\",\"src/config/GameConfig.ts:1-280\"]}\n\nПо результату зафиксирую публичные API gameplay-модулей и начну реализацию с тестами без изменений UI, AI и данных курсов.\n\nСводка: структура изучена; изменений пока нет; следующий шаг — согласовать реализацию с существующими контрактами физики, матча и лунок.\n\n",
   "commands": [
     {
       "commandId": "inspect-gameplay-1",
+      "status": "SUCCEEDED",
+      "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-gameplay-contracts-2",
       "status": "STARTED",
       "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T12:22:33.671Z"
+  "createdAt": "2026-09-16T12:23:10.096Z"
 }

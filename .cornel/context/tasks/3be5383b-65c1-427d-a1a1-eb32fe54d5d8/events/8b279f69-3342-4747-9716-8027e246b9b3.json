@@ -1,0 +1,11 @@
+{
+  "id": "8b279f69-3342-4747-9716-8027e246b9b3",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-gameplay-contracts-2",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T12:23:10.092Z"
+}

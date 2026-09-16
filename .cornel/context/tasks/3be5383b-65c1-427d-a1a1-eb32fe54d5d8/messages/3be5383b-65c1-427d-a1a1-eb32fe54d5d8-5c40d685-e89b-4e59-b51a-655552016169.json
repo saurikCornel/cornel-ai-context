@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"3be5383b-65c1-427d-a1a1-eb32fe54d5d8\",\"commandId\":\"inspect-gameplay-contracts-2\",\"operation\":\"read\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"paths\":[\"src/contracts/game.ts:1-260\",\"src/contracts/events.ts:1-260\",\"src/contracts/services.ts:1-260\",\"src/contracts/math.ts:1-180\",\"src/app/GameState.ts:1-260\",\"src/physics/ShotSystem.ts:1-300\",\"src/physics/GolfBallPhysics.ts:1-320\",\"src/physics/index.ts:1-200\",\"src/courses/types.ts:1-320\",\"src/courses/Hole.ts:1-260\",\"src/config/GameConfig.ts:1-280\"]}\n\nПо результату зафиксирую публичные API gameplay-модулей и начну реализацию с тестами без изменений UI, AI и данных курсов.\n\nСводка: структура изучена; изменений пока нет; следующий шаг — согласовать реализацию с существующими контрактами физики, матча и лунок.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T12:23:10.091Z"
+}
