@@ -1,0 +1,11 @@
+{
+  "id": "d7302653-319e-4729-ba72-624921b202c3",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "resume-worktree-state-25c",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T18:22:25.471Z"
+}

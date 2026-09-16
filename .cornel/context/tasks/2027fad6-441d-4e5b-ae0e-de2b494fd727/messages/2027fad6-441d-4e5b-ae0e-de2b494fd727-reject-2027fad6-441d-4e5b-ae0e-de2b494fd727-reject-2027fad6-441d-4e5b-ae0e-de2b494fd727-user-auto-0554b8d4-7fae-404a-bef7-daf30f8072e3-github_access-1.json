@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 4,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Исправляю запрос: ls требует один headSha. Беру последний SHA, на котором worker подтверждал успешные изменения рабочей копии.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"resume-worktree-state-25c\",\"operation\":\"ls\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"path\":\"src\",\"maxLines\":160}\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:22:25.471Z"
+}
