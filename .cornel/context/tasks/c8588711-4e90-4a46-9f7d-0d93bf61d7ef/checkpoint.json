@@ -3,7 +3,7 @@
   "branch": "cornel/validaciya-90-lunok-c85887",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-5\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/courses/types.ts:1-220\",\"src/courses/data/green-hills.ts:1-40\",\"src/courses/data/pirate-bay.ts:1-40\",\"src/courses/data/space-station.ts:1-40\",\"package.json:1-120\"]}\n\nСводка: изменений пока нет; фактические obstacle types и поля координат уже частично подтверждены, но нужен полный контракт из types.ts. Следующий шаг — создать тестовый файл, затем проверить его сначала на текущих 9 курсах и отдельно предусмотреть понятную ошибку до появления десятого курса.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-6\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/courses/types.ts:1-180\"]}\n\nСводка: подтверждены формат экспорта курсов и Vitest; изменённых файлов пока нет. Следующий шаг — по точному контракту создать tests/course-data-validation.test.ts, затем запустить целевой тест.\n\n",
   "commands": [
     {
       "commandId": "inspect-validation-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "inspect-validation-5",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-validation-6",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:57:44.068Z"
+  "createdAt": "2026-09-16T13:59:00.173Z"
 }
