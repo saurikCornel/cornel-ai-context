@@ -2,7 +2,7 @@
   "id": "5a0e2604-568d-49c0-8f18-e0e1d054aad4",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "claude",
+  "agent": "qwen",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -19,12 +19,16 @@
   "workspaceSyncedSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T21:58:20.459Z",
-  "updatedAt": "2026-09-16T22:00:41.222Z",
+  "updatedAt": "2026-09-16T22:02:29.855Z",
   "issue": 66,
-  "chatUrl": "cli://claude/bfdbb8d3-2f72-416d-bc19-8479447131eb",
+  "chatUrl": null,
   "error": null,
   "cliActivity": null,
-  "cliSession": "bfdbb8d3-2f72-416d-bc19-8479447131eb",
+  "cliSession": null,
   "browserError": null,
-  "currentHead": "78c76777594f13c92a7045dd28b4a4110f9d9a0c"
+  "currentHead": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
+  "chatEpoch": 1,
+  "appliedEffort": null,
+  "effortFailed": null,
+  "statusChecks": 0
 }

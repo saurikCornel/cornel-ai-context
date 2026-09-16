@@ -1,0 +1,17 @@
+{
+  "id": "0554dc67-0773-45e6-871c-c5bb9cc3ed96",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "create-zones-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "Files created successfully\n",
+    "outputDigest": "add1b11a0faa9feae8626b80006398e9b557fa819212af5989a58fee4196a78c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T22:02:23.882Z"
+}
