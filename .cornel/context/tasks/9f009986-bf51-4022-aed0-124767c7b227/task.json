@@ -22,7 +22,7 @@
   "workspaceSyncedSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T17:03:24.050Z",
-  "updatedAt": "2026-09-16T17:22:51.771Z",
+  "updatedAt": "2026-09-16T17:23:18.223Z",
   "issue": 56,
   "chatUrl": null,
   "error": null,
@@ -30,6 +30,6 @@
   "statusChecks": 0,
   "cliSession": null,
   "chatUrlBefore": "https://chatgpt.com/c/6aaacbee-aba8-83eb-84ad-a6b9250ea1de",
-  "cliActivity": "Claude CLI: Glob: /Users/alex/**/9f009986*/**/package.json",
+  "cliActivity": "Claude CLI: Bash",
   "currentHead": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a"
 }
