@@ -1,9 +1,9 @@
 {
   "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
   "branch": "cornel/6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
-  "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+  "headSha": "e51f8b24994e4e50c3b11fb6788b1f96e53574ff",
   "status": "RUNNING",
-  "summary": "Все требуемые проверки локальных изменений теперь подтверждены: ранее прошли штатные typecheck/build, сейчас — 6/6 unit-тестов SaveManager и миграций. Публикую только файлы карточки в назначенную ветку.\n\nJSON\n{\"version\":1,\"taskId\":\"6d1e0ba8-f3c5-43c8-ac38-6452635d1604\",\"commandId\":\"profile-publish-1\",\"operation\":\"publish\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"message\":\"Implement player profile XP and save persistence\"}\n\nСводка: реализованы src/player/*, src/core/SaveManager.ts, тесты SaveManager/migrations. Проверки: typecheck — успешно, production build — успешно, unit tests — 6/6. Следующий шаг после RESULT publish — контрольная проверка опубликованного commit и finish.\n\n",
+  "summary": "Публикация успешна. По протоколу нужна проверка именно опубликованного commit. Не повторяю полный набор уже успешных проверок: подтверждаю чистое дерево, наличие ожидаемых файлов и запускаю unit-тесты на опубликованной версии.\n\nJSON\n{\"version\":1,\"taskId\":\"6d1e0ba8-f3c5-43c8-ac38-6452635d1604\",\"commandId\":\"profile-final-verify-1\",\"operation\":\"run\",\"headSha\":\"e51f8b24994e4e50c3b11fb6788b1f96e53574ff\",\"command\":\"printf '%s\\\\n' '=== STATUS ==='; git status --short; test -f src/core/SaveManager.ts && test -f src/player/types.ts && test -f src/player/progression.ts && test -f src/player/profile.ts && test -f src/player/index.ts && test -f tests/save-manager.test.mjs || exit 2; rm -rf .test-build; ./node_modules/.bin/tsc src/core/SaveManager.ts src/player/types.ts src/player/progression.ts src/player/profile.ts --outDir .test-build --module ESNext --moduleResolution bundler --target ES2022 --skipLibCheck || exit 1; node - <<'NODE'\\nconst fs=require('fs');for(const dir of ['.test-build/core','.test-build/player'])for(const name of fs.readdirSync(dir).filter(x=>x.endsWith('.js'))){const p=dir+'/'+name;let s=fs.readFileSync(p,'utf8');s=s.replace(/(from\\\\s+['\\\"])(\\\\.\\\\.?\\\\/[^'\\\"]+)(['\\\"])/g,(m,a,b,c)=>a+(b.endsWith('.js')?b:b+'.js')+c);fs.writeFileSync(p,s)}\\nNODE\\nnode --test tests/save-manager.test.mjs; rc=$?; rm -rf .test-build; exit $rc\",\"timeoutSeconds\":300}\n\nСводка: изменения опубликованы. Предыдущие проверки: typecheck и build успешны, unit — 6/6. Сейчас выполняется обязательная контрольная проверка опубликованного commit; при успехе следующий шаг — finish.\n\n",
   "commands": [
     {
       "commandId": "inspect-profile-1",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "profile-publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "e51f8b24994e4e50c3b11fb6788b1f96e53574ff",
+      "exitCode": 0
+    },
+    {
+      "commandId": "profile-final-verify-1",
       "status": "STARTED",
-      "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+      "headSha": "e51f8b24994e4e50c3b11fb6788b1f96e53574ff",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T11:56:07.306Z"
+  "createdAt": "2026-09-16T11:56:44.207Z"
 }
