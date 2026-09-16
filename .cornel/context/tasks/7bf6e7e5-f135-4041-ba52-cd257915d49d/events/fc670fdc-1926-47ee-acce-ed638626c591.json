@@ -1,0 +1,17 @@
+{
+  "id": "fc670fdc-1926-47ee-acce-ed638626c591",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-type-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "d072115986b4742b475bf8be86b37259d7203903732cea8a682bbf12cd8d4a68",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:43:02.369Z"
+}

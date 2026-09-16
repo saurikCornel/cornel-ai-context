@@ -1,0 +1,12 @@
+{
+  "id": "6689e441-e8aa-4eba-846f-2fe38fb2ed48",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-type-2",
+    "operation": "run",
+    "command": "npm run typecheck"
+  },
+  "createdAt": "2026-09-16T21:42:57.648Z"
+}
