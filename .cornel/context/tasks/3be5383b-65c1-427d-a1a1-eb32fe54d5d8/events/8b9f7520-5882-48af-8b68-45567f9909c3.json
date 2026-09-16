@@ -1,0 +1,17 @@
+{
+  "id": "8b9f7520-5882-48af-8b68-45567f9909c3",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-after-core-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+    "output": "src/gameplay: 4 файлов\nsrc/gameplay/ScoreManager.ts\nsrc/gameplay/StateMachine.ts\nsrc/gameplay/TurnManager.ts\nsrc/gameplay/types.ts",
+    "outputDigest": "9142981d6c950f5b8eac15b21835d97d50e6016e2f0b88cfd9e7961110fdc785",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:27:26.832Z"
+}
