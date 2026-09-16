@@ -1,0 +1,11 @@
+{
+  "id": "8d80e8f4-9995-481d-8a5f-80c82e83c050",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "camera-rig-and-binding",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:27:18.474Z"
+}
