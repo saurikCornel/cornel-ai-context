@@ -1,0 +1,17 @@
+{
+  "id": "6cd024d1-f591-414f-b6dc-c45d26711193",
+  "taskId": "7f6d5e09-ff5f-4790-856b-72160a9aa45f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "list-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+    "output": "src/app/GameState.ts src/assets/AssetManager.ts src/assets/AudioManager.ts src/assets/assets.test.ts src/assets/index.ts src/camera/CameraCollision.test.ts src/camera/CameraCollision.ts src/camera/CameraPose.ts src/camera/CameraSmoothing.test.ts src/camera/CameraTransition.ts src/camera/Easing.ts src/camera/RapierCameraCollision.ts src/camera/SmoothCameraRig.ts src/camera/Smoothing.ts src/camera/ThreeCameraBinding.ts src/camera/index.ts src/config/GameConfig.ts src/contracts/events.ts src/contracts/game.ts src/contracts/index.ts src/contracts/math.ts src/contracts/services.ts src/core/Renderer.ts src/core/SaveManager.ts src/core/SceneManager.ts src/courses/Course.ts src/courses/CourseBuilder.ts src/courses/Hole.ts src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/candy-factory.ts src/courses/data/chaos-dimension.ts src/courses/data/green-hills.ts src/courses/data/haunted-mansion.ts src/courses/data/neon-city.ts src/courses/data/pirate-bay.ts src/courses/data/space-station.ts src/courses/data/volcano.ts src/courses/types.ts src/dev/DeveloperDiagnostics.ts src/dev/LaunchOptions.ts src/dev/PresentationMinimap.ts src/dev/dev.test.ts src/dev/index.ts src/effects/ParticleManager.test.ts src/effects/ParticleManager.ts src/effects/index.ts src/gameplay/HoleSystem.ts src/gameplay/MatchManager.ts src/gameplay/ScoreManager.ts src/gameplay/ShotSystemAdapter.ts src/gameplay/StateMachine.ts src/gameplay/TurnManager.ts src/gameplay/gameplay.test.ts src/gameplay/index.ts src/gameplay/types.ts src/input/InputManager.test.ts src/input/InputManager.ts src/input/index.ts src/leaderboard/Leaderboard.ts src/leaderboard/generator.ts src/leaderboard/index.ts src/leaderboard/style.css src/leaderboard/types.ts src/main.ts src/physics/CollisionLayers.ts src/physics/GolfBallPhysics.ts src/physics/PhysicsWorld.ts src/physics/ShotSystem.ts src/physics/helpers.ts src/physics/index.ts src/player/index.ts src/player/profile.ts src/player/progression.ts src/player/types.ts src/style.css src/ui/Hud.ts src/ui/Overlays.ts src/ui/Scoreboard.ts src/ui/dom.ts src/ui/domTests.ts src/ui/index.ts src/ui/types.ts src/ui/ui.css src/ui/ui.test.ts ",
+    "outputDigest": "118f663b4783826d4c73bfb0528760aa9e66240c67284cf11916809421f9dc77",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:21:26.222Z"
+}
