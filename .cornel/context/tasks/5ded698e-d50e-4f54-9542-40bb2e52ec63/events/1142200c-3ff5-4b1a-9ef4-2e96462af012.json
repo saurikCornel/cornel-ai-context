@@ -1,0 +1,11 @@
+{
+  "id": "1142200c-3ff5-4b1a-9ef4-2e96462af012",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-input-publish-11",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-16T16:35:35.270Z"
+}

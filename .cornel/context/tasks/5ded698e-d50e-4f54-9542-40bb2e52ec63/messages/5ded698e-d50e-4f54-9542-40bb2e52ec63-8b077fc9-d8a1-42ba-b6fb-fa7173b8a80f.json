@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-publish-11\",\"operation\":\"publish\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"message\":\"feat(camera): add abstract movement zoom and reset commands\"}\n```\n\nСводка: решение — добавлен контрактно типизированный `CameraInput` с WASD/free-camera movement, bounded wheel zoom и frame-based reset; изменённые файлы — `src/camera/CameraInput.ts`, `src/camera/CameraInput.test.ts`, `src/camera/index.ts`; проверки — `npm run typecheck`, `npx vitest run src/camera` (9/9), `npm run build`, `git diff --check` успешны; следующий шаг — получить новый SHA publish и завершить карточку.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:35:35.269Z"
+}
