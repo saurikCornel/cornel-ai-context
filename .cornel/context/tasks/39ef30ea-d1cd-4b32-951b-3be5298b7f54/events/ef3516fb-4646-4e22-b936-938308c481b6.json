@@ -1,0 +1,17 @@
+{
+  "id": "ef3516fb-4646-4e22-b936-938308c481b6",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "chaos-inspect-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "src/courses: 13 файлов\nsrc/courses/Course.ts\nsrc/courses/CourseBuilder.ts\nsrc/courses/Hole.ts\nsrc/courses/data/ancient-temple.ts\nsrc/courses/data/arctic-base.ts\nsrc/courses/data/candy-factory.ts\nsrc/courses/data/green-hills.ts\nsrc/courses/data/haunted-mansion.ts\nsrc/courses/data/neon-city.ts\nsrc/courses/data/pirate-bay.ts\nsrc/courses/data/space-station.ts\nsrc/courses/data/volcano.ts\nsrc/courses/types.ts",
+    "outputDigest": "acd61f0caf1379cd0b3e5bdb0ca816377523a39d33b9fb51e092a42fb5c33d14",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T13:53:49.468Z"
+}

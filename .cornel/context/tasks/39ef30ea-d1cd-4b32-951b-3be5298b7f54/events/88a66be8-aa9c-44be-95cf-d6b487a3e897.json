@@ -1,0 +1,11 @@
+{
+  "id": "88a66be8-aa9c-44be-95cf-d6b487a3e897",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "chaos-inspect-1",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T13:53:49.384Z"
+}

@@ -17,12 +17,13 @@
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "baseSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T13:43:28.478Z",
-  "updatedAt": "2026-09-16T13:53:36.620Z",
+  "updatedAt": "2026-09-16T13:53:50.471Z",
   "issue": 44,
   "chatUrl": "https://chatgpt.com/c/6aaa9f5e-7b94-83ed-9fca-34b669b4dfdb",
   "error": null,
-  "browserError": "Для новой задачи нужен пустой чат",
-  "browserErrorJobId": "5cc21f20-acb9-4084-9c20-1595499da9af-initial"
+  "browserError": null,
+  "browserErrorJobId": "5cc21f20-acb9-4084-9c20-1595499da9af-initial",
+  "currentHead": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
 }

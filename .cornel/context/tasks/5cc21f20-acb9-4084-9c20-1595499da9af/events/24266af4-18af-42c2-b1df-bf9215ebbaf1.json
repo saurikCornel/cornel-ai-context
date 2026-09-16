@@ -1,0 +1,11 @@
+{
+  "id": "24266af4-18af-42c2-b1df-bf9215ebbaf1",
+  "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "input-inventory-1",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T13:53:47.576Z"
+}

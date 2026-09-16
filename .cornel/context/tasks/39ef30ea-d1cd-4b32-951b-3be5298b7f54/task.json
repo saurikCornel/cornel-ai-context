@@ -17,12 +17,13 @@
   "branch": "cornel/chaos-dimension-9-lunok-39ef30",
   "baseSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T13:43:11.228Z",
-  "updatedAt": "2026-09-16T13:53:08.046Z",
+  "updatedAt": "2026-09-16T13:53:49.467Z",
   "issue": 41,
   "chatUrl": "https://chatgpt.com/c/6aaa9f42-4cc0-83ed-9d0a-094e21ed265b",
   "error": null,
-  "browserError": "В поле ввода ChatGPT уже есть текст — очистите его в чате, и сообщение отправится",
-  "browserErrorJobId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54-initial"
+  "browserError": null,
+  "browserErrorJobId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54-initial",
+  "currentHead": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
 }
