@@ -1,0 +1,17 @@
+{
+  "id": "1602dbee-6a0e-4607-9bc1-b6c2d2d84337",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-collision-types-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "find: node_modules/@dimforge/rapier3d-compat: No such file or directory\n",
+    "outputDigest": "ef56db785c3efe627ad29efb5e51a43caa5decc8258b7fd8472c4ec4f38c461b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T13:58:53.672Z"
+}
