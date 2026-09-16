@@ -1,0 +1,11 @@
+{
+  "id": "57fdd120-d0e9-437c-9080-8d60457e5ae6",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-ai-after-missing-result-13",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T17:12:27.864Z"
+}
