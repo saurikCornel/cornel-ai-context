@@ -1,0 +1,11 @@
+{
+  "id": "8ba213ef-2f08-4919-80d5-262b39d56a96",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "write-planner-tests-34",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T18:53:17.914Z"
+}
