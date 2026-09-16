@@ -1,0 +1,17 @@
+{
+  "id": "6b1f6560-9ba4-40c4-8c85-9cea8cc6a247",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-matchmaking-19a",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "BotPlanner.ts\nBotProfiles.ts\nMatchmaking.ts\nindex.ts\nrandom.ts\ntypes.ts\n",
+    "outputDigest": "96f37feb204ae10b2874dd7069a95ee9ed13b15b759206dca89b2af2f5a72df1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:48:14.712Z"
+}

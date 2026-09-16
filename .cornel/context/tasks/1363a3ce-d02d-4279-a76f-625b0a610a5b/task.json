@@ -19,7 +19,7 @@
   "workspaceSyncedSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T17:03:17.294Z",
-  "updatedAt": "2026-09-16T17:47:56.730Z",
+  "updatedAt": "2026-09-16T17:48:12.735Z",
   "issue": 54,
   "chatUrl": null,
   "error": null,
@@ -27,6 +27,6 @@
   "currentHead": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "cliSession": null,
   "chatUrlBefore": "https://chatgpt.com/c/6aaacbde-384c-83eb-81ef-8df2d6cba1f2",
-  "cliActivity": null,
+  "cliActivity": "Claude CLI: запускается (opus)",
   "statusChecks": 0
 }
