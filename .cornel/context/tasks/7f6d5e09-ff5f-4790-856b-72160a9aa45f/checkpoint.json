@@ -2,8 +2,8 @@
   "taskId": "7f6d5e09-ff5f-4790-856b-72160a9aa45f",
   "branch": "cornel/dinamicheskie-prepyatstviya-7f6d5e",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
-  "status": "WAITING_CHATGPT",
-  "summary": "",
+  "status": "NEEDS_ATTENTION",
+  "summary": "Фактический статус не изменился: по последнему finish-blocked-13 также нет RESULT/UNKNOWN. В Issue по-прежнему присутствуют только события RATE_LIMIT, поэтому считать finish выполненным нельзя.\n\nCORNEL_AI_BLOCKED — дальнейшее выполнение и даже штатное завершение карточки сейчас блокирует инфраструктурный rate limit: worker-команды не возвращают RESULT. Успешные действия не повторяю, UNKNOWN не обходил. Изменений кода и publish нет; выполнены только инвентаризация, чтение базовых типов и проверка отсутствия готового obstacle-слоя.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -36,5 +36,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T18:39:03.152Z"
+  "createdAt": "2026-09-16T18:39:35.208Z"
 }
