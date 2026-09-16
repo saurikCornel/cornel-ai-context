@@ -17,9 +17,10 @@
   "branch": "cornel/pads-and-bumper-39ad29",
   "baseSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
   "workspaceSyncedSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-16T19:01:22.837Z",
-  "updatedAt": "2026-09-16T19:01:22.837Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-16T19:01:26.603Z",
+  "issue": 62,
+  "chatUrl": null,
+  "error": null
 }
