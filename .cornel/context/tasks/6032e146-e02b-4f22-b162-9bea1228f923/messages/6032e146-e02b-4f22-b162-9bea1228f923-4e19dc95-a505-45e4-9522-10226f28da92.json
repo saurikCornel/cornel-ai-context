@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Текущий опубликованный head ветки подтверждён: 82e3cbd79977f7865a89bde4c9c7b6c7b2aef999. Коммит содержит именно опубликованную реализацию camera modes.\n\nJSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"finish-camera-modes-27\",\"operation\":\"finish\",\"headSha\":\"82e3cbd79977f7865a89bde4c9c7b6c7b2aef999\",\"message\":\"Camera modes aim/follow/overview/free реализованы и опубликованы. Добавлены CameraController, переключение режимов и переходы, free movement, интеграция InputManager, collision-aware позиционирование и публичный export. Исправлены pitch при смене режима и разделение zoom minDistance от collision clearance. Проверки: 11/11 camera tests passed, tsc -b passed, npm run build passed.\"}\n\nСводка: карточка полностью выполнена и опубликована.\nИзменённые файлы: src/camera/CameraController.ts, src/camera/CameraController.test.ts, src/camera/index.ts.\nПроверки: 11/11 camera-тестов, typecheck и production build — успешно.\nСледующий шаг: finish на актуальном опубликованном head.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:13:11.370Z"
+}

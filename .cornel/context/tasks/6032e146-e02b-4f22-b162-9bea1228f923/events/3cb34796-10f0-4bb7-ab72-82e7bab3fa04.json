@@ -1,0 +1,11 @@
+{
+  "id": "3cb34796-10f0-4bb7-ab72-82e7bab3fa04",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "finish-camera-modes-27",
+    "headSha": "82e3cbd79977f7865a89bde4c9c7b6c7b2aef999"
+  },
+  "createdAt": "2026-09-16T18:13:11.373Z"
+}

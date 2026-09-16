@@ -1,0 +1,12 @@
+{
+  "id": "432ba88f-89fa-495d-b002-227d5eb75966",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "finish-camera-modes-27",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T18:13:13.842Z"
+}
