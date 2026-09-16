@@ -17,13 +17,15 @@
   "branch": "cornel/camera-smoothing-transitions-f82d8a",
   "baseSha": "77b38d1780726161f87e511138beae87cceeb098",
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
-  "status": "NEEDS_ATTENTION",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T15:45:15.154Z",
-  "updatedAt": "2026-09-16T16:03:56.695Z",
+  "updatedAt": "2026-09-16T16:04:17.946Z",
   "issue": 51,
   "chatUrl": null,
   "error": null,
   "cliActivity": null,
   "browserError": "Claude CLI: нужен вход — откройте Терминал (он уже открыт с командой входа) или нажмите «Войти» в настройках",
-  "attentionReason": "worker_blocked"
+  "attentionReason": null,
+  "statusChecks": 0,
+  "intentRevision": 2
 }
