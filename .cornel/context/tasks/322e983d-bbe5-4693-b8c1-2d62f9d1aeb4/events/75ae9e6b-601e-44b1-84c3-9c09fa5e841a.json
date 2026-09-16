@@ -1,0 +1,11 @@
+{
+  "id": "75ae9e6b-601e-44b1-84c3-9c09fa5e841a",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "rot-obst-a4",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T19:53:11.764Z"
+}
