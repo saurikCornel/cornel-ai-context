@@ -3,7 +3,7 @@
   "branch": "cornel/core-rendering-and-scene-infrastructure-6cc106",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"verify-core-rendering-4\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"npm install && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: реализация сохранена в локальной рабочей копии; предыдущая проверка остановилась только из-за отсутствующих node_modules; следующий шаг — дождаться фактического результата typecheck/build и при необходимости исправить код.\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"publish-core-rendering-5\",\"operation\":\"publish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Implement core renderer and scene infrastructure\"}\n\nСводка: реализованы src/core/Renderer.ts и src/core/SceneManager.ts; typecheck и build прошли успешно; сейчас публикуется итоговый коммит.\n",
   "commands": [
     {
       "commandId": "inspect-core-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "verify-core-rendering-4",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-core-rendering-5",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:56:29.894Z"
+  "createdAt": "2026-09-16T13:57:24.016Z"
 }
