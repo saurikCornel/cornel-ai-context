@@ -1,0 +1,12 @@
+{
+  "id": "c5dda216-d11b-4930-91dd-8780d94194f4",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "create-vitest-config-23",
+    "operation": "run",
+    "command": "cat > vitest.config.ts <<'EOF'\nimport { defineConfig } from 'vitest/config';\n\nexport default defineConfig({\n  test: {\n    deps: {\n      inline: ['@dimforge/rapier3d-compat']\n    }\n  }\n});\nEOF"
+  },
+  "createdAt": "2026-09-16T21:57:43.578Z"
+}

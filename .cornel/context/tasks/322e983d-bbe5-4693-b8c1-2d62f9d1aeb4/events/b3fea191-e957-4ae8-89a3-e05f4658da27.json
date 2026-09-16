@@ -1,0 +1,12 @@
+{
+  "id": "b3fea191-e957-4ae8-89a3-e05f4658da27",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "HANDBACK",
+  "text": "Чат передан Qwen (прежний разговор)",
+  "detail": {
+    "from": "claude",
+    "to": "qwen",
+    "cancelled": 1
+  },
+  "createdAt": "2026-09-16T21:57:44.626Z"
+}

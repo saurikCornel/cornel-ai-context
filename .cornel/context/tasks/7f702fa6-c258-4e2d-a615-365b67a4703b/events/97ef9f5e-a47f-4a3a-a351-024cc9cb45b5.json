@@ -1,0 +1,11 @@
+{
+  "id": "97ef9f5e-a47f-4a3a-a351-024cc9cb45b5",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-physics-1",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T21:57:42.011Z"
+}
