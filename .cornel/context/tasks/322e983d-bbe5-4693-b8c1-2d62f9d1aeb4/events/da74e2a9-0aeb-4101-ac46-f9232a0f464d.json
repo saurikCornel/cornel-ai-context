@@ -1,0 +1,11 @@
+{
+  "id": "da74e2a9-0aeb-4101-ac46-f9232a0f464d",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "rot-obst-f2-read",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T21:44:43.281Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "adcc5959-47cf-4747-aed8-cda1c449f1f7",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "rot-obst-f2-read",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "### src/obstacles/obstacles.test.ts (строки 38-58 из 146)\n38: \n39: describe('RotatingBar configuration', () => {\n40:   it('derives collider half extents from the visual size', () => {\n41:     const bar = new RotatingBar({\n42:       id: 'bar',\n43:       position: { x: 1, y: 0, z: 2 },\n44:       length: 5,\n45:       thickness: 0.4,\n46:       height: 0.5,\n47:     });\n48: \n49:     expect(bar.colliders).toHaveLength(1);\n50:     expect(bar.colliders[0].halfExtents).toEqual({ x: 2.5, y: 0.25, z: 0.2 });\n51:     expect(bar.colliders[0].offset).toEqual({ x: 0, y: 0, z: 0 });\n52:     expect(bar.root.position.toArray()).toEqual([1, 0, 2]);\n53:     expect(bar.axis).toEqual({ x: 0, y: 1, z: 0 });\n54:   });\n55: \n56:   it('rejects invalid configuration', () => {\n57:     const position = { x: 0, y: 0, z: 0 };\n58:     expect(() => new RotatingBar({ id: '  ', position })).toThrow(/non-empty id/);\n… ещё 88 строк\n\n### src/obstacles/spinnerWindmill.test.ts (строки 36-59 из 121)\n36:   for (let index = 0; index < steps; index += 1) obstacle.update(delta);\n37: }\n38: \n39: describe('Spinner configuration', () => {\n40:   it('spreads arms evenly around the hub', () => {\n41:     const spinner = new Spinner({ id: 'spinner', position: { x: 0, y: 0, z: 0 }, armCount: 3, armLength: 3 });\n42: \n43:     expect(spinner.colliders).toHaveLength(3);\n44:     spinner.colliders.forEach((collider, index) => {\n45:       const angle = (TAU * index) / 3;\n46:       expect(collider.halfExtents.x).toBeCloseTo(1.5, 10);\n47:       expect(collider.offset.x).toBeCloseTo(Math.cos(angle) * 1.5, 10);\n48:       expect(collider.offset.z).toBeCloseTo(-Math.sin(angle) * 1.5, 10);\n49:       expect(collider.offset.y).toBe(0);\n50:     });\n51:   });\n52: \n53:   it('requires at least two whole arms', () => {\n54:     const position = { x: 0, y: 0, z: 0 };\n55:     expect(() => new Spinner({ id: 'spinner', position, armCount: 1 })).toThrow(/at least 2/);\n56:     expect(() => new Spinner({ id: 'spinner', position, armCount: 2.5 })).toThrow(/integer/);\n57:   });\n58: \n59:   it('rotates around the vertical axis', () => {\n… ещё 62 строк",
+    "outputDigest": "4c6c244ff2d94a4ffaaa8b3b5feeb31efbcdb835ba763527d5010842153372c4",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:44:45.662Z"
+}
