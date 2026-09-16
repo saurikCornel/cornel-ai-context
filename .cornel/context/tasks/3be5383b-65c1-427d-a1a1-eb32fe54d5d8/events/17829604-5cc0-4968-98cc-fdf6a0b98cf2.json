@@ -1,0 +1,12 @@
+{
+  "id": "17829604-5cc0-4968-98cc-fdf6a0b98cf2",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "finish-gameplay-12",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T12:30:32.968Z"
+}
