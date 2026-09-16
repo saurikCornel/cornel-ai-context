@@ -1,0 +1,17 @@
+{
+  "id": "bf1272c9-af9f-4810-8e53-ed4a113ee1da",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-collision-publish-10",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "bc0334ab7bcced2b79785af7ca1c605cf142bd14",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T14:42:06.672Z"
+}

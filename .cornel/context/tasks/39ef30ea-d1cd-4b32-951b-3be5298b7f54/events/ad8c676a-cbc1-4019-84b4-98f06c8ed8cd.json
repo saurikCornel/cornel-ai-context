@@ -1,0 +1,13 @@
+{
+  "id": "ad8c676a-cbc1-4019-84b4-98f06c8ed8cd",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Готово: добавлен src/courses/data/chaos-dimension.ts с ровно 9 оригинальными лунками. Первые 6 — самостоятельные механики Chaos Dimension, последние 3 — комбинированные испытания. Использованы только поддерживаемые obstacle types и существующие course contracts. Проверка на опубликованном head успешна: holes=9, npm run typecheck — успешно, npm run build — успешно, рабочее дерево чистое. Изменения опубликованы; gameplay/UI/AI не изменялись.",
+  "detail": {
+    "commands": 11,
+    "failed": 2,
+    "headSha": "163d18c0c07384089bf6d5e2b6011a0681e50609",
+    "branch": "cornel/chaos-dimension-9-lunok-39ef30"
+  },
+  "createdAt": "2026-09-16T14:42:06.004Z"
+}

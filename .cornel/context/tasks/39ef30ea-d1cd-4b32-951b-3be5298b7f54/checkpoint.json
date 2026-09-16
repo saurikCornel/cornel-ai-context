@@ -3,7 +3,7 @@
   "branch": "cornel/chaos-dimension-9-lunok-39ef30",
   "headSha": "163d18c0c07384089bf6d5e2b6011a0681e50609",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-postpublish-verify-10\",\"operation\":\"run\",\"headSha\":\"163d18c0c07384089bf6d5e2b6011a0681e50609\",\"command\":\"set -e\\nprintf '\\\\n=== STRUCTURE ===\\\\n'\\ntest -f src/courses/data/chaos-dimension.ts\\ncount=$(grep -o \\\"id: 'chaos-[0-9][0-9]'\\\" src/courses/data/chaos-dimension.ts | wc -l | tr -d ' ')\\ntest \\\"$count\\\" = \\\"9\\\"\\nprintf 'holes=%s\\\\n' \\\"$count\\\"\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== STATUS ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":300}\n\nСводка: причина отказа finish установлена — нужна проверка именно на опубликованном head; код не меняется; следующий шаг после успешного RESULT — повторный finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-finish-11\",\"operation\":\"finish\",\"headSha\":\"163d18c0c07384089bf6d5e2b6011a0681e50609\",\"message\":\"Готово: добавлен src/courses/data/chaos-dimension.ts с ровно 9 оригинальными лунками. Первые 6 — самостоятельные механики Chaos Dimension, последние 3 — комбинированные испытания. Использованы только поддерживаемые obstacle types и существующие course contracts. Проверка на опубликованном head успешна: holes=9, npm run typecheck — успешно, npm run build — успешно, рабочее дерево чистое. Изменения опубликованы; gameplay/UI/AI не изменялись.\"}\n\nСводка: реализация завершена и опубликована; изменён только src/courses/data/chaos-dimension.ts; проверки на финальном head успешны; следующий шаг — сборщик офиса может слить ветку.\n\n",
   "commands": [
     {
       "commandId": "chaos-inspect-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "chaos-postpublish-verify-10",
+      "status": "SUCCEEDED",
+      "headSha": "163d18c0c07384089bf6d5e2b6011a0681e50609",
+      "exitCode": 0
+    },
+    {
+      "commandId": "chaos-finish-11",
       "status": "STARTED",
       "headSha": "163d18c0c07384089bf6d5e2b6011a0681e50609",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T14:31:58.879Z"
+  "createdAt": "2026-09-16T14:42:03.526Z"
 }
