@@ -1,0 +1,17 @@
+{
+  "id": "e7e3ab08-0367-4b4c-b93c-218394ffa2b5",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "publish-green-hills-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f9d45eaac1309251d846cf98819c37739dd5cb87",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:34:05.539Z"
+}

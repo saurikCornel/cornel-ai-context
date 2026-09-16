@@ -1,0 +1,31 @@
+{
+  "id": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "chatgpt",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "104aeaba-82ed-40a5-a1d8-8f312a8aa132",
+    "base": {
+      "": "07aa9e4dea82944affadde8c037938b4bc204172"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: Игровой HUD и результаты",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/defb0407-6f82-42d9-85f2-4fd3cfd54559 (карточка «Игровой HUD и результаты») не сливается в ветку офиса cornel/office: конфликт в файлах src/ui/index.ts, src/ui/ui.css.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/defb0407-6f82-42d9-85f2-4fd3cfd54559 && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "baseSha": "07aa9e4dea82944affadde8c037938b4bc204172",
+  "workspaceSyncedSha": "07aa9e4dea82944affadde8c037938b4bc204172",
+  "status": "WAITING_CHATGPT",
+  "createdAt": "2026-09-16T00:34:08.021Z",
+  "updatedAt": "2026-09-16T00:35:10.575Z",
+  "issue": 31,
+  "chatUrl": "https://chatgpt.com/c/6aa9e40b-82a0-83eb-b5bb-b66ad7b39968",
+  "error": null,
+  "browserError": null,
+  "currentHead": "07aa9e4dea82944affadde8c037938b4bc204172"
+}

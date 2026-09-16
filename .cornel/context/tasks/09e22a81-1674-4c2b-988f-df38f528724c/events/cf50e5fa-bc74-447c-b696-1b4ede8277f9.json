@@ -1,0 +1,17 @@
+{
+  "id": "cf50e5fa-bc74-447c-b696-1b4ede8277f9",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "leaderboard-final-verify-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "882e100cf11168d750e45a6cce77cbf5ebd436aa",
+    "output": "\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 7 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-C3pwB87Z.css  \u001b[39m\u001b[1m\u001b[2m  0.13 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.12 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-Brb-18Fb.js   \u001b[39m\u001b[1m\u001b[2m467.91 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 117.13 kB\u001b[22m\n\u001b[32m✓ built in 983ms\u001b[39m\n\n=== TESTS ===\n✔ generates 50+ deterministic AI leaderboard entries (3.045458ms)\n✔ entries satisfy profile and statistics invariants (0.646458ms)\n✔ leaderboard renderer exposes accessible table structure and key statistics (2.676417ms)\nℹ tests 3\nℹ suites 0\nℹ pass 3\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 130.300375\n\n=== CLEAN TREE ===\n\nALL_LEADERBOARD_CHECKS_OK\n",
+    "outputDigest": "76b3d46ea1e262bee566c6a6412b22008bd986fcc8c017cd1fa276c5c18be86b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:32:53.467Z"
+}

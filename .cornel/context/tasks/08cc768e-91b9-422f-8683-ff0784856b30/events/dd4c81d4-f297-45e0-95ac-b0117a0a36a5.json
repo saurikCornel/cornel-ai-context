@@ -1,0 +1,11 @@
+{
+  "id": "dd4c81d4-f297-45e0-95ac-b0117a0a36a5",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "pirate-bay-2",
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa"
+  },
+  "createdAt": "2026-09-16T00:32:35.803Z"
+}

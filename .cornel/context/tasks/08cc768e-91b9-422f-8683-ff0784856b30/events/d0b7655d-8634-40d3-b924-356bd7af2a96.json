@@ -1,0 +1,12 @@
+{
+  "id": "d0b7655d-8634-40d3-b924-356bd7af2a96",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "pirate-bay-2",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T00:32:39.354Z"
+}

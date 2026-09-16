@@ -1,0 +1,17 @@
+{
+  "id": "1854f170-9946-4213-bf34-4ffa1dc07dba",
+  "taskId": "defb0407-6f82-42d9-85f2-4fd3cfd54559",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ui-finish-9",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "79b56e35f5f502680e2301c972132109c65a4d3a",
+    "output": "Игровой UI завершён: реализованы независимые HTML/CSS HUD с power meter и состоянием лунки/ударов, Scoreboard для 1–8 игроков, Pause, Loading и MatchResults, UI DTO без импорта gameplay internals, адаптивные стили и DOM tests. Финальная проверка опубликованного commit: 5/5 UI DOM tests passed, npm run typecheck passed, npm run build passed, git status clean. PR не создавался согласно назначению; ветка готова для сборщика.",
+    "outputDigest": "f749e32727140d57e27649f3ab079fd4a958718d8754eb9e3c3fcddc47fb00f2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:33:58.706Z"
+}

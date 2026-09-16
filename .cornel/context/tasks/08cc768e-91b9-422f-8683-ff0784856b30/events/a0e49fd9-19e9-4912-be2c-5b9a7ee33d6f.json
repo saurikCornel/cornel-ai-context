@@ -1,0 +1,11 @@
+{
+  "id": "a0e49fd9-19e9-4912-be2c-5b9a7ee33d6f",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "publish-green-hills-1",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-16T00:33:47.961Z"
+}

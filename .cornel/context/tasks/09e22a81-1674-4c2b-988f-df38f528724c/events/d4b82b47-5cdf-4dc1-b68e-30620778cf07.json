@@ -1,0 +1,17 @@
+{
+  "id": "d4b82b47-5cdf-4dc1-b68e-30620778cf07",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "leaderboard-finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "882e100cf11168d750e45a6cce77cbf5ebd436aa",
+    "output": "Leaderboard и AI-профили готовы. Реализован независимый детерминированный генератор 64 AI leaderboard entries по умолчанию с именами, рейтингом, статистикой, странами и стилями шара; стабильная генерация по seed и ранжирование. Добавлен доступный responsive Leaderboard DOM UI с рейтингом, победами, win rate, average strokes и выделением игрока. Добавлены тесты детерминизма, инвариантов данных и структуры отображения. Финальная проверка опубликованного commit: npm ci, TypeScript typecheck — успешно; production build — успешно; node tests — 3/3 успешно; git working tree — clean. PR не создавался согласно назначению: слияние выполняет сборщик.",
+    "outputDigest": "ac3e03502249ea7c4a4a27c44f33f91b8749e963cdc51e6b379c188884995964",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:34:26.706Z"
+}

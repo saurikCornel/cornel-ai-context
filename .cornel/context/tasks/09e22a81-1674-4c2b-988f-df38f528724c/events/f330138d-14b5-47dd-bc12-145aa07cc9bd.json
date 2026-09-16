@@ -1,0 +1,11 @@
+{
+  "id": "f330138d-14b5-47dd-bc12-145aa07cc9bd",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "leaderboard-finish-1",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T00:34:02.138Z"
+}

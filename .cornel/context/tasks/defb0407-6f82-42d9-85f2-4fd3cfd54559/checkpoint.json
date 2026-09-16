@@ -3,7 +3,7 @@
   "branch": "cornel/defb0407-6f82-42d9-85f2-4fd3cfd54559",
   "headSha": "79b56e35f5f502680e2301c972132109c65a4d3a",
   "status": "WAITING_CHATGPT",
-  "summary": "После исправления продолжаю ровно с незавершённого шага: код уже опубликован, поэтому ничего не переписываю и повторно не публикую. Требуется только финальная проверка опубликованного состояния; предыдущая такая команда фактически не запускалась из-за блокировки worker.\n\nJSON\n{\"version\":1,\"taskId\":\"defb0407-6f82-42d9-85f2-4fd3cfd54559\",\"commandId\":\"ui-final-verify-8\",\"operation\":\"run\",\"headSha\":\"79b56e35f5f502680e2301c972132109c65a4d3a\",\"command\":\"set -e\\nprintf '\\\\n=== UI TESTS ===\\\\n'\\nnpm run test:ui\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== WORKTREE ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":300}\n\nСводка: реализация и publish уже завершены; ранее подтверждены 5/5 DOM tests, typecheck и build до публикации; сейчас выполняется только обязательная проверка опубликованного commit; при успехе сразу отправлю finish.\n\n",
+  "summary": "Финальная проверка опубликованного состояния успешна: 5/5 DOM-тестов прошли, TypeScript typecheck прошёл, production build прошёл, рабочее дерево чистое. Карточка выполнена; PR по инструкции не требуется, ветку дальше забирает сборщик.\n\nJSON\n{\"version\":1,\"taskId\":\"defb0407-6f82-42d9-85f2-4fd3cfd54559\",\"commandId\":\"ui-finish-9\",\"operation\":\"finish\",\"headSha\":\"79b56e35f5f502680e2301c972132109c65a4d3a\",\"message\":\"Игровой UI завершён: реализованы независимые HTML/CSS HUD с power meter и состоянием лунки/ударов, Scoreboard для 1–8 игроков, Pause, Loading и MatchResults, UI DTO без импорта gameplay internals, адаптивные стили и DOM tests. Финальная проверка опубликованного commit: 5/5 UI DOM tests passed, npm run typecheck passed, npm run build passed, git status clean. PR не создавался согласно назначению; ветка готова для сборщика.\"}\n\nСводка: изменены src/ui/*, package.json и lockfile для Vitest/jsdom; все требуемые UI-состояния реализованы; финальные tests/typecheck/build подтверждены worker; следующий шаг — слияние ветки сборщиком.\n\n",
   "commands": [
     {
       "commandId": "ui-inspect-1",
@@ -52,7 +52,13 @@
       "status": "FAILED",
       "headSha": "79b56e35f5f502680e2301c972132109c65a4d3a",
       "exitCode": null
+    },
+    {
+      "commandId": "ui-final-verify-8",
+      "status": "SUCCEEDED",
+      "headSha": "79b56e35f5f502680e2301c972132109c65a4d3a",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:30:18.710Z"
+  "createdAt": "2026-09-16T00:33:02.610Z"
 }

@@ -1,0 +1,11 @@
+{
+  "id": "d6b628c4-4aba-47ef-9d98-b2cfd14cb5a7",
+  "taskId": "08cc768e-91b9-422f-8683-ff0784856b30",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "publish-green-hills-1",
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa"
+  },
+  "createdAt": "2026-09-16T00:33:59.210Z"
+}

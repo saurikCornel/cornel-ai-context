@@ -1,0 +1,12 @@
+{
+  "id": "5c4d891c-19cb-447f-8c31-70a76cfab576",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "merge-1",
+    "operation": "run",
+    "command": "git fetch origin cornel/defb0407-6f82-42d9-85f2-4fd3cfd54559 && git merge --no-edit FETCH_HEAD; rc=$?; echo '=== MERGE EXIT ==='; echo \"$rc\"; echo '=== STATUS ==='; git status --short; echo '=== CONFLICTS ==='; git diff --name-only --diff-filter=U; echo '=== src/ui/index.ts ==='; cat src/ui/index.ts; echo '=== src/ui/ui.css ==='; cat src/ui/ui.css; exit 0"
+  },
+  "createdAt": "2026-09-16T00:34:52.812Z"
+}
