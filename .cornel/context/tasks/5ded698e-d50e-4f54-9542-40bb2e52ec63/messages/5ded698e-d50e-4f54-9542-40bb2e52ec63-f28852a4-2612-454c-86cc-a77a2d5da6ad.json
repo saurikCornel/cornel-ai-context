@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-verify-7\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npm install && npm run typecheck && npx vitest run src/camera && npm run build && git diff --check && git status --short\",\"timeoutSeconds\":300}\n```\n\nСводка: решение — источник не меняется; восстанавливаю отсутствующие зависимости и выполняю полный typecheck, camera-тесты, build и проверку whitespace; изменённые файлы — `src/camera/CameraInput.ts`, `src/camera/CameraInput.test.ts`, `src/camera/index.ts`; проверки — первая попытка остановилась до тестов из-за отсутствия `tsc`; следующий шаг — зафиксировать результат проверки и опубликовать изменения при успехе.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:16:09.616Z"
+}

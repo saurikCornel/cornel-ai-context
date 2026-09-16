@@ -1,0 +1,11 @@
+{
+  "id": "d38fa04e-13e2-47cd-9885-1314c611cc16",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-input-verify-7",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:16:09.618Z"
+}
