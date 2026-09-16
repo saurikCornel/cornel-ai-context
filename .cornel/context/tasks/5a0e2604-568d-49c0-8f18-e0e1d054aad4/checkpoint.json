@@ -3,7 +3,7 @@
   "branch": "cornel/pendulum-obstacle-5a0e26",
   "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
   "status": "RUNNING",
-  "summary": "Есть каталог `src/obstacles` с готовым lifecycle (fan, conveyor, teleporter). Читаю API.\n\n```json\n{\"version\":1,\"taskId\":\"5a0e2604-568d-49c0-8f18-e0e1d054aad4\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"78c76777594f13c92a7045dd28b4a4110f9d9a0c\",\"paths\":[\"src/obstacles/types.ts\",\"src/obstacles/index.ts\",\"src/obstacles/vec.ts\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Читаю реализации существующих препятствий, их тесты и типы курсов, а также ищу упоминания pendulum.\n\n```json\n{\"version\":1,\"taskId\":\"5a0e2604-568d-49c0-8f18-e0e1d054aad4\",\"commandId\":\"read-2\",\"operation\":\"read\",\"headSha\":\"78c76777594f13c92a7045dd28b4a4110f9d9a0c\",\"paths\":[\"src/obstacles/fan.ts\",\"src/obstacles/conveyor.ts\",\"src/obstacles/zones.ts\",\"src/obstacles/fan.test.ts\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "read-1",
+      "status": "SUCCEEDED",
+      "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-2",
       "status": "STARTED",
       "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:59:31.202Z"
+  "createdAt": "2026-09-16T22:00:38.794Z"
 }
