@@ -3,7 +3,7 @@
   "branch": "cornel/chaos-dimension-i-validaciya-90-lunok-eb2cef",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "status": "WAITING_CHATGPT",
-  "summary": "",
+  "summary": "Фактический статус: задача ещё не выполнена. Inline-команды worker трижды не дали RESULT; сейчас команда чтения структуры отправлена через резервный канал в Issue #33. Изменений кода, коммитов и проверок пока нет.\n\nСледующий шаг после RESULT — прочитать контракты курсов и существующие 9 тем, затем реализовать Chaos Dimension с 9 лунками и data-validation test на все 90 лунок.\n\n",
   "commands": [],
-  "createdAt": "2026-09-16T12:24:02.810Z"
+  "createdAt": "2026-09-16T12:25:07.904Z"
 }
