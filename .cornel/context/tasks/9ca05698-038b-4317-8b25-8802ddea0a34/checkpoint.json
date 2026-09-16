@@ -3,7 +3,7 @@
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "WAITING_CHATGPT",
-  "summary": "Команда write-obstacles-core-4 уже отправлена, но её RESULT в переданном контексте ещё не получен. Новую worker-команду не отправляю, чтобы не обходить незавершённый шаг.\n\nПосле RESULT проверю фактически созданные файлы и продолжу с lifecycle-тестами, затем typecheck, build, publish и finish.\n\nСводка: чтение contracts/physics/scene успешно завершено; запись src/obstacles сейчас ожидает подтверждения worker; успешные предыдущие действия не повторяю.\n\n",
+  "summary": "Фактический статус не изменился: в Issue #58 по-прежнему нет RESULT или UNKNOWN для write-obstacles-core-4; видны только события rate-limit. Поэтому повторять эту worker-команду нельзя — её последствия пока не подтверждены.\n\nПодтверждённо завершены только read-only шаги по contracts/physics/scene. finish сейчас отправлять рано.\n\nСводка: задача зависла на незавершённой write-obstacles-core-4; новых команд не отправляю; следующий допустимый шаг — только обработать её RESULT, когда он появится.\n\n",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -24,5 +24,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T19:29:12.762Z"
+  "createdAt": "2026-09-16T19:34:51.277Z"
 }
