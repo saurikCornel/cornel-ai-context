@@ -3,7 +3,7 @@
   "branch": "cornel/moving-obstacles-b2152d",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "WAITING_CHATGPT",
-  "summary": "Фактический статус по Issue #60: задача не завершена. В Issue есть только два события RATE_LIMIT; записей RESULT для mo-2-inspect, UNKNOWN, FAILED или подтверждения последующих шагов нет. Issue остаётся открытым.\n\nПодтверждён только ранее успешный mo-1-install, поэтому его не повторяю. finish сейчас отправлять нельзя: нет подтверждённых реализации, targeted-тестов, typecheck, build и publish.\n\nНовая worker-команда тоже не отправляется, потому что mo-2-inspect уже был выдан, но его состояние не зафиксировано как RESULT или UNKNOWN. По протоколу требуется дождаться его фактического статуса, а не обходить новым commandId.\n\n",
+  "summary": "Фактический статус не изменился: подтверждён только успешный mo-1-install. Для уже отправленной mo-2-inspect по-прежнему нет RESULT и нет UNKNOWN, поэтому следующий worker-шаг отправлять нельзя — это создало бы обход незавершённой команды.\n\nЗадача остаётся незавершённой: реализация Pendulum, MovingPlatform, SlidingWall, targeted-тесты, typecheck, build, publish и finish ещё не подтверждены.\n\nСледующее действие допустимо только после статуса mo-2-inspect:\n\nSUCCEEDED → продолжаю реализацию;\n\nFAILED/REJECTED → исправляю конкретную причину новым commandId;\n\nUNKNOWN → останавливаюсь для проверки владельцем.\n\n",
   "commands": [
     {
       "commandId": "mo-1-install",
@@ -12,5 +12,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T19:13:08.052Z"
+  "createdAt": "2026-09-16T19:22:35.082Z"
 }
