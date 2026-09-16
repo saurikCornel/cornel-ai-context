@@ -2,7 +2,7 @@
   "id": "bd3382d2-e244-462c-b37a-937ce6c54027",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "chatgpt",
+  "agent": "codex",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -19,10 +19,13 @@
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "READY",
   "createdAt": "2026-09-16T15:45:03.616Z",
-  "updatedAt": "2026-09-16T15:48:26.439Z",
+  "updatedAt": "2026-09-16T15:50:08.204Z",
   "issue": 49,
-  "chatUrl": "https://chatgpt.com/c/6aaaba48-4794-83eb-b9a3-69ed08b73e4d",
+  "chatUrl": null,
   "error": null,
-  "browserError": "Для новой задачи нужен пустой чат",
-  "browserErrorJobId": "bd3382d2-e244-462c-b37a-937ce6c54027-initial"
+  "browserError": null,
+  "browserErrorJobId": "bd3382d2-e244-462c-b37a-937ce6c54027-initial",
+  "cliSession": null,
+  "cliActivity": null,
+  "statusChecks": 0
 }
