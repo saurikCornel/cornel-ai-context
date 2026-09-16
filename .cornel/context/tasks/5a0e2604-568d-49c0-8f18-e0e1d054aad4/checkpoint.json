@@ -3,14 +3,20 @@
   "branch": "cornel/pendulum-obstacle-5a0e26",
   "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
   "status": "RUNNING",
-  "summary": "I'll start by checking the current state of the working copy and the obstacle API.\n\n```json\n{\"version\":1,\"taskId\":\"5a0e2604-568d-49c0-8f18-e0e1d054aad4\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"78c76777594f13c92a7045dd28b4a4110f9d9a0c\",\"path\":\"src\",\"maxLines\":400}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "Есть каталог `src/obstacles` с готовым lifecycle (fan, conveyor, teleporter). Читаю API.\n\n```json\n{\"version\":1,\"taskId\":\"5a0e2604-568d-49c0-8f18-e0e1d054aad4\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"78c76777594f13c92a7045dd28b4a4110f9d9a0c\",\"paths\":[\"src/obstacles/types.ts\",\"src/obstacles/index.ts\",\"src/obstacles/vec.ts\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
+      "status": "SUCCEEDED",
+      "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-1",
       "status": "STARTED",
       "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:58:47.217Z"
+  "createdAt": "2026-09-16T21:59:31.202Z"
 }
