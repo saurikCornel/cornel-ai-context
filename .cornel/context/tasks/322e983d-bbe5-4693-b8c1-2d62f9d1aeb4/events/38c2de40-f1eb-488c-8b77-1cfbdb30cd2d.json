@@ -1,0 +1,17 @@
+{
+  "id": "38c2de40-f1eb-488c-8b77-1cfbdb30cd2d",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "rot-obst-c3-ls",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "src/obstacles: 10 файлов\nsrc/obstacles/RapierObstaclePhysics.ts\nsrc/obstacles/RotatingBar.ts\nsrc/obstacles/RotatingObstacle.ts\nsrc/obstacles/Spinner.ts\nsrc/obstacles/Windmill.ts\nsrc/obstacles/index.ts\nsrc/obstacles/rotation.test.ts\nsrc/obstacles/rotation.ts\nsrc/obstacles/types.ts\nsrc/obstacles/validation.ts",
+    "outputDigest": "219f24d1ac1a8347d8ad76dd7154e29dc1b982e706b43f23371a68cea43183f5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:31:49.569Z"
+}
