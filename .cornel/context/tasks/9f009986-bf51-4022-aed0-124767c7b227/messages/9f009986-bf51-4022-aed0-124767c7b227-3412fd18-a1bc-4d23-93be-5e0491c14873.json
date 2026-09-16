@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Слияние воспроизведено, дерево в нужном состоянии: HEAD на `525f353`, слитое содержимое лежит незакоммиченными правками (`M src/camera/index.ts`, новые `CameraController.ts`/`CameraController.test.ts`), маркеров конфликта нет, typecheck 0, camera-тесты 32/32, полный прогон 58 тестов пройдено (те же 3 предсуществующих файла падают на старте, что и до слияния), сборка успешна. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"message\":\"Merge CameraController core: объединён barrel src/camera/index.ts\\n\\nСлияние ветки cornel/cameracontroller-core-bd3382 в ветку офиса.\\nКонфликт только в barrel-файле src/camera/index.ts: обе стороны\\nдобавляли свои реэкспорты. Сохранены оба набора (CameraCollision,\\nCameraController, CameraPose, CameraTransition, Easing,\\nRapierCameraCollision, SmoothCameraRig, Smoothing, ThreeCameraBinding).\\nДобавлены файлы CameraController.ts и CameraController.test.ts.\"}\n```\n\nЖду результат от worker.\n\n**Сводка**\n- Конфликт `src/camera/index.ts` разрешён объединением реэкспортов обеих сторон, чужая работа не выброшена.\n- Проверки на слитом дереве: typecheck ✓, `vitest run src/camera` 32/32 ✓, полный `vitest run` 58 тестов ✓ (3 предсуществующих падения не связаны со слиянием), `npm run build` ✓.\n- Следующий шаг: подтвердить новый SHA из результата `publish-2` и отправить `finish`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:25:32.035Z"
+}
