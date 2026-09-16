@@ -1,0 +1,12 @@
+{
+  "id": "6b86e219-be11-4394-a828-3f7c2f7f54d3",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "HANDBACK",
+  "text": "Чат передан Qwen (новый разговор)",
+  "detail": {
+    "from": "chatgpt",
+    "to": "qwen",
+    "cancelled": 1
+  },
+  "createdAt": "2026-09-16T20:11:08.807Z"
+}
