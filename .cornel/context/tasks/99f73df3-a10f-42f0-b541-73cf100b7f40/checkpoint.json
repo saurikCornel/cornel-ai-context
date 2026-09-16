@@ -3,7 +3,7 @@
   "branch": "cornel/door-obstacle-99f73d",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Результат для `run-1` не пришёл — отправляю заново с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"run-2\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"find src -type f | sort\",\"timeoutSeconds\":120}\n```\n\nЖду результат от worker.\n\n",
+  "summary": "Читаю контракты курса и физики, чтобы Door встроился в существующие типы и Rapier-обвязку.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/courses/types.ts:1-200\",\"src/physics/PhysicsWorld.ts:1-120\",\"src/physics/index.ts:1-60\",\"src/contracts/math.ts:1-80\"]}\n```\n\nЖду результат от worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "run-2",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-1",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:41:48.406Z"
+  "createdAt": "2026-09-16T19:42:27.553Z"
 }
