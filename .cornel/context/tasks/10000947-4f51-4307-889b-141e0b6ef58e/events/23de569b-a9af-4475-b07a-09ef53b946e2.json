@@ -1,0 +1,13 @@
+{
+  "id": "23de569b-a9af-4475-b07a-09ef53b946e2",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Готово. Ветка cornel/camera-input-and-zoom-5ded69 слита в ветку сборщика cornel/slit-camera-input-and-zoom-100009. Конфликт в src/camera/index.ts разрешён объединением экспортов обеих сторон: сохранён новый экспорт CameraInput и все существующие модули офисной ветки (SmoothCameraRig, Smoothing, ThreeCameraBinding и прочие camera-модули), маркеры конфликта сняты, merge завершён обычным merge-коммитом. Из сливаемой ветки добавлены src/camera/CameraInput.ts и src/camera/CameraInput.test.ts. Проверки на опубликованном head 1c9d29a5: npm run typecheck, npm run test:camera, npm run test:ui, npm run test:input, npm run build — все успешны; отдельного lint-скрипта в package.json нет. Рабочее дерево чистое, изменения опубликованы в назначенную ветку.",
+  "detail": {
+    "commands": 17,
+    "failed": 5,
+    "headSha": "1c9d29a52e8247ce0fde5c714f07ee5aa10818ce",
+    "branch": "cornel/slit-camera-input-and-zoom-100009"
+  },
+  "createdAt": "2026-09-16T18:48:59.870Z"
+}
