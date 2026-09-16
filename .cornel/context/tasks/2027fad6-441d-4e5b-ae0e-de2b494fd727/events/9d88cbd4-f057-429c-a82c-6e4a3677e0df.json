@@ -1,0 +1,17 @@
+{
+  "id": "9d88cbd4-f057-429c-a82c-6e4a3677e0df",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-rating-system-20",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "HoleSystem.ts\nMatchManager.ts\nRatingSystem.ts\nScoreManager.ts\nShotSystemAdapter.ts\nStateMachine.ts\nTurnManager.ts\ngameplay.test.ts\nindex.ts\ntypes.ts\n",
+    "outputDigest": "72eb557cbf7b136753d8f4a3f64e038a012930bf3756e97f1bb410d68db547f5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:51:05.924Z"
+}
