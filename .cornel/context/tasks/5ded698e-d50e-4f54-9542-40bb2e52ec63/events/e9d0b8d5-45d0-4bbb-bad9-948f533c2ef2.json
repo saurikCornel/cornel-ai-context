@@ -1,0 +1,17 @@
+{
+  "id": "e9d0b8d5-45d0-4bbb-bad9-948f533c2ef2",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-input-verify-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "\nadded 84 packages, and audited 85 packages in 7s\n\n17 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/5ded698e-d50e-4f54-9542-40bb2e52ec63\u001b[39m\n\n \u001b[32m✓\u001b[39m src/camera/CameraCollision.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/camera/CameraInput.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m9 passed\u001b[39m\u001b[22m\u001b[90m (9)\u001b[39m\n\u001b[2m   Start at \u001b[22m 19:16:23\n\u001b[2m   Duration \u001b[22m 196ms\u001b[2m (transform 64%, import 21%, worker 9%, tests 6%)\u001b[22m\n\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 20 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-Bb53Nhb8.css  \u001b[39m\u001b[1m\u001b[2m  7.01 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.32 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-ESTV255h.js   \u001b[39m\u001b[1m\u001b[2m  2.61 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   1.21 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-B2ei82-g.js   \u001b[39m\u001b[1m\u001b[2m477.15 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 120.43 kB\u001b[22m\n\u001b[32m✓ built in 937ms\u001b[39m\n M src/camera/index.ts\n?? src/camera/CameraInput.test.ts\n?? src/camera/CameraInput.ts\n",
+    "outputDigest": "aee76d74bfe7583504bc94c460c2af1f8b3ff16c04b0fc97bb999ca88732ec3a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:16:27.132Z"
+}
