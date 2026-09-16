@@ -17,12 +17,12 @@
   "branch": "cornel/validaciya-90-lunok-c85887",
   "baseSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "READY",
+  "status": "RUNNING",
   "createdAt": "2026-09-16T13:43:17.138Z",
-  "updatedAt": "2026-09-16T13:53:09.362Z",
+  "updatedAt": "2026-09-16T13:53:22.332Z",
   "issue": 42,
   "chatUrl": "https://chatgpt.com/c/6aaa9f43-22d8-83ed-956e-18ac3e01d831",
   "error": null,
-  "browserError": "В поле ввода ChatGPT уже есть текст — очистите его в чате, и сообщение отправится",
+  "browserError": null,
   "browserErrorJobId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef-initial"
 }

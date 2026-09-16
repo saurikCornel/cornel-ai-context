@@ -1,0 +1,16 @@
+{
+  "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
+  "branch": "cornel/validaciya-90-lunok-c85887",
+  "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+  "status": "RUNNING",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"inspect-validation-1\",\"operation\":\"ls\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"path\":\"\",\"maxLines\":300}\n\nЖду результат worker; он придёт сюда отдельным сообщением. После него продолжу с точечным чтением структуры курсов и существующих тестов.\n\nСводка: решение — начать с инвентаризации файлов; изменённых файлов пока нет; проверки ещё не запускались; следующий шаг — определить точки импорта всех 10 курсов и формат текущих тестов.\n\n",
+  "commands": [
+    {
+      "commandId": "inspect-validation-1",
+      "status": "STARTED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-16T13:53:22.334Z"
+}
