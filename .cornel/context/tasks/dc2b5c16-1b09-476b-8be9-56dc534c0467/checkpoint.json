@@ -3,7 +3,7 @@
   "branch": "cornel/particle-effects-dc2b5c",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"verify-particles-6\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"npm run test -- --run src/effects/ParticleManager.test.ts && npm exec tsc -- -b --pretty false && npm run build\",\"timeoutSeconds\":300}\n```\n\nРешение: реализация готова к фактической верификации. Изменённые файлы: `src/effects/ParticleManager.ts`, `src/effects/index.ts`, `src/effects/ParticleManager.test.ts`. Проверки: запущены worker. Следующий шаг: разобрать результат проверок, при успехе опубликовать commit.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"read-scripts-7\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"package.json\"]}\n```\n\nРешение: отказ связан только с отсутствующим npm-скриптом, а не с кодом. Изменённые файлы: без изменений. Проверки: предыдущий запуск остановился до тестов. Следующий шаг: использовать доступную команду Vitest и повторить typecheck/build.  \n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "verify-particles-6",
+      "status": "FAILED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 1
+    },
+    {
+      "commandId": "read-scripts-7",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:52:50.330Z"
+  "createdAt": "2026-09-16T15:57:48.333Z"
 }
