@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-obstacle-union-members-8\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/courses/types.ts:1-75\"]}\n\nСводка: alias найден, но для корректного маппинга нужны поля StaticObstacle, MovingObstacle и HazardObstacle; читаю только этот диапазон. Следующий шаг — запись src/obstacles и lifecycle-тестов.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T20:06:19.269Z"
+}

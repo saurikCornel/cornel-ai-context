@@ -3,7 +3,7 @@
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-obstacle-descriptor-exact-7\",\"operation\":\"grep\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"pattern\":\"ObstacleDescriptor\",\"path\":\"src/courses/types.ts\"}\n\nСводка: подтверждено, что потерянная команда изменений не оставила; тестовый стиль и Rapier API изучены; сейчас уточняется только точная форма ObstacleDescriptor. Следующий шаг — реализация src/obstacles с lifecycle-тестами без правок gameplay/AI/course data.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-obstacle-union-members-8\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/courses/types.ts:1-75\"]}\n\nСводка: alias найден, но для корректного маппинга нужны поля StaticObstacle, MovingObstacle и HazardObstacle; читаю только этот диапазон. Следующий шаг — запись src/obstacles и lifecycle-тестов.\n\n",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "read-obstacle-descriptor-exact-7",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-obstacle-union-members-8",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T20:01:50.355Z"
+  "createdAt": "2026-09-16T20:06:19.272Z"
 }

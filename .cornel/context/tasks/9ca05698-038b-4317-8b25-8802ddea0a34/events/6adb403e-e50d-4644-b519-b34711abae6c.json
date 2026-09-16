@@ -1,0 +1,11 @@
+{
+  "id": "6adb403e-e50d-4644-b519-b34711abae6c",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-obstacle-union-members-8",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T20:06:19.270Z"
+}
