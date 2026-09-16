@@ -1,0 +1,11 @@
+{
+  "id": "b77f963e-8d56-4504-b7d7-a0d077cf26e4",
+  "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-input-grep-28",
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff"
+  },
+  "createdAt": "2026-09-16T13:00:20.024Z"
+}

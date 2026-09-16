@@ -1,0 +1,11 @@
+{
+  "id": "3d6fde79-ad5f-4f3a-8d9d-ca193b003457",
+  "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-input-grep-28",
+    "operation": "grep"
+  },
+  "createdAt": "2026-09-16T13:00:20.023Z"
+}
