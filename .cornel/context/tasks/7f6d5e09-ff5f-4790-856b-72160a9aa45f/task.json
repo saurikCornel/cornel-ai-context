@@ -17,16 +17,16 @@
   "branch": "cornel/dinamicheskie-prepyatstviya-7f6d5e",
   "baseSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "workspaceSyncedSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
-  "status": "WAITING_CHATGPT",
+  "status": "RUNNING",
   "createdAt": "2026-09-16T17:03:11.645Z",
-  "updatedAt": "2026-09-16T17:09:24.747Z",
+  "updatedAt": "2026-09-16T17:09:31.626Z",
   "issue": 53,
-  "chatUrl": null,
+  "chatUrl": "cli://claude/09e534ec-500c-40c9-a46f-ea7554438b1d",
   "error": null,
   "browserError": null,
   "browserErrorJobId": "7f6d5e09-ff5f-4790-856b-72160a9aa45f-initial",
   "statusChecks": 0,
-  "cliSession": null,
+  "cliSession": "09e534ec-500c-40c9-a46f-ea7554438b1d",
   "chatUrlBefore": "https://chatgpt.com/c/6aaacbde-9de4-83eb-b72e-0ca925dd9afa",
-  "cliActivity": "Claude CLI: начал ход (claude-opus-5)"
+  "cliActivity": null
 }
