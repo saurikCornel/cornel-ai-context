@@ -1,0 +1,17 @@
+{
+  "id": "789e7f24-0e88-400c-af3c-f5172bbff113",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-obstacles-after-lost-result-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "=== STATUS ===\n=== OBSTACLES TREE ===\nNO_OBSTACLES_DIR\n=== OBSTACLES PREVIEW ===\n",
+    "outputDigest": "2c717ffdc7dd2cf0fee98074f20434cdaf86757016004548039ef195d53ce4fe",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T19:58:14.103Z"
+}

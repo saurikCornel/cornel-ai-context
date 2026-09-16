@@ -2,8 +2,8 @@
   "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
   "branch": "cornel/dynamic-obstacles-core-lifecycle-9ca056",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
-  "status": "NEEDS_ATTENTION",
-  "summary": "Фактический статус подтверждён повторной проверкой Issue #58: write-obstacles-core-4 в журнале отсутствует, RESULT и UNKNOWN для неё нет. Видны только события rate-limit. Поэтому задача не завершена, но повторять команду нельзя: неизвестно, была ли она принята локальным worker до потери результата.\n\nCORNEL_AI_BLOCKED: потерян статус worker-команды write-obstacles-core-4; без RESULT/UNKNOWN нельзя безопасно продолжать, повторять запись или отправлять finish.\n\nСводка: успешны только read-only проверки contracts/physics/scene; изменения кода и тесты не подтверждены; требуется восстановление/появление статуса этой worker-команды владельцем/системой.\n\n",
+  "status": "RUNNING",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"inspect-obstacles-after-lost-result-5\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"set -e\\nprintf '%s\\\\n' '=== STATUS ==='\\ngit status --short\\nprintf '%s\\\\n' '=== OBSTACLES TREE ==='\\nif [ -d src/obstacles ]; then find src/obstacles -maxdepth 2 -type f -print | sort; else echo 'NO_OBSTACLES_DIR'; fi\\nprintf '%s\\\\n' '=== OBSTACLES PREVIEW ==='\\nif [ -d src/obstacles ]; then for f in $(find src/obstacles -maxdepth 1 -type f -print | sort); do echo \\\"--- $f\\\"; sed -n '1,220p' \\\"$f\\\"; done; fi\",\"timeoutSeconds\":300}\n\nСводка: принято рабочее допущение — восстановить фактическое состояние через read-only инспекцию локальной рабочей копии; ничего не перезаписываю до результата этой проверки. Следующий шаг зависит от того, сохранились ли изменения write-obstacles-core-4.\n\n",
   "commands": [
     {
       "commandId": "checkpoint-and-tree-1",
@@ -22,7 +22,13 @@
       "status": "SUCCEEDED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": 0
+    },
+    {
+      "commandId": "inspect-obstacles-after-lost-result-5",
+      "status": "STARTED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:55:13.828Z"
+  "createdAt": "2026-09-16T19:58:11.918Z"
 }

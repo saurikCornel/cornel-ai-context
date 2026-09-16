@@ -1,0 +1,12 @@
+{
+  "id": "d5d06037-d060-41ec-98c9-bcdd5f637629",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-obstacles-after-lost-result-5",
+    "operation": "run",
+    "command": "set -e\nprintf '%s\\n' '=== STATUS ==='\ngit status --short\nprintf '%s\\n' '=== OBSTACLES TREE ==='\nif [ -d src/obstacles ]; then find src/obstacles -maxdepth 2 -type f -print | sort; else echo 'NO_OBSTACLES_DIR'; fi\nprintf '%s\\n' '=== OBSTACLES PREVIEW ==='\nif [ -d src/obstacles ]; then for f in $(find src/obstacles -maxdepth 1 -type f -print | sort); do echo \"--- $f\"; sed -n '1,220p' \"$f\"; done; fi"
+  },
+  "createdAt": "2026-09-16T19:58:11.916Z"
+}
