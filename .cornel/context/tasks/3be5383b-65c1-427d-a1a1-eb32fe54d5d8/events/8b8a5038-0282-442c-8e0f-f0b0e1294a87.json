@@ -1,0 +1,13 @@
+{
+  "id": "8b8a5038-0282-442c-8e0f-f0b0e1294a87",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Gameplay state/scoring/hole flow реализован и опубликован: MatchManager, TurnManager, ScoreManager, HoleSystem, ShotSystemAdapter, централизованная state machine, touch-ready input commands для двух control schemes; cup capture с ограничением скорости; PAR labels; stroke-limit completion; hazard +1/reset к lastSafePosition; детерминированные match standings/tiebreak. Unit tests покрывают scoring/PAR, tiebreak, hole capture/hazard, state transitions и полный hole/match flow. Проверка на опубликованном head: vitest src/gameplay — 5/5 passed; npm run typecheck — успешно; npm run build — успешно. PR не создавался согласно инструкции.",
+  "detail": {
+    "commands": 13,
+    "failed": 3,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "branch": "cornel/gameplay-state-scoring-and-hole-flow-3be538"
+  },
+  "createdAt": "2026-09-16T12:31:52.920Z"
+}
