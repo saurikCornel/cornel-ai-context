@@ -1,0 +1,11 @@
+{
+  "id": "4aa8ec14-f82b-4795-abf9-4afc2a81b358",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "publish-camera-controller-11",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:36:46.815Z"
+}
