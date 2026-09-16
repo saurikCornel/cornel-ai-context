@@ -1,9 +1,9 @@
 {
   "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
   "branch": "cornel/slit-camera-modes-aim-follow-overview-fr-b80e34",
-  "headSha": "9ad84225b6f2a251d18a2fe6833e2d44bda2f86d",
+  "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"b80e347b-e8e2-48c2-8ab9-17093b56685b\",\"commandId\":\"publish-4\",\"operation\":\"publish\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"message\":\"Merge camera modes preserving CameraController and CameraModeController\"}\n\nПосле успешного RESULT останется только finish с итогом: сохранены обе реализации камеры, конфликтный barrel объединён, режимная камера и её тесты вынесены отдельно; ранее это разрешение прошло typecheck, camera 32/32, UI 5/5, input 5/5 и build.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"b80e347b-e8e2-48c2-8ab9-17093b56685b\",\"commandId\":\"finish-5\",\"operation\":\"finish\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"message\":\"Слияние camera modes завершено и опубликовано. Конфликты в src/camera/CameraController.ts, CameraController.test.ts и index.ts разрешены с сохранением смысла обеих сторон: офисный renderer-agnostic CameraController оставлен без потерь, входящая реализация aim/follow/overview/free сохранена отдельно как CameraModeController с собственными переименованными типами и тестами CameraModeController.test.ts; barrel экспортирует обе реализации. Конфликтных маркеров нет. Проверки worker: typecheck exit 0; camera tests 3 files / 32 tests passed; UI 1 file / 5 tests passed; input 2 files / 5 tests passed; production build успешен.\"}\n\nСводка: слияние опубликовано, обе реализации камеры сохранены, проверки зелёные. Отправлен finish.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "publish-4",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-5",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:21:38.314Z"
+  "createdAt": "2026-09-16T19:25:31.372Z"
 }
