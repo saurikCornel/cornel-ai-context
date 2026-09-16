@@ -1,0 +1,17 @@
+{
+  "id": "57b5b82c-d66d-4583-98ff-716c3c2031c6",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "implement-gameplay-core-6",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+    "output": "\n\u001b[41m                                                                               \u001b[0m\n\u001b[41m\u001b[37m                This is not the tsc command you are looking for                \u001b[0m\n\u001b[41m                                                                               \u001b[0m\n\nTo get access to the TypeScript compiler, \u001b[34mtsc\u001b[0m, from the command line either:\n\n- Use \u001b[1mnpm install typescript\u001b[0m to first add TypeScript to your project \u001b[1mbefore\u001b[0m using npx\n- Use \u001b[1myarn\u001b[0m to avoid accidentally running code from un-installed packages\n",
+    "outputDigest": "7c15b3332e4499e079231e6358190fe040a1ade2fd0c51233afa399fbc42411f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:27:09.311Z"
+}
