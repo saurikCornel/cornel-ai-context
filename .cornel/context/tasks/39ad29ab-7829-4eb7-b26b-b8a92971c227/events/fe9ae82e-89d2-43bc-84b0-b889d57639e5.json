@@ -1,0 +1,11 @@
+{
+  "id": "fe9ae82e-89d2-43bc-84b0-b889d57639e5",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "check-git-status-25",
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72"
+  },
+  "createdAt": "2026-09-16T21:59:40.256Z"
+}
