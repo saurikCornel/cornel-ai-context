@@ -1,0 +1,11 @@
+{
+  "id": "a5ff1a07-f6ba-44bd-bc3e-f4730bbd0815",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-controller-body-16",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T17:11:22.972Z"
+}

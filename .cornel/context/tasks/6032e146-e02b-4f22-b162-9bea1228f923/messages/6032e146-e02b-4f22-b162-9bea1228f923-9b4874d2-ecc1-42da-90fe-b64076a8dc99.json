@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Typecheck и build прошли. Две режимные проверки падают — читаю фактический код контроллера и тестов, чтобы понять, ошибка в реализации или в ожиданиях теста.\n\n```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-controller-body-16\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/CameraController.ts:16-140\",\"src/camera/CameraController.test.ts:17-35\",\"src/camera/CameraCollision.ts:1-60\"]}\n```\n\nСводка: реализация компилируется и собирается (`tsc -b`, `vite build` — успешно), но 2 из 6 режимных тестов падают: overview не уходит на ожидаемую высоту и collision-дистанция не совпадает с ожиданием теста.\nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.\nПроверки: `npm install` — ок, `npm run typecheck` — ок, `npm run build` — ок, `vitest src/camera` — 9 passed / 2 failed.\nСледующий шаг: по коду определить причину расхождений, исправить контроллер (или ожидания теста, если неверна их математика) и перезапустить проверки.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:11:22.970Z"
+}
