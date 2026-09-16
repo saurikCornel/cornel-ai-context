@@ -1,0 +1,11 @@
+{
+  "id": "eb5f1dbe-16fd-4c55-b9ea-92b417015e43",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chaos-finish-9",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T14:23:27.775Z"
+}

@@ -1,9 +1,9 @@
 {
   "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
   "branch": "cornel/chaos-dimension-9-lunok-39ef30",
-  "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+  "headSha": "163d18c0c07384089bf6d5e2b6011a0681e50609",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-publish-8\",\"operation\":\"publish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Add Chaos Dimension course with 9 holes\"}\n\nСводка: создан src/courses/data/chaos-dimension.ts с ровно 9 оригинальными лунками; первые 6 — самостоятельные механики, последние 3 — комбинированные испытания; структурная проверка, npm run typecheck и npm run build прошли успешно; следующий шаг — finish после подтверждения publish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-finish-9\",\"operation\":\"finish\",\"headSha\":\"163d18c0c07384089bf6d5e2b6011a0681e50609\",\"message\":\"Готово: добавлен src/courses/data/chaos-dimension.ts с ровно 9 оригинальными лунками. Первые 6 используют самостоятельные механики Chaos Dimension, последние 3 комбинируют bumper/spinner/gate/platform/ice/void-механики. Использованы только поддерживаемые course contracts и obstacle types. Проверено: 9 hole id, без дублей explicit id, npm run typecheck — успешно, npm run build — успешно. Изменения опубликованы в назначенную ветку; gameplay/UI/AI не изменялись.\"}\n\nСводка: решение реализовано и опубликовано; изменён файл src/courses/data/chaos-dimension.ts; typecheck и production build успешны; следующий шаг — сборщик офиса может слить ветку.\n\n",
   "commands": [
     {
       "commandId": "chaos-inspect-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "chaos-publish-8",
+      "status": "SUCCEEDED",
+      "headSha": "163d18c0c07384089bf6d5e2b6011a0681e50609",
+      "exitCode": 0
+    },
+    {
+      "commandId": "chaos-finish-9",
       "status": "STARTED",
-      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "headSha": "163d18c0c07384089bf6d5e2b6011a0681e50609",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T14:01:41.269Z"
+  "createdAt": "2026-09-16T14:23:27.779Z"
 }
