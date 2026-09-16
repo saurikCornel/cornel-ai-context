@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-camera-dependencies-4\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"package.json\",\"src/camera/index.ts\",\"src/camera/CameraCollision.ts\",\"src/camera/RapierCameraCollision.ts\",\"src/contracts/game.ts\",\"src/contracts/math.ts\",\"src/contracts/index.ts\",\"src/core/Renderer.ts\",\"src/core/SceneManager.ts\",\"src/input/InputManager.ts\",\"src/input/index.ts\",\"src/main.ts\",\"src/config/GameConfig.ts\",\"tsconfig.app.json\",\"vite.config.ts\"]}\n```\n\nСводка: `CameraController` действительно отсутствует в текущем head; карточка требует создать его с независимой интеграцией.  \nИзменённые файлы: нет.  \nПроверки: подтверждено отсутствие camera-кода вне collision-модулей.  \nСледующий шаг: спроектировать API по существующим контрактам и добавить unit-тесты переходов.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:07:15.870Z"
+}

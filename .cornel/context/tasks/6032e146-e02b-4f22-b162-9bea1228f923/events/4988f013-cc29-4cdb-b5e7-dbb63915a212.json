@@ -1,0 +1,11 @@
+{
+  "id": "4988f013-cc29-4cdb-b5e7-dbb63915a212",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-camera-dependencies-4",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T16:07:15.872Z"
+}
