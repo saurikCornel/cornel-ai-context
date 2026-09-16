@@ -2,8 +2,8 @@
   "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"dev-tests-12\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"cat > src/input/InputManager.test.ts <<'EOF'\\n// @vitest-environment jsdom\\nimport {describe,expect,it} from 'vitest';\\nimport {InputManager} from './InputManager';\\ndescribe('InputManager',()=>{\\n it('tracks keyboard actions across frames',()=>{const input=new InputManager({target:window,pointerTarget:document});window.dispatchEvent(new KeyboardEvent('keydown',{code:'KeyW'}));expect(input.isDown('camera-forward')).toBe(true);expect(input.wasPressed('camera-forward')).toBe(true);input.endFrame();expect(input.wasPressed('camera-forward')).toBe(false);window.dispatchEvent(new KeyboardEvent('keyup',{code:'KeyW'}));expect(input.wasReleased('camera-forward')).toBe(true);input.dispose()});\\n it('tracks primary pointer and wheel',()=>{const input=new InputManager({target:window,pointerTarget:document});document.dispatchEvent(new PointerEvent('pointerdown',{button:0,clientX:12,clientY:34}));expect(input.pointer.primaryDown).toBe(true);expect(input.isDown('primary')).toBe(true);document.dispatchEvent(new WheelEvent('wheel',{deltaY:120,cancelable:true}));expect(input.pointer.wheel).toBe(120);input.endFrame();expect(input.pointer.wheel).toBe(0);input.dispose()});\\n});\\nEOF\\ncat > src/dev/dev.test.ts <<'EOF'\\n// @vitest-environment jsdom\\nimport {describe,expect,it} from 'vitest';\\nimport {parseLaunchOptions} from './LaunchOptions';\\nimport {PresentationMinimap} from './PresentationMinimap';\\ndescribe('launch options',()=>{\\n it('parses debug course and hole',()=>{expect(parseLaunchOptions('?debug=1&course=neon-city&hole=7')).toEqual({debug:true,courseId:'neon-city',hole:7})});\\n it('ignores invalid holes',()=>{expect(parseLaunchOptions('?course=green-hills&hole=0')).toEqual({debug:false,courseId:'green-hills'})});\\n});\\ndescribe('presentation minimap',()=>{it('toggles visibility',()=>{const m=new PresentationMinimap();expect(m.visible).toBe(false);m.setVisible(true);expect(m.visible).toBe(true);expect(m.element.querySelector('canvas')).not.toBeNull()})});\\nEOF\\nnpm run test:input && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: все требуемые компоненты теперь записаны; текущий шаг добавляет тесты и запускает фактическую валидацию. Если что-то упадёт, исправлю по конкретной ошибке, не повторяя успешные части.\n\n",
+  "status": "NEEDS_ATTENTION",
+  "summary": "CORNEL_AI_BLOCKED: worker не запустил тесты из-за нехватки свободного места на диске: доступно 912 МБ, требуется минимум 1024 МБ. Я не буду удалять чужие файлы или кэши без разрешения.\n\nПосле освобождения хотя бы ~200–300 МБ можно повторить проверку новым commandId: npm run test:input && npm run typecheck && npm run build, затем publish и finish.\n\nСводка: InputManager, developer diagnostics, query options, F1/F2/F3, presentation minimap и bootstrap-интеграция уже записаны локально; тестовые файлы не были созданы этой последней командой, потому что worker отказал до запуска. Следующий шаг — освободить место и повторить валидацию.\n\n",
   "commands": [
     {
       "commandId": "input-inventory-1",
@@ -61,10 +61,10 @@
     },
     {
       "commandId": "dev-tests-12",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:42:00.222Z"
+  "createdAt": "2026-09-16T15:42:12.236Z"
 }
