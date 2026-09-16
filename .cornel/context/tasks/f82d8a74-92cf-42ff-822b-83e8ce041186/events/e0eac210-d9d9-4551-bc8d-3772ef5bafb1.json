@@ -1,0 +1,11 @@
+{
+  "id": "e0eac210-d9d9-4551-bc8d-3772ef5bafb1",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "camera-pose-transition",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:26:12.300Z"
+}

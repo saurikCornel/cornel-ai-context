@@ -1,0 +1,17 @@
+{
+  "id": "56d58948-4ae3-4097-a2b2-58a2f9aa4c97",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-pose-transition",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "    1479 src/camera/CameraPose.ts\n    1895 src/camera/CameraTransition.ts\n    3374 total\n",
+    "outputDigest": "04a030ca9bc3d091c4e68b8950c4847ac7cde0eb44d71cf7af945f8b2bb79921",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:26:12.369Z"
+}
