@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-mode-apply-23\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/CameraController.ts:48-93\",\"src/camera/CameraCollision.ts:20-55\",\"src/camera/CameraController.test.ts:18-34\"]}\n\nСводка: две причины падений локализованы — мгновенное переключение режима и минимальная дистанция collision.\nИзменённые файлы: новых правок пока нет.\nПроверки: typecheck/build проходят; 9 camera-тестов проходят, 2 падают.\nСледующий шаг: внести точечный патч и сразу выполнить финальный vitest src/camera, typecheck и build.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:50:21.531Z"
+}

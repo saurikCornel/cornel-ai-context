@@ -1,0 +1,17 @@
+{
+  "id": "79f30cf2-47b1-4e0e-819b-8f547b186e39",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "patch-bot-planner-19c",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "patched 8 sections\n2\n",
+    "outputDigest": "413bfe716e21da206b8c98558264a9ee681b8172db2fbd305d76fb9ebf5f9e74",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:50:15.651Z"
+}

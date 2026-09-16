@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"camera-fail-plain-21\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"NO_COLOR=1 npx vitest run src/camera/CameraController.test.ts --reporter=verbose 2>&1 | sed -E 's/\\\\x1B\\\\[[0-9;]*[mK]//g' | awk '/AssertionError|expected|received|overview|collision-aware|collision/{print NR \\\":\\\" $0}' | head -n 80\",\"timeoutSeconds\":900}\n\nСводка: архитектура контроллера, typecheck и build уже подтверждены; локализованы ровно 2 тестовых расхождения.\nИзменённые файлы: новых изменений нет.\nПроверки: 4/6 CameraController + 5/5 CameraCollision проходят; typecheck/build проходят.\nСледующий шаг: по точным expected/received внести один минимальный патч, затем финальная проверка, publish и finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-mode-apply-23\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/CameraController.ts:48-93\",\"src/camera/CameraCollision.ts:20-55\",\"src/camera/CameraController.test.ts:18-34\"]}\n\nСводка: две причины падений локализованы — мгновенное переключение режима и минимальная дистанция collision.\nИзменённые файлы: новых правок пока нет.\nПроверки: typecheck/build проходят; 9 camera-тестов проходят, 2 падают.\nСледующий шаг: внести точечный патч и сразу выполнить финальный vitest src/camera, typecheck и build.\n\n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -121,10 +121,16 @@
     },
     {
       "commandId": "camera-fail-plain-21",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-mode-apply-23",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:43:25.748Z"
+  "createdAt": "2026-09-16T17:50:21.536Z"
 }
