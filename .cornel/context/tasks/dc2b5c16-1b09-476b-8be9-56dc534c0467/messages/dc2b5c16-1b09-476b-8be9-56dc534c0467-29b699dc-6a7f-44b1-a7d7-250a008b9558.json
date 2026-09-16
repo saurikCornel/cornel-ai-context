@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"dc2b5c16-1b09-476b-8be9-56dc534c0467\",\"commandId\":\"verify-published-particles-15\",\"operation\":\"run\",\"headSha\":\"db73400a5139cf8b2861c4cd634d81e9858ff328\",\"command\":\"npx vitest run src/effects/ParticleManager.test.ts && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nРешение: причина отказа finish техническая — отсутствовала успешная проверка именно на опубликованном head.\nИзменённые файлы: без изменений.\nСледующий шаг: после успешного RESULT сразу повторить finish с новым commandId.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:49:43.966Z"
+}
