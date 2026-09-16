@@ -3,7 +3,7 @@
   "branch": "cornel/door-obstacle-99f73d",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Продолжаю разведку — нужен компактный список каталогов, чтобы понять, куда встроить Door.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"run-5\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"for d in src src/courses src/courses/data src/physics src/core src/gameplay; do echo \\\"=== $d ===\\\"; ls -1 $d 2>/dev/null; done\",\"timeoutSeconds\":120}\n```\n\nЖду результат от worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Продолжаю разведку: нужно увидеть контракт препятствий целиком, прежде чем писать Door.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"run-6\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"echo '=== contracts ==='; ls -1 src/contracts; echo; echo '=== courses/types.ts ==='; cat src/courses/types.ts; echo; echo '=== grep obstacle defs ==='; grep -rn \\\"Obstacle\\\" src --include=*.ts | head -60\",\"timeoutSeconds\":120}\n```\n\nЖду результат от worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "run-5",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "run-6",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T20:10:07.444Z"
+  "createdAt": "2026-09-16T21:10:48.081Z"
 }

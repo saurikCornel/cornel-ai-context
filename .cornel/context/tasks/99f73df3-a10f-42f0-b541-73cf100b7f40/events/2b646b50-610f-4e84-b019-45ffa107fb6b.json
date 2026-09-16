@@ -1,0 +1,12 @@
+{
+  "id": "2b646b50-610f-4e84-b019-45ffa107fb6b",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "run-6",
+    "operation": "run",
+    "command": "echo '=== contracts ==='; ls -1 src/contracts; echo; echo '=== courses/types.ts ==='; cat src/courses/types.ts; echo; echo '=== grep obstacle defs ==='; grep -rn \"Obstacle\" src --include=*.ts | head -60"
+  },
+  "createdAt": "2026-09-16T21:10:48.078Z"
+}

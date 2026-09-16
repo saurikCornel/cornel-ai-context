@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Продолжаю разведку: нужно увидеть контракт препятствий целиком, прежде чем писать Door.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"run-6\",\"operation\":\"run\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"command\":\"echo '=== contracts ==='; ls -1 src/contracts; echo; echo '=== courses/types.ts ==='; cat src/courses/types.ts; echo; echo '=== grep obstacle defs ==='; grep -rn \\\"Obstacle\\\" src --include=*.ts | head -60\",\"timeoutSeconds\":120}\n```\n\nЖду результат от worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T21:10:48.074Z"
+}

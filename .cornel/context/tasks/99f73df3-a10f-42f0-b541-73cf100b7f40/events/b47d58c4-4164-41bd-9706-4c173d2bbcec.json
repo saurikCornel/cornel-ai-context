@@ -1,0 +1,17 @@
+{
+  "id": "b47d58c4-4164-41bd-9706-4c173d2bbcec",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "run-6",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "=== contracts ===\nevents.ts\ngame.ts\nindex.ts\nmath.ts\nservices.ts\n\n=== courses/types.ts ===\nimport type { Quat, Vec3 } from '../contracts/math';\n\nexport interface TransformDescriptor {\n  position: Vec3;\n  rotation?: Quat;\n  scale?: Vec3;\n}\n\nexport type SurfaceMaterial = 'green' | 'rough' | 'sand' | 'ice' | 'wood' | 'stone' | 'metal';\n\nexport interface SurfaceDescriptor {\n  id: string;\n  transform: TransformDescriptor;\n  shape: 'box' | 'ramp' | 'cylinder' | 'mesh';\n  size: Vec3;\n  material: SurfaceMaterial;\n  friction?: number;\n  restitution?: number;\n}\n\nexport interface ObstacleBase {\n  id: string;\n  transform: TransformDescriptor;\n  enabled?: boolean;\n}\n\nexport interface StaticObstacle extends ObstacleBase {\n  type: 'wall' | 'bumper' | 'pillar' | 'block';\n  size: Vec3;\n  restitution?: number;\n}\n\nexport interface MovingObstacle extends ObstacleBase {\n  type: 'spinner' | 'windmill' | 'gate' | 'platform';\n  size: Vec3;\n  motion: {\n    kind: 'rotate' | 'translate';\n    axis: Vec3;\n    speed: number;\n    distance?: number;\n    phase?: number;\n  };\n}\n\nexport interface HazardObstacle extends ObstacleBase {\n  type: 'water' | 'void' | 'reset-zone';\n  size: Vec3;\n  penaltyStrokes?: number;\n}\n\nexport type ObstacleDescriptor = StaticObstacle | MovingObstacle | HazardObstacle;\n\nexport interface Hole {\n  id: string;\n  name: string;\n  par: number;\n  spawn: Vec3;\n  cup: { position: Vec3; radius: number; captureDepth: number };\n  bounds: { min: Vec3; max: Vec3 };\n  surfaces: SurfaceDescriptor[];\n  obstacles: ObstacleDescriptor[];\n}\n\nexport interface Course {\n  id: string;\n  name: string;\n  themeId: string;\n  version: number;\n  holes: Hole[];\n}\n\n=== grep obstacle defs ===\nsrc/courses/types.ts:21:export interface ObstacleBase {\nsrc/courses/types.ts:27:export interface StaticObstacle extends ObstacleBase {\nsrc/courses/types.ts:33:export interface MovingObstacle extends ObstacleBase {\nsrc/courses/types.ts:45:export interface HazardObstacle extends ObstacleBase {\nsrc/courses/types.ts:51:export type ObstacleDescriptor = StaticObstacle | MovingObstacle | HazardObstacle;\nsrc/courses/types.ts:61:  obstacles: ObstacleDescriptor[];\nsrc/gameplay/HoleSystem.ts:3:import type { HazardObstacle, Hole } from '../courses/types';\nsrc/gameplay/HoleSystem.ts:43:  resolveHazard(playerId: PlayerId, hole: Hole, hazard?: HazardObstacle): HazardResolution {\n",
+    "outputDigest": "d332055a0ebabc00b199656c4dedc11ee73007e47a5701672791df2812ed48f7",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:10:50.440Z"
+}
