@@ -1,0 +1,17 @@
+{
+  "id": "7f08626f-dd66-4f91-acbc-9894c276cf7c",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "deps-verify-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "07aa9e4dea82944affadde8c037938b4bc204172",
+    "output": "=== INSTALL ===\n\nadded 84 packages, and audited 85 packages in 4s\n\n17 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== UI TESTS ===\n\n> crazy-putt-arena@0.1.0 test:ui\n> vitest run src/ui\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\u001b[39m\n\n \u001b[32m✓\u001b[39m src/ui/ui.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 63\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:58:23\n\u001b[2m   Duration \u001b[22m 2.10s\u001b[2m (environment 89%, transform 7%, tests 3%, import 1%)\u001b[22m\n\n=== LINT ===\nNo lint script\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 13 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-A_zxEyNx.css  \u001b[39m\u001b[1m\u001b[2m  6.34 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.12 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-BpuLOeG6.js   \u001b[39m\u001b[1m\u001b[2m472.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 118.94 kB\u001b[22m\n\u001b[32m✓ built in 3.23s\u001b[39m\n=== CONFLICT CHECK ===\n=== STATUS ===\nM  package-lock.json\nM  package.json\nA  src/ui/Hud.ts\nA  src/ui/Overlays.ts\nA  src/ui/Scoreboard.ts\nA  src/ui/dom.ts\nM  src/ui/index.ts\nA  src/ui/types.ts\nM  src/ui/ui.css\nA  src/ui/ui.test.ts\n",
+    "outputDigest": "b3529a3339af1f4775d76d02523aa20a7385818122dfdeafcaab6f5ca5b66430",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:58:32.238Z"
+}
