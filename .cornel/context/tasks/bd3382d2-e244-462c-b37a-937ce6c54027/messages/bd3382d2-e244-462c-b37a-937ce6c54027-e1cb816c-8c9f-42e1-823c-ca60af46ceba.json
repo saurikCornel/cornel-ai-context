@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"read-camera-api-5\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/contracts/math.ts\",\"src/camera/CameraCollision.ts\",\"src/camera/RapierCameraCollision.ts\",\"src/camera/CameraCollision.test.ts\",\"src/camera/index.ts\"],\"maxLines\":500}\n```\n\nРешения: core будет принимать input-снимок, обновлять положение/ориентацию и использовать collision как необязательную зависимость.  \nИзменённые файлы: нет.  \nПроверки: совместимые действия input и базовая конфигурация подтверждены.  \nСледующий шаг: зафиксировать точный API и внести реализацию с unit-тестами.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:09:07.526Z"
+}

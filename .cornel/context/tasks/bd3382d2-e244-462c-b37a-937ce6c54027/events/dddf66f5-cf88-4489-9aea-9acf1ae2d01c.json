@@ -1,0 +1,11 @@
+{
+  "id": "dddf66f5-cf88-4489-9aea-9acf1ae2d01c",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-camera-api-5",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:09:07.529Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/cameracontroller-core-bd3382",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"read-camera-details-4\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\".cornel/CHATGPT.md\",\"package.json\",\"src/contracts/math.ts\",\"src/contracts/game.ts\",\"src/camera/CameraCollision.ts\",\"src/camera/RapierCameraCollision.ts\",\"src/camera/CameraCollision.test.ts\",\"src/camera/index.ts\",\"src/input/InputManager.ts\",\"src/config/GameConfig.ts\",\"src/app/GameState.ts\"],\"maxLines\":700}\n```\n\nРешения: использую отдельное чтение, чтобы не опираться на усечённый вывод.  \nИзменённые файлы: нет.  \nПроверки: базовые physics-контракты подтверждают `Vec3`-совместимый подход.  \nСледующий шаг: реализовать controller и unit-тесты на подтверждённом API.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"bd3382d2-e244-462c-b37a-937ce6c54027\",\"commandId\":\"read-camera-api-5\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/contracts/math.ts\",\"src/camera/CameraCollision.ts\",\"src/camera/RapierCameraCollision.ts\",\"src/camera/CameraCollision.test.ts\",\"src/camera/index.ts\"],\"maxLines\":500}\n```\n\nРешения: core будет принимать input-снимок, обновлять положение/ориентацию и использовать collision как необязательную зависимость.  \nИзменённые файлы: нет.  \nПроверки: совместимые действия input и базовая конфигурация подтверждены.  \nСледующий шаг: зафиксировать точный API и внести реализацию с unit-тестами.  \n",
   "commands": [
     {
       "commandId": "read-checkpoint-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "read-camera-details-4",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-camera-api-5",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:05:06.396Z"
+  "createdAt": "2026-09-16T16:09:07.530Z"
 }
