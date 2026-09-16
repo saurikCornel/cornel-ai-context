@@ -1,0 +1,11 @@
+{
+  "id": "55358a9f-bae9-4a21-83cc-573f7dd586a6",
+  "taskId": "89d3c3a7-7171-44bd-ac5c-37d2e65d94c8",
+  "type": "CLI_ERROR",
+  "text": "Codex CLI: Ответ из другого чата",
+  "detail": {
+    "agent": "codex",
+    "attempt": 2
+  },
+  "createdAt": "2026-09-16T15:22:07.891Z"
+}
