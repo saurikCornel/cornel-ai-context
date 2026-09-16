@@ -1,0 +1,17 @@
+{
+  "id": "14fa5955-e304-4270-bd2a-13c67f5137fe",
+  "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-validation-17",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
+    "output": "Добавлен tests/course-data-validation.test.ts для полного набора 10×9=90: проверяются количество курсов/лунок, глобальная уникальность course/hole IDs, локальная уникальность element IDs, par и совместимость с maxShots/strokeLimit, конечность и корректность spawn/cup/bounds/size, допустимые surface shapes и obstacle types, а также motion-параметры. На текущих 9 курсах две содержательные группы проверок проходят; полный count-test корректно сообщает 9 вместо 10. Допущение: создание десятого курса относится к параллельной карточке и не выполняется здесь. После интеграции десятого курса следует повторно запустить npx vitest run tests/course-data-validation.test.ts. npm run typecheck — успешно; npm run build — успешно.",
+    "outputDigest": "4f0b56e1507eea8970bfb7662cb50b0feb1546e432643769c2fd778129feb7ca",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T15:22:27.522Z"
+}
