@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Финальная проверка полностью успешна: typecheck и production build проходят; три назначенных файла содержат ровно 9+9+9 лунок, все 27 hole ID уникальны; изменений вне src/courses/data/ нет. Публикую проверенный результат в назначенную ветку.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"publish-courses-12\",\"operation\":\"publish\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"message\":\"Add Neon City, Haunted Mansion and Space Station courses\"}\n\nСводка: готовы neon-city.ts, haunted-mansion.ts, space-station.ts; всего 27 оригинальных лунок с тематическими static/moving/hazard механиками и ростом сложности; npm run typecheck и npm run build успешны; уникальность 27 ID проверена. После подтверждения publish останется отправить finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T11:57:42.364Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "e9ccd68f-5a92-4bf3-973b-5cb6d3c2f989",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "publish-courses-12",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-16T11:57:42.365Z"
+}

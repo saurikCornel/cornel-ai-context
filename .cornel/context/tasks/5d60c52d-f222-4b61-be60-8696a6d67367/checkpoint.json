@@ -3,7 +3,7 @@
   "branch": "cornel/5d60c52d-f222-4b61-be60-8696a6d67367",
   "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
   "status": "RUNNING",
-  "summary": "Все три модуля теперь существуют и по отдельности прошли TypeScript-проверку, каждый содержит ровно 9 лунок. Выполняю финальную проверку карточки: production build, количество модулей/лунок, уникальность идентификаторов и отсутствие изменений вне назначенного src/courses/data.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"final-verify-11\",\"operation\":\"run\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"command\":\"set -e\\nnpm run typecheck\\nnpm run build\\nprintf '\\\\n=== COURSE FILES ===\\\\n'\\nfind src/courses/data -maxdepth 1 -type f -name '*.ts' -print | sort\\nprintf '\\\\n=== HOLE COUNTS ===\\\\n'\\nfor spec in 'neon-city.ts neon' 'haunted-mansion.ts haunted' 'space-station.ts space'; do set -- $spec; n=$(grep -o \\\"id:'$2-[0-9][0-9]'\\\" \\\"src/courses/data/$1\\\" | wc -l | tr -d ' '); printf '%s: %s\\\\n' \\\"$1\\\" \\\"$n\\\"; test \\\"$n\\\" = 9; done\\nprintf '\\\\n=== DUPLICATE HOLE IDS ===\\\\n'\\nids=$(grep -ho \\\"id:'\\\\(neon\\\\|haunted\\\\|space\\\\)-[0-9][0-9]'\\\" src/courses/data/*.ts | sort); test \\\"$(printf '%s\\\\n' \\\"$ids\\\" | wc -l | tr -d ' ')\\\" = 27; test \\\"$(printf '%s\\\\n' \\\"$ids\\\" | uniq | wc -l | tr -d ' ')\\\" = 27; echo none\\nprintf '\\\\n=== STATUS ===\\\\n'\\ngit status --short\\nprintf '\\\\n=== CHANGED PATHS ===\\\\n'\\ngit status --short | awk '{print $2}'\",\"timeoutSeconds\":600}\n\nСводка: реализованы neon-city.ts, haunted-mansion.ts, space-station.ts; 27 лунок подтверждены промежуточными проверками; сейчас идёт единая финальная проверка и production build. При успехе следующий шаг — publish, затем finish.\n\n",
+  "summary": "Финальная проверка полностью успешна: typecheck и production build проходят; три назначенных файла содержат ровно 9+9+9 лунок, все 27 hole ID уникальны; изменений вне src/courses/data/ нет. Публикую проверенный результат в назначенную ветку.\n\nJSON\n{\"version\":1,\"taskId\":\"5d60c52d-f222-4b61-be60-8696a6d67367\",\"commandId\":\"publish-courses-12\",\"operation\":\"publish\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"message\":\"Add Neon City, Haunted Mansion and Space Station courses\"}\n\nСводка: готовы neon-city.ts, haunted-mansion.ts, space-station.ts; всего 27 оригинальных лунок с тематическими static/moving/hazard механиками и ростом сложности; npm run typecheck и npm run build успешны; уникальность 27 ID проверена. После подтверждения publish останется отправить finish.\n\n",
   "commands": [
     {
       "commandId": "inspect-courses-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "final-verify-11",
+      "status": "SUCCEEDED",
+      "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-courses-12",
       "status": "STARTED",
       "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T11:57:14.338Z"
+  "createdAt": "2026-09-16T11:57:42.374Z"
 }

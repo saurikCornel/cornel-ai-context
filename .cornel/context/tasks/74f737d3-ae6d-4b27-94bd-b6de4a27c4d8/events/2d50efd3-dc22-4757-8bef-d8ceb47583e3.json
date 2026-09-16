@@ -1,0 +1,17 @@
+{
+  "id": "2d50efd3-dc22-4757-8bef-d8ceb47583e3",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "resolve-verify-4",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "07aa9e4dea82944affadde8c037938b4bc204172",
+    "output": "=== UNMERGED ===\n=== PACKAGE SCRIPTS ===\n{\n  dev: 'vite',\n  build: 'tsc -b && vite build',\n  typecheck: 'tsc -b --pretty false',\n  'test:ui': 'vitest run src/ui'\n}\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "56dd8cb8af5c4b509648a330eca266af2af3de279b13e2bab74d53dc16bfb402",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:57:33.554Z"
+}
