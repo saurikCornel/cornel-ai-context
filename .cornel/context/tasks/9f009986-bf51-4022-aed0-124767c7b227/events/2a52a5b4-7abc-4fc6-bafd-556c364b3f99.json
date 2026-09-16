@@ -1,0 +1,12 @@
+{
+  "id": "2a52a5b4-7abc-4fc6-bafd-556c364b3f99",
+  "taskId": "9f009986-bf51-4022-aed0-124767c7b227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-final",
+    "operation": "run",
+    "command": "git log --oneline -3\necho '--- status ---'\ngit status --short\necho '--- barrel ---'\ncat src/camera/index.ts\ngrep -rn '<<<<<<<\\|>>>>>>>' src tests || echo NO_CONFLICT_MARKERS\nnpm run typecheck; echo \"TYPECHECK_EXIT=$?\"\nnpx vitest run src/camera 2>&1 | tail -8\nnpx vitest run 2>&1 | tail -6\nnpm run build 2>&1 | tail -4"
+  },
+  "createdAt": "2026-09-16T17:25:55.101Z"
+}

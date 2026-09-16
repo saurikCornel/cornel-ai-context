@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Опубликовано, ветка теперь на `997be1a`. Прогоняю проверки уже на опубликованном состоянии — это же и будет проверка worker на том headSha, с которым уйдёт finish.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"verify-final\",\"operation\":\"run\",\"headSha\":\"997be1acdd323385521ce6921f6f39fb4ffce4e2\",\"command\":\"git log --oneline -3\\necho '--- status ---'\\ngit status --short\\necho '--- barrel ---'\\ncat src/camera/index.ts\\ngrep -rn '<<<<<<<\\\\|>>>>>>>' src tests || echo NO_CONFLICT_MARKERS\\nnpm run typecheck; echo \\\"TYPECHECK_EXIT=$?\\\"\\nnpx vitest run src/camera 2>&1 | tail -8\\nnpx vitest run 2>&1 | tail -6\\nnpm run build 2>&1 | tail -4\",\"timeoutSeconds\":1800}\n```\n\nЖду результат от worker.\n\n**Сводка**\n- `publish-2` прошёл: ветка `cornel/slit-cameracontroller-core-9f0099` → `997be1a`, слияние наконец попало на GitHub.\n- Следующий шаг: подтвердить проверки на `997be1a` и отправить `finish`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:25:55.100Z"
+}
