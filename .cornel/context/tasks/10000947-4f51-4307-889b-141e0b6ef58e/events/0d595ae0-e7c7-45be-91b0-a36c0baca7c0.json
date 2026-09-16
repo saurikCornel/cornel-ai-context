@@ -1,0 +1,12 @@
+{
+  "id": "0d595ae0-e7c7-45be-91b0-a36c0baca7c0",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-published-head-13",
+    "operation": "run",
+    "command": "set -e\nnpm run typecheck\nnpm run test:camera\nnpm run test:ui\nnpm run test:input\nnpm run build\necho '--- STATUS ---'\ngit status --short"
+  },
+  "createdAt": "2026-09-16T18:43:26.520Z"
+}
