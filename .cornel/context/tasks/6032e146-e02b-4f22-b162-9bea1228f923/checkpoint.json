@@ -1,0 +1,16 @@
+{
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
+  "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+  "status": "RUNNING",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-instructions-1\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\".cornel/CHATGPT.md\",\".cornel/context/tasks/6032e146-e02b-4f22-b162-9bea1228f923/checkpoint.json\"]}\n```\n\nСводка: начинаю с обязательных инструкций и checkpoint.  \nИзменённые файлы: нет.  \nПроверки: ожидается ответ worker.  \nСледующий шаг: найти и изучить существующий camera-код.  \n",
+  "commands": [
+    {
+      "commandId": "read-instructions-1",
+      "status": "STARTED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-16T15:51:50.300Z"
+}
