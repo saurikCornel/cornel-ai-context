@@ -1,0 +1,11 @@
+{
+  "id": "eaf97878-db80-47f2-814c-df68ff438844",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "ls-physics-2",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T19:51:34.460Z"
+}
