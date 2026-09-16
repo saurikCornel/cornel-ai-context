@@ -1,0 +1,12 @@
+{
+  "id": "93e3267e-80a8-49be-bf86-9918cc2a7fec",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "build-project-28",
+    "operation": "run",
+    "command": "npm run build"
+  },
+  "createdAt": "2026-09-16T22:02:35.220Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "7a7c9174-63ce-46ce-a77b-b69605ae00b3",
+  "taskId": "26c082ce-4b29-4482-9ed1-be2b215b4dc5",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "run-10",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "npm error Missing script: \"test\"\nnpm error\nnpm error To see a list of scripts, run:\nnpm error   npm run\nnpm error A complete log of this run can be found in: /Users/alex/.npm/_logs/2026-09-16T22_02_31_786Z-debug-0.log\n",
+    "outputDigest": "877c88423d9acf9ba36f69ae2553adaa9ba7279d065f64f30948463b814f8218",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T22:02:31.885Z"
+}
