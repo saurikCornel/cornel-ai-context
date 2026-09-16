@@ -1,0 +1,11 @@
+{
+  "id": "5b152b45-f7a8-4f47-9217-a9c5767b02c9",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "assets-audio-verify-10",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T14:55:39.145Z"
+}

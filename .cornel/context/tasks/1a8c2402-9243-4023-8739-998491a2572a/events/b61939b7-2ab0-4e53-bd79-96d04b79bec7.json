@@ -1,0 +1,12 @@
+{
+  "id": "b61939b7-2ab0-4e53-bd79-96d04b79bec7",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "assets-audio-verify-10",
+    "operation": "run",
+    "command": "npm install && npm exec vitest run src/assets/assets.test.ts && npm run typecheck && npm run build"
+  },
+  "createdAt": "2026-09-16T14:55:39.144Z"
+}
