@@ -1,0 +1,17 @@
+{
+  "id": "3659a419-a53a-44af-b9d9-c7098ea0024f",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "rot-obst-c1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "      12 src/obstacles/index.ts\n      99 src/obstacles/rotation.test.ts\n      38 src/obstacles/RotatingBar.ts\n     149 total\n",
+    "outputDigest": "351c4e41a27aa2062a1a4adb45bf380609683f0ec7a594a654f5d5c7a2b46ee4",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:30:34.500Z"
+}
