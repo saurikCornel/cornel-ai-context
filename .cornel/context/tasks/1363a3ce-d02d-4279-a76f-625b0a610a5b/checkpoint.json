@@ -3,7 +3,7 @@
   "branch": "cornel/triggery-i-poverhnosti-1363a3",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "status": "RUNNING",
-  "summary": "Физический API подходит для изолированного адаптера: у шара доступны body/collider, позиция/скорость, applyShot, update, markSafePosition, reset; PhysicsWorld даёт фиксированный шаг и callback перед шагом. Теперь проверю точные Rapier-вызовы, конфиг скорости/трения и тестовую инфраструктуру, чтобы реализация сразу совпала с версиями зависимостей проекта.\n\nJSON\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-read-support-4\",\"operation\":\"read\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"paths\":[\"src/physics/GolfBallPhysics.ts:60-132\",\"src/physics/PhysicsWorld.ts:1-120\",\"src/physics/helpers.ts:1-120\",\"src/config/GameConfig.ts:1-180\",\"src/physics/physics.test.ts:1-260\",\"package.json:1-180\"]}\n\nЖду RESULT worker. После него следующий шаг уже запись: src/triggers/ с конфигами всех 14 требуемых элементов, чистым вычислением trigger/force/teleport/surface-эффектов и Rapier-адаптером, затем targeted-тесты.\n\nСводка: архитектура — отдельный src/triggers/, совместимый с существующим GolfBallPhysics и фиксированным шагом PhysicsWorld; исходники пока не изменялись; следующий шаг — реализация и тесты после проверки точных сигнатур Rapier и конфигурации.\n\n",
+  "summary": "Продолжаю: нужны точные значения конфигурации и сигнатуры хелперов, чтобы модуль триггеров считал импульсы в тех же единицах, что и существующая физика.\n\n```json\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-read-5\",\"operation\":\"read\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"paths\":[\"src/config/GameConfig.ts:1-90\",\"src/physics/helpers.ts:1-60\",\"src/physics/PhysicsWorld.ts:1-70\",\"src/contracts/math.ts:1-40\"]}\n```\n\nЖду RESULT worker — он придёт отдельным сообщением в этот чат.\n\nЗафиксированные решения по архитектуре (чтобы не пересекаться с чужими карточками):\n\n- **Единственный каталог записи — `src/triggers/`.** Свои конфиги типов объявлю локально в этом каталоге, а не правкой `src/courses/types.ts`: курсы, их типы и валидация 90 лунок уже слиты другим работником, и правка общего union спровоцировала бы конфликт слияния и падение валидатора.\n- **Разделение «чистое ядро + адаптер».** Ядро (`resolveTriggerEffect`, `applySurface`) работает на простых `Vec3`/скалярах и тестируется без Rapier и без WebGL; адаптер подключается к `PhysicsWorld` через колбэк перед шагом симуляции и к `GolfBallPhysics` через `position`/`velocity`/`body`.\n- **14 элементов делятся на три поведения:** импульсные (Bumper, SpringPad, BoostPad, JumpPad), непрерывные силовые/скоростные (Fan, Conveyor, GravityZone, MagnetZone), состояния и переносы (Teleporter, WaterZone, LavaZone, KillZone) плюс материалы (IceSurface, MudSurface) как модификаторы трения/restitution.\n- **Targeted-тесты трёх групп** — trigger (вход/выход зоны, кулдаун, однократность), force (направление и величина, ограничение максимальной скорости), teleport (перенос позиции, политика скорости, штрафные удары).\n\nСводка: решил изолировать карточку в `src/triggers/` с собственными конфиг-типами и разделением ядра и Rapier-адаптера; файлы пока не менял; проверок не запускал; следующий шаг — по полученным сигнатурам написать модуль триггеров/поверхностей и targeted-тесты, затем `publish` и `finish`.\n\n",
   "commands": [
     {
       "commandId": "triggers-inspect-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "triggers-read-support-4",
+      "status": "SUCCEEDED",
+      "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+      "exitCode": 0
+    },
+    {
+      "commandId": "triggers-read-5",
       "status": "STARTED",
       "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:22:34.706Z"
+  "createdAt": "2026-09-16T17:34:27.241Z"
 }
