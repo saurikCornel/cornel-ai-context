@@ -1,0 +1,17 @@
+{
+  "id": "5a13c0ed-cfdf-4b65-aaf4-a13883cfe024",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-easing-file",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "total 40\n-rw-r--r--@ 1 alex  staff  1810 Sep 16 18:45 CameraCollision.test.ts\n-rw-r--r--@ 1 alex  staff  1527 Sep 16 18:45 CameraCollision.ts\n-rw-r--r--@ 1 alex  staff  1408 Sep 16 19:23 Easing.ts\n-rw-r--r--@ 1 alex  staff   831 Sep 16 18:45 RapierCameraCollision.ts\n-rw-r--r--@ 1 alex  staff    76 Sep 16 18:45 index.ts\n",
+    "outputDigest": "b6257b605349d52a7d55667f41b5e704762d5474520696166065b9b4713ce55a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:23:09.013Z"
+}

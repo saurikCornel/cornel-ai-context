@@ -1,0 +1,11 @@
+{
+  "id": "945f8881-b926-4e0a-8c25-45550b8017db",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-easing-file",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:23:06.435Z"
+}

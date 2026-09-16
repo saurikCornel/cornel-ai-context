@@ -1,0 +1,12 @@
+{
+  "id": "9446b058-dd1a-40f8-ab84-6fa660a6bb12",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-easing-file",
+    "operation": "run",
+    "command": "set -e\ncat > src/camera/Easing.ts <<'EOF'\nexport type EasingFunction = (t: number) => number;\n\nexport type EasingName =\n  | 'linear'\n  | 'easeInQuad'\n  | 'easeOutQuad'\n  | 'easeInOutQuad'\n  | 'easeOutCubic'\n  | 'easeInOutCubic'\n  | 'easeOutExpo'\n  | 'easeOutBack';\n\nconst BACK = 1.70158;\n\n/** Easing curves for camera transitions; every curve maps 0 -> 0 and 1 -> 1. */\nexport const EASINGS: Readonly<Record<EasingName, EasingFunction>> = {\n  linear: (t) => t,\n  easeInQuad: (t) => t * t,\n  easeOutQuad: (t) => t * (2 - t),\n  easeInOutQuad: (t) => (t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2),\n  easeOutCubic: (t) => 1 - (1 - t) ** 3,\n  easeInOutCubic: (t) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2),\n  easeOutExpo: (t) => (t >= 1 ? 1 : 1 - 2 ** (-10 * t)),\n  easeOutBack: (t) => 1 + (BACK + 1) * (t - 1) ** 3 + BACK * (t - 1) ** 2,\n};\n\nexport const DEFAULT_EASING: EasingName = 'easeInOutCubic';\n\nexport function clamp01(value: number): number {\n  if (!Number.isFinite(value)) return 0;\n  if (value <= 0) return 0;\n  return value >= 1 ? 1 : value;\n}\n\n/** Accepts a named curve, a custom function or nothing and always returns a curve. */\nexport function resolveEasing(\n  easing?: EasingName | EasingFunction,\n  fallback: EasingName = DEFAULT_EASING,\n): EasingFunction {\n  if (typeof easing === 'function') return easing;\n  if (typeof easing === 'string' && easing in EASINGS) return EASINGS[easing];\n  return EASINGS[fallback];\n}\nEOF\nls -l src/camera"
+  },
+  "createdAt": "2026-09-16T16:23:06.434Z"
+}
