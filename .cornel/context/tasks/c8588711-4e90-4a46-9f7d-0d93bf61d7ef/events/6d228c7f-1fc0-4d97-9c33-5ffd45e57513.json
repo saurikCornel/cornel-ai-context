@@ -1,0 +1,12 @@
+{
+  "id": "6d228c7f-1fc0-4d97-9c33-5ffd45e57513",
+  "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-and-test-validation-11",
+    "operation": "run",
+    "command": "npm install && npx vitest run tests/course-data-validation.test.ts"
+  },
+  "createdAt": "2026-09-16T14:55:22.539Z"
+}

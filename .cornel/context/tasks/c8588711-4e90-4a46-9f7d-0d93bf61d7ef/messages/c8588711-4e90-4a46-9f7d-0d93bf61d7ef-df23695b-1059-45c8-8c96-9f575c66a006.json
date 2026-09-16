@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"install-and-test-validation-11\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"npm install && npx vitest run tests/course-data-validation.test.ts\",\"timeoutSeconds\":300}\n\nСводка: tests/course-data-validation.test.ts уже создан локально; предыдущий запуск упал только из-за отсутствующих node_modules. Следующий шаг — получить фактический результат теста после установки зависимостей и по нему либо исправить валидатор, либо перейти к typecheck/build.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T14:55:22.538Z"
+}
