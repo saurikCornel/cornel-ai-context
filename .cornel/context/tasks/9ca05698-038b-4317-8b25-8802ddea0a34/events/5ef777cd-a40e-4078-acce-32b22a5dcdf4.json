@@ -1,0 +1,11 @@
+{
+  "id": "5ef777cd-a40e-4078-acce-32b22a5dcdf4",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-obstacles-core-12",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T21:13:35.499Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "b1c516c2-0468-4cb1-aaa8-db2d5c8ba199",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-obstacles-core-12",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T21:13:35.498Z"
+}

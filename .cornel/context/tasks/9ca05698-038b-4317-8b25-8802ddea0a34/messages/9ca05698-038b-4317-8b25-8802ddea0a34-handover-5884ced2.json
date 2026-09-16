@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Файлы ядра записаны. Читаю их, чтобы написать lifecycle-тесты точно под фактический API.\n\n```json\n{\"version\":1,\"taskId\":\"9ca05698-038b-4317-8b25-8802ddea0a34\",\"commandId\":\"read-obstacles-core-12\",\"operation\":\"read\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"paths\":[\"src/obstacles/types.ts\",\"src/obstacles/descriptor.ts\",\"src/obstacles/motion.ts\",\"src/obstacles/index.ts\"]}\n```\n\nЖду worker: результат придёт отдельным сообщением в этот чат.\n\nСводка: решение — не переписывать уже созданные файлы, а сверить их фактический API перед тестами. Изменённые файлы: `src/obstacles/{types,descriptor,motion,index,ObstacleManager}.ts` (созданы, ещё не опубликованы). Проверки: пока только read-only. Следующий шаг — прочитать `ObstacleManager.ts`, добавить lifecycle-тесты, затем typecheck, build, publish, finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T21:13:35.495Z"
+}
