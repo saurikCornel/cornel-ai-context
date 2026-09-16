@@ -1,0 +1,12 @@
+{
+  "id": "9a093f3e-4de4-46db-9889-535b816a9649",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chaos-verify-6",
+    "operation": "run",
+    "command": "set -e\nprintf '\\n=== FILE CHECK ===\\n'\ntest -f src/courses/data/chaos-dimension.ts\nprintf 'hole ids: '\ngrep -o \"id: 'chaos-[0-9][0-9]'\" src/courses/data/chaos-dimension.ts | wc -l\nprintf '\\n=== OBSTACLE TYPES USED ===\\n'\ngrep -o \"type: '[^']*'\" src/courses/data/chaos-dimension.ts | sort -u\nprintf '\\n=== DUPLICATE EXPLICIT IDS ===\\n'\ngrep -o \"id: '[^']*'\" src/courses/data/chaos-dimension.ts | sort | uniq -d || true\nprintf '\\n=== TYPECHECK ===\\n'\nnpm run typecheck\nprintf '\\n=== BUILD ===\\n'\nnpm run build\nprintf '\\n=== STATUS ===\\n'\ngit status --short"
+  },
+  "createdAt": "2026-09-16T13:59:29.328Z"
+}

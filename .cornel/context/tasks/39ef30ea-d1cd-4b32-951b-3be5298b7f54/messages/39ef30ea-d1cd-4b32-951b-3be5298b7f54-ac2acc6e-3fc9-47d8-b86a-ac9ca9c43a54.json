@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-verify-6\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"set -e\\nprintf '\\\\n=== FILE CHECK ===\\\\n'\\ntest -f src/courses/data/chaos-dimension.ts\\nprintf 'hole ids: '\\ngrep -o \\\"id: 'chaos-[0-9][0-9]'\\\" src/courses/data/chaos-dimension.ts | wc -l\\nprintf '\\\\n=== OBSTACLE TYPES USED ===\\\\n'\\ngrep -o \\\"type: '[^']*'\\\" src/courses/data/chaos-dimension.ts | sort -u\\nprintf '\\\\n=== DUPLICATE EXPLICIT IDS ===\\\\n'\\ngrep -o \\\"id: '[^']*'\\\" src/courses/data/chaos-dimension.ts | sort | uniq -d || true\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== STATUS ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":300}\n\nСводка: chaos-dimension.ts создан; проверяются структура курса, типы препятствий, дубли id, TypeScript и production build; следующий шаг при успехе — publish, затем finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T13:59:29.327Z"
+}

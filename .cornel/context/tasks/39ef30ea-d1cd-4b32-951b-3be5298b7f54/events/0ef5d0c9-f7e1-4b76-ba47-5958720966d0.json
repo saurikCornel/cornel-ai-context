@@ -1,0 +1,17 @@
+{
+  "id": "0ef5d0c9-f7e1-4b76-ba47-5958720966d0",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "chaos-verify-6",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "\n=== FILE CHECK ===\nhole ids:        9\n\n=== OBSTACLE TYPES USED ===\ntype: 'block'\ntype: 'bumper'\ntype: 'gate'\ntype: 'pillar'\ntype: 'platform'\ntype: 'spinner'\ntype: 'void'\ntype: 'wall'\n\n=== DUPLICATE EXPLICIT IDS ===\n\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "e9e7ee6eaedc993bbef2f616a85e33fdd7c3e8c3844e50339de074137b7ef192",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T13:59:31.758Z"
+}

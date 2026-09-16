@@ -1,0 +1,17 @@
+{
+  "id": "0b7160c0-739e-4b4b-b76c-750aaf567a06",
+  "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-published-core-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 13 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-A_zxEyNx.css  \u001b[39m\u001b[1m\u001b[2m  6.34 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.12 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-BpuLOeG6.js   \u001b[39m\u001b[1m\u001b[2m472.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 118.94 kB\u001b[22m\n\u001b[32m✓ built in 647ms\u001b[39m\n",
+    "outputDigest": "d64170044c18483e529a961d4b3f22897679e2aa9b9ac74b1d97ef1cd4cf5856",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T13:59:30.807Z"
+}
