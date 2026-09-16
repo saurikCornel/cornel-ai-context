@@ -1,9 +1,9 @@
 {
   "taskId": "f5108c84-c2c1-40d8-b069-9c7d4767c2ed",
   "branch": "cornel/f5108c84-c2c1-40d8-b069-9c7d4767c2ed",
-  "headSha": "c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23",
+  "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
   "status": "WAITING_CHATGPT",
-  "summary": "Набор для коммита подготовлен корректно: build-артефакты исключены, package-lock.json остаётся в проекте. Публикую проверенные изменения в назначенную ветку.\n\nJSON\n{\"version\":1,\"taskId\":\"f5108c84-c2c1-40d8-b069-9c7d4767c2ed\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23\",\"message\":\"Add game scaffold and shared contracts\"}\n\nЖду результат publish. После получения нового head выполню контрольные typecheck и build уже на опубликованном состоянии; только затем отправлю finish.\n\nСводка: каркас и контракты готовы; предварительные TypeScript/build проверки успешны; генерируемые файлы исключены через .gitignore; сейчас выполняется публикация в рабочую ветку.\n\n",
+  "summary": "Публикация успешна. Теперь выполняю обязательную контрольную проверку именно опубликованного состояния ветки: чистота рабочей копии, TypeScript и production build. Это последняя техническая проверка перед finish.\n\nJSON\n{\"version\":1,\"taskId\":\"f5108c84-c2c1-40d8-b069-9c7d4767c2ed\",\"commandId\":\"final-verify-1\",\"operation\":\"run\",\"headSha\":\"7b77018b6fefb54423442e83f9b04ba27e4560a9\",\"command\":\"set -e\\nprintf '\\\\n=== STATUS BEFORE ===\\\\n'\\ngit status --short\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== STATUS AFTER ===\\\\n'\\ngit status --short\\nprintf '\\\\n=== BUILD OUTPUT ===\\\\n'\\nfind dist -maxdepth 2 -type f -print | sort\",\"timeoutSeconds\":600}\n\nЖду результат worker. При успешном результате дополнительных изменений не потребуется — отправлю finish с итогом карточки.\n\nСводка: каркас, конфигурация и общие контракты опубликованы; предварительные typecheck и build уже проходили; сейчас проверяется опубликованный commit; следующий шаг — finish при успешной контрольной сборке.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -28,7 +28,13 @@
       "status": "SUCCEEDED",
       "headSha": "c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23",
       "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:01:06.216Z"
+  "createdAt": "2026-09-16T00:01:25.241Z"
 }
