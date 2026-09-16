@@ -1,0 +1,12 @@
+{
+  "id": "58b8b55c-c589-47ea-96af-2713c92f9ed0",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-regression-suites",
+    "operation": "run",
+    "command": "set -e\nnpm run test:ui\nnpm run test:input\ngit status --short"
+  },
+  "createdAt": "2026-09-16T16:32:12.537Z"
+}

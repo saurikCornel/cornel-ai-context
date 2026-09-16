@@ -3,7 +3,7 @@
   "branch": "cornel/camera-smoothing-transitions-f82d8a",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "Typecheck прошёл, 26/27 тестов зелёные. Падает мой собственный ожидаемый счёт кадров: 30 × (1/60) в double даёт 0.49999999999999994 < 0.5, поэтому переход ещё активен — поведение кода верное, ожидание в тесте неточное. Заодно переписываю проверку передачи импульса так, чтобы она сравнивалась с контрольным ригом без скорости (более строгая и не зависящая от округления).\n\n```json\n{\n  \"version\": 1,\n  \"taskId\": \"f82d8a74-92cf-42ff-822b-83e8ce041186\",\n  \"commandId\": \"camera-tests-fix-handoff\",\n  \"operation\": \"run\",\n  \"headSha\": \"77b38d1780726161f87e511138beae87cceeb098\",\n  \"command\": \"set -e\\nsed -i '' \\\"/it('runs a transition and hands control back to the springs'/,\\\\$d\\\" src/camera/CameraSmoothing.test.ts\\ncat >> src/camera/CameraSmoothing.test.ts <<'EOF'\\n  it('runs a transition and hands control back to the springs', () => {\\n    const rig = new SmoothCameraRig(start);\\n    rig.transitionTo({ durationSeconds: 0.5, easing: 'linear' });\\n    expect(rig.transition.isActive).toBe(true);\\n\\n    let frames = 0;\\n    while (rig.transition.isActive && frames < 120) {\\n      rig.update(FRAME, desired);\\n      frames += 1;\\n    }\\n    expect(frames).toBeLessThan(120);\\n    expect(cameraPoseDistance(rig.current, desired)).toBeLessThan(0.01);\\n\\n    const moved = createCameraPose({ x: -4, y: 3, z: 0 }, { x: -4, y: 0, z: 0 }, 60);\\n    for (let i = 0; i < 120; i += 1) rig.update(FRAME, moved);\\n    expect(rig.current.position.x).toBeCloseTo(moved.position.x, 2);\\n  });\\n\\n  it('carries the transition momentum into the springs', () => {\\n    const rig = new SmoothCameraRig(start);\\n    rig.transitionTo({ durationSeconds: 0.5, easing: 'linear' });\\n    for (let i = 0; i < 5; i += 1) rig.update(0.12, desired);\\n    expect(rig.transition.isActive).toBe(false);\\n\\n    const fromRest = new SmoothCameraRig(start);\\n    fromRest.snapTo(rig.current);\\n\\n    const moved = createCameraPose({ x: -4, y: 3, z: 0 }, { x: -4, y: 0, z: 0 }, 60);\\n    expect(rig.update(FRAME, moved).position.x).toBeGreaterThan(\\n      fromRest.update(FRAME, moved).position.x,\\n    );\\n  });\\n\\n  it('pulls the camera in front of blocking geometry', () => {\\n    const raycaster: CameraRaycaster = { cast: () => ({ distance: 2 }) };\\n    const blocked = createCameraPose({ x: 0, y: 0, z: 10 }, { x: 0, y: 0, z: 0 }, 55);\\n    const rig = new SmoothCameraRig(blocked, { raycaster, collision: { clearance: 0.5 } });\\n    expect(rig.update(FRAME, blocked).position.z).toBeCloseTo(1.5, 6);\\n  });\\n});\\nEOF\\nnpm run typecheck\\nnpm run test:camera\"\n}\n```\n\n",
+  "summary": "Всё зелёное: `tsc -b` без ошибок, 28/28 тестов (`src/camera`). Прогоняю соседние наборы как регрессию перед публикацией.\n\n```json\n{\n  \"version\": 1,\n  \"taskId\": \"f82d8a74-92cf-42ff-822b-83e8ce041186\",\n  \"commandId\": \"camera-regression-suites\",\n  \"operation\": \"run\",\n  \"headSha\": \"77b38d1780726161f87e511138beae87cceeb098\",\n  \"command\": \"set -e\\nnpm run test:ui\\nnpm run test:input\\ngit status --short\"\n}\n```\n\n",
   "commands": [
     {
       "commandId": "camera-easing-file",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "camera-tests-fix-handoff",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "camera-regression-suites",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:31:43.354Z"
+  "createdAt": "2026-09-16T16:32:12.540Z"
 }

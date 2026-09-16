@@ -1,0 +1,17 @@
+{
+  "id": "39b43b8a-fccf-4934-8987-0c89b8627ee0",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-regression-suites",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "\n> crazy-putt-arena@0.1.0 test:ui\n> vitest run src/ui\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f82d8a74-92cf-42ff-822b-83e8ce041186\u001b[39m\n\n \u001b[32m✓\u001b[39m src/ui/ui.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 39\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 19:32:15\n\u001b[2m   Duration \u001b[22m 970ms\u001b[2m (environment 87%, transform 7%, tests 5%, import 1%, worker 1%)\u001b[22m\n\n\n> crazy-putt-arena@0.1.0 test:input\n> vitest run src/input src/dev\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f82d8a74-92cf-42ff-822b-83e8ce041186\u001b[39m\n\n \u001b[32m✓\u001b[39m src/input/InputManager.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/dev/dev.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 19:32:16\n\u001b[2m   Duration \u001b[22m 657ms\u001b[2m (environment 90%, transform 7%, import 2%, tests 1%, worker 1%)\u001b[22m\n\n M package.json\n M src/camera/index.ts\n?? src/camera/CameraPose.ts\n?? src/camera/CameraSmoothing.test.ts\n?? src/camera/CameraTransition.ts\n?? src/camera/Easing.ts\n?? src/camera/SmoothCameraRig.ts\n?? src/camera/Smoothing.ts\n?? src/camera/ThreeCameraBinding.ts\n",
+    "outputDigest": "f2dd7472126ef19ffc95a8a0fefd7cdf1f4187e70f2d37b3dbf921efdbae2d91",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:32:17.291Z"
+}
