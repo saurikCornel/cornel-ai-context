@@ -1,0 +1,17 @@
+{
+  "id": "d3abe7a8-51ed-42d8-aedc-580c84e25c09",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-camera-controller-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "",
+    "outputDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:40:58.518Z"
+}
