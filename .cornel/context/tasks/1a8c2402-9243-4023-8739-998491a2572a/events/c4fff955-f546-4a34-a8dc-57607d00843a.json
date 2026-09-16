@@ -1,0 +1,17 @@
+{
+  "id": "c4fff955-f546-4a34-a8dc-57607d00843a",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "assets-audio-tests-9",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "vite.config.ts (1:529) \u001b[33m[UNRESOLVED_IMPORT] \u001b[0mCould not resolve 'vite' in vite.config.ts\n - Module not found, treating it as an external dependency in vite.config.ts at 529..535\n\n\u001b[31mfailed to load config from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/1a8c2402-9243-4023-8739-998491a2572a/vite.config.ts\u001b[39m\n\n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Startup Error \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯⎯\u001b[39m\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/1a8c2402-9243-4023-8739-998491a2572a/vite.config.ts.timestamp-1789570492742-cfdfb4314a239.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:858:18)\n    at defaultResolve (node:internal/modules/esm/resolve:990:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:768:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:745:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:318:38)\n    at #link (node:internal/modules/esm/module_job:208:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\n\n\n",
+    "outputDigest": "dfc7bf14b23bd1fdf23715cdb3bee1b2277e38f2ff43999304afc3c91a9c7158",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T14:54:52.819Z"
+}
