@@ -1,0 +1,11 @@
+{
+  "id": "35f5f7db-9a18-447e-b26c-7ad6ef862794",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "grep-zones-1",
+    "operation": "grep"
+  },
+  "createdAt": "2026-09-16T21:32:55.716Z"
+}
