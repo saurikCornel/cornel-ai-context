@@ -3,7 +3,7 @@
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"input-read-bootstrap-4\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/main.ts:1-260\",\"src/ui/index.ts:1-320\"]}\n\nСводка: архитектура зафиксирована — InputManager с action-state API, launch/debug options через query string, developer overlay с F1/F2/F3 и отдельная presentation minimap; gameplay/AI/course definitions не затрагиваются. Следующий шаг — сразу внести реализацию и тесты.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"input-read-main-5\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/main.ts:1-180\"]}\n\nСводка: все контракты и UI-точки интеграции уже понятны; остался только полный bootstrap. Изменённых файлов пока нет; следующий шаг — реализация и целевые тесты без изменений gameplay/AI/course definitions.\n\n",
   "commands": [
     {
       "commandId": "input-inventory-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "input-read-bootstrap-4",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "input-read-main-5",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:58:18.100Z"
+  "createdAt": "2026-09-16T13:59:13.204Z"
 }
