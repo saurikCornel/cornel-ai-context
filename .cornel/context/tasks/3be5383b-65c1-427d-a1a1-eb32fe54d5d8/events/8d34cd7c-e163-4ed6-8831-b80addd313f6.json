@@ -1,0 +1,11 @@
+{
+  "id": "8d34cd7c-e163-4ed6-8831-b80addd313f6",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "publish-gameplay-11",
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff"
+  },
+  "createdAt": "2026-09-16T12:30:09.412Z"
+}

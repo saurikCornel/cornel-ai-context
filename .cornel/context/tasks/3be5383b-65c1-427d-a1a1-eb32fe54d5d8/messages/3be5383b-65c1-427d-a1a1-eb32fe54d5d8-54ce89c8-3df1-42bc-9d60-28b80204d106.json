@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"3be5383b-65c1-427d-a1a1-eb32fe54d5d8\",\"commandId\":\"publish-gameplay-11\",\"operation\":\"publish\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"message\":\"Implement gameplay state scoring and hole flow\"}\n\nСводка: реализованы MatchManager, TurnManager, ScoreManager, HoleSystem, ShotSystemAdapter, централизованная state machine, touch-ready input-команды и unit-тесты. Проверки перед публикацией: 5/5 gameplay-тестов, npm run typecheck, npm run build — успешно. Следующий шаг после результата publish — отправить finish на новом commit.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T12:30:09.411Z"
+}

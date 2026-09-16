@@ -1,0 +1,11 @@
+{
+  "id": "35a86145-cc2d-44ad-a14f-6bbcef6a7d3f",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "publish-gameplay-11",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-16T12:30:09.411Z"
+}
