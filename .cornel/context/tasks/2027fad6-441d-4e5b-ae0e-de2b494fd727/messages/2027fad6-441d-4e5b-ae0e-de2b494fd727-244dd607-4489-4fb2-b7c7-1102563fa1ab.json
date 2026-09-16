@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 4,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверки прошли: 17/17 AI-тестов, typecheck и production build успешны. Теперь публикую все локальные изменения назначенной ветки; после RESULT проверю опубликованную голову и только затем отправлю finish.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"publish-ai-rating-37\",\"operation\":\"publish\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"message\":\"Implement bot AI planning, matchmaking and multiplayer rating\"}\n\nСводка: реализованы 24 профиля Rookie–Legend, планирование/симуляция и scoring кандидатов, controlled seeded randomness, rating→AI skill/matchmaking и multiplayer-Elo; добавлены 17 детерминированных тестов. Все локальные проверки успешны. Следующий шаг — post-publish validation на новом SHA и finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:58:52.768Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "Ошибка инфраструктурная: зависимости ещё не установлены, поэтому Vitest/Vite даже не стартовали. Исходники тестами пока не проверялись. Устанавливаю зависимости и затем в той же команде запускаю весь validation заново — это повтор неуспешного шага после устранения конкретной причины.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"install-and-validate-ai-rating-36\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"set -e\\nnpm install\\nnpx vitest run src/ai\\nnpm run typecheck\\nnpm run build\",\"timeoutSeconds\":300}\n\nСводка: validate-ai-rating-35 не дошёл до тестов из-за отсутствующего vite; кодовая ошибка не установлена. Сейчас устраняется именно эта причина установкой зависимостей и выполняется фактическая проверка.\n\n",
+  "summary": "Проверки прошли: 17/17 AI-тестов, typecheck и production build успешны. Теперь публикую все локальные изменения назначенной ветки; после RESULT проверю опубликованную голову и только затем отправлю finish.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"publish-ai-rating-37\",\"operation\":\"publish\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"message\":\"Implement bot AI planning, matchmaking and multiplayer rating\"}\n\nСводка: реализованы 24 профиля Rookie–Legend, планирование/симуляция и scoring кандидатов, controlled seeded randomness, rating→AI skill/matchmaking и multiplayer-Elo; добавлены 17 детерминированных тестов. Все локальные проверки успешны. Следующий шаг — post-publish validation на новом SHA и finish.\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -193,10 +193,16 @@
     },
     {
       "commandId": "install-and-validate-ai-rating-36",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-ai-rating-37",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:55:49.483Z"
+  "createdAt": "2026-09-16T18:58:52.772Z"
 }
