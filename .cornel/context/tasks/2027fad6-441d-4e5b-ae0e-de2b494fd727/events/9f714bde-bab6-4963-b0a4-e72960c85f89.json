@@ -1,0 +1,17 @@
+{
+  "id": "9f714bde-bab6-4963-b0a4-e72960c85f89",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-ai-rating-39",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "ad52dc77fc129a471d27ac8059aa0ddae67f4fd5",
+    "output": "Готово: реализованы 24 профиля ботов Rookie–Legend с параметрами aim/power error, simulation samples, risk tolerance, shortcut awareness и planning depth; детерминированный BotPlanner с генерацией кандидатов, облегчённой симуляцией, OOB/hazard/obstacle scoring и controlled randomness; rating-to-skill matchmaking; multiplayer Elo по всем соперникам и месту. Добавлены deterministic tests. На опубликованной версии успешно: 17/17 AI tests, npm run typecheck, npm run build.",
+    "outputDigest": "fb94efc9591a8c0b5c47351b5a1dd74aa07b36df9404954b3a7f1df1dfb6bb35",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T19:01:11.730Z"
+}

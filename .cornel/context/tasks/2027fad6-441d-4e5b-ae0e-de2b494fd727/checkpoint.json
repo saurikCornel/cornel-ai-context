@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "ad52dc77fc129a471d27ac8059aa0ddae67f4fd5",
   "status": "RUNNING",
-  "summary": "Публикация успешна. Выполняю обязательную проверку уже опубликованной головы: AI-тесты, typecheck и production build.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"verify-published-ai-rating-38\",\"operation\":\"run\",\"headSha\":\"ad52dc77fc129a471d27ac8059aa0ddae67f4fd5\",\"command\":\"set -e\\nnpx vitest run src/ai\\nnpm run typecheck\\nnpm run build\",\"timeoutSeconds\":300}\n\nСводка: изменения опубликованы. Локальный validation до публикации был полностью успешен; сейчас подтверждаю тот же результат непосредственно на опубликованной версии. При успехе следующий и последний шаг — finish.\n\n",
+  "summary": "Опубликованная версия полностью проверена: 17/17 AI-тестов, TypeScript typecheck и production build прошли успешно. Отправляю finish.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"finish-ai-rating-39\",\"operation\":\"finish\",\"headSha\":\"ad52dc77fc129a471d27ac8059aa0ddae67f4fd5\",\"message\":\"Готово: реализованы 24 профиля ботов Rookie–Legend с параметрами aim/power error, simulation samples, risk tolerance, shortcut awareness и planning depth; детерминированный BotPlanner с генерацией кандидатов, облегчённой симуляцией, OOB/hazard/obstacle scoring и controlled randomness; rating-to-skill matchmaking; multiplayer Elo по всем соперникам и месту. Добавлены deterministic tests. На опубликованной версии успешно: 17/17 AI tests, npm run typecheck, npm run build.\"}\n\nСводка: карточка «Боты и рейтинг» реализована, опубликована и проверена на опубликованной версии. Изменены src/ai/*, добавлен src/gameplay/RatingSystem.ts и тесты. Все требуемые проверки успешны.\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -205,10 +205,16 @@
     },
     {
       "commandId": "verify-published-ai-rating-38",
+      "status": "SUCCEEDED",
+      "headSha": "ad52dc77fc129a471d27ac8059aa0ddae67f4fd5",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-ai-rating-39",
       "status": "STARTED",
       "headSha": "ad52dc77fc129a471d27ac8059aa0ddae67f4fd5",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:00:00.168Z"
+  "createdAt": "2026-09-16T19:01:09.230Z"
 }

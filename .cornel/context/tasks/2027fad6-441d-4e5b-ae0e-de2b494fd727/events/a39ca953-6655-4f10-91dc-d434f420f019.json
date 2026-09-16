@@ -1,0 +1,11 @@
+{
+  "id": "a39ca953-6655-4f10-91dc-d434f420f019",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "finish-ai-rating-39",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-16T19:01:09.227Z"
+}

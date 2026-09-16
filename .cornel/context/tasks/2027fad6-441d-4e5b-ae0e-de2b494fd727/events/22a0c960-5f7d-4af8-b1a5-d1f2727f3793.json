@@ -1,0 +1,13 @@
+{
+  "id": "22a0c960-5f7d-4af8-b1a5-d1f2727f3793",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Готово: реализованы 24 профиля ботов Rookie–Legend с параметрами aim/power error, simulation samples, risk tolerance, shortcut awareness и planning depth; детерминированный BotPlanner с генерацией кандидатов, облегчённой симуляцией, OOB/hazard/obstacle scoring и controlled randomness; rating-to-skill matchmaking; multiplayer Elo по всем соперникам и месту. Добавлены deterministic tests. На опубликованной версии успешно: 17/17 AI tests, npm run typecheck, npm run build.",
+  "detail": {
+    "commands": 35,
+    "failed": 3,
+    "headSha": "ad52dc77fc129a471d27ac8059aa0ddae67f4fd5",
+    "branch": "cornel/boty-i-reyting-2027fa"
+  },
+  "createdAt": "2026-09-16T19:01:11.730Z"
+}
