@@ -1,0 +1,12 @@
+{
+  "id": "7d467070-370f-4363-bbd1-e07e297d10e0",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-profile-1",
+    "operation": "run",
+    "command": "printf '%s\\n' '=== STATUS ==='; git status --short; printf '%s\\n' '=== PACKAGE ==='; cat package.json; printf '%s\\n' '=== SRC TREE ==='; find src -maxdepth 3 -type f -print | sort; printf '%s\\n' '=== CORE/CONTRACT FILES ==='; for f in src/core/*.ts src/config/*.ts src/types/*.ts; do if [ -f \"$f\" ]; then echo \"--- $f\"; sed -n '1,240p' \"$f\"; fi; done"
+  },
+  "createdAt": "2026-09-16T00:03:03.338Z"
+}
