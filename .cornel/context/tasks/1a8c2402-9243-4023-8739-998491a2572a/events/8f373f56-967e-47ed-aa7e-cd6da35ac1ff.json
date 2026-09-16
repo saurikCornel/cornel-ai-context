@@ -1,0 +1,17 @@
+{
+  "id": "8f373f56-967e-47ed-aa7e-cd6da35ac1ff",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "audio-manager-write-8",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "",
+    "outputDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T14:35:41.811Z"
+}
