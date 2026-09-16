@@ -1,0 +1,17 @@
+{
+  "id": "9a3fe4bc-a919-4384-b137-7189f8407961",
+  "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "resolve-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "ca89747a5aaf317a145209d9cb419f74c7ecf7cc",
+    "output": "NO_CONFLICT_MARKERS\n[detached HEAD ca89747] Merge branch 'cornel/camera-modes-aim-follow-overview-free-6032e1' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n===TYPECHECK===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\nTYPECHECK_EXIT=127\n===TEST_CAMERA===\nvite.config.ts (1:529) \u001b[33m[UNRESOLVED_IMPORT] \u001b[0mCould not resolve 'vite' in vite.config.ts\n - Module not found, treating it as an external dependency in vite.config.ts at 529..535\n\n\u001b[31mfailed to load config from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/b80e347b-e8e2-48c2-8ab9-17093b56685b/vite.config.ts\u001b[39m\n\n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Startup Error \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯⎯\u001b[39m\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/b80e347b-e8e2-48c2-8ab9-17093b56685b/vite.config.ts.timestamp-1789584522779-9293c68834789.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:858:18)\n    at defaultResolve (node:internal/modules/esm/resolve:990:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:768:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:745:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:318:38)\n    at #link (node:internal/modules/esm/module_job:208:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\n\n\nTEST_CAMERA_EXIT=1\n===TEST_UI===\n\n> crazy-putt-arena@0.1.0 test:ui\n> vitest run src/ui\n\nsh: vitest: command not found\nTEST_UI_EXIT=127\n===TEST_INPUT===\n\n> crazy-putt-arena@0.1.0 test:input\n> vitest run src/input src/dev\n\nsh: vitest: command not found\nTEST_INPUT_EXIT=127\n===BUILD===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\nsh: tsc: command not found\nBUILD_EXIT=127\n",
+    "outputDigest": "b102059bb22f89ed4349f32391818ec29e1d2f2950b640871df07d54667411e0",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T18:48:43.988Z"
+}
