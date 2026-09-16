@@ -17,10 +17,11 @@
   "branch": "cornel/moving-obstacles-b2152d",
   "baseSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "workspaceSyncedSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T18:45:13.051Z",
-  "updatedAt": "2026-09-16T18:50:11.843Z",
+  "updatedAt": "2026-09-16T18:50:20.033Z",
   "issue": 60,
   "chatUrl": "https://chatgpt.com/c/6aaae4e1-c8c8-83eb-8c95-10cb9cdebaae",
-  "error": null
+  "error": null,
+  "browserError": null
 }
