@@ -1,0 +1,11 @@
+{
+  "id": "54a73708-b722-49bc-934f-3705ce78695f",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "verify-camera-files-13",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T17:03:26.684Z"
+}

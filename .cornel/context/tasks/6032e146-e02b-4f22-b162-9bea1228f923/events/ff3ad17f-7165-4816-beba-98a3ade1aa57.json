@@ -1,0 +1,11 @@
+{
+  "id": "ff3ad17f-7165-4816-beba-98a3ade1aa57",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-camera-files-13",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T17:03:26.682Z"
+}
