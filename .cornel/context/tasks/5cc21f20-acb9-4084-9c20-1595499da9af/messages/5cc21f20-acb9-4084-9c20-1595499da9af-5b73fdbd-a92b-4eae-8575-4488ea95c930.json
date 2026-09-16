@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"verify-published-input-dev-17\",\"operation\":\"run\",\"headSha\":\"eba87cc40c40f4f9a56f5e4f5628c18234543463\",\"command\":\"npm run test:input && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: publish уже успешен; требуется лишь подтверждение тестов на опубликованном head. После успешного результата сразу повторю finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T15:44:03.374Z"
+}
