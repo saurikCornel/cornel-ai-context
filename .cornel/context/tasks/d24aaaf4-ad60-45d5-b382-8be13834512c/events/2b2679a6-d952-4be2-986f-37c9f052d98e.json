@@ -1,0 +1,17 @@
+{
+  "id": "2b2679a6-d952-4be2-986f-37c9f052d98e",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "camera-collision-grep-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "(совпадений нет)",
+    "outputDigest": "092ef2f84328838180c102e7d82110382276b8435bf98037fba6433c94afdc1a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T13:57:31.511Z"
+}

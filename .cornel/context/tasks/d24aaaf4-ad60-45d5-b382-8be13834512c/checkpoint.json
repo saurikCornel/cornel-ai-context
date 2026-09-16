@@ -3,7 +3,7 @@
   "branch": "cornel/camera-collision-prevention-d24aaa",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"d24aaaf4-ad60-45d5-b382-8be13834512c\",\"commandId\":\"camera-collision-read-3\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/physics/PhysicsWorld.ts:1-260\",\"src/physics/CollisionLayers.ts:1-220\",\"src/physics/index.ts:1-220\",\"src/contracts/services.ts:1-220\",\"src/contracts/math.ts:1-180\",\"src/main.ts:1-220\",\"tsconfig.app.json:1-220\"]}\n\nСводка: physics движок и зависимости доступны; camera слоя пока нет; изменений не делал. Следующий шаг — реализовать изолированный CameraCollisionResolver с безопасным fallback и unit-тестами на чистой математике/query adapter.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"d24aaaf4-ad60-45d5-b382-8be13834512c\",\"commandId\":\"camera-collision-grep-4\",\"operation\":\"grep\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"pattern\":\"castRay(\",\"path\":\"node_modules/@dimforge/rapier3d-compat\"}\n\nПосле результата сразу запишу resolver, Rapier adapter и целевые тесты: отсутствие препятствия, поджатие камеры перед стеной, минимальная дистанция, старт внутри геометрии/некорректный hit как fallback.\n\nСводка: выбран изолированный camera collision layer; существующие gameplay/AI/course definitions менять не потребуется; следующий шаг — реализация и тестирование.\n\n",
   "commands": [
     {
       "commandId": "camera-collision-ls-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "camera-collision-read-3",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "camera-collision-grep-4",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:56:07.854Z"
+  "createdAt": "2026-09-16T13:57:29.394Z"
 }
