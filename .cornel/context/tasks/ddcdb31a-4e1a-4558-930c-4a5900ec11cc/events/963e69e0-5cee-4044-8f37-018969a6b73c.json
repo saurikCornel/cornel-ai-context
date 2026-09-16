@@ -1,0 +1,31 @@
+{
+  "id": "963e69e0-5cee-4044-8f37-018969a6b73c",
+  "taskId": "ddcdb31a-4e1a-4558-930c-4a5900ec11cc",
+  "type": "SPLIT",
+  "text": "Карточка разбита на 5 подзадач",
+  "detail": {
+    "children": [
+      {
+        "id": "036be741-a8d1-4f87-9e89-ac58e8f0fd4d",
+        "title": "Course Builder и базовые типы"
+      },
+      {
+        "id": "5f7c1968-5d90-4aec-bb70-289017bc41ed",
+        "title": "Green Hills, Pirate Bay, Candy Factory"
+      },
+      {
+        "id": "ac06ee5e-2c0c-47ab-a284-bc32504e31da",
+        "title": "Ancient Temple, Arctic Base, Volcano"
+      },
+      {
+        "id": "a5251751-3efa-488a-8c2e-a06dba6583a4",
+        "title": "Neon City, Haunted Mansion, Space Station"
+      },
+      {
+        "id": "12cd9374-f92b-4ed6-9806-78efabf134a5",
+        "title": "Chaos Dimension и валидация 90 лунок"
+      }
+    ]
+  },
+  "createdAt": "2026-09-16T00:02:27.883Z"
+}

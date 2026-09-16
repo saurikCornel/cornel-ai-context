@@ -1,0 +1,11 @@
+{
+  "id": "e9e4db0f-b1e1-4308-9b76-786841e726fa",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "physics-inspect-1",
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9"
+  },
+  "createdAt": "2026-09-16T00:02:21.417Z"
+}

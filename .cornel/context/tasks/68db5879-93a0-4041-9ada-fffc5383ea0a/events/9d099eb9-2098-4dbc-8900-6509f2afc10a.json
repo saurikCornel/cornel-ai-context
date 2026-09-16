@@ -1,0 +1,12 @@
+{
+  "id": "9d099eb9-2098-4dbc-8900-6509f2afc10a",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "physics-inspect-1",
+    "operation": "run",
+    "command": "printf '%s\\n' '=== STATUS ==='; git status --short; printf '%s\\n' '=== PACKAGE ==='; cat package.json; printf '%s\\n' '=== SRC TREE ==='; find src -maxdepth 3 -type f -print | sort; printf '%s\\n' '=== TEST TREE ==='; find tests -maxdepth 3 -type f -print 2>/dev/null | sort; printf '%s\\n' '=== CONTRACTS ==='; find src -type f \\( -iname '*contract*' -o -iname '*config*' -o -iname '*type*' \\) -print | sort | while read f; do echo \"--- $f\"; sed -n '1,240p' \"$f\"; done"
+  },
+  "createdAt": "2026-09-16T00:02:20.863Z"
+}
