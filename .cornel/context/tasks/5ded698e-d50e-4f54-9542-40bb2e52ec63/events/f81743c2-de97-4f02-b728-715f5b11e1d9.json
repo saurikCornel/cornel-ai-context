@@ -1,0 +1,11 @@
+{
+  "id": "f81743c2-de97-4f02-b728-715f5b11e1d9",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "camera-input-implement-6",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:12:24.655Z"
+}
