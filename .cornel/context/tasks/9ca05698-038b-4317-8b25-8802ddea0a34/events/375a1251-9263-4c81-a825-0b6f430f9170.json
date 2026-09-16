@@ -1,0 +1,17 @@
+{
+  "id": "375a1251-9263-4c81-a825-0b6f430f9170",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-obstacles-core-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "ObstacleManager.ts\ndescriptor.ts\nindex.ts\nmotion.ts\ntypes.ts\n",
+    "outputDigest": "964ed229b591c91d68f2554e1b9dbefe3e9f522bbf895a788640c01fbcfdc6aa",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:06:19.234Z"
+}
