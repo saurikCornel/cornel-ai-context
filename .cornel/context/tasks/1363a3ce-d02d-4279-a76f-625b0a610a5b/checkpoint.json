@@ -2,8 +2,8 @@
   "taskId": "1363a3ce-d02d-4279-a76f-625b0a610a5b",
   "branch": "cornel/triggery-i-poverhnosti-1363a3",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
-  "status": "WAITING_CHATGPT",
-  "summary": "После исправления блокировки перечитал Issue: там по-прежнему нет RESULT/UNKNOWN для зависшей triggers-signatures-12, только прежние события rate-limit. Но владелец явно просит продолжить после исправления worker, поэтому безопасный следующий шаг — не повторять зависшую команду, а сделать новое чтение текущей рабочей копии с новым commandId. Оно не меняет файлы и позволит продолжить с реально существующего состояния.\n\nJSON\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-resume-read-13\",\"operation\":\"read\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"paths\":[\"src/triggers/types.ts:1-213\",\"src/triggers/vec.ts:1-120\",\"src/triggers/zones.ts:1-100\"]}\n\nЖду RESULT worker. После него сразу продолжаю реализацию, не возвращаясь к уже успешным write-types и предыдущим чтениям.\n\nСводка: подтверждённо локально существуют три базовых файла; зависшую старую команду не повторяю; после явного resume владельца отправлено новое безопасное чтение текущего состояния; следующий шаг — дописать поведение/runtime/адаптер и тесты.\n\n",
+  "status": "NEEDS_ATTENTION",
+  "summary": "Принято. triggers-signatures-12 остаётся без RESULT/UNKNOWN, поэтому новых worker-команд сейчас не отправляю. Отправленная ранее triggers-resume-read-13 была преждевременной; её не буду использовать как основание для дальнейших действий и не буду повторять.\n\nПодтверждённые types.ts, vec.ts, zones.ts сохраняю без изменений. Карточка не завершена, finish не отправляю.\n\nCORNEL_AI_BLOCKED: ожидается обязательный статус triggers-signatures-12. После SUCCEEDED продолжу с effects/runtime/adapter → targeted trigger/force/teleport tests → typecheck → build → publish → finish; при FAILED/REJECTED исправлю конкретную причину; при UNKNOWN остановлюсь для проверки владельцем.\n\n",
   "commands": [
     {
       "commandId": "triggers-inspect-1",
@@ -84,5 +84,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T18:44:11.597Z"
+  "createdAt": "2026-09-16T18:44:34.908Z"
 }

@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 4,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Принято. triggers-signatures-12 остаётся без RESULT/UNKNOWN, поэтому новых worker-команд сейчас не отправляю. Отправленная ранее triggers-resume-read-13 была преждевременной; её не буду использовать как основание для дальнейших действий и не буду повторять.\n\nПодтверждённые types.ts, vec.ts, zones.ts сохраняю без изменений. Карточка не завершена, finish не отправляю.\n\nCORNEL_AI_BLOCKED: ожидается обязательный статус triggers-signatures-12. После SUCCEEDED продолжу с effects/runtime/adapter → targeted trigger/force/teleport tests → typecheck → build → publish → finish; при FAILED/REJECTED исправлю конкретную причину; при UNKNOWN остановлюсь для проверки владельцем.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:44:34.908Z"
+}
