@@ -1,0 +1,17 @@
+{
+  "id": "4cd6659c-6dc9-4d6e-bcdf-0fc398b8aac6",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-bot-planner-16",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "ai\napp\nassets\ncamera\nconfig\ncontracts\ncore\ncourses\ndev\ngameplay\ninput\nleaderboard\nmain.ts\nphysics\nplayer\nstyle.css\nui\n--- gameplay ---\nHoleSystem.ts\nMatchManager.ts\nScoreManager.ts\nShotSystemAdapter.ts\nStateMachine.ts\nTurnManager.ts\ngameplay.test.ts\nindex.ts\ntypes.ts\n",
+    "outputDigest": "cd4e4fd3825a848eb37217f67cc1071d797e6fff44a68911f010b0b1715135ca",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:22:05.824Z"
+}
