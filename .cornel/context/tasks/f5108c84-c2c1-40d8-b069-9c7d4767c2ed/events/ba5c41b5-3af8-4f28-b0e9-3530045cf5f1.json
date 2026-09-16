@@ -1,0 +1,11 @@
+{
+  "id": "ba5c41b5-3af8-4f28-b0e9-3530045cf5f1",
+  "taskId": "f5108c84-c2c1-40d8-b069-9c7d4767c2ed",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "scaffold-1",
+    "headSha": "c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23"
+  },
+  "createdAt": "2026-09-16T00:00:00.121Z"
+}
