@@ -1,0 +1,11 @@
+{
+  "id": "cfcdd47b-8061-4181-9fb4-d93d74e0db14",
+  "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "read-camera-contracts-4",
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff"
+  },
+  "createdAt": "2026-09-16T12:31:32.577Z"
+}
