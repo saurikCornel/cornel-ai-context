@@ -1,0 +1,11 @@
+{
+  "id": "518499f8-c665-4465-b377-32631b9a1a19",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-physics-world-and-camera-collision-21",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T21:47:28.664Z"
+}

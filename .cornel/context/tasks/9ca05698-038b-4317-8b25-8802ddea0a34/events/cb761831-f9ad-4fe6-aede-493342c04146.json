@@ -1,0 +1,11 @@
+{
+  "id": "cb761831-f9ad-4fe6-aede-493342c04146",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-physics-world-and-camera-collision-21",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T21:47:28.666Z"
+}
