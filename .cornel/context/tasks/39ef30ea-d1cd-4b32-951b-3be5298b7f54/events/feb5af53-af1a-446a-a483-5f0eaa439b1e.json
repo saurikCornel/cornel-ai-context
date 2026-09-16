@@ -1,0 +1,11 @@
+{
+  "id": "feb5af53-af1a-446a-a483-5f0eaa439b1e",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "chaos-install-verify-7",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T14:00:33.451Z"
+}

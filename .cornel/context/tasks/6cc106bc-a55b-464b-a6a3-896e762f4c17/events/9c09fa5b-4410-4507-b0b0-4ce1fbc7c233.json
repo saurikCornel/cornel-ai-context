@@ -1,0 +1,11 @@
+{
+  "id": "9c09fa5b-4410-4507-b0b0-4ce1fbc7c233",
+  "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "finish-core-rendering-8",
+    "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2"
+  },
+  "createdAt": "2026-09-16T14:00:32.762Z"
+}

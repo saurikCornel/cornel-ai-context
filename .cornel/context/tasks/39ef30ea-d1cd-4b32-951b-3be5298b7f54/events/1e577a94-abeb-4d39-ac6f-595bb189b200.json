@@ -1,0 +1,12 @@
+{
+  "id": "1e577a94-abeb-4d39-ac6f-595bb189b200",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chaos-install-verify-7",
+    "operation": "run",
+    "command": "set -e\nnpm install\nprintf '\\n=== TYPECHECK ===\\n'\nnpm run typecheck\nprintf '\\n=== BUILD ===\\n'\nnpm run build\nprintf '\\n=== STATUS ===\\n'\ngit status --short"
+  },
+  "createdAt": "2026-09-16T14:00:33.451Z"
+}
