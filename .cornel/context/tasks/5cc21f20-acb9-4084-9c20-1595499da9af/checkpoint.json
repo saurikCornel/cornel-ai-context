@@ -3,7 +3,7 @@
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"input-read-core-2\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/main.ts:1-260\",\"src/config/GameConfig.ts:1-260\",\"src/contracts/services.ts:1-320\",\"src/contracts/events.ts:1-280\",\"src/ui/dom.ts:1-320\",\"src/ui/types.ts:1-260\",\"src/style.css:1-320\",\"package.json:1-240\"]}\n\nСводка: найден подходящий путь — отдельные input/ и dev/ модули с минимальной интеграцией через существующий bootstrap; изменённых файлов пока нет. Следующий шаг — по прочитанным контрактам определить API InputManager, способ включения query-параметров/F-клавиш и тестовый каркас.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"input-read-integration-3\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/main.ts:1-180\",\"src/ui/ui.css:1-360\",\"src/ui/ui.test.ts:1-320\",\"src/ui/domTests.ts:1-320\",\"tsconfig.json:1-260\",\"tsconfig.app.json:1-260\",\"vite.config.ts:1-240\"]}\n\nСводка: архитектура выбрана — независимые src/input и src/dev, без изменений gameplay/AI/course data; production не будет требовать diagnostics для работы игры. Следующий шаг — реализовать InputManager, query launch options, F1/F2/F3, FPS/debug overlay и presentation minimap, затем целевые тесты.\n\n",
   "commands": [
     {
       "commandId": "input-inventory-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "input-read-core-2",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "input-read-integration-3",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:55:10.736Z"
+  "createdAt": "2026-09-16T13:56:58.972Z"
 }

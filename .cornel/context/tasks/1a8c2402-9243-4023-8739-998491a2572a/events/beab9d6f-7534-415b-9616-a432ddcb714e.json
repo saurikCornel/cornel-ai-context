@@ -1,0 +1,11 @@
+{
+  "id": "beab9d6f-7534-415b-9616-a432ddcb714e",
+  "taskId": "1a8c2402-9243-4023-8739-998491a2572a",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "assets-audio-test-patterns-4",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T13:57:02.978Z"
+}
