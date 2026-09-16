@@ -17,9 +17,9 @@
   "branch": "cornel/camera-controller-and-controls-e6beb0",
   "baseSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "workspaceSyncedSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "WAITING_CHATGPT",
+  "status": "NEEDS_ATTENTION",
   "createdAt": "2026-09-16T12:22:12.027Z",
-  "updatedAt": "2026-09-16T12:44:27.950Z",
+  "updatedAt": "2026-09-16T12:44:38.659Z",
   "issue": 35,
   "chatUrl": "https://chatgpt.com/c/6aaa89fe-45bc-83eb-8eb5-5778866ee160",
   "error": null,
@@ -27,6 +27,6 @@
   "browserErrorJobId": "e6beb0dd-64cb-458b-b01b-813872b593cb-initial",
   "statusChecks": 3,
   "currentHead": "768daca05831f4622211da0e377430b36c00f9ff",
-  "attentionReason": null,
+  "attentionReason": "status_timeout",
   "intentRevision": 5
 }
