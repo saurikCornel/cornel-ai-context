@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "RESULT для inspect-merge-state-2 по-прежнему не пришёл. Поэтому я не отправляю новую команду: состояние рабочей копии после неудачного resolve-and-verify-1 пока не подтверждено, а повторять merge или запись вслепую нельзя.\n\nСводка: способ разрешения конфликта определён — итоговый src/camera/index.ts должен экспортировать и CameraInput, и офисные SmoothCameraRig / Smoothing / ThreeCameraBinding; фактическое состояние merge после ошибки ещё не подтверждено; проверки и publish не выполнены; следующий шаг — получить RESULT inspect-merge-state-2 и продолжить строго из подтверждённого состояния.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:47:12.111Z"
+}
