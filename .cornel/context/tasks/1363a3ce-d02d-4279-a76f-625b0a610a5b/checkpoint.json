@@ -3,7 +3,7 @@
   "branch": "cornel/triggery-i-poverhnosti-1363a3",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "status": "RUNNING",
-  "summary": "Физический слой минимален и чист: мир, шар, шот-система, хелперы. Читаю их целиком — от их сигнатур зависит, как триггеры будут применять импульсы и читать состояние шара.\n\n```json\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-read-2\",\"operation\":\"read\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"paths\":[\"src/physics/GolfBallPhysics.ts:1-130\",\"src/physics/helpers.ts:1-45\",\"src/physics/PhysicsWorld.ts:1-60\",\"src/physics/CollisionLayers.ts:1-25\",\"src/contracts/math.ts:1-60\"]}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nПлан, который вырисовывается (реализую после чтения API):\n- новый изолированный слой `src/triggers/` — мой единственный каталог записи, плюс аддитивные типы для конфигов, чтобы не конфликтовать с чужими карточками;\n- конфиги 14 элементов: Bumper, SpringPad, BoostPad, JumpPad, Teleporter, Fan, Conveyor (триггеры/силы) и IceSurface, MudSurface, WaterZone, LavaZone, KillZone, GravityZone, MagnetZone (поверхности/зоны);\n- чистое ядро: детекция попадания в зону (AABB/сфера) + вычисление эффекта (импульс, замена velocity, телепорт, штраф, смена материала трения) — тестируемое без Rapier;\n- targeted-тесты трёх групп: trigger (вход/выход, кулдауны, однократность), force (направление и величина импульса, ограничение скорости), teleport (перенос позиции, сброс/сохранение скорости).\n\nСводка: зафиксировал изоляцию в отдельном каталоге и разделение «чистое ядро + адаптер к Rapier» ради тестируемости; файлы не менял; проверок не запускал; следующий шаг — прочитать физический API и реализовать модуль с тестами.\n\n",
+  "summary": "Физический API подходит для изолированного адаптера: у шара доступны body/collider, позиция/скорость, applyShot, update, markSafePosition, reset; PhysicsWorld даёт фиксированный шаг и callback перед шагом. Теперь проверю точные Rapier-вызовы, конфиг скорости/трения и тестовую инфраструктуру, чтобы реализация сразу совпала с версиями зависимостей проекта.\n\nJSON\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-read-support-4\",\"operation\":\"read\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"paths\":[\"src/physics/GolfBallPhysics.ts:60-132\",\"src/physics/PhysicsWorld.ts:1-120\",\"src/physics/helpers.ts:1-120\",\"src/config/GameConfig.ts:1-180\",\"src/physics/physics.test.ts:1-260\",\"package.json:1-180\"]}\n\nЖду RESULT worker. После него следующий шаг уже запись: src/triggers/ с конфигами всех 14 требуемых элементов, чистым вычислением trigger/force/teleport/surface-эффектов и Rapier-адаптером, затем targeted-тесты.\n\nСводка: архитектура — отдельный src/triggers/, совместимый с существующим GolfBallPhysics и фиксированным шагом PhysicsWorld; исходники пока не изменялись; следующий шаг — реализация и тесты после проверки точных сигнатур Rapier и конфигурации.\n\n",
   "commands": [
     {
       "commandId": "triggers-inspect-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "triggers-read-2",
+      "status": "SUCCEEDED",
+      "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+      "exitCode": 0
+    },
+    {
+      "commandId": "triggers-read-support-4",
       "status": "STARTED",
       "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:19:17.708Z"
+  "createdAt": "2026-09-16T17:22:34.706Z"
 }

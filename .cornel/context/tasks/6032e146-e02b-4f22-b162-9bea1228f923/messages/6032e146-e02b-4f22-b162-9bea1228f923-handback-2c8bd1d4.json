@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"inspect-camera-math-18\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/CameraController.ts:40-130\",\"src/camera/CameraController.test.ts:20-90\",\"src/camera/CameraCollision.ts:20-60\"]}\n\nСводка: typecheck и build уже подтверждены; остаются только два поведенческих расхождения в overview/collision.\nИзменённые файлы: новых изменений нет.\nПроверки: 9 camera-тестов проходят, 2 падают.\nСледующий шаг: по точным формулам и assertions внести минимальную правку и повторить camera tests, typecheck и build.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:22:31.954Z"
+}
