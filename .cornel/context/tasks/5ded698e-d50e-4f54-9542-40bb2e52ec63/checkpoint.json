@@ -3,7 +3,7 @@
   "branch": "cornel/camera-input-and-zoom-5ded69",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-read-3\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\".cornel/CHATGPT.md:1-260\",\".cornel/context/tasks/5ded698e-d50e-4f54-9542-40bb2e52ec63/checkpoint.json:1-320\",\"src/input/InputManager.ts:1-420\",\"src/input/InputManager.test.ts:1-420\",\"src/input/index.ts:1-200\",\"src/camera/index.ts:1-200\",\"src/camera/CameraCollision.ts:1-320\",\"src/camera/CameraCollision.test.ts:1-360\",\"src/contracts/math.ts:1-300\",\"src/config/GameConfig.ts:1-340\",\"package.json:1-240\"]} \n```\n\nЖду результат worker; он придёт сюда отдельным сообщением, после чего спроектирую изолированный слой команд, движения, zoom и reset.\n\nСводка: решение — уточняю существующие API и контрольную точку перед изменениями; изменённые файлы — пока нет; проверки — предыдущие успешные read/ls; следующий шаг — реализовать и покрыть тестами camera input.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"5ded698e-d50e-4f54-9542-40bb2e52ec63\",\"commandId\":\"camera-input-grep-4\",\"operation\":\"grep\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"pattern\":\"InputSnapshot|InputAction|camera|Camera|KeyW|KeyA|KeyS|KeyD|wheel|reset\",\"path\":\"src\"}\n```\n\nСводка: решение — camera input будет отдельным pure command/controller API, использующим существующий input-контракт; изменённые файлы — пока нет; проверки — чтение текущих контрактов завершено; следующий шаг — точечно прочитать совпадения и записать реализацию с тестами.  \n",
   "commands": [
     {
       "commandId": "camera-input-inspect-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "camera-input-read-3",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "camera-input-grep-4",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:58:52.305Z"
+  "createdAt": "2026-09-16T16:04:04.781Z"
 }
