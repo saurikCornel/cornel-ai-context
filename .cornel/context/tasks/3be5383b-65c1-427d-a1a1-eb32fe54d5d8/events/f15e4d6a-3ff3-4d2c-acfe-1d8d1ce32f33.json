@@ -1,0 +1,11 @@
+{
+  "id": "f15e4d6a-3ff3-4d2c-acfe-1d8d1ce32f33",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "verify-published-gameplay-13",
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  },
+  "createdAt": "2026-09-16T12:31:08.862Z"
+}

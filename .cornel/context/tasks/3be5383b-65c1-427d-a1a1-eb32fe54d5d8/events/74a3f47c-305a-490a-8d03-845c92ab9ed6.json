@@ -1,0 +1,17 @@
+{
+  "id": "74a3f47c-305a-490a-8d03-845c92ab9ed6",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-published-gameplay-13",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/3be5383b-65c1-427d-a1a1-eb32fe54d5d8\u001b[39m\n\n \u001b[32m✓\u001b[39m src/gameplay/gameplay.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 15:31:09\n\u001b[2m   Duration \u001b[22m 233ms\u001b[2m (transform 74%, import 16%, tests 6%, worker 3%)\u001b[22m\n\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 13 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-A_zxEyNx.css  \u001b[39m\u001b[1m\u001b[2m  6.34 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.12 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-BpuLOeG6.js   \u001b[39m\u001b[1m\u001b[2m472.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 118.94 kB\u001b[22m\n\u001b[32m✓ built in 833ms\u001b[39m\n",
+    "outputDigest": "1172478b6863d1c940e10e6c8817c7b04effc542adc94179319f79dc096e9621",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:31:15.835Z"
+}
