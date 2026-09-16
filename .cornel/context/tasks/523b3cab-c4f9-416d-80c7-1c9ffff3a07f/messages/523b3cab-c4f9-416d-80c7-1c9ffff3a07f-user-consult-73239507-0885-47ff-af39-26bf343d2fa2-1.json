@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 8,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"cornelResolve\":1,\"card\":\"73239507-0885-47ff-af39-26bf343d2fa2\",\"action\":\"split\",\"tasks\":[{\"title\":\"CameraController core\",\"description\":\"Создать базовый src/camera/CameraController с состоянием камеры, reset и безопасным API поверх существующих contracts/math/game. Сначала проверить актуальные контракты через ls/read/grep. Не менять UI/AI/course data. Добавить минимальные unit-тесты, выполнить typecheck/build, затем publish и finish.\"},{\"title\":\"Camera modes: aim/follow/overview/free\",\"description\":\"На базе существующего CameraController реализовать режимы aim, follow, overview и free, а также корректное переключение между ними. Интеграцию строить через существующие contracts/math/game. Не менять UI/AI/course data. Добавить тесты режимов и переходов, выполнить typecheck/build, затем publish и finish.\"},{\"title\":\"Camera smoothing transitions\",\"description\":\"Добавить damping, lerp/slerp и плавные переходы между позициями/ориентациями камеры без изменения чужих подсистем. Проверить отсутствие скачков и корректный reset. Добавить целевые тесты, выполнить typecheck/build, затем publish и finish.\"}],\"text\":\"Текущий taskId инфраструктурно завис: worker не возвращает даже RESULT/UNKNOWN на read-only команды, изменений в ветке нет. Не повторять команды и finish в этой карточке. Пересоздать работу новыми taskId через три независимые карточки. В каждой сначала проверить актуальный src и контракты, потому что параллельные ветки могли изменить основу. Старую карточку не считать выполненной и не имитировать finish.\"}\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T14:32:03.886Z"
+}
