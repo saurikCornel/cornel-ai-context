@@ -1,9 +1,9 @@
 {
   "taskId": "9f009986-bf51-4022-aed0-124767c7b227",
   "branch": "cornel/slit-cameracontroller-core-9f0099",
-  "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+  "headSha": "c00eea41dad5a84c210312426591780870e73ee2",
   "status": "RUNNING",
-  "summary": "Важно: worker пересинхронизировал рабочую копию на SHA из запроса, и локальный merge-коммит 60b0900 был отброшен — проверки выше прошли на доmerge-состоянии и не считаются. Повторяю слияние, разрешение и проверки одной командой, после чего сразу публикую.\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"merge-2\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"set -e\\ngit fetch origin cornel/cameracontroller-core-bd3382\\ngit merge --no-edit FETCH_HEAD || true\\ncat > src/camera/index.ts <<'EOF'\\nexport * from './CameraCollision';\\nexport * from './CameraController';\\nexport * from './CameraPose';\\nexport * from './CameraTransition';\\nexport * from './Easing';\\nexport * from './RapierCameraCollision';\\nexport * from './SmoothCameraRig';\\nexport * from './Smoothing';\\nexport * from './ThreeCameraBinding';\\nEOF\\ngrep -rn '<<<<<<<\\\\|>>>>>>>' src/ || echo NO_CONFLICT_MARKERS\\ngit add -A\\ngit commit --no-edit\\ngit log --oneline -3\\nset +e\\nnpm run typecheck; echo \\\"TYPECHECK_EXIT=$?\\\"\\nnpx vitest run src/camera 2>&1 | tail -20; echo \\\"CAMERA_TESTS_EXIT=$?\\\"\\nnpx vitest run 2>&1 | tail -12; echo \\\"ALL_TESTS_EXIT=$?\\\"\\nnpm run build 2>&1 | tail -8; echo \\\"BUILD_EXIT=$?\\\"\",\"timeoutSeconds\":1800}\n```\n\nЖду результат от worker.\n\n",
+  "summary": "Все проверки прошли на слитом дереве. Публикую.\n\n- typecheck: 0\n- `vitest run src/camera`: 32/32 (включая новые CameraController.test.ts — 4 теста)\n- полный `vitest run`: 58 тестов пройдено; 3 файла падают на старте — `tests/leaderboard-generator.test.ts`, `tests/leaderboard-render.test.ts` (No test suite found) и `tests/save-manager.test.mjs` (нет `.test-build/`). Эти же 3 падали и до слияния (прогон verify-3 на 525f353), то есть они предсуществующие и к конфликту отношения не имеют.\n- build: 0\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"message\":\"Merge cornel/cameracontroller-core-bd3382: объединён barrel src/camera/index.ts\"}\n```\n\nЖду результат от worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "merge-2",
+      "status": "SUCCEEDED",
+      "headSha": "c00eea41dad5a84c210312426591780870e73ee2",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:14:26.419Z"
+  "createdAt": "2026-09-16T17:14:55.719Z"
 }

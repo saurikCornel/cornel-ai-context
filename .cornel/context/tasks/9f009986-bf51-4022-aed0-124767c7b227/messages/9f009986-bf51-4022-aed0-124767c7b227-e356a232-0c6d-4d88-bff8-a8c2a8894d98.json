@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Все проверки прошли на слитом дереве. Публикую.\n\n- typecheck: 0\n- `vitest run src/camera`: 32/32 (включая новые CameraController.test.ts — 4 теста)\n- полный `vitest run`: 58 тестов пройдено; 3 файла падают на старте — `tests/leaderboard-generator.test.ts`, `tests/leaderboard-render.test.ts` (No test suite found) и `tests/save-manager.test.mjs` (нет `.test-build/`). Эти же 3 падали и до слияния (прогон verify-3 на 525f353), то есть они предсуществующие и к конфликту отношения не имеют.\n- build: 0\n\n```json\n{\"version\":1,\"taskId\":\"9f009986-bf51-4022-aed0-124767c7b227\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"message\":\"Merge cornel/cameracontroller-core-bd3382: объединён barrel src/camera/index.ts\"}\n```\n\nЖду результат от worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:14:55.717Z"
+}
