@@ -1,0 +1,12 @@
+{
+  "id": "93f698db-cd04-4795-a1d7-b917f84d1490",
+  "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "state-2",
+    "operation": "run",
+    "command": "set +e; echo '===STATUS==='; git status --short; echo '===HEAD==='; git log --oneline -3; echo '===MODE_FILES==='; ls -l src/camera/CameraModeController.ts src/camera/CameraModeController.test.ts 2>/dev/null; echo '===SAVED_VERIFY_SUMMARIES==='; for f in /tmp/c-tc.log /tmp/c-cam.log /tmp/c-ui.log /tmp/c-in.log /tmp/c-bd.log; do echo \"--- $f ---\"; if [ -f \"$f\" ]; then grep -E 'Test Files|Tests |FAIL|error|built in|✓ built|TS[0-9]{4}' \"$f\" | tail -8; else echo MISSING; fi; done"
+  },
+  "createdAt": "2026-09-16T19:12:47.011Z"
+}
