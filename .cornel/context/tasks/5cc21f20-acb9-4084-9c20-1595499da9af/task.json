@@ -17,9 +17,10 @@
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "baseSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-16T13:43:28.478Z",
-  "updatedAt": "2026-09-16T13:43:28.478Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-16T13:43:32.777Z",
+  "issue": 44,
+  "chatUrl": null,
+  "error": null
 }
