@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Продолжаю: нужны точные контракты типов курса и физического API.\n\n```json\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-read-1\",\"operation\":\"read\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"paths\":[\"src/courses/types.ts:1-140\"]}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат. По контрактам `types.ts` (описания препятствий, поверхностей, зон и трансформов) пойму, какие поля уже зарезервированы под bumper/spring/boost/jump/teleporter/fan/conveyor и под материалы ice/mud/water/lava, чтобы новый модуль триггеров читал существующие дескрипторы лунок, а не вводил параллельный формат.\n\nСводка: решения пока не фиксировал; файлы не менял; проверок не запускал; следующий шаг — прочитать `src/courses/types.ts`, затем физический мир (`src/physics/*`) и спроектировать модуль триггеров/поверхностей с targeted-тестами trigger/force/teleport.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:17:46.112Z"
+}

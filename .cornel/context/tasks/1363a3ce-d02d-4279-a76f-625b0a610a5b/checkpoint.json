@@ -3,7 +3,7 @@
   "branch": "cornel/triggery-i-poverhnosti-1363a3",
   "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-grep-2\",\"operation\":\"grep\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"pattern\":\"export type \\\\|export interface \",\"path\":\"src/courses\"}\n```\n\nЖду результат worker. Нужны точные контракты Course Builder (типы препятствий, поверхностей, зон и трансформов), чтобы новые триггеры/поверхности встали в уже слитый формат данных 90 лунок, а не рядом с ним.\n\nСводка: решений пока нет; файлы не менял; проверок не запускал; следующий шаг — прочитать файл типов курса и физический мир, затем реализовать модуль триггеров и поверхностей с тестами.\n\n",
+  "summary": "Продолжаю: нужны точные контракты типов курса и физического API.\n\n```json\n{\"version\":1,\"taskId\":\"1363a3ce-d02d-4279-a76f-625b0a610a5b\",\"commandId\":\"triggers-read-1\",\"operation\":\"read\",\"headSha\":\"7a57a441ce1b1987fdacc927968c8080ff1af6d3\",\"paths\":[\"src/courses/types.ts:1-140\"]}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат. По контрактам `types.ts` (описания препятствий, поверхностей, зон и трансформов) пойму, какие поля уже зарезервированы под bumper/spring/boost/jump/teleporter/fan/conveyor и под материалы ice/mud/water/lava, чтобы новый модуль триггеров читал существующие дескрипторы лунок, а не вводил параллельный формат.\n\nСводка: решения пока не фиксировал; файлы не менял; проверок не запускал; следующий шаг — прочитать `src/courses/types.ts`, затем физический мир (`src/physics/*`) и спроектировать модуль триггеров/поверхностей с targeted-тестами trigger/force/teleport.\n\n",
   "commands": [
     {
       "commandId": "triggers-inspect-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "triggers-grep-2",
+      "status": "SUCCEEDED",
+      "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
+      "exitCode": 0
+    },
+    {
+      "commandId": "triggers-read-1",
       "status": "STARTED",
       "headSha": "7a57a441ce1b1987fdacc927968c8080ff1af6d3",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:10:50.053Z"
+  "createdAt": "2026-09-16T17:17:46.118Z"
 }
