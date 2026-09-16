@@ -3,7 +3,7 @@
   "branch": "cornel/core-rendering-and-scene-infrastructure-6cc106",
   "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
   "status": "RUNNING",
-  "summary": "Опубликованный commit теперь подтверждён успешными typecheck и build. Отправляю финальное завершение задачи.\n\nJSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"finish-core-rendering-8\",\"operation\":\"finish\",\"headSha\":\"5c034e09eb377a457c5c04648fd28dbe3602e3a2\",\"message\":\"Implemented and published src/core/Renderer.ts and src/core/SceneManager.ts. Added stylized low-poly renderer defaults, optimized lighting/shadows/fog, shared geometry/material caches, instancing-ready API, WebGL context lost/restored recovery, and asset-free scene roots. Verified on the published head with npm run typecheck and npm run build; both succeeded.\"}\n\nСводка: Renderer.ts и SceneManager.ts готовы и опубликованы; проверки на финальном head успешны; следующий шаг — слияние ветки сборщиком офиса.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"inspect-current-head-9\",\"operation\":\"run\",\"headSha\":\"5c034e09eb377a457c5c04648fd28dbe3602e3a2\",\"command\":\"git rev-parse HEAD && git status --short && test -f src/core/Renderer.ts && test -f src/core/SceneManager.ts && echo CORE_FILES_PRESENT\",\"timeoutSeconds\":300}\n\nСводка: предыдущий finish отклонён только из-за смены head ветки; код и проверки ранее были успешны. Сейчас выясняю фактическое состояние ветки, после чего либо проверю новый head и завершу задачу, либо сообщу конкретную причину расхождения.\n\n",
   "commands": [
     {
       "commandId": "inspect-core-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "finish-core-rendering-8",
+      "status": "FAILED",
+      "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
+      "exitCode": null
+    },
+    {
+      "commandId": "inspect-current-head-9",
       "status": "STARTED",
       "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T14:00:32.763Z"
+  "createdAt": "2026-09-16T14:01:34.277Z"
 }

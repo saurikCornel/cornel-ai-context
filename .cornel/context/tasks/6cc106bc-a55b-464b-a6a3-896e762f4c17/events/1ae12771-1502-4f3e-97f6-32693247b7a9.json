@@ -1,0 +1,12 @@
+{
+  "id": "1ae12771-1502-4f3e-97f6-32693247b7a9",
+  "taskId": "6cc106bc-a55b-464b-a6a3-896e762f4c17",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-current-head-9",
+    "operation": "run",
+    "command": "git rev-parse HEAD && git status --short && test -f src/core/Renderer.ts && test -f src/core/SceneManager.ts && echo CORE_FILES_PRESENT"
+  },
+  "createdAt": "2026-09-16T14:01:34.271Z"
+}
