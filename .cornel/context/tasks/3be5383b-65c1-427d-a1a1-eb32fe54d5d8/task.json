@@ -17,9 +17,10 @@
   "branch": "cornel/gameplay-state-scoring-and-hole-flow-3be538",
   "baseSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "workspaceSyncedSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-16T12:22:06.427Z",
-  "updatedAt": "2026-09-16T12:22:06.427Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-16T12:22:09.726Z",
+  "issue": 34,
+  "chatUrl": null,
+  "error": null
 }
