@@ -1,0 +1,16 @@
+{
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "branch": "cornel/camera-collision-prevention-d24aaa",
+  "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+  "status": "RUNNING",
+  "summary": "Сначала смотрю структуру камеры, сцены, physics и тестов в назначенной ветке. После результата точечно прочитаю нужные файлы и выберу существующую абстракцию для collision query без затрагивания gameplay/course data.\n\nJSON\n{\"version\":1,\"taskId\":\"d24aaaf4-ad60-45d5-b382-8be13834512c\",\"commandId\":\"camera-collision-ls-1\",\"operation\":\"ls\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"path\":\"src\",\"maxLines\":300}\n\nЖду RESULT worker; он придёт сюда отдельным сообщением, Issue перечитывать не нужно.\n\nСводка: решений пока не фиксировал; файлы не менялись; проверки ещё не запускались; следующий шаг — точечное чтение найденных camera/physics/scene/test файлов.\n\n",
+  "commands": [
+    {
+      "commandId": "camera-collision-ls-1",
+      "status": "STARTED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-16T13:53:26.540Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "819aa627-be1d-4124-926d-35e49957c6ae",
+  "taskId": "d24aaaf4-ad60-45d5-b382-8be13834512c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-collision-ls-1",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T13:53:26.537Z"
+}
