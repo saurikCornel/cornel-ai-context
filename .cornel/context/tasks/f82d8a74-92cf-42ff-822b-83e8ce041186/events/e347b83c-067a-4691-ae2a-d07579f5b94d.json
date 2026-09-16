@@ -1,0 +1,12 @@
+{
+  "id": "e347b83c-067a-4691-ae2a-d07579f5b94d",
+  "taskId": "f82d8a74-92cf-42ff-822b-83e8ce041186",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-install-and-check",
+    "operation": "run",
+    "command": "set -e\nnpm ci --no-audit --no-fund\nnpm run typecheck\nnpm run test:camera"
+  },
+  "createdAt": "2026-09-16T16:30:00.295Z"
+}

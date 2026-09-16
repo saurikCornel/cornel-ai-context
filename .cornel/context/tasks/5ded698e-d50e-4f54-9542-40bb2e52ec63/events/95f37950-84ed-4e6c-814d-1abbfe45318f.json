@@ -1,0 +1,12 @@
+{
+  "id": "95f37950-84ed-4e6c-814d-1abbfe45318f",
+  "taskId": "5ded698e-d50e-4f54-9542-40bb2e52ec63",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-input-fix-test-10",
+    "operation": "run",
+    "command": "cat > src/camera/CameraInput.test.ts <<'EOF'\nimport { describe, expect, it } from 'vitest';\nimport { CameraInput, type CameraInputSource } from './CameraInput';\n\nfunction source(down: string[] = [], wheel = 0, reset = false): CameraInputSource {\n  return {\n    isDown: (action) => down.includes(action),\n    wasPressed: () => reset,\n    pointer: { x: 0, y: 0, deltaX: 0, deltaY: 0, wheel, primaryDown: false },\n  };\n}\n\ndescribe('CameraInput', () => {\n  it('maps WASD actions to normalized free-camera movement', () => {\n    const command = new CameraInput().read(source(['camera-forward', 'camera-right']));\n    expect(command.movement.x).toBeCloseTo(Math.SQRT1_2);\n    expect(command.movement.y).toBe(0);\n    expect(command.movement.z).toBeCloseTo(Math.SQRT1_2);\n  });\n\n  it('returns no movement for opposite or absent actions', () => {\n    expect(new CameraInput().read(source(['camera-forward', 'camera-backward'])).movement).toEqual({ x: 0, y: 0, z: 0 });\n  });\n\n  it('converts and bounds wheel input into a zoom command', () => {\n    const input = new CameraInput({ zoomStep: 0.1, maxWheelDelta: 20 });\n    expect(input.read(source([], 12)).zoom).toBeCloseTo(1.2);\n    expect(input.read(source([], -500)).zoom).toBeCloseTo(-2);\n    expect(input.read(source([], Number.NaN)).zoom).toBe(0);\n  });\n\n  it('forwards reset only for the pressed frame', () => {\n    expect(new CameraInput().read(source([], 0, true)).resetRequested).toBe(true);\n    expect(new CameraInput().read(source()).resetRequested).toBe(false);\n  });\n});\nEOF\nnpm run typecheck && npx vitest run src/camera && npm run build && git diff --check && git status --short"
+  },
+  "createdAt": "2026-09-16T16:30:02.632Z"
+}
