@@ -3,7 +3,7 @@
   "branch": "cornel/validaciya-90-lunok-c85887",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"dedupe-course-exports-13\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"python3 - <<'PY'\\nfrom pathlib import Path\\np=Path('tests/course-data-validation.test.ts')\\ns=p.read_text()\\ns=s.replace(\\\"\\\"\\\"    const candidates = Object.values(module).filter(\\\\n      (value): value is Course =>\\\\n        typeof value === 'object' &&\\\\n        value !== null &&\\\\n        'id' in value &&\\\\n        'holes' in value &&\\\\n        Array.isArray((value as Course).holes),\\\\n    );\\\\n\\\"\\\"\\\",\\\"\\\"\\\"    const candidates = [...new Set(Object.values(module).filter(\\\\n      (value): value is Course =>\\\\n        typeof value === 'object' &&\\\\n        value !== null &&\\\\n        'id' in value &&\\\\n        'holes' in value &&\\\\n        Array.isArray((value as Course).holes),\\\\n    ))];\\\\n\\\"\\\"\\\")\\np.write_text(s)\\nPY\\nnpx vitest run tests/course-data-validation.test.ts\",\"timeoutSeconds\":300}\n\nСводка: исправляется только обнаружение двойного экспорта одного курса; игровые файлы не затронуты. Следующий шаг — по результату отделить реальные дефекты 81 существующей лунки от ожидаемого отсутствия десятого курса.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"verify-validation-14\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: tests/course-data-validation.test.ts реализован; на текущих 9 курсах две содержательные проверки проходят, а проверка полного набора корректно сообщает found 9, expected 10. Следующий шаг — подтвердить typecheck/build и опубликовать тест в назначенную ветку.\n\n",
   "commands": [
     {
       "commandId": "inspect-validation-1",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "dedupe-course-exports-13",
+      "status": "FAILED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 1
+    },
+    {
+      "commandId": "verify-validation-14",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:00:21.209Z"
+  "createdAt": "2026-09-16T15:01:31.295Z"
 }

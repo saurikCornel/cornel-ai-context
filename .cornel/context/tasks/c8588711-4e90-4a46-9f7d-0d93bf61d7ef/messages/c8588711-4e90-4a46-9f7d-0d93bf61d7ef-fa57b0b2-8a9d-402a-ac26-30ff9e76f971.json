@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"verify-validation-14\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: tests/course-data-validation.test.ts реализован; на текущих 9 курсах две содержательные проверки проходят, а проверка полного набора корректно сообщает found 9, expected 10. Следующий шаг — подтвердить typecheck/build и опубликовать тест в назначенную ветку.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T15:01:31.291Z"
+}
