@@ -1,0 +1,17 @@
+{
+  "id": "283a27da-8240-442f-9b77-75fe6e749419",
+  "taskId": "8b78ffcd-12c2-428d-83a6-841393f5f5a7",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-render-status-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+    "output": ".: 61 файлов\n.cornel/CHATGPT.md\n.gitignore\nAGENTS.md\nindex.html\npackage-lock.json\npackage.json\nsrc/app/GameState.ts\nsrc/config/GameConfig.ts\nsrc/contracts/events.ts\nsrc/contracts/game.ts\nsrc/contracts/index.ts\nsrc/contracts/math.ts\nsrc/contracts/services.ts\nsrc/core/SaveManager.ts\nsrc/courses/Course.ts\nsrc/courses/CourseBuilder.ts\nsrc/courses/Hole.ts\nsrc/courses/data/ancient-temple.ts\nsrc/courses/data/arctic-base.ts\nsrc/courses/data/candy-factory.ts\nsrc/courses/data/green-hills.ts\nsrc/courses/data/haunted-mansion.ts\nsrc/courses/data/neon-city.ts\nsrc/courses/data/pirate-bay.ts\nsrc/courses/data/space-station.ts\nsrc/courses/data/volcano.ts\nsrc/courses/types.ts\nsrc/leaderboard/Leaderboard.ts\nsrc/leaderboard/generator.ts\nsrc/leaderboard/index.ts\nsrc/leaderboard/style.css\nsrc/leaderboard/types.ts\nsrc/main.ts\nsrc/physics/CollisionLayers.ts\nsrc/physics/GolfBallPhysics.ts\nsrc/physics/PhysicsWorld.ts\nsrc/physics/ShotSystem.ts\nsrc/physics/helpers.ts\nsrc/physics/index.ts\nsrc/player/index.ts\nsrc/player/profile.ts\nsrc/player/progression.ts\nsrc/player/types.ts\nsrc/style.css\nsrc/ui/Hud.ts\nsrc/ui/Overlays.ts\nsrc/ui/Scoreboard.ts\nsrc/ui/dom.ts\nsrc/ui/domTests.ts\nsrc/ui/index.ts\nsrc/ui/types.ts\nsrc/ui/ui.css\nsrc/ui/ui.test.ts\ntests/leaderboard-generator.test.ts\ntests/leaderboard-render.test.ts\ntests/physics/helpers.test.ts\ntests/save-manager.test.mjs\ntsconfig.app.json\ntsconfig.json\ntsconfig.node.json\nvite.config.ts",
+    "outputDigest": "b692bf82678347de8938fe23473834667a1d02c18c788c5a155741665459a8d6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T12:27:51.734Z"
+}
