@@ -1,0 +1,17 @@
+{
+  "id": "ce4f990c-7e73-47e7-88c8-362dba9c7215",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-scripts",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "  \"scripts\": {\n    \"dev\": \"vite\",\n    \"build\": \"tsc -b && vite build\",\n    \"typecheck\": \"tsc -b --pretty false\",\n    \"test:ui\": \"vitest run src/ui\",\n    \"test:input\": \"vitest run src/input src/dev\",\n    \"test:camera\": \"vitest run src/camera\"\n  },\n  \"dependencies\": {\n    \"@dimforge/rapier3d-compat\": \"^0.17.3\",\n    \"three\": \"^0.180.0\"\n",
+    "outputDigest": "7c76885fbfa181500d21662adaea6459706cb5431be9e849204ba7bd2e1fde54",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:34:42.781Z"
+}
