@@ -1,9 +1,9 @@
 {
   "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
-  "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+  "headSha": "eba87cc40c40f4f9a56f5e4f5628c18234543463",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"publish-input-dev-15\",\"operation\":\"publish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Implement input manager and developer diagnostics\"}\n\nСводка: реализованы InputManager, query-параметры ?debug=1&course=...&hole=..., F1/F2/F3 developer controls, FPS/debug overlay и presentation minimap; добавлена динамическая dev-интеграция, чтобы обычный production runtime не зависел от diagnostics. Проверки: 5/5 тестов, npm run typecheck, npm run build — успешно. После publish отправлю finish.\n\n",
+  "summary": "Публикация успешна. Отправляю завершение задачи с итогом и проверками.\n\nJSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"finish-input-dev-16\",\"operation\":\"finish\",\"headSha\":\"eba87cc40c40f4f9a56f5e4f5628c18234543463\",\"message\":\"Реализованы InputManager и developer tooling: query-параметры ?debug=1&course=...&hole=..., F1/F2/F3, FPS/debug overlay, presentation minimap и динамическая dev-интеграция без обязательной зависимости production runtime от diagnostics. Добавлены целевые тесты. Проверки успешно пройдены: 5/5 тестов, npm run typecheck, npm run build. Изменения опубликованы в назначенной ветке.\"}\n\nСводка: задача выполнена и опубликована; изменены src/input/*, src/dev/*, src/main.ts, src/style.css, package.json; проверки успешны. Следующий шаг — слияние ветки сборщиком офиса.\n\n",
   "commands": [
     {
       "commandId": "input-inventory-1",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "publish-input-dev-15",
+      "status": "SUCCEEDED",
+      "headSha": "eba87cc40c40f4f9a56f5e4f5628c18234543463",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-input-dev-16",
       "status": "STARTED",
-      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "headSha": "eba87cc40c40f4f9a56f5e4f5628c18234543463",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:43:29.343Z"
+  "createdAt": "2026-09-16T15:43:49.398Z"
 }
