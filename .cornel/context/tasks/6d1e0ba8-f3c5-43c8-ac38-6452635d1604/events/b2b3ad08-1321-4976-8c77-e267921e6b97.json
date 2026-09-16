@@ -1,0 +1,12 @@
+{
+  "id": "b2b3ad08-1321-4976-8c77-e267921e6b97",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "profile-tests-2",
+    "operation": "run",
+    "command": "npm install || exit 1\nprintf '%s\\n' '=== TYPECHECK ==='; npm run typecheck || exit 1\nprintf '%s\\n' '=== BUILD ==='; npm run build || exit 1\nprintf '%s\\n' '=== UNIT TEST COMPILE ==='; rm -rf /tmp/crazy-putt-save-tests; mkdir -p /tmp/crazy-putt-save-tests; npx tsc tests/save-manager.test.ts src/core/SaveManager.ts src/player/types.ts src/player/progression.ts src/player/profile.ts --outDir /tmp/crazy-putt-save-tests --module NodeNext --moduleResolution NodeNext --target ES2022 --types node --skipLibCheck || exit 1\nprintf '%s\\n' '=== UNIT TESTS ==='; node --test /tmp/crazy-putt-save-tests/tests/save-manager.test.js || exit 1\nprintf '%s\\n' '=== STATUS ==='; git status --short"
+  },
+  "createdAt": "2026-09-16T00:19:37.102Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "83cb23db-9f90-4738-93de-7f2ee82aca9f",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "profile-tests-2",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "7b77018b6fefb54423442e83f9b04ba27e4560a9",
+    "output": "\nadded 25 packages, and audited 26 packages in 2s\n\n5 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 7 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-C3pwB87Z.css  \u001b[39m\u001b[1m\u001b[2m  0.13 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.12 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-Brb-18Fb.js   \u001b[39m\u001b[1m\u001b[2m467.91 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 117.13 kB\u001b[22m\n\u001b[32m✓ built in 758ms\u001b[39m\n=== UNIT TEST COMPILE ===\nerror TS2688: Cannot find type definition file for 'node'.\n  The file is in the program because:\n    Entry point of type library 'node' specified in compilerOptions\n",
+    "outputDigest": "f3ca01801c12b619221d5b91c423af709a21a24955dbc8c793fc69b7a55f0bf1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:20:15.208Z"
+}

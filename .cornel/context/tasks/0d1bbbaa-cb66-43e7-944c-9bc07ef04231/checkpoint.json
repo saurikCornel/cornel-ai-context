@@ -3,7 +3,7 @@
   "branch": "cornel/0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
   "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
   "status": "WAITING_CHATGPT",
-  "summary": "Файлы с 27 лунками созданы, и структурный подсчёт подтверждает по 9 лунок в каждом курсе. Но typecheck и build фактически не прошли: в локальной копии отсутствует tsc (tsc: command not found). Поэтому публиковать и завершать карточку пока нельзя.\n\nИсправляю причину проверки: устанавливаю зависимости и затем запускаю typecheck/build. Исходники повторно не создаю.\n\nJSON\n{\"version\":1,\"taskId\":\"0d1bbbaa-cb66-43e7-944c-9bc07ef04231\",\"commandId\":\"verify-courses-2\",\"operation\":\"run\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"command\":\"npm install && printf '%s\\\\n' '=== TYPECHECK ===' && npm run typecheck && printf '%s\\\\n' '=== BUILD ===' && npm run build && printf '%s\\\\n' '=== COURSE COUNTS ===' && for f in src/courses/data/*.ts; do printf '%s: ' \\\"$f\\\"; grep -Ec \\\"^    id: '.*-[1-9]'\\\" \\\"$f\\\"; done && printf '%s\\\\n' '=== STATUS ===' && git status --short\",\"timeoutSeconds\":300}\n\nЖду результат worker. При успехе следующий шаг — publish, после него финальная проверка на опубликованном commit и finish.\n\nСводка: изменены три новых course-data файла; в каждом структурно обнаружено 9 лунок; предыдущая проверка сборки недействительна из-за отсутствующих зависимостей; сейчас устраняется именно эта причина.\n\n",
+  "summary": "Проверка теперь фактически успешна: зависимости установлены, typecheck завершился без ошибок, production build собран, подтверждено ровно по 9 лунок в каждом из трёх модулей. Локальные изменения ещё не опубликованы в назначенную ветку, поэтому следующий обязательный шаг — publish.\n\nJSON\n{\"version\":1,\"taskId\":\"0d1bbbaa-cb66-43e7-944c-9bc07ef04231\",\"commandId\":\"publish-courses-1\",\"operation\":\"publish\",\"headSha\":\"6e30db9402be899044498f36e7f547d09e45e6fa\",\"message\":\"Add Ancient Temple, Arctic Base and Volcano courses\"}\n\nЖду результат worker. После публикации выполню финальную проверку уже на новом commit и затем finish.\n\nСводка: созданы ancient-temple.ts, arctic-base.ts, volcano.ts; всего 27 лунок; npm run typecheck и npm run build успешны; следующий шаг — подтвердить опубликованный commit.\n\n",
   "commands": [
     {
       "commandId": "inspect-1",
@@ -16,7 +16,13 @@
       "status": "SUCCEEDED",
       "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
       "exitCode": 0
+    },
+    {
+      "commandId": "verify-courses-2",
+      "status": "SUCCEEDED",
+      "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T00:15:29.838Z"
+  "createdAt": "2026-09-16T00:20:57.225Z"
 }

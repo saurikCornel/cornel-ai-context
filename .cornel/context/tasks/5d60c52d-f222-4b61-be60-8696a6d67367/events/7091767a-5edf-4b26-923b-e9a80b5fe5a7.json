@@ -1,0 +1,17 @@
+{
+  "id": "7091767a-5edf-4b26-923b-e9a80b5fe5a7",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "create-neon-4",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "ec4e86728618e3cc8b2fd7cb596ee94dc753c69fc529f44f1b7d23b0e310cce6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:20:01.210Z"
+}

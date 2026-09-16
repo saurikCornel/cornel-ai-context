@@ -1,0 +1,12 @@
+{
+  "id": "274c1d56-516d-4a77-a066-e6fbc024bfe5",
+  "taskId": "0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-courses-2",
+    "operation": "run",
+    "command": "npm install && printf '%s\\n' '=== TYPECHECK ===' && npm run typecheck && printf '%s\\n' '=== BUILD ===' && npm run build && printf '%s\\n' '=== COURSE COUNTS ===' && for f in src/courses/data/*.ts; do printf '%s: ' \"$f\"; grep -Ec \"^    id: '.*-[1-9]'\" \"$f\"; done && printf '%s\\n' '=== STATUS ===' && git status --short"
+  },
+  "createdAt": "2026-09-16T00:18:48.583Z"
+}

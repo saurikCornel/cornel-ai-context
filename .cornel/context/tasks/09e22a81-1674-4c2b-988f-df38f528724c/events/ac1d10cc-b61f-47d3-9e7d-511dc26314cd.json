@@ -1,0 +1,17 @@
+{
+  "id": "ac1d10cc-b61f-47d3-9e7d-511dc26314cd",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "leaderboard-final-verify-2",
+    "status": "FAILED",
+    "exitCode": 2,
+    "reason": null,
+    "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
+    "output": "\n=== INSTALL ===\n\nadded 25 packages, and audited 26 packages in 2s\n\n5 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsrc/leaderboard/generator.ts(66,7): error TS2322: Type 'string | undefined' is not assignable to type 'string'.\n  Type 'undefined' is not assignable to type 'string'.\nsrc/leaderboard/generator.ts(69,7): error TS2322: Type 'string | undefined' is not assignable to type 'string'.\n  Type 'undefined' is not assignable to type 'string'.\n",
+    "outputDigest": "b47c458c9f258345f8d4173ba60e83391368e252f69573a9f6a8424176ff0a56",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:21:50.133Z"
+}

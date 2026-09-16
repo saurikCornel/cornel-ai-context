@@ -1,0 +1,17 @@
+{
+  "id": "14a6f84e-0899-4c5e-8d95-e429f9ae57b8",
+  "taskId": "68db5879-93a0-4041-9ada-fffc5383ea0a",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "physics-final-verify-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5083163a13b4f8087ab90da1cc9e1ca7c7b9bcae",
+    "output": "=== STATUS BEFORE ===\n=== PHYSICS UNIT TESTS ===\n\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.4 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/68db5879-93a0-4041-9ada-fffc5383ea0a\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/physics/helpers.test.ts\u001b[2m > \u001b[22mphysics helpers\u001b[2m > \u001b[22mclamps shot power and follows configured curve endpoints\u001b[32m 1\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/physics/helpers.test.ts\u001b[2m > \u001b[22mphysics helpers\u001b[2m > \u001b[22mcaps speed while preserving direction\u001b[32m 0\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/physics/helpers.test.ts\u001b[2m > \u001b[22mphysics helpers\u001b[2m > \u001b[22mrequires low speed and sufficient quiet time before sleep\u001b[32m 0\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 03:17:48\n\u001b[2m   Duration \u001b[22m 446ms\u001b[2m (transform 39ms, setup 0ms, collect 28ms, tests 2ms, environment 0ms, prepare 118ms)\u001b[22m\n\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 7 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-C3pwB87Z.css  \u001b[39m\u001b[1m\u001b[2m  0.13 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.12 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-Brb-18Fb.js   \u001b[39m\u001b[1m\u001b[2m467.91 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 117.13 kB\u001b[22m\n\u001b[32m✓ built in 710ms\u001b[39m\n=== STATUS AFTER ===\n",
+    "outputDigest": "6d703c096c9496fdae549cdceea5b66ef1450160b8d49318735f677067889860",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:17:58.329Z"
+}

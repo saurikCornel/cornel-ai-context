@@ -1,0 +1,11 @@
+{
+  "id": "caff1c94-2fd9-4f36-a2da-1d9172d02d46",
+  "taskId": "defb0407-6f82-42d9-85f2-4fd3cfd54559",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "ui-dom-tests-5",
+    "output": "\nadded 59 packages, and audited 85 packages in 8s\n\n17 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n\n=== UI TESTS ===\n\n> crazy-putt-arena@0.1.0 test:ui\n> vitest run src/ui\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/defb0407-6f82-42d9-85f2-4fd3cfd54559\u001b[39m\n\n \u001b[32m✓\u001b[39m src/ui/ui.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 34\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 03:19:24\n\u001b[2m   Duration \u001b[22m 740ms\u001b[2m (environment 83%, transform 9%, tests 5%, import 2%, worker 1%)\u001b[22m\n\n\n=== TYPECHECK AFTER TEST ADDITION ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n"
+  },
+  "createdAt": "2026-09-16T00:19:25.925Z"
+}

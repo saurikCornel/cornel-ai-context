@@ -1,0 +1,17 @@
+{
+  "id": "d87f6762-4916-4908-9d55-3f3a5bddb61c",
+  "taskId": "09e22a81-1674-4c2b-988f-df38f528724c",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "leaderboard-final-verify-1",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "eb5dda16ef9de4aec9d2cd50755ebf79c425fe48",
+    "output": "\n=== TYPECHECK ===\n/bin/sh: ./node_modules/.bin/tsc: No such file or directory\n",
+    "outputDigest": "6310e9f5ccd80114344c58ef69a490838bd078328e898b2cf1d31f0f9f238ad8",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:17:46.428Z"
+}

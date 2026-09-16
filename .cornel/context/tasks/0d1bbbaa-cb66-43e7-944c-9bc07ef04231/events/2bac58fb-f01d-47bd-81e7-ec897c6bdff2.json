@@ -1,0 +1,17 @@
+{
+  "id": "2bac58fb-f01d-47bd-81e7-ec897c6bdff2",
+  "taskId": "0d1bbbaa-cb66-43e7-944c-9bc07ef04231",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-courses-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+    "output": "\nadded 25 packages, and audited 26 packages in 2s\n\n5 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n=== TYPECHECK ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== BUILD ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 7 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-C3pwB87Z.css  \u001b[39m\u001b[1m\u001b[2m  0.13 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.12 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-Brb-18Fb.js   \u001b[39m\u001b[1m\u001b[2m467.91 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 117.13 kB\u001b[22m\n\u001b[32m✓ built in 848ms\u001b[39m\n=== COURSE COUNTS ===\nsrc/courses/data/ancient-temple.ts: 9\nsrc/courses/data/arctic-base.ts: 9\nsrc/courses/data/volcano.ts: 9\n=== STATUS ===\n?? src/courses/data/\n",
+    "outputDigest": "6f23cfbc0b27de2a2d8ad4e3e58f693f618806d79f943c93a5107c1b248a32b1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T00:19:19.875Z"
+}
