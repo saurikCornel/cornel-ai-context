@@ -1,0 +1,10 @@
+{
+  "id": "7da19c3d-0988-4d36-9a8d-2b86f8d1dcde",
+  "taskId": "6d1e0ba8-f3c5-43c8-ac38-6452635d1604",
+  "type": "REJECTED",
+  "text": "Задача не принимает команды",
+  "detail": {
+    "commentId": 5696983148
+  },
+  "createdAt": "2026-09-16T11:52:56.906Z"
+}

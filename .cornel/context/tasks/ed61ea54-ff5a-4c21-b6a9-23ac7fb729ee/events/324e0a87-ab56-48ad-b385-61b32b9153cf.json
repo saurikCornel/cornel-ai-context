@@ -1,0 +1,17 @@
+{
+  "id": "324e0a87-ab56-48ad-b385-61b32b9153cf",
+  "taskId": "ed61ea54-ff5a-4c21-b6a9-23ac7fb729ee",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "0b7d48d5228f03108022180cdee56da5268fd918",
+    "output": "src: 30 файлов\nsrc/app/GameState.ts\nsrc/config/GameConfig.ts\nsrc/contracts/events.ts\nsrc/contracts/game.ts\nsrc/contracts/index.ts\nsrc/contracts/math.ts\nsrc/contracts/services.ts\nsrc/courses/Course.ts\nsrc/courses/CourseBuilder.ts\nsrc/courses/Hole.ts\nsrc/courses/data/ancient-temple.ts\nsrc/courses/data/arctic-base.ts\nsrc/courses/data/volcano.ts\nsrc/courses/types.ts\nsrc/leaderboard/Leaderboard.ts\nsrc/leaderboard/generator.ts\nsrc/leaderboard/index.ts\nsrc/leaderboard/style.css\nsrc/leaderboard/types.ts\nsrc/main.ts\nsrc/physics/CollisionLayers.ts\nsrc/physics/GolfBallPhysics.ts\nsrc/physics/PhysicsWorld.ts\nsrc/physics/ShotSystem.ts\nsrc/physics/helpers.ts\nsrc/physics/index.ts\nsrc/style.css\nsrc/ui/domTests.ts\nsrc/ui/index.ts\nsrc/ui/ui.css",
+    "outputDigest": "cfacc1ce4a5da8a45ab2aa129c288d0e39d3f0873c7ff3172dd428859d991c2f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:53:54.415Z"
+}
