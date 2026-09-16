@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 4,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Чтение подтвердило API рейтинга, но начало BotPlanner/Matchmaking не попало в хвост RESULT. Получаю только экспортируемые функции и профильные константы — после этого тесты можно написать без догадок.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"grep-ai-public-api-27\",\"operation\":\"grep\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"pattern\":\"^export (const|function|class|interface|type) \",\"path\":\"src/ai\"}\n\nСводка: рейтинг API подтверждён (expectedScore, kFactorFor, computeMatchRatings, bridge/apply helpers). Сейчас уточняются только публичные точки AI; затем сразу создаю тесты и запускаю проверки.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T18:31:49.562Z"
+}
