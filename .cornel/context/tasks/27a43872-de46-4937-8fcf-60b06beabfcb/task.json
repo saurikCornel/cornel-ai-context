@@ -17,9 +17,9 @@
   "branch": "cornel/movingplatform-obstacle-27a438",
   "baseSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
   "workspaceSyncedSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
-  "status": "READY",
+  "status": "CANCELLED",
   "createdAt": "2026-09-16T23:24:03.034Z",
-  "updatedAt": "2026-09-16T23:24:06.950Z",
+  "updatedAt": "2026-09-16T23:37:58.296Z",
   "issue": 67,
   "chatUrl": null,
   "error": null

@@ -17,9 +17,9 @@
   "branch": "cornel/slidingwall-obstacle-63d1f8",
   "baseSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
   "workspaceSyncedSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
-  "status": "READY",
+  "status": "CANCELLED",
   "createdAt": "2026-09-16T23:29:12.553Z",
-  "updatedAt": "2026-09-16T23:29:16.242Z",
+  "updatedAt": "2026-09-16T23:37:58.305Z",
   "issue": 68,
   "chatUrl": null,
   "error": null
