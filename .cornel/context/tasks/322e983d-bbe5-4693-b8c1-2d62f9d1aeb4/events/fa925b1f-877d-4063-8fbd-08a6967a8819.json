@@ -1,0 +1,11 @@
+{
+  "id": "fa925b1f-877d-4063-8fbd-08a6967a8819",
+  "taskId": "322e983d-bbe5-4693-b8c1-2d62f9d1aeb4",
+  "type": "RATE_LIMIT",
+  "text": "ChatGPT попросил замедлиться: диалог закрыт, чаты остаются открытыми; пауза 98 с, затем продолжаем — 1 чат(ов), интервал 60 с («Too many requestsYou’re making requests too quickly. We’ve temporarily limited access to your conversations to protect your data.Please wait a few minutes befor»)",
+  "detail": {
+    "kind": "access",
+    "text": "Too many requestsYou’re making requests too quickly. We’ve temporarily limited access to your conversations to protect your data.Please wait a few minutes before trying again.Got it"
+  },
+  "createdAt": "2026-09-16T19:23:35.668Z"
+}
