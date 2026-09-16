@@ -17,10 +17,11 @@
   "branch": "cornel/gameplay-state-scoring-and-hole-flow-3be538",
   "baseSha": "768daca05831f4622211da0e377430b36c00f9ff",
   "workspaceSyncedSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "READY",
+  "status": "RUNNING",
   "createdAt": "2026-09-16T12:22:06.427Z",
-  "updatedAt": "2026-09-16T12:22:21.271Z",
+  "updatedAt": "2026-09-16T12:22:33.669Z",
   "issue": 34,
   "chatUrl": "https://chatgpt.com/c/6aaa89fa-b09c-83eb-a52e-6f456eb06394",
-  "error": null
+  "error": null,
+  "browserError": null
 }

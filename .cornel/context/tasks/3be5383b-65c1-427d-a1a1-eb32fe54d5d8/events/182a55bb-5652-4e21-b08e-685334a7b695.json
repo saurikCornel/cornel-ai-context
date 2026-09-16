@@ -1,0 +1,11 @@
+{
+  "id": "182a55bb-5652-4e21-b08e-685334a7b695",
+  "taskId": "3be5383b-65c1-427d-a1a1-eb32fe54d5d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-gameplay-1",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T12:22:33.668Z"
+}
