@@ -17,10 +17,12 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "baseSha": "77b38d1780726161f87e511138beae87cceeb098",
   "workspaceSyncedSha": "77b38d1780726161f87e511138beae87cceeb098",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T15:44:52.241Z",
-  "updatedAt": "2026-09-16T15:45:07.923Z",
+  "updatedAt": "2026-09-16T15:45:54.866Z",
   "issue": 47,
   "chatUrl": "https://chatgpt.com/c/6aaab980-8d38-83ed-8edd-a07357e461c8",
-  "error": null
+  "error": null,
+  "browserError": null,
+  "statusChecks": 1
 }
