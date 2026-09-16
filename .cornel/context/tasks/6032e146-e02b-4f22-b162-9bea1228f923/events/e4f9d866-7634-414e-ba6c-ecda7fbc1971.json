@@ -1,0 +1,12 @@
+{
+  "id": "e4f9d866-7634-414e-ba6c-ecda7fbc1971",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "export-and-verify-camera-14",
+    "operation": "run",
+    "command": "grep -q \"CameraController\" src/camera/index.ts || printf \"export * from './CameraController';\\n\" >> src/camera/index.ts; cat src/camera/index.ts; echo '--- vitest camera ---'; npm run test:camera --silent; echo '--- typecheck ---'; npm run typecheck --silent; echo '--- build ---'; npm run build --silent"
+  },
+  "createdAt": "2026-09-16T17:08:52.403Z"
+}

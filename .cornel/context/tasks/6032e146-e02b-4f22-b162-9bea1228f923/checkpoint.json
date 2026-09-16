@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"verify-camera-files-13\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/CameraController.ts\",\"src/camera/CameraController.test.ts\",\"src/camera/index.ts\"]}\n\nСводка: реализация CameraController и тесты уже созданы; проверяю их целиком перед запуском проверок и публикацией.\nИзменённые файлы: src/camera/CameraController.ts, src/camera/CameraController.test.ts.\nПроверки: запись обоих файлов worker подтвердил успешно; тесты ещё не запускались.\nСледующий шаг: при необходимости добавить export в src/camera/index.ts, затем выполнить Vitest, typecheck и build.\n\nЖду результат worker — он придёт сюда отдельным сообщением, Issue перечитывать не нужно.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"export-and-verify-camera-14\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"grep -q \\\"CameraController\\\" src/camera/index.ts || printf \\\"export * from './CameraController';\\\\n\\\" >> src/camera/index.ts; cat src/camera/index.ts; echo '--- vitest camera ---'; npm run test:camera --silent; echo '--- typecheck ---'; npm run typecheck --silent; echo '--- build ---'; npm run build --silent\",\"timeoutSeconds\":900}\n```\n\nОтправил worker: добавляю экспорт `CameraController` в `src/camera/index.ts` и сразу прогоняю тесты камеры, typecheck и production build. Жду результат worker — он придёт сюда отдельным сообщением.\n\nСводка: контроллер и тесты записаны, осталось подключить публичный экспорт и получить фактическое подтверждение проверок.\nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.\nПроверки: запущены (результат ещё не получен) — `npm run test:camera`, `npm run typecheck`, `npm run build`.\nСледующий шаг: по результату исправить ошибки либо выполнить `publish` и `finish`.\n\n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -73,10 +73,16 @@
     },
     {
       "commandId": "verify-camera-files-13",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "export-and-verify-camera-14",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:03:26.687Z"
+  "createdAt": "2026-09-16T17:08:52.408Z"
 }

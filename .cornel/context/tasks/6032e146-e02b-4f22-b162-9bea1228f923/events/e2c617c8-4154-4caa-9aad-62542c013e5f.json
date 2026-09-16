@@ -1,0 +1,11 @@
+{
+  "id": "e2c617c8-4154-4caa-9aad-62542c013e5f",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "export-and-verify-camera-14",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T17:08:52.405Z"
+}

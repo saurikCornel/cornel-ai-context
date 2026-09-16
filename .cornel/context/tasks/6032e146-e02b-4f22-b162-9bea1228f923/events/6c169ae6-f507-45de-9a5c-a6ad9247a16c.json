@@ -1,0 +1,17 @@
+{
+  "id": "6c169ae6-f507-45de-9a5c-a6ad9247a16c",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "export-and-verify-camera-14",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": "export * from './CameraCollision';\nexport * from './RapierCameraCollision';\nexport * from './CameraController';\n--- vitest camera ---\n--- typecheck ---\nsh: tsc: command not found\n--- build ---\nsh: tsc: command not found\n",
+    "outputDigest": "b0c35d4a0ce8448b33888ffccb8fcbe7d77cc97b1d6605268d17a1f1d6c55d95",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T17:08:55.713Z"
+}
