@@ -1,0 +1,12 @@
+{
+  "id": "00f8ab7b-7a70-42a9-96f0-675d1c3a54ad",
+  "taskId": "7bf6e7e5-f135-4041-ba52-cd257915d49d",
+  "type": "HANDOVER",
+  "text": "Чат передан Claude CLI",
+  "detail": {
+    "from": "qwen",
+    "to": "claude",
+    "cancelled": 1
+  },
+  "createdAt": "2026-09-16T21:22:18.891Z"
+}
