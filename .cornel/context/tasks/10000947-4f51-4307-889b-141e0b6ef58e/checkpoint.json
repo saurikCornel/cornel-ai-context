@@ -3,7 +3,7 @@
   "branch": "cornel/slit-camera-input-and-zoom-100009",
   "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"restore-merge-and-resolve-5\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"set -e\\nincoming=8aab53119ae674d439b81094e70eb2abcb9d7dcb\\nmerge_head=$(git rev-parse --git-path MERGE_HEAD)\\nmerge_msg=$(git rev-parse --git-path MERGE_MSG)\\nprintf '%s\\\\n' \\\"$incoming\\\" > \\\"$merge_head\\\"\\nprintf \\\"Merge branch 'cornel/camera-input-and-zoom-5ded69' into cornel/slit-camera-input-and-zoom-100009\\\\n\\\" > \\\"$merge_msg\\\"\\ncat > src/camera/index.ts <<'EOF'\\nexport * from './CameraCollision';\\nexport * from './CameraInput';\\nexport * from './CameraPose';\\nexport * from './CameraTransition';\\nexport * from './Easing';\\nexport * from './RapierCameraCollision';\\nexport * from './SmoothCameraRig';\\nexport * from './Smoothing';\\nexport * from './ThreeCameraBinding';\\nEOF\\ngit add -A\\necho '--- STATUS ---'\\ngit status --short\\necho '--- UNMERGED ---'\\ngit diff --name-only --diff-filter=U\\necho '--- MERGE_HEAD ---'\\ncat \\\"$merge_head\\\"\\necho '--- FILE ---'\\ncat -n src/camera/index.ts\",\"timeoutSeconds\":120}\n\nЖду RESULT worker. Если UU исчезнет и MERGE_HEAD будет на месте, следующим шагом запущу тесты/сборку/линтер и затем publish.\n\nСводка: причина предыдущей ошибки — .git в worktree не каталог; исправление — использовать git rev-parse --git-path; следующий шаг — подтвердить снятие конфликта и корректное merge-состояние.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"read-package-scripts-6\",\"operation\":\"read\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"paths\":[\"package.json:1-140\"]}\n\nЖду RESULT worker. Следующим шагом запущу найденные штатные проверки на уже разрешённом merge-состоянии.\n\nСводка: конфликт разрешён объединением экспортов CameraInput и существующих camera-модулей; src/camera/CameraInput.ts, CameraInput.test.ts, index.ts готовы в индексе; следующий шаг — штатные тесты/линтер/сборка.\n\n",
   "commands": [
     {
       "commandId": "merge-camera-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "restore-merge-and-resolve-5",
+      "status": "SUCCEEDED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-package-scripts-6",
       "status": "STARTED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:59:53.190Z"
+  "createdAt": "2026-09-16T18:03:47.548Z"
 }
