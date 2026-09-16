@@ -1,0 +1,17 @@
+{
+  "id": "a99f5316-b4fe-4746-8a66-5381d3b6c228",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-courses-15",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "17395f6f0a9b73cd4944b501e2ff1ec57bd60a90",
+    "output": "Готово: опубликованы Neon City, Haunted Mansion и Space Station — три независимых course data модуля по 9 оригинальных лунок, всего 27. Использованы существующие Course Builder/descriptors, тематические static/moving obstacles, gates, spinners, platforms, water/void/reset hazards и различные поверхности с постепенным ростом сложности. На опубликованном состоянии успешно выполнены npm run typecheck и npm run build; подтверждено 9+9+9 лунок, 27 уникальных hole ID и чистое рабочее дерево. Изменения ограничены src/courses/data/. PR не создавался согласно инструкции карточки.",
+    "outputDigest": "c1ec3fcc4411e67a68c31b605086821c5d4d74fa4fa57c4647698e7d9e3f8f4c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:59:01.541Z"
+}
