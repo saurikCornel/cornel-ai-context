@@ -2,8 +2,8 @@
   "taskId": "eb2cef18-35d1-493c-80a8-993a2b92df5b",
   "branch": "cornel/chaos-dimension-i-validaciya-90-lunok-eb2cef",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "NEEDS_ATTENTION",
-  "summary": "CORNEL_AI_BLOCKED\n\nФактический статус не изменился: для inspect-src-9 RESULT не появился. Последний подтверждённый RESULT worker по задаче остаётся REJECTED — Задача не принимает команды.\n\nЭто не блокировка GitHub-доступа: ветка и Issue доступны. Блокировка именно в worker для taskId eb2cef18-35d1-493c-80a8-993a2b92df5b — операции ls/read/run/publish/finish не исполняются и не возвращают RESULT.\n\nПока worker не начнёт принимать команды этой задачи, я не могу безопасно прочитать рабочую копию и продолжить реализацию. После первого успешного RESULT продолжу с src и доведу карточку до publish + finish.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "",
   "commands": [],
-  "createdAt": "2026-09-16T12:42:27.434Z"
+  "createdAt": "2026-09-16T12:44:19.294Z"
 }
