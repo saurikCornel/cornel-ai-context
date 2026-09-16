@@ -1,9 +1,9 @@
 {
   "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
   "branch": "cornel/hazard-and-field-zones-7f702f",
-  "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+  "headSha": "c51058406814ce3edfa339d8c7193374e2c6f9d2",
   "status": "RUNNING",
-  "summary": "Typecheck и build прошли (exit 0). Публикую изменения:\n\n```json\n{\"version\":1,\"taskId\":\"7f702fa6-c258-4e2d-a615-365b67a4703b\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"message\":\"Hazard and field zones: Water/Lava/Kill/Gravity/Magnet + ZoneManager\\n\\n- src/contracts/zones.ts: контракт ZoneType/ZoneDescriptor/ZoneTriggerEvent/IZone\\n- BaseZone: AABB-проверка contains, onTrigger, resolveHazard (reset + штрафные удары)\\n- WaterZone (1 штраф), LavaZone (2 штрафа), KillZone (reset в заданную точку)\\n- GravityZone: направленная сила strength*mass; MagnetZone: притяжение/отталкивание к центру с clamp дистанции (без NaN в центре)\\n- ZoneManager: агрегация сил и триггеров по активным зонам\\n- zones.test.ts: 7 targeted-тестов trigger/force\"}\n```\n\nЖду RESULT по `publish-1`, затем отправлю `finish`.\n\n",
+  "summary": "Опубликовано, новый head `c510584`. Прогоняю проверки на опубликованном коммите, чтобы finish опирался на тот же headSha:\n\n```json\n{\"version\":1,\"taskId\":\"7f702fa6-c258-4e2d-a615-365b67a4703b\",\"commandId\":\"verify-head-1\",\"operation\":\"run\",\"headSha\":\"c51058406814ce3edfa339d8c7193374e2c6f9d2\",\"command\":\"npx vitest run src/gameplay/zones && npm run typecheck && npm run build\",\"timeoutSeconds\":600}\n```\n\nЖду RESULT по `verify-head-1`, затем отправлю `finish` с итогом.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -127,10 +127,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "c51058406814ce3edfa339d8c7193374e2c6f9d2",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-head-1",
       "status": "STARTED",
-      "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+      "headSha": "c51058406814ce3edfa339d8c7193374e2c6f9d2",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T23:30:22.863Z"
+  "createdAt": "2026-09-16T23:30:45.786Z"
 }

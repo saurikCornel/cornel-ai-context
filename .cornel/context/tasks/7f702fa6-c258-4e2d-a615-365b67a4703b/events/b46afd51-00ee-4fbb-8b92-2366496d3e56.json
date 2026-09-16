@@ -1,0 +1,12 @@
+{
+  "id": "b46afd51-00ee-4fbb-8b92-2366496d3e56",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-head-1",
+    "operation": "run",
+    "command": "npx vitest run src/gameplay/zones && npm run typecheck && npm run build"
+  },
+  "createdAt": "2026-09-16T23:30:45.782Z"
+}
