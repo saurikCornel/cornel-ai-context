@@ -1,0 +1,17 @@
+{
+  "id": "f4861d18-800b-4956-8f25-1a4114f53a3d",
+  "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "state-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "===STATUS===\n===HEAD===\n9bf2556 Merge «Слить: CameraController core» (9f009986-bf51-4022-aed0-124767c7b227)\n997be1a Merge CameraController core: объединён barrel src/camera/index.ts\n7a57a44 Merge «Particle effects» (dc2b5c16-1b09-476b-8be9-56dc534c0467)\n===MODE_FILES===\n===SAVED_VERIFY_SUMMARIES===\n--- /tmp/c-tc.log ---\n--- /tmp/c-cam.log ---\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m32 passed\u001b[39m\u001b[22m\u001b[90m (32)\u001b[39m\n--- /tmp/c-ui.log ---\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n--- /tmp/c-in.log ---\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n--- /tmp/c-bd.log ---\n\u001b[32m✓ built in 687ms\u001b[39m\n",
+    "outputDigest": "b6f95ea0e9faa374061dde47a77ae69b04a6fb5a416e12368ef7e90d20f49e07",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T19:12:49.304Z"
+}
