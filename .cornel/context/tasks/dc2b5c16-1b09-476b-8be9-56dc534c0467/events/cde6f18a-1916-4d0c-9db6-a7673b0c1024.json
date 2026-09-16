@@ -1,0 +1,13 @@
+{
+  "id": "cde6f18a-1916-4d0c-9db6-a7673b0c1024",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Particle effects завершены. Реализован lightweight pooled ParticleManager на THREE.Points с фиксированной ёмкостью, переиспользуемыми typed arrays и API emit/update/clear/dispose; добавлены exports и целевые unit-тесты. На опубликованном head подтверждены проверки worker: 4/4 теста пройдены, npm run typecheck успешен, npm run build успешен. Изменения опубликованы в назначенную ветку.",
+  "detail": {
+    "commands": 16,
+    "failed": 5,
+    "headSha": "db73400a5139cf8b2861c4cd634d81e9858ff328",
+    "branch": "cornel/particle-effects-dc2b5c"
+  },
+  "createdAt": "2026-09-16T16:50:14.259Z"
+}
