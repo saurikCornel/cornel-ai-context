@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"find-contracts-3\",\"operation\":\"grep\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"pattern\":\"ShotCommand|Bot|Rating|PlayerProfile|HoleDefinition\",\"path\":\"src\"}\n```\n\nСводка: структура подтверждает отсутствие готовых модулей `src/ai`; интегрироваться нужно с gameplay, physics, player и course-типами. Изменений нет. Следующий шаг — прочитать найденные контракты и существующие параметры физики.  \nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T16:06:15.006Z"
+}

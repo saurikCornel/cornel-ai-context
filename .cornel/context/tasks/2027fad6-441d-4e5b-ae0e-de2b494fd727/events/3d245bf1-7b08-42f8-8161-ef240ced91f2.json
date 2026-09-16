@@ -1,0 +1,11 @@
+{
+  "id": "3d245bf1-7b08-42f8-8161-ef240ced91f2",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "find-contracts-3",
+    "operation": "grep"
+  },
+  "createdAt": "2026-09-16T16:06:15.007Z"
+}
