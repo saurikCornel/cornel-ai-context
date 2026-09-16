@@ -1,0 +1,11 @@
+{
+  "id": "35709143-35fc-4c12-bd82-77d0467b0b91",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "read-camera-index-1",
+    "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a"
+  },
+  "createdAt": "2026-09-16T17:15:47.942Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "Typecheck и build прошли. Две режимные проверки падают — читаю фактический код контроллера и тестов, чтобы понять, ошибка в реализации или в ожиданиях теста.\n\n```json\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"read-controller-body-16\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/CameraController.ts:16-140\",\"src/camera/CameraController.test.ts:17-35\",\"src/camera/CameraCollision.ts:1-60\"]}\n```\n\nСводка: реализация компилируется и собирается (`tsc -b`, `vite build` — успешно), но 2 из 6 режимных тестов падают: overview не уходит на ожидаемую высоту и collision-дистанция не совпадает с ожиданием теста.\nИзменённые файлы: `src/camera/CameraController.ts`, `src/camera/CameraController.test.ts`, `src/camera/index.ts`.\nПроверки: `npm install` — ок, `npm run typecheck` — ок, `npm run build` — ок, `vitest src/camera` — 9 passed / 2 failed.\nСледующий шаг: по коду определить причину расхождений, исправить контроллер (или ожидания теста, если неверна их математика) и перезапустить проверки.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"inspect-failing-camera-tests-17\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/camera/CameraController.ts:26-170\",\"src/camera/CameraController.test.ts:1-120\",\"src/camera/CameraCollision.ts:1-80\"]}\n\nСводка: typecheck и production build уже проходят; проблема локализована до двух режимных тестов.\nИзменённые файлы: без новых правок на этом шаге.\nПроверки: ранее подтверждены tsc -b и npm run build; камера — 9 тестов проходят, 2 падают.\nСледующий шаг: по точной математике overview/collision внести минимальное исправление и перезапустить camera tests + typecheck/build.\n\n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -91,10 +91,16 @@
     },
     {
       "commandId": "read-controller-body-16",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-failing-camera-tests-17",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:11:22.974Z"
+  "createdAt": "2026-09-16T17:15:54.187Z"
 }

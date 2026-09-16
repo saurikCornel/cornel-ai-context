@@ -3,7 +3,7 @@
   "branch": "cornel/slit-camera-input-and-zoom-100009",
   "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "RUNNING",
-  "summary": "git grep пропускает unmerged-файл; ищу маркеры через shell.\n\n```json\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"scan-conflict-1\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"wc -l src/camera/index.ts src/camera/*.ts; echo '--- MARKERS ---'; grep -n -e '^<<<<<<<' -e '^=======' -e '^>>>>>>>' src/camera/index.ts; echo '--- LS ---'; ls -1 src/camera\",\"timeoutSeconds\":120}\n```\n\nЖду RESULT worker.\n\nСводка: `git grep` не видит unmerged-файл, поэтому перешёл на shell-скан маркеров; следующий шаг — прочитать обе стороны конфликта по найденным диапазонам.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"read-camera-index-1\",\"operation\":\"read\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"paths\":[\"src/camera/index.ts:1-40\"]}\n\nЖду RESULT worker. После чтения объединю конфликтующие экспорты, сниму маркеры и продолжу к проверкам.\n\nСводка: конфликт только в src/camera/index.ts; новые файлы CameraInput.ts и CameraInput.test.ts уже вошли без конфликта; проверки ещё не запускались; следующий шаг — разрешить index.ts.\n\n",
   "commands": [
     {
       "commandId": "merge-camera-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "scan-conflict-1",
+      "status": "SUCCEEDED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-camera-index-1",
       "status": "STARTED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:11:52.281Z"
+  "createdAt": "2026-09-16T17:15:45.350Z"
 }

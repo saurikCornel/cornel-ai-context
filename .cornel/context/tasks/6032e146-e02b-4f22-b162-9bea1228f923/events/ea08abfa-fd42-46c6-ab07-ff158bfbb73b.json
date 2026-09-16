@@ -1,0 +1,11 @@
+{
+  "id": "ea08abfa-fd42-46c6-ab07-ff158bfbb73b",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-failing-camera-tests-17",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T17:15:54.183Z"
+}
