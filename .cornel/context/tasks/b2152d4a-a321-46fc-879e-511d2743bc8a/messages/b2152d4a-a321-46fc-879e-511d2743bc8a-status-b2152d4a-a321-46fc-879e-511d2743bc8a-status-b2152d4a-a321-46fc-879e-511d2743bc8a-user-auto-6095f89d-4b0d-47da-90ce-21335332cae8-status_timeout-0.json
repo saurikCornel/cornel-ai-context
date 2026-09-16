@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 5,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "CORNEL_AI_BLOCKED: фактический статус не изменился. Для последней worker-команды mo-4-state по-прежнему нет ни RESULT, ни UNKNOWN; в Issue видны только повторяющиеся события RATE_LIMIT, без подтверждения выполнения команд.\n\nПодтверждён только успешный mo-1-install. Состояние ветки, локальные изменения, файлы src/obstacles, реализация Pendulum / MovingPlatform / SlidingWall, targeted-тесты, typecheck, build, publish и finish не подтверждены.\n\nКонкретная причина блокировки: worker-канал для задачи перестал возвращать результаты после первой успешной команды. Повторять mo-4-state или обходить её следующей кодовой командой нельзя без RESULT/UNKNOWN.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T19:44:08.206Z"
+}

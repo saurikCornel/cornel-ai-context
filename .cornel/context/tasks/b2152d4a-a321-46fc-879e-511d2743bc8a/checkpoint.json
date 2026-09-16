@@ -3,7 +3,7 @@
   "branch": "cornel/moving-obstacles-b2152d",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "NEEDS_ATTENTION",
-  "summary": "CORNEL_AI_BLOCKED: канал worker фактически не доставляет команды/результаты для этой задачи. Последняя проверка mo-4-state также не получила RESULT или UNKNOWN; в Issue после неё появился только очередной RATE_LIMIT.\n\nПодтверждённым остаётся только успешный mo-1-install. Состояние ветки, наличие локальных изменений и файлов src/obstacles, а также реализация, targeted-тесты, typecheck, build, publish и finish не подтверждены.\n\nКонкретная причина блокировки: worker-команды после mo-1-install не возвращают RESULT/UNKNOWN из-за системной rate-limit/доставочной проблемы. Продолжать кодовые действия без результата текущей команды означало бы снова обходить незавершённый worker-шаг.\n\n",
+  "summary": "CORNEL_AI_BLOCKED: фактический статус не изменился. Для последней worker-команды mo-4-state по-прежнему нет ни RESULT, ни UNKNOWN; в Issue видны только повторяющиеся события RATE_LIMIT, без подтверждения выполнения команд.\n\nПодтверждён только успешный mo-1-install. Состояние ветки, локальные изменения, файлы src/obstacles, реализация Pendulum / MovingPlatform / SlidingWall, targeted-тесты, typecheck, build, publish и finish не подтверждены.\n\nКонкретная причина блокировки: worker-канал для задачи перестал возвращать результаты после первой успешной команды. Повторять mo-4-state или обходить её следующей кодовой командой нельзя без RESULT/UNKNOWN.\n\n",
   "commands": [
     {
       "commandId": "mo-1-install",
@@ -12,5 +12,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T19:43:31.135Z"
+  "createdAt": "2026-09-16T19:44:08.207Z"
 }
