@@ -1,0 +1,11 @@
+{
+  "id": "632c9648-1e40-4e0e-ad80-902b202d64a8",
+  "taskId": "dc2b5c16-1b09-476b-8be9-56dc534c0467",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "publish-particles-13",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:48:53.898Z"
+}
