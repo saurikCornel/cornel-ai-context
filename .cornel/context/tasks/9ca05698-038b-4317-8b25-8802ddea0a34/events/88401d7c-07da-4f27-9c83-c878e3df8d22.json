@@ -1,0 +1,17 @@
+{
+  "id": "88401d7c-07da-4f27-9c83-c878e3df8d22",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-obstacles-state-10",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "src/obstacles: 0 файлов",
+    "outputDigest": "1a4018534103d3fc3fa08da9862924810b2e42a9b3bcdf8f5ee8003616a92ec6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T20:59:43.724Z"
+}

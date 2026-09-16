@@ -1,0 +1,11 @@
+{
+  "id": "823f2977-5916-45b2-b596-30c354794931",
+  "taskId": "9ca05698-038b-4317-8b25-8802ddea0a34",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "ls-obstacles-state-10",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T20:59:41.485Z"
+}
