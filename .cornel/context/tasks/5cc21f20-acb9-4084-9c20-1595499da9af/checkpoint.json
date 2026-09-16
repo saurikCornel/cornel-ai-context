@@ -3,7 +3,7 @@
   "branch": "cornel/input-developer-controls-and-diagnostics-5cc21f",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"install-and-verify-14\",\"operation\":\"run\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"command\":\"npm install && npm run test:input && npm run typecheck && npm run build\",\"timeoutSeconds\":300}\n\nСводка: код и тесты уже записаны; текущая проблема — отсутствующие node_modules. Этот шаг устанавливает зависимости и запускает валидацию. После успешного результата останутся publish и finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"5cc21f20-acb9-4084-9c20-1595499da9af\",\"commandId\":\"publish-input-dev-15\",\"operation\":\"publish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Implement input manager and developer diagnostics\"}\n\nСводка: реализованы InputManager, query-параметры ?debug=1&course=...&hole=..., F1/F2/F3 developer controls, FPS/debug overlay и presentation minimap; добавлена динамическая dev-интеграция, чтобы обычный production runtime не зависел от diagnostics. Проверки: 5/5 тестов, npm run typecheck, npm run build — успешно. После publish отправлю finish.\n\n",
   "commands": [
     {
       "commandId": "input-inventory-1",
@@ -73,10 +73,16 @@
     },
     {
       "commandId": "install-and-verify-14",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-input-dev-15",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T15:43:04.312Z"
+  "createdAt": "2026-09-16T15:43:29.343Z"
 }
