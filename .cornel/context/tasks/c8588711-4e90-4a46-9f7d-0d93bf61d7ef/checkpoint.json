@@ -1,9 +1,9 @@
 {
   "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
   "branch": "cornel/validaciya-90-lunok-c85887",
-  "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-  "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"c8588711-4e90-4a46-9f7d-0d93bf61d7ef\",\"commandId\":\"publish-validation-15\",\"operation\":\"publish\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"message\":\"Add validation test for complete 90-hole course data set\"}\n\nСводка: изменён только tests/course-data-validation.test.ts. Проверено: typecheck — успешно; production build — успешно; 81 существующая лунка проходит проверки уникальности, геометрии, par/maxShots и типов препятствий. Полный целевой тест пока закономерно падает на 9 courses вместо 10, поэтому после публикации успешный finish возможен только когда в ветке появится десятый курс из параллельной карточки.\n\n",
+  "headSha": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
+  "status": "NEEDS_ATTENTION",
+  "summary": "CORNEL_AI_BLOCKED: валидатор опубликован и готов к интеграции, но завершить карточку успешным finish сейчас нельзя: в назначенной ветке присутствуют только 9 курсов (81 лунка), а задача требует фактически подтвердить 10 курсов × 9 = 90 лунок.\n\nПроверки на текущем состоянии: typecheck — успешно; production build — успешно; проверки уникальности ID, геометрии, par/maxShots и поддерживаемых типов препятствий для имеющихся 81 лунок — успешно. Единственный оставшийся провал целевого теста — expected 10 courses, found 9.\n\nИзменён и опубликован только tests/course-data-validation.test.ts. Следующий шаг сборщика — слить ветку с десятым курсом и эту ветку, после чего повторно запустить npx vitest run tests/course-data-validation.test.ts.\n\n",
   "commands": [
     {
       "commandId": "inspect-validation-1",
@@ -91,10 +91,10 @@
     },
     {
       "commandId": "publish-validation-15",
-      "status": "STARTED",
-      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
-      "exitCode": null
+      "status": "SUCCEEDED",
+      "headSha": "397a7043ee8b73064049079e8e02d4df5b7b6d1a",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-16T15:20:52.128Z"
+  "createdAt": "2026-09-16T15:21:16.119Z"
 }
