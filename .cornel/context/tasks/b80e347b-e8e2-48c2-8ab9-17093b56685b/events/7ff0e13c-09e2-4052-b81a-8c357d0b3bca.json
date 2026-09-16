@@ -1,0 +1,12 @@
+{
+  "id": "7ff0e13c-09e2-4052-b81a-8c357d0b3bca",
+  "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "merge-1",
+    "operation": "run",
+    "command": "git fetch origin cornel/camera-modes-aim-follow-overview-free-6032e1 && git merge --no-edit FETCH_HEAD; echo \"MERGE_EXIT=$?\"; git status --short"
+  },
+  "createdAt": "2026-09-16T18:22:37.199Z"
+}
