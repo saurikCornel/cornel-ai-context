@@ -1,0 +1,11 @@
+{
+  "id": "7fcb883c-c508-4eca-a7f9-dd509b441642",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "ls-2",
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f"
+  },
+  "createdAt": "2026-09-16T19:40:26.624Z"
+}

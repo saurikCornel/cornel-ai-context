@@ -3,14 +3,20 @@
   "branch": "cornel/door-obstacle-99f73d",
   "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
   "status": "RUNNING",
-  "summary": "Начинаю с изучения структуры слоя препятствий.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"path\":\"src\",\"maxLines\":400}\n```\n\nЖду результат от worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Читаю слой препятствий, чтобы встроить Door в существующий lifecycle.\n\n```json\n{\"version\":1,\"taskId\":\"99f73df3-a10f-42f0-b541-73cf100b7f40\",\"commandId\":\"ls-2\",\"operation\":\"ls\",\"headSha\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"path\":\"src/obstacles\",\"maxLines\":200}\n```\n\nЖду результат от worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
+      "status": "SUCCEEDED",
+      "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "ls-2",
       "status": "STARTED",
       "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T19:22:43.867Z"
+  "createdAt": "2026-09-16T19:40:24.264Z"
 }

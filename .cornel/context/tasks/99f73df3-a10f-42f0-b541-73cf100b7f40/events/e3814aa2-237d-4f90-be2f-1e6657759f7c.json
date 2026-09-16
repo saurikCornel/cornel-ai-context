@@ -1,0 +1,17 @@
+{
+  "id": "e3814aa2-237d-4f90-be2f-1e6657759f7c",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "src/obstacles: 0 файлов",
+    "outputDigest": "1a4018534103d3fc3fa08da9862924810b2e42a9b3bcdf8f5ee8003616a92ec6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T19:40:26.687Z"
+}
