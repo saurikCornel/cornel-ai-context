@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-hole-types-7\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/courses/types.ts:1-260\",\"src/courses/Hole.ts:1-220\",\"src/contracts/math.ts:1-220\",\"src/contracts/game.ts:1-260\",\"src/gameplay/types.ts:1-260\"]}\n```\n\nСводка: TypeScript работает в строгом режиме, поэтому новые публичные контракты будут явными и без неиспользуемых параметров. Изменений нет. Следующий шаг — по полной модели лунки реализовать детерминированный анализ пути, генерацию 30–100+ ударов и их оценку.  \n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"read-obstacle-shapes-8\",\"operation\":\"read\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"paths\":[\"src/courses/types.ts:1-80\",\"src/courses/data/green-hills.ts:1-180\",\"src/gameplay/gameplay.test.ts:1-260\",\"src/assets/assets.test.ts:1-120\"]}\n```\n\nСводка: найдены существующие `ShotCommand`, `Hole` и `PlayerProfile` — AI сможет возвращать совместимую команду без доступа к клавиатуре или «идеальному» решению. Изменений нет. Следующий шаг — реализовать новые изолированные модули и покрыть детерминированными тестами профиль навыков, штрафы кандидатов и Elo.  \n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "read-hole-types-7",
+      "status": "SUCCEEDED",
+      "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-obstacle-shapes-8",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T16:22:07.406Z"
+  "createdAt": "2026-09-16T16:26:57.354Z"
 }
