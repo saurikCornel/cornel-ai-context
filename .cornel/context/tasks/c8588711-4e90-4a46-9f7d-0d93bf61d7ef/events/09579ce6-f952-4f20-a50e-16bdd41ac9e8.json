@@ -1,0 +1,11 @@
+{
+  "id": "09579ce6-f952-4f20-a50e-16bdd41ac9e8",
+  "taskId": "c8588711-4e90-4a46-9f7d-0d93bf61d7ef",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-validation-2",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-16T13:54:32.662Z"
+}
