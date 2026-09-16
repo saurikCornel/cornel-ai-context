@@ -1,0 +1,11 @@
+{
+  "id": "37f4db49-db38-43b1-a287-48d31ee615fe",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "verify-camera-controller-7",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:17:09.405Z"
+}

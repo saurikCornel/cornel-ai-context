@@ -1,0 +1,12 @@
+{
+  "id": "0d99cd39-23b1-4728-9b9d-28c5ac18e878",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-camera-controller-7",
+    "operation": "run",
+    "command": "npx vitest run src/camera/CameraController.test.ts && npm run build"
+  },
+  "createdAt": "2026-09-16T16:17:09.404Z"
+}
