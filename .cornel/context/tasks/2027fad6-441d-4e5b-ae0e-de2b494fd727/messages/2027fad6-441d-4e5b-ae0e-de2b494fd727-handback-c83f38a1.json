@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "write-rating-and-matchmaking-17 был отправлен, но в переданных RESULT его результата ещё нет. Не повторяю запись. Проверяю рабочую копию чтением: появились ли RatingSystem.ts и изменения планировщика.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"inspect-rating-write-18\",\"operation\":\"ls\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"path\":\"src/gameplay\",\"maxLines\":200}\n\nСводка: write-bot-planner-16 подтверждён. Результат следующей записи пока не подтверждён; безопасно проверяю её последствия без повторения. Если RatingSystem.ts появился, следующим шагом прочитаю итоговые API и добавлю тесты; если нет — восстановлю отсутствующую часть новой командой.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T17:35:08.895Z"
+}

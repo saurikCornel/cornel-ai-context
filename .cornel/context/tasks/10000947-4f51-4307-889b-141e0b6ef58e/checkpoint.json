@@ -3,7 +3,7 @@
   "branch": "cornel/slit-camera-input-and-zoom-100009",
   "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
   "status": "RUNNING",
-  "summary": "Дочитываю вторую сторону конфликта.\n\n```json\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"read-camera-index-2\",\"operation\":\"read\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"paths\":[\"src/camera/index.ts:6-13\"]}\n```\n\nЖду RESULT worker — он придёт в этот чат отдельным сообщением.\n\nСводка: конфликт локализован в `src/camera/index.ts` (13 строк, один блок маркеров с строки 6); HEAD-сторона экспортирует `SmoothCameraRig`, `Smoothing`, `ThreeCameraBinding`, встречная — `CameraInput` и, возможно, ещё модули; следующий шаг — объединить оба набора экспортов, снять маркеры, завершить merge и прогнать `typecheck`/`test:camera`/`build`.\n\n",
+  "summary": "Конфликт чисто структурный — обе стороны добавляют экспорты в barrel-файл, смысл сохраняется объединением. Записываю объединённую версию, завершаю merge и прогоняю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"10000947-4f51-4307-889b-141e0b6ef58e\",\"commandId\":\"resolve-and-verify-1\",\"operation\":\"run\",\"headSha\":\"525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a\",\"command\":\"cat > src/camera/index.ts <<'EOF'\\nexport * from './CameraCollision';\\nexport * from './CameraInput';\\nexport * from './CameraPose';\\nexport * from './CameraTransition';\\nexport * from './Easing';\\nexport * from './RapierCameraCollision';\\nexport * from './SmoothCameraRig';\\nexport * from './Smoothing';\\nexport * from './ThreeCameraBinding';\\nEOF\\necho '--- RESOLVED FILE ---'; cat -n src/camera/index.ts; echo '--- MARKERS LEFT ---'; grep -rn -e '^<<<<<<<' -e '^>>>>>>>' src || echo none; echo '--- COMMIT ---'; git add -A && git commit --no-edit; echo '--- LOG ---'; git log --oneline -3; echo '--- TYPECHECK ---'; npm run typecheck; echo \\\"typecheck=$?\\\"; echo '--- TEST CAMERA ---'; npx vitest run src/camera; echo \\\"camera=$?\\\"; echo '--- TEST UI ---'; npx vitest run src/ui; echo \\\"ui=$?\\\"; echo '--- TEST INPUT ---'; npx vitest run src/input src/dev; echo \\\"input=$?\\\"; echo '--- BUILD ---'; npm run build; echo \\\"build=$?\\\"\",\"timeoutSeconds\":900}\n```\n\nЖду RESULT worker — он придёт в этот чат отдельным сообщением.\n\nСводка: решение — разрешить конфликт объединением обоих наборов экспортов в `src/camera/index.ts` (HEAD: `SmoothCameraRig`, `Smoothing`, `ThreeCameraBinding`; встречная ветка: `CameraInput`), ничего не отбрасывая; изменённые файлы — `src/camera/index.ts` (плюс пришедшие из merge `src/camera/CameraInput.ts`, `src/camera/CameraInput.test.ts`); проверки — typecheck, vitest по camera/ui/input, сборка запущены этой командой; следующий шаг — по результату publish и finish либо починка падений.\n\n",
   "commands": [
     {
       "commandId": "merge-camera-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "read-camera-index-2",
+      "status": "SUCCEEDED",
+      "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "resolve-and-verify-1",
       "status": "STARTED",
       "headSha": "525f35345ddc2f81e6b1dcffbfe1f88919bf6b5a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T17:33:30.302Z"
+  "createdAt": "2026-09-16T17:35:06.652Z"
 }

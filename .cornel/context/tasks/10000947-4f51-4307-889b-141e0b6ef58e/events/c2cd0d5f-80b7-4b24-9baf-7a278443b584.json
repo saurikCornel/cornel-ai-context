@@ -1,0 +1,12 @@
+{
+  "id": "c2cd0d5f-80b7-4b24-9baf-7a278443b584",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "resolve-and-verify-1",
+    "operation": "run",
+    "command": "cat > src/camera/index.ts <<'EOF'\nexport * from './CameraCollision';\nexport * from './CameraInput';\nexport * from './CameraPose';\nexport * from './CameraTransition';\nexport * from './Easing';\nexport * from './RapierCameraCollision';\nexport * from './SmoothCameraRig';\nexport * from './Smoothing';\nexport * from './ThreeCameraBinding';\nEOF\necho '--- RESOLVED FILE ---'; cat -n src/camera/index.ts; echo '--- MARKERS LEFT ---'; grep -rn -e '^<<<<<<<' -e '^>>>>>>>' src || echo none; echo '--- COMMIT ---'; git add -A && git commit --no-edit; echo '--- LOG ---'; git log --oneline -3; echo '--- TYPECHECK ---'; npm run typecheck; echo \"typecheck=$?\"; echo '--- TEST CAMERA ---'; npx vitest run src/camera; echo \"camera=$?\"; echo '--- TEST UI ---'; npx vitest run src/ui; echo \"ui=$?\"; echo '--- TEST INPUT ---'; npx vitest run src/input src/dev; echo \"input=$?\"; echo '--- BUILD ---'; npm run build; echo \"build=$?\""
+  },
+  "createdAt": "2026-09-16T17:35:06.648Z"
+}
