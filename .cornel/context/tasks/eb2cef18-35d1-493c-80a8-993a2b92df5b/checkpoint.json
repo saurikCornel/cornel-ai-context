@@ -2,8 +2,8 @@
   "taskId": "eb2cef18-35d1-493c-80a8-993a2b92df5b",
   "branch": "cornel/chaos-dimension-i-validaciya-90-lunok-eb2cef",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "NEEDS_ATTENTION",
-  "summary": "CORNEL_AI_BLOCKED\n\nФактический статус по Issue #33 не изменился: новых RESULT после безопасной проверки worker нет. Последний подтверждённый RESULT остаётся REJECTED — Задача не принимает команды.\n\nЗадача не выполнена и не проверена, поэтому finish сейчас отправлять нельзя. Новых команд worker не посылаю, чтобы не повторять их бесконечно и не обходить отсутствие RESULT.\n\nПричина блокировки: worker для taskId eb2cef18-35d1-493c-80a8-993a2b92df5b по-прежнему не принимает/не исполняет команды этой карточки.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "",
   "commands": [],
-  "createdAt": "2026-09-16T13:40:08.700Z"
+  "createdAt": "2026-09-16T13:40:48.787Z"
 }
