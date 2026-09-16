@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 1,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Причина теперь ясна: finish внутри worker ожидает локальный FETCH_HEAD, а при подготовке новой рабочей копии этот служебный ref отсутствует. Код и проверки исправлять не нужно. Создаю FETCH_HEAD обычным fetch целевой ветки, не меняя исходники.\n\nJSON\n{\"version\":1,\"taskId\":\"74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\",\"commandId\":\"prepare-finish-11\",\"operation\":\"run\",\"headSha\":\"1bb641198d5780807973ef2542fcd56dab46226e\",\"command\":\"set -e\\ngit fetch origin cornel/74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\\necho '=== FETCH_HEAD ==='\\ngit rev-parse FETCH_HEAD\\necho '=== HEAD ==='\\ngit rev-parse HEAD\\necho '=== STATUS ==='\\ngit status --short\\ntest \\\"$(git rev-parse FETCH_HEAD)\\\" = \\\"$(git rev-parse HEAD)\\\"\",\"timeoutSeconds\":300}\n\nСводка: опубликованный код не меняется; проблема исключительно в отсутствующем служебном FETCH_HEAD; сейчас восстанавливается необходимое состояние worker. После успешного результата снова отправлю finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T12:00:55.187Z"
+}

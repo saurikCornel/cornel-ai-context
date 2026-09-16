@@ -1,0 +1,12 @@
+{
+  "id": "f8f18e97-c036-46db-b255-ce52277fe411",
+  "taskId": "74f737d3-ae6d-4b27-94bd-b6de4a27c4d8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "prepare-finish-11",
+    "operation": "run",
+    "command": "set -e\ngit fetch origin cornel/74f737d3-ae6d-4b27-94bd-b6de4a27c4d8\necho '=== FETCH_HEAD ==='\ngit rev-parse FETCH_HEAD\necho '=== HEAD ==='\ngit rev-parse HEAD\necho '=== STATUS ==='\ngit status --short\ntest \"$(git rev-parse FETCH_HEAD)\" = \"$(git rev-parse HEAD)\""
+  },
+  "createdAt": "2026-09-16T12:00:55.187Z"
+}
