@@ -1,0 +1,17 @@
+{
+  "id": "3da2dca8-6341-481d-a226-83a95848a060",
+  "taskId": "39ad29ab-7829-4eb7-b26b-b8a92971c227",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "npm-install-12",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "\nadded 84 packages, and audited 85 packages in 2s\n\n17 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\n",
+    "outputDigest": "68d6c80cba979757183891ebaf2c854b169697922f334a581e2e8dac633a759f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T21:24:31.269Z"
+}
