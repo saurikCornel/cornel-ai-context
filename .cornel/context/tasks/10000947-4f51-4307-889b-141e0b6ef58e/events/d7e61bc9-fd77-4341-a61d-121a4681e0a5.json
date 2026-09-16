@@ -1,0 +1,12 @@
+{
+  "id": "d7e61bc9-fd77-4341-a61d-121a4681e0a5",
+  "taskId": "10000947-4f51-4307-889b-141e0b6ef58e",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "restore-merge-and-resolve-5",
+    "operation": "run",
+    "command": "set -e\nincoming=8aab53119ae674d439b81094e70eb2abcb9d7dcb\nmerge_head=$(git rev-parse --git-path MERGE_HEAD)\nmerge_msg=$(git rev-parse --git-path MERGE_MSG)\nprintf '%s\\n' \"$incoming\" > \"$merge_head\"\nprintf \"Merge branch 'cornel/camera-input-and-zoom-5ded69' into cornel/slit-camera-input-and-zoom-100009\\n\" > \"$merge_msg\"\ncat > src/camera/index.ts <<'EOF'\nexport * from './CameraCollision';\nexport * from './CameraInput';\nexport * from './CameraPose';\nexport * from './CameraTransition';\nexport * from './Easing';\nexport * from './RapierCameraCollision';\nexport * from './SmoothCameraRig';\nexport * from './Smoothing';\nexport * from './ThreeCameraBinding';\nEOF\ngit add -A\necho '--- STATUS ---'\ngit status --short\necho '--- UNMERGED ---'\ngit diff --name-only --diff-filter=U\necho '--- MERGE_HEAD ---'\ncat \"$merge_head\"\necho '--- FILE ---'\ncat -n src/camera/index.ts"
+  },
+  "createdAt": "2026-09-16T17:59:53.186Z"
+}
