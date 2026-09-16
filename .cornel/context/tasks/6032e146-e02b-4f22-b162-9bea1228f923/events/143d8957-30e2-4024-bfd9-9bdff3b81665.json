@@ -1,0 +1,12 @@
+{
+  "id": "143d8957-30e2-4024-bfd9-9bdff3b81665",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "published-camera-head-26",
+    "operation": "run",
+    "command": "git ls-remote origin refs/heads/cornel/camera-modes-aim-follow-overview-free-6032e1 | cut -f1"
+  },
+  "createdAt": "2026-09-16T18:10:33.825Z"
+}

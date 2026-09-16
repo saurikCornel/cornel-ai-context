@@ -1,0 +1,11 @@
+{
+  "id": "e69aba25-41b9-491a-b02c-d5304f672fee",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "published-camera-head-26",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T18:10:33.826Z"
+}

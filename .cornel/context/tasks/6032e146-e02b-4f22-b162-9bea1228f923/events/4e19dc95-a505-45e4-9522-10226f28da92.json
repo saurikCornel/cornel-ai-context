@@ -1,0 +1,12 @@
+{
+  "id": "4e19dc95-a505-45e4-9522-10226f28da92",
+  "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "published-camera-head-26",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T18:10:36.221Z"
+}

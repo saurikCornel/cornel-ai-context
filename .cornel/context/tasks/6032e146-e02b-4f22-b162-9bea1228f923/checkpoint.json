@@ -1,9 +1,9 @@
 {
   "taskId": "6032e146-e02b-4f22-b162-9bea1228f923",
   "branch": "cornel/camera-modes-aim-follow-overview-free-6032e1",
-  "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+  "headSha": "82e3cbd79977f7865a89bde4c9c7b6c7b2aef999",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"publish-camera-modes-25\",\"operation\":\"publish\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"message\":\"Implement camera aim follow overview and free modes\"}\n\nСводка: реализованы режимы aim, follow, overview, free, плавные переходы, free movement, адаптация InputManager, collision-aware позиционирование и публичный экспорт контроллера.\nИзменённые файлы: src/camera/CameraController.ts, src/camera/CameraController.test.ts, src/camera/index.ts.\nПроверки: 11/11 camera-тестов прошли; tsc -b прошёл; production npm run build прошёл.\nСледующий шаг: после успешного publish отправлю finish.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6032e146-e02b-4f22-b162-9bea1228f923\",\"commandId\":\"published-camera-head-26\",\"operation\":\"run\",\"headSha\":\"77b38d1780726161f87e511138beae87cceeb098\",\"command\":\"git ls-remote origin refs/heads/cornel/camera-modes-aim-follow-overview-free-6032e1 | cut -f1\",\"timeoutSeconds\":300}\n\nСводка: реализация опубликована успешно.\nИзменённые файлы: src/camera/CameraController.ts, src/camera/CameraController.test.ts, src/camera/index.ts.\nПроверки: 11/11 camera-тестов, typecheck и production build — успешно.\nСледующий шаг: после получения опубликованного head отправить finish.\n\n",
   "commands": [
     {
       "commandId": "read-instructions-1",
@@ -139,10 +139,16 @@
     },
     {
       "commandId": "publish-camera-modes-25",
+      "status": "SUCCEEDED",
+      "headSha": "82e3cbd79977f7865a89bde4c9c7b6c7b2aef999",
+      "exitCode": 0
+    },
+    {
+      "commandId": "published-camera-head-26",
       "status": "STARTED",
       "headSha": "77b38d1780726161f87e511138beae87cceeb098",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:03:27.824Z"
+  "createdAt": "2026-09-16T18:10:33.831Z"
 }
