@@ -1,0 +1,11 @@
+{
+  "id": "3227e04c-22f3-4a0c-a260-802bb18c1e40",
+  "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "camera-status-22",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-16T12:53:55.744Z"
+}

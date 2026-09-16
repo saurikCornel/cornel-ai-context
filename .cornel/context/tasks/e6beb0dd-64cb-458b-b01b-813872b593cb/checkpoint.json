@@ -2,8 +2,8 @@
   "taskId": "e6beb0dd-64cb-458b-b01b-813872b593cb",
   "branch": "cornel/camera-controller-and-controls-e6beb0",
   "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
-  "status": "WAITING_CHATGPT",
-  "summary": "",
+  "status": "RUNNING",
+  "summary": "Фактический статус: в Issue #35 по-прежнему нет RESULT по camera-types-21, поэтому успешную запись файла подтвердить нельзя.\n\nПроверяю локальную рабочую копию через worker. Если types.ts появился — сразу продолжаю с CameraController.ts; если каталог пуст — повторю только запись types.ts.\n\nJSON\n{\"version\":1,\"taskId\":\"e6beb0dd-64cb-458b-b01b-813872b593cb\",\"commandId\":\"camera-status-22\",\"operation\":\"ls\",\"headSha\":\"768daca05831f4622211da0e377430b36c00f9ff\",\"path\":\"src/camera\",\"maxLines\":100}\n\n",
   "commands": [
     {
       "commandId": "inspect-camera-2",
@@ -40,7 +40,13 @@
       "status": "SUCCEEDED",
       "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
       "exitCode": 0
+    },
+    {
+      "commandId": "camera-status-22",
+      "status": "STARTED",
+      "headSha": "768daca05831f4622211da0e377430b36c00f9ff",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T12:53:21.672Z"
+  "createdAt": "2026-09-16T12:53:55.746Z"
 }
