@@ -1,0 +1,12 @@
+{
+  "id": "f7d7a361-3ed2-4b58-84f3-7c314dba3bad",
+  "taskId": "26c082ce-4b29-4482-9ed1-be2b215b4dc5",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "run-8",
+    "operation": "run",
+    "command": "cat > src/physics/index.ts <<'EOF'\nexport * from './CollisionLayers';\nexport * from './GolfBallPhysics';\nexport * from './helpers';\nexport * from './PhysicsWorld';\nexport * from './ShotSystem';\nexport * from './SurfaceModifiers';\nEOF"
+  },
+  "createdAt": "2026-09-16T22:00:05.247Z"
+}
