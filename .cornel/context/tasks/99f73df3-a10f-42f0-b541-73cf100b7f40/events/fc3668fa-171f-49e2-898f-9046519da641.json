@@ -1,0 +1,17 @@
+{
+  "id": "fc3668fa-171f-49e2-898f-9046519da641",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "### src/physics/CollisionLayers.ts (строки 1-16 из 16)\n1: export const CollisionLayers = {\n2:   BALL: 0x0001,\n3:   COURSE: 0x0002,\n4:   OBSTACLE: 0x0004,\n5:   SENSOR: 0x0008,\n6: } as const;\n7: \n8: export function collisionGroups(membership: number, filter: number): number {\n9:   return ((membership & 0xffff) << 16) | (filter & 0xffff);\n10: }\n11: \n12: export const BALL_COLLISION_GROUPS = collisionGroups(\n13:   CollisionLayers.BALL,\n14:   CollisionLayers.COURSE | CollisionLayers.OBSTACLE | CollisionLayers.SENSOR,\n15: );\n16:",
+    "outputDigest": "b9071230920075966f4a95287ab183b01513aa54490c883c7183dcb9ebe12001",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T22:38:04.152Z"
+}
