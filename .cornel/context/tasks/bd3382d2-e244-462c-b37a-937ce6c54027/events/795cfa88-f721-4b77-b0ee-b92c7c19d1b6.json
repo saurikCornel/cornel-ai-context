@@ -1,0 +1,11 @@
+{
+  "id": "795cfa88-f721-4b77-b0ee-b92c7c19d1b6",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "review-camera-diff-10",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:31:07.094Z"
+}

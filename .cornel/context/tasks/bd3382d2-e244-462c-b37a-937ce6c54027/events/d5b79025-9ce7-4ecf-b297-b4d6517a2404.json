@@ -1,0 +1,17 @@
+{
+  "id": "d5b79025-9ce7-4ecf-b297-b4d6517a2404",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "review-camera-diff-10",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098",
+    "output": " M src/camera/index.ts\n?? src/camera/CameraController.test.ts\n?? src/camera/CameraController.ts\n",
+    "outputDigest": "8494954aa06672f5f65d2ec723afc0908b855dc09e1e49b30ce5dd745279ddca",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T16:31:07.219Z"
+}

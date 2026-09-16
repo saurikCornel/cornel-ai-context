@@ -1,0 +1,12 @@
+{
+  "id": "a5734ff1-0626-429a-acd7-b7d01d1e797d",
+  "taskId": "bd3382d2-e244-462c-b37a-937ce6c54027",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "review-camera-diff-10",
+    "operation": "run",
+    "command": "git diff --check && git status --short"
+  },
+  "createdAt": "2026-09-16T16:31:04.754Z"
+}
