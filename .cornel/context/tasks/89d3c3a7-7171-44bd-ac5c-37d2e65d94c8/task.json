@@ -2,7 +2,7 @@
   "id": "89d3c3a7-7171-44bd-ac5c-37d2e65d94c8",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "chatgpt",
+  "agent": "codex",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -19,11 +19,12 @@
   "workspaceSyncedSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T13:42:59.614Z",
-  "updatedAt": "2026-09-16T15:20:27.176Z",
+  "updatedAt": "2026-09-16T15:20:41.376Z",
   "issue": 39,
   "chatUrl": "https://chatgpt.com/c/6aaa9cf0-e2c8-83eb-b468-d1bb6eeac5a9",
   "error": null,
   "browserError": null,
-  "statusChecks": 2,
-  "currentHead": "d81418b43e9fc4abd307572eeef1f2e57371e39a"
+  "statusChecks": 0,
+  "currentHead": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+  "cliSession": null
 }
