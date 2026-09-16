@@ -1,0 +1,12 @@
+{
+  "id": "51b47198-fb80-482a-8ece-000263db0725",
+  "taskId": "5cc21f20-acb9-4084-9c20-1595499da9af",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "dev-tests-12",
+    "operation": "run",
+    "command": "cat > src/input/InputManager.test.ts <<'EOF'\n// @vitest-environment jsdom\nimport {describe,expect,it} from 'vitest';\nimport {InputManager} from './InputManager';\ndescribe('InputManager',()=>{\n it('tracks keyboard actions across frames',()=>{const input=new InputManager({target:window,pointerTarget:document});window.dispatchEvent(new KeyboardEvent('keydown',{code:'KeyW'}));expect(input.isDown('camera-forward')).toBe(true);expect(input.wasPressed('camera-forward')).toBe(true);input.endFrame();expect(input.wasPressed('camera-forward')).toBe(false);window.dispatchEvent(new KeyboardEvent('keyup',{code:'KeyW'}));expect(input.wasReleased('camera-forward')).toBe(true);input.dispose()});\n it('tracks primary pointer and wheel',()=>{const input=new InputManager({target:window,pointerTarget:document});document.dispatchEvent(new PointerEvent('pointerdown',{button:0,clientX:12,clientY:34}));expect(input.pointer.primaryDown).toBe(true);expect(input.isDown('primary')).toBe(true);document.dispatchEvent(new WheelEvent('wheel',{deltaY:120,cancelable:true}));expect(input.pointer.wheel).toBe(120);input.endFrame();expect(input.pointer.wheel).toBe(0);input.dispose()});\n});\nEOF\ncat > src/dev/dev.test.ts <<'EOF'\n// @vitest-environment jsdom\nimport {describe,expect,it} from 'vitest';\nimport {parseLaunchOptions} from './LaunchOptions';\nimport {PresentationMinimap} from './PresentationMinimap';\ndescribe('launch options',()=>{\n it('parses debug course and hole',()=>{expect(parseLaunchOptions('?debug=1&course=neon-city&hole=7')).toEqual({debug:true,courseId:'neon-city',hole:7})});\n it('ignores invalid holes',()=>{expect(parseLaunchOptions('?course=green-hills&hole=0')).toEqual({debug:false,courseId:'green-hills'})});\n});\ndescribe('presentation minimap',()=>{it('toggles visibility',()=>{const m=new PresentationMinimap();expect(m.visible).toBe(false);m.setVisible(true);expect(m.visible).toBe(true);expect(m.element.querySelector('canvas')).not.toBeNull()})});\nEOF\nnpm run test:input && npm run typecheck && npm run build"
+  },
+  "createdAt": "2026-09-16T15:42:00.218Z"
+}
