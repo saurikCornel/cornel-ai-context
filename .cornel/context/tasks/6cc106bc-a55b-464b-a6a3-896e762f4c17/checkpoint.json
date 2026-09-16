@@ -3,7 +3,7 @@
   "branch": "cornel/core-rendering-and-scene-infrastructure-6cc106",
   "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"inspect-current-head-9\",\"operation\":\"run\",\"headSha\":\"5c034e09eb377a457c5c04648fd28dbe3602e3a2\",\"command\":\"git rev-parse HEAD && git status --short && test -f src/core/Renderer.ts && test -f src/core/SceneManager.ts && echo CORE_FILES_PRESENT\",\"timeoutSeconds\":300}\n\nСводка: предыдущий finish отклонён только из-за смены head ветки; код и проверки ранее были успешны. Сейчас выясняю фактическое состояние ветки, после чего либо проверю новый head и завершу задачу, либо сообщу конкретную причину расхождения.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"6cc106bc-a55b-464b-a6a3-896e762f4c17\",\"commandId\":\"remote-head-check-10\",\"operation\":\"run\",\"headSha\":\"5c034e09eb377a457c5c04648fd28dbe3602e3a2\",\"command\":\"git ls-remote origin refs/heads/cornel/core-rendering-and-scene-infrastructure-6cc106\",\"timeoutSeconds\":300}\n\nСводка: локальный commit корректен и оба core-файла присутствуют; сейчас выясняю только новый удалённый head ветки, чтобы проверить уже его и завершить карточку без перезаписи или force-push.\n\n",
   "commands": [
     {
       "commandId": "inspect-core-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "inspect-current-head-9",
+      "status": "SUCCEEDED",
+      "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
+      "exitCode": 0
+    },
+    {
+      "commandId": "remote-head-check-10",
       "status": "STARTED",
       "headSha": "5c034e09eb377a457c5c04648fd28dbe3602e3a2",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T14:01:34.277Z"
+  "createdAt": "2026-09-16T14:23:35.166Z"
 }

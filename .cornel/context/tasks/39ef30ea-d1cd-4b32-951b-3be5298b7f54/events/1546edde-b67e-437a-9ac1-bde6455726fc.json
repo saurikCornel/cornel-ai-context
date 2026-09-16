@@ -1,0 +1,12 @@
+{
+  "id": "1546edde-b67e-437a-9ac1-bde6455726fc",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "chaos-finish-9",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-16T14:23:30.236Z"
+}
