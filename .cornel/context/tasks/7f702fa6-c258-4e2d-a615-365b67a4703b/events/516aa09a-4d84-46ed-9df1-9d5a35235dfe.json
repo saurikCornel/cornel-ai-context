@@ -1,0 +1,11 @@
+{
+  "id": "516aa09a-4d84-46ed-9df1-9d5a35235dfe",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "test-zones-3",
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72"
+  },
+  "createdAt": "2026-09-16T23:29:08.910Z"
+}

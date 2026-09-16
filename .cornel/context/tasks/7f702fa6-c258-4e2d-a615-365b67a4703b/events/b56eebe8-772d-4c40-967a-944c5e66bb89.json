@@ -1,0 +1,17 @@
+{
+  "id": "b56eebe8-772d-4c40-967a-944c5e66bb89",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "test-zones-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/7f702fa6-c258-4e2d-a615-365b67a4703b\u001b[39m\n\n \u001b[32m✓\u001b[39m src/gameplay/zones/zones.test.ts \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m7 passed\u001b[39m\u001b[22m\u001b[90m (7)\u001b[39m\n\u001b[2m   Start at \u001b[22m 02:29:12\n\u001b[2m   Duration \u001b[22m 180ms\u001b[2m (transform 76%, import 16%, tests 4%, worker 4%)\u001b[22m\n\n",
+    "outputDigest": "b946616ef37a0d99b81049d13db157c977f34d4d53bc596ce60797cb5cb8f730",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T23:29:12.408Z"
+}
