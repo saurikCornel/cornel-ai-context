@@ -1,0 +1,11 @@
+{
+  "id": "730b8cae-0ef0-4f66-b0f3-4ce4d0386320",
+  "taskId": "2027fad6-441d-4e5b-ae0e-de2b494fd727",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "inspect-tree-2",
+    "headSha": "77b38d1780726161f87e511138beae87cceeb098"
+  },
+  "createdAt": "2026-09-16T16:01:48.875Z"
+}
