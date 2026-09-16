@@ -3,7 +3,7 @@
   "branch": "cornel/teleporter-and-force-volumes-7bf6e7",
   "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
   "status": "RUNNING",
-  "summary": "Запускаю проверку типов на актуальном headSha после публикации, чтобы удовлетворить требование успешной проверки перед finish.\n```\n{\"version\":1,\"taskId\":\"7bf6e7e5-f135-4041-ba52-cd257915d49d\",\"commandId\":\"verify-type-1\",\"operation\":\"run\",\"headSha\":\"78c76777594f13c92a7045dd28b4a4110f9d9a0c\",\"command\":\"npm run typecheck\",\"timeoutSeconds\":300}\n```\nCORNEL_AI_YIELD\n\nЗапускаю проверку типов на актуальном headSha после публикации, чтобы удовлетворить требование успешной проверки перед finish.\njson\n1\n{\"version\":1,\"taskId\":\"7bf6e7e5-f135-4041-ba52-cd257915d49d\",\"commandId\":\"verify-type-1\",\"operation\":\"run\",\"headSha\":\"78c76777594f13c92a7045dd28b4a4110f9d9a0c\",\"command\":\"npm run typecheck\",\"timeoutSeconds\":300}\n",
+  "summary": "```\n{\"version\":1,\"taskId\":\"7bf6e7e5-f135-4041-ba52-cd257915d49d\",\"commandId\":\"finish-2\",\"operation\":\"finish\",\"headSha\":\"78c76777594f13c92a7045dd28b4a4110f9d9a0c\",\"message\":\"Реализованы Teleporter, Fan и Conveyor с API конфигов, физическим поведением и targeted-тестами. Typecheck и 12 тестов пройдены успешно. Опубликован коммит 78c7677.\"}\n```\nCORNEL_AI_YIELD\n\njson\n1\n{\"version\":1,\"taskId\":\"7bf6e7e5-f135-4041-ba52-cd257915d49d\",\"commandId\":\"finish-2\",\"operation\":\"finish\",\"headSha\":\"78c76777594f13c92a7045dd28b4a4110f9d9a0c\",\"message\":\"Реализованы Teleporter, Fan и Conveyor с API конфигов, физическим поведением и targeted-тестами. Typecheck и 12 тестов пройдены успешно. Опубликован коммит 78c7677.\"}\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -91,10 +91,16 @@
     },
     {
       "commandId": "verify-type-1",
+      "status": "SUCCEEDED",
+      "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-2",
       "status": "STARTED",
       "headSha": "78c76777594f13c92a7045dd28b4a4110f9d9a0c",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:57:32.000Z"
+  "createdAt": "2026-09-16T21:58:08.068Z"
 }
