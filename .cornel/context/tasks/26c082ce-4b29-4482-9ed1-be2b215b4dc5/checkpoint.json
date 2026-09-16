@@ -2,8 +2,8 @@
   "taskId": "26c082ce-4b29-4482-9ed1-be2b215b4dc5",
   "branch": "cornel/surface-modifiers-26c082",
   "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
-  "status": "RUNNING",
-  "summary": "Теперь я понимаю структуру. Мне нужно:\nДобавить 'mud' в тип SurfaceMaterial в src/courses/types.ts.\nСоздать файл src/physics/SurfaceModifiers.ts с конфигурациями и логикой для IceSurface и MudSurface.\nДобавить тесты в src/physics/surface-modifiers.test.ts.\nЭкспортировать новые типы из src/physics/index.ts.\nНачну с обновления типа SurfaceMaterial в src/courses/types.ts.\n```\n{\"version\":1,\"taskId\":\"26c082ce-4b29-4482-9ed1-be2b215b4dc5\",\"commandId\":\"run-2\",\"operation\":\"run\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"command\":\"sed -i \\\"s/export type SurfaceMaterial = 'green' | 'rough' | 'sand' | 'ice' | 'wood' | 'stone' | 'metal';/export type SurfaceMaterial = 'green' | 'rough' | 'sand' | 'ice' | 'mud' | 'wood' | 'stone' | 'metal';/\\\" src/courses/types.ts\",\"timeoutSeconds\":30}\n```\n\nТеперь я понимаю структуру. Мне нужно:\nДобавить 'mud' в тип SurfaceMaterial в src/courses/types.ts.\nСоздать файл src/physics/SurfaceModifiers.ts с конфигурациями и логикой для IceSurface и MudSurface.\nДобавить тесты в src/physics/surface-modifiers.test.ts.\nЭкспортировать новые типы из src/physics/index.ts.\nНачну с обновления типа SurfaceMaterial в src/courses/types.ts.\njson\n1\n{\"version\":1,\"taskId\":\"26c082ce-4b29-4482-9ed1-be2b215b4dc5\",\"commandId\":\"run-2\",\"operation\":\"run\",\"headSha\":\"2711f9e6cac19128adede9bf29adb37faff86a72\",\"command\":\"sed -i \\\"s/export type SurfaceMaterial = 'green' | 'rough' | 'sand' | 'ice' | 'wood' | 'stone' | 'metal';/export type SurfaceMaterial = 'green' | 'rough' | 'sand' | 'ice' | 'mud' | 'wood' | 'stone' | 'metal';/\\\" src/courses/types.ts\",\"timeoutSeconds\":30}",
+  "status": "NEEDS_ATTENTION",
+  "summary": "CORNEL_AI_BLOCKED\nПричина: Локальный worker отказался выполнять команду из-за нехватки свободного места на диске (доступно 880 МБ, требуется минимум 1024 МБ).\nПожалуйста, освободите место на диске компьютера владельца, чтобы я мог продолжить внесение изменений в файлы и запуск тестов. После этого я повторю попытку с новым commandId.\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -49,10 +49,10 @@
     },
     {
       "commandId": "run-2",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "2711f9e6cac19128adede9bf29adb37faff86a72",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T21:45:00.678Z"
+  "createdAt": "2026-09-16T21:47:37.685Z"
 }
