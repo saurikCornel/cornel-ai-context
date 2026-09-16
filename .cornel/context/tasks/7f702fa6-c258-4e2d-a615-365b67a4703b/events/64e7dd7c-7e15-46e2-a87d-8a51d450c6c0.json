@@ -1,0 +1,12 @@
+{
+  "id": "64e7dd7c-7e15-46e2-a87d-8a51d450c6c0",
+  "taskId": "7f702fa6-c258-4e2d-a615-365b67a4703b",
+  "type": "RATE_LIMIT",
+  "text": "Qwen попросил замедлиться: диалог закрыт, пауза 300 с, затем продолжаем («New ChatCommunityCoderProjectsNew ProjectAll chatsTodayNew chatDoor Obstacle ImplementationДинамические препятствияРазработка зон препятствийРеализация препятст»)",
+  "detail": {
+    "kind": "usage",
+    "agent": "qwen",
+    "text": "New ChatCommunityCoderProjectsNew ProjectAll chatsTodayNew chatDoor Obstacle ImplementationДинамические препятствияРазработка зон препятствийРеализация препятствий и амбразурРеализация модификаторов п"
+  },
+  "createdAt": "2026-09-16T22:33:00.476Z"
+}
