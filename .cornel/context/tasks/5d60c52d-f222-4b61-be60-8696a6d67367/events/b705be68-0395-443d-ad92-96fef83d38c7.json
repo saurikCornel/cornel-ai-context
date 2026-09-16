@@ -1,0 +1,17 @@
+{
+  "id": "b705be68-0395-443d-ad92-96fef83d38c7",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "resume-haunted-9",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n=== HAUNTED HOLES ===\n       9\n\n=== STATUS ===\n?? src/courses/data/\n",
+    "outputDigest": "f36b22effe740af686354008c8f39caf369da45535625dafe4fc395690e09366",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T11:55:14.393Z"
+}

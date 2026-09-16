@@ -1,0 +1,11 @@
+{
+  "id": "5d99f9b3-cc58-4a38-b6c9-8ad62ee933cb",
+  "taskId": "5d60c52d-f222-4b61-be60-8696a6d67367",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "resume-haunted-9",
+    "headSha": "6e30db9402be899044498f36e7f547d09e45e6fa"
+  },
+  "createdAt": "2026-09-16T11:55:11.202Z"
+}
