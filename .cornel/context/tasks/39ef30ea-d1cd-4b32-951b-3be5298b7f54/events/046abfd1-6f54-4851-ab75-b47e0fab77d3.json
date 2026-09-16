@@ -1,0 +1,12 @@
+{
+  "id": "046abfd1-6f54-4851-ab75-b47e0fab77d3",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chaos-postpublish-verify-10",
+    "operation": "run",
+    "command": "set -e\nprintf '\\n=== STRUCTURE ===\\n'\ntest -f src/courses/data/chaos-dimension.ts\ncount=$(grep -o \"id: 'chaos-[0-9][0-9]'\" src/courses/data/chaos-dimension.ts | wc -l | tr -d ' ')\ntest \"$count\" = \"9\"\nprintf 'holes=%s\\n' \"$count\"\nprintf '\\n=== TYPECHECK ===\\n'\nnpm run typecheck\nprintf '\\n=== BUILD ===\\n'\nnpm run build\nprintf '\\n=== STATUS ===\\n'\ngit status --short"
+  },
+  "createdAt": "2026-09-16T14:31:58.876Z"
+}

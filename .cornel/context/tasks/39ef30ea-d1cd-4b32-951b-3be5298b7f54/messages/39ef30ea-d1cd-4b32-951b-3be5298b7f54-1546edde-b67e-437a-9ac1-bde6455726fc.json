@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-postpublish-verify-10\",\"operation\":\"run\",\"headSha\":\"163d18c0c07384089bf6d5e2b6011a0681e50609\",\"command\":\"set -e\\nprintf '\\\\n=== STRUCTURE ===\\\\n'\\ntest -f src/courses/data/chaos-dimension.ts\\ncount=$(grep -o \\\"id: 'chaos-[0-9][0-9]'\\\" src/courses/data/chaos-dimension.ts | wc -l | tr -d ' ')\\ntest \\\"$count\\\" = \\\"9\\\"\\nprintf 'holes=%s\\\\n' \\\"$count\\\"\\nprintf '\\\\n=== TYPECHECK ===\\\\n'\\nnpm run typecheck\\nprintf '\\\\n=== BUILD ===\\\\n'\\nnpm run build\\nprintf '\\\\n=== STATUS ===\\\\n'\\ngit status --short\",\"timeoutSeconds\":300}\n\nСводка: причина отказа finish установлена — нужна проверка именно на опубликованном head; код не меняется; следующий шаг после успешного RESULT — повторный finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-16T14:31:58.872Z"
+}
