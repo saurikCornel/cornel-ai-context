@@ -3,7 +3,7 @@
   "branch": "cornel/boty-i-reyting-2027fa",
   "headSha": "77b38d1780726161f87e511138beae87cceeb098",
   "status": "WAITING_CHATGPT",
-  "summary": "Продолжаю через worker. Поскольку владелец явно просит работать с текущей рабочей копией, сначала получаю её фактическое состояние без сетевых GitHub-операций и без повторения предыдущих записей. Использую heads с известными состояниями для read-only проверки.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"resume-worktree-state-25\",\"operation\":\"ls\",\"heads\":[\"77b38d1780726161f87e511138beae87cceeb098\",\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23\"],\"path\":\"src\",\"maxLines\":160}\n\nСводка: уже подтверждённые изменения не повторяю. Следующий шаг после RESULT — использовать принятую worker голову, дописать только отсутствующие тесты, затем typecheck/tests/build → publish → finish.\n\n",
+  "summary": "Исправляю только формат heads: протокол ожидает record, а не массив.\n\nJSON\n{\"version\":1,\"taskId\":\"2027fad6-441d-4e5b-ae0e-de2b494fd727\",\"commandId\":\"resume-worktree-state-25b\",\"operation\":\"ls\",\"heads\":{\"assigned\":\"77b38d1780726161f87e511138beae87cceeb098\",\"office\":\"9bf2556a277fa1aeb05caec89a277aa6c729492f\",\"candidate\":\"c0e49ddafdb6cbf73f4287d8eee6c60eadc92e23\"},\"path\":\"src\",\"maxLines\":160}\n\n",
   "commands": [
     {
       "commandId": "read-context-1",
@@ -126,5 +126,5 @@
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T18:21:39.402Z"
+  "createdAt": "2026-09-16T18:22:02.884Z"
 }
