@@ -1,0 +1,11 @@
+{
+  "id": "b6df18a5-539f-47e2-aa8d-37f89a466895",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chaos-grep-types-3",
+    "operation": "grep"
+  },
+  "createdAt": "2026-09-16T13:55:30.777Z"
+}

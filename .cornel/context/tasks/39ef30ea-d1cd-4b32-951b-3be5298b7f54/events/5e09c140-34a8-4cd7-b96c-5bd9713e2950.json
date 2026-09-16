@@ -1,0 +1,17 @@
+{
+  "id": "5e09c140-34a8-4cd7-b96c-5bd9713e2950",
+  "taskId": "39ef30ea-d1cd-4b32-951b-3be5298b7f54",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "chaos-grep-types-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+    "output": "(совпадений нет)",
+    "outputDigest": "092ef2f84328838180c102e7d82110382276b8435bf98037fba6433c94afdc1a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T13:55:33.250Z"
+}

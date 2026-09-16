@@ -3,7 +3,7 @@
   "branch": "cornel/chaos-dimension-9-lunok-39ef30",
   "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
   "status": "RUNNING",
-  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-read-contracts-2\",\"operation\":\"read\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"paths\":[\"src/courses/types.ts:1-260\",\"src/courses/CourseBuilder.ts:1-260\",\"src/courses/Hole.ts:1-220\",\"src/courses/data/neon-city.ts:1-320\",\"src/courses/data/space-station.ts:1-320\",\"src/courses/data/haunted-mansion.ts:1-320\"]} \n\nСводка: решение — опираться только на реальные контракты и уже используемые механики; изменённые файлы — пока нет; проверка структуры пройдена; следующий шаг — по прочитанным типам спроектировать 6 самостоятельных и 3 комбинированных лунки и записать файл курса.\n\n",
+  "summary": "JSON\n{\"version\":1,\"taskId\":\"39ef30ea-d1cd-4b32-951b-3be5298b7f54\",\"commandId\":\"chaos-grep-types-3\",\"operation\":\"grep\",\"headSha\":\"d81418b43e9fc4abd307572eeef1f2e57371e39a\",\"pattern\":\"type Obstacle|ObstacleType|type: '\",\"path\":\"src/courses\"}\n\nСводка: решение — использовать уже подтверждённые механики, но перед записью курса точно сверить полный набор obstacle types; изменённые файлы — пока нет; проверки — чтение контрактов и трёх сложных курсов выполнено; следующий шаг — создать src/courses/data/chaos-dimension.ts с 9 лунками.\n\n",
   "commands": [
     {
       "commandId": "chaos-inspect-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "chaos-read-contracts-2",
+      "status": "SUCCEEDED",
+      "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "chaos-grep-types-3",
       "status": "STARTED",
       "headSha": "d81418b43e9fc4abd307572eeef1f2e57371e39a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-16T13:54:37.679Z"
+  "createdAt": "2026-09-16T13:55:30.781Z"
 }
