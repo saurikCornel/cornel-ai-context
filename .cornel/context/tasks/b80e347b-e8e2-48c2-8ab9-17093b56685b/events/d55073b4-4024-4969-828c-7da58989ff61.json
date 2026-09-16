@@ -1,0 +1,12 @@
+{
+  "id": "d55073b4-4024-4969-828c-7da58989ff61",
+  "taskId": "b80e347b-e8e2-48c2-8ab9-17093b56685b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "reapply-merge-2",
+    "operation": "run",
+    "command": "set -e; git fetch origin cornel/camera-modes-aim-follow-overview-free-6032e1; git merge --no-edit FETCH_HEAD || true; git checkout --ours -- src/camera/CameraController.ts src/camera/CameraController.test.ts src/camera/index.ts; git show FETCH_HEAD:src/camera/CameraController.ts | sed -e 's/CameraControllerOptions/CameraModeControllerOptions/g' -e 's/CameraTransitionOptions/CameraModeTransitionOptions/g' -e 's/CameraController/CameraModeController/g' -e 's/CameraTransition/ModeTransition/g' -e 's/CameraPose/ModePose/g' > src/camera/CameraModeController.ts; git show FETCH_HEAD:src/camera/CameraController.test.ts | sed -e 's/CameraController/CameraModeController/g' -e 's#\\./CameraController#./CameraModeController#g' > src/camera/CameraModeController.test.ts; printf '\\nexport * from '\\''./CameraModeController'\\'';\\n' >> src/camera/index.ts; awk '!seen[$0]++' src/camera/index.ts > /tmp/camera-index.ts && mv /tmp/camera-index.ts src/camera/index.ts; git add src/camera/CameraController.ts src/camera/CameraController.test.ts src/camera/CameraModeController.ts src/camera/CameraModeController.test.ts src/camera/index.ts; git commit --no-edit; echo '===MARKERS==='; git grep -n -E '^(<<<<<<<|=======|>>>>>>>)' -- src/camera || true; echo '===STATUS==='; git status --short; echo '===HEAD==='; git log --oneline -2"
+  },
+  "createdAt": "2026-09-16T19:14:44.240Z"
+}
