@@ -1,0 +1,17 @@
+{
+  "id": "d1246c27-7ad4-44d2-a0af-0c813fdb1519",
+  "taskId": "99f73df3-a10f-42f0-b541-73cf100b7f40",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "run-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9bf2556a277fa1aeb05caec89a277aa6c729492f",
+    "output": "=== src ===\napp\nassets\ncamera\nconfig\ncontracts\ncore\ncourses\ndev\neffects\ngameplay\ninput\nleaderboard\nmain.ts\nphysics\nplayer\nstyle.css\nui\n=== src/courses ===\nCourse.ts\nCourseBuilder.ts\nHole.ts\ndata\ntypes.ts\n=== src/courses/data ===\nancient-temple.ts\narctic-base.ts\ncandy-factory.ts\nchaos-dimension.ts\ngreen-hills.ts\nhaunted-mansion.ts\nneon-city.ts\npirate-bay.ts\nspace-station.ts\nvolcano.ts\n=== src/physics ===\nCollisionLayers.ts\nGolfBallPhysics.ts\nPhysicsWorld.ts\nShotSystem.ts\nhelpers.ts\nindex.ts\n=== src/core ===\nRenderer.ts\nSaveManager.ts\nSceneManager.ts\n=== src/gameplay ===\nHoleSystem.ts\nMatchManager.ts\nScoreManager.ts\nShotSystemAdapter.ts\nStateMachine.ts\nTurnManager.ts\ngameplay.test.ts\nindex.ts\ntypes.ts\n",
+    "outputDigest": "cd2212b860c1cf317b49a498a1c52f55381d417785f478411a03d81253c06b4d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-16T20:10:10.472Z"
+}
