@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Обе проверки зелёные: 8/8 тестов и `tsc -b` без ошибок (`CHECKS_OK`). В рабочей копии только мои два файла (`node_modules` и `*.tsbuildinfo` игнорируются). Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"bb10e70d-fd00-4b90-ac80-a219928d212f\",\"commandId\":\"movers-publish-1\",\"operation\":\"publish\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"feat(obstacles): add kinematic movers for platforms, sliding walls and doors\\n\\nsampleMover derives position, velocity and progress from hole time only, so\\nevery client driving the same config stays in sync without stored state.\\nSupports ping-pong, loop and once with per-end pauses, phase offsets and\\nstatic fallbacks for degenerate configs. carryVelocity exposes the velocity a\\nresting ball inherits.\"}\n```\n\nЖду результат worker по `movers-publish-1` — новый SHA придёт в этот чат.\n\n**Сводка.** Решения: чистая, без состояния, выборка по времени (`sampleMover`) + `carryVelocity`; циклы ping-pong (`2*travel + 2*pause`), loop (`travel + pause` с возвратом в 0), once (фиксация на 1 с нулевой скоростью); вырожденные конфиги (speed/distance ≤ 0, нулевая/нефинитная ось, `enabled:false`, NaN-время/фаза) дают статичную выборку в origin; ось нормализуется, длину хода задаёт `distance`. Файлы: `src/obstacles/movers.ts`, `src/obstacles/movers.test.ts` (8 тестов). Проверки: `npx vitest run src/obstacles/movers.test.ts` — 8 passed, `npx tsc -b --pretty false` — без ошибок. Следующий шаг: после подтверждения publish отправлю `finish`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:45:17.813Z"
+}

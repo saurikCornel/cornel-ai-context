@@ -1,0 +1,17 @@
+{
+  "id": "6fec5edd-ae0c-4907-a585-35c39365a33a",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "movers-publish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "4af072d630a32b5641c84dc46dd3bc34c112a24d",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:45:22.583Z"
+}
