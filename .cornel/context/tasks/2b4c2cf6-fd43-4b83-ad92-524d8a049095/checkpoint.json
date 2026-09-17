@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-2b4c2c",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Neon City 7 — действительно ветвящаяся планировка, рефакторинг сработал. Проверяю последнее: реальные данные профиля/рейтинга и доступность лидерборда из меню.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-17\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"echo '== SaveManager/profile в UI и main =='; grep -rn 'SaveManager\\\\|loadProfile\\\\|PlayerProfile' src/ui src/main.ts src/game --include=*.ts | grep -v test | cut -c1-140 | head -20; echo; echo '== лидерборд =='; ls src/ui | head -30; grep -rn 'Leaderboard' src/ui/index.ts src/main.ts | cut -c1-140 | head -10; echo; echo '== пункты меню =='; grep -o 'Play\\\\|Ranked\\\\|Custom Game\\\\|Profile\\\\|Settings\\\\|Leaderboard' src/ui/index.ts | sort | uniq -c; echo; echo '== рейтинг сохраняется? =='; grep -rn 'computeMatchRatings\\\\|saveProfile\\\\|persist' src/game/Game.ts | cut -c1-140 | head -12\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Профиль/рейтинг не сохраняются, лидерборда в src/ui нет. Уточняю последним запросом, прежде чем выносить вердикт.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-18\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"echo '== Leaderboard где-либо =='; grep -rln 'Leaderboard\\\\|leaderboard' src tests 2>/dev/null | head; echo; echo '== SaveManager использование =='; grep -rn 'SaveManager' src --include=*.ts | grep -v 'core/SaveManager' | head; echo; echo '== профиль в меню (плейсхолдер?) =='; grep -o 'Putt Pilot[^\\\"]*\\\\|rating:[0-9]*\\\\|level:[0-9]*\\\\|xp:[0-9]*' src/ui/index.ts | head -10; echo; echo '== progression/statistics модули =='; ls src/player; echo; echo '== использование progression =='; grep -rn \\\"from '../player\\\" src --include=*.ts | grep -v test | head\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -103,10 +103,16 @@
     },
     {
       "commandId": "check-17",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-18",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:05:36.930Z"
+  "createdAt": "2026-09-17T04:06:00.778Z"
 }
