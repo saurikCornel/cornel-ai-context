@@ -1,0 +1,11 @@
+{
+  "id": "563a3d1d-a460-4f1c-bae3-ed7e26a028ec",
+  "taskId": "a2c2938e-c34d-46d1-9d7a-abcb66fb3bda",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "impl-1c",
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68"
+  },
+  "createdAt": "2026-09-17T04:19:02.842Z"
+}
