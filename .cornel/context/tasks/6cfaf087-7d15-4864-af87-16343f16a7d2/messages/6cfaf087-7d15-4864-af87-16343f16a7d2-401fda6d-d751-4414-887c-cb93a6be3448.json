@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверяю, не появился ли лишний untracked-файл после `npm install`, прежде чем публиковать.\n\n```json\n{\"version\":1,\"taskId\":\"6cfaf087-7d15-4864-af87-16343f16a7d2\",\"commandId\":\"status-3\",\"operation\":\"run\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"command\":\"git status --porcelain; echo '--- tracked lock? ---'; git ls-files --error-unmatch package-lock.json && echo TRACKED || echo UNTRACKED\",\"timeoutSeconds\":120}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T05:09:58.581Z"
+}
