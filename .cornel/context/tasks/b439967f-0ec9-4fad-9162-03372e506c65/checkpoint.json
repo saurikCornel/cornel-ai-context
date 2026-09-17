@@ -3,7 +3,7 @@
   "branch": "cornel/limit-udarov-zashit-chislom-8-vmesto-max-b43996",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Ветка на GitHub сдвинулась — нужен актуальный SHA. Пробую read-операцию, она проходит проверку иначе и должна показать фактический head.\n\n```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"path\":\"src/courses\",\"maxLines\":60}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Читаю дальше read-операциями (они идут по локальной копии), потом повторю run.\n\n```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"read-3\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/contracts/game.ts:18-56\",\"src/courses/types.ts:108-132\",\"src/courses/data/green-hills.ts:1-60\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "ls-1",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-3",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:20:01.968Z"
+  "createdAt": "2026-09-17T03:20:54.604Z"
 }

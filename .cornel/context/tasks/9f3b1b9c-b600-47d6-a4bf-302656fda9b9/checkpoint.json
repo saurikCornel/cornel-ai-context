@@ -3,7 +3,7 @@
   "branch": "cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Читаю существующий тест, чтобы взять из него способ инициализации физики и билдера сцены.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"read-7\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/game/game.test.ts:1-90\",\"src/core/HoleSceneBuilder.ts:1-40\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Последняя выборка перед правкой: интерфейс `Hole` и именование мешей в билдере.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"read-8\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && sed -n '119,139p' src/courses/types.ts && echo '--- names ---' && git grep -n '\\\\.name = ' -- src/core/HoleSceneBuilder.ts && echo '--- physics step ---' && git grep -n 'step(' -- src/physics/PhysicsWorld.ts | head && echo '--- kit usage ---' && git grep -n 'slidingWall(\\\\|door(\\\\|movingPlatform(' -- src/courses/data | head -20\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "read-7",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-8",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:19:34.848Z"
+  "createdAt": "2026-09-17T03:20:48.761Z"
 }

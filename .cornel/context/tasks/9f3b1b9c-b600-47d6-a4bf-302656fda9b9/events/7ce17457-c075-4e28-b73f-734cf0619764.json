@@ -1,0 +1,12 @@
+{
+  "id": "7ce17457-c075-4e28-b73f-734cf0619764",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-8",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && sed -n '119,139p' src/courses/types.ts && echo '--- names ---' && git grep -n '\\.name = ' -- src/core/HoleSceneBuilder.ts && echo '--- physics step ---' && git grep -n 'step(' -- src/physics/PhysicsWorld.ts | head && echo '--- kit usage ---' && git grep -n 'slidingWall(\\|door(\\|movingPlatform(' -- src/courses/data | head -20"
+  },
+  "createdAt": "2026-09-17T03:20:48.758Z"
+}

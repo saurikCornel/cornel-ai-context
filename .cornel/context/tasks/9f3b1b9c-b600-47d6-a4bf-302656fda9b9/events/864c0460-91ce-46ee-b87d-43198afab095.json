@@ -1,0 +1,17 @@
+{
+  "id": "864c0460-91ce-46ee-b87d-43198afab095",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-8",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "export interface Hole {\n  id: string;\n  name: string;\n  par: number;\n  /** Hard shot budget for the hole; defaults to par + DEFAULT_MAX_SHOTS_OVER_PAR. */\n  maxShots?: number;\n  spawn: Vec3;\n  cup: { position: Vec3; radius: number; captureDepth: number };\n  bounds: { min: Vec3; max: Vec3 };\n  surfaces: SurfaceDescriptor[];\n  obstacles: ObstacleDescriptor[];\n}\n\nexport interface Course {\n  id: string;\n  name: string;\n  themeId: string;\n  version: number;\n  holes: Hole[];\n}\n--- names ---\nsrc/core/HoleSceneBuilder.ts:80:    group.name = hole.id;\nsrc/core/HoleSceneBuilder.ts:114:    mesh.name = surface.id;\nsrc/core/HoleSceneBuilder.ts:127:    mesh.name = obstacle.id;\nsrc/core/HoleSceneBuilder.ts:136:    mesh.name = hole.id + '-cup';\nsrc/core/HoleSceneBuilder.ts:151:    material.name = key;\n--- physics step ---\nsrc/physics/PhysicsWorld.ts:16:  step(deltaSeconds: number, beforeStep?: (dt: number) => void): void {\nsrc/physics/PhysicsWorld.ts:20:      this.world.step();\n--- kit usage ---\nsrc/courses/data/haunted-mansion.ts:119:      slidingWall('sliding-shelf', 6.9, 20, 2.4, 1.1, 1.6, 0.4),\nsrc/courses/data/haunted-mansion.ts:143:      door('cellar-door', 5, 24, 2.4, 1.3, 1.6),\n",
+    "outputDigest": "a182d2897d99d1d106aa5c24ec3ec0f1f86aa2f5de9365f2f85562572df9b049",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:20:51.432Z"
+}
