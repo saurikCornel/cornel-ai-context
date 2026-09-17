@@ -22,11 +22,11 @@
   "workspaceSyncedSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T04:32:16.435Z",
-  "updatedAt": "2026-09-17T04:35:13.388Z",
+  "updatedAt": "2026-09-17T04:35:35.930Z",
   "issue": 112,
   "chatUrl": "cli://claude/24773944-bbc4-4b66-8c98-d43fd4f4a037",
   "error": null,
-  "cliActivity": "Claude CLI: Read: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/9b9f934f-81c9-4246-94a2-9c2a8ca03ae1/.git",
+  "cliActivity": "Claude CLI: Read: /Users/alex/Cornel AI Projects/fun-golf/.git/refs/remotes/origin/cornel/slit-u-chashki-net-flaga-i-uglubleniya-9b9f93",
   "cliSession": "24773944-bbc4-4b66-8c98-d43fd4f4a037",
   "browserError": null,
   "currentHead": "f757284c9a10172deda23fc481f9234e3d7325ed"
