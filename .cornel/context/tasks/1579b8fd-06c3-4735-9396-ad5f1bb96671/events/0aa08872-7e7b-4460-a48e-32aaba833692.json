@@ -1,0 +1,17 @@
+{
+  "id": "0aa08872-7e7b-4460-a48e-32aaba833692",
+  "taskId": "1579b8fd-06c3-4735-9396-ad5f1bb96671",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "qa-bundle-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "--- bundle content probes ---\ngreen-hills          0\nspace-station        0\nRigidBody            0\nrapier               0\nMatchManager         0\nBotPlanner           0\nHoleSceneBuilder     0\nCameraController     0\nballStopThreshold    0\npowerExponent        0\nHud                  0\nScoreboard           0\n--- dist files ---\ntotal 960\ndrwxr-xr-x@ 5 alex  staff     160 Sep 17 05:02 .\ndrwxr-xr-x@ 5 alex  staff     160 Sep 17 05:02 ..\n-rw-r--r--@ 1 alex  staff  477153 Sep 17 05:02 index-B2ei82-g.js\n-rw-r--r--@ 1 alex  staff    7010 Sep 17 05:02 index-Bb53Nhb8.css\n-rw-r--r--@ 1 alex  staff    2605 Sep 17 05:02 index-ESTV255h.js\n--- dev server ---\nHTTP 200\nMAIN 200\n\n  \u001b[32m\u001b[1mVITE\u001b[22m v7.3.6\u001b[39m  \u001b[2mready in \u001b[0m\u001b[1m170\u001b[22m\u001b[2m\u001b[0m ms\u001b[22m\n\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m5199\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mNetwork\u001b[22m: \u001b[36mhttp://192.168.2.187:\u001b[1m5199\u001b[22m/\u001b[39m\n",
+    "outputDigest": "4cb50cbb2139d8d58a99b72cc0038e4fac48dba5a11108d463314b20608dd0a9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:03:15.841Z"
+}
