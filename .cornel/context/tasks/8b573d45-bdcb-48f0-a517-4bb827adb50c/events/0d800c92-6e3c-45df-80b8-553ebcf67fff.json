@@ -1,0 +1,17 @@
+{
+  "id": "0d800c92-6e3c-45df-80b8-553ebcf67fff",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "fmt-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "src/ui/index.ts 80ms\nsrc/ui/Overlays.ts 10ms\nsrc/ui/domTests.ts 3ms\nsrc/input/InputManager.ts 11ms\nsrc/core/SaveManager.ts 10ms\nsrc/ai/BotProfiles.ts 7ms\nsrc/ai/random.ts 2ms\nsrc/dev/LaunchOptions.ts 2ms\nsrc/dev/DeveloperDiagnostics.ts 6ms\nsrc/dev/PresentationMinimap.ts 4ms\nsrc/player/progression.ts 3ms\nsrc/player/profile.ts 2ms\nsrc/player/types.ts 2ms\nsrc/gameplay/ScoreManager.ts 8ms\nsrc/courses/data/volcano.ts 32ms\nsrc/courses/data/ancient-temple.ts 24ms\nsrc/courses/data/arctic-base.ts 25ms\nsrc/courses/data/chaos-dimension.ts 12ms\nsrc/ui/ui.css 34ms\nsrc/style.css 3ms\nsrc/game/game.css 4ms\nsrc/leaderboard/style.css 4ms\n=== LONG LINES ===\nsrc/dev/DeveloperDiagnostics.ts:49 len=225\nsrc/dev/dev.test.ts:5 len=488\nsrc/gameplay/gameplay.test.ts:82 len=221\nsrc/gameplay/gameplay.test.ts:89 len=221\nsrc/input/InputManager.test.ts:4 len=883\nsrc/ui/index.ts:61 len=1130\nsrc/ui/index.ts:91 len=485\nsrc/ui/index.ts:93 len=813\nsrc/ui/index.ts:97 len=521\n",
+    "outputDigest": "08d6e500918a49629b63914b3289a5a2ef87a3e7587ca568bd8c28a34738319a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:10:00.241Z"
+}
