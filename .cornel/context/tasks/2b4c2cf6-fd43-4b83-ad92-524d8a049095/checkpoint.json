@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-2b4c2c",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Камера и эффекты подключены к Game. Остались минифицированные модули (ui/index.ts — 32 строки на весь UI, Overlays 45, InputManager 23, BotProfiles 5, SaveManager 9). Проверяю игровой цикл по ТЗ: ход ботов, таблица между лунками, финальные результаты, рейтинг, штрафы и overview-камера.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-5\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"echo '== Game.ts API =='; grep -n '^  [a-zA-Z#private ]*[a-zA-Z]*(' src/game/Game.ts | cut -c1-120 | head -60; echo; echo '== рейтинг/награды/результаты =='; grep -n 'RatingSystem\\\\|calculateMatchReward\\\\|showResults\\\\|scoreboard\\\\|Scoreboard\\\\|nextHole\\\\|matchComplete\\\\|tiebreak' src/game/Game.ts | cut -c1-140 | head -30; echo; echo '== штрафы/hazard/lastSafePosition/overview =='; grep -n 'lastSafe\\\\|penalt\\\\|hazard\\\\|overview\\\\|setMode' src/game/Game.ts | cut -c1-140 | head -30; echo; echo '== layoutDiversity test =='; sed -n '1,60p' src/courses/layoutDiversity.test.ts | cut -c1-140\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Игровой цикл выглядит собранным. Хочу проверить как пользователь — в реальном браузере. Сначала читаю точку входа, чтобы понять, можно ли стартовать матч из URL.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-6\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/main.ts:1-140\",\"src/dev/LaunchOptions.ts:1-3\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "check-5",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-6",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:51:17.358Z"
+  "createdAt": "2026-09-17T03:51:44.180Z"
 }
