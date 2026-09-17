@@ -1,0 +1,17 @@
+{
+  "id": "b46699ba-854d-42b8-b6f1-ab5e84c8206b",
+  "taskId": "5dd3f980-b998-4c0f-8ff6-6230938b256d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "2258c4f45e62b3f533e627b7615990d2e41e503f",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/5dd3f980-b998-4c0f-8ff6-6230938b256d\u001b[39m\n\n \u001b[32m✓\u001b[39m src/ai/scheduler.test.ts \u001b[2m(\u001b[22m\u001b[2m9 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m9 passed\u001b[39m\u001b[22m\u001b[90m (9)\u001b[39m\n\u001b[2m   Start at \u001b[22m 04:47:34\n\u001b[2m   Duration \u001b[22m 235ms\u001b[2m (transform 70%, import 16%, tests 7%, worker 6%)\u001b[22m\n\n2258c4f Add bot turn pacing scheduler with deterministic phase timing and tests\n",
+    "outputDigest": "5334d1f00395f381f7bb6835dbc158b20eff6e8d62b74900d9ce3644044d45b9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:47:37.635Z"
+}

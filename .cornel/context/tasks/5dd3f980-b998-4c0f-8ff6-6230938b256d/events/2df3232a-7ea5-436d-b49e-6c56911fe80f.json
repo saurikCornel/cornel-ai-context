@@ -1,0 +1,12 @@
+{
+  "id": "2df3232a-7ea5-436d-b49e-6c56911fe80f",
+  "taskId": "5dd3f980-b998-4c0f-8ff6-6230938b256d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-1",
+    "operation": "run",
+    "command": "set -e\nnpx vitest run src/ai/scheduler.test.ts\nnpx tsc -b --pretty false\ngit status --short\ngit log --oneline -1"
+  },
+  "createdAt": "2026-09-17T01:47:30.766Z"
+}

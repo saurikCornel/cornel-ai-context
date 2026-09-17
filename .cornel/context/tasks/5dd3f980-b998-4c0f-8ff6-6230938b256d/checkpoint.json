@@ -1,9 +1,9 @@
 {
   "taskId": "5dd3f980-b998-4c0f-8ff6-6230938b256d",
   "branch": "cornel/bot-turn-pacing-scheduler-5dd3f9",
-  "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+  "headSha": "2258c4f45e62b3f533e627b7615990d2e41e503f",
   "status": "RUNNING",
-  "summary": "Оба чека прошли: 9 тестов vitest зелёные, `npx tsc -b --pretty false` завершился без ошибок (exitCode 0 при `set -e`), в рабочей копии только два новых файла. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"5dd3f980-b998-4c0f-8ff6-6230938b256d\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"Add bot turn pacing scheduler with deterministic phase timing and tests\"}\n```\n\nЖду результат по `publish-1` (новый SHA придёт в этот чат), затем отправлю finish.\n\nСводка: реализован `src/ai/BotTurnScheduler.ts` — конечный автомат idle→thinking→aiming→shooting→done на внешнем dt, без DOM/таймеров/Three.js; `timingForProfile` масштабирует время раздумий по planningDepth (+0.25 с за уровень выше 1) и характеру (careful ×1.25, bold ×0.8, trickster ×1.1) с джиттером random()×0.3. `src/ai/scheduler.test.ts` — 9 тестов (порядок фаз, ровно один fireShot в т.ч. при огромном dt, showAimLine только в aiming, тексты статуса, careful дольше bold, масштаб по глубине, personality в begin, reset→idle). Существующие файлы ai не менялись. Следующий шаг: finish после publish.\n\n",
+  "summary": "Публикация прошла, новый SHA `2258c4f`. Прогоняю проверки на опубликованном коммите, чтобы finish опирался на успешную проверку того же headSha.\n\n```json\n{\"version\":1,\"taskId\":\"5dd3f980-b998-4c0f-8ff6-6230938b256d\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"2258c4f45e62b3f533e627b7615990d2e41e503f\",\"timeoutSeconds\":600,\"command\":\"set -e\\nnpx vitest run src/ai/scheduler.test.ts\\nnpx tsc -b --pretty false\\ngit status --short\\ngit log --oneline -1\"}\n```\n\nЖду RESULT по `verify-1`; после него отправлю finish с итогом.\n\n",
   "commands": [
     {
       "commandId": "apple-e6169b3c",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "2258c4f45e62b3f533e627b7615990d2e41e503f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-1",
       "status": "STARTED",
-      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+      "headSha": "2258c4f45e62b3f533e627b7615990d2e41e503f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:46:14.635Z"
+  "createdAt": "2026-09-17T01:47:30.769Z"
 }
