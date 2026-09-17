@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Уточнение по диагностике: записи в локальных reflog’ах — все `update by push`, то есть зеркало отражает только пуши с этой машины, а не состояние GitHub. Значит фактический SHA моей ветки локально узнать нельзя, и надо повторить сверку (ветки офиса сейчас активно сливаются, отказ мог быть из-за гонки). Повторяю на том SHA, на котором стоит рабочая копия, с выводом реального состояния remote:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-9\",\"operation\":\"run\",\"headSha\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"timeoutSeconds\":600,\"command\":\"git ls-remote origin 'refs/heads/cornel/in-game-minimap-projection-and-renderer-d905f6' && git rev-parse HEAD && npx vitest run src/ui/minimap.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** реализация готова в рабочей копии (`src/ui/Minimap.ts` — `buildMinimapModel` + виджет `Minimap` 200×140, `src/ui/minimap.test.ts` — 6 тестов), `npm ci` выполнен; проверки не запускались из-за сверки head. Форма `heads` не подходит: record принимает только фиксированные ключи, имена веток отвергаются, поэтому остаётся `headSha`. Если и этот запуск вернёт «ветка изменилась» — прошу владельца прислать текущий SHA ветки `cornel/in-game-minimap-projection-and-renderer-d905f6` (или дать сборщику завершить слияния), без него worker не исполняет ни run, ни publish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:57:35.564Z"
+}

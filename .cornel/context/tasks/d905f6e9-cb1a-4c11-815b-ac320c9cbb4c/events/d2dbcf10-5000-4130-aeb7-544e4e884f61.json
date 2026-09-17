@@ -1,0 +1,12 @@
+{
+  "id": "d2dbcf10-5000-4130-aeb7-544e4e884f61",
+  "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "minimap-9",
+    "operation": "run",
+    "command": "git ls-remote origin 'refs/heads/cornel/in-game-minimap-projection-and-renderer-d905f6' && git rev-parse HEAD && npx vitest run src/ui/minimap.test.ts && npx tsc -b --pretty false && git status --short"
+  },
+  "createdAt": "2026-09-17T01:57:35.603Z"
+}
