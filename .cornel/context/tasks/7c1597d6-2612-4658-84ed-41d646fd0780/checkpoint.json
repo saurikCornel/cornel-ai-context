@@ -2,8 +2,8 @@
   "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
-  "status": "WAITING_CHATGPT",
-  "summary": "Ключ не подошёл. Пробую ключ репозитория.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"head-check-6\",\"operation\":\"run\",\"heads\":{\"code\":\"b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\"},\"command\":\"git rev-parse HEAD; git log --oneline -3\",\"timeoutSeconds\":180}\n```\n\nЖду результат worker.\n\n",
+  "status": "RUNNING",
+  "summary": "Пробую finish ещё раз с SHA, который вернул publish.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"finish-2\",\"operation\":\"finish\",\"headSha\":\"b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\",\"message\":\"Прогресс игрока сохраняется: SaveManager подключён к приложению.\\n\\nСделано:\\n- Новый src/core/ProfileStore.ts: applyMatchOutcome (XP из MatchRewards, рейтинг из RatingSystem, статистика через applyMatchStatistics, разблокировки через syncUnlockedCosmetics), profileSummary для меню, settingsToUi/uiToSettings.\\n- src/main.ts: профиль и настройки грузятся SaveManager при старте, передаются в AppUI (экран Profile) и в Game (playerName, playerRating, ballStyleId); после матча onMatchComplete сохраняет профиль и обновляет меню; saveSettings пишет настройки в localStorage.\\n- src/game/Game.ts: опция onMatchComplete отдаёт результат локального игрока один раз (флаг outcomeReported); id локального игрока вынесен в LOCAL_PLAYER_ID.\\n- src/ui/index.ts: удалены фиктивные данные ('Putt Pilot', rating 1240 и т.д.) — профиль и настройки приходят через AppUIOptions, добавлен setProfile, форма настроек предзаполняется сохранёнными значениями, убрано деление на ноль при 0 матчей.\\n- src/player/types.ts, src/player/profile.ts, src/core/SaveManager.ts: поле rating (DEFAULT_RATING=1000), пресет качества ultra, нормализация и миграция без смены SAVE_VERSION — старые сохранения читаются.\\n\\nПроверки worker: npm run typecheck — чисто; npx vitest run — 45 файлов, 285 тестов зелёные; npm run build — успешно. Новые тесты: src/core/profileStore.test.ts (матч -> сохранение -> перезагрузка, накопление за два матча с разблокировкой косметики, круг настроек, DOM-проверки Profile и Settings) и src/core/matchProgress.test.ts (реальный матч в Game: onMatchComplete -> SaveManager -> перезагруженный профиль -> экран Profile). В браузере вручную не проверял. PR не открывал — слияние выполнит сборщик.\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -196,7 +196,13 @@
       "status": "FAILED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
+    },
+    {
+      "commandId": "finish-2",
+      "status": "STARTED",
+      "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:40:06.357Z"
+  "createdAt": "2026-09-17T04:40:33.391Z"
 }
