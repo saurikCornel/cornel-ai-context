@@ -1,0 +1,11 @@
+{
+  "id": "8b5bbee5-0a8a-41a5-86dc-4d62589c0852",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "write-neon-1",
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
+  },
+  "createdAt": "2026-09-17T02:32:30.823Z"
+}
