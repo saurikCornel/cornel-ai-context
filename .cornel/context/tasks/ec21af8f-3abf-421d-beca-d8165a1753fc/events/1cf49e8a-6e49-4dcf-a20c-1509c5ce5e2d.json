@@ -1,0 +1,17 @@
+{
+  "id": "1cf49e8a-6e49-4dcf-a20c-1509c5ce5e2d",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "parity-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+    "output": "\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m src/ui/__parity.test.ts\u001b[2m > \u001b[22mreformat parity\u001b[2m > \u001b[22mrenders identical markup on every screen\n\u001b[31m\u001b[1mReferenceError\u001b[22m: document is not defined\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/ui/__parity.test.ts:\u001b[2m10:23\u001b[22m\u001b[39m\n    \u001b[90m  8|\u001b[39m   it('renders identical markup on every screen', () => {\n    \u001b[90m  9|\u001b[39m     for (const screen of SCREENS) {\n    \u001b[90m 10|\u001b[39m       const oldRoot = document.createElement('div');\n    \u001b[90m   |\u001b[39m                       \u001b[31m^\u001b[39m\n    \u001b[90m 11|\u001b[39m       const newRoot = document.createElement('div');\n    \u001b[90m 12|\u001b[39m       const oldUi = new OldUI(oldRoot as any) as any;\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m   Start at \u001b[22m 08:11:38\n\u001b[2m   Duration \u001b[22m 231ms\u001b[2m (transform 81%, import 16%, tests 2%, worker 1%)\u001b[22m\n\nparity exit=1\n--- status ---\n M src/ui/index.ts\n",
+    "outputDigest": "3a332c9cc6e49d3e95eef7adc14a1a9b4a51bebbf5589c403378235b66f96ad1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:11:38.730Z"
+}

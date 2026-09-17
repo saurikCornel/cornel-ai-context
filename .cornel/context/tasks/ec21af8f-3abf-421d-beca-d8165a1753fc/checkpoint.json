@@ -3,7 +3,7 @@
   "branch": "cornel/reformat-minified-src-ui-index-ts-ec21af",
   "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
   "status": "RUNNING",
-  "summary": "Файл записан, но зависимости в этой рабочей копии не установлены (нет `node_modules`). Устанавливаю и повторяю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"ec21af8f-3abf-421d-beca-d8165a1753fc\",\"commandId\":\"check-2\",\"operation\":\"run\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"timeoutSeconds\":600,\"command\":\"npm install --no-audit --no-fund 2>&1 | tail -5\\necho '--- tsc ---'\\nnpx tsc -b --pretty false; echo \\\"tsc exit=$?\\\"\\necho '--- vitest src/ui ---'\\nnpx vitest run src/ui 2>&1 | tail -25\\necho \\\"vitest pipeline exit=${PIPESTATUS[0]}\\\"\\necho '--- diff stat ---'\\ngit diff --stat\"}\n```\n\nОжидаю worker — результат придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "Обе проверки прошли. Для полной уверенности, что разметка не изменилась ни на байт, сравню отрендеренный HTML старой и новой версии (временные файлы удалю в той же команде).\n\n```json\n{\"version\":1,\"taskId\":\"ec21af8f-3abf-421d-beca-d8165a1753fc\",\"commandId\":\"parity-1\",\"operation\":\"run\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"timeoutSeconds\":600,\"command\":\"git show HEAD:src/ui/index.ts > src/ui/__old_index.ts\\ncat > src/ui/__parity.test.ts <<'EOF'\\nimport { describe, expect, it } from 'vitest';\\nimport { AppUI as NewUI } from './index';\\nimport { AppUI as OldUI } from './__old_index';\\n\\nconst SCREENS = ['main', 'play', 'custom', 'ranked', 'settings', 'profile', 'leaderboard'] as const;\\n\\ndescribe('reformat parity', () => {\\n  it('renders identical markup on every screen', () => {\\n    for (const screen of SCREENS) {\\n      const oldRoot = document.createElement('div');\\n      const newRoot = document.createElement('div');\\n      const oldUi = new OldUI(oldRoot as any) as any;\\n      const newUi = new NewUI(newRoot as any) as any;\\n      oldUi.navigate(screen);\\n      newUi.navigate(screen);\\n      expect(newRoot.innerHTML, screen).toBe(oldRoot.innerHTML);\\n    }\\n  });\\n});\\nEOF\\nnpx vitest run src/ui/__parity.test.ts 2>&1 | tail -20\\necho \\\"parity exit=${PIPESTATUS[0]}\\\"\\nrm -f src/ui/__old_index.ts src/ui/__parity.test.ts\\necho '--- status ---'\\ngit status --short\"}\n```\n\nОжидаю worker — результат придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "check-2",
+      "status": "SUCCEEDED",
+      "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "parity-1",
       "status": "STARTED",
       "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T05:10:57.416Z"
+  "createdAt": "2026-09-17T05:11:35.944Z"
 }
