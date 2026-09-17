@@ -3,7 +3,7 @@
   "branch": "cornel/reformat-minified-src-ui-index-ts-ec21af",
   "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
   "status": "RUNNING",
-  "summary": "Нужна jsdom-среда — добавляю аннотацию и повторяю сравнение.\n\n```json\n{\"version\":1,\"taskId\":\"ec21af8f-3abf-421d-beca-d8165a1753fc\",\"commandId\":\"parity-2\",\"operation\":\"run\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"timeoutSeconds\":600,\"command\":\"git show HEAD:src/ui/index.ts > src/ui/__old_index.ts\\ncat > src/ui/__parity.test.ts <<'EOF'\\n// @vitest-environment jsdom\\nimport { describe, expect, it } from 'vitest';\\nimport { AppUI as NewUI } from './index';\\nimport { AppUI as OldUI } from './__old_index';\\n\\nconst SCREENS = ['main', 'play', 'custom', 'ranked', 'settings', 'profile', 'leaderboard'] as const;\\n\\ndescribe('reformat parity', () => {\\n  it('renders identical markup on every screen', () => {\\n    for (const screen of SCREENS) {\\n      const oldRoot = document.createElement('div');\\n      const newRoot = document.createElement('div');\\n      const oldUi = new OldUI(oldRoot as any) as any;\\n      const newUi = new NewUI(newRoot as any) as any;\\n      oldUi.navigate(screen);\\n      newUi.navigate(screen);\\n      expect(newRoot.innerHTML, screen).toBe(oldRoot.innerHTML);\\n    }\\n  });\\n});\\nEOF\\nnpx vitest run src/ui/__parity.test.ts 2>&1 | tail -20\\necho \\\"parity exit=${PIPESTATUS[0]}\\\"\\nrm -f src/ui/__old_index.ts src/ui/__parity.test.ts\\necho '--- status ---'\\ngit status --short\"}\n```\n\nОжидаю worker — результат придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "Разметка побайтово идентична на всех 7 экранах, временные файлы удалены. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"ec21af8f-3abf-421d-beca-d8165a1753fc\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"message\":\"Переформатировать минифицированный src/ui/index.ts в читаемый многострочный TypeScript\"}\n```\n\nОжидаю worker — результат придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "parity-2",
+      "status": "SUCCEEDED",
+      "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T05:11:55.329Z"
+  "createdAt": "2026-09-17T05:12:09.812Z"
 }
