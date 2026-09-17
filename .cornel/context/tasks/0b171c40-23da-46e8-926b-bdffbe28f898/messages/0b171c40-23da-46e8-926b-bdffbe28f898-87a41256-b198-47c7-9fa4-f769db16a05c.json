@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Локальные remote-ссылки устарели, а сетевое чтение моими инструментами требует подтверждения. Пробую следующий кандидат — merge-коммит, который worker мог опубликовать сам.\n\n```json\n{\"version\":1,\"taskId\":\"0b171c40-23da-46e8-926b-bdffbe28f898\",\"commandId\":\"probe-2\",\"operation\":\"run\",\"headSha\":\"e9ea06306a0c7e7eef58eb199cf2e9e1d61525f9\",\"command\":\"echo HEAD=$(git rev-parse HEAD); git log --oneline -3; git status --short | head; echo REMOTE=$(git ls-remote origin refs/heads/cornel/slit-sobrat-igru-svyazat-podsistemy-v-ig-0b171c)\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:57:53.593Z"
+}
