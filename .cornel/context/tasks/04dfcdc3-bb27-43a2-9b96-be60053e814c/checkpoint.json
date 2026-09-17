@@ -1,9 +1,9 @@
 {
   "taskId": "04dfcdc3-bb27-43a2-9b96-be60053e814c",
   "branch": "cornel/match-rewards-xp-and-statistics-update-04dfcd",
-  "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+  "headSha": "516cb1dda05f1f1dd95b8227b6230544fa2b1b98",
   "status": "RUNNING",
-  "summary": "Обе проверки прошли: 11 тестов `src/gameplay/rewards.test.ts` зелёные, `npx tsc -b --pretty false` завершился с кодом 0. `node_modules/` в `.gitignore`, так что публикуются только два новых файла.\n\n```json\n{\"version\":1,\"taskId\":\"04dfcdc3-bb27-43a2-9b96-be60053e814c\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"feat(gameplay): match XP rewards and statistics accumulation\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано (head `516cb1d`). Прогоняю проверки повторно уже на новом headSha, чтобы finish опирался на подтверждение на том же коммите.\n\n```json\n{\"version\":1,\"taskId\":\"04dfcdc3-bb27-43a2-9b96-be60053e814c\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"516cb1dda05f1f1dd95b8227b6230544fa2b1b98\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/gameplay/rewards.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "apple-add65e8e",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "516cb1dda05f1f1dd95b8227b6230544fa2b1b98",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-3",
       "status": "STARTED",
-      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+      "headSha": "516cb1dda05f1f1dd95b8227b6230544fa2b1b98",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:45:27.776Z"
+  "createdAt": "2026-09-17T01:46:50.621Z"
 }

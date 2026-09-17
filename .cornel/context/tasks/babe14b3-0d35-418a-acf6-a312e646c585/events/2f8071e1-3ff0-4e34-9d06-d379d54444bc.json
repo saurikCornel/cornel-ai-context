@@ -1,0 +1,17 @@
+{
+  "id": "2f8071e1-3ff0-4e34-9d06-d379d54444bc",
+  "taskId": "babe14b3-0d35-418a-acf6-a312e646c585",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "apple-5a",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "acf5baee1c3d7c045f911a9eaa4dbc8a29ff37a0",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/babe14b3-0d35-418a-acf6-a312e646c585\u001b[39m\n\n \u001b[32m✓\u001b[39m src/obstacles/rotating.test.ts \u001b[2m(\u001b[22m\u001b[2m8 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m8 passed\u001b[39m\u001b[22m\u001b[90m (8)\u001b[39m\n\u001b[2m   Start at \u001b[22m 04:46:50\n\u001b[2m   Duration \u001b[22m 398ms\u001b[2m (transform 76%, import 16%, worker 4%, tests 4%)\u001b[22m\n\nCHECKS_OK\n",
+    "outputDigest": "20d19b2ccaadce6073200da9b407128da16fe407251337433687cc0867fcfe96",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:46:59.209Z"
+}
