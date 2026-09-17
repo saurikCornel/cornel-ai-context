@@ -1,0 +1,17 @@
+{
+  "id": "34fa6006-1903-451f-9d90-e127f9817114",
+  "taskId": "60f661d1-a07b-4ecb-bc83-b0a9a43f5736",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "format-dev-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+    "output": " src/dev/DeveloperDiagnostics.ts | 84 ++++++++++++++++++++++++++++++++++++++++-\n src/dev/LaunchOptions.ts        | 19 +++++++++-\n src/dev/PresentationMinimap.ts  | 69 +++++++++++++++++++++++++++++++--\n 3 files changed, 165 insertions(+), 7 deletions(-)\n",
+    "outputDigest": "7a6ce93f9b557d024243b624e6580927abcd6d9a5a8e14a0d932b477362f72db",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:08:53.153Z"
+}
