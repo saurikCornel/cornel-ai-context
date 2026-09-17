@@ -1,0 +1,12 @@
+{
+  "id": "3ce23fd0-10d4-471c-bcf5-2c323d33f822",
+  "taskId": "04dfcdc3-bb27-43a2-9b96-be60053e814c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "apple-add65e8e",
+    "operation": "run",
+    "command": "npx vitest run src/gameplay/rewards.test.ts && npx tsc -b --pretty false"
+  },
+  "createdAt": "2026-09-17T00:52:52.603Z"
+}
