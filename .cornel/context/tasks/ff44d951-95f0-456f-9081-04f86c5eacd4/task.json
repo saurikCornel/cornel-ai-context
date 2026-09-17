@@ -20,9 +20,11 @@
   "branch": "cornel/slit-popadanie-v-lunku-bez-zvuka-i-chast-ff44d9",
   "baseSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
   "workspaceSyncedSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-17T03:43:07.537Z",
-  "updatedAt": "2026-09-17T03:43:07.537Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-17T03:43:15.625Z",
+  "issue": 103,
+  "chatUrl": null,
+  "error": null,
+  "cliActivity": "Claude CLI: начал ход (claude-opus-5)"
 }
