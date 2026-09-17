@@ -1,0 +1,11 @@
+{
+  "id": "751a5684-fd57-48c7-8eb1-63d4a3570f92",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "apple-32dd9b9f",
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6"
+  },
+  "createdAt": "2026-09-17T00:41:03.060Z"
+}

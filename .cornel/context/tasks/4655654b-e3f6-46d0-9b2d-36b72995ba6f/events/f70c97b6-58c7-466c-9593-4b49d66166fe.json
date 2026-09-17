@@ -1,0 +1,17 @@
+{
+  "id": "f70c97b6-58c7-466c-9593-4b49d66166fe",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "apple-32dd9b9f",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+    "output": "### src/player/types.ts (строки 1-8 из 8)\n1: export type ControlScheme = 'drag' | 'charge';\n2: export type QualityPreset = 'low' | 'medium' | 'high';\n3: export interface PlayerCosmetics { ballId:string; trailId:string; hatId:string|null; unlockedBallIds:string[]; unlockedTrailIds:string[]; unlockedHatIds:string[] }\n4: export interface PlayerStatistics { matchesPlayed:number; matchesWon:number; holesPlayed:number; holesCompleted:number; totalStrokes:number; holesInOne:number; bestRoundStrokes:number|null; totalPlayTimeSeconds:number }\n5: export interface PlayerSettings { controlScheme:ControlScheme; masterVolume:number; musicVolume:number; effectsVolume:number; cameraSensitivity:number; invertCameraY:boolean; qualityPreset:QualityPreset; reducedMotion:boolean }\n6: export interface PlayerProgression { xp:number; level:number }\n7: export interface PlayerProfile { id:string; displayName:string; createdAt:string; updatedAt:string; progression:PlayerProgression; cosmetics:PlayerCosmetics; statistics:PlayerStatistics; settings:PlayerSettings }\n8: \n\n### src/player/profile.ts (строки 1-8 из 8)\n1: import { addXp,createProgression } from './progression';\n2: import type { PlayerCosmetics,PlayerProfile,PlayerSettings,PlayerStatistics } from './types';\n3: export const defaultCosmetics=():PlayerCosmetics=>({ballId:'classic-white',trailId:'none',hatId:null,unlockedBallIds:['classic-white'],unlockedTrailIds:['none'],unlockedHatIds:[]});\n4: export const defaultStatistics=():PlayerStatistics=>({matchesPlayed:0,matchesWon:0,holesPlayed:0,holesCompleted:0,totalStrokes:0,holesInOne:0,bestRoundStrokes:null,totalPlayTimeSeconds:0});\n5: export const defaultSettings=():PlayerSettings=>({controlScheme:'drag',masterVolume:.8,musicVolume:.65,effectsVolume:.8,cameraSensitivity:1,invertCameraY:false,qualityPreset:'high',reducedMotion:false});\n6: export function createDefaultProfile(now=new Date(),id='local-player'):PlayerProfile { const t=now.toISOString(); return {id,displayName:'Player',createdAt:t,updatedAt:t,progression:createProgression(),cosmetics:defaultCosmetics(),statistics:defaultStatistics(),settings:defaultSettings()}; }\n7: export function awardPlayerXp(p:PlayerProfile,xp:number,now=new Date()):PlayerProfile { return {...p,progression:addXp(p.progression,xp),updatedAt:now.toISOString()}; }\n8:",
+    "outputDigest": "34a743fbc6f8e3a849103c7fa06b8e57c526a7b23f8d850fdc3bab1caded7606",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T00:41:05.243Z"
+}
