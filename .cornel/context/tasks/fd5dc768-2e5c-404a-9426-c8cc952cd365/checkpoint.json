@@ -3,7 +3,7 @@
   "branch": "cornel/lava-i-silovye-prepyatstviya-rabotayut-k-fd5dc7",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Зависимости, похоже, не установлены. Ставлю их и запускаю typecheck.\n\n```json\n{\"version\":1,\"taskId\":\"fd5dc768-2e5c-404a-9426-c8cc952cd365\",\"commandId\":\"install-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"ls -d node_modules 2>/dev/null || echo NO_NODE_MODULES; npm install --no-audit --no-fund 2>&1 | tail -5; npm run typecheck 2>&1 | tail -30\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Typecheck прошёл чисто. Запускаю новые тесты.\n\n```json\n{\"version\":1,\"taskId\":\"fd5dc768-2e5c-404a-9426-c8cc952cd365\",\"commandId\":\"test-runtime-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"npx vitest run src/game/holeRuntime.test.ts 2>&1 | tail -45\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "impl-1a",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "install-1",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "test-runtime-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:24:43.828Z"
+  "createdAt": "2026-09-17T03:25:10.742Z"
 }

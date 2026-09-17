@@ -1,0 +1,12 @@
+{
+  "id": "f0b2d326-7aca-4806-93fe-01156bcf6397",
+  "taskId": "fd5dc768-2e5c-404a-9426-c8cc952cd365",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "test-runtime-1",
+    "operation": "run",
+    "command": "npx vitest run src/game/holeRuntime.test.ts 2>&1 | tail -45"
+  },
+  "createdAt": "2026-09-17T03:25:10.735Z"
+}
