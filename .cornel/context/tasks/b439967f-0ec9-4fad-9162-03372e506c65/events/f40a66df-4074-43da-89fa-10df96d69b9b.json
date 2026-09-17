@@ -1,0 +1,12 @@
+{
+  "id": "f40a66df-4074-43da-89fa-10df96d69b9b",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-7",
+    "operation": "run",
+    "command": "git rev-parse HEAD; echo '=== pars ==='; grep -rn --include=*.ts -oE \"par: [0-9]+\" src/courses/data | sed 's#src/courses/data/##' | head -100"
+  },
+  "createdAt": "2026-09-17T03:21:40.155Z"
+}
