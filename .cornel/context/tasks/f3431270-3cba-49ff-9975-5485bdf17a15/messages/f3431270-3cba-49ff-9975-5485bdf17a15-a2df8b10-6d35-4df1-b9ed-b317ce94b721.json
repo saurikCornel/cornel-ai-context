@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Finish упал на git-синхронизации у worker (`FETCH_HEAD`). Проверяю фактическое состояние ветки — дошёл ли push.\n\n```json\n{\"version\":1,\"taskId\":\"f3431270-3cba-49ff-9975-5485bdf17a15\",\"commandId\":\"diag-1\",\"operation\":\"run\",\"headSha\":\"251d640f4cf839d94618ec8f2021654da077f43e\",\"command\":\"git rev-parse HEAD; git status -sb | head -3; git remote -v | head -2; git ls-remote origin cornel/lava-i-drugie-sensornye-zony-renderyatsy-f34312\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:28:02.757Z"
+}
