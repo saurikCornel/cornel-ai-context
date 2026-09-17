@@ -1,0 +1,11 @@
+{
+  "id": "e95fdac9-c8e2-40a6-8c0d-9ae07ae0a17a",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "write-3d",
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
+  },
+  "createdAt": "2026-09-17T02:29:30.339Z"
+}
