@@ -1,0 +1,16 @@
+{
+  "taskId": "60f661d1-a07b-4ecb-bc83-b0a9a43f5736",
+  "branch": "cornel/reformat-minified-src-dev-modules-60f661",
+  "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+  "status": "RUNNING",
+  "summary": "Начинаю с чтения файлов карточки.\n\n```json\n{\"version\":1,\"taskId\":\"60f661d1-a07b-4ecb-bc83-b0a9a43f5736\",\"commandId\":\"read-dev-1\",\"operation\":\"ls\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"path\":\"src/dev\",\"maxLines\":50}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "commands": [
+    {
+      "commandId": "read-dev-1",
+      "status": "STARTED",
+      "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-17T05:07:46.124Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "8dee5296-36eb-46f0-b389-629a6f01f0d0",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+    "output": "src/ui: 13 файлов\nsrc/ui/Hud.ts\nsrc/ui/Minimap.ts\nsrc/ui/Overlays.ts\nsrc/ui/Scoreboard.ts\nsrc/ui/courseSelect.test.ts\nsrc/ui/dom.ts\nsrc/ui/domTests.ts\nsrc/ui/index.ts\nsrc/ui/leaderboard.test.ts\nsrc/ui/minimap.test.ts\nsrc/ui/types.ts\nsrc/ui/ui.css\nsrc/ui/ui.test.ts",
+    "outputDigest": "c4dc2721f18499f08db1b68de1745795488eab41b7e54deb70ea0ddaf27ce351",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:07:47.532Z"
+}
