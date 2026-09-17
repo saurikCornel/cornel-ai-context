@@ -3,7 +3,7 @@
   "branch": "cornel/reformat-minified-src-dev-modules-60f661",
   "headSha": "b991d05c3678197f1049fe46b0956d960e5acb5d",
   "status": "RUNNING",
-  "summary": "Всё зелёное на опубликованном коммите: рабочее дерево чистое, коммит затрагивает только три файла. Отправляю finish.\n\n```json\n{\"version\":1,\"taskId\":\"60f661d1-a07b-4ecb-bc83-b0a9a43f5736\",\"commandId\":\"finish-dev-1\",\"operation\":\"finish\",\"headSha\":\"b991d05c3678197f1049fe46b0956d960e5acb5d\",\"message\":\"Reformat minified src/dev modules — выполнено. Три однострочных файла развёрнуты в читаемый TypeScript (2 пробела, один оператор и один член класса на строку): src/dev/DeveloperDiagnostics.ts, src/dev/PresentationMinimap.ts, src/dev/LaunchOptions.ts. Только форматирование: имена, экспорты, коды горячих клавиш F1/F2/F3, CSS-классы 'dev-diagnostics'/'dev-minimap', выводимые строки, размеры canvas 220x150 и логика не изменены; строка оверлея собрана конкатенацией шаблонных литералов с \\\\u00b7 — итоговый текст побайтово тот же. Другие файлы, включая src/dev/index.ts и dev.test.ts, не тронуты. Проверки на коммите b991d05: npx vitest run src/input src/dev — 2 файла, 5 тестов, все прошли; npx tsc -b --pretty false — без ошибок; git status --short пуст, git diff --stat HEAD~1 HEAD — ровно 3 файла (165 insertions, 7 deletions). Коммит b991d05c3678197f1049fe46b0956d960e5acb5d в ветке cornel/reformat-minified-src-dev-modules-60f661; PR не открывал — слияние выполнит сборщик.\"}\n```\n\nЖду подтверждения worker.\n\n**Сводка**\n- **Решения:** только форматирование, без переименований и правок логики; спецсимвол `·` в оверлее записан как `\\u00b7` внутри шаблонных литералов, чтобы исключить проблемы с кодировкой при идентичном результате.\n- **Изменённые файлы:** `src/dev/DeveloperDiagnostics.ts`, `src/dev/PresentationMinimap.ts`, `src/dev/LaunchOptions.ts`.\n- **Проверки:** `npx vitest run src/input src/dev` — 5/5 passed; `npx tsc -b --pretty false` — чисто; diff затрагивает ровно три файла. Перед прогоном потребовалась установка зависимостей в рабочей копии (`npm install`).\n- **Следующий шаг:** ожидание подтверждения finish; слияние ветки — за сборщиком.\n\n",
+  "summary": "Ветка на GitHub ушла вперёд относительно `b991d05`. Проверяю фактическое состояние ветки.\n\n```json\n{\"version\":1,\"taskId\":\"60f661d1-a07b-4ecb-bc83-b0a9a43f5736\",\"commandId\":\"inspect-branch-1\",\"operation\":\"run\",\"headSha\":\"b991d05c3678197f1049fe46b0956d960e5acb5d\",\"timeoutSeconds\":300,\"command\":\"git fetch origin --prune -q; git rev-parse HEAD; git rev-parse --abbrev-ref HEAD; git rev-parse origin/cornel/reformat-minified-src-dev-modules-60f661; git log --oneline -5 origin/cornel/reformat-minified-src-dev-modules-60f661; git status --short\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-dev-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "finish-dev-1",
+      "status": "FAILED",
+      "headSha": "b991d05c3678197f1049fe46b0956d960e5acb5d",
+      "exitCode": null
+    },
+    {
+      "commandId": "inspect-branch-1",
       "status": "STARTED",
       "headSha": "b991d05c3678197f1049fe46b0956d960e5acb5d",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T05:10:37.879Z"
+  "createdAt": "2026-09-17T05:10:55.101Z"
 }
