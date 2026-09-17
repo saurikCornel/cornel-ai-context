@@ -1,0 +1,17 @@
+{
+  "id": "4e5ef8c4-cfd2-4c83-a860-e373aa1f2f1f",
+  "taskId": "f40347ef-5d08-4e0a-98f2-85b5767cbfa9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "\nadded 84 packages in 2s\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/game/game.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 198\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/input/InputManager.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/dev/dev.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m43 passed\u001b[39m\u001b[22m\u001b[90m (43)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m282 passed\u001b[39m\u001b[22m\u001b[90m (282)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:29:44\n\u001b[2m   Duration \u001b[22m 1.84s\u001b[2m (environment 47%, transform 31%, import 12%, tests 9%, worker 2%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 2.92s\u001b[39m\u001b[2m · 31% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n",
+    "outputDigest": "356b40af1e97064392b19fdedb26133111389b170295032db6f57f891e479c22",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:29:46.426Z"
+}
