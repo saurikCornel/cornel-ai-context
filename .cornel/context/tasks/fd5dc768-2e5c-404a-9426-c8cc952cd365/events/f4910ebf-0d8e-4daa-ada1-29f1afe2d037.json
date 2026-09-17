@@ -1,0 +1,17 @@
+{
+  "id": "f4910ebf-0d8e-4daa-ada1-29f1afe2d037",
+  "taskId": "fd5dc768-2e5c-404a-9426-c8cc952cd365",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-head-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "29e0908a7881a9ac254c1272ed61a504113fd830",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== TEST ===\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m37 passed\u001b[39m\u001b[22m\u001b[90m (37)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m243 passed\u001b[39m\u001b[22m\u001b[90m (243)\u001b[39m\n=== BUILD ===\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.27s\u001b[39m\n",
+    "outputDigest": "3cb360f450f14c2175b4696ee0bf1ad23e8cab604a99894e8c3a3a235ea89cfd",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:30:13.679Z"
+}

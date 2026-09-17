@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверка отклонена из-за расхождения headSha сразу после публикации. Повторяю на опубликованном SHA.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"verify-2\",\"operation\":\"run\",\"headSha\":\"5d42db4e649a3ac6d72d6852e40655e29478a987\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && git log --oneline -1 && npm run typecheck && npm test 2>&1 | grep -vi 'getContext' | tail -6 && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:30:09.527Z"
+}

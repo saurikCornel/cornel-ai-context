@@ -1,0 +1,17 @@
+{
+  "id": "bd346ae1-758f-462d-96b5-f41266194469",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-21",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "### src/gameplay/HoleSystem.ts (строки 1-51 из 51)\n1: import type { PlayerId } from '../contracts/game';\n2: import type { Vec3 } from '../contracts/math';\n3: import type { HazardObstacle, Hole } from '../courses/types';\n4: \n5: export interface HazardResolution {\n6:   playerId: PlayerId;\n7:   resetPosition: Vec3;\n8:   penaltyStrokes: number;\n9: }\n10: \n11: export class HoleSystem {\n12:   private readonly lastSafePositions = new Map<PlayerId, Vec3>();\n13: \n14:   constructor(private readonly maxCupCaptureSpeed = 1.5) {}\n15: \n16:   setInitialSafePosition(playerId: PlayerId, position: Vec3): void {\n17:     this.lastSafePositions.set(playerId, { ...position });\n18:   }\n19: \n20:   markSafePosition(playerId: PlayerId, position: Vec3): void {\n21:     this.lastSafePositions.set(playerId, { ...position });\n22:   }\n23: \n24:   getLastSafePosition(playerId: PlayerId, fallback: Vec3): Vec3 {\n25:     return { ...(this.lastSafePositions.get(playerId) ?? fallback) };\n26:   }\n27: \n28:   isBallHoled(hole: Hole, position: Vec3, speed: number): boolean {\n29:     if (speed > this.maxCupCaptureSpeed) return false;\n30:     const dx = position.x - hole.cup.position.x;\n31:     const dz = position.z - hole.cup.position.z;\n32:     const horizontalDistance = Math.hypot(dx, dz);\n33:     const verticalDelta = position.y - hole.cup.position.y;\n34:     return horizontalDistance <= hole.cup.radius && verticalDelta <= hole.cup.captureDepth && verticalDelta >= -hole.cup.captureDepth;\n35:   }\n36: \n37:   isOutsideBounds(hole: Hole, position: Vec3): boolean {\n38:     return position.x < hole.bounds.min.x || position.x > hole.bounds.max.x ||\n39:       position.y < hole.bounds.min.y || position.y > hole.bounds.max.y ||\n40:       position.z < hole.bounds.min.z || position.z > hole.bounds.max.z;\n41:   }\n42: \n43:   resolveHazard(playerId: PlayerId, hole: Hole, hazard?: HazardObstacle): HazardResolution {\n44:     return {\n45:       playerId,\n46:       resetPosition: this.getLastSafePosition(playerId, hole.spawn),\n47:       penaltyStrokes: hazard?.penaltyStrokes ?? 1,\n48:     };\n49:   }\n50: }\n51:",
+    "outputDigest": "4ceebef39885ba8611df77ad24c9a6f1a88dadb2d1d6d553c4b6bc28168e204f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:30:11.781Z"
+}
