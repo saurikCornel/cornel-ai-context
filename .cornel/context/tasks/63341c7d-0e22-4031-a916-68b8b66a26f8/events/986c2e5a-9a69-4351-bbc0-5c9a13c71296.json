@@ -1,0 +1,17 @@
+{
+  "id": "986c2e5a-9a69-4351-bbc0-5c9a13c71296",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+    "output": "---OBJECT---\ncommit\n---STATUS---\n---DIFF vs BASE---\nM\tsrc/game/HoleRuntime.ts\nA\tsrc/game/holeMovers.test.ts\n---MERGE STATE---\nno MERGE_HEAD\n",
+    "outputDigest": "1d8854f310c864fcaabd767ea637534f695941faf2138dfb082d9718ae484be2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:38:58.437Z"
+}
