@@ -1,0 +1,12 @@
+{
+  "id": "ee7508e1-3e02-4488-adbd-47d9d53831bc",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "readme-check-5",
+    "operation": "run",
+    "command": "npm run build > /tmp/h.log 2>&1; echo \"build_exit=$?\"; tail -12 /tmp/h.log; ls dist 2>/dev/null; rm -rf dist; git status --short"
+  },
+  "createdAt": "2026-09-17T02:16:56.269Z"
+}

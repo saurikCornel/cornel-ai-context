@@ -3,7 +3,7 @@
   "branch": "cornel/readme-opisyvaet-funkcionalnost-kotoroy-c8ba46",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Typecheck проходит (exit 0), три npm-скрипта тестов зелёные. Осталось проверить, запускаются ли `node:test`-наборы отдельно и можно ли вообще выполнить `save-manager.test.mjs` (ему нужен несобираемый ни одним скриптом `.test-build/`).\n\n```json\n{\"version\":1,\"taskId\":\"c8ba46b9-2646-4ae8-b256-ef943a1c8c80\",\"commandId\":\"readme-check-4\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"echo '--- node:test leaderboard ---'; node --test tests/leaderboard-generator.test.ts tests/leaderboard-render.test.ts > /tmp/e.log 2>&1; echo \\\"nodetest_lb_exit=$?\\\"; grep -E '^. (pass|fail)' /tmp/e.log; echo '--- try building .test-build ---'; npx tsc src/core/SaveManager.ts src/player/profile.ts src/player/progression.ts --outDir .test-build --module esnext --target es2022 --moduleResolution bundler --skipLibCheck > /tmp/f.log 2>&1; echo \\\"emit_exit=$?\\\"; tail -12 /tmp/f.log; ls .test-build 2>/dev/null; node --test tests/save-manager.test.mjs > /tmp/g.log 2>&1; echo \\\"savetest_exit=$?\\\"; grep -E '^. (pass|fail)|Error' /tmp/g.log | head -8; rm -rf .test-build; echo '--- cleanup ---'; git status --short\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Проверяю `npm run build` перед тем, как описывать его в README.\n\n```json\n{\"version\":1,\"taskId\":\"c8ba46b9-2646-4ae8-b256-ef943a1c8c80\",\"commandId\":\"readme-check-5\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"npm run build > /tmp/h.log 2>&1; echo \\\"build_exit=$?\\\"; tail -12 /tmp/h.log; ls dist 2>/dev/null; rm -rf dist; git status --short\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "readme-check-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "readme-check-4",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "readme-check-5",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:15:37.953Z"
+  "createdAt": "2026-09-17T02:16:56.275Z"
 }
