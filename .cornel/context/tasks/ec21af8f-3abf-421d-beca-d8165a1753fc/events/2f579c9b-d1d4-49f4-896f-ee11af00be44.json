@@ -1,0 +1,17 @@
+{
+  "id": "2f579c9b-d1d4-49f4-896f-ee11af00be44",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+    "output": "### src/ui/index.ts (строки 1-20 из 37)\n1: import type { ControlScheme, PlayerProfile } from '../contracts';\n2: import { GAME_CONFIG } from '../config/GameConfig';\n3: import { COURSE_SUMMARIES, DEFAULT_COURSE_ID, RANDOM_COURSE_ID, getCourse } from '../courses';\n4: import { buildLeaderboardStandings, renderLeaderboard } from '../leaderboard';\n5: import './ui.css';\n6: \n7: type Screen='main'|'play'|'custom'|'ranked'|'settings'|'profile'|'leaderboard';\n8: type Mode='play'|'custom'|'ranked';\n9: export interface UISettings { controlScheme:ControlScheme; quality:'low'|'medium'|'high'|'ultra'; volume:number; reducedMotion:boolean }\n10: export interface SetupDTO { players:number; bots:number; holes:9|18; courseId:string }\n11: export interface ProfileDTO extends PlayerProfile { level:number; xp:number; xpNext:number; matches:number; wins:number; bestRound:number }\n12: export interface UIActions { navigate?(screen:Screen):void; startMatch?(mode:Mode,setup:SetupDTO):void; saveSettings?(settings:UISettings):void }\n13: export interface AppUIOptions { initialCourseId?:string; playerRating?:number }\n14: \n15: const profile:ProfileDTO={id:'local-player',displayName:'Putt Pilot',kind:'human',ballStyleId:'classic-white',rating:1240,level:7,xp:680,xpNext:1000,matches:34,wins:11,bestRound:31};\n16: const LEADERBOARD_SIZE=64;\n17: const esc=(s:string)=>s.replace(/[&<>\\\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\\\"':'&quot;'}[c]!));\n18: const nav=(label:string,to:Screen,primary=false)=>`<button class=\"cpa-btn ${primary?'primary':''}\" data-nav=\"${to}\">${label}</button>`;\n19: const courseOptions=(selected:string)=>COURSE_SUMMARIES.map(c=>`<option value=\"${c.id}\" ${c.id===selected?'selected':''}>${esc(c.name)} · ${c.holeCount} holes · par ${c.totalPar}</option>`).join('')+`<option value=\"${RANDOM_COURSE_ID}\" ${selected===RANDOM_COURSE_ID?'selected':''}>Random Tour</option>`;\n20: const setup=(mode:Mode,courseId:string)=>`<section class=\"cpa-screen\"><header>${nav('← Back','main')}<b>MATCH SETUP</b></header><main class=\"cpa-card\"><h2>${mode==='ranked'?'Ranked Match':mode==='custom'?'Custom Game':'Quick Play'}</h2><p>${mode==='ranked'?'Competitive rules are fixed for fair rating play.':'Choose your match and hit the green.'}</p><div class=\"cpa-grid\"><label>Players<select name=\"players\" ${mode==='ranked'?'disabled':''}>${[1,2,3,4,5,6,7,8].map(n=>`<option ${n===4?'selected':''}>${n}</option>`).join('')}</select></label><label>Bot rivals<select name=\"bots\" ${mode==='ranked'?'disabled':''}>${[0,1,2,3,4,5,6,7].map(n=>`<option ${n===3?'selected':''}>${n}</option>`).join('')}</select></label><label>Holes<select name=\"holes\" ${mode==='ranked'?'disabled':''}><option>9</option><option>18</option></select></label><label>Course<select name=\"course\" ${mode==='ranked'?'disabled':''}>${courseOptions(courseId)}</select></label></div><button class=\"cpa-btn primary wide\" data-start=\"${mode}\">${mode==='ranked'?'Find Match':'Start Match'}</button></main></section>`;\n… ещё 17 строк",
+    "outputDigest": "d937c2045bb64f297dc8abf866a21fd048e07f13a0739aa4dc61cb53182d6285",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:08:31.575Z"
+}
