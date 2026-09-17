@@ -3,7 +3,7 @@
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
   "status": "RUNNING",
-  "summary": "Ветка снова разошлась (вероятно, лаг проверки GitHub). Сверяю фактический head перед повторным finish.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"head-check\",\"operation\":\"run\",\"headSha\":\"b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\",\"command\":\"git rev-parse HEAD; git log --oneline -3; git status --short\",\"timeoutSeconds\":180}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Повторяю проверку head — прошлый раз такое расхождение было временным.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"head-check-2\",\"operation\":\"run\",\"headSha\":\"b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\",\"command\":\"git rev-parse HEAD; git log --oneline -3\",\"timeoutSeconds\":180}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -181,10 +181,16 @@
     },
     {
       "commandId": "head-check",
+      "status": "FAILED",
+      "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
+      "exitCode": null
+    },
+    {
+      "commandId": "head-check-2",
       "status": "STARTED",
       "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:38:26.286Z"
+  "createdAt": "2026-09-17T04:38:43.935Z"
 }
