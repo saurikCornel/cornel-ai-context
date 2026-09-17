@@ -1,0 +1,17 @@
+{
+  "id": "b23525e4-7e64-46f2-b442-ff5a007d532c",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "edit-1",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "edits ok\n src/contracts/game.ts           | 3 ++-\n src/courses/HoleBuilder.ts      | 3 +++\n src/courses/data/green-hills.ts | 5 ++++-\n src/game/Game.ts                | 6 +++---\n 4 files changed, 12 insertions(+), 5 deletions(-)\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "c65015ae2039f5593a3f3b25245b3a10978317b106083b1dd715fe72f51922c1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:26:16.640Z"
+}
