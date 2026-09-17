@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Вижу один конфликтный блок, но нужно проверить весь файл и понять, что содержат обе стороны целиком.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"read-2\",\"operation\":\"read\",\"headSha\":\"012ffb90c6c91afd0be84e73d07ce4a07a511c7a\",\"paths\":[\"README.md:1-95\"]}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:34:23.544Z"
+}
