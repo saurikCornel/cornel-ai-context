@@ -1,0 +1,17 @@
+{
+  "id": "fb795c82-e028-4d2c-b1b7-43e6158a9aa6",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-12",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f2e7fbf39d39e03a1fe2245632a2e7882cab0e6b",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\u001b[2m   Start at \u001b[22m 06:28:59\n\u001b[2m   Duration \u001b[22m 3.54s\u001b[2m (environment 52%, transform 30%, import 9%, tests 6%, worker 2%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 5.97s\u001b[39m\u001b[2m · 30% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.58s\u001b[39m\n",
+    "outputDigest": "62f5e5caec56de301596a05b1d67b427a2afad3ee5ae357cdc5d98d1a9dee92a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:29:06.960Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "42926a04-b467-43f8-9811-8a8b4612d5ca",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": " M src/game/HoleRuntime.ts\n?? src/game/holeMovers.test.ts\n--- stat ---\n src/game/HoleRuntime.ts | 179 +++++++++++++++++++++++++++++++++++++++++-------\n 1 file changed, 154 insertions(+), 25 deletions(-)\n",
+    "outputDigest": "fee8862768068cc2ed04430beaf679ae40aea58d767656f7ae6bcb6839ca09bd",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:29:01.264Z"
+}

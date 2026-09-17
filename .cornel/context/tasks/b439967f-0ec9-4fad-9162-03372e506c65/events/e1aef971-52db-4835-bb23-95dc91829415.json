@@ -1,0 +1,11 @@
+{
+  "id": "e1aef971-52db-4835-bb23-95dc91829415",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "check-12",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\u001b[2m   Start at \u001b[22m 06:28:59\n\u001b[2m   Duration \u001b[22m 3.54s\u001b[2m (environment 52%, transform 30%, import 9%, tests 6%, worker 2%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 5.97s\u001b[39m\u001b[2m · 30% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n"
+  },
+  "createdAt": "2026-09-17T03:29:03.977Z"
+}
