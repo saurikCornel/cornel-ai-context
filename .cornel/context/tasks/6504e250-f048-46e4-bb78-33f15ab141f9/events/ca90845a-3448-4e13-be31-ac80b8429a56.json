@@ -1,0 +1,12 @@
+{
+  "id": "ca90845a-3448-4e13-be31-ac80b8429a56",
+  "taskId": "6504e250-f048-46e4-bb78-33f15ab141f9",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "read-6",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-17T04:43:50.156Z"
+}

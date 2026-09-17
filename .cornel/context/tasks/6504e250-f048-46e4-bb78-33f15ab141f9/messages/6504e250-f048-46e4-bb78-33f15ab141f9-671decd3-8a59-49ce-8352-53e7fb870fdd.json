@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"6504e250-f048-46e4-bb78-33f15ab141f9\",\"commandId\":\"read-6\",\"operation\":\"read\",\"headSha\":\"168a63b4d9a5ca746281bf07acc6873303139434\",\"paths\":[\"src/ui/index.ts:29-44\"]}\n```\n\nЖду результат от worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:43:47.880Z"
+}
