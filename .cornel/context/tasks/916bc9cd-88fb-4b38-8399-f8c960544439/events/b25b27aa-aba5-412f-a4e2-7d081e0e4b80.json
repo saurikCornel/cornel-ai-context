@@ -1,0 +1,11 @@
+{
+  "id": "b25b27aa-aba5-412f-a4e2-7d081e0e4b80",
+  "taskId": "916bc9cd-88fb-4b38-8399-f8c960544439",
+  "type": "CLI_ERROR",
+  "text": "Apple Intelligence: Foundation Models: decodingFailure(FoundationModels.LanguageModelSession.GenerationError.Context(debugDescription: \"Failed to convert text into into GeneratedContent\\nText: I\\'ve identified the missing files in the project directory. To proceed, I\\'ll need to create the necessary",
+  "detail": {
+    "agent": "apple",
+    "attempt": 1
+  },
+  "createdAt": "2026-09-17T00:02:51.688Z"
+}
