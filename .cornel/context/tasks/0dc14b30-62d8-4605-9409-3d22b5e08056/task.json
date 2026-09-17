@@ -17,15 +17,16 @@
   "branch": "cornel/surface-friction-model-ice-mud-sand-0dc14b",
   "baseSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "WAITING_CHATGPT",
+  "status": "NEEDS_ATTENTION",
   "createdAt": "2026-09-16T23:47:06.624Z",
-  "updatedAt": "2026-09-17T01:49:52.688Z",
+  "updatedAt": "2026-09-17T01:50:19.695Z",
   "issue": 76,
   "chatUrl": "cli://claude/530487ee-bbfe-4126-9033-67f4a2e044b0",
   "error": null,
-  "cliActivity": "Claude CLI: начал ход (claude-opus-5)",
+  "cliActivity": null,
   "browserError": null,
   "statusChecks": 0,
   "currentHead": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
-  "cliSession": "530487ee-bbfe-4126-9033-67f4a2e044b0"
+  "cliSession": "530487ee-bbfe-4126-9033-67f4a2e044b0",
+  "attentionReason": "github_access"
 }
