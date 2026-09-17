@@ -1,0 +1,16 @@
+{
+  "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
+  "branch": "cornel/kursy-nedostizhimy-iz-prilozheniya-net-r-2e3efe",
+  "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+  "status": "RUNNING",
+  "summary": "Начинаю с осмотра рабочей копии.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"path\":\"src\",\"maxLines\":300}\n```\n\nЖду результата worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "commands": [
+    {
+      "commandId": "ls-1",
+      "status": "STARTED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-17T02:06:40.642Z"
+}
