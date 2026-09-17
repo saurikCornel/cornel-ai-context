@@ -1,0 +1,16 @@
+{
+  "taskId": "80c7178d-a60e-436e-ac67-5d3063a48bee",
+  "branch": "cornel/candy-factory-ts-i-pirate-bay-ts-zapisan-80c717",
+  "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+  "status": "RUNNING",
+  "summary": "I'll start by reading the two course files and the shared layout kit.\n\n```json\n{\"version\":1,\"taskId\":\"80c7178d-a60e-436e-ac67-5d3063a48bee\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/courses/data/candy-factory.ts\",\"src/courses/data/pirate-bay.ts\"]}\n```\n\nЖду результат worker — он придёт в этот чат.\n\n",
+  "commands": [
+    {
+      "commandId": "read-1",
+      "status": "STARTED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-17T03:08:22.039Z"
+}
