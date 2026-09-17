@@ -1,0 +1,17 @@
+{
+  "id": "909e2d96-f82a-4f65-a3bd-2bbf72502e15",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8 -> FETCH_HEAD\nAuto-merging src/main.ts\nCONFLICT (content): Merge conflict in src/main.ts\nAuto-merging vitest.config.ts\nCONFLICT (add/add): Merge conflict in vitest.config.ts\nAutomatic merge failed; fix conflicts and then commit the result.\nMERGE_EXIT=1\nA  src/game/AimController.ts\nA  src/game/CourseRegistry.ts\nA  src/game/Game.ts\nA  src/game/HoleRuntime.ts\nA  src/game/game.css\nA  src/game/game.test.ts\nUU src/main.ts\nAA vitest.config.ts\n",
+    "outputDigest": "90a141f8aefd488d4b640e7965350bb311d110b91c34b4979c403eeb2ebf0e0c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:44:52.552Z"
+}
