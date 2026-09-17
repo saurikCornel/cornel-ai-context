@@ -1,0 +1,17 @@
+{
+  "id": "8d401caa-7b8f-4605-9558-d6b853653c97",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/chast-moduley-zapisana-minificirovannymi-8b573d -> FETCH_HEAD\nAuto-merging src/ui/index.ts\nCONFLICT (content): Merge conflict in src/ui/index.ts\nAuto-merging src/ui/ui.css\nCONFLICT (content): Merge conflict in src/ui/ui.css\nAutomatic merge failed; fix conflicts and then commit the result.\n--- STATUS ---\nM  src/ai/BotProfiles.ts\nM  src/ai/random.ts\nM  src/core/SaveManager.ts\nM  src/courses/data/ancient-temple.ts\nM  src/courses/data/arctic-base.ts\nM  src/courses/data/chaos-dimension.ts\nM  src/courses/data/volcano.ts\nM  src/dev/DeveloperDiagnostics.ts\nM  src/dev/LaunchOptions.ts\nM  src/dev/PresentationMinimap.ts\nM  src/game/game.css\nM  src/gameplay/ScoreManager.ts\nM  src/input/InputManager.ts\nM  src/leaderboard/style.css\nM  src/player/profile.ts\nM  src/player/progression.ts\nM  src/player/types.ts\nM  src/style.css\nM  src/ui/Overlays.ts\nM  src/ui/domTests.ts\nUU src/ui/index.ts\nUU src/ui/ui.css\n",
+    "outputDigest": "29bdcbf2f988f721042ec1bf6943327849fe046ba19c44b6dcec3341a05cced5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:29:15.600Z"
+}
