@@ -3,7 +3,7 @@
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "git grep использует basic regex — альтернация не сработала. Повторяю простым паттерном.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"grep-2\",\"operation\":\"grep\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"pattern\":\"rating\",\"path\":\"src/ui/index.ts\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"read-4\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/ui/index.ts:1-17\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "grep-2",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-4",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:17:56.638Z"
+  "createdAt": "2026-09-17T04:18:52.384Z"
 }

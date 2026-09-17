@@ -1,0 +1,17 @@
+{
+  "id": "e9589705-0562-449a-bb15-2e11f471189e",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "### src/ui/index.ts (строки 1-17 из 33)\n1: import type { ControlScheme, PlayerProfile } from '../contracts';\n2: import { GAME_CONFIG } from '../config/GameConfig';\n3: import { COURSE_SUMMARIES, DEFAULT_COURSE_ID, RANDOM_COURSE_ID, getCourse } from '../courses';\n4: import './ui.css';\n5: \n6: type Screen='main'|'play'|'custom'|'ranked'|'settings'|'profile';\n7: type Mode='play'|'custom'|'ranked';\n8: export interface UISettings { controlScheme:ControlScheme; quality:'low'|'medium'|'high'|'ultra'; volume:number; reducedMotion:boolean }\n9: export interface SetupDTO { players:number; bots:number; holes:9|18; courseId:string }\n10: export interface ProfileDTO extends PlayerProfile { level:number; xp:number; xpNext:number; matches:number; wins:number; bestRound:number }\n11: export interface UIActions { navigate?(screen:Screen):void; startMatch?(mode:Mode,setup:SetupDTO):void; saveSettings?(settings:UISettings):void }\n12: export interface AppUIOptions { initialCourseId?:string }\n13: \n14: const profile:ProfileDTO={id:'local-player',displayName:'Putt Pilot',kind:'human',ballStyleId:'classic-white',rating:1240,level:7,xp:680,xpNext:1000,matches:34,wins:11,bestRound:31};\n15: const esc=(s:string)=>s.replace(/[&<>\\\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\\\"':'&quot;'}[c]!));\n16: const nav=(label:string,to:Screen,primary=false)=>`<button class=\"cpa-btn ${primary?'primary':''}\" data-nav=\"${to}\">${label}</button>`;\n17: const courseOptions=(selected:string)=>COURSE_SUMMARIES.map(c=>`<option value=\"${c.id}\" ${c.id===selected?'selected':''}>${esc(c.name)} · ${c.holeCount} holes · par ${c.totalPar}</option>`).join('')+`<option value=\"${RANDOM_COURSE_ID}\" ${selected===RANDOM_COURSE_ID?'selected':''}>Random Tour</option>`;\n… ещё 16 строк",
+    "outputDigest": "4e09cbd5742bbf16337d1a96d72551d960fe194f1805b6a854d3fb016e436703",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:18:54.405Z"
+}
