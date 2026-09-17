@@ -1,0 +1,13 @@
+{
+  "id": "11d17f90-a275-4b86-be91-4292b6aada88",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Ветка cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8 слита: merge-коммит 118a525, родители fe890d7 (голова офиса) и 93be8f7 (вливаемая ветка). Маркеров конфликтов не осталось.\n\nРазрешение конфликтов — объединением, обе стороны сохранены:\n1) src/main.ts. Основа — играбельный цикл из a57de8: Game.create, слои cpa-game/cpa-layer, LoadingOverlay, startMatch/endMatch, обработчики AppUI (startMatch, saveSettings), кадровый цикл с dt и переключением сцены меню/матча, очистка на pagehide. В него вшита работа офиса по реестру курсов: parseLaunchOptions из ./dev/LaunchOptions и resolveCourseSelection из ./courses задают dataset.course и dataset.hole и передают initialCourseId третьим аргументом AppUI. Debug-ветка (?debug=1) больше не парсит параметры повторно и не хардкодит green-hills — стартует на selection.course.id с selection.holeIndex, сохраняя dataset.debug/debugCourse/debugHole из вливаемой ветки.\n2) vitest.config.ts (add/add). Объединены resolve.alias на ES-сборку @dimforge/rapier3d-compat (Rapier иначе не грузится в тестах) и test.include для src/**/*.test.ts и tests/**/*.test.ts с environment node; комментарии обеих сторон сохранены.\n\nПроверки на объединённом дереве через worker до публикации: npm run typecheck (tsc -b) без ошибок; npm test — 33 файла, 195 тестов, все прошли, включая src/game/game.test.ts из вливаемой ветки и registry.test.ts/courseSelect.test.ts из ветки офиса; npm run build — сборка успешна (предупреждение только о размере чанка). Отдельного скрипта линтера в package.json нет, его роль выполняет typecheck. После публикации подтверждено: git log -1 = 118a525 с двумя родителями. PR не открывал — ветку сливает офис.\n\nЗамечание (не блокирует, ничего не удалял): в дереве два реестра курсов — src/courses/CourseRegistry.ts и src/game/CourseRegistry.ts, которым пользуется Game. Свести их в один источник стоит отдельной карточкой.",
+  "detail": {
+    "commands": 18,
+    "failed": 5,
+    "headSha": "118a525ed6f76d4cdcf1484b26f6579d828a7863",
+    "branch": "cornel/slit-sobrat-igru-svyazat-podsistemy-v-ig-0b171c"
+  },
+  "createdAt": "2026-09-17T03:00:44.113Z"
+}
