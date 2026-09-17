@@ -1,0 +1,12 @@
+{
+  "id": "5dd51d16-eeba-483a-8891-14a5f1ff0756",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "merge-2",
+    "operation": "run",
+    "command": "git log -1 --format='85c33d8 parents: %P' 85c33d8 && git merge --ff-only origin/cornel/office && echo '--- now HEAD ---' && git log --oneline -1 && git merge --no-edit origin/cornel/slit-chast-moduley-zapisana-minificirova-d49254; echo \"MERGE_EXIT=$?\"; echo '--- status ---'; git status --short; echo '--- conflicts ---'; git diff --name-only --diff-filter=U"
+  },
+  "createdAt": "2026-09-17T04:45:49.558Z"
+}
