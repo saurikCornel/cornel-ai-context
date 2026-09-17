@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Локальное зеркало не обновляется (worker отклоняет команду до fetch), поэтому новый SHA ветки мне не виден. Пробую форму `heads` со списком известных голов:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-5\",\"operation\":\"run\",\"heads\":[\"739687ec79598c402229dd1b1ef76589aa825b02\",\"54b782acaa492ca19fdaf50ddb3bc4783addd212\"],\"timeoutSeconds\":600,\"command\":\"git rev-parse HEAD && ls -1 src/ui && npx vitest run src/ui/minimap.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** код карточки написан и лежит в рабочей копии (`src/ui/Minimap.ts`, `src/ui/minimap.test.ts`, оба untracked — синхронизация ветки их не затрёт), зависимости установлены. Блокирует только сверка head: назначенная ветка на GitHub ушла вперёд, а её фактический SHA локально недоступен. Если и `heads` не подойдёт — попрошу владельца сообщить актуальный SHA ветки `cornel/in-game-minimap-projection-and-renderer-d905f6`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:54:49.588Z"
+}

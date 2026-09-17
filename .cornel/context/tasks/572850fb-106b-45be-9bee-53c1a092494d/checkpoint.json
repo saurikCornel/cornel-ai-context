@@ -3,7 +3,7 @@
   "branch": "cornel/three-js-hole-scene-builder-572850",
   "headSha": "134b4974883323edd586d7187b760ec316e66030",
   "status": "RUNNING",
-  "summary": "Опубликовано, новый head `134b4974883323edd586d7187b760ec316e66030`. Прогоняю проверки на опубликованном коммите, чтобы finish опирался на успешную проверку того же headSha.\n\n```json\n{\"version\":1,\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"134b4974883323edd586d7187b760ec316e66030\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/core/holeScene.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Та же рассинхронизация: `currentHead` задачи догнал опубликованный коммит уже после отказа. Повторяю проверку с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"commandId\":\"verify-2\",\"operation\":\"run\",\"headSha\":\"134b4974883323edd586d7187b760ec316e66030\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/core/holeScene.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "apple-32420d36",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "verify-1",
+      "status": "FAILED",
+      "headSha": "134b4974883323edd586d7187b760ec316e66030",
+      "exitCode": null
+    },
+    {
+      "commandId": "verify-2",
       "status": "STARTED",
       "headSha": "134b4974883323edd586d7187b760ec316e66030",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:54:24.042Z"
+  "createdAt": "2026-09-17T01:54:44.891Z"
 }
