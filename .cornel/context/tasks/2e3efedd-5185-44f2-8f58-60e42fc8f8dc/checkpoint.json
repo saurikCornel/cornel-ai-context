@@ -1,9 +1,9 @@
 {
   "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
   "branch": "cornel/kursy-nedostizhimy-iz-prilozheniya-net-r-2e3efe",
-  "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+  "headSha": "94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f",
   "status": "RUNNING",
-  "summary": "Артефакты сборки игнорируются. Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(courses): add course registry and wire it to the UI selector and ?course= launch option\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано (94fdd9d). Прогоню проверки на опубликованном коммите перед finish.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"check-4\",\"operation\":\"run\",\"headSha\":\"94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f\",\"timeoutSeconds\":900,\"command\":\"npm run typecheck && npx vitest run src/courses src/ui src/dev tests/course-data-validation.test.ts 2>&1 | tail -18\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-4",
       "status": "STARTED",
-      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "headSha": "94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:25:51.605Z"
+  "createdAt": "2026-09-17T02:26:51.160Z"
 }
