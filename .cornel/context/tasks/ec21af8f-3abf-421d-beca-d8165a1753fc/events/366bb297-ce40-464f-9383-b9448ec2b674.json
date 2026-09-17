@@ -1,0 +1,17 @@
+{
+  "id": "366bb297-ce40-464f-9383-b9448ec2b674",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+    "output": "\nadded 84 packages in 2s\n--- tsc ---\ntsc exit=0\n--- vitest src/ui ---\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/ec21af8f-3abf-421d-beca-d8165a1753fc\u001b[39m\n\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/ui/minimap.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/ui.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 28\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/courseSelect.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 31\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/leaderboard.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 75\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m18 passed\u001b[39m\u001b[22m\u001b[90m (18)\u001b[39m\n\u001b[2m   Start at \u001b[22m 08:11:04\n\u001b[2m   Duration \u001b[22m 831ms\u001b[2m (environment 77%, transform 14%, tests 6%, import 3%)\u001b[22m\n\nvitest pipeline exit=0\n--- diff stat ---\n src/ui/index.ts | 217 ++++++++++++++++++++++++++++++++++++++++++++++++++------\n 1 file changed, 195 insertions(+), 22 deletions(-)\n",
+    "outputDigest": "de81043300236e70347f756c961315b572327018c78d2bbe91e905213bb3d17f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:11:04.932Z"
+}
