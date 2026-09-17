@@ -3,7 +3,7 @@
   "branch": "cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"grep-3\",\"operation\":\"grep\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"pattern\":\"obstacle\",\"path\":\"src/core/HoleSceneBuilder.ts src/ui/Minimap.ts src/gameplay/HoleSystem.ts src/ai/BotPlanner.ts\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"read-7\",\"operation\":\"read\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"paths\":[\"src/core/HoleSceneBuilder.ts:1-120\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "grep-3",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-7",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:22:12.437Z"
+  "createdAt": "2026-09-17T02:24:20.378Z"
 }
