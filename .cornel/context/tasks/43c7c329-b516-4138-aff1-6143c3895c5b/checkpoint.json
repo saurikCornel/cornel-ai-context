@@ -3,7 +3,7 @@
   "branch": "cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "All adapter tests green. Now the full suite plus a production build.\n\n```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"verify-all\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"npx vitest run 2>&1 | tail -35; echo '--- BUILD ---'; npm run build 2>&1 | tail -8\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "The 3 failing suites are `node:test`-based files (and one needing a `.test-build` step) — they aren't vitest suites and are untouched by this card. Typecheck, build and all 176 vitest tests pass. Publishing.\n\n```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(courses): descriptors for teleporters, fans, conveyors, pads, fields and lava\\n\\nExtend ObstacleDescriptor with force volumes (teleporter/fan/conveyor),\\nimpulse pads (spring/boost/jump), field zones (gravity/magnet), lava hazards\\nand pendulum/sliding-wall/door movers, then wire them to the existing runtime\\nmodules through src/obstacles/descriptors.ts. Themed mechanics are now used by\\nVolcano, Neon City, Haunted Mansion, Candy Factory and Space Station.\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -157,10 +157,16 @@
     },
     {
       "commandId": "verify-all",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:48:01.755Z"
+  "createdAt": "2026-09-17T02:48:35.132Z"
 }
