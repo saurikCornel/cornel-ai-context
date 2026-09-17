@@ -1,0 +1,12 @@
+{
+  "id": "e6493c93-349c-4d8f-b8fb-578593f13493",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-4",
+    "operation": "run",
+    "command": "echo '=== OURS stage2 index.ts lines 1-7 ==='; sed -n '1,7p' /tmp/mrg/index.ts.2 | cut -c1-400; echo; echo '=== THEIRS stage3 index.ts lines 1-142 ==='; sed -n '1,142p' /tmp/mrg/index.ts.3 | cat -n"
+  },
+  "createdAt": "2026-09-17T04:30:53.202Z"
+}

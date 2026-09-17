@@ -3,7 +3,7 @@
   "branch": "cornel/slit-chast-moduley-zapisana-minificirova-d49254",
   "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
   "status": "RUNNING",
-  "summary": "Понял правку офиса: добавлен экран Leaderboard. Теперь читаю разминифицированную версию встречной ветки, чтобы наложить на неё функциональность офиса.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"inspect-3\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"echo '=== OURS stage2 index.ts lines 1-7 ==='; sed -n '1,7p' /tmp/mrg/index.ts.2; echo; echo '=== THEIRS stage3 index.ts (full) ==='; cat -n /tmp/mrg/index.ts.3\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Начало файла обрезано в выводе. Читаю первую половину.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"inspect-4\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"echo '=== OURS stage2 index.ts lines 1-7 ==='; sed -n '1,7p' /tmp/mrg/index.ts.2 | cut -c1-400; echo; echo '=== THEIRS stage3 index.ts lines 1-142 ==='; sed -n '1,142p' /tmp/mrg/index.ts.3 | cat -n\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "inspect-3",
+      "status": "SUCCEEDED",
+      "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-4",
       "status": "STARTED",
       "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:30:30.233Z"
+  "createdAt": "2026-09-17T04:30:53.205Z"
 }
