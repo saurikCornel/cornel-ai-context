@@ -1,0 +1,17 @@
+{
+  "id": "3d4ebab0-147a-4111-8abc-fecf6991fad4",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "readme-publish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "87e05bb601a988545be09272d01c792629279b49",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:24:54.307Z"
+}
