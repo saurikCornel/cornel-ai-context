@@ -1,0 +1,11 @@
+{
+  "id": "44f47bd9-3659-4973-ab67-b40b6eff6c73",
+  "taskId": "916bc9cd-88fb-4b38-8399-f8c960544439",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "pads-check-3",
+    "headSha": "739687ec79598c402229dd1b1ef76589aa825b02"
+  },
+  "createdAt": "2026-09-17T01:45:54.848Z"
+}

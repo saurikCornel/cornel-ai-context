@@ -1,9 +1,9 @@
 {
   "taskId": "916bc9cd-88fb-4b38-8399-f8c960544439",
   "branch": "cornel/bumper-springpad-boostpad-and-jumppad-916bc9",
-  "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+  "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
   "status": "RUNNING",
-  "summary": "Проверки зелёные: 9/9 тестов и `tsc -b` (exit 0). В дереве только два новых файла — публикую.\n\n```json\n{\"version\":1,\"taskId\":\"916bc9cd-88fb-4b38-8399-f8c960544439\",\"commandId\":\"pads-publish-1\",\"operation\":\"publish\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"feat(obstacles): add Bumper/Spring/Boost/Jump impulse pads with tests\"}\n```\n\nЖду результат worker по `pads-publish-1` — придёт в этот чат.\n\nСводка: реализован `PadObstacle` в `src/obstacles/pads.ts` (bumper — отражение горизонтальной скорости от центра зоны с минимумом `strength*0.5`; spring — добавка вдоль направления, по умолчанию вверх; boost — добавка вдоль нормализованного направления с `zoneFalloff`; jump — вертикальная скорость = `strength`), везде `cappedVelocity` с `maxSpeed` по умолчанию 24, cooldown 0.25 с и `reset()`. Тесты — `src/obstacles/pads.test.ts`, 9 штук. `index.ts` и `types.ts` не тронуты. Следующий шаг: `finish` после подтверждения публикации.\n\n",
+  "summary": "Публикация прошла, новый head `739687ec`. Прогоняю проверки на опубликованном коммите (finish требует успешной проверки на том же headSha).\n\n```json\n{\"version\":1,\"taskId\":\"916bc9cd-88fb-4b38-8399-f8c960544439\",\"commandId\":\"pads-check-3\",\"operation\":\"run\",\"headSha\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/obstacles/pads.test.ts && npx tsc -b --pretty false\"}\n```\n\nЖду результат worker по `pads-check-3`.\n\nСводка: коммит `739687ec` содержит `src/obstacles/pads.ts` и `src/obstacles/pads.test.ts`. Следующий шаг: при зелёном прогоне — `finish` с итогом.\n\n",
   "commands": [
     {
       "commandId": "pads-write-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "pads-publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
+      "exitCode": 0
+    },
+    {
+      "commandId": "pads-check-3",
       "status": "STARTED",
-      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+      "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:44:53.028Z"
+  "createdAt": "2026-09-17T01:45:54.849Z"
 }
