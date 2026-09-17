@@ -22,8 +22,9 @@
   "workspaceSyncedSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
   "status": "READY",
   "createdAt": "2026-09-17T02:44:00.463Z",
-  "updatedAt": "2026-09-17T02:44:03.573Z",
+  "updatedAt": "2026-09-17T02:44:33.843Z",
   "issue": 93,
   "chatUrl": null,
-  "error": null
+  "error": null,
+  "cliActivity": "Claude CLI: запускается (opus)"
 }
