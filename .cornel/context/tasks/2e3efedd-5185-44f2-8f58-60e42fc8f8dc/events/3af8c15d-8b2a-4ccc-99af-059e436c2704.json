@@ -1,0 +1,12 @@
+{
+  "id": "3af8c15d-8b2a-4ccc-99af-059e436c2704",
+  "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "deps-1",
+    "operation": "run",
+    "command": "ls -d node_modules 2>/dev/null && ls node_modules/.bin | head -20; echo '--- install ---'; npm install --no-audit --no-fund 2>&1 | tail -15"
+  },
+  "createdAt": "2026-09-17T02:20:17.653Z"
+}
