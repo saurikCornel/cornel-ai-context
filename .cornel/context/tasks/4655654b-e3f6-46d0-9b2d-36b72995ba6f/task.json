@@ -19,10 +19,10 @@
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "READY",
   "createdAt": "2026-09-16T23:47:18.290Z",
-  "updatedAt": "2026-09-17T00:27:37.306Z",
+  "updatedAt": "2026-09-17T00:28:04.543Z",
   "issue": 78,
   "chatUrl": null,
   "error": null,
-  "cliActivity": "Apple Intelligence: readFile src/player/cosmetics.ts",
+  "cliActivity": "Apple Intelligence: webSearch Ball cosmetics catalog and unlocks",
   "browserError": "Apple Intelligence завершился с кодом null: log and unlocks\"}\n{\"type\":\"tool\",\"name\":\"webSearch\",\"args\":\"Ball cosmetics catalog and unlocks\"}\n{\"name\":\"webSearch\",\"args\":\"Ball cosmetics catalog and unlocks\",\"type\":\"tool\"}\n{\"name\":\"listDirectory\",\"args\":\"tests\\/\",\"type\":\"tool\"}\n{\"type\":\"tool\",\"name\":\"readFile\",\"args\":\"src\\/player\\/types.ts\"}\n{\"args\":\"Ball cosmetics catalog and unlocks\",\"name\":\"webSearch\",\"type\":\"tool\"}\n{\"name\":\"listDirectory\",\"args\":\"tests\\/\",\"type\":\"tool\"}\n{\"type\":\"tool\",\"args\":\"s"
 }
