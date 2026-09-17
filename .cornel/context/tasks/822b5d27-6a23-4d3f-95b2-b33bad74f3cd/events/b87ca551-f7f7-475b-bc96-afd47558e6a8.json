@@ -1,0 +1,8 @@
+{
+  "id": "b87ca551-f7f7-475b-bc96-afd47558e6a8",
+  "taskId": "822b5d27-6a23-4d3f-95b2-b33bad74f3cd",
+  "type": "READY",
+  "text": "Задача создана. Worker ожидает команды от агента ChatGPT.",
+  "detail": {},
+  "createdAt": "2026-09-17T19:17:26.691Z"
+}

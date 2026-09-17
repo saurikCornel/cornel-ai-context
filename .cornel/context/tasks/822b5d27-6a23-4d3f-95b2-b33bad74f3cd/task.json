@@ -16,9 +16,10 @@
   "branch": "cornel/menedzher-ofisa-fun-golf-822b5d",
   "baseSha": "4ab79c7ab353535fa654ee756d9b73a225b3a281",
   "workspaceSyncedSha": "4ab79c7ab353535fa654ee756d9b73a225b3a281",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-17T19:17:23.464Z",
-  "updatedAt": "2026-09-17T19:17:23.464Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-17T19:17:26.690Z",
+  "issue": 122,
+  "chatUrl": null,
+  "error": null
 }
