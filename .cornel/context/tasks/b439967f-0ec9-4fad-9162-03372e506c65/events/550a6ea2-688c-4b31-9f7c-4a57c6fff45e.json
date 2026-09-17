@@ -1,0 +1,12 @@
+{
+  "id": "550a6ea2-688c-4b31-9f7c-4a57c6fff45e",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-5",
+    "operation": "run",
+    "command": "echo '=== game dir ==='; grep -rn --include=*.ts -E 'STROKE_LIMIT|strokeLimitPerHole|maxShots' src/game src/ui src/ai src/contracts src/courses/types.ts | head -40; echo '=== applyHoleStrokeLimit ==='; grep -rn -B2 -A 12 'applyHoleStrokeLimit' src/gameplay/MatchManager.ts; echo '=== courses data maxShots ==='; grep -rln 'maxShots' src/courses/data | head"
+  },
+  "createdAt": "2026-09-17T03:18:06.483Z"
+}
