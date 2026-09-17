@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Finish упал на той же синхронизации FETCH_HEAD, что и ранний `read` (operation `run`/`publish` при этом работают). Проверяю фактическое состояние ветки на новом SHA, затем повторю finish.\n\n```json\n{\"version\":1,\"taskId\":\"a2c2938e-c34d-46d1-9d7a-abcb66fb3bda\",\"commandId\":\"state-1\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"timeoutSeconds\":300,\"command\":\"git status --short && git log --oneline -3 && git rev-parse HEAD && git for-each-ref --format='%(refname) %(objectname:short)' refs/remotes | head -5\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:22:49.352Z"
+}

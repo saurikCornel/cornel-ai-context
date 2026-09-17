@@ -1,0 +1,17 @@
+{
+  "id": "f67ffda4-3ab3-49bf-97b0-5db163c0b44a",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "\u001b[2m   Start at \u001b[22m 07:22:35\n\u001b[2m   Duration \u001b[22m 4.18s\u001b[2m (environment 61%, transform 25%, import 8%, tests 5%, worker 1%)\u001b[22m\n\n\u001b[2m    Isolate \u001b[22m \u001b[33m44 workers spawned\u001b[39m\u001b[2m · ~610ms startup each (spawn + environment, per file)\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mat least ~2.37s faster with \u001b[22m\u001b[33misolate: false\u001b[39m\u001b[2m — reuses workers across files instead of one per file\u001b[22m\n\n--- STATUS ---\n M src/core/HoleSceneBuilder.ts\n?? src/core/holeSceneSensors.test.ts\n",
+    "outputDigest": "4c796b4f30c396ce8d528d1716dd504c2c254a5352d0221862e0fa3a9fb4deea",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:22:39.356Z"
+}
