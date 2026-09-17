@@ -1,0 +1,12 @@
+{
+  "id": "7b9b52a1-f89e-4b36-aa76-a06966502856",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "fix-1",
+    "operation": "run",
+    "command": "python3 - <<'EOF'\nfrom pathlib import Path\np = Path('src/core/holeSceneSensors.test.ts')\ns = p.read_text()\nold = \"    expect(hazardSurfaceTop(hole, hole.obstacles[2])).toBeCloseTo(-0.5);\"\nnew = (\n    \"    const pitDescriptor = hole.obstacles.find((item) => item.id === 'pit');\\n\"\n    \"    if (!pitDescriptor) throw new Error('pit descriptor missing');\\n\"\n    \"    expect(hazardSurfaceTop(hole, pitDescriptor)).toBeCloseTo(-0.5);\"\n)\nassert old in s, 'anchor not found'\np.write_text(s.replace(old, new))\nprint('patched')\nEOF\nnpx vitest run src/core 2>&1 | tail -8; echo '--- BUILD ---'; npm run build 2>&1 | tail -12"
+  },
+  "createdAt": "2026-09-17T04:21:33.814Z"
+}

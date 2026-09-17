@@ -1,0 +1,17 @@
+{
+  "id": "9901989c-7e91-4f5b-8220-37ffe8ff24c0",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "fix-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "patched\n \u001b[32m✓\u001b[39m src/core/holeSceneSensors.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/core/holeScene.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m12 passed\u001b[39m\u001b[22m\u001b[90m (12)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:21:36\n\u001b[2m   Duration \u001b[22m 157ms\u001b[2m (transform 49%, import 38%, tests 9%, worker 3%)\u001b[22m\n\n--- BUILD ---\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m    0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-CXd6WqYx.css  \u001b[39m\u001b[1m\u001b[2m    8.11 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     2.57 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-CstiSGh-.js   \u001b[39m\u001b[1m\u001b[2m    2.43 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     1.11 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-DlbA0kb8.js   \u001b[39m\u001b[1m\u001b[33m3,067.45 kB\u001b[39m\u001b[22m\u001b[2m │ gzip: 1,069.40 kB\u001b[22m\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.12s\u001b[39m\n",
+    "outputDigest": "38fce99a7b6cdf2d5db002fa2f7ad731d80f641c5b4b71a9653622d440e54c1c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:21:39.628Z"
+}

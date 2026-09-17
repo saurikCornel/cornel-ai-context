@@ -1,0 +1,17 @@
+{
+  "id": "f7325fc4-a49a-4d27-8ff7-82ef5d742b50",
+  "taskId": "f40347ef-5d08-4e0a-98f2-85b5767cbfa9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "### src/game/Game.ts (строки 315-345 из 852)\n315:         color: new THREE.Color(this.colorOf(player.id, index)),\n316:         roughness: 0.35,\n317:         metalness: 0.05,\n318:       });\n319:       this.ballMaterials.push(material);\n320:       const mesh = new THREE.Mesh(this.ballGeometry, material);\n321:       mesh.name = 'ball-' + player.id;\n322:       mesh.castShadow = true;\n323:       this.ballMeshes.set(player.id, mesh);\n324:       this.sceneManager.addDynamic(mesh);\n325:     });\n326:   }\n327: \n328:   private loadHole(index: number): void {\n329:     const hole = this.course.holes[index];\n330:     if (!hole) return;\n331:     const first = this.holeIndex < 0;\n332:     this.holeIndex = index;\n333:     this.hole = hole;\n334:     this.runtime?.dispose();\n335:     this.disposeBall();\n336:     this.runtime = new HoleRuntime(this.physics, hole, this.builder);\n337:     this.sceneManager.addStatic(this.runtime.group);\n338:     this.ball = new GolfBallPhysics(this.physics, hole.spawn, {\n339:       mass: BALL_MASS,\n340:       friction: BALL_FRICTION,\n341:       restitution: BALL_RESTITUTION,\n342:       rollingResistance: 0,\n343:       airResistance: 0,\n344:     });\n345:     this.playerPositions.clear();\n… ещё 507 строк",
+    "outputDigest": "4632d781538c61275bc57086eb6cf156b7a3cb37bd12920b1a407ed9f51e1f04",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:21:29.166Z"
+}
