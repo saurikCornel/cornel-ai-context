@@ -1,0 +1,17 @@
+{
+  "id": "4456acdf-f26b-47e2-b634-80b10bdb27d7",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5e2d11da8c90e1fe90f4a7fc7863816c3df8b525",
+    "output": "5e2d11da8c90e1fe90f4a7fc7863816c3df8b525\nparents: 5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236 1f5b4da8a67a95c9dfd3b9d68237082bfaa8462a\nMerge «Реализованные препятствия и зоны нельзя разместить в лунке»: конфликты курсов разрешены\n--- status ---\n## HEAD (no branch)\n--- merged branch contained? ---\ncard branch is an ancestor of HEAD\n",
+    "outputDigest": "9c50a35596f58919e5f4c49d21c0de0607bae48797f2225774152d984bedbb90",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:58:04.278Z"
+}

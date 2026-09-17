@@ -1,9 +1,9 @@
 {
   "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
   "branch": "cornel/slit-realizovannye-prepyatstviya-i-zony-6541e6",
-  "headSha": "5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236",
+  "headSha": "5e2d11da8c90e1fe90f4a7fc7863816c3df8b525",
   "status": "RUNNING",
-  "summary": "Все проверки зелёные: `tsc -b` чист, `vite build` собрался, 35 тестовых файлов / 237 тестов проходят. Завершаю слияние публикацией — рабочая копия в состоянии merge, коммит получит обоих родителей.\n\n```json\n{\"version\":1,\"taskId\":\"6541e68c-93b9-4d1c-9153-f6b12d7c7ad8\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236\",\"message\":\"Merge «Реализованные препятствия и зоны нельзя разместить в лунке»: конфликты курсов разрешены\\n\\nКонфликтовали haunted-mansion.ts, neon-city.ts и space-station.ts: обе стороны\\nпереписали массивы лунок целиком.\\n\\n- Геометрия взята из ветки офиса (планировки на layoutKit: повороты, развилки,\\n  этажи, рампы), её охраняет src/courses/layoutDiversity.test.ts.\\n- Механики взяты из входящей ветки и перенесены в эти планировки: pendulum,\\n  sliding-wall, door, teleporter, platform (haunted-mansion); boost-pad,\\n  jump-pad, teleporter (neon-city); gravity-zone, magnet-zone (space-station).\\n  Их требует THEME_MECHANICS в tests/course-data-validation.test.ts.\\n- В layoutKit добавлены конструкторы slidingWall, door, pendulum, teleporter,\\n  boostPad, jumpPad, gravityZone, magnetZone.\\n- Валидатор курсов научился отличать общий модуль layoutKit.ts от курса:\\n  требование «ровно один Course на модуль» и «10 курсов × 9 лунок» сохранено.\\n\\nПроверки: npm run typecheck, npm test (35 файлов, 237 тестов), npm run build.\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Опубликовано, новый head `5e2d11d`. Проверяю, что это действительно merge-коммит с двумя родителями и дерево чистое.\n\n```json\n{\"version\":1,\"taskId\":\"6541e68c-93b9-4d1c-9153-f6b12d7c7ad8\",\"commandId\":\"check-merge-1\",\"operation\":\"run\",\"headSha\":\"5e2d11da8c90e1fe90f4a7fc7863816c3df8b525\",\"command\":\"git log -1 --pretty='%H%nparents: %P%n%s'; echo '--- status ---'; git status --short --branch; echo '--- merged branch contained? ---'; git merge-base --is-ancestor 1f5b4da8a67a95c9dfd3b9d68237082bfaa8462a HEAD && echo 'card branch is an ancestor of HEAD'\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "5e2d11da8c90e1fe90f4a7fc7863816c3df8b525",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-merge-1",
       "status": "STARTED",
-      "headSha": "5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236",
+      "headSha": "5e2d11da8c90e1fe90f4a7fc7863816c3df8b525",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:57:38.755Z"
+  "createdAt": "2026-09-17T02:58:01.866Z"
 }

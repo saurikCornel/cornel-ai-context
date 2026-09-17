@@ -1,0 +1,12 @@
+{
+  "id": "cc328bff-5668-458b-ad36-a990e94337a4",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-merge-1",
+    "operation": "run",
+    "command": "git log -1 --pretty='%H%nparents: %P%n%s'; echo '--- status ---'; git status --short --branch; echo '--- merged branch contained? ---'; git merge-base --is-ancestor 1f5b4da8a67a95c9dfd3b9d68237082bfaa8462a HEAD && echo 'card branch is an ancestor of HEAD'"
+  },
+  "createdAt": "2026-09-17T02:58:01.864Z"
+}

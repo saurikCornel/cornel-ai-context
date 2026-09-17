@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Опубликовано, новый head `5e2d11d`. Проверяю, что это действительно merge-коммит с двумя родителями и дерево чистое.\n\n```json\n{\"version\":1,\"taskId\":\"6541e68c-93b9-4d1c-9153-f6b12d7c7ad8\",\"commandId\":\"check-merge-1\",\"operation\":\"run\",\"headSha\":\"5e2d11da8c90e1fe90f4a7fc7863816c3df8b525\",\"command\":\"git log -1 --pretty='%H%nparents: %P%n%s'; echo '--- status ---'; git status --short --branch; echo '--- merged branch contained? ---'; git merge-base --is-ancestor 1f5b4da8a67a95c9dfd3b9d68237082bfaa8462a HEAD && echo 'card branch is an ancestor of HEAD'\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:58:01.863Z"
+}
