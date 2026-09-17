@@ -1,0 +1,17 @@
+{
+  "id": "df07a64b-9b97-4058-9207-d10a1e0e0c21",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "patch-core-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "fa6ee5f Слить «Попадание в лунку без звука и частиц»: обратная связь (частицы, звук, качество, громкость) поверх рантайма препятствий\ne1fce95 Слить «sliding-wall, door и pendulum не двигаются»: система движителей и сенсорные объёмы в HoleRuntime\nd445b64 Merge «Лава и силовые препятствия работают как сплошные стены» (fd5dc768-2e5c-404a-9426-c8cc952cd365)\ncore patched\n",
+    "outputDigest": "05250418f67c3b76104daa56df39d357362252192e2240b219deda55b15f433a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:32:58.663Z"
+}
