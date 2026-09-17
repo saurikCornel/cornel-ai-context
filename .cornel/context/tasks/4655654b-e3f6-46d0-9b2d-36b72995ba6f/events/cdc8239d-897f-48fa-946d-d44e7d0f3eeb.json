@@ -1,0 +1,17 @@
+{
+  "id": "cdc8239d-897f-48fa-946d-d44e7d0f3eeb",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-head-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
+    "output": "0ff1b57 Apply card changes: Невозможно выполнить команду. Попробуйте еще раз.\n1759b6d Merge «Hazard and field zones» (7f702fa6-c258-4e2d-a615-365b67a4703b)\nc510584 Hazard and field zones: Water/Lava/Kill/Gravity/Magnet + ZoneManager\n0ff1b57 Apply card changes: Невозможно выполнить команду. Попробуйте еще раз.\n src/player/cosmetics.ts | 1 +\n 1 file changed, 1 insertion(+)\ncosmetics.ts\nindex.ts\nprofile.ts\nprogression.ts\ntypes.ts\n",
+    "outputDigest": "a48f2064e3759eeaa271d69ed2c27aa0bb93b4071c1e6dfb4d60a2d5a042beb0",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:45:43.815Z"
+}
