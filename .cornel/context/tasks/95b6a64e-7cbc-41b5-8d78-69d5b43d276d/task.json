@@ -20,9 +20,12 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-95b6a6",
   "baseSha": "4ab79c7ab353535fa654ee756d9b73a225b3a281",
   "workspaceSyncedSha": "4ab79c7ab353535fa654ee756d9b73a225b3a281",
-  "status": "CREATING",
+  "status": "CANCELLED",
   "createdAt": "2026-09-17T12:58:29.048Z",
-  "updatedAt": "2026-09-17T12:58:29.048Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-17T12:58:41.304Z",
+  "issue": 118,
+  "chatUrl": null,
+  "error": null,
+  "cliActivity": null,
+  "browserError": "Claude CLI: недоступен: ошибка результата"
 }

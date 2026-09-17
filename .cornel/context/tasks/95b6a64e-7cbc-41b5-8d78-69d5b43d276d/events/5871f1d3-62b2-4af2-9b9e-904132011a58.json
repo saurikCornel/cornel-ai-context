@@ -1,0 +1,11 @@
+{
+  "id": "5871f1d3-62b2-4af2-9b9e-904132011a58",
+  "taskId": "95b6a64e-7cbc-41b5-8d78-69d5b43d276d",
+  "type": "CLI_ERROR",
+  "text": "Claude CLI: недоступен: ошибка результата",
+  "detail": {
+    "agent": "claude",
+    "attempt": 1
+  },
+  "createdAt": "2026-09-17T12:58:41.302Z"
+}
