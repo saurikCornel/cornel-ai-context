@@ -1,0 +1,17 @@
+{
+  "id": "032854e3-3b50-441b-8077-cb20c7b39ae5",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b -> FETCH_HEAD\nAuto-merging src/game/HoleRuntime.ts\nCONFLICT (content): Merge conflict in src/game/HoleRuntime.ts\nAutomatic merge failed; fix conflicts and then commit the result.\n---STATUS---\nUU src/game/HoleRuntime.ts\nA  src/game/holeMovers.test.ts\n---CONFLICTS---\nsrc/game/HoleRuntime.ts\n",
+    "outputDigest": "b217b7e83b61e767b1d91c0f92f8d8adef2af4528956793a21032225f3669105",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:32:52.670Z"
+}
