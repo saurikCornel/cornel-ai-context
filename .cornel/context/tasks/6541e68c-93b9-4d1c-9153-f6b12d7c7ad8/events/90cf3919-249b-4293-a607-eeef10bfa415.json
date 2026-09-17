@@ -1,0 +1,12 @@
+{
+  "id": "90cf3919-249b-4293-a607-eeef10bfa415",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "fix-1",
+    "operation": "run",
+    "command": "python3 - <<'PY'\nimport io,sys\npath='src/courses/data/haunted-mansion.ts'\nold=\"  teleporter,\\n  wall,\\n  water,\\n} from './layoutKit';\"\nnew=\"  teleporter,\\n  v,\\n  wall,\\n  water,\\n} from './layoutKit';\"\nsrc=io.open(path,encoding='utf-8').read()\nif src.count(old)!=1: sys.exit('anchor not unique')\nio.open(path,'w',encoding='utf-8').write(src.replace(old,new))\nprint('patched',path)\nPY\necho '--- typecheck ---'; npm run typecheck 2>&1 | tail -20; echo '--- test ---'; npm test 2>&1 | tail -35; echo '--- build ---'; npm run build 2>&1 | tail -12"
+  },
+  "createdAt": "2026-09-17T02:56:22.341Z"
+}
