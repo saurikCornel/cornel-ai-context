@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Worker сообщает о расхождении headSha с GitHub, хотя локальный ref не менялся. Проверяю доступ отдельной лёгкой командой с тем же SHA.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"probe-1\",\"operation\":\"ls\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"path\":\"src/core\",\"maxLines\":40}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:36:18.633Z"
+}

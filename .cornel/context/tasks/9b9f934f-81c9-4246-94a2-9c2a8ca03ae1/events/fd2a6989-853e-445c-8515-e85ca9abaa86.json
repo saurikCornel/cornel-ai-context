@@ -1,0 +1,17 @@
+{
+  "id": "fd2a6989-853e-445c-8515-e85ca9abaa86",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "probe-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+    "output": "src/core: 9 файлов\nsrc/core/HoleSceneBuilder.ts\nsrc/core/HoleSceneBuilder.ts\nsrc/core/HoleSceneBuilder.ts\nsrc/core/QualitySettings.ts\nsrc/core/Renderer.ts\nsrc/core/SaveManager.ts\nsrc/core/SceneManager.ts\nsrc/core/holeScene.test.ts\nsrc/core/holeSceneSensors.test.ts",
+    "outputDigest": "ed41bf5a2ee706fb7ae04005dbfbdd093a0e57d5ec69f555bc1ed0b9ae4b3263",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:36:21.037Z"
+}
