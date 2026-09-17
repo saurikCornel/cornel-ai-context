@@ -1,0 +1,17 @@
+{
+  "id": "fc402dcf-18d8-4477-907f-d1d739260305",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "restore-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+    "output": "---STATUS---\nM  src/game/HoleRuntime.ts\nA  src/game/holeMovers.test.ts\n---DIFF CHECK---\n(пусто = содержимое совпадает со слиянием)\n---TYPECHECK---\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n---TESTS---\n\u001b[90mstderr\u001b[2m | src/game/holeMovers.test.ts\n \u001b[32m✓\u001b[39m src/game/holeMovers.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 64\u001b[2mms\u001b[22m\u001b[39m\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m40 passed\u001b[39m\u001b[22m\u001b[90m (40)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m259 passed\u001b[39m\u001b[22m\u001b[90m (259)\u001b[39m\n---BUILD---\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.26s\u001b[39m\n",
+    "outputDigest": "5073edf4ac8f4079c3074209ef8085fd8fe7714a3da1eb9f43c42eda869b46ed",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:39:27.556Z"
+}
