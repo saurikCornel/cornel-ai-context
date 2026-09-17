@@ -1,0 +1,17 @@
+{
+  "id": "85210e67-8b28-48a7-96c3-00b0969a1afc",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "readme-check-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "--- node:test leaderboard ---\nnodetest_lb_exit=0\n--- try building .test-build ---\nemit_exit=0\ncore\nplayer\nsavetest_exit=1\nError [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/c8ba46b9-2646-4ae8-b256-ef943a1c8c80/.test-build/player/profile' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/c8ba46b9-2646-4ae8-b256-ef943a1c8c80/.test-build/core/SaveManager.js\n--- cleanup ---\n",
+    "outputDigest": "b5a5c8a716485cd034f5d7e72bb028dda72a7a39bbbb30ec286fa19e45b5cfe5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:15:41.715Z"
+}

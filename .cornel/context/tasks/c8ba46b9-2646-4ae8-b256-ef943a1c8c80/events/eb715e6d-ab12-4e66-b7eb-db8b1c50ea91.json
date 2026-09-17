@@ -1,0 +1,12 @@
+{
+  "id": "eb715e6d-ab12-4e66-b7eb-db8b1c50ea91",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "readme-check-4",
+    "operation": "run",
+    "command": "echo '--- node:test leaderboard ---'; node --test tests/leaderboard-generator.test.ts tests/leaderboard-render.test.ts > /tmp/e.log 2>&1; echo \"nodetest_lb_exit=$?\"; grep -E '^. (pass|fail)' /tmp/e.log; echo '--- try building .test-build ---'; npx tsc src/core/SaveManager.ts src/player/profile.ts src/player/progression.ts --outDir .test-build --module esnext --target es2022 --moduleResolution bundler --skipLibCheck > /tmp/f.log 2>&1; echo \"emit_exit=$?\"; tail -12 /tmp/f.log; ls .test-build 2>/dev/null; node --test tests/save-manager.test.mjs > /tmp/g.log 2>&1; echo \"savetest_exit=$?\"; grep -E '^. (pass|fail)|Error' /tmp/g.log | head -8; rm -rf .test-build; echo '--- cleanup ---'; git status --short"
+  },
+  "createdAt": "2026-09-17T02:15:37.950Z"
+}
