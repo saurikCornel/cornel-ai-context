@@ -1,0 +1,11 @@
+{
+  "id": "3d0c727f-0ac7-4c47-920d-cfdca6899ee2",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "verify-2",
+    "output": "\nadded 84 packages in 4s\n--- typecheck ---\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsrc/courses/data/haunted-mansion.ts(123,45): error TS2304: Cannot find name 'v'.\n--- test ---\n"
+  },
+  "createdAt": "2026-09-17T02:56:03.137Z"
+}
