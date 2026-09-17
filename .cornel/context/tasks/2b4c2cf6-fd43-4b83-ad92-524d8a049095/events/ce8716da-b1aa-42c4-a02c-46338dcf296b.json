@@ -1,0 +1,12 @@
+{
+  "id": "ce8716da-b1aa-42c4-a02c-46338dcf296b",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-2",
+    "operation": "run",
+    "command": "echo '== LOC курсов =='; wc -l src/courses/data/*.ts; echo '== spawn в трёх спорных курсах =='; grep -c 'spawn' src/courses/data/neon-city.ts src/courses/data/haunted-mansion.ts src/courses/data/space-station.ts; grep -o 'spawn: [^,]*' src/courses/data/neon-city.ts | head -12; echo '== камера =='; grep -rno \"'overview'\\|'free'\\|'follow'\\|'aim'\\|CameraMode\" src/camera/*.ts | head -20; echo '== эффекты/аудио в игре =='; grep -rn 'ParticleManager\\|AudioManager\\|AssetManager\\|core/Renderer' src/game src/main.ts src/ui | head -20; echo '== maxShots =='; grep -rn 'maxShots' src --include=*.ts -l | head; echo '== реестр курсов =='; ls src/courses/; echo '== типы препятствий =='; grep -n \"type ObstacleKind\\|kind:\" src/courses/types.ts | head -20"
+  },
+  "createdAt": "2026-09-17T03:49:54.865Z"
+}

@@ -3,14 +3,20 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-2b4c2c",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Начинаю приёмку. Первый шаг — полный прогон тестов, typecheck и сборки.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"git log --oneline -8 && git status --short && npm install --no-audit --no-fund >/dev/null 2>&1 && echo INSTALL_OK && npx vitest run 2>&1 | tail -30 && echo VITEST_EXIT=$? && npm run typecheck 2>&1 | tail -15 && echo TYPECHECK_EXIT=$? && npm run build 2>&1 | tail -15 && echo BUILD_EXIT=$?\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Тесты (43 файла / 278 тестов), typecheck и build — зелёные, Rapier и курсы в бандле (97 модулей). Теперь сверяю оставшиеся пункты ТЗ по коду.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-2\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"echo '== LOC курсов =='; wc -l src/courses/data/*.ts; echo '== spawn в трёх спорных курсах =='; grep -c 'spawn' src/courses/data/neon-city.ts src/courses/data/haunted-mansion.ts src/courses/data/space-station.ts; grep -o 'spawn: [^,]*' src/courses/data/neon-city.ts | head -12; echo '== камера =='; grep -rno \\\"'overview'\\\\|'free'\\\\|'follow'\\\\|'aim'\\\\|CameraMode\\\" src/camera/*.ts | head -20; echo '== эффекты/аудио в игре =='; grep -rn 'ParticleManager\\\\|AudioManager\\\\|AssetManager\\\\|core/Renderer' src/game src/main.ts src/ui | head -20; echo '== maxShots =='; grep -rn 'maxShots' src --include=*.ts -l | head; echo '== реестр курсов =='; ls src/courses/; echo '== типы препятствий =='; grep -n \\\"type ObstacleKind\\\\|kind:\\\" src/courses/types.ts | head -20\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "check-1",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-2",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:49:10.797Z"
+  "createdAt": "2026-09-17T03:49:54.870Z"
 }
