@@ -1,9 +1,9 @@
 {
   "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
   "branch": "cornel/reformat-minified-src-ui-index-ts-ec21af",
-  "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+  "headSha": "97f1a5bbe8008a2f368fc6804b948670d7c97716",
   "status": "RUNNING",
-  "summary": "Разметка побайтово идентична на всех 7 экранах, временные файлы удалены. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"ec21af8f-3abf-421d-beca-d8165a1753fc\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"message\":\"Переформатировать минифицированный src/ui/index.ts в читаемый многострочный TypeScript\"}\n```\n\nОжидаю worker — результат придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "Публикация прошла, новый head `97f1a5b`. Требуется успешная проверка на этом же SHA — запускаю.\n\n```json\n{\"version\":1,\"taskId\":\"ec21af8f-3abf-421d-beca-d8165a1753fc\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"97f1a5bbe8008a2f368fc6804b948670d7c97716\",\"timeoutSeconds\":600,\"command\":\"echo '--- tsc ---'\\nnpx tsc -b --pretty false; echo \\\"tsc exit=$?\\\"\\necho '--- vitest src/ui ---'\\nnpx vitest run src/ui 2>&1 | tail -15\\necho \\\"vitest exit=${PIPESTATUS[0]}\\\"\\necho '--- log ---'\\ngit log --oneline -1\\ngit show --stat --oneline HEAD | tail -5\\ngit status --short\"}\n```\n\nОжидаю worker — результат придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "97f1a5bbe8008a2f368fc6804b948670d7c97716",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-3",
       "status": "STARTED",
-      "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+      "headSha": "97f1a5bbe8008a2f368fc6804b948670d7c97716",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T05:12:09.812Z"
+  "createdAt": "2026-09-17T05:12:32.352Z"
 }

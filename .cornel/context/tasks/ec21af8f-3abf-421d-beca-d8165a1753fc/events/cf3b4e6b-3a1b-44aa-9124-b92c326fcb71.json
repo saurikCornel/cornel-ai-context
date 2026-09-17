@@ -1,0 +1,12 @@
+{
+  "id": "cf3b4e6b-3a1b-44aa-9124-b92c326fcb71",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-3",
+    "operation": "run",
+    "command": "echo '--- tsc ---'\nnpx tsc -b --pretty false; echo \"tsc exit=$?\"\necho '--- vitest src/ui ---'\nnpx vitest run src/ui 2>&1 | tail -15\necho \"vitest exit=${PIPESTATUS[0]}\"\necho '--- log ---'\ngit log --oneline -1\ngit show --stat --oneline HEAD | tail -5\ngit status --short"
+  },
+  "createdAt": "2026-09-17T05:12:32.346Z"
+}

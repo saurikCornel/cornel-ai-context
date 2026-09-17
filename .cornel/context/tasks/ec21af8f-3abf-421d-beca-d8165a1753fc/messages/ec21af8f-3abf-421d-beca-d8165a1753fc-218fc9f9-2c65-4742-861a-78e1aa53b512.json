@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикация прошла, новый head `97f1a5b`. Требуется успешная проверка на этом же SHA — запускаю.\n\n```json\n{\"version\":1,\"taskId\":\"ec21af8f-3abf-421d-beca-d8165a1753fc\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"97f1a5bbe8008a2f368fc6804b948670d7c97716\",\"timeoutSeconds\":600,\"command\":\"echo '--- tsc ---'\\nnpx tsc -b --pretty false; echo \\\"tsc exit=$?\\\"\\necho '--- vitest src/ui ---'\\nnpx vitest run src/ui 2>&1 | tail -15\\necho \\\"vitest exit=${PIPESTATUS[0]}\\\"\\necho '--- log ---'\\ngit log --oneline -1\\ngit show --stat --oneline HEAD | tail -5\\ngit status --short\"}\n```\n\nОжидаю worker — результат придёт в этот чат отдельным сообщением.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T05:12:32.344Z"
+}
