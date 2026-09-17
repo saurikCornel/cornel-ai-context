@@ -1,0 +1,12 @@
+{
+  "id": "9f036b04-9569-41ed-97fb-73657ab52c48",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-12",
+    "operation": "run",
+    "command": "echo '== флаг/чашка/небо в билдере =='; grep -n 'flag\\|Flag\\|cup\\|background\\|fog\\|sky\\|Sky' src/core/HoleSceneBuilder.ts | cut -c1-140 | head -30; echo; echo '== цвета материалов =='; grep -n 'green\\|stone\\|ice\\|sand\\|wood\\|metal\\|rough\\|0x' src/core/HoleSceneBuilder.ts | cut -c1-140 | head -30; echo; echo '== volcano данные, лунка 4 =='; sed -n '1,45p' src/courses/data/volcano.ts | cut -c1-200; echo; echo '== материалы по курсам =='; for f in src/courses/data/*.ts; do echo -n \"$f: \"; grep -o \"material: '[a-z]*'\" $f | sort | uniq -c | tr '\\n' ' '; echo; done; echo '== типы препятствий по курсам =='; for f in src/courses/data/*.ts; do echo -n \"$f: \"; grep -o \"type: '[a-z-]*'\" $f | sort | uniq -c | tr '\\n' ' '; echo; done"
+  },
+  "createdAt": "2026-09-17T04:02:30.707Z"
+}
