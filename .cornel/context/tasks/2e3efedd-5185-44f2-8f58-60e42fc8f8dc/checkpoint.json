@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-nedostizhimy-iz-prilozheniya-net-r-2e3efe",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Typecheck и 28 тестов прошли. Проверю production-сборку, так как менял `main.ts`.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":900,\"command\":\"npm run build 2>&1 | tail -20\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Артефакты сборки игнорируются. Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(courses): add course registry and wire it to the UI selector and ?course= launch option\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "check-3",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:24:06.674Z"
+  "createdAt": "2026-09-17T02:25:51.605Z"
 }
