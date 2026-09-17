@@ -3,7 +3,7 @@
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Читаю ключевые файлы.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/core/SaveManager.ts\",\"src/main.ts\",\"src/player/types.ts\",\"src/player/profile.ts\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Вывод обрезан — SaveManager и начало main.ts не попали. Читаю точечно.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"read-2\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/core/SaveManager.ts\",\"src/main.ts:1-60\",\"src/player/progression.ts\",\"src/player/index.ts\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "read-1",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-2",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:08:55.331Z"
+  "createdAt": "2026-09-17T04:10:18.670Z"
 }
