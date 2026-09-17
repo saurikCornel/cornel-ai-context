@@ -1,0 +1,12 @@
+{
+  "id": "ff51da6f-dd5f-4766-ae08-6b7fd00247b6",
+  "taskId": "72ad9ab1-d451-4d42-847e-9cba5adb804d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "visual-1",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && (nohup npx vite --port 5179 --strictPort > /tmp/cornel-vite.log 2>&1 & echo $! > /tmp/cornel-vite.pid); sleep 6; echo '--- server log ---'; cat /tmp/cornel-vite.log; echo '--- HTTP checks ---'; curl -s -o /dev/null -w 'index %{http_code}\\n' 'http://localhost:5179/?debug=1&course=volcano&hole=4'; curl -s -o /dev/null -w 'main.ts %{http_code}\\n' 'http://localhost:5179/src/main.ts'; open -a \"Google Chrome\" 'http://localhost:5179/?debug=1&course=volcano&hole=4'; sleep 3; open -a \"Google Chrome\" 'http://localhost:5179/?debug=1&course=arctic-base&hole=4'; echo 'opened both URLs; vite pid' $(cat /tmp/cornel-vite.pid)"
+  },
+  "createdAt": "2026-09-17T04:34:53.167Z"
+}

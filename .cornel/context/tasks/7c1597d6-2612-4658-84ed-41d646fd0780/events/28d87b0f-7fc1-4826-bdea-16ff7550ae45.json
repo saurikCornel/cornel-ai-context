@@ -1,0 +1,17 @@
+{
+  "id": "28d87b0f-7fc1-4826-bdea-16ff7550ae45",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "\nadded 84 packages in 4s\n--- typecheck ---\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "641baf5701a8fac7b1f34e5f2313092e1b0a98981eb12b07706488175668cb8f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:34:49.704Z"
+}
