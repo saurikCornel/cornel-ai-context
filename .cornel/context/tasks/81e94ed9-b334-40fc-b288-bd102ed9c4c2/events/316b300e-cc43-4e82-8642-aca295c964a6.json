@@ -1,0 +1,17 @@
+{
+  "id": "316b300e-cc43-4e82-8642-aca295c964a6",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-test-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "     122 src/courses/layoutDiversity.test.ts\n",
+    "outputDigest": "6956e340e5de53051278c039bab3e4092b8a7a43d8a519c6c57ff4a3483aaa74",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:39:17.819Z"
+}
