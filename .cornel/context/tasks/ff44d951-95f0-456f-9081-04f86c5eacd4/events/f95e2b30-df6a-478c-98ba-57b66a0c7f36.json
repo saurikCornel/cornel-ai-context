@@ -1,0 +1,17 @@
+{
+  "id": "f95e2b30-df6a-478c-98ba-57b66a0c7f36",
+  "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "state-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
+    "output": "e1fce95 Слить «sliding-wall, door и pendulum не двигаются»: система движителей и сенсорные объёмы в HoleRuntime\nd445b64 Merge «Лава и силовые препятствия работают как сплошные стены» (fd5dc768-2e5c-404a-9426-c8cc952cd365)\n90b1f92 Merge «Лимит ударов зашит числом 8 вместо maxShots = par + 7» (b439967f-0ec9-4fad-9162-03372e506c65)\n---\n---\nsrc/assets/:\nAssetManager.ts\nAudioManager.ts\nassets.test.ts\nindex.ts\n\nsrc/effects/:\nParticleManager.test.ts\nParticleManager.ts\nindex.ts\n---\ncommit\n---\ne1fce95 HEAD@{0}: checkout: moving from e53f9709892cb8c6eec3dcc009c3927de489f9d6 to e1fce954743cc27101c89a1c87e83f395570f13c\ne53f970 HEAD@{1}: commit (merge): Merge branch 'cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\ne1fce95 HEAD@{2}: \n",
+    "outputDigest": "914138c9f18424403332b4cc684aa9d60e50abb4e2dcc645977a8c38511b4db9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:46:13.895Z"
+}
