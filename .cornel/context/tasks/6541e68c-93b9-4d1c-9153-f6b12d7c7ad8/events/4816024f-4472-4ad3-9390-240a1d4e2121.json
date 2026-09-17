@@ -1,0 +1,17 @@
+{
+  "id": "4816024f-4472-4ad3-9390-240a1d4e2121",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3 -> FETCH_HEAD\nAuto-merging src/courses/data/haunted-mansion.ts\nCONFLICT (content): Merge conflict in src/courses/data/haunted-mansion.ts\nAuto-merging src/courses/data/neon-city.ts\nCONFLICT (content): Merge conflict in src/courses/data/neon-city.ts\nAuto-merging src/courses/data/space-station.ts\nCONFLICT (content): Merge conflict in src/courses/data/space-station.ts\nAuto-merging src/courses/types.ts\nAutomatic merge failed; fix conflicts and then commit the result.\nMERGE_EXIT=1\n--- STATUS ---\nM  src/ai/BotPlanner.ts\nM  src/core/HoleSceneBuilder.ts\nM  src/courses/data/candy-factory.ts\nUU src/courses/data/haunted-mansion.ts\nUU src/courses/data/neon-city.ts\nUU src/courses/data/space-station.ts\nM  src/courses/data/volcano.ts\nM  src/courses/types.ts\nA  src/obstacles/descriptors.test.ts\nA  src/obstacles/descriptors.ts\nM  src/ui/Minimap.ts\nM  tests/course-data-validation.test.ts\n--- CONFLICTS ---\nsrc/courses/data/haunted-mansion.ts\nsrc/courses/data/neon-city.ts\nsrc/courses/data/space-station.ts\n",
+    "outputDigest": "b1865054d156c9ccacc506d2b4bbe2583d9d6ea36f5afa1fb37c4e7417be82cb",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:50:40.181Z"
+}
