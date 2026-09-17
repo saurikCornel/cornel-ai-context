@@ -1,0 +1,12 @@
+{
+  "id": "f60c042c-25f8-4434-8694-538f4f6caaf2",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-3",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && git status --short && echo '--- stat ---' && git diff --stat && echo '--- moving/mover diff ---' && git diff -- src/game/HoleRuntime.ts | grep -E '^[+-]' | grep -vE '^(\\+\\+\\+|---)' | head -60"
+  },
+  "createdAt": "2026-09-17T03:28:38.773Z"
+}
