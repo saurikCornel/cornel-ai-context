@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Все проверки прошли на объединённом коде: typecheck OK, 43 файла / 278 тестов (включая `src/effects/feedback.test.ts` и `src/game/feedback.test.ts`), сборка успешна. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"ff44d951-95f0-456f-9081-04f86c5eacd4\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"e1fce954743cc27101c89a1c87e83f395570f13c\",\"message\":\"Слить «Попадание в лунку без звука и частиц»: обратная связь (частицы, звук, качество, громкость) поверх рантайма препятствий\\n\\nКонфликт в src/game/Game.ts разрешён объединением обеих сторон:\\n- resetBall: сохранена логика office (последняя безопасная позиция + HoleRuntime.resolveHazard + resetObstacles) и добавлены эффекты из входящей ветки (снимок точки падения, effects.hazard, сброс previousVelocity);\\n- конфликт двух разных методов снят сохранением обоих: applyObstacleEffects (движители, пады, поля) и trackImpacts (детект отскока для звука и частиц); оба уже вызываются в frame().\\n\\nПроверки: npm run typecheck, npm test (43 файла, 278 тестов), npm run build — успешно.\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:47:13.564Z"
+}
