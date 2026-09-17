@@ -1,0 +1,28 @@
+{
+  "id": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "claude",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "53db71df-c391-40fc-ba06-21d55e2efcc8",
+    "base": {
+      "": "e1fce954743cc27101c89a1c87e83f395570f13c"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: Попадание в лунку без звука и частиц, настройки качества и громкости ни на что не влияют",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656 (карточка «Попадание в лунку без звука и частиц, настройки качества и громкости ни на что не влияют») не сливается в ветку офиса cornel/office: конфликт в файлах src/game/Game.ts.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656 && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/slit-popadanie-v-lunku-bez-zvuka-i-chast-ff44d9",
+  "baseSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
+  "workspaceSyncedSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
+  "status": "CREATING",
+  "createdAt": "2026-09-17T03:43:07.537Z",
+  "updatedAt": "2026-09-17T03:43:07.537Z",
+  "issue": null,
+  "chatUrl": null
+}

@@ -1,0 +1,12 @@
+{
+  "id": "67f12828-372d-43e9-9cb1-c2ecb0d7e05c",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: src/game/Game.ts",
+  "detail": {
+    "files": [
+      "src/game/Game.ts"
+    ]
+  },
+  "createdAt": "2026-09-17T03:43:05.331Z"
+}
