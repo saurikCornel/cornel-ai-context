@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-ancient-temple-arctic-base-i-volca-72ad9a",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Файл теста записан, но в этой рабочей копии не установлены зависимости. Ставлю их и запускаю тесты.\n\n```json\n{\"version\":1,\"taskId\":\"72ad9ab1-d451-4d42-847e-9cba5adb804d\",\"commandId\":\"install-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"timeoutSeconds\":600,\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && ls -d node_modules 2>/dev/null || npm install --no-audit --no-fund 2>&1 | tail -20\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Зависимости установлены. Запускаю тесты курсов и проверку типов.\n\n```json\n{\"version\":1,\"taskId\":\"72ad9ab1-d451-4d42-847e-9cba5adb804d\",\"commandId\":\"test-courses-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"timeoutSeconds\":600,\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && npx tsc -b --pretty false 2>&1 | tail -30; echo '=== TYPECHECK EXIT:' ${PIPESTATUS[0]} '==='; npx vitest run src/courses 2>&1 | tail -60\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-courses-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "install-1",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "test-courses-1",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:27:48.604Z"
+  "createdAt": "2026-09-17T04:28:22.540Z"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "84b788d8-ab61-4d5d-8b8c-dd46a18bfad9",
+  "taskId": "72ad9ab1-d451-4d42-847e-9cba5adb804d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "test-courses-1",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && npx tsc -b --pretty false 2>&1 | tail -30; echo '=== TYPECHECK EXIT:' ${PIPESTATUS[0]} '==='; npx vitest run src/courses 2>&1 | tail -60"
+  },
+  "createdAt": "2026-09-17T04:28:22.534Z"
+}
