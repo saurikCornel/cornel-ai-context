@@ -1,9 +1,9 @@
 {
   "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
   "branch": "cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8",
-  "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+  "headSha": "93be8f7845d4a7893e4a70e11e3a9152d55e1b6d",
   "status": "RUNNING",
-  "summary": "Ветка на GitHub сдвинулась (появился новый коммит). Публикую свои изменения — worker синхронизируется и вернёт новый SHA.\n\n```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(game): wire subsystems into a playable match loop\\n\\nAdds src/game: Game orchestrator (Rapier init, hole scene + colliders, aiming,\\nshots, bot turns via MatchManager/TurnManager, HUD/scoreboard/pause/results),\\nHoleRuntime (colliders, kinematic obstacles, hazards, surface rolling model),\\nAimController (hold-to-charge and drag-power schemes) and CourseRegistry.\\nmain.ts now boots the menu, starts a match and drives the frame loop.\\nAdds an integration test covering a putt into the cup and a full match to results.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано (head 93be8f78). Финальная проверка на новом SHA: сборка, артефакты и весь набор тестов.\n\n```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"check-final\",\"operation\":\"run\",\"headSha\":\"93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\",\"timeoutSeconds\":900,\"command\":\"rm -rf dist && npm run build 2>&1 | tail -8 && echo '--- bundle checks ---' && grep -c rapier dist/assets/*.js | tail -2 && for id in green-hills pirate-bay chaos-dimension; do printf '%s: ' \\\"$id\\\"; grep -c \\\"$id\\\" dist/assets/index-*.js | head -1; done && echo '--- tests ---' && npx vitest run 2>&1 | grep -v 'Not implemented' | tail -22\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -91,10 +91,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "93be8f7845d4a7893e4a70e11e3a9152d55e1b6d",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-final",
       "status": "STARTED",
-      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "headSha": "93be8f7845d4a7893e4a70e11e3a9152d55e1b6d",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:41:25.346Z"
+  "createdAt": "2026-09-17T02:42:00.121Z"
 }

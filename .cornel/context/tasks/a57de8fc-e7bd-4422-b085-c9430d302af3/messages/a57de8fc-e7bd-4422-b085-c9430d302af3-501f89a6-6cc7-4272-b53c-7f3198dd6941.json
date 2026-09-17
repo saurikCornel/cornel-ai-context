@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Опубликовано (head 93be8f78). Финальная проверка на новом SHA: сборка, артефакты и весь набор тестов.\n\n```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"check-final\",\"operation\":\"run\",\"headSha\":\"93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\",\"timeoutSeconds\":900,\"command\":\"rm -rf dist && npm run build 2>&1 | tail -8 && echo '--- bundle checks ---' && grep -c rapier dist/assets/*.js | tail -2 && for id in green-hills pirate-bay chaos-dimension; do printf '%s: ' \\\"$id\\\"; grep -c \\\"$id\\\" dist/assets/index-*.js | head -1; done && echo '--- tests ---' && npx vitest run 2>&1 | grep -v 'Not implemented' | tail -22\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:42:00.116Z"
+}
