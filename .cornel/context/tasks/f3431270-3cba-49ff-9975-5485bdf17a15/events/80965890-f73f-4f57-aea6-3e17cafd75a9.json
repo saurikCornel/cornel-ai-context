@@ -1,0 +1,17 @@
+{
+  "id": "80965890-f73f-4f57-aea6-3e17cafd75a9",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "251d640f4cf839d94618ec8f2021654da077f43e",
+    "output": "\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 5.23s\u001b[39m\u001b[2m · 30% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n--- BUILD ---\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.09s\u001b[39m\n",
+    "outputDigest": "5867a93cf16836f1d82965ad2bda3e92a50f34f34a07db78d66e7f7b4a57f3b0",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:25:36.772Z"
+}
