@@ -3,7 +3,7 @@
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"read-8\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/game/Game.ts:230-270\",\"src/player/cosmetics.ts:31-57\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Собираю остатки контекста одной командой.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"probe-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"ls; echo '--- vitest config ---'; cat vite.config.ts 2>/dev/null; cat vitest.config.ts 2>/dev/null; echo '--- ui.test head ---'; head -12 src/ui/ui.test.ts; echo '--- QualityPreset uses ---'; grep -rn 'QualityPreset' src --include='*.ts' | head -20; echo '--- QualityLevel ---'; grep -rn 'QualityLevel' src/core/QualitySettings.ts | head -10; echo '--- RatingSystem consts ---'; grep -n 'export' src/gameplay/RatingSystem.ts | head -20; echo '--- contracts PlayerProfile ---'; grep -rn 'interface PlayerProfile' -A 8 src/contracts/game.ts\",\"timeoutSeconds\":180}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "read-8",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "probe-1",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:23:21.329Z"
+  "createdAt": "2026-09-17T04:25:11.370Z"
 }

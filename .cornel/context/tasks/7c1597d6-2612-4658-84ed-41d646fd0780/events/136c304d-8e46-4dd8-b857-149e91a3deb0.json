@@ -1,0 +1,12 @@
+{
+  "id": "136c304d-8e46-4dd8-b857-149e91a3deb0",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "probe-1",
+    "operation": "run",
+    "command": "ls; echo '--- vitest config ---'; cat vite.config.ts 2>/dev/null; cat vitest.config.ts 2>/dev/null; echo '--- ui.test head ---'; head -12 src/ui/ui.test.ts; echo '--- QualityPreset uses ---'; grep -rn 'QualityPreset' src --include='*.ts' | head -20; echo '--- QualityLevel ---'; grep -rn 'QualityLevel' src/core/QualitySettings.ts | head -10; echo '--- RatingSystem consts ---'; grep -n 'export' src/gameplay/RatingSystem.ts | head -20; echo '--- contracts PlayerProfile ---'; grep -rn 'interface PlayerProfile' -A 8 src/contracts/game.ts"
+  },
+  "createdAt": "2026-09-17T04:25:11.367Z"
+}
