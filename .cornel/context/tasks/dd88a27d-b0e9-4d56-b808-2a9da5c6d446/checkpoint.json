@@ -1,0 +1,16 @@
+{
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "branch": "cornel/net-rezhimov-kamery-overview-free-i-plav-dd88a2",
+  "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+  "status": "RUNNING",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"dd88a27d-b0e9-4d56-b808-2a9da5c6d446\",\"commandId\":\"ls-camera-1\",\"operation\":\"ls\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"path\":\"src\",\"maxLines\":400}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "commands": [
+    {
+      "commandId": "ls-camera-1",
+      "status": "STARTED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-17T03:08:12.515Z"
+}

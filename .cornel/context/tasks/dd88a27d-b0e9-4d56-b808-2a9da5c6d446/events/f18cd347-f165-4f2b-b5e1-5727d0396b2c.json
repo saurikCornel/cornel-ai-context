@@ -1,0 +1,11 @@
+{
+  "id": "f18cd347-f165-4f2b-b5e1-5727d0396b2c",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "ls-camera-1",
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e"
+  },
+  "createdAt": "2026-09-17T03:08:12.513Z"
+}
