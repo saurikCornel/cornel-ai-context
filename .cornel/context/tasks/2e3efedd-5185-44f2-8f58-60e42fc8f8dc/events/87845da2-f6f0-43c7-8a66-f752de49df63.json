@@ -1,0 +1,12 @@
+{
+  "id": "87845da2-f6f0-43c7-8a66-f752de49df63",
+  "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-2",
+    "operation": "run",
+    "command": "npm run typecheck 2>&1 | tail -30; echo \"typecheck exit: ${PIPESTATUS[0]:-$?}\"; echo '=== tests ==='; npx vitest run src/courses src/ui src/dev tests/course-data-validation.test.ts 2>&1 | tail -45"
+  },
+  "createdAt": "2026-09-17T02:21:58.230Z"
+}

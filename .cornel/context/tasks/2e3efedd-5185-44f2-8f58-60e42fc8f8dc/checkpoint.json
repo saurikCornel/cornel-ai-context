@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-nedostizhimy-iz-prilozheniya-net-r-2e3efe",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Файл теста создан, но зависимости, похоже, не установлены. Проверю и установлю.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"deps-1\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"ls -d node_modules 2>/dev/null && ls node_modules/.bin | head -20; echo '--- install ---'; npm install --no-audit --no-fund 2>&1 | tail -15\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Зависимости установлены. Запускаю typecheck и тесты.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"check-2\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":900,\"command\":\"npm run typecheck 2>&1 | tail -30; echo \\\"typecheck exit: ${PIPESTATUS[0]:-$?}\\\"; echo '=== tests ==='; npx vitest run src/courses src/ui src/dev tests/course-data-validation.test.ts 2>&1 | tail -45\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "deps-1",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-2",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:20:17.657Z"
+  "createdAt": "2026-09-17T02:21:58.235Z"
 }
