@@ -1,0 +1,17 @@
+{
+  "id": "3232af53-6174-4be9-a674-0233abcdcc23",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "cleanup-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "VITE_LEFT=0\n",
+    "outputDigest": "50480d185ac47133f2617032ce4e8c0c6bcf06d796d5d672d813545e9a21ee4c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:06:40.153Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "d7e5339b-13f2-45d0-8ac0-02b273323338",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "cleanup-1",
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68"
+  },
+  "createdAt": "2026-09-17T04:06:37.869Z"
+}
