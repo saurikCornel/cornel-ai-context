@@ -1,0 +1,17 @@
+{
+  "id": "6c154939-f9af-42a6-b339-ee19e756980a",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "probe-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "function normalize(v:unknown,f=createDefaultProfile()):PlayerProfile { if(!rec(v))return f; const p=rec(v.progression)?v.progression:{}; const c=rec(v.cosmetics)?v.cosmetics:{}; const s=rec(v.statistics)?v.statistics:{}; const o=rec(v.settings)?v.settings:{}; const dc=defaultCosmetics(),ds=defaultStatistics(),dset=defaultSettings(); const strings=(x:unknown,d:string[])=>Array.isArray(x)?[...new Set(x.filter((i):i is string=>typeof i==='string'))]:d; return {id:str(v.id,f.id),displayName:str(v.displayName,f.displayName).slice(0,32),createdAt:str(v.createdAt,f.createdAt),updatedAt:str(v.updatedAt,f.updatedAt),progression:createProgression(num(p.xp)),cosmetics:{ballId:str(c.ballId,dc.ballId),trailId:str(c.trailId,dc.trailId),hatId:typeof c.hatId==='string'?c.hatId:null,unlockedBallIds:strings(c.unlockedBallIds,dc.unlockedBallIds),unlockedTrailIds:strings(c.unlockedTrailIds,dc.unlockedTrailI\n\n--- head of RatingSystem ---\nimport type { PlayerId, PlayerKind, PlayerProfile } from '../contracts/game';\nimport type { MatchStanding } from './types';\n\nexport const DEFAULT_RATING = 1000;\n\n",
+    "outputDigest": "3835baadb0e3fe2b94670aa2467b36beb6449502b5a13bcdeb1b987b71b2fbe7",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:25:59.277Z"
+}
