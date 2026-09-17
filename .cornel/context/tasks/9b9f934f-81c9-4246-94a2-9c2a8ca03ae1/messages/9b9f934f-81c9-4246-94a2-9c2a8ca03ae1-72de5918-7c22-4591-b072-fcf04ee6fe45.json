@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "git grep не видит unmerged-файл. Смотрю маркеры через shell.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"read-2\",\"operation\":\"run\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"command\":\"grep -n -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts; echo '--- wc ---'; wc -l src/core/HoleSceneBuilder.ts src/game/HoleRuntime.ts src/game/Game.ts src/core/holeScene.test.ts\",\"timeoutSeconds\":120}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:33:42.877Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "8433585a-96e4-4adb-a20b-08679d2ed844",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+    "output": "238:<<<<<<< HEAD\n286:=======\n349:>>>>>>> a3c88df6695c7b596dcb670ca6091cc58c7d70e2\n--- wc ---\n     397 src/core/HoleSceneBuilder.ts\n     542 src/game/HoleRuntime.ts\n     851 src/game/Game.ts\n     237 src/core/holeScene.test.ts\n    2027 total\n",
+    "outputDigest": "ea915edfdbc836d0310d21f9ddd562af7a014a0f3731048588cd73aee4cd260a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:33:44.934Z"
+}

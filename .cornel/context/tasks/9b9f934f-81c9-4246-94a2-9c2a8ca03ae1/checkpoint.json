@@ -3,7 +3,7 @@
   "branch": "cornel/slit-u-chashki-net-flaga-i-uglubleniya-9b9f93",
   "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
   "status": "RUNNING",
-  "summary": "Конфликт ожидаемый. Читаю конфликтные участки.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"read-1\",\"operation\":\"grep\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"pattern\":\"^(<<<<<<<|=======|>>>>>>>)\",\"path\":\"src/core/HoleSceneBuilder.ts\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "git grep не видит unmerged-файл. Смотрю маркеры через shell.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"read-2\",\"operation\":\"run\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"command\":\"grep -n -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts; echo '--- wc ---'; wc -l src/core/HoleSceneBuilder.ts src/game/HoleRuntime.ts src/game/Game.ts src/core/holeScene.test.ts\",\"timeoutSeconds\":120}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "read-1",
+      "status": "SUCCEEDED",
+      "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-2",
       "status": "STARTED",
       "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:33:09.930Z"
+  "createdAt": "2026-09-17T04:33:42.883Z"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "79d46dab-b967-4ccc-816e-ac7af3df9543",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-2",
+    "operation": "run",
+    "command": "grep -n -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts; echo '--- wc ---'; wc -l src/core/HoleSceneBuilder.ts src/game/HoleRuntime.ts src/game/Game.ts src/core/holeScene.test.ts"
+  },
+  "createdAt": "2026-09-17T04:33:42.878Z"
+}
