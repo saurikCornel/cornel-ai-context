@@ -19,9 +19,9 @@
   "workspaceSyncedSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "READY",
   "createdAt": "2026-09-17T04:08:09.472Z",
-  "updatedAt": "2026-09-17T04:09:02.220Z",
+  "updatedAt": "2026-09-17T04:09:07.731Z",
   "issue": 109,
   "chatUrl": null,
   "error": null,
-  "cliActivity": "Claude CLI: Read: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f3431270-3cba-49ff-9975-5485bdf17a15/src/core/hole"
+  "cliActivity": "Claude CLI: Grep: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/f3431270-3cba-49ff-9975-5485bdf17a15/src/courses/d"
 }
