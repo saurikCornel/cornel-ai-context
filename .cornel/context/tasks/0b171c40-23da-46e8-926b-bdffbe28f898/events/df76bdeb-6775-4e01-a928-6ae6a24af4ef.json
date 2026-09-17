@@ -1,0 +1,17 @@
+{
+  "id": "df76bdeb-6775-4e01-a928-6ae6a24af4ef",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+    "output": "     1\timport * as THREE from 'three';\n     2\timport { GAME_CONFIG } from './config/GameConfig';\n     3\t<<<<<<< HEAD\n     4\timport { resolveCourseSelection } from './courses';\n     5\timport { parseLaunchOptions } from './dev/LaunchOptions';\n     6\t=======\n     7\timport { Game } from './game/Game';\n     8\t>>>>>>> 93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\n     9\timport { InputManager } from './input';\n    10\timport './style.css';\n    11\timport { AppUI, LoadingOverlay } from './ui';\n    12\timport type { SetupDTO, UISettings } from './ui';\n    13\t\n    14\t<<<<<<< HEAD\n    15\tconst root=document.querySelector<HTMLDivElement>('#app');\n    16\tif(!root)throw new Error('Missing #app bootstrap element');\n    17\tdocument.title=GAME_CONFIG.title;\n    18\tconst launch=parseLaunchOptions(window.location.search);\n    19\tconst selection=resolveCourseSelection(launch);\n    20\tdocument.documentElement.dataset.course=selection.course.id;\n    21\tdocument.documentElement.dataset.hole=String(selection.holeNumber);\n    22\tconst renderer=new THREE.WebGLRenderer({antialias:true});\n    23\trenderer.setPixelRatio(Math.min(window.devicePixelRatio,2));\n    24\trenderer.setSize(window.innerWidth,window.innerHeight);root.append(renderer.domElement);\n    25\tconst uiRoot=document.createElement('div');uiRoot.className='cpa-layer';root.append(uiRoot);new AppUI(uiRoot,{},{initialCourseId:selection.course.id});\n    26\tconst scene=new THREE.Scene();\n    27\tconst camera=new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeight,.1,100);camera.position.set(0,2,5);\n    28\tconst input=new InputManager({pointerTarget:renderer.domElement});\n    29\tlet diagnostics:{frame():void;dispose():void}|undefined;\n    30\tif(launch.debug)void import('./dev').then(({DeveloperDiagnostics})=>{document.documentElement.dataset.debug='1';diagnostics=new DeveloperDiagnostics({root,renderer,scene,camera})});\n    31\tconst resize=()=>{camera.aspect=window.innerWidth/window.innerHeight;camera.updateProjectionMatrix();renderer.setSize(window.innerWidth,window.innerHeight)};\n    32\twindow.addEventListener('resize',resize);\n    33\trenderer.setAnimationLoop(()=>{renderer.render(scene,camera);diagnostics?.frame();input.endFrame()});\n    34\twindow.addEventListener('pagehide',()=>{input.dispose();diagnostics?.dispose()},{once:true});\n    35\t=======\n=== ls src ===\nsrc:\nai\napp\nassets\ncamera\nconfig\ncontracts\ncore\ncourses\ndev\neffects\ngame\ngameplay\ninput\nleaderboard\nmain.ts\nobstacles\nphysics\nplayer\nstyle.css\nui\n\nsrc/game:\nAimController.ts\nCourseRegistry.ts\nGame.ts\nHoleRuntime.ts\ngame.css\ngame.test.ts\n\nsrc/ui:\nHud.ts\nMinimap.ts\nOverlays.ts\nScoreboard.ts\ncourseSelect.test.ts\ndom.ts\ndomTests.ts\nindex.ts\nminimap.test.ts\ntypes.ts\nui.css\nui.test.ts\n",
+    "outputDigest": "ffff987d642d9e7a2ca8df2a04f4018ceef8e4a05b64cad5039a943154777a8b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:52:22.081Z"
+}
