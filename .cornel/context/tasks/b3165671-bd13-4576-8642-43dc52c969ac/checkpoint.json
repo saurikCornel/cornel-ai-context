@@ -3,7 +3,7 @@
   "branch": "cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"read-14\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/game/Game.ts:160-200\",\"src/game/Game.ts:326-358\",\"src/game/Game.ts:500-534\"]}\n```\n\nОжидаю worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"grep-1\",\"operation\":\"grep\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"pattern\":\"quality|volume|reducedMotion|AudioEventDefinition|audioEvents\",\"path\":\"src\"}\n```\n\nОжидаю worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -91,10 +91,16 @@
     },
     {
       "commandId": "read-14",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "grep-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:23:33.912Z"
+  "createdAt": "2026-09-17T03:24:35.270Z"
 }
