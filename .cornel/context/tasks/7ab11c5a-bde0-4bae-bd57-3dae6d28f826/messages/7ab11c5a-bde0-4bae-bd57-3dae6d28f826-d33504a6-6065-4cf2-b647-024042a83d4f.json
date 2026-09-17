@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Пробую альтернативную форму адресации (`heads` вместо `headSha`) — у неё может быть другая логика синхронизации, способная пережить незавершённое слияние.\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"reset-3\",\"operation\":\"run\",\"heads\":{\"cornel/slit-chast-moduley-zapisana-minificirova-7ab11c\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\"},\"command\":\"git merge --abort 2>&1 | head -2; git status --short | head -3; git log --oneline -1\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:55:53.207Z"
+}
