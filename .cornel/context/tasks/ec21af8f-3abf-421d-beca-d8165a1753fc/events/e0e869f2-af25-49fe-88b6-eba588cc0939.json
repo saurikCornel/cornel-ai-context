@@ -1,0 +1,12 @@
+{
+  "id": "e0e869f2-af25-49fe-88b6-eba588cc0939",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "parity-2",
+    "operation": "run",
+    "command": "git show HEAD:src/ui/index.ts > src/ui/__old_index.ts\ncat > src/ui/__parity.test.ts <<'EOF'\n// @vitest-environment jsdom\nimport { describe, expect, it } from 'vitest';\nimport { AppUI as NewUI } from './index';\nimport { AppUI as OldUI } from './__old_index';\n\nconst SCREENS = ['main', 'play', 'custom', 'ranked', 'settings', 'profile', 'leaderboard'] as const;\n\ndescribe('reformat parity', () => {\n  it('renders identical markup on every screen', () => {\n    for (const screen of SCREENS) {\n      const oldRoot = document.createElement('div');\n      const newRoot = document.createElement('div');\n      const oldUi = new OldUI(oldRoot as any) as any;\n      const newUi = new NewUI(newRoot as any) as any;\n      oldUi.navigate(screen);\n      newUi.navigate(screen);\n      expect(newRoot.innerHTML, screen).toBe(oldRoot.innerHTML);\n    }\n  });\n});\nEOF\nnpx vitest run src/ui/__parity.test.ts 2>&1 | tail -20\necho \"parity exit=${PIPESTATUS[0]}\"\nrm -f src/ui/__old_index.ts src/ui/__parity.test.ts\necho '--- status ---'\ngit status --short"
+  },
+  "createdAt": "2026-09-17T05:11:55.324Z"
+}
