@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"0b171c40-23da-46e8-926b-bdffbe28f898\",\"commandId\":\"inspect-5\",\"operation\":\"run\",\"headSha\":\"fe890d7c4a1756f69b9c126df7d1866e70bcd9c6\",\"command\":\"echo '=== resolveCourseSelection ==='; git grep -n 'resolveCourseSelection' -- src/courses; echo '---'; sed -n '1,60p' src/courses/CourseRegistry.ts; echo '=== game/CourseRegistry ==='; sed -n '1,40p' src/game/CourseRegistry.ts; echo '=== Game.create opts ==='; sed -n '1,60p' src/game/Game.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:53:12.260Z"
+}

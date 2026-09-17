@@ -1,0 +1,12 @@
+{
+  "id": "8208d1f6-d2e6-4a42-b362-46c5d8027160",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-5",
+    "operation": "run",
+    "command": "echo '=== resolveCourseSelection ==='; git grep -n 'resolveCourseSelection' -- src/courses; echo '---'; sed -n '1,60p' src/courses/CourseRegistry.ts; echo '=== game/CourseRegistry ==='; sed -n '1,40p' src/game/CourseRegistry.ts; echo '=== Game.create opts ==='; sed -n '1,60p' src/game/Game.ts"
+  },
+  "createdAt": "2026-09-17T02:53:12.261Z"
+}
