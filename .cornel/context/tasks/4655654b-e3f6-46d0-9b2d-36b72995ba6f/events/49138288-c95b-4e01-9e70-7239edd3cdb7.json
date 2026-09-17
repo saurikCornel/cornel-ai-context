@@ -1,0 +1,12 @@
+{
+  "id": "49138288-c95b-4e01-9e70-7239edd3cdb7",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "ls-player-1",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-17T01:39:17.693Z"
+}
