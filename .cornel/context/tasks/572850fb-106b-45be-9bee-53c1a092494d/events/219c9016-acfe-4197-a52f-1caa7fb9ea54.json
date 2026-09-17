@@ -1,0 +1,11 @@
+{
+  "id": "219c9016-acfe-4197-a52f-1caa7fb9ea54",
+  "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "apple-ff9f2090",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-17T00:44:29.385Z"
+}
