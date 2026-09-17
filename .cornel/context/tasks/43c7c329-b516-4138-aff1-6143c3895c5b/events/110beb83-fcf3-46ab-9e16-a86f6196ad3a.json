@@ -1,0 +1,17 @@
+{
+  "id": "110beb83-fcf3-46ab-9e16-a86f6196ad3a",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "course-volcano",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "volcano ok\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "b0c7901a198fccb4c4d5065ac124d8efaf0853098a6473f1ce993d47973f3ad9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:43:26.992Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "4ac47040-546f-415a-a9f3-0aafa4090e3c",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "course-volcano",
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
+  },
+  "createdAt": "2026-09-17T02:43:20.437Z"
+}
