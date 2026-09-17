@@ -1,0 +1,12 @@
+{
+  "id": "b5b44b1e-fa3e-486d-a2f2-4250471099da",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-5",
+    "operation": "run",
+    "command": "echo '== Game.ts API =='; grep -n '^  [a-zA-Z#private ]*[a-zA-Z]*(' src/game/Game.ts | cut -c1-120 | head -60; echo; echo '== рейтинг/награды/результаты =='; grep -n 'RatingSystem\\|calculateMatchReward\\|showResults\\|scoreboard\\|Scoreboard\\|nextHole\\|matchComplete\\|tiebreak' src/game/Game.ts | cut -c1-140 | head -30; echo; echo '== штрафы/hazard/lastSafePosition/overview =='; grep -n 'lastSafe\\|penalt\\|hazard\\|overview\\|setMode' src/game/Game.ts | cut -c1-140 | head -30; echo; echo '== layoutDiversity test =='; sed -n '1,60p' src/courses/layoutDiversity.test.ts | cut -c1-140"
+  },
+  "createdAt": "2026-09-17T03:51:17.352Z"
+}
