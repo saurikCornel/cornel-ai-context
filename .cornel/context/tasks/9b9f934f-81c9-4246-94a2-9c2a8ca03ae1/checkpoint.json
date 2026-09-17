@@ -3,7 +3,7 @@
   "branch": "cornel/slit-u-chashki-net-flaga-i-uglubleniya-9b9f93",
   "headSha": "ebf646642e53594522c192e17cebe7b52117b9e7",
   "status": "RUNNING",
-  "summary": "Слияние закоммичено (ebf6466). Зависимости не установлены — ставлю и прогоняю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"verify-2\",\"operation\":\"run\",\"headSha\":\"ebf646642e53594522c192e17cebe7b52117b9e7\",\"command\":\"npm install --no-audit --no-fund >/tmp/npm-install.log 2>&1; echo \\\"INSTALL_EXIT=$?\\\"; tail -3 /tmp/npm-install.log; echo '=== typecheck ==='; npm run typecheck; echo \\\"TS_EXIT=$?\\\"; echo '=== tests ==='; npm test 2>&1 | tail -45\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
+  "summary": "GitHub-ветка ещё на f757284 (коммит слияния локальный). Повторяю с прежним headSha.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"verify-3\",\"operation\":\"run\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"command\":\"npm install --no-audit --no-fund >/tmp/npm-install.log 2>&1; echo \\\"INSTALL_EXIT=$?\\\"; tail -3 /tmp/npm-install.log; echo '=== typecheck ==='; npm run typecheck; echo \\\"TS_EXIT=$?\\\"; echo '=== tests ==='; npm test 2>&1 | tail -45\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "verify-2",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "ebf646642e53594522c192e17cebe7b52117b9e7",
+      "exitCode": null
+    },
+    {
+      "commandId": "verify-3",
+      "status": "STARTED",
+      "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:37:39.794Z"
+  "createdAt": "2026-09-17T04:38:12.610Z"
 }
