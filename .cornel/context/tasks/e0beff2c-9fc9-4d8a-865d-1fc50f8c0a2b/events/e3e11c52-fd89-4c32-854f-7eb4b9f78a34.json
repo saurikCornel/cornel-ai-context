@@ -1,0 +1,17 @@
+{
+  "id": "e3e11c52-fd89-4c32-854f-7eb4b9f78a34",
+  "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
+    "output": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7\nmanifest OK: 15 unique events\nTYPECHECK OK\n",
+    "outputDigest": "cb65d57c58961e9133074a2ae31f69a628cacf219b47874db361a281b2d895e9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:00:21.247Z"
+}
