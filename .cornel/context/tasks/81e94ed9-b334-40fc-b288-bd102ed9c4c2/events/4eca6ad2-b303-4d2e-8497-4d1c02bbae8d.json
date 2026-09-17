@@ -1,0 +1,17 @@
+{
+  "id": "4eca6ad2-b303-4d2e-8497-4d1c02bbae8d",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-scene-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "### src/core/HoleSceneBuilder.ts (строки 70-144 из 144)\n70:     for (const surface of hole.surfaces) {\n71:       group.add(this.buildSurface(surface));\n72:     }\n73:     for (const obstacle of hole.obstacles) {\n74:       group.add(this.buildObstacle(obstacle));\n75:     }\n76:     group.add(this.buildCup(hole));\n77: \n78:     return {\n79:       group,\n80:       meshCount: group.children.length,\n81:       dispose: () => {\n82:         group.clear();\n83:       },\n84:     };\n85:   }\n86: \n87:   dispose(): void {\n88:     this.boxGeometry.dispose();\n89:     this.cylinderGeometry.dispose();\n90:     for (const material of this.materials.values()) {\n91:       material.dispose();\n92:     }\n93:     this.materials.clear();\n94:   }\n95: \n96:   private buildSurface(surface: SurfaceDescriptor): THREE.Mesh {\n97:     const geometry = surface.shape === 'cylinder' ? this.cylinderGeometry : this.boxGeometry;\n98:     const mesh = new THREE.Mesh(\n99:       geometry,\n100:       this.materialFor('surface:' + surface.material, SURFACE_COLORS[surface.material]),\n101:     );\n102:     mesh.name = surface.id;\n103:     applyTransform(mesh, surface.transform, surface.size);\n104:     mesh.castShadow = false;\n105:     mesh.receiveShadow = true;\n106:     return mesh;\n107:   }\n108: \n109:   private buildObstacle(obstacle: ObstacleDescriptor): THREE.Mesh {\n110:     const geometry = obstacle.type === 'pillar' ? this.cylinderGeometry : this.boxGeometry;\n111:     const mesh = new THREE.Mesh(\n112:       geometry,\n113:       this.materialFor('obstacle:' + obstacle.type, OBSTACLE_COLORS[obstacle.type]),\n114:     );\n115:     mesh.name = obstacle.id;\n116:     applyTransform(mesh, obstacle.transform, obstacle.size);\n117:     mesh.castShadow = true;\n118:     mesh.visible = obstacle.enabled !== false;\n119:     return mesh;\n120:   }\n121: \n122:   private buildCup(hole: Hole): THREE.Mesh {\n123:     const mesh = new THREE.Mesh(this.cylinderGeometry, this.materialFor('cup', CUP_COLOR));\n124:     mesh.name = hole.id + '-cup';\n125:     const diameter = hole.cup.radius * 2;\n126:     mesh.position.set(hole.cup.position.x, hole.cup.position.y, hole.cup.position.z);\n127:     mesh.scale.set(diameter, hole.cup.radius, diameter);\n128:     mesh.castShadow = false;\n129:     mesh.receiveShadow = true;\n130:     return mesh;\n131:   }\n132: \n133:   private materialFor(key: string, color: number): THREE.MeshStandardMaterial {\n134:     const cached = this.materials.get(key);\n135:     if (cached) {\n136:       return cached;\n137:     }\n138:     const material = new THREE.MeshStandardMaterial({ color, roughness: 0.85, metalness: 0.05 });\n139:     material.name = key;\n140:     this.materials.set(key, material);\n141:     return material;\n142:   }\n143: }\n144:",
+    "outputDigest": "e7f5c7b032c324f75fa6dc701fd9cac085036e301831fb004ff2a95fab21bb76",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:20:57.868Z"
+}

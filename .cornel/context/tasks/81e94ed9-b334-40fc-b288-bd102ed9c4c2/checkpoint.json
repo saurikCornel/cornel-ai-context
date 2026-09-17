@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-neon-city-haunted-mansion-space-st-81e94e",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"read-ref-1\",\"operation\":\"read\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"paths\":[\"src/courses/data/green-hills.ts:1-12\",\"src/core/HoleSceneBuilder.ts:1-70\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"read-scene-2\",\"operation\":\"read\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"paths\":[\"src/core/HoleSceneBuilder.ts:70-144\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-courses-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "read-ref-1",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-scene-2",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:19:32.836Z"
+  "createdAt": "2026-09-17T02:20:55.582Z"
 }
