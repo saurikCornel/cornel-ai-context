@@ -1,0 +1,12 @@
+{
+  "id": "144fe834-dd2e-4bce-a296-90113290e38c",
+  "taskId": "da920ed0-1fef-4bce-9bcd-65a75ec57438",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-3",
+    "operation": "run",
+    "command": "set -e\nnode_modules/.bin/tsc -b --pretty false\nnode_modules/.bin/vitest run src/gameplay src/courses tests/course-data-validation.test.ts"
+  },
+  "createdAt": "2026-09-17T02:19:49.909Z"
+}
