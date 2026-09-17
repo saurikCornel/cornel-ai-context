@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"6629a04b-04c6-461d-8a8b-4c8c98e07034\",\"commandId\":\"grep-1\",\"operation\":\"grep\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"pattern\":\"courses/\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:12:38.907Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "dfe37d8c-4eb5-4175-ac57-d21708dd2f31",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "grep-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "src/ai/BotPlanner.ts:3:import type { HazardObstacle, Hole, ObstacleDescriptor, SurfaceMaterial } from '../courses/types';\nsrc/ai/planner.test.ts:5:import type { Hole } from '../courses/types';\nsrc/ai/types.ts:3:import type { Hole } from '../courses/types';\nsrc/app/GameState.ts:2:import type { Course } from '../courses/types';\nsrc/contracts/game.ts:2:import type { Course, Hole } from '../courses/types';\nsrc/contracts/services.ts:1:import type { Course, Hole } from '../courses/types';\nsrc/core/HoleSceneBuilder.ts:9:} from '../courses/types';\nsrc/core/holeScene.test.ts:3:import type { Hole } from '../courses/types';\nsrc/gameplay/HoleSystem.ts:3:import type { HazardObstacle, Hole } from '../courses/types';\nsrc/gameplay/MatchManager.ts:3:import type { Course, Hole } from '../courses/types';\nsrc/gameplay/gameplay.test.ts:3:import type { Course, Hole } from '../courses/types';\nsrc/obstacles/surfaces.test.ts:3:import type { SurfaceMaterial } from '../courses/types';\nsrc/obstacles/surfaces.ts:2:import type { SurfaceDescriptor, SurfaceMaterial } from '../courses/types';\nsrc/ui/Minimap.ts:2:import type { Hole, ObstacleDescriptor } from '../courses/types';\nsrc/ui/minimap.test.ts:4:import type { Hole, ObstacleDescriptor } from '../courses/types';",
+    "outputDigest": "5d3529ab0ee6d77d02c7742abe72189d989bf513ed33e53bfae4ec6f8a844d1d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:12:41.473Z"
+}

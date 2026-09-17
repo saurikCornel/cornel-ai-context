@@ -3,7 +3,7 @@
   "branch": "cornel/level-builder-api-iz-tz-11-ne-realizovan-6629a0",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"6629a04b-04c6-461d-8a8b-4c8c98e07034\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"paths\":[\"src/courses/CourseBuilder.ts\",\"src/courses/Hole.ts\",\"src/courses/Course.ts\",\"src/courses/types.ts:1-200\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6629a04b-04c6-461d-8a8b-4c8c98e07034\",\"commandId\":\"grep-1\",\"operation\":\"grep\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"pattern\":\"courses/\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "read-1",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "grep-1",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:11:24.828Z"
+  "createdAt": "2026-09-17T02:12:38.912Z"
 }
