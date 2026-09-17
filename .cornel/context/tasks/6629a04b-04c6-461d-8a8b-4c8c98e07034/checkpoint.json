@@ -3,7 +3,7 @@
   "branch": "cornel/level-builder-api-iz-tz-11-ne-realizovan-6629a0",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Обнаружен `tests/course-data-validation.test.ts` — это и есть валидация 90 лунок. Прогоняю её отдельно, чтобы убедиться, что она зелёная (и понять, какие ещё два файла падали).\n\n```json\n{\"version\":1,\"taskId\":\"6629a04b-04c6-461d-8a8b-4c8c98e07034\",\"commandId\":\"chk-4\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"npx vitest run tests/course-data-validation.test.ts 2>&1 | tail -20; echo '=== FULL SUITE FAILING FILES ==='; npx vitest run 2>&1 | grep -E '^ *(FAIL|❯|Test Files|Tests)| FAIL ' | head -20\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Валидация 90 лунок зелёная. Проверю причину падения двух leaderboard-тестов, чтобы подтвердить, что она не связана с моей карточкой.\n\n```json\n{\"version\":1,\"taskId\":\"6629a04b-04c6-461d-8a8b-4c8c98e07034\",\"commandId\":\"chk-5\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"npx vitest run tests/leaderboard-generator.test.ts 2>&1 | head -30; echo '=== imports ==='; head -8 tests/leaderboard-generator.test.ts tests/leaderboard-render.test.ts\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -115,10 +115,16 @@
     },
     {
       "commandId": "chk-4",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "chk-5",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:41:50.528Z"
+  "createdAt": "2026-09-17T02:42:38.577Z"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "7237750e-080e-419e-9a91-26f324f6d83d",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chk-5",
+    "operation": "run",
+    "command": "npx vitest run tests/leaderboard-generator.test.ts 2>&1 | head -30; echo '=== imports ==='; head -8 tests/leaderboard-generator.test.ts tests/leaderboard-render.test.ts"
+  },
+  "createdAt": "2026-09-17T02:42:38.573Z"
+}

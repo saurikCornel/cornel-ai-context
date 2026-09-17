@@ -1,0 +1,17 @@
+{
+  "id": "0ab1e0eb-df5e-43e6-807f-296c1e4505c4",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "chk-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/6629a04b-04c6-461d-8a8b-4c8c98e07034\u001b[39m\n\n✔ generates 50+ deterministic AI leaderboard entries (2.135458ms)\n✔ entries satisfy profile and statistics invariants (2.013542ms)\n \u001b[31m❯\u001b[39m tests/leaderboard-generator.test.ts \u001b[2m(\u001b[22m\u001b[2m0 test\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/leaderboard-generator.test.ts\u001b[2m [ tests/leaderboard-generator.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: No test suite found in file /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/6629a04b-04c6-461d-8a8b-4c8c98e07034/tests/leaderboard-generator.test.ts\u001b[39m\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[2mno tests\u001b[22m\n\u001b[2m   Start at \u001b[22m 05:42:41\n\u001b[2m   Duration \u001b[22m 179ms\u001b[2m (transform 70%, import 23%, worker 7%)\u001b[22m\n\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 13.513333\n=== imports ===\n==> tests/leaderboard-generator.test.ts <==\nimport { strict as assert } from 'node:assert';\nimport { test } from 'node:test';\nimport { generateAILeaderboard } from '../src/leaderboard/generator.ts';\n\ntest('generates 50+ deterministic AI leaderboard entries', () => {\n  const first = generateAILeaderboard({ seed: 'arena-season-1', count: 64 });\n  const second = generateAILeaderboard({ seed: 'arena-season-1', count: 64 });\n  assert.equal(first.length, 64);\n\n==> tests/leaderboard-render.test.ts <==\nimport { strict as assert } from 'node:assert';\nimport { test } from 'node:test';\nimport { readFile } from 'node:fs/promises';\n\ntest('leaderboard renderer exposes accessible table structure and key statistics', async () => {\n  const source = await readFile(new URL('../src/leaderboard/Leaderboard.ts', import.meta.url), 'utf8');\n  assert.match(source, /aria-label/);\n  assert.match(source, /document\\.createElement\\('table'\\)/);\n",
+    "outputDigest": "c217ca8de8037454254af3f9cf7fa76443e21e99ec72fd697115bdd3ccbe5f4f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:42:41.759Z"
+}
