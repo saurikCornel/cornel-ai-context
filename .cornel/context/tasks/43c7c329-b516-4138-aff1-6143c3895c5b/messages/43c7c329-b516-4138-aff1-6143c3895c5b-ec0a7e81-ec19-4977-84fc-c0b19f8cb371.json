@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "The worker reports my branch head moved on GitHub. Trying both known candidates via `heads`.\n\n```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"read-9\",\"operation\":\"read\",\"heads\":[\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"012ffb90c6c91afd0be84e73d07ce4a07a511c7a\"],\"paths\":[\"src/ui/Minimap.ts:1-70\"]}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:28:37.501Z"
+}
