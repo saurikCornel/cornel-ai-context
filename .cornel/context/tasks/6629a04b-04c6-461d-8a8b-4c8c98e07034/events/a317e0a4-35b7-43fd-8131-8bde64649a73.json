@@ -1,0 +1,12 @@
+{
+  "id": "a317e0a4-35b7-43fd-8131-8bde64649a73",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chk-1",
+    "operation": "run",
+    "command": "set -e\nSCRATCH=\"/private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-6629a04b-04c6-461d-8a8b-4c8c98e07034/39bdc2ba-23ae-4f80-bcde-cb59613a4cbe/scratchpad\"\nmkdir -p \"$SCRATCH\"\ncat > \"$SCRATCH/patch.mjs\" <<'EOF'\nimport { readFileSync, writeFileSync } from 'node:fs';\n\nconst path = 'src/courses/CourseBuilder.ts';\nlet source = readFileSync(path, 'utf8');\nconst importAnchor = \"import { defineCourse } from './Course';\";\nif (!source.includes(importAnchor)) throw new Error('import anchor not found');\nif (!source.includes('HoleBuilder')) {\n  source = source.replace(\n    importAnchor,\n    importAnchor + \"\\nimport { createHoleBuilder, type HoleBuilder, type HoleBuilderOptions } from './HoleBuilder';\",\n  );\n}\nconst buildAnchor = '  build(): Course {';\nif (!source.includes(buildAnchor)) throw new Error('build anchor not found');\nif (!source.includes('addHoleWith')) {\n  const method = [\n    '  /** Builds a hole through the level builder API and appends it to the course. */',\n    '  addHoleWith(options: HoleBuilderOptions, configure: (builder: HoleBuilder) => void): this {',\n    '    const builder = createHoleBuilder(options);',\n    '    configure(builder);',\n    '    return this.addHole(builder.buildHole());',\n    '  }',\n    '',\n    '',\n  ].join('\\n');\n  source = source.replace(buildAnchor, method + buildAnchor);\n}\nwriteFileSync(path, source);\n\nconst pkgPath = 'package.json';\nconst pkg = JSON.parse(readFileSync(pkgPath, 'utf8'));\npkg.scripts['test:courses'] = 'vitest run src/courses';\nwriteFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\\n');\nconsole.log('patched');\nEOF\nnode \"$SCRATCH/patch.mjs\"\n[ -d node_modules ] || npm install\nnpm run typecheck\nnpx vitest run src/courses\ngit status --short"
+  },
+  "createdAt": "2026-09-17T02:40:21.789Z"
+}

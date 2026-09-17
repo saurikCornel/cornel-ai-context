@@ -1,0 +1,12 @@
+{
+  "id": "db67261b-fd15-480f-bd71-3ca1d5824c9c",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-1",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund 2>&1 | tail -15"
+  },
+  "createdAt": "2026-09-17T02:40:28.206Z"
+}
