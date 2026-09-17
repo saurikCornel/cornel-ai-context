@@ -1,0 +1,17 @@
+{
+  "id": "4fbb1cd6-8b07-428c-8a4b-635d9ff25edf",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "write-3",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "patched src/core/Renderer.ts\nTraceback (most recent call last):\n  File \"<stdin>\", line 37, in <module>\n  File \"<stdin>\", line 7, in patch\nAssertionError: ('src/game/Game.ts', 2, '    this.aimPower = 0;\\n    this.statusText = undefined;\\n    this.aimAr')\n",
+    "outputDigest": "5440f1b629f3d12aabc17ce17054ec5e94ecf03f53e22087b15176ca461f4545",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:35:54.317Z"
+}
