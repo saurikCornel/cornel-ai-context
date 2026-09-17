@@ -3,7 +3,7 @@
   "branch": "cornel/bot-turn-pacing-scheduler-5dd3f9",
   "headSha": "2258c4f45e62b3f533e627b7615990d2e41e503f",
   "status": "RUNNING",
-  "summary": "Публикация прошла, новый SHA `2258c4f`. Прогоняю проверки на опубликованном коммите, чтобы finish опирался на успешную проверку того же headSha.\n\n```json\n{\"version\":1,\"taskId\":\"5dd3f980-b998-4c0f-8ff6-6230938b256d\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"2258c4f45e62b3f533e627b7615990d2e41e503f\",\"timeoutSeconds\":600,\"command\":\"set -e\\nnpx vitest run src/ai/scheduler.test.ts\\nnpx tsc -b --pretty false\\ngit status --short\\ngit log --oneline -1\"}\n```\n\nЖду RESULT по `verify-1`; после него отправлю finish с итогом.\n\n",
+  "summary": "Проверки на опубликованном коммите `2258c4f` зелёные, рабочее дерево чистое. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"5dd3f980-b998-4c0f-8ff6-6230938b256d\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"2258c4f45e62b3f533e627b7615990d2e41e503f\",\"message\":\"Bot turn pacing scheduler готов. Новые файлы: src/ai/BotTurnScheduler.ts и src/ai/scheduler.test.ts; существующие файлы src/ai не менялись, index.ts и types.ts не тронуты. BotTurnScheduler — конечный автомат idle->thinking->aiming->shooting->done на внешнем dt: без DOM, setTimeout, Date.now и Three.js. Дефолты thinkSeconds 0.9, aimSeconds 0.8, shootSeconds 0.35; begin(botName, personality?) перезапускает часы и применяет множитель характера, reset() возвращает в idle, update(dt) отдаёт BotTurnStatus с progress 0..1, статусами `${botName} is thinking` / `${botName} is aiming`, showAimLine только в aiming и fireShot ровно один раз на первом апдейте фазы shooting (в том числе когда один большой dt перескакивает все фазы). timingForProfile(personality, planningDepth, random?) добавляет +0.25 с за уровень planningDepth выше 1, множители careful x1.25, bold x0.8, trickster x1.1, иначе x1, и джиттер random()*0.3 при переданном RandomSource. Тесты: 9 штук в src/ai/scheduler.test.ts (порядок фаз, ровно один fireShot, устойчивость к большому dt, showAimLine только в aiming и нормализованный progress, тексты статуса, careful думает дольше bold, масштаб по глубине и границы джиттера, personality в begin, reset -> idle). Проверки на коммите 2258c4f: npx vitest run src/ai/scheduler.test.ts — 9 passed; npx tsc -b --pretty false — без ошибок; git status чистый. PR не открывал: слияние ветки cornel/bot-turn-pacing-scheduler-5dd3f9 выполняет сборщик.\"}\n```\n\nСводка: реализован детерминированный планировщик темпа хода бота (`src/ai/BotTurnScheduler.ts`) и 9 юнит-тестов без реальных таймеров (`src/ai/scheduler.test.ts`); опубликован коммит `2258c4f`, на нём подтверждены vitest (9 passed) и `tsc -b`. Следующий шаг — за сборщиком: слияние ветки `cornel/bot-turn-pacing-scheduler-5dd3f9`; подключение планировщика к Game.ts/HUD относится к следующей волне карточек.\n\n",
   "commands": [
     {
       "commandId": "apple-e6169b3c",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "verify-1",
+      "status": "SUCCEEDED",
+      "headSha": "2258c4f45e62b3f533e627b7615990d2e41e503f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
       "headSha": "2258c4f45e62b3f533e627b7615990d2e41e503f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:47:30.769Z"
+  "createdAt": "2026-09-17T01:49:10.003Z"
 }
