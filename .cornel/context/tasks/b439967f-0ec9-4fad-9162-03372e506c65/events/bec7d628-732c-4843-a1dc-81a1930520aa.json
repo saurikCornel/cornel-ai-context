@@ -1,0 +1,17 @@
+{
+  "id": "bec7d628-732c-4843-a1dc-81a1930520aa",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "e0a720a0b8185824d35e09937c677a9ed3d5752e\n=== pars ===\nchaos-dimension.ts:25:par: 3\nchaos-dimension.ts:39:par: 3\nchaos-dimension.ts:53:par: 4\nchaos-dimension.ts:67:par: 4\nchaos-dimension.ts:84:par: 4\nchaos-dimension.ts:102:par: 5\nchaos-dimension.ts:120:par: 5\nchaos-dimension.ts:135:par: 6\nchaos-dimension.ts:154:par: 7\narctic-base.ts:11:par: 2\narctic-base.ts:19:par: 2\narctic-base.ts:28:par: 3\narctic-base.ts:38:par: 3\narctic-base.ts:49:par: 4\narctic-base.ts:61:par: 4\narctic-base.ts:74:par: 5\narctic-base.ts:88:par: 5\narctic-base.ts:103:par: 6\ngreen-hills.ts:62:par: 2\ngreen-hills.ts:70:par: 3\ngreen-hills.ts:80:par: 3\ngreen-hills.ts:96:par: 3\ngreen-hills.ts:106:par: 4\ngreen-hills.ts:117:par: 4\ngreen-hills.ts:134:par: 5\ngreen-hills.ts:151:par: 5\ngreen-hills.ts:169:par: 6\nancient-temple.ts:11:par: 2\nancient-temple.ts:19:par: 2\nancient-temple.ts:28:par: 3\nancient-temple.ts:38:par: 3\nancient-temple.ts:49:par: 4\nancient-temple.ts:61:par: 4\nancient-temple.ts:74:par: 5\nancient-temple.ts:88:par: 5\nancient-temple.ts:103:par: 6\nvolcano.ts:11:par: 2\nvolcano.ts:19:par: 2\nvolcano.ts:28:par: 3\nvolcano.ts:40:par: 3\nvolcano.ts:51:par: 4\nvolcano.ts:65:par: 4\nvolcano.ts:78:par: 5\nvolcano.ts:95:par: 5\nvolcano.ts:112:par: 6\n",
+    "outputDigest": "94f386cdab62afab9d67af4fbd9884814cc6094f89920a5af18bbb96a93aa395",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:21:42.911Z"
+}
