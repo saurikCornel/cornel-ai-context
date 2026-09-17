@@ -1,0 +1,12 @@
+{
+  "id": "8ec6b9b9-7943-4c2c-bd33-092378f82f66",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "readme-check-2",
+    "operation": "run",
+    "command": "npm install > /tmp/cpa-install.log 2>&1; echo \"install_exit=$?\"; tail -8 /tmp/cpa-install.log; echo '--- typecheck ---'; npm run typecheck > /tmp/cpa-tc.log 2>&1; echo \"typecheck_exit=$?\"; tail -25 /tmp/cpa-tc.log; echo '--- vitest all ---'; npx vitest run --reporter=dot > /tmp/cpa-vt.log 2>&1; echo \"vitest_exit=$?\"; tail -55 /tmp/cpa-vt.log"
+  },
+  "createdAt": "2026-09-17T02:12:24.525Z"
+}
