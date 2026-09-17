@@ -1,0 +1,17 @@
+{
+  "id": "f17481eb-8d8c-4dfb-8873-1d0c673ad58e",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "patched Game.ts\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/a57de8fc-e7bd-4422-b085-c9430d302af3\u001b[39m\n\n \u001b[32m✓\u001b[39m src/gameplay/rewards.test.ts \u001b[2m(\u001b[22m\u001b[2m11 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/gameplay/gameplay.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/gameplay/zones/zones.test.ts \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[31m❯\u001b[39m src/game/game.test.ts \u001b[2m(\u001b[22m\u001b[2m0 test\u001b[22m\u001b[2m)\u001b[22m\n\n\u001b[31m⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Suites 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m src/game/game.test.ts\u001b[2m [ src/game/game.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mReferenceError\u001b[22m: exports is not defined in ES module scope\nThis file is being treated as an ES module because it has a '.js' file extension and '/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/a57de8fc-e7bd-4422-b085-c9430d302af3/node_modules/@dimforge/rapier3d-compat/package.json' contains \"type\": \"module\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.\u001b[39m\n\u001b[90m \u001b[2m❯\u001b[22m ../../../../../Application%20Support/Cornel%20AI/workspace/worktrees/a57de8fc-e7bd-4422-b085-c9430d302af3/node_modules/@dimforge/rapier3d-compat/rapier.cjs.js:\u001b[2m1:42\u001b[22m\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m src/game/game.test.ts:\u001b[2m2:1\u001b[22m\u001b[39m\n    \u001b[90m  1|\u001b[39m // @vitest-environment jsdom\n    \u001b[90m  2|\u001b[39m import RAPIER from '@dimforge/rapier3d-compat';\n    \u001b[90m   |\u001b[39m \u001b[31m^\u001b[39m\n    \u001b[90m  3|\u001b[39m import * as THREE from 'three';\n    \u001b[90m  4|\u001b[39m import { beforeAll, describe, expect, it } from 'vitest';\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m23 passed\u001b[39m\u001b[22m\u001b[90m (23)\u001b[39m\n\u001b[2m   Start at \u001b[22m 05:38:47\n\u001b[2m   Duration \u001b[22m 1.13s\u001b[2m (environment 72%, transform 21%, import 4%, worker 2%, tests 1%)\u001b[22m\n\n",
+    "outputDigest": "cd71c7cf5ac004ef095542c5b4d69dd0dd82fbb2d88e3e63fd71cddd3bfdaf3e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:38:48.982Z"
+}
