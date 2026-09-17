@@ -1,0 +1,12 @@
+{
+  "id": "dfbc9ebb-a06a-4fa9-a810-513393111367",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-5",
+    "operation": "run",
+    "command": "npm run typecheck && echo TYPECHECK_OK; npx vitest run 2>&1 | tail -6; echo '=== BUILD ==='; npm run build 2>&1 | tail -4; echo '=== STATUS ==='; git status --short"
+  },
+  "createdAt": "2026-09-17T04:23:06.761Z"
+}
