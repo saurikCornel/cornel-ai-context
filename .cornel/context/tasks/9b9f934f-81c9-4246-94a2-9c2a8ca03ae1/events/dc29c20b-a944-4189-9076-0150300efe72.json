@@ -1,0 +1,17 @@
+{
+  "id": "dc29c20b-a944-4189-9076-0150300efe72",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "redo-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+    "output": "fatal: couldn't find remote ref cornel/u-chashki-net-flaga-i-uglubleniya-f40347\nMERGE_EXIT=128\nMARKERS=[]\nUNEXPECTED_MARKERS\nMARKERS_LEFT=0\n=== status ===\n=== typecheck ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nTS_EXIT=0\n=== tests ===\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m46 passed\u001b[39m\u001b[22m\u001b[90m (46)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m292 passed\u001b[39m\u001b[22m\u001b[90m (292)\u001b[39m\n=== build ===\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.09s\u001b[39m\n",
+    "outputDigest": "d8bf36519bc4b602a41198ff5e2266f78ce8a33eef3a94044d42ad076fe2b84d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:39:40.227Z"
+}
