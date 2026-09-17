@@ -1,0 +1,17 @@
+{
+  "id": "b3157a42-306e-41d6-b516-5d42efc79936",
+  "taskId": "374701a2-c808-4317-9213-cb863516c878",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "verify-1",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "5bee874feebe6ea883dda565c03401ad1d7b95bc",
+    "output": "[detached HEAD 5bee874] Merge branch 'cornel/readme-opisyvaet-funkcionalnost-kotoroy-c8ba46' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n5bee874 Merge branch 'cornel/readme-opisyvaet-funkcionalnost-kotoroy-c8ba46' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n===== typecheck =====\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "050d78c0e734145412a0a77f582c3ea42f9baeb98d2161352403a2d464720039",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:39:03.426Z"
+}
