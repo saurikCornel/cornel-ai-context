@@ -1,0 +1,29 @@
+{
+  "id": "d4925472-e323-4375-a221-e8600ab877ba",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "claude",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "58b3fbf3-cb73-4b86-9844-493a06cdabab",
+    "base": {
+      "": "1b051708839c6a0b4094c1f74261e1937e59fc27"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: Часть модулей записана минифицированными однострочниками",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/chast-moduley-zapisana-minificirovannymi-8b573d (карточка «Часть модулей записана минифицированными однострочниками») не сливается в ветку офиса cornel/office: конфликт в файлах src/ui/index.ts, src/ui/ui.css.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/chast-moduley-zapisana-minificirovannymi-8b573d && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/slit-chast-moduley-zapisana-minificirova-d49254",
+  "baseSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+  "workspaceSyncedSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+  "status": "READY",
+  "createdAt": "2026-09-17T04:28:35.265Z",
+  "updatedAt": "2026-09-17T04:28:38.177Z",
+  "issue": 111,
+  "chatUrl": null,
+  "error": null
+}
