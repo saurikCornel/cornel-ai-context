@@ -1,0 +1,12 @@
+{
+  "id": "8bedb7e5-6935-49b8-b1db-1e5076d9d5f5",
+  "taskId": "6504e250-f048-46e4-bb78-33f15ab141f9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "checks-2",
+    "operation": "run",
+    "command": "set -e\nMERGE=571525c92ea7825072831452d65574ef523d2eb9\nH=$(git rev-parse HEAD)\necho \"HEAD=$H\"\nif [ \"$H\" != \"$MERGE\" ]; then git cat-file -e \"$MERGE^{commit}\"; git reset --hard \"$MERGE\"; fi\ngit log --oneline -3\ngit status --short\ngrep -rn \"^<<<<<<<\" src/ && { echo \"MARKERS LEFT\"; exit 4; } || true\nif [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else npm install --no-audit --no-fund; fi\nnpm run typecheck\nnpm test\nnpm run build"
+  },
+  "createdAt": "2026-09-17T04:53:45.544Z"
+}
