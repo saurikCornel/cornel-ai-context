@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Артефактов сборки в индексе нет — только исходники. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"dd88a27d-b0e9-4d56-b808-2a9da5c6d446\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"message\":\"feat(camera): aim/follow/overview/free modes with smooth transitions\\n\\nCameraModes: mode machine settings (distance, pitch, fov, smoothing, blend\\nlength per mode) plus hole framing helpers so the overview can show the whole\\nlevel before the first shot.\\n\\nCameraDirector: drives CameraController, CameraTransition and SmoothCameraRig\\ntogether. Mode switches, new focus points and the R key all start a timed blend\\nand keep spring damping, so the camera never teleports. WASD detaches the free\\ncamera, R slides it back behind the ball facing the cup.\\n\\nGame: loads a hole into an overview fly-around, hands over to the aim camera\\nwhen aiming starts, switches to the follow camera on each shot and applies the\\nsmoothed pose through applyCameraPose instead of cameraController.reset().\\n\\nCameraController: WASD panning moved the target opposite to the view direction;\\nfixed so the free camera flies where it looks.\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:22:33.055Z"
+}
