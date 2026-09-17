@@ -1,0 +1,13 @@
+{
+  "id": "6f9fecf9-02e5-4e1e-8d60-d3fcf84078c5",
+  "taskId": "60f661d1-a07b-4ecb-bc83-b0a9a43f5736",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Карточка «Reformat minified src/dev modules» выполнена. Три однострочных файла развёрнуты в читаемый TypeScript (2 пробела, один оператор/член класса на строку): src/dev/DeveloperDiagnostics.ts, src/dev/PresentationMinimap.ts, src/dev/LaunchOptions.ts. Только форматирование: имена, экспорты, коды F1/F2/F3, CSS-классы dev-diagnostics/dev-minimap, выводимые строки, размеры canvas 220x150 и логика не менялись. Другие файлы, включая src/dev/index.ts, не тронуты. Проверки на b991d05: npx vitest run src/input src/dev — 5/5 passed; npx tsc -b --pretty false — без ошибок; git status чист, git diff HEAD~1 HEAD затрагивает ровно 3 файла. PR не открывал — слияние за сборщиком.",
+  "detail": {
+    "commands": 9,
+    "failed": 2,
+    "headSha": "b991d05c3678197f1049fe46b0956d960e5acb5d",
+    "branch": "cornel/reformat-minified-src-dev-modules-60f661"
+  },
+  "createdAt": "2026-09-17T05:11:18.947Z"
+}

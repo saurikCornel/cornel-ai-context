@@ -1,0 +1,17 @@
+{
+  "id": "47817be3-d853-476b-8123-bb336bca55b4",
+  "taskId": "60f661d1-a07b-4ecb-bc83-b0a9a43f5736",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-dev-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "b991d05c3678197f1049fe46b0956d960e5acb5d",
+    "output": "Карточка «Reformat minified src/dev modules» выполнена. Три однострочных файла развёрнуты в читаемый TypeScript (2 пробела, один оператор/член класса на строку): src/dev/DeveloperDiagnostics.ts, src/dev/PresentationMinimap.ts, src/dev/LaunchOptions.ts. Только форматирование: имена, экспорты, коды F1/F2/F3, CSS-классы dev-diagnostics/dev-minimap, выводимые строки, размеры canvas 220x150 и логика не менялись. Другие файлы, включая src/dev/index.ts, не тронуты. Проверки на b991d05: npx vitest run src/input src/dev — 5/5 passed; npx tsc -b --pretty false — без ошибок; git status чист, git diff HEAD~1 HEAD затрагивает ровно 3 файла. PR не открывал — слияние за сборщиком.",
+    "outputDigest": "5ef5f0d7156de49dd695f648b582b0395a30a7e4582a5b6b3457d785d4df0b8f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:11:18.946Z"
+}
