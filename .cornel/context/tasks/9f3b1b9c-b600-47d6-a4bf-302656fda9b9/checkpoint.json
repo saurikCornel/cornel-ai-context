@@ -3,7 +3,7 @@
   "branch": "cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Всё ключевое прочитал. Теперь посмотрю, как эти типы используются в данных курсов и есть ли тесты на HoleRuntime.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"scan-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && echo '--- usages ---' && git grep -nE \\\"pendulum|sliding-wall|'door'\\\" -- src | grep -v 'src/obstacles/rotating.ts' | head -40 && echo '--- game dir ---' && ls src/game && echo '--- HoleRuntime refs ---' && git grep -ln 'HoleRuntime' -- src && echo '--- test files ---' && ls src/game/*.test.ts src/**/*.test.ts 2>/dev/null | head -40\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Есть готовый мост `src/obstacles/descriptors.ts` — читаю его вместе с хелперами layoutKit.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"read-5\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/obstacles/descriptors.ts\",\"src/courses/data/layoutKit.ts:200-270\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "scan-1",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-5",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:16:09.327Z"
+  "createdAt": "2026-09-17T03:16:45.074Z"
 }
