@@ -2,8 +2,8 @@
   "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
   "branch": "cornel/three-js-hole-scene-builder-572850",
   "headSha": "13a701e9eaf897051969ae2734580f7c44add08c",
-  "status": "WAITING_CHATGPT",
-  "summary": "Переход к следующему шагу не удалось. Сделайте это позже.\n\n",
+  "status": "RUNNING",
+  "summary": "Проверю фактическое состояние ветки и наличие файлов карточки.\n\n```json\n{\"version\":1,\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"commandId\":\"state-1\",\"operation\":\"run\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"command\":\"git rev-parse HEAD && git status --short && ls -1 src/core 2>/dev/null && ls -1 src/courses 2>/dev/null\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "apple-32420d36",
@@ -28,7 +28,13 @@
       "status": "SUCCEEDED",
       "headSha": "13a701e9eaf897051969ae2734580f7c44add08c",
       "exitCode": 0
+    },
+    {
+      "commandId": "state-1",
+      "status": "STARTED",
+      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T00:50:28.886Z"
+  "createdAt": "2026-09-17T01:38:55.836Z"
 }
