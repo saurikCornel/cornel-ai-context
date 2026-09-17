@@ -2,8 +2,8 @@
   "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
   "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
-  "status": "RUNNING",
-  "summary": "Проверка `run` отклоняется из-за расхождения head с GitHub (ветка сместилась), при этом операции чтения показывают, что мои правки на месте. Публикую изменения — publish вернёт актуальный SHA, после чего прогоню typecheck на нём.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\",\"message\":\"Add README, audio placeholder docs and audio manifest\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Расхождение head блокирует и `run`, и `publish`. Пробую форму с полем `heads`, чтобы получить/сопоставить фактический SHA ветки.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"check-4\",\"operation\":\"run\",\"heads\":[\"5c3050d91bd69a61cd8d614fdc716690ee24017f\"],\"timeoutSeconds\":120,\"command\":\"git rev-parse HEAD; git status --short; git log --oneline -3\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -43,10 +43,10 @@
     },
     {
       "commandId": "publish-1",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:55:26.166Z"
+  "createdAt": "2026-09-17T01:56:01.568Z"
 }
