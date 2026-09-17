@@ -1,0 +1,17 @@
+{
+  "id": "b9d9015a-3b84-466c-b2c1-58ce66dff318",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "21e5e93679bf4c1925bc35e9e3b27135107dd5fa",
+    "output": "Режимы камеры aim/follow/overview/free и плавные переходы вместо телепортации.\n\nНовое: src/camera/CameraModes.ts (машина режимов: дистанция, pitch, fov, время сглаживания и длительность блендинга на каждый режим; кадрирование лунки — framingCenter/framingRadius/overviewPose/yawTowards) и src/camera/CameraDirector.ts (оркестратор CameraController + CameraTransition + SmoothCameraRig: setMode/focusOn/recenter/setFraming/setFocus, режимный фильтр ввода, автопереход в free по WASD и возврат к шару по R, медленный облёт в overview).\n\nGame.ts: cameraController.reset() убран — загрузка лунки открывается облётом overview (первый кадр матча — снап, дальше блендинг), начало прицеливания и смена хода уводят камеру за шар через focusOn, удар переключает на follow, кадр отрисовывается applyCameraPose(director.update(...)). Прицеливание берёт director.yaw (не сглаженный), поэтому направление удара точное во время перехода.\n\nCameraController.ts: исправлено направление WASD-панорамирования — цель уезжала против взгляда камеры, для free-режима это было критично; существующий тест контроллера по-прежнему проходит.\n\nПроверки на коммите 21e5e93: npm run typecheck — без ошибок; npm run test:camera — 4 файла, 40 тестов (8 новых в CameraDirector.test.ts: смена режимов, сохранение yaw при follow, дрейф overview и возврат к шару, переход к новой цели за несколько кадров, а не за один, free по WASD и плавный возврат по R); vitest run src/game — 5 файлов, 32 теста, включая полный матч; npm run build — успешно, 75 модулей. PR не открывал: слияние ветки выполнит сборщик.",
+    "outputDigest": "6694c339d3690b0e79602a4a26865c005d47d8f750eb611af25d822f7e26f613",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:23:59.920Z"
+}

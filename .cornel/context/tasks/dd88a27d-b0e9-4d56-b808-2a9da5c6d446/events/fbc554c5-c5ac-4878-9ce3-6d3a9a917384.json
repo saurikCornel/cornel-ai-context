@@ -1,0 +1,13 @@
+{
+  "id": "fbc554c5-c5ac-4878-9ce3-6d3a9a917384",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Режимы камеры aim/follow/overview/free и плавные переходы вместо телепортации.\n\nНовое: src/camera/CameraModes.ts (машина режимов: дистанция, pitch, fov, время сглаживания и длительность блендинга на каждый режим; кадрирование лунки — framingCenter/framingRadius/overviewPose/yawTowards) и src/camera/CameraDirector.ts (оркестратор CameraController + CameraTransition + SmoothCameraRig: setMode/focusOn/recenter/setFraming/setFocus, режимный фильтр ввода, автопереход в free по WASD и возврат к шару по R, медленный облёт в overview).\n\nGame.ts: cameraController.reset() убран — загрузка лунки открывается облётом overview (первый кадр матча — снап, дальше блендинг), начало прицеливания и смена хода уводят камеру за шар через focusOn, удар переключает на follow, кадр отрисовывается applyCameraPose(director.update(...)). Прицеливание берёт director.yaw (не сглаженный), поэтому направление удара точное во время перехода.\n\nCameraController.ts: исправлено направление WASD-панорамирования — цель уезжала против взгляда камеры, для free-режима это было критично; существующий тест контроллера по-прежнему проходит.\n\nПроверки на коммите 21e5e93: npm run typecheck — без ошибок; npm run test:camera — 4 файла, 40 тестов (8 новых в CameraDirector.test.ts: смена режимов, сохранение yaw при follow, дрейф overview и возврат к шару, переход к новой цели за несколько кадров, а не за один, free по WASD и плавный возврат по R); vitest run src/game — 5 файлов, 32 теста, включая полный матч; npm run build — успешно, 75 модулей. PR не открывал: слияние ветки выполнит сборщик.",
+  "detail": {
+    "commands": 11,
+    "failed": 0,
+    "headSha": "21e5e93679bf4c1925bc35e9e3b27135107dd5fa",
+    "branch": "cornel/net-rezhimov-kamery-overview-free-i-plav-dd88a2"
+  },
+  "createdAt": "2026-09-17T03:23:59.921Z"
+}
