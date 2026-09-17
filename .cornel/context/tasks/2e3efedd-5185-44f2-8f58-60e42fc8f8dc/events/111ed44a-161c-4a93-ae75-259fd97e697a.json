@@ -1,0 +1,12 @@
+{
+  "id": "111ed44a-161c-4a93-ae75-259fd97e697a",
+  "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-3",
+    "operation": "run",
+    "command": "npm run build 2>&1 | tail -20"
+  },
+  "createdAt": "2026-09-17T02:24:06.669Z"
+}

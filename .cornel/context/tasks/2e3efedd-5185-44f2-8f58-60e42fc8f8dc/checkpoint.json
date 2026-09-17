@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-nedostizhimy-iz-prilozheniya-net-r-2e3efe",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Зависимости установлены. Запускаю typecheck и тесты.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"check-2\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":900,\"command\":\"npm run typecheck 2>&1 | tail -30; echo \\\"typecheck exit: ${PIPESTATUS[0]:-$?}\\\"; echo '=== tests ==='; npx vitest run src/courses src/ui src/dev tests/course-data-validation.test.ts 2>&1 | tail -45\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Typecheck и 28 тестов прошли. Проверю production-сборку, так как менял `main.ts`.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":900,\"command\":\"npm run build 2>&1 | tail -20\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "check-2",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-3",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:21:58.235Z"
+  "createdAt": "2026-09-17T02:24:06.674Z"
 }
