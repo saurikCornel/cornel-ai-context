@@ -1,0 +1,12 @@
+{
+  "id": "be239b01-65a6-4271-87f8-d6948cd99614",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "probe-3",
+    "operation": "run",
+    "command": "git merge --abort 2>/dev/null; echo \"HEAD=$(git log --oneline -1)\"; git status --short | head -5; O=origin/cornel/office; C=origin/cornel/slit-chast-moduley-zapisana-minificirova-d49254; B=$(git merge-base $O $C); echo \"base=$B\"; for f in src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; do echo \"=== $f ===\"; for r in \"$B base\" \"$O office\" \"$C card\"; do set -- $r; L=$(git show $1:$f | wc -l); M=$(git show $1:$f | awk '{if(length($0)>m)m=length($0)}END{print m}'); echo \"  $2: lines=$L maxlen=$M\"; done; echo '  --- office head ---'; git show $O:$f | head -8 | cut -c1-140; done; echo '=== card-vs-base changed files ==='; git diff --stat $B $C | tail -30"
+  },
+  "createdAt": "2026-09-17T04:47:06.074Z"
+}
