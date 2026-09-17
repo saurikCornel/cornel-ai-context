@@ -1,9 +1,9 @@
 {
   "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
   "branch": "cornel/in-game-minimap-projection-and-renderer-d905f6",
-  "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
+  "headSha": "bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da",
   "status": "RUNNING",
-  "summary": "Проверки прошли: `git ls-remote` подтвердил ветку на `739687e` (предыдущие отказы были гонкой со слияниями офиса), vitest — 6/6 тестов, `tsc -b --pretty false` завершился без ошибок (иначе `git status` в цепочке `&&` не выполнился бы). Публикую:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-10\",\"operation\":\"publish\",\"headSha\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"message\":\"feat(ui): add in-game minimap projection and canvas widget\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** `src/ui/Minimap.ts` (`MinimapModel`, `buildMinimapModel`, класс `Minimap`) и `src/ui/minimap.test.ts` (6 тестов) готовы; проверки `npx vitest run src/ui/minimap.test.ts` и `npx tsc -b --pretty false` пройдены на `739687e`. Следующий шаг — publish, затем finish с итогом.\n\n",
+  "summary": "Опубликовано, новый head `bc9831b`. Перед finish прогоняю проверки на этом же SHA:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-11\",\"operation\":\"run\",\"headSha\":\"bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/ui/minimap.test.ts && npx tsc -b --pretty false && git status --short && git log --oneline -1\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** коммит с `src/ui/Minimap.ts` и `src/ui/minimap.test.ts` опубликован в ветке (`bc9831b`). Повторяю vitest + tsc на опубликованном SHA, как требует finish; затем отправлю finish с итогом.\n\n",
   "commands": [
     {
       "commandId": "minimap-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "minimap-10",
+      "status": "SUCCEEDED",
+      "headSha": "bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da",
+      "exitCode": 0
+    },
+    {
+      "commandId": "minimap-11",
       "status": "STARTED",
-      "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
+      "headSha": "bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:58:03.795Z"
+  "createdAt": "2026-09-17T01:58:23.357Z"
 }

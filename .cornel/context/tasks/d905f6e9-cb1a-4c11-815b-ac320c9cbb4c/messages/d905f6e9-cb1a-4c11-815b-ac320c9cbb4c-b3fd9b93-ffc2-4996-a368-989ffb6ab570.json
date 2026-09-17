@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Опубликовано, новый head `bc9831b`. Перед finish прогоняю проверки на этом же SHA:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-11\",\"operation\":\"run\",\"headSha\":\"bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/ui/minimap.test.ts && npx tsc -b --pretty false && git status --short && git log --oneline -1\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** коммит с `src/ui/Minimap.ts` и `src/ui/minimap.test.ts` опубликован в ветке (`bc9831b`). Повторяю vitest + tsc на опубликованном SHA, как требует finish; затем отправлю finish с итогом.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:58:23.354Z"
+}
