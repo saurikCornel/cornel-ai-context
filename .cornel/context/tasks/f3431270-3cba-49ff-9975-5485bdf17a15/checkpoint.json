@@ -3,7 +3,7 @@
   "branch": "cornel/lava-i-drugie-sensornye-zony-renderyatsy-f34312",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Файл теста дописан; упал только запуск vitest — в рабочей копии нет `node_modules`. Ставлю зависимости и прогоняю тесты.\n\n```json\n{\"version\":1,\"taskId\":\"f3431270-3cba-49ff-9975-5485bdf17a15\",\"commandId\":\"check-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"ls -d node_modules 2>/dev/null || npm install --no-audit --no-fund; npx vitest run src/core\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Тесты сцены зелёные (12/12). Прогоняю полный набор тестов и production-сборку.\n\n```json\n{\"version\":1,\"taskId\":\"f3431270-3cba-49ff-9975-5485bdf17a15\",\"commandId\":\"check-2\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"npx vitest run 2>&1 | tail -25; echo '--- BUILD ---'; npm run build 2>&1 | tail -20\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "write-1a",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "check-1",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-2",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:19:53.283Z"
+  "createdAt": "2026-09-17T04:20:25.503Z"
 }

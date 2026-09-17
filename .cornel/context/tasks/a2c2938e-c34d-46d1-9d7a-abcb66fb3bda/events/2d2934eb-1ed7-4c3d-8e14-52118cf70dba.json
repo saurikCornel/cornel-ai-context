@@ -1,0 +1,12 @@
+{
+  "id": "2d2934eb-1ed7-4c3d-8e14-52118cf70dba",
+  "taskId": "a2c2938e-c34d-46d1-9d7a-abcb66fb3bda",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-2",
+    "operation": "run",
+    "command": "npx vitest run src/ui/leaderboard.test.ts tests/leaderboard-standings.test.ts tests/leaderboard-render.test.ts tests/leaderboard-generator.test.ts --reporter=verbose 2>&1 | grep -v 'Not implemented' | tail -30"
+  },
+  "createdAt": "2026-09-17T04:20:27.185Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/liderbord-nedostizhim-iz-prilozheniya-a2c293",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Typecheck зелёный. Запускаю полный прогон тестов и production-сборку.\n\n```json\n{\"version\":1,\"taskId\":\"a2c2938e-c34d-46d1-9d7a-abcb66fb3bda\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"timeoutSeconds\":900,\"command\":\"set -e\\nnpx vitest run 2>&1 | tail -30\\nnpm run build 2>&1 | tail -15\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Полный прогон зелёный (45 файлов, 286 тестов) и сборка проходит. Подтверждаю адресно, что именно новые тесты лидерборда исполнились.\n\n```json\n{\"version\":1,\"taskId\":\"a2c2938e-c34d-46d1-9d7a-abcb66fb3bda\",\"commandId\":\"verify-2\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/ui/leaderboard.test.ts tests/leaderboard-standings.test.ts tests/leaderboard-render.test.ts tests/leaderboard-generator.test.ts --reporter=verbose 2>&1 | grep -v 'Not implemented' | tail -30\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "verify-1",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-2",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:19:46.375Z"
+  "createdAt": "2026-09-17T04:20:27.189Z"
 }
