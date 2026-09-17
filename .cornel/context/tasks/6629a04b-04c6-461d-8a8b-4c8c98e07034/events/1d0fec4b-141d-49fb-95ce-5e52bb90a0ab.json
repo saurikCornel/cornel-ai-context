@@ -1,0 +1,17 @@
+{
+  "id": "1d0fec4b-141d-49fb-95ce-5e52bb90a0ab",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "chk-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/6629a04b-04c6-461d-8a8b-4c8c98e07034\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/course-data-validation.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 43\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 05:41:54\n\u001b[2m   Duration \u001b[22m 334ms\u001b[2m (transform 66%, tests 18%, import 14%, worker 1%)\u001b[22m\n\n=== FULL SUITE FAILING FILES ===\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/leaderboard-generator.test.ts\u001b[2m [ tests/leaderboard-generator.test.ts ]\u001b[22m\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/leaderboard-render.test.ts\u001b[2m [ tests/leaderboard-render.test.ts ]\u001b[22m\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/save-manager.test.mjs\u001b[2m [ tests/save-manager.test.mjs ]\u001b[22m\n",
+    "outputDigest": "6d10552de17130eee47a2b77ce46834ee6b3b9296d0062a585f1deac121ed4ca",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:41:56.794Z"
+}
