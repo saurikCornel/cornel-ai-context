@@ -2,8 +2,8 @@
   "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
   "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
-  "status": "RUNNING",
-  "summary": "Локальный tracking-ref моей ветки — 5c3050, но worker видит другой head на GitHub; ветка офиса стоит на `74bb470`. Проверяю эту гипотезу безопасной командой.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"probe-1\",\"operation\":\"run\",\"headSha\":\"74bb470db744b2a84cb41f32611418281cbd30f9\",\"timeoutSeconds\":180,\"command\":\"git rev-parse HEAD; git log --oneline -3; git status --short; ls public/audio 2>/dev/null || echo 'public/audio missing'\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Пробую форму `heads` как объект (ветка → SHA) с безопасной командой.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"probe-2\",\"operation\":\"run\",\"heads\":{\"cornel/readme-and-audio-placeholder-assets-e0beff\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\"},\"timeoutSeconds\":180,\"command\":\"git rev-parse HEAD; git status --short; ls public/audio 2>/dev/null || echo 'public/audio missing'\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -55,10 +55,10 @@
     },
     {
       "commandId": "probe-1",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "74bb470db744b2a84cb41f32611418281cbd30f9",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:57:05.386Z"
+  "createdAt": "2026-09-17T01:57:47.857Z"
 }
