@@ -3,7 +3,7 @@
   "branch": "cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Часть 4: сами проверки в тесте, затем typecheck и прогон.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"patch-d\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && cat >> src/game/holeMovers.test.ts <<'EOF'\\n\\ndescribe('HoleRuntime movers', () => {\\n  it('gives every moving obstacle type a kinematic body', () => {\\n    const rig = createRig();\\n    expect(rig.runtime.moverCount).toBe(obstacles.length);\\n    rig.dispose();\\n  });\\n\\n  it('swings a pendulum along an arc bounded by its swing angle', () => {\\n    const rig = createRig();\\n    const samples = rig.sample('clock-pendulum', 6);\\n    const pivotY = PENDULUM_BASE.y + ARM_LENGTH;\\n\\n    let maxArc = 0;\\n    for (const sample of samples) {\\n      // Arm angle seen from the pivot; 0 means hanging straight down.\\n      const arc = Math.atan2(sample.x - PENDULUM_BASE.x, pivotY - sample.y);\\n      expect(Math.abs(arc)).toBeLessThanOrEqual(SWING_ANGLE + 1e-6);\\n      expect(Math.hypot(sample.x - PENDULUM_BASE.x, sample.y - pivotY)).toBeCloseTo(ARM_LENGTH, 5);\\n      // The body rotation has to match where the arm sits on the arc.\\n      expect(sample.angle).toBeCloseTo(arc, 5);\\n      maxArc = Math.max(maxArc, Math.abs(arc));\\n    }\\n\\n    expect(maxArc).toBeGreaterThan(SWING_ANGLE * 0.95);\\n    expect(samples.some((sample) => sample.x > PENDULUM_BASE.x + 0.1)).toBe(true);\\n    expect(samples.some((sample) => sample.x < PENDULUM_BASE.x - 0.1)).toBe(true);\\n    rig.dispose();\\n  });\\n\\n  it('ping-pongs a door between its ends and holds during the pause', () => {\\n    const rig = createRig();\\n    const xs = rig.sample('cellar-door', 6).map((sample) => sample.x);\\n\\n    expect(Math.min(...xs)).toBeCloseTo(DOOR_BASE.x, 3);\\n    expect(Math.max(...xs)).toBeCloseTo(DOOR_BASE.x + DOOR_TRAVEL, 3);\\n    expect(Math.min(...xs)).toBeGreaterThanOrEqual(DOOR_BASE.x - 1e-6);\\n    expect(Math.max(...xs)).toBeLessThanOrEqual(DOOR_BASE.x + DOOR_TRAVEL + 1e-6);\\n    // The door travels back the way it came instead of snapping to the start.\\n    expect(xs.some((x, index) => index > 0 && x < xs[index - 1]! - 1e-9)).toBe(true);\\n\\n    let held = 0;\\n    for (let index = 1; index < xs.length; index += 1) {\\n      const atEnd = Math.abs(xs[index]! - (DOOR_BASE.x + DOOR_TRAVEL)) < 1e-6;\\n      if (atEnd && Math.abs(xs[index]! - xs[index - 1]!) < 1e-9) held += 1;\\n    }\\n    // 0.5 s of pause at the open end, minus the step that arrives there.\\n    expect(held).toBeGreaterThanOrEqual(25);\\n    rig.dispose();\\n  });\\n\\n  it('loops a sliding wall back to its origin and keeps the mesh in sync', () => {\\n    const rig = createRig();\\n    const xs = rig.sample('sliding-shelf', 5).map((sample) => sample.x);\\n\\n    expect(Math.max(...xs)).toBeGreaterThan(SHELF_BASE.x + SHELF_TRAVEL * 0.9);\\n    expect(Math.max(...xs)).toBeLessThanOrEqual(SHELF_BASE.x + SHELF_TRAVEL + 1e-6);\\n    // A looping mover jumps back to the start instead of walking backwards.\\n    const deltas = xs.slice(1).map((x, index) => x - xs[index]!);\\n    expect(deltas.filter((delta) => delta < -1).length).toBe(1);\\n    expect(deltas.filter((delta) => delta < 0 && delta > -1).length).toBe(0);\\n\\n    const mesh = rig.runtime.group.getObjectByName('sliding-shelf');\\n    expect(mesh).toBeDefined();\\n    expect(mesh!.position.x).toBeCloseTo(xs[xs.length - 1]!, 5);\\n    rig.dispose();\\n  });\\n});\\nEOF\\necho '--- typecheck ---' && npm run typecheck && echo '--- vitest game+obstacles ---' && npx vitest run src/game src/obstacles 2>&1 | tail -35\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Файл теста дописан; `tsc` не найден — в рабочей копии нет зависимостей. Ставлю их и запускаю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"check-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && npm install --no-audit --no-fund >/tmp/npm-install.log 2>&1; tail -3 /tmp/npm-install.log && echo '--- typecheck ---' && npm run typecheck && echo '--- vitest game+obstacles ---' && npx vitest run src/game src/obstacles 2>&1 | tail -35\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -85,10 +85,16 @@
     },
     {
       "commandId": "patch-d",
+      "status": "FAILED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 127
+    },
+    {
+      "commandId": "check-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:27:12.346Z"
+  "createdAt": "2026-09-17T03:27:30.663Z"
 }

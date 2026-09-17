@@ -1,0 +1,12 @@
+{
+  "id": "d2b1d8e2-6103-4e2b-bc17-cb4773871e64",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-1",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && npm install --no-audit --no-fund >/tmp/npm-install.log 2>&1; tail -3 /tmp/npm-install.log && echo '--- typecheck ---' && npm run typecheck && echo '--- vitest game+obstacles ---' && npx vitest run src/game src/obstacles 2>&1 | tail -35"
+  },
+  "createdAt": "2026-09-17T03:27:30.656Z"
+}
