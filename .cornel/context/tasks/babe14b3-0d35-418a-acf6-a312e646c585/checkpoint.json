@@ -3,7 +3,7 @@
   "branch": "cornel/rotatingbar-windmill-spinner-pendulum-ki-babe14",
   "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "WAITING_CHATGPT",
-  "summary": "Переход к следующему шагу не удалось. Сделайте это позже.\n\n",
+  "summary": "Переход к следующему шагу не удалось. Ожидайте.\n\n",
   "commands": [
     {
       "commandId": "apple-8c421de4",
@@ -18,5 +18,5 @@
       "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-17T00:38:51.525Z"
+  "createdAt": "2026-09-17T00:58:54.803Z"
 }
