@@ -1,0 +1,17 @@
+{
+  "id": "aecce08a-498b-42e5-b3b6-2f757824e774",
+  "taskId": "374701a2-c808-4317-9213-cb863516c878",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "resolve-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a",
+    "output": "README.md rewritten, 145 lines\n--- grep conflict markers in tree ---\nnone\n--- Test + Known gaps ---\n```\n\n## Test\n\n```bash\nnpm test\n```\n\n`npm test` runs the whole Vitest suite: the colocated unit tests under `src/**` and the\ncross-module integration tests under `tests/**` (`course-data-validation` checks 10 courses x 9\nholes; the rest cover physics helpers, the leaderboard and the save manager). Focused subsets:\n\n```bash\nnpm run test:ui      # UI layer (src/ui)\nnpm run test:input   # input and developer tools (src/input, src/dev)\nnpm run test:camera  # camera system (src/camera)\nnpm run test:watch   # re-run affected tests on change\n```\n\nEvery suite in the repository runs under Vitest: there is no second runner and no compile step in\nfront of the tests.\n\n## Project structure\n\nAll gameplay code lives under `src/`:\n\n| Folder | Contents |\n| --- | --- |\n...\n## Known gaps\n\n- The entry point does not assemble the gameplay loop: no hole scene, physics step, shot input, turn order or HUD.\n- `?course` and `?hole` are recorded in the DOM but start nothing.\n- Menu settings and the profile screen show placeholder data and are not persisted through `SaveManager`.\n- No audio binaries ship with the repository; the game runs silently by design.\n",
+    "outputDigest": "1a59ddf3d7f5c7046b9ab0411cd63a4c95ef86193471e6c2577969f51feb88d5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:38:14.508Z"
+}
