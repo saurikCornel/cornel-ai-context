@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Нужна секция Test из версии HEAD и фактическое состояние каталога tests.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"read-4\",\"operation\":\"run\",\"headSha\":\"012ffb90c6c91afd0be84e73d07ce4a07a511c7a\",\"command\":\"echo '===== HEAD README 1-54 =====' && git show HEAD:README.md | sed -n '1,54p' | cat -n && echo '===== tests/ =====' && git ls-files tests && echo '===== package.json scripts =====' && sed -n '1,30p' package.json\",\"timeoutSeconds\":120}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:36:33.850Z"
+}
