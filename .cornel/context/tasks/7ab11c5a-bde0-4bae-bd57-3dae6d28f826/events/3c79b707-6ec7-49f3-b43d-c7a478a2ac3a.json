@@ -1,0 +1,17 @@
+{
+  "id": "3c79b707-6ec7-49f3-b43d-c7a478a2ac3a",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+    "output": "fatal: couldn't find remote ref cornel/chast-moduley-zapisana-minificirovannymi-8b573d\nMERGE_EXIT=128\n",
+    "outputDigest": "6105419fd1e82fe2a93f7079f903d8173aba9ba583d51ded7c9781c42eead8f5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:44:35.410Z"
+}
