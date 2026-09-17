@@ -1,0 +1,17 @@
+{
+  "id": "b55745a0-e328-472c-8df9-d472ee0f6dc0",
+  "taskId": "da920ed0-1fef-4bce-9bcd-65a75ec57438",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "34b3fa120b9811e220f53f4a9df189d8154e1ef6",
+    "output": "Реализован лимит ударов maxShots со штрафным результатом (ТЗ §8/§9).\n\nЧто сделано:\n- src/courses/types.ts: Hole.maxShots (опционально); src/courses/Hole.ts: валидация (целое, не меньше par).\n- src/gameplay/StrokeLimit.ts (новый): DEFAULT_MAX_SHOTS_OVER_PAR=7, STROKE_LIMIT_PENALTY_STROKES=1, resolveMaxShots/resolveMaxShotsDetailed с приоритетом «данные лунки > MatchSettings.strokeLimitPerHole > par+7», strokeLimitScore.\n- src/gameplay/ScoreManager.ts: applyStrokeLimit закрывает лунку и выставляет штрафной результат maxShots+1 (penaltyStrokes растёт, флаг strokeLimitReached), идемпотентно; новый scoreLabel даёт 'MAX SHOTS'.\n- src/gameplay/MatchManager.ts: приватный applyHoleStrokeLimit; авто-завершение лунки на событии ball-stopped при исчерпании лимита с переходом хода/лунки; enforceStrokeLimit теперь берёт лимит из резолвера, а не только из настроек матча.\n- src/contracts/game.ts: PlayerHoleScore.strokeLimitReached?: boolean.\n- src/gameplay/strokeLimit.test.ts (новый, 7 тестов): резолв лимита (par+7, из лунки, из настроек), отказ на некорректных maxShots, штрафной счёт и идемпотентность, авто-завершение лунки в MatchManager с итоговым штрафным счётом.\n\nПроверки на 34b3fa12: node_modules/.bin/tsc -b --pretty false — без ошибок; vitest по src/gameplay, src/courses, tests/course-data-validation — 33/33 пройдено; ранее полный vitest run — 173/173 теста пройдено.\nЗамечания: данные курсов не меняли — лимит выводится как par+7 (вариант допускался карточкой), поле maxShots готово к точечной настройке в картах. Три упавших в полном прогоне suite (tests/leaderboard-generator, tests/leaderboard-render, tests/save-manager.test.mjs) — предсуществующие и не связаны с карточкой: первые две написаны под node:test, третья требует артефакт .test-build. PR не открывал: слияние ветки выполнит сборщик.",
+    "outputDigest": "6434dbbf8b7c979c45fc95194cb83ce85f3cea90abd62f2a29814adcaaf3b2e8",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:21:28.705Z"
+}
