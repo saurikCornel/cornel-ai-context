@@ -1,0 +1,17 @@
+{
+  "id": "0e6707c6-b703-40d3-bd43-bc7593073cef",
+  "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f",
+    "output": "Реестр курсов: id -> Course для всех 10 курсов, подключён к UI-выбору и к ?course=<id>&hole=<n>.\n\nНовое: src/courses/CourseRegistry.ts (COURSES, COURSE_REGISTRY, COURSE_SUMMARIES, DEFAULT_COURSE_ID='green-hills', RANDOM_COURSE_ID, getCourse/requireCourse/hasCourse/listCourses/pickRandomCourse, resolveCourseSelection(request,random) -> {course,hole,holeIndex,holeNumber,matchedCourse,matchedHole}, LocalCourseRepository реализует контракт CourseRepository из src/contracts/services.ts); src/courses/index.ts (barrel: реестр + Course/Hole/CourseBuilder + типы); тесты src/courses/registry.test.ts и src/ui/courseSelect.test.ts.\n\nИзменено: src/ui/index.ts — селектор курса строится из COURSE_SUMMARIES (10 реальных id + 'Random Tour'), несуществующие 'starter-tour'/'random' убраны, добавлен AppUIOptions.initialCourseId, выбор сохраняется между экранами, startMatch отдаёт реальный courseId. src/main.ts — launch-опции разбираются всегда (не только при debug=1), результат resolveCourseSelection пишется в dataset.course/dataset.hole и предвыбирается в меню; DeveloperDiagnostics по-прежнему грузится динамически только при debug=1. Данные курсов и tests/course-data-validation.test.ts не тронуты.\n\nПроверки на 94fdd9d: npm run typecheck — exit 0; npx vitest run src/courses src/ui src/dev tests/course-data-validation.test.ts — 6 файлов, 28 тестов пройдено (в т.ч. ?course=volcano&hole=4 -> лунка 4 курса volcano, откат на курс по умолчанию для неизвестного id, клэмп лунки вне диапазона, все опции селектора резолвятся реестром); npm run build (tsc -b && vite build) — успешно. PR не открывал: слияние ветки выполняет сборщик.",
+    "outputDigest": "8346c577845d80869ecd38524115a186e33f0b0825b89addb453e685afd455fc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:33:07.935Z"
+}
