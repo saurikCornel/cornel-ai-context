@@ -1,0 +1,17 @@
+{
+  "id": "312e6d62-83a2-4b96-a966-fe27f8aa6d1e",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "redo-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+    "output": "HEAD is now at 1b05170 feat(ui): экран Leaderboard в главном меню с позицией игрока по сохранённому рейтингу\n=== source commit ===\n0f78e54 style(src): переформатировать минифицированные модули в многострочный код\n=== merge by sha ===\nAuto-merging src/ui/index.ts\nCONFLICT (content): Merge conflict in src/ui/index.ts\nAuto-merging src/ui/ui.css\nCONFLICT (content): Merge conflict in src/ui/ui.css\nAutomatic merge failed; fix conflicts and then commit the result.\n(conflict expected)\n=== markers ===\nnone\n=== HEAD / MERGE_HEAD ===\n1b051708839c6a0b4094c1f74261e1937e59fc27\n0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0\n=== staged files ===\nsrc/ai/BotProfiles.ts\nsrc/ai/random.ts\nsrc/core/SaveManager.ts\nsrc/courses/data/ancient-temple.ts\nsrc/courses/data/arctic-base.ts\nsrc/courses/data/chaos-dimension.ts\nsrc/courses/data/volcano.ts\nsrc/dev/DeveloperDiagnostics.ts\nsrc/dev/LaunchOptions.ts\nsrc/dev/PresentationMinimap.ts\nsrc/game/game.css\nsrc/gameplay/ScoreManager.ts\nsrc/input/InputManager.ts\nsrc/leaderboard/style.css\nsrc/player/profile.ts\nsrc/player/progression.ts\nsrc/player/types.ts\nsrc/style.css\nsrc/ui/Overlays.ts\nsrc/ui/domTests.ts\nsrc/ui/index.ts\nsrc/ui/ui.css\n=== line counts (ui + one course) ===\n     337 src/ui/index.ts\n     422 src/ui/ui.css\n     180 src/courses/data/candy-factory.ts\n     939 total\n=== typecheck ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== test ===\n \u001b[32m✓\u001b[39m tests/physics/helpers.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 2\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/dev/dev.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/input/InputManager.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m45 passed\u001b[39m\u001b[22m\u001b[90m (45)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m286 passed\u001b[39m\u001b[22m\u001b[90m (286)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:41:02\n\u001b[2m   Duration \u001b[22m 2.12s\u001b[2m (environment 58%, transform 24%, tests 8%, import 8%, worker 1%)\u001b[22m\n\n\u001b[2m    Isolate \u001b[22m \u001b[33m45 workers spawned\u001b[39m\u001b[2m · ~249ms startup each (spawn + environment, per file)\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mat least ~995ms faster with \u001b[22m\u001b[33misolate: false\u001b[39m\u001b[2m — reuses workers across files instead of one per file\u001b[22m\n\n=== build ===\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.41s\u001b[39m\n",
+    "outputDigest": "2c13b5f97748ab4115377fe362dd278bce97b47fb8a2100f679cf794a0c984bd",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:41:08.811Z"
+}

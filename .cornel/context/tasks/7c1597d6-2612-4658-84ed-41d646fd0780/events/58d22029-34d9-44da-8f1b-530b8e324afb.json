@@ -1,0 +1,17 @@
+{
+  "id": "58d22029-34d9-44da-8f1b-530b8e324afb",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
+    "output": "b9babeb Подключить SaveManager: профиль, рейтинг, XP и настройки переживают перезагрузку\nfa6ee5f Слить «Попадание в лунку без звука и частиц»: обратная связь (частицы, звук, качество, громкость) поверх рантайма препятствий\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m45 passed\u001b[39m\u001b[22m\u001b[90m (45)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m285 passed\u001b[39m\u001b[22m\u001b[90m (285)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:40:55\n\u001b[2m   Duration \u001b[22m 4.17s\u001b[2m (environment 58%, transform 20%, import 13%, tests 8%, worker 1%)\u001b[22m\n\n\u001b[2m    Isolate \u001b[22m \u001b[33m45 workers spawned\u001b[39m\u001b[2m · ~371ms startup each (spawn + environment, per file)\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mat least ~1.48s faster with \u001b[22m\u001b[33misolate: false\u001b[39m\u001b[2m — reuses workers across files instead of one per file\u001b[22m\n\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.19s\u001b[39m\n",
+    "outputDigest": "d53b74aac69b1e354b4fbf48305252318b09ecd1af6e1980ba37eb45cfd1525c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:41:02.952Z"
+}
