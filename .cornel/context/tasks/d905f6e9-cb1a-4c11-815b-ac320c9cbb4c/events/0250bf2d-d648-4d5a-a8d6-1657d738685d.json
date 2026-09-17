@@ -1,0 +1,17 @@
+{
+  "id": "0250bf2d-d648-4d5a-a8d6-1657d738685d",
+  "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "minimap-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\u001b[39m\n\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/ui/minimap.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 12\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n\u001b[2m   Start at \u001b[22m 04:58:26\n\u001b[2m   Duration \u001b[22m 802ms\u001b[2m (environment 91%, transform 5%, import 2%, tests 2%, worker 1%)\u001b[22m\n\nbc9831b feat(ui): add in-game minimap projection and canvas widget\n",
+    "outputDigest": "b9e1cee6d66362f404291eb8564fdeb7174a8966e70388b7d753a8f8f924513f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:58:28.644Z"
+}

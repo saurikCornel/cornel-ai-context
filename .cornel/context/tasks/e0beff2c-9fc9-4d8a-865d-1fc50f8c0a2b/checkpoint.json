@@ -2,8 +2,8 @@
   "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
   "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
-  "status": "WAITING_CHATGPT",
-  "summary": "Ключи `heads` — из фиксированного набора. Пробую вариант с ключом репозитория кода.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"probe-3\",\"operation\":\"run\",\"heads\":{\"code\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\"},\"timeoutSeconds\":180,\"command\":\"git rev-parse HEAD; git status --short; ls public/audio 2>/dev/null || echo 'public/audio missing'\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "status": "RUNNING",
+  "summary": "Ветка офиса быстро двигается, и моя ветка, судя по всему, подтягивается к ней. Пробую последний известный SHA.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"probe-4\",\"operation\":\"run\",\"headSha\":\"3ebcee28a0920eb0d9c6a33a13c87408fad82ed7\",\"timeoutSeconds\":180,\"command\":\"git rev-parse HEAD; git status --short; ls public/audio 2>/dev/null || echo 'public/audio missing'\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -58,7 +58,13 @@
       "status": "FAILED",
       "headSha": "74bb470db744b2a84cb41f32611418281cbd30f9",
       "exitCode": null
+    },
+    {
+      "commandId": "probe-4",
+      "status": "STARTED",
+      "headSha": "3ebcee28a0920eb0d9c6a33a13c87408fad82ed7",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:58:06.701Z"
+  "createdAt": "2026-09-17T01:58:39.554Z"
 }
