@@ -19,11 +19,11 @@
   "workspaceSyncedSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T03:07:40.116Z",
-  "updatedAt": "2026-09-17T03:08:55.770Z",
+  "updatedAt": "2026-09-17T03:09:01.472Z",
   "issue": 101,
   "chatUrl": "cli://claude/4611206a-7afb-4560-8743-b32d2310898c",
   "error": null,
-  "cliActivity": "Claude CLI: Read: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/80c7178d-a60e-436e-ac67-5d3063a48bee/src/courses/t",
+  "cliActivity": "Claude CLI: Bash",
   "cliSession": "4611206a-7afb-4560-8743-b32d2310898c",
   "browserError": null,
   "currentHead": "e0a720a0b8185824d35e09937c677a9ed3d5752e"
