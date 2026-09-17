@@ -1,9 +1,9 @@
 {
   "taskId": "0dc14b30-62d8-4605-9409-3d22b5e08056",
   "branch": "cornel/surface-friction-model-ice-mud-sand-0dc14b",
-  "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
+  "headSha": "3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2",
   "status": "RUNNING",
-  "summary": "Диф чистый — только два файла карточки. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"5ba9747c3eadb19841c05f0cf18a662b8865169b\",\"message\":\"Surface friction model: рабочая реализация SURFACE_PROPERTIES, resolveSurface, applySurfaceDamping, stopsOnSurface + 5 тестов\"}\n```\n\nЖду результат worker: после успешной публикации отправлю finish.\n\n",
+  "summary": "Публикация прошла, новый head `3d0e302`. Прогоняю проверки ещё раз уже на опубликованном коммите, чтобы finish опирался на тот же headSha.\n\n```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/obstacles/surfaces.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "apple-a7cf8a48",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "publish-2",
+      "status": "SUCCEEDED",
+      "headSha": "3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-1",
       "status": "STARTED",
-      "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
+      "headSha": "3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:56:35.345Z"
+  "createdAt": "2026-09-17T01:56:53.310Z"
 }
