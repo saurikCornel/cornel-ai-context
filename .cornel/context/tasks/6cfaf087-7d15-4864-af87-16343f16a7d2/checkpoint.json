@@ -1,9 +1,9 @@
 {
   "taskId": "6cfaf087-7d15-4864-af87-16343f16a7d2",
   "branch": "cornel/reformat-minified-player-and-save-module-6cfaf0",
-  "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+  "headSha": "3658877e1fd6778efff955482b1baf976da46a6d",
   "status": "RUNNING",
-  "summary": "Рабочее дерево чистое, кроме нужных четырёх файлов. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"6cfaf087-7d15-4864-af87-16343f16a7d2\",\"commandId\":\"publish-4\",\"operation\":\"publish\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"message\":\"Переформатировать минифицированные модули игрока и сохранения\\n\\nsrc/player/types.ts, profile.ts, progression.ts и src/core/SaveManager.ts\\nразвёрнуты в читаемый многострочный TypeScript: по одному члену интерфейса\\nи одной инструкции на строку, отступ 2 пробела. Поведение не изменено —\\nимена, значения по умолчанию, ограничения (clamp), SAVE_VERSION,\\nDEFAULT_SAVE_KEY и логика миграции сохранены.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Публикация прошла, новый head `3658877`. Прогоняю проверки на опубликованном коммите перед finish.\n\n```json\n{\"version\":1,\"taskId\":\"6cfaf087-7d15-4864-af87-16343f16a7d2\",\"commandId\":\"verify-5\",\"operation\":\"run\",\"headSha\":\"3658877e1fd6778efff955482b1baf976da46a6d\",\"command\":\"set -e\\necho '--- vitest ---'\\nnpx vitest run tests/save-manager.test.ts\\necho '--- tsc ---'\\nnpx tsc -b --pretty false\\necho '--- diff vs base ---'\\ngit diff --stat 45e3ae615faa03ce491d158aff9684253276ee7e HEAD\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "reformat-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "publish-4",
+      "status": "SUCCEEDED",
+      "headSha": "3658877e1fd6778efff955482b1baf976da46a6d",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-5",
       "status": "STARTED",
-      "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+      "headSha": "3658877e1fd6778efff955482b1baf976da46a6d",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T05:10:12.466Z"
+  "createdAt": "2026-09-17T05:10:32.599Z"
 }
