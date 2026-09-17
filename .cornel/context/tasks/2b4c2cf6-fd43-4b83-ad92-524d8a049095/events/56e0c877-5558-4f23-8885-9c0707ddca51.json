@@ -1,0 +1,17 @@
+{
+  "id": "56e0c877-5558-4f23-8885-9c0707ddca51",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-17",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "== SaveManager/profile в UI и main ==\nsrc/ui/index.ts:1:import type { ControlScheme, PlayerProfile } from '../contracts';\nsrc/ui/index.ts:10:export interface ProfileDTO extends PlayerProfile { level:number; xp:number; xpNext:number; matches:number; wins:number; \nsrc/game/Game.ts:10:import type { ControlScheme, MatchDTO, PlayerHoleScore, PlayerProfile, ShotCommand } from '../contracts/game';\nsrc/game/Game.ts:240:    const players: PlayerProfile[] = [];\nsrc/game/Game.ts:682:    const profiles: PlayerProfile[] = this.match.players.map((player) => ({\n\n== лидерборд ==\nHud.ts\nMinimap.ts\nOverlays.ts\nScoreboard.ts\ncourseSelect.test.ts\ndom.ts\ndomTests.ts\nindex.ts\nminimap.test.ts\ntypes.ts\nui.css\nui.test.ts\n\n== пункты меню ==\n   2 Custom Game\n   8 Play\n   5 Profile\n   2 Ranked\n   8 Settings\n\n== рейтинг сохраняется? ==\nsrc/game/Game.ts:22:import { computeMatchRatings, participantsFromStandings } from '../gameplay/RatingSystem';\nsrc/game/Game.ts:689:    const changes = computeMatchRatings(participantsFromStandings(standings, profiles));\n",
+    "outputDigest": "039384ea587e622d30ce15eb5ca2e041e4962962f9da37bc403fc360a0f4232b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:05:39.023Z"
+}

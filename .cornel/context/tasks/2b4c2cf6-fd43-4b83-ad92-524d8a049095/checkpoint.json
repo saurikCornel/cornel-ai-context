@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-2b4c2c",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Три курса построены по одному шаблону. Проверяю визуализацию лавы и опорные тесты игрового цикла.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-16\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"SHOT=/private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad; CH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'; \\\"$CH\\\" --headless=new --disable-gpu --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --window-size=1440,900 --virtual-time-budget=15000 --screenshot=$SHOT/lava.png --user-data-dir=$SHOT/p5 'http://localhost:5199/?debug=1&course=volcano&hole=3' >/dev/null 2>&1; echo LAVA=$?; \\\"$CH\\\" --headless=new --disable-gpu --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --window-size=1440,900 --virtual-time-budget=15000 --screenshot=$SHOT/neon.png --user-data-dir=$SHOT/p6 'http://localhost:5199/?debug=1&course=neon-city&hole=7' >/dev/null 2>&1; echo NEON=$?; echo '== цвета препятствий в билдере =='; grep -n 'lava\\\\|water\\\\|void\\\\|0x' src/core/HoleSceneBuilder.ts | cut -c1-120 | head -30; echo '== тесты игрового цикла =='; grep -n \\\"it(\\\\|describe(\\\" src/game/game.test.ts src/game/feedback.test.ts | cut -c1-120\",\"timeoutSeconds\":420}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Neon City 7 — действительно ветвящаяся планировка, рефакторинг сработал. Проверяю последнее: реальные данные профиля/рейтинга и доступность лидерборда из меню.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-17\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"echo '== SaveManager/profile в UI и main =='; grep -rn 'SaveManager\\\\|loadProfile\\\\|PlayerProfile' src/ui src/main.ts src/game --include=*.ts | grep -v test | cut -c1-140 | head -20; echo; echo '== лидерборд =='; ls src/ui | head -30; grep -rn 'Leaderboard' src/ui/index.ts src/main.ts | cut -c1-140 | head -10; echo; echo '== пункты меню =='; grep -o 'Play\\\\|Ranked\\\\|Custom Game\\\\|Profile\\\\|Settings\\\\|Leaderboard' src/ui/index.ts | sort | uniq -c; echo; echo '== рейтинг сохраняется? =='; grep -rn 'computeMatchRatings\\\\|saveProfile\\\\|persist' src/game/Game.ts | cut -c1-140 | head -12\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -97,10 +97,16 @@
     },
     {
       "commandId": "check-16",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-17",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:04:28.513Z"
+  "createdAt": "2026-09-17T04:05:36.930Z"
 }
