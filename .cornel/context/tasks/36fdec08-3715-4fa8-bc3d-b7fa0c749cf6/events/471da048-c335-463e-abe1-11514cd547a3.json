@@ -1,0 +1,17 @@
+{
+  "id": "471da048-c335-463e-abe1-11514cd547a3",
+  "taskId": "36fdec08-3715-4fa8-bc3d-b7fa0c749cf6",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+    "output": "src: 15 файлов\nsrc/components/MarketPriceCard.tsx\nsrc/components/RecommendationCard.tsx\nsrc/components/SectionCard.tsx\nsrc/components/index.ts\nsrc/hooks/useMarketData.ts\nsrc/models/market.ts\nsrc/screens/HomeScreen.tsx\nsrc/screens/index.ts\nsrc/services/__tests__/marketService.test.ts\nsrc/services/__tests__/recommendation.test.ts\nsrc/services/index.ts\nsrc/services/marketService.ts\nsrc/services/recommendation.ts\nsrc/types/index.ts\nsrc/types/market.ts",
+    "outputDigest": "122b5f861996187e71dbb11d9aa64d4f97ad81a32cbe1d6e540d1267949f4c36",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T17:37:12.775Z"
+}

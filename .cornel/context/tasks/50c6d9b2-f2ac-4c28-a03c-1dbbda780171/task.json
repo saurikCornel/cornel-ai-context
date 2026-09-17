@@ -22,9 +22,9 @@
   "workspaceSyncedSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
   "status": "READY",
   "createdAt": "2026-09-17T17:36:51.781Z",
-  "updatedAt": "2026-09-17T17:37:06.686Z",
+  "updatedAt": "2026-09-17T17:37:19.955Z",
   "issue": 120,
   "chatUrl": null,
   "error": null,
-  "cliActivity": "Claude CLI: вызывает Bash"
+  "cliActivity": "Claude CLI: вызывает Read"
 }
