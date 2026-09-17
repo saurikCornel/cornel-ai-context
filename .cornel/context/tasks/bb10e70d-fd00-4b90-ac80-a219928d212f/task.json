@@ -19,9 +19,9 @@
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "READY",
   "createdAt": "2026-09-16T23:46:55.230Z",
-  "updatedAt": "2026-09-17T00:01:26.458Z",
+  "updatedAt": "2026-09-17T00:02:03.953Z",
   "issue": 74,
   "chatUrl": null,
   "error": null,
-  "cliActivity": "Apple Intelligence: readFile src/obstacles/movers.ts"
+  "cliActivity": "Apple Intelligence: listDirectory src/obstacles"
 }
