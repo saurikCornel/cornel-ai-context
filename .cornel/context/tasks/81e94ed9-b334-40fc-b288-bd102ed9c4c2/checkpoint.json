@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-neon-city-haunted-mansion-space-st-81e94e",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"grep-tests-1\",\"operation\":\"grep\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"pattern\":\"courses|neon-city|space-station\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"ls-src-2\",\"operation\":\"ls\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"path\":\"src\",\"maxLines\":400}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-courses-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "grep-tests-1",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "ls-src-2",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:16:13.579Z"
+  "createdAt": "2026-09-17T02:17:12.051Z"
 }
