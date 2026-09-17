@@ -1,0 +1,17 @@
+{
+  "id": "8e388a2f-7f51-4293-891f-5c5c24083d26",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "patch-c",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "header written\n     107 src/game/holeMovers.test.ts\n",
+    "outputDigest": "4747ee5a2c221b26921bbd1631499a727734f295c42074ee7aab43b3d7d6208e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:26:34.761Z"
+}

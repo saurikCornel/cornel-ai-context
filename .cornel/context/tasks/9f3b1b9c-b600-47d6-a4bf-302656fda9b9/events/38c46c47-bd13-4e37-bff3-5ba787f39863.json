@@ -1,0 +1,11 @@
+{
+  "id": "38c46c47-bd13-4e37-bff3-5ba787f39863",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "patch-c",
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e"
+  },
+  "createdAt": "2026-09-17T03:26:32.475Z"
+}
