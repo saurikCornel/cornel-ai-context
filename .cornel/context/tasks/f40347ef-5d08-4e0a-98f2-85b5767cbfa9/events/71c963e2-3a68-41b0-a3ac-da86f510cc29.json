@@ -1,0 +1,17 @@
+{
+  "id": "71c963e2-3a68-41b0-a3ac-da86f510cc29",
+  "taskId": "f40347ef-5d08-4e0a-98f2-85b5767cbfa9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-6",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a3c88df6695c7b596dcb670ca6091cc58c7d70e2",
+    "output": "\u001b[2m   Start at \u001b[22m 07:31:31\n\u001b[2m   Duration \u001b[22m 3.31s\u001b[2m (environment 51%, transform 34%, import 8%, tests 6%, worker 1%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 6.49s\u001b[39m\u001b[2m · 34% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.12s\u001b[39m\n",
+    "outputDigest": "0782b5fb7b6a17e8a6b1706503e470296410fe07ea33cc978fde06f185694e24",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:31:37.733Z"
+}
