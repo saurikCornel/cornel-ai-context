@@ -3,7 +3,7 @@
   "branch": "cornel/lava-i-silovye-prepyatstviya-rabotayut-k-fd5dc7",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Все 4 теста проходят. Запускаю полный прогон и сборку.\n\n```json\n{\"version\":1,\"taskId\":\"fd5dc768-2e5c-404a-9426-c8cc952cd365\",\"commandId\":\"check-full-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"npm test 2>&1 | tail -40; echo '=== BUILD ==='; npm run build 2>&1 | tail -15\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Полный прогон: 37 файлов, 243 теста — зелёные; сборка проходит. Перед публикацией сверяю рабочее дерево (на старте сессии в нём уже числились правки).\n\n```json\n{\"version\":1,\"taskId\":\"fd5dc768-2e5c-404a-9426-c8cc952cd365\",\"commandId\":\"review-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"git status --short; echo '=== STAT ==='; git diff --stat; echo '=== GAME DIFF ==='; git diff src/game/Game.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "impl-1a",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "check-full-1",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "review-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:27:27.301Z"
+  "createdAt": "2026-09-17T03:28:03.609Z"
 }

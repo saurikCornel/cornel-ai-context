@@ -1,0 +1,12 @@
+{
+  "id": "42ddf3ef-51bd-4e29-b6cc-af06c7cdd3d2",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-2",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && echo '--- new test verbose ---' && npx vitest run src/game/holeMovers.test.ts --reporter=verbose 2>&1 | grep -vi 'getContext' | tail -20 && echo '--- full npm test ---' && npm test 2>&1 | grep -vi 'getContext' | tail -12 && echo '--- build ---' && npm run build 2>&1 | tail -6"
+  },
+  "createdAt": "2026-09-17T03:28:00.809Z"
+}

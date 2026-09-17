@@ -1,0 +1,17 @@
+{
+  "id": "e9f9ca63-2cb0-47f6-8bf9-bd2cde6890c7",
+  "taskId": "fd5dc768-2e5c-404a-9426-c8cc952cd365",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "review-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": " M src/game/Game.ts\n M src/game/HoleRuntime.ts\n?? src/game/holeRuntime.test.ts\n=== STAT ===\n src/game/Game.ts        |  25 +++++++-\n src/game/HoleRuntime.ts | 147 ++++++++++++++++++++++++++++++++++++++++++++++--\n 2 files changed, 166 insertions(+), 6 deletions(-)\n=== GAME DIFF ===\ndiff --git a/src/game/Game.ts b/src/game/Game.ts\nindex cd870e0..4fa9107 100644\n--- a/src/game/Game.ts\n+++ b/src/game/Game.ts\n@@ -168,6 +168,7 @@ export class Game {\n     if (!this.paused) {\n       this.physics.step(step, (fixed) => {\n         this.runtime?.update(fixed);\n+        this.applyObstacleEffects(fixed);\n         this.applyRollingResistance(fixed);\n         this.ball?.update(fixed);\n       });\n@@ -459,8 +460,10 @@ export class Game {\n \n   private resetBall(playerId: string, hazard: ReturnType<HoleRuntime['hazardAt']>): void {\n     if (!this.ball) return;\n-    const resolution = this.holeSystem.resolveHazard(playerId, this.hole, hazard);\n+    const safe = this.holeSystem.getLastSafePosition(playerId, this.hole.spawn);\n+    const resolution = this.runtime?.resolveHazard(hazard, safe) ?? { resetPosition: safe, penaltyStrokes: 1 };\n     this.ball.reset(resolution.resetPosition);\n+    this.runtime?.resetObstacles();\n     this.match = this.matchManager.applySimulationEvent(this.match, this.course, {\n       type: 'ball-reset',\n       playerId,\n@@ -489,6 +492,7 @@ export class Game {\n     this.turnPlayerId = playerId;\n     const position = this.playerPositions.get(playerId) ?? this.hole.spawn;\n     this.ball?.reset(position);\n+    this.runtime?.resetObstacles();\n     this.holeSystem.markSafePosition(playerId, position);\n     this.aim.cancel();\n     this.aimPower = 0;\n@@ -514,6 +518,25 @@ export class Game {\n     });\n   }\n \n+  /** Belts, fans, teleporters, pads and force fields act on the ball while a shot is live. */\n+  private applyObstacleEffects(dt: number): void {\n+    const ball = this.ball;\n+    const runtime = this.runtime;\n+    // Aiming parks the ball on its last resting spot, so the volumes only act during a shot.\n+    if (!ball || !runtime || this.match.phase !== 'simulating') return;\n+    const effect = runtime.applyBallEffects(\n+      { position: ball.position, velocity: ball.velocity, radius: GAME_CONFIG.physics.ballRadius },\n+      dt,\n+      BALL_MASS,\n+    );\n+    if (!effect.changed) return;\n+    if (effect.position) {\n+      ball.body.setTranslation(effect.position, true);\n+      if (effect.clearAngularVelocity) ball.body.setAngvel({ x: 0, y: 0, z: 0 }, true);\n+    }\n+    ball.body.setLinvel(effect.velocity, true);\n+  }\n+\n   private applyRollingResistance(dt: number): void {\n     const ball = this.ball;\n     if (!ball) return;\n",
+    "outputDigest": "9897670cac22c5a182cf4c8a25084d4960f65c93778f1a49496164a76e3d8777",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:28:06.473Z"
+}

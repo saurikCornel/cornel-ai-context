@@ -19,11 +19,11 @@
   "workspaceSyncedSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T03:07:13.058Z",
-  "updatedAt": "2026-09-17T03:27:44.911Z",
+  "updatedAt": "2026-09-17T03:28:06.472Z",
   "issue": 96,
   "chatUrl": "cli://claude/aa9551b1-9678-4fa4-a520-0871578c83a4",
   "error": null,
-  "cliActivity": "Claude CLI: начал ход (claude-opus-5)",
+  "cliActivity": null,
   "cliSession": "aa9551b1-9678-4fa4-a520-0871578c83a4",
   "browserError": null,
   "currentHead": "e0a720a0b8185824d35e09937c677a9ed3d5752e"
