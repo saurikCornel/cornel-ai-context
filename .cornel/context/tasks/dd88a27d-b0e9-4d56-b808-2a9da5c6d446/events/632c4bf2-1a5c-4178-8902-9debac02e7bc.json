@@ -1,0 +1,17 @@
+{
+  "id": "632c4bf2-1a5c-4178-8902-9debac02e7bc",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "patch-game-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "Game.ts patched\n8:import { applyCameraPose } from '../camera/ThreeCameraBinding';\n103:  private readonly cameraDirector = new CameraDirector({\n325:    this.cameraDirector.setFraming({ bounds: hole.bounds, spawn: hole.spawn, cup: hole.cup.position });\n326:    this.cameraDirector.setFocus(hole.spawn);\n327:    this.cameraDirector.setMode('overview', { force: true, immediate: first });\n375:    const sample = this.aim.update(dt, this.options.input, this.cameraDirector.yaw, true);\n433:    this.cameraDirector.setMode('follow');\n533:    this.cameraDirector.setFocus(this.ballPosition());\n534:    applyCameraPose(this.options.camera, this.cameraDirector.update(dt, this.cameraView()));\n539:    this.cameraDirector.focusOn(position);\n",
+    "outputDigest": "741cbb09474fd27ef64bdd851207944eaf0fd342994d23792ac03619cf7b905f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:20:41.731Z"
+}
