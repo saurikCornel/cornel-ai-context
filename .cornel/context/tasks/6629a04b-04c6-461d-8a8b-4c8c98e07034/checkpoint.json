@@ -3,7 +3,7 @@
   "branch": "cornel/level-builder-api-iz-tz-11-ne-realizovan-6629a0",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Паттерн с `|` не сработал — git grep использует basic regex. Повторю точечно.\n\n```json\n{\"version\":1,\"taskId\":\"6629a04b-04c6-461d-8a8b-4c8c98e07034\",\"commandId\":\"grep-3\",\"operation\":\"grep\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"pattern\":\"CourseBuilder\\\\|defineCourse\\\\|courses/data\\\\|courses/index\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6629a04b-04c6-461d-8a8b-4c8c98e07034\",\"commandId\":\"read-2\",\"operation\":\"read\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"paths\":[\"src/courses/data/green-hills.ts:1-20\",\"src/courses/data/chaos-dimension.ts:1-40\",\"package.json\",\"src/contracts/math.ts\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "grep-3",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-2",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:14:59.939Z"
+  "createdAt": "2026-09-17T02:16:41.939Z"
 }
