@@ -17,9 +17,10 @@
   "branch": "cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8",
   "baseSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "workspaceSyncedSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-17T02:05:41.907Z",
-  "updatedAt": "2026-09-17T02:05:41.907Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-17T02:05:44.912Z",
+  "issue": 84,
+  "chatUrl": null,
+  "error": null
 }
