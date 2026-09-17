@@ -1,0 +1,17 @@
+{
+  "id": "fee499e9-6929-4d7b-b233-be744fe86233",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "gh-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "     115 src/courses/data/green-hills.ts\n",
+    "outputDigest": "e4f7ee9ce3f83f15472ab95ece79f727936ade86d39aff638977886b7bcb4ab2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:37:23.603Z"
+}
