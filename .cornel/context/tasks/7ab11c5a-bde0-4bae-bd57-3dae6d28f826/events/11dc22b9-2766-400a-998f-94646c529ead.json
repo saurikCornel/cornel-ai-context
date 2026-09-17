@@ -1,0 +1,12 @@
+{
+  "id": "11dc22b9-2766-400a-998f-94646c529ead",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RESULT",
+  "text": "error: you need to resolve your current index first\nsrc/courses/data/ancient-temple.ts: needs merge\nsrc/courses/data/arctic-base.ts: needs merge\nsrc/courses/data/volcano.ts: needs merge\n",
+  "detail": {
+    "commandId": "merge-3",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-17T05:00:59.190Z"
+}

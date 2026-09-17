@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверяю, не разблокирована ли рабочая копия, и той же командой сразу выполняю всё слияние с разрешением конфликтов (без промежуточного MERGING-состояния).\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"merge-3\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"set -u; git reset --hard 1b051708839c6a0b4094c1f74261e1937e59fc27 && git fetch -q origin cornel/office cornel/slit-chast-moduley-zapisana-minificirova-d49254 && git merge --ff-only origin/cornel/office && { git merge --no-edit origin/cornel/slit-chast-moduley-zapisana-minificirova-d49254 || true; }; for f in src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; do echo \\\"$f office-maxlen=$(git show HEAD:$f | awk '{if(length($0)>m)m=length($0)}END{print m}')\\\"; done; git checkout --ours -- src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; U=$(git diff --name-only --diff-filter=U); if [ -n \\\"$U\\\" ]; then echo \\\"UNRESOLVED:$U\\\"; git merge --abort; exit 1; fi; if grep -rln '^<<<<<<< ' src; then echo MARKERS_LEFT; git merge --abort; exit 1; fi; git add -A && git commit --no-edit -q && git log --oneline -1 && git reset --soft 1b051708839c6a0b4094c1f74261e1937e59fc27 && echo SOFT_RESET_OK && git status --short | wc -l\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T05:00:56.885Z"
+}

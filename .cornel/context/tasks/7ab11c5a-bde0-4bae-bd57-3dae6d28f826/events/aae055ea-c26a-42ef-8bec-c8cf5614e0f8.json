@@ -1,0 +1,12 @@
+{
+  "id": "aae055ea-c26a-42ef-8bec-c8cf5614e0f8",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "merge-3",
+    "operation": "run",
+    "command": "set -u; git reset --hard 1b051708839c6a0b4094c1f74261e1937e59fc27 && git fetch -q origin cornel/office cornel/slit-chast-moduley-zapisana-minificirova-d49254 && git merge --ff-only origin/cornel/office && { git merge --no-edit origin/cornel/slit-chast-moduley-zapisana-minificirova-d49254 || true; }; for f in src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; do echo \"$f office-maxlen=$(git show HEAD:$f | awk '{if(length($0)>m)m=length($0)}END{print m}')\"; done; git checkout --ours -- src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; U=$(git diff --name-only --diff-filter=U); if [ -n \"$U\" ]; then echo \"UNRESOLVED:$U\"; git merge --abort; exit 1; fi; if grep -rln '^<<<<<<< ' src; then echo MARKERS_LEFT; git merge --abort; exit 1; fi; git add -A && git commit --no-edit -q && git log --oneline -1 && git reset --soft 1b051708839c6a0b4094c1f74261e1937e59fc27 && echo SOFT_RESET_OK && git status --short | wc -l"
+  },
+  "createdAt": "2026-09-17T05:00:56.886Z"
+}
