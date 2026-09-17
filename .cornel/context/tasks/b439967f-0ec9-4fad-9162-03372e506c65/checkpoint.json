@@ -3,7 +3,7 @@
   "branch": "cornel/limit-udarov-zashit-chislom-8-vmesto-max-b43996",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Typecheck и полный прогон (37 файлов, 243 теста) прошли. Проверяю явно свой тест-файл и production build.\n\n```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"check-10\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"npx vitest run src/game/strokeBudget.test.ts 2>&1 | tail -20; echo '=== build ==='; npm run build 2>&1 | tail -12\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"check-11\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"git status --short\",\"timeoutSeconds\":120}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -109,10 +109,16 @@
     },
     {
       "commandId": "check-10",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-11",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:27:16.426Z"
+  "createdAt": "2026-09-17T03:27:42.425Z"
 }

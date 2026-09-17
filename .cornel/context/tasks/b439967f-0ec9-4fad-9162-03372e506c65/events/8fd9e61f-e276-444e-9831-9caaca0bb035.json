@@ -1,0 +1,17 @@
+{
+  "id": "8fd9e61f-e276-444e-9831-9caaca0bb035",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": " M src/contracts/game.ts\n M src/courses/HoleBuilder.ts\n M src/courses/data/green-hills.ts\n M src/game/Game.ts\n?? src/game/strokeBudget.test.ts\n",
+    "outputDigest": "ced638277a3f1af503d138926176a64db8f4561909178fbe7b26bd47fd0cc6fc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:27:44.731Z"
+}
