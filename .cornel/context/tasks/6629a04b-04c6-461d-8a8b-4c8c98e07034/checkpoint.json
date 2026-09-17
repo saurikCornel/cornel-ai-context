@@ -3,7 +3,7 @@
   "branch": "cornel/level-builder-api-iz-tz-11-ne-realizovan-6629a0",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"6629a04b-04c6-461d-8a8b-4c8c98e07034\",\"commandId\":\"read-4\",\"operation\":\"read\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"paths\":[\"src/obstacles/zones.ts\",\"src/courses/data/green-hills.ts:1-9\",\"tsconfig.json\",\"src/obstacles/index.ts\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6629a04b-04c6-461d-8a8b-4c8c98e07034\",\"commandId\":\"read-5\",\"operation\":\"read\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"paths\":[\"src/obstacles/teleporter.test.ts:1-20\",\"tsconfig.app.json\",\"src/courses/data/neon-city.ts:1-19\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "read-4",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-5",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:19:13.930Z"
+  "createdAt": "2026-09-17T02:21:45.416Z"
 }
