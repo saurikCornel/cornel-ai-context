@@ -1,0 +1,12 @@
+{
+  "id": "12dfced0-4142-4898-bd71-afbf9b43480c",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-2",
+    "operation": "run",
+    "command": "npm run test:camera 2>&1 | tail -12 && npm run build 2>&1 | tail -15"
+  },
+  "createdAt": "2026-09-17T03:21:57.374Z"
+}
