@@ -1,0 +1,17 @@
+{
+  "id": "cbf5e6fc-3934-4b28-8ed4-6a8d49f46fef",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "grep-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "src/core/HoleSceneBuilder.ts:21:const OBSTACLE_COLORS: Record<ObstacleDescriptor['type'], number> = {\nsrc/ui/Minimap.ts:22:type ObstacleType = ObstacleDescriptor['type'];",
+    "outputDigest": "f2109b404cc74f6b3c3c1044400916499ca72c5b1e2e5a67f9b4a10b4914c8f6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:26:10.258Z"
+}
