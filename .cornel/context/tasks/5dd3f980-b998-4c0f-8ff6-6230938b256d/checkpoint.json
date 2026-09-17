@@ -3,7 +3,7 @@
   "branch": "cornel/bot-turn-pacing-scheduler-5dd3f9",
   "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "WAITING_CHATGPT",
-  "summary": "Переход к следующему шагу не удалось. Сделайте это позже.\n\n",
+  "summary": "Переход к следующему шагу не удалось. Следующий шаг не выполняется.\n\n",
   "commands": [
     {
       "commandId": "apple-e6169b3c",
@@ -12,5 +12,5 @@
       "exitCode": 1
     }
   ],
-  "createdAt": "2026-09-17T00:39:45.135Z"
+  "createdAt": "2026-09-17T01:00:18.691Z"
 }
