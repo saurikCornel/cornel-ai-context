@@ -1,0 +1,17 @@
+{
+  "id": "4dffbd98-2406-44c5-88c9-75df4811744b",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "redo-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+    "output": "OBJ=commit\na3c88df Cup recess and themed flag in HoleSceneBuilder\nAuto-merging src/core/HoleSceneBuilder.ts\nCONFLICT (content): Merge conflict in src/core/HoleSceneBuilder.ts\nAutomatic merge failed; fix conflicts and then commit the result.\nMERGE_EXIT=1\nMARKERS=[238 286 349 ]\nRESOLVED\nMARKERS_LEFT=0\n=== status ===\nM  src/core/HoleSceneBuilder.ts\nM  src/core/holeScene.test.ts\nM  src/game/Game.ts\nM  src/game/HoleRuntime.ts\n=== typecheck ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nTS_EXIT=0\n=== tests ===\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m46 passed\u001b[39m\u001b[22m\u001b[90m (46)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m296 passed\u001b[39m\u001b[22m\u001b[90m (296)\u001b[39m\n=== build ===\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.14s\u001b[39m\n",
+    "outputDigest": "a371cebb910ea1feba7f2637c2f0897adf253487e279f1bc9a51ab9f52b1de13",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:40:39.646Z"
+}
