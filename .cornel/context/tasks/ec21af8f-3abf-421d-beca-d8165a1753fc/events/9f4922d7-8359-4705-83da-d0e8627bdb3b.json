@@ -1,0 +1,13 @@
+{
+  "id": "9f4922d7-8359-4705-83da-d0e8627bdb3b",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Reformat minified src/ui/index.ts: файл (36 строк, отдельные строки до 2311 символов) развёрнут в читаемый многострочный TypeScript с отступом 2 пробела — по одному объявлению/выражению/члену на строку. Развёрнуты: интерфейсы UISettings, SetupDTO, ProfileDTO, UIActions, AppUIOptions; литерал profile; helpers esc, nav, courseOptions, setup; поля класса AppUI, constructor, navigate, view(), render() с обработчиками событий и mountLeaderboard(). Переименований нет, экспортируемые имена, строковые литералы, CSS-классы, разметка шаблонов и порядок выполнения не тронуты; существующий комментарий про renderLeaderboard сохранён. Шаблоны разметки оставлены одной строкой каждый, чтобы вывод остался побайтово прежним. Изменён только src/ui/index.ts (git show --stat: 1 file changed, 195 insertions, 22 deletions). Проверки на 97f1a5b: npx tsc -b --pretty false — exit 0; npx vitest run src/ui — 4 файла, 18 тестов passed. Дополнительно: временный parity-тест (удалён до коммита) сравнил innerHTML старой и новой версии на всех 7 экранах (main, play, custom, ranked, settings, profile, leaderboard) — разметка идентична. PR не открывался: слияние ветки cornel/reformat-minified-src-ui-index-ts-ec21af выполнит сборщик.",
+  "detail": {
+    "commands": 11,
+    "failed": 0,
+    "headSha": "97f1a5bbe8008a2f368fc6804b948670d7c97716",
+    "branch": "cornel/reformat-minified-src-ui-index-ts-ec21af"
+  },
+  "createdAt": "2026-09-17T05:13:00.450Z"
+}
