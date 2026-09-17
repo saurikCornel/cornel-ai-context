@@ -3,7 +3,7 @@
   "branch": "cornel/limit-udarov-zashit-chislom-8-vmesto-max-b43996",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"check-5\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"echo '=== game dir ==='; grep -rn --include=*.ts -E 'STROKE_LIMIT|strokeLimitPerHole|maxShots' src/game src/ui src/ai src/contracts src/courses/types.ts | head -40; echo '=== applyHoleStrokeLimit ==='; grep -rn -B2 -A 12 'applyHoleStrokeLimit' src/gameplay/MatchManager.ts; echo '=== courses data maxShots ==='; grep -rln 'maxShots' src/courses/data | head\",\"timeoutSeconds\":180}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"check-6\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"echo '=== contracts MatchSettings ==='; sed -n '15,60p' src/contracts/game.ts; echo '=== Hole type ==='; sed -n '110,135p' src/courses/types.ts; echo '=== courses dir ==='; ls src/courses src/courses/data; echo '=== par per hole ==='; grep -rn --include=*.ts -E \\\"^\\\\s*(id: '|par: )\\\" src/courses/data | head -60\",\"timeoutSeconds\":180}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "check-5",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-6",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:18:06.486Z"
+  "createdAt": "2026-09-17T03:19:27.690Z"
 }

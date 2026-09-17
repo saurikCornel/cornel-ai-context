@@ -1,0 +1,12 @@
+{
+  "id": "0ca98a2b-cfb7-4588-8f83-aadf1178609d",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-6",
+    "operation": "run",
+    "command": "echo '=== contracts MatchSettings ==='; sed -n '15,60p' src/contracts/game.ts; echo '=== Hole type ==='; sed -n '110,135p' src/courses/types.ts; echo '=== courses dir ==='; ls src/courses src/courses/data; echo '=== par per hole ==='; grep -rn --include=*.ts -E \"^\\s*(id: '|par: )\" src/courses/data | head -60"
+  },
+  "createdAt": "2026-09-17T03:19:27.687Z"
+}
