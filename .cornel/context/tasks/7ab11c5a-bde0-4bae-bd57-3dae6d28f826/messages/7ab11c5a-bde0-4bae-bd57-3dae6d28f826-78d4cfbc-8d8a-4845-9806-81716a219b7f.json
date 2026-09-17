@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Конфликты оказались не в UI (office ушёл вперёд), а в трёх файлах курсов: office их полностью переписал, а сторона карточки только разминифицировала. Проверяю, отформатирована ли уже версия office (иначе придётся переносить разминификацию вручную).\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"probe-1\",\"operation\":\"run\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"command\":\"for f in src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; do echo \\\"=== $f ===\\\"; for s in 1 2 3; do L=$(git show :$s:$f | wc -l); M=$(git show :$s:$f | awk '{ if (length($0)>m) m=length($0) } END { print m }'); echo \\\"  stage$s: lines=$L maxlinelen=$M\\\"; done; echo '  --- ours head ---'; git show :2:$f | head -12; done; echo '=== minified check across tree (long lines in src) ==='; git grep -n '.\\\\{400,\\\\}' -- 'src/**' | cut -c1-120\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:46:16.107Z"
+}

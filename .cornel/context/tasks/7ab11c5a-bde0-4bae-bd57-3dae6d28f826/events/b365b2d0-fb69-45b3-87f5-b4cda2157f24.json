@@ -1,0 +1,12 @@
+{
+  "id": "b365b2d0-fb69-45b3-87f5-b4cda2157f24",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "probe-1",
+    "operation": "run",
+    "command": "for f in src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; do echo \"=== $f ===\"; for s in 1 2 3; do L=$(git show :$s:$f | wc -l); M=$(git show :$s:$f | awk '{ if (length($0)>m) m=length($0) } END { print m }'); echo \"  stage$s: lines=$L maxlinelen=$M\"; done; echo '  --- ours head ---'; git show :2:$f | head -12; done; echo '=== minified check across tree (long lines in src) ==='; git grep -n '.\\{400,\\}' -- 'src/**' | cut -c1-120"
+  },
+  "createdAt": "2026-09-17T04:46:16.108Z"
+}
