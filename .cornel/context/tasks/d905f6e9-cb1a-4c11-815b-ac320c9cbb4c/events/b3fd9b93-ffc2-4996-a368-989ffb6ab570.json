@@ -1,0 +1,17 @@
+{
+  "id": "b3fd9b93-ffc2-4996-a368-989ffb6ab570",
+  "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "minimap-10",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:58:08.968Z"
+}

@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверки прошли: `git ls-remote` подтвердил ветку на `739687e` (предыдущие отказы были гонкой со слияниями офиса), vitest — 6/6 тестов, `tsc -b --pretty false` завершился без ошибок (иначе `git status` в цепочке `&&` не выполнился бы). Публикую:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-10\",\"operation\":\"publish\",\"headSha\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"message\":\"feat(ui): add in-game minimap projection and canvas widget\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** `src/ui/Minimap.ts` (`MinimapModel`, `buildMinimapModel`, класс `Minimap`) и `src/ui/minimap.test.ts` (6 тестов) готовы; проверки `npx vitest run src/ui/minimap.test.ts` и `npx tsc -b --pretty false` пройдены на `739687e`. Следующий шаг — publish, затем finish с итогом.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:58:03.790Z"
+}

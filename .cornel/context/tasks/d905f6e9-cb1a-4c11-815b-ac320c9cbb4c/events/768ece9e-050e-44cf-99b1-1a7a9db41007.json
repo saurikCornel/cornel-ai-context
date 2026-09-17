@@ -1,0 +1,11 @@
+{
+  "id": "768ece9e-050e-44cf-99b1-1a7a9db41007",
+  "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "minimap-10",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-17T01:58:03.792Z"
+}
