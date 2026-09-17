@@ -3,14 +3,20 @@
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
   "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\",\"path\":\".\",\"maxLines\":200}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\",\"paths\":[\"src/assets/AudioManager.ts:1-60\",\"package.json:1-40\"]}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
+      "status": "SUCCEEDED",
+      "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-1",
       "status": "STARTED",
       "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:50:16.825Z"
+  "createdAt": "2026-09-17T01:51:01.634Z"
 }

@@ -3,7 +3,7 @@
   "branch": "cornel/ball-cosmetics-catalog-and-unlocks-465565",
   "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
   "status": "RUNNING",
-  "summary": "Файлы записаны, но в worktree нет `node_modules` — vitest упал ещё на загрузке конфига. Ставлю зависимости и повторяю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"commandId\":\"install-and-check-4\",\"operation\":\"run\",\"headSha\":\"0ff1b57531671012649ac69fb36983eaa39e6389\",\"timeoutSeconds\":600,\"command\":\"npm install --no-audit --no-fund --silent && npx vitest run src/player/cosmetics.test.ts && npx tsc -b --pretty false && echo CHECKS_OK\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Проверки прошли (6/6 тестов, `tsc -b` чистый). Перед публикацией проверю, не задел ли `npm install` файл lock.\n\n```json\n{\"version\":1,\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"commandId\":\"status-5\",\"operation\":\"run\",\"headSha\":\"0ff1b57531671012649ac69fb36983eaa39e6389\",\"timeoutSeconds\":120,\"command\":\"git status --short\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "apple-32dd9b9f",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "install-and-check-4",
+      "status": "SUCCEEDED",
+      "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
+      "exitCode": 0
+    },
+    {
+      "commandId": "status-5",
       "status": "STARTED",
       "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:49:45.938Z"
+  "createdAt": "2026-09-17T01:50:55.909Z"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "80df0c1b-f1b8-491b-92b6-2fd87000b8cf",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "status-5",
+    "operation": "run",
+    "command": "git status --short"
+  },
+  "createdAt": "2026-09-17T01:50:55.900Z"
+}
