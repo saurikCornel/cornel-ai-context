@@ -1,9 +1,9 @@
 {
   "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
   "branch": "cornel/three-js-hole-scene-builder-572850",
-  "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "RUNNING",
-  "summary": "Файлы обновлены. Проверка пройдена.\n\n```json\n{\"commandId\":\"apple-9a9ab391\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"npx vitest run src/core/holeScene.test.ts && npx tsc -b --pretty false\",\"operation\":\"publish\",\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"version\":1}\n```\n\n",
+  "headSha": "13a701e9eaf897051969ae2734580f7c44add08c",
+  "status": "WAITING_CHATGPT",
+  "summary": "Переход к следующему шагу не удалось. Сделайте это позже.\n\n",
   "commands": [
     {
       "commandId": "apple-32420d36",
@@ -25,10 +25,10 @@
     },
     {
       "commandId": "apple-9a9ab391",
-      "status": "STARTED",
-      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-      "exitCode": null
+      "status": "SUCCEEDED",
+      "headSha": "13a701e9eaf897051969ae2734580f7c44add08c",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-17T00:49:13.480Z"
+  "createdAt": "2026-09-17T00:50:28.886Z"
 }
