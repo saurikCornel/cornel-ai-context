@@ -1,0 +1,12 @@
+{
+  "id": "a6e0f737-655d-4fbe-bbce-8c8da342c17b",
+  "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "minimap-3",
+    "operation": "run",
+    "command": "npx vitest run src/ui/minimap.test.ts && npx tsc -b --pretty false && git status --short"
+  },
+  "createdAt": "2026-09-17T01:52:16.786Z"
+}
