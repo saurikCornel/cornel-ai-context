@@ -3,7 +3,7 @@
   "branch": "cornel/three-js-hole-scene-builder-572850",
   "headSha": "134b4974883323edd586d7187b760ec316e66030",
   "status": "RUNNING",
-  "summary": "Та же рассинхронизация: `currentHead` задачи догнал опубликованный коммит уже после отказа. Повторяю проверку с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"commandId\":\"verify-2\",\"operation\":\"run\",\"headSha\":\"134b4974883323edd586d7187b760ec316e66030\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/core/holeScene.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Проверки на опубликованном коммите прошли: 6/6 тестов, `tsc -b` чистый, рабочее дерево без незакоммиченных изменений. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"134b4974883323edd586d7187b760ec316e66030\",\"message\":\"Three.js hole scene builder готов. Созданы src/core/HoleSceneBuilder.ts и src/core/holeScene.test.ts (прежнее содержимое этих файлов было текстом задания, а не кодом — переписано). Билдер собирает THREE.Group по дескриптору Hole: один кэш THREE.BoxGeometry(1,1,1) и один THREE.CylinderGeometry на все меши с масштабированием через mesh.scale; MeshStandardMaterial кэшируются по ключу материала поверхности (green/rough/sand/ice/wood/stone/metal с заданными цветами) и по типу препятствия; меши именуются по id дескриптора; добавляется cup-маркер `${hole.id}-cup` в hole.cup.position с размером по radius; ramp/mesh используют box-геометрию, ramp разворачивается кватернионом дескриптора; поверхности castShadow=false/receiveShadow=true, препятствия castShadow=true; result.dispose() очищает группу, builder.dispose() освобождает кэши геометрий и материалов. Тестов 6: meshCount = surfaces+obstacles+1, имя и размер cup, общие инстансы геометрий между двумя сборками, кэш материалов по ключу, применение трансформов и флагов теней, очистка группы через dispose. Проверки на опубликованном коммите 134b497: `npx vitest run src/core/holeScene.test.ts` — 6/6 passed, `npx tsc -b --pretty false` — без ошибок, git status чистый. WebGLRenderer, document и Rapier не используются; Renderer.ts, SceneManager.ts и файлы курсов не менялись. PR не открывался — слияние ветки выполняет сборщик.\"}\n```\n\n**Сводка**\n\n- **Что было не так:** в ветке лежали `src/core/HoleSceneBuilder.ts` и `src/core/holeScene.test.ts` с текстом задания вместо кода; плюс в рабочей копии отсутствовал `node_modules`, из-за чего vitest не стартовал.\n- **Изменённые файлы:** `src/core/HoleSceneBuilder.ts`, `src/core/holeScene.test.ts` (коммит `134b497`).\n- **Проверки:** `npx vitest run src/core/holeScene.test.ts` — 6/6 passed; `npx tsc -b --pretty false` — без ошибок; оба прогона на опубликованном head `134b497`.\n- **Следующий шаг:** слияние ветки сборщиком офиса.\n\n",
   "commands": [
     {
       "commandId": "apple-32420d36",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "verify-2",
+      "status": "SUCCEEDED",
+      "headSha": "134b4974883323edd586d7187b760ec316e66030",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
       "headSha": "134b4974883323edd586d7187b760ec316e66030",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:54:44.891Z"
+  "createdAt": "2026-09-17T01:55:25.025Z"
 }

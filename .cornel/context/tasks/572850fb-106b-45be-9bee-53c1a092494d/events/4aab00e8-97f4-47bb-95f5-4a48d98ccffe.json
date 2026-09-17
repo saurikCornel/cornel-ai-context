@@ -1,0 +1,17 @@
+{
+  "id": "4aab00e8-97f4-47bb-95f5-4a48d98ccffe",
+  "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "134b4974883323edd586d7187b760ec316e66030",
+    "output": "Three.js hole scene builder готов. Созданы src/core/HoleSceneBuilder.ts и src/core/holeScene.test.ts (прежнее содержимое этих файлов было текстом задания, а не кодом — переписано). Билдер собирает THREE.Group по дескриптору Hole: один кэш THREE.BoxGeometry(1,1,1) и один THREE.CylinderGeometry на все меши с масштабированием через mesh.scale; MeshStandardMaterial кэшируются по ключу материала поверхности (green/rough/sand/ice/wood/stone/metal с заданными цветами) и по типу препятствия; меши именуются по id дескриптора; добавляется cup-маркер `${hole.id}-cup` в hole.cup.position с размером по radius; ramp/mesh используют box-геометрию, ramp разворачивается кватернионом дескриптора; поверхности castShadow=false/receiveShadow=true, препятствия castShadow=true; result.dispose() очищает группу, builder.dispose() освобождает кэши геометрий и материалов. Тестов 6: meshCount = surfaces+obstacles+1, имя и размер cup, общие инстансы геометрий между двумя сборками, кэш материалов по ключу, применение трансформов и флагов теней, очистка группы через dispose. Проверки на опубликованном коммите 134b497: `npx vitest run src/core/holeScene.test.ts` — 6/6 passed, `npx tsc -b --pretty false` — без ошибок, git status чистый. WebGLRenderer, document и Rapier не используются; Renderer.ts, SceneManager.ts и файлы курсов не менялись. PR не открывался — слияние ветки выполняет сборщик.",
+    "outputDigest": "a92a5dca608d80e47c63f4efc5fb441a1e5bd21dae8bbe3b7cab7165b10d1d51",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:55:27.347Z"
+}

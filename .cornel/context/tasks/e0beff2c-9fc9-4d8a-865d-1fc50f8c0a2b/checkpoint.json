@@ -3,7 +3,7 @@
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
   "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
   "status": "RUNNING",
-  "summary": "Рабочая копия на месте (оба файла в `public/audio`), head прежний — прошлый сбой был расхождением на момент запуска. Повторяю проверку типов с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\",\"timeoutSeconds\":600,\"command\":\"set -e\\nif [ ! -x node_modules/.bin/tsc ]; then echo 'installing deps'; npm install --no-audit --no-fund; fi\\nnode_modules/.bin/tsc -b --pretty false\\necho 'TYPECHECK OK'\\ngit status --short\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "Проверка `run` отклоняется из-за расхождения head с GitHub (ветка сместилась), при этом операции чтения показывают, что мои правки на месте. Публикую изменения — publish вернёт актуальный SHA, после чего прогоню typecheck на нём.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\",\"message\":\"Add README, audio placeholder docs and audio manifest\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "check-3",
+      "status": "FAILED",
+      "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
+      "exitCode": null
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:55:00.216Z"
+  "createdAt": "2026-09-17T01:55:26.166Z"
 }

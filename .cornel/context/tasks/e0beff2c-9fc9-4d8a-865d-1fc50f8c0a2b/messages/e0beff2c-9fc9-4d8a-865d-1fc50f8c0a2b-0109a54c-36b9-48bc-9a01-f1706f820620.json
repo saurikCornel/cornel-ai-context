@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверка `run` отклоняется из-за расхождения head с GitHub (ветка сместилась), при этом операции чтения показывают, что мои правки на месте. Публикую изменения — publish вернёт актуальный SHA, после чего прогоню typecheck на нём.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\",\"message\":\"Add README, audio placeholder docs and audio manifest\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:55:26.160Z"
+}

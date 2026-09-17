@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "`heads` — это record, а не массив. Но корневая причина другая: фактический SHA назначенной ветки на GitHub мне недоступен (worker отклоняет команду до синхронизации, локальное зеркало показывает старое значение). Пробую `publish` с тем headSha, на котором стоит рабочая копия — он должен зафиксировать два новых файла и вернуть актуальный SHA ветки, после чего сразу прогоню проверки:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-6\",\"operation\":\"publish\",\"headSha\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"message\":\"feat(ui): add in-game minimap projection and canvas widget\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** исправил форму запроса (`heads` ожидает record); чтобы не гадать SHA, иду через `publish` — он вернёт актуальный head ветки. Дальше на новом SHA запущу `npx vitest run src/ui/minimap.test.ts` и `npx tsc -b --pretty false`; finish отправлю только после успешных проверок. Если publish тоже упрётся в несовпадение head, попрошу владельца сообщить текущий SHA ветки `cornel/in-game-minimap-projection-and-renderer-d905f6`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:55:29.813Z"
+}
