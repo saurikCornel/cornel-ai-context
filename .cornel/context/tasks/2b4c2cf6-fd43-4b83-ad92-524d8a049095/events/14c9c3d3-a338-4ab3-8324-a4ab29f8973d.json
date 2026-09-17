@@ -1,0 +1,12 @@
+{
+  "id": "14c9c3d3-a338-4ab3-8324-a4ab29f8973d",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-11",
+    "operation": "run",
+    "command": "SHOT=/private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad; CH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'; \"$CH\" --headless=new --disable-gpu --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --window-size=1440,900 --virtual-time-budget=12000 --screenshot=$SHOT/menu.png --user-data-dir=$SHOT/p3 'http://localhost:5199/' >/dev/null 2>&1; echo MENU=$?; \"$CH\" --headless=new --disable-gpu --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --window-size=1440,900 --virtual-time-budget=45000 --screenshot=$SHOT/volcano.png --user-data-dir=$SHOT/p4 'http://localhost:5199/?debug=1&course=volcano&hole=4' >/dev/null 2>&1; echo VOLCANO=$?; ls -l $SHOT/menu.png $SHOT/volcano.png"
+  },
+  "createdAt": "2026-09-17T04:01:34.092Z"
+}
