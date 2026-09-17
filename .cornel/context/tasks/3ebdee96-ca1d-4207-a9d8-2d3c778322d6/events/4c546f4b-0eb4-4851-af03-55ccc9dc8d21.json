@@ -1,0 +1,12 @@
+{
+  "id": "4c546f4b-0eb4-4851-af03-55ccc9dc8d21",
+  "taskId": "3ebdee96-ca1d-4207-a9d8-2d3c778322d6",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-1",
+    "operation": "run",
+    "command": "git log --oneline -5 && echo '--- STATUS ---' && git status --short && echo '--- TEST ---' && npm test --silent 2>&1 | tail -40 && echo \"TEST_EXIT=$?\" && echo '--- TYPECHECK ---' && npm run typecheck 2>&1 | tail -20 && echo \"TC_EXIT=$?\" && echo '--- BUILD ---' && npm run build 2>&1 | tail -25 && echo \"BUILD_EXIT=$?\""
+  },
+  "createdAt": "2026-09-17T03:01:13.524Z"
+}
