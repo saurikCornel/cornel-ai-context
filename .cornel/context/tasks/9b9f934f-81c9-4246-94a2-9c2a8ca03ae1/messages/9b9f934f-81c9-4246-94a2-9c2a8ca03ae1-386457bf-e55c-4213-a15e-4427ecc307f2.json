@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Тот же разовый отказ проверки headSha (чередуется через раз). Повторяю публикацию с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"message\":\"Слить «У чашки нет флага и углубления»: углублённая чашка с флагом поверх плоских сенсорных зон\\n\\nКонфликт в src/core/HoleSceneBuilder.ts разрешён объединением обеих сторон:\\n- из cornel/office сохранены buildHazard и buildField (плоские полупрозрачные сенсорные объёмы);\\n- из встречной ветки взят новый buildCup: группа из горловины, лунки-углубления (liner), дна, флагштока и флага с цветом по теме курса.\\n\\nПроверки: tsc -b (0), vitest run — 46 файлов / 296 тестов пройдено, vite build успешен.\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:41:16.275Z"
+}
