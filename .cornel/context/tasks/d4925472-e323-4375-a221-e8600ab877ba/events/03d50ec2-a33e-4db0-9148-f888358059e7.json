@@ -1,0 +1,12 @@
+{
+  "id": "03d50ec2-a33e-4db0-9148-f888358059e7",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "probe-1",
+    "operation": "run",
+    "command": "git log --oneline -3; echo '--- STATUS ---'; git status --short | head -30; echo '--- MERGE_HEAD ---'; git rev-parse MERGE_HEAD 2>/dev/null || echo none; echo '--- index.ts head ---'; head -8 src/ui/index.ts; echo '--- markers ---'; grep -c '<<<<<<<' src/ui/index.ts src/ui/ui.css"
+  },
+  "createdAt": "2026-09-17T04:34:08.388Z"
+}
