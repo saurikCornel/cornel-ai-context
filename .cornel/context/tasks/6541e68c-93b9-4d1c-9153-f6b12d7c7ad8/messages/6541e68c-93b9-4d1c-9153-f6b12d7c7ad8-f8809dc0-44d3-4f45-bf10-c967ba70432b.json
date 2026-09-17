@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Worker сообщает, что голова ветки на GitHub отличается от `5e2d11da`. Сверяю фактическое состояние ветки.\n\n```json\n{\"version\":1,\"taskId\":\"6541e68c-93b9-4d1c-9153-f6b12d7c7ad8\",\"commandId\":\"check-head-1\",\"operation\":\"run\",\"headSha\":\"5e2d11da8c90e1fe90f4a7fc7863816c3df8b525\",\"command\":\"git fetch origin cornel/slit-realizovannye-prepyatstviya-i-zony-6541e6 2>&1 | tail -3; echo '--- local HEAD ---'; git rev-parse HEAD; echo '--- remote branch ---'; git rev-parse FETCH_HEAD; echo '--- remote log ---'; git log --oneline -3 FETCH_HEAD; echo '--- diff local vs remote ---'; git diff --stat HEAD FETCH_HEAD | tail -10\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:59:17.966Z"
+}
