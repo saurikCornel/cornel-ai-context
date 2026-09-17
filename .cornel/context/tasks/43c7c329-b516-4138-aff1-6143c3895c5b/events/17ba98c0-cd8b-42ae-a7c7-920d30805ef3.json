@@ -1,0 +1,11 @@
+{
+  "id": "17ba98c0-cd8b-42ae-a7c7-920d30805ef3",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "patch-validation-test",
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
+  },
+  "createdAt": "2026-09-17T02:46:38.089Z"
+}
