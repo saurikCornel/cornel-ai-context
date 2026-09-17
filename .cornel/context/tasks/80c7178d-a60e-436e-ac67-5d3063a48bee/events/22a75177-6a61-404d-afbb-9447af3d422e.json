@@ -1,0 +1,12 @@
+{
+  "id": "22a75177-6a61-404d-afbb-9447af3d422e",
+  "taskId": "80c7178d-a60e-436e-ac67-5d3063a48bee",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-1",
+    "operation": "run",
+    "command": "set -e\nnpm install --no-audit --no-fund\nnpm run typecheck\nnpx vitest run tests/course-data-validation.test.ts"
+  },
+  "createdAt": "2026-09-17T03:15:36.523Z"
+}
