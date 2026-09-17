@@ -1,0 +1,12 @@
+{
+  "id": "4f5a7fb7-9594-4302-9240-43bbc7809b9f",
+  "taskId": "5dd3f980-b998-4c0f-8ff6-6230938b256d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "apple-e6169b3c",
+    "operation": "run",
+    "command": "npx tsc -b --pretty false"
+  },
+  "createdAt": "2026-09-17T00:23:28.493Z"
+}
