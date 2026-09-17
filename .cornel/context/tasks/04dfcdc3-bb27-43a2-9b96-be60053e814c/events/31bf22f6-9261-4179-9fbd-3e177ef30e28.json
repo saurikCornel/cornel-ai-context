@@ -1,0 +1,17 @@
+{
+  "id": "31bf22f6-9261-4179-9fbd-3e177ef30e28",
+  "taskId": "04dfcdc3-bb27-43a2-9b96-be60053e814c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+    "output": "?? src/gameplay/MatchRewards.ts\n?? src/gameplay/rewards.test.ts\n",
+    "outputDigest": "4e196835c145c1779895db3c82741d9a02462db721378ff81cd35860dbf9cdec",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:40:44.570Z"
+}
