@@ -1,0 +1,17 @@
+{
+  "id": "cadb08b9-6560-4989-a059-3b1daacbc628",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\nTYPECHECK=0\n\n> crazy-putt-arena@0.1.0 test\n> vitest run\n\nsh: vitest: command not found\n--- build ---\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\nsh: tsc: command not found\n",
+    "outputDigest": "a355ec170ce27cf4b90747d9a7df45a781db3adf34bf1f433b80f9e64458ffe5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:55:38.191Z"
+}

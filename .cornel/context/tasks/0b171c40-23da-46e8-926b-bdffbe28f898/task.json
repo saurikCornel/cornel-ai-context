@@ -20,14 +20,14 @@
   "branch": "cornel/slit-sobrat-igru-svyazat-podsistemy-v-ig-0b171c",
   "baseSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
   "workspaceSyncedSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
-  "status": "RUNNING",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T02:44:00.463Z",
-  "updatedAt": "2026-09-17T02:55:17.159Z",
+  "updatedAt": "2026-09-17T02:55:37.031Z",
   "issue": 93,
   "chatUrl": "cli://claude/ce11149e-6e17-4c82-8e87-5dea33bb4888",
   "error": null,
-  "cliActivity": null,
+  "cliActivity": "Claude CLI: начал ход (claude-opus-5)",
   "cliSession": "ce11149e-6e17-4c82-8e87-5dea33bb4888",
   "browserError": null,
-  "currentHead": "e9ea06306a0c7e7eef58eb199cf2e9e1d61525f9"
+  "currentHead": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6"
 }
