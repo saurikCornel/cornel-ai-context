@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Ветка на GitHub сдвинулась (появился новый коммит). Публикую свои изменения — worker синхронизируется и вернёт новый SHA.\n\n```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(game): wire subsystems into a playable match loop\\n\\nAdds src/game: Game orchestrator (Rapier init, hole scene + colliders, aiming,\\nshots, bot turns via MatchManager/TurnManager, HUD/scoreboard/pause/results),\\nHoleRuntime (colliders, kinematic obstacles, hazards, surface rolling model),\\nAimController (hold-to-charge and drag-power schemes) and CourseRegistry.\\nmain.ts now boots the menu, starts a match and drives the frame loop.\\nAdds an integration test covering a putt into the cup and a full match to results.\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:41:25.342Z"
+}

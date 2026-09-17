@@ -1,0 +1,17 @@
+{
+  "id": "65cd31c4-1972-4d8b-bd3d-20eae764802b",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "chk-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "course-data-validation.test.ts\nleaderboard-generator.test.ts\nleaderboard-render.test.ts\nphysics\nsave-manager.test.mjs\n---\ntests/save-manager.test.mjs\n--- untracked/modified:\n M package.json\n M src/courses/CourseBuilder.ts\n M src/courses/data/green-hills.ts\n?? src/courses/HoleBuilder.ts\n?? src/courses/builder.test.ts\n--- test-build dir:\nno .test-build\n",
+    "outputDigest": "e573620a9d7f00a9ecb20c07bafc90de8a68b5a5ed02840c885d29fee7841b45",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:41:26.861Z"
+}
