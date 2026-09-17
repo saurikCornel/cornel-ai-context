@@ -1,0 +1,17 @@
+{
+  "id": "12bed871-bec3-44c3-9e6a-466e2b8835d3",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "      47 src/core/QualitySettings.ts\n      60 src/assets/audioManifest.ts\n     107 total\n",
+    "outputDigest": "ad3d0dd1f78179ce9c87de004fa9b9eb6155c5bf4d5f3a9d5c01492285f1375e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:33:44.844Z"
+}
