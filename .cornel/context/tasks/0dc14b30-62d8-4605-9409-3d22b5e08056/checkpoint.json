@@ -3,7 +3,7 @@
   "branch": "cornel/surface-friction-model-ice-mud-sand-0dc14b",
   "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
   "status": "RUNNING",
-  "summary": "Тесты упали не из-за кода: в рабочей копии нет `node_modules`. Ставлю зависимости и повторяю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"impl-2\",\"operation\":\"run\",\"headSha\":\"5ba9747c3eadb19841c05f0cf18a662b8865169b\",\"timeoutSeconds\":600,\"command\":\"npm install --no-audit --no-fund && npx vitest run src/obstacles/surfaces.test.ts && npx tsc -b --pretty false\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"status-2\",\"operation\":\"run\",\"headSha\":\"5ba9747c3eadb19841c05f0cf18a662b8865169b\",\"timeoutSeconds\":120,\"command\":\"git status --short\"}\n```\n\nПроверяю, что именно попадёт в коммит (npm install мог создать `package-lock.json`). Жду результат worker.\n\n",
   "commands": [
     {
       "commandId": "apple-a7cf8a48",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "impl-2",
+      "status": "SUCCEEDED",
+      "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
+      "exitCode": 0
+    },
+    {
+      "commandId": "status-2",
       "status": "STARTED",
       "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:55:49.183Z"
+  "createdAt": "2026-09-17T01:56:21.566Z"
 }
