@@ -1,0 +1,17 @@
+{
+  "id": "62e85cd0-a75c-46d3-8d15-d3bbc34b0949",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "resolve-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236",
+    "output": "patched src/courses/data/layoutKit.ts\npatched src/courses/data/haunted-mansion.ts\npatched src/courses/data/haunted-mansion.ts\npatched src/courses/data/haunted-mansion.ts\npatched src/courses/data/haunted-mansion.ts\npatched src/courses/data/haunted-mansion.ts\npatched src/courses/data/haunted-mansion.ts\npatched src/courses/data/neon-city.ts\npatched src/courses/data/neon-city.ts\npatched src/courses/data/neon-city.ts\npatched src/courses/data/neon-city.ts\npatched src/courses/data/neon-city.ts\npatched src/courses/data/neon-city.ts\npatched src/courses/data/neon-city.ts\npatched src/courses/data/space-station.ts\npatched src/courses/data/space-station.ts\npatched src/courses/data/space-station.ts\npatched src/courses/data/space-station.ts\n--- markers left ---\nnone\n",
+    "outputDigest": "dbf4fd37541754e92fa4630e5d73da4b3692fef33d2edc247517347113574750",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:55:07.658Z"
+}

@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "`headSha` у worker сверяется с GitHub, а merge-коммит ещё не опубликован. Повторяю проверки с прежним опубликованным SHA.\n\n```json\n{\"version\":1,\"taskId\":\"0b171c40-23da-46e8-926b-bdffbe28f898\",\"commandId\":\"verify-2\",\"operation\":\"run\",\"headSha\":\"fe890d7c4a1756f69b9c126df7d1866e70bcd9c6\",\"command\":\"git log --oneline -1; [ -d node_modules ] || npm install --no-audit --no-fund; echo '=== typecheck ==='; npm run typecheck 2>&1 | tail -20; echo '=== test ==='; npm test 2>&1 | tail -40; echo '=== build ==='; npm run build 2>&1 | tail -15\",\"timeoutSeconds\":1800}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:55:17.154Z"
+}
