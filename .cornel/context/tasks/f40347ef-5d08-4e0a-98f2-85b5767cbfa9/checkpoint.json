@@ -3,7 +3,7 @@
   "branch": "cornel/u-chashki-net-flaga-i-uglubleniya-f40347",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"f40347ef-5d08-4e0a-98f2-85b5767cbfa9\",\"commandId\":\"grep-1\",\"operation\":\"grep\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"pattern\":\"HoleSceneBuilder|themeId|CourseTheme|THEMES\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Alternation isn't supported by the default `git grep`; retrying with a simple pattern.\n\n```json\n{\"version\":1,\"taskId\":\"f40347ef-5d08-4e0a-98f2-85b5767cbfa9\",\"commandId\":\"grep-2\",\"operation\":\"grep\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"pattern\":\"HoleSceneBuilder\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "grep-1",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "grep-2",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:17:50.245Z"
+  "createdAt": "2026-09-17T04:18:39.713Z"
 }

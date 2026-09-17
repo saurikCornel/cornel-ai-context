@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Alternation isn't supported by the default `git grep`; retrying with a simple pattern.\n\n```json\n{\"version\":1,\"taskId\":\"f40347ef-5d08-4e0a-98f2-85b5767cbfa9\",\"commandId\":\"grep-2\",\"operation\":\"grep\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"pattern\":\"HoleSceneBuilder\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:18:39.708Z"
+}

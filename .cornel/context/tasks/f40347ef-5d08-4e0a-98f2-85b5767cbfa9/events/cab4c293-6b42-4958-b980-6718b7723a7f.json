@@ -1,0 +1,17 @@
+{
+  "id": "cab4c293-6b42-4958-b980-6718b7723a7f",
+  "taskId": "f40347ef-5d08-4e0a-98f2-85b5767cbfa9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "grep-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "src/core/HoleSceneBuilder.ts:67:export class HoleSceneBuilder {\nsrc/core/holeScene.test.ts:4:import { HoleSceneBuilder } from './HoleSceneBuilder';\nsrc/core/holeScene.test.ts:73:describe('HoleSceneBuilder', () => {\nsrc/core/holeScene.test.ts:75:    const builder = new HoleSceneBuilder();\nsrc/core/holeScene.test.ts:89:    const builder = new HoleSceneBuilder();\nsrc/core/holeScene.test.ts:102:    const builder = new HoleSceneBuilder();\nsrc/core/holeScene.test.ts:121:    const builder = new HoleSceneBuilder();\nsrc/core/holeScene.test.ts:140:    const builder = new HoleSceneBuilder();\nsrc/core/holeScene.test.ts:158:    const builder = new HoleSceneBuilder();\nsrc/game/Game.ts:12:import { HoleSceneBuilder } from '../core/HoleSceneBuilder';\nsrc/game/Game.ts:109:  private readonly builder = new HoleSceneBuilder();\nsrc/game/HoleRuntime.ts:14:import type { HoleSceneBuilder, HoleSceneResult } from '../core/HoleSceneBuilder';\nsrc/game/HoleRuntime.ts:219:    builder: HoleSceneBuilder,\nsrc/game/game.test.ts:7:import { HoleSceneBuilder } from '../core/HoleSceneBuilder';\nsrc/game/game.test.ts:28:    const builder = new HoleSceneBuilder();\nsrc/game/holeMovers.test.ts:4:import { HoleSceneBuilder } from '../core/HoleSceneBuilder';\nsrc/game/holeMovers.test.ts:78:  const builder = new HoleSceneBuilder();\nsrc/game/holeRuntime.test.ts:5:import { HoleSceneBuilder } from '../core/HoleSceneBuilder';\nsrc/game/holeRuntime.test.ts:33:  readonly builder = new HoleSceneBuilder();",
+    "outputDigest": "b5f55fc0ed39242f46ee5dd6a20daaedd76a727c6bbede11ceccef683d029f0f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:18:41.838Z"
+}
