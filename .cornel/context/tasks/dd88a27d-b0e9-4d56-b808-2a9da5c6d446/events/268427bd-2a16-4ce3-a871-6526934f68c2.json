@@ -1,0 +1,17 @@
+{
+  "id": "268427bd-2a16-4ce3-a871-6526934f68c2",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-head-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "21e5e93679bf4c1925bc35e9e3b27135107dd5fa",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n \u001b[32m✓\u001b[39m src/camera/CameraDirector.test.ts \u001b[2m(\u001b[22m\u001b[2m8 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 9\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/camera/CameraSmoothing.test.ts \u001b[2m(\u001b[22m\u001b[2m23 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m40 passed\u001b[39m\u001b[22m\u001b[90m (40)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:23:16\n\u001b[2m   Duration \u001b[22m 239ms\u001b[2m (transform 72%, import 16%, tests 7%, worker 5%)\u001b[22m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m32 passed\u001b[39m\u001b[22m\u001b[90m (32)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:23:17\n\u001b[2m   Duration \u001b[22m 1.74s\u001b[2m (environment 44%, transform 33%, tests 13%, import 8%, worker 1%)\u001b[22m\n\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.32s\u001b[39m\n",
+    "outputDigest": "963bfaa3a379603aaa8cce4136415c5c61759a966cd1f62ad14c0ce39a51c092",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:23:23.074Z"
+}

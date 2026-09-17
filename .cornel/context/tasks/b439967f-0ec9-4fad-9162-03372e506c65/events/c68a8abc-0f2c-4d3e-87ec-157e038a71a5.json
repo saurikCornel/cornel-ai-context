@@ -1,0 +1,12 @@
+{
+  "id": "c68a8abc-0f2c-4d3e-87ec-157e038a71a5",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-8",
+    "operation": "run",
+    "command": "echo '=== buildHole ==='; grep -n -B 20 'buildHole' src/courses/HoleBuilder.ts | sed -n '1,80p'; echo '=== Hole.ts maxShots ==='; grep -n -B3 -A6 'maxShots' src/courses/Hole.ts; echo '=== green-hills 55-100 ==='; sed -n '55,100p' src/courses/data/green-hills.ts"
+  },
+  "createdAt": "2026-09-17T03:23:21.379Z"
+}
