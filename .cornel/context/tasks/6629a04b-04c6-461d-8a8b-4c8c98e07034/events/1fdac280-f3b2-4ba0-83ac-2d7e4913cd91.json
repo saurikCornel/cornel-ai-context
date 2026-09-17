@@ -1,0 +1,17 @@
+{
+  "id": "1fdac280-f3b2-4ba0-83ac-2d7e4913cd91",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "grep-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "src/courses/Course.ts:8:export function defineCourse<const T extends CourseDefinition>(course: T): T {\nsrc/courses/CourseBuilder.ts:1:import { defineCourse } from './Course';\nsrc/courses/CourseBuilder.ts:5:export interface CourseBuilderOptions {\nsrc/courses/CourseBuilder.ts:16:export class CourseBuilder {\nsrc/courses/CourseBuilder.ts:18:  private readonly options: Required<CourseBuilderOptions>;\nsrc/courses/CourseBuilder.ts:20:  constructor(options: CourseBuilderOptions) {\nsrc/courses/CourseBuilder.ts:35:    return defineCourse({\nsrc/courses/CourseBuilder.ts:45:export function createCourseBuilder(options: CourseBuilderOptions): CourseBuilder {\nsrc/courses/CourseBuilder.ts:46:  return new CourseBuilder(options);\nsrc/courses/data/candy-factory.ts:1:import { createCourseBuilder } from '../CourseBuilder';\nsrc/courses/data/candy-factory.ts:9:export const candyFactoryCourse=createCourseBuilder({id:'candy-factory',name:'Candy Factory',themeId:'candy-factory'}).addHoles([\nsrc/courses/data/chaos-dimension.ts:1:import { createCourseBuilder } from '../CourseBuilder';\nsrc/courses/data/chaos-dimension.ts:175:export const chaosDimension = createCourseBuilder({\nsrc/courses/data/green-hills.ts:1:import { createCourseBuilder } from '../CourseBuilder';\nsrc/courses/data/green-hills.ts:9:export const greenHillsCourse=createCourseBuilder({id:'green-hills',name:'Green Hills',themeId:'green-hills'}).addHoles([\nsrc/courses/data/haunted-mansion.ts:1:import { createCourseBuilder } from '../CourseBuilder';\nsrc/courses/data/haunted-mansion.ts:17:export const hauntedMansion=createCourseBuilder({id:'haunted-mansion',name:'Haunted Mansion',themeId:'haunted-mansion'}).addHoles(holes).build(); export default hauntedMansion;\nsrc/courses/data/neon-city.ts:1:import { createCourseBuilder } from '../CourseBuilder';\nsrc/courses/data/neon-city.ts:19:export const neonCity=createCourseBuilder({id:'neon-city',name:'Neon City',themeId:'neon-city'}).addHoles(holes).build();\nsrc/courses/data/pirate-bay.ts:1:import { createCourseBuilder } from '../CourseBuilder';\nsrc/courses/data/pirate-bay.ts:9:export const pirateBayCourse=createCourseBuilder({id:'pirate-bay',name:'Pirate Bay',themeId:'pirate-bay'}).addHoles([\nsrc/courses/data/space-station.ts:1:import { createCourseBuilder } from '../CourseBuilder';\nsrc/courses/data/space-station.ts:17:export const spaceStation=createCourseBuilder({id:'space-station',name:'Space Station',themeId:'space-station'}).addHoles(holes).build(); export default spaceStation;",
+    "outputDigest": "b6f71915cb7ee6d84cb028c2b46a249429b15acf8e28046d0c6a4037b73d384c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:15:02.560Z"
+}
