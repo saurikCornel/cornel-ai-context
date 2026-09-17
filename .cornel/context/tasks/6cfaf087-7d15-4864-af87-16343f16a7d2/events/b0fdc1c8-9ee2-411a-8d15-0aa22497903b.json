@@ -1,0 +1,17 @@
+{
+  "id": "b0fdc1c8-9ee2-411a-8d15-0aa22497903b",
+  "taskId": "6cfaf087-7d15-4864-af87-16343f16a7d2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "publish-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "3658877e1fd6778efff955482b1baf976da46a6d",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:10:17.060Z"
+}

@@ -17,14 +17,14 @@
   "branch": "cornel/reformat-minified-player-and-save-module-6cfaf0",
   "baseSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
   "workspaceSyncedSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
-  "status": "RUNNING",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T05:07:27.239Z",
-  "updatedAt": "2026-09-17T05:10:12.466Z",
+  "updatedAt": "2026-09-17T05:10:21.736Z",
   "issue": 117,
   "chatUrl": "cli://claude/52cac001-4dc8-425d-a01d-ce0679a825bf",
   "error": null,
-  "cliActivity": null,
+  "cliActivity": "Claude CLI: начал ход (claude-opus-5)",
   "cliSession": "52cac001-4dc8-425d-a01d-ce0679a825bf",
   "browserError": null,
-  "currentHead": "45e3ae615faa03ce491d158aff9684253276ee7e"
+  "currentHead": "3658877e1fd6778efff955482b1baf976da46a6d"
 }

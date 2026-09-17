@@ -1,0 +1,17 @@
+{
+  "id": "e0cd6aec-227b-4ac8-99e9-ef73105c699e",
+  "taskId": "60f661d1-a07b-4ecb-bc83-b0a9a43f5736",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-dev-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "b991d05c3678197f1049fe46b0956d960e5acb5d",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/60f661d1-a07b-4ecb-bc83-b0a9a43f5736\u001b[39m\n\n \u001b[32m✓\u001b[39m src/input/InputManager.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/dev/dev.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 08:10:11\n\u001b[2m   Duration \u001b[22m 836ms\u001b[2m (environment 94%, transform 4%, import 1%, tests 1%)\u001b[22m\n\n src/dev/DeveloperDiagnostics.ts | 84 ++++++++++++++++++++++++++++++++++++++++-\n src/dev/LaunchOptions.ts        | 19 +++++++++-\n src/dev/PresentationMinimap.ts  | 69 +++++++++++++++++++++++++++++++--\n 3 files changed, 165 insertions(+), 7 deletions(-)\n",
+    "outputDigest": "a7bc5008bc877c9696dceac05ce68307a3d17d0b8a1cda7c96e0f054895a5b8f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:10:13.623Z"
+}
