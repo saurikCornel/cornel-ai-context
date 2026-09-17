@@ -1,0 +1,16 @@
+{
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "branch": "cornel/chast-moduley-zapisana-minificirovannymi-8b573d",
+  "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+  "status": "RUNNING",
+  "summary": "Изучил объём работы: длинные строки есть не только в перечисленных файлах. Начинаю с автоматического форматирования (безопасно для поведения), затем вручную разберу остатки.\n\n```json\n{\"version\":1,\"taskId\":\"8b573d45-bdcb-48f0-a517-4bb827adb50c\",\"commandId\":\"fmt-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"npx --yes prettier@3.4.2 --single-quote --print-width 100 --write src/ui/index.ts src/ui/Overlays.ts src/ui/domTests.ts src/input/InputManager.ts src/core/SaveManager.ts src/ai/BotProfiles.ts src/ai/random.ts src/dev/LaunchOptions.ts src/dev/DeveloperDiagnostics.ts src/dev/PresentationMinimap.ts src/player/progression.ts src/player/profile.ts src/player/types.ts src/gameplay/ScoreManager.ts src/courses/data/volcano.ts src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/chaos-dimension.ts src/ui/ui.css src/style.css src/game/game.css src/leaderboard/style.css; echo '=== LONG LINES ==='; awk 'length>200 {print FILENAME \\\":\\\" FNR \\\" len=\\\" length}' $(git ls-files src) | head -60\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "commands": [
+    {
+      "commandId": "fmt-1",
+      "status": "STARTED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-17T04:09:55.253Z"
+}

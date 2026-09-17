@@ -17,11 +17,13 @@
   "branch": "cornel/chast-moduley-zapisana-minificirovannymi-8b573d",
   "baseSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "workspaceSyncedSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
-  "status": "READY",
+  "status": "RUNNING",
   "createdAt": "2026-09-17T04:08:14.415Z",
-  "updatedAt": "2026-09-17T04:09:16.765Z",
+  "updatedAt": "2026-09-17T04:09:55.253Z",
   "issue": 110,
-  "chatUrl": null,
+  "chatUrl": "cli://claude/bd3f3455-3fbb-4474-b9d9-87058075d314",
   "error": null,
-  "cliActivity": "Claude CLI: Read: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/8b573d45-bdcb-48f0-a517-4bb827adb50c/src/ui/index."
+  "cliActivity": null,
+  "cliSession": "bd3f3455-3fbb-4474-b9d9-87058075d314",
+  "browserError": null
 }

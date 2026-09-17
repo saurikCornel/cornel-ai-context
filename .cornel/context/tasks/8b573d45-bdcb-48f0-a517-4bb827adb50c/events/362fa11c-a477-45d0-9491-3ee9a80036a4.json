@@ -1,0 +1,12 @@
+{
+  "id": "362fa11c-a477-45d0-9491-3ee9a80036a4",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "fmt-1",
+    "operation": "run",
+    "command": "npx --yes prettier@3.4.2 --single-quote --print-width 100 --write src/ui/index.ts src/ui/Overlays.ts src/ui/domTests.ts src/input/InputManager.ts src/core/SaveManager.ts src/ai/BotProfiles.ts src/ai/random.ts src/dev/LaunchOptions.ts src/dev/DeveloperDiagnostics.ts src/dev/PresentationMinimap.ts src/player/progression.ts src/player/profile.ts src/player/types.ts src/gameplay/ScoreManager.ts src/courses/data/volcano.ts src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/chaos-dimension.ts src/ui/ui.css src/style.css src/game/game.css src/leaderboard/style.css; echo '=== LONG LINES ==='; awk 'length>200 {print FILENAME \":\" FNR \" len=\" length}' $(git ls-files src) | head -60"
+  },
+  "createdAt": "2026-09-17T04:09:55.249Z"
+}
