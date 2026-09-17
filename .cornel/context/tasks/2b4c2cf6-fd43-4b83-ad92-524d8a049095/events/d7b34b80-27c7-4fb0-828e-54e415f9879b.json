@@ -1,0 +1,12 @@
+{
+  "id": "d7b34b80-27c7-4fb0-828e-54e415f9879b",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-4",
+    "operation": "run",
+    "command": "echo '== camera wiring =='; grep -rn 'CameraDirector\\|CameraController' src/game src/main.ts --include=*.ts | cut -c1-160; echo '== particles wiring =='; grep -rn 'ParticleManager\\|FeedbackSystem' src --include=*.ts | grep -v test | cut -c1-160; echo '== длинные строки (минифицированный стиль) =='; for f in $(git ls-files 'src/**/*.ts' | grep -v test); do awk -v F=\"$f\" 'length($0)>300{n++} END{if(n>0) printf \"%s: %d строк >300 символов (всего %d)\\n\", F, n, NR}' \"$f\"; done"
+  },
+  "createdAt": "2026-09-17T03:50:43.664Z"
+}

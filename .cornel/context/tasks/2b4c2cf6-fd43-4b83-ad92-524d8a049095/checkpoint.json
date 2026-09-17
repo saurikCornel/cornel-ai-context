@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-2b4c2c",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Курсы переформатированы, реестр есть, CameraDirector с режимами существует. Проверяю, подключены ли они к игровому циклу (а не просто лежат в модулях).\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"echo '== CameraDirector/Controller usage =='; grep -rn 'CameraDirector\\\\|CameraController' src --include=*.ts | grep -v '/camera/' | head -20; echo '== ParticleManager usage =='; grep -rn 'new ParticleManager\\\\|particles\\\\.\\\\|emit(' src/game src/main.ts --include=*.ts | head -20; echo '== клавиши/управление =='; grep -rn \\\"'Tab'\\\\|'Escape'\\\\|KeyR\\\\|Space\\\\|wheel\\\\|KeyW\\\\|aimStyle\\\\|controlScheme\\\" src/input src/game src/main.ts --include=*.ts | head -25; echo '== настройки качество/громкость =='; grep -rn 'quality\\\\|masterVolume\\\\|volume' src/main.ts src/game/Game.ts | head -20; echo '== миникарта/косметика/боты =='; grep -rn 'Minimap\\\\|cosmetics\\\\|BotTurnScheduler\\\\|MatchRewards' src/game src/main.ts --include=*.ts | head -20; echo '== файлы src/game =='; ls src/game src/input\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Хвост вывода срезал первые две секции. Повторяю точечно то, что не увидел, плюс проверяю стиль исходников.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-4\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"echo '== camera wiring =='; grep -rn 'CameraDirector\\\\|CameraController' src/game src/main.ts --include=*.ts | cut -c1-160; echo '== particles wiring =='; grep -rn 'ParticleManager\\\\|FeedbackSystem' src --include=*.ts | grep -v test | cut -c1-160; echo '== длинные строки (минифицированный стиль) =='; for f in $(git ls-files 'src/**/*.ts' | grep -v test); do awk -v F=\\\"$f\\\" 'length($0)>300{n++} END{if(n>0) printf \\\"%s: %d строк >300 символов (всего %d)\\\\n\\\", F, n, NR}' \\\"$f\\\"; done\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "check-3",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-4",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:50:21.552Z"
+  "createdAt": "2026-09-17T03:50:43.672Z"
 }
