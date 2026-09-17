@@ -3,7 +3,7 @@
   "branch": "cornel/readme-opisyvaet-funkcionalnost-kotoroy-c8ba46",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Проверяю `npm run build` перед тем, как описывать его в README.\n\n```json\n{\"version\":1,\"taskId\":\"c8ba46b9-2646-4ae8-b256-ef943a1c8c80\",\"commandId\":\"readme-check-5\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"npm run build > /tmp/h.log 2>&1; echo \\\"build_exit=$?\\\"; tail -12 /tmp/h.log; ls dist 2>/dev/null; rm -rf dist; git status --short\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Сбой на этапе синхронизации worker (`FETCH_HEAD`), не в самой команде. Повторяю с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"c8ba46b9-2646-4ae8-b256-ef943a1c8c80\",\"commandId\":\"readme-check-6\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"npm run build > /tmp/h.log 2>&1; echo \\\"build_exit=$?\\\"; tail -12 /tmp/h.log; ls dist 2>/dev/null; rm -rf dist; git status --short\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "readme-check-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "readme-check-5",
+      "status": "FAILED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": null
+    },
+    {
+      "commandId": "readme-check-6",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:16:56.275Z"
+  "createdAt": "2026-09-17T02:18:10.000Z"
 }
