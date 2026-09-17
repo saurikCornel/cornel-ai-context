@@ -1,0 +1,12 @@
+{
+  "id": "8b311c2b-b36e-4cfa-b9cf-2caaecdca29f",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-4",
+    "operation": "run",
+    "command": "npx --yes prettier@3.4.2 --single-quote --print-width 100 --arrow-parens avoid --write $(git diff --name-only -- src) | tail -3\ngit show HEAD:src/ui/index.ts > src/ui/__legacy.ts\ncat > src/ui/__parity.test.ts <<'EOF'\n// @vitest-environment jsdom\nimport { describe, expect, it } from 'vitest';\nimport { AppUI } from './index';\nimport { AppUI as LegacyAppUI } from './__legacy';\n\nconst screens = ['main', 'settings', 'profile', 'play', 'custom', 'ranked'];\n\ndescribe('AppUI formatting parity', () => {\n  it('renders identical markup on every screen', () => {\n    for (const screen of screens) {\n      const a = document.createElement('div');\n      const b = document.createElement('div');\n      new AppUI(a).navigate(screen as never);\n      new LegacyAppUI(b).navigate(screen as never);\n      expect(a.innerHTML).toBe(b.innerHTML);\n    }\n  });\n\n  it('renders identical markup for an explicit course', () => {\n    const a = document.createElement('div');\n    const b = document.createElement('div');\n    new AppUI(a, {}, { initialCourseId: 'volcano' }).navigate('custom' as never);\n    new LegacyAppUI(b, {}, { initialCourseId: 'volcano' }).navigate('custom' as never);\n    expect(a.innerHTML).toBe(b.innerHTML);\n  });\n});\nEOF\nnpx vitest run src/ui/__parity.test.ts 2>&1 | tail -14\nrm -f src/ui/__legacy.ts src/ui/__parity.test.ts\necho '=== LONG LINES (src >200) ==='\nawk 'length>200 {print FILENAME \":\" FNR \" len=\" length}' $(git ls-files src)"
+  },
+  "createdAt": "2026-09-17T04:22:16.189Z"
+}
