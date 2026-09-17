@@ -2,7 +2,7 @@
   "id": "04dfcdc3-bb27-43a2-9b96-be60053e814c",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "apple",
+  "agent": "claude",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -19,12 +19,13 @@
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T23:47:24.041Z",
-  "updatedAt": "2026-09-17T01:11:27.424Z",
+  "updatedAt": "2026-09-17T01:36:24.877Z",
   "issue": 79,
-  "chatUrl": "cli://apple/04dfcdc3-bb27-43a2-9b96-be60053e814c",
+  "chatUrl": null,
   "error": null,
   "cliActivity": null,
   "browserError": null,
-  "statusChecks": 3,
-  "currentHead": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6"
+  "statusChecks": 0,
+  "currentHead": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+  "cliSession": null
 }

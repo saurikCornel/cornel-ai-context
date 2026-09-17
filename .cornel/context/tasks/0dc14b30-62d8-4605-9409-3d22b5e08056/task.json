@@ -2,7 +2,7 @@
   "id": "0dc14b30-62d8-4605-9409-3d22b5e08056",
   "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
   "effort": "current",
-  "agent": "apple",
+  "agent": "claude",
   "attachments": [],
   "office": {
     "kind": "card",
@@ -19,12 +19,13 @@
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T23:47:06.624Z",
-  "updatedAt": "2026-09-17T01:15:45.465Z",
+  "updatedAt": "2026-09-17T01:36:24.711Z",
   "issue": 76,
-  "chatUrl": "cli://apple/0dc14b30-62d8-4605-9409-3d22b5e08056",
+  "chatUrl": null,
   "error": null,
-  "cliActivity": "Apple Intelligence: saveKnowledge surface friction model",
-  "browserError": "Apple Intelligence: CONTEXT Foundation Models: exceededContextWindowSize(FoundationModels.LanguageModelSession.GenerationError.Context(debugDescription: \"Content contains 4090 tokens, which exceeds the maximum allowed context size of 4096.\", underlyingErrors: [Provided 4,090 tokens, but the maximum allowed is 4,096.], ",
-  "statusChecks": 2,
-  "currentHead": "5ba9747c3eadb19841c05f0cf18a662b8865169b"
+  "cliActivity": null,
+  "browserError": null,
+  "statusChecks": 0,
+  "currentHead": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
+  "cliSession": null
 }

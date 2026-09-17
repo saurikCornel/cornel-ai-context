@@ -1,0 +1,12 @@
+{
+  "id": "395fd0e3-8ee0-4b94-8fab-3b9342368911",
+  "taskId": "916bc9cd-88fb-4b38-8399-f8c960544439",
+  "type": "HANDOVER",
+  "text": "Чат передан Claude CLI",
+  "detail": {
+    "from": "apple",
+    "to": "claude",
+    "cancelled": 1
+  },
+  "createdAt": "2026-09-17T01:36:24.659Z"
+}
