@@ -1,0 +1,12 @@
+{
+  "id": "3a3ffe5d-c046-4dc3-bb84-589a46ff1577",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-3",
+    "operation": "run",
+    "command": "npx vitest run 2>&1 | tail -6; echo '--- STATUS ---'; git status --short"
+  },
+  "createdAt": "2026-09-17T04:22:31.274Z"
+}

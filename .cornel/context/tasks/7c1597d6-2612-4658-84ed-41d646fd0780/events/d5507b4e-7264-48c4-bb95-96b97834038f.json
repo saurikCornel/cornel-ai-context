@@ -1,0 +1,17 @@
+{
+  "id": "d5507b4e-7264-48c4-bb95-96b97834038f",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "grep-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "src/game/Game.ts:58:  playerName?: string;\nsrc/game/Game.ts:59:  playerRating?: number;\nsrc/game/Game.ts:60:  ballStyleId?: string;\nsrc/game/Game.ts:237:    const rating = this.options.playerRating ?? 1000;\nsrc/game/Game.ts:244:        displayName: index === 0 ? this.options.playerName ?? 'You' : 'Player ' + String(index + 1),\nsrc/game/Game.ts:246:        ballStyleId: this.options.ballStyleId ?? DEFAULT_BALL_ID,\nsrc/game/Game.ts:256:        ballStyleId: DEFAULT_BALL_ID,\nsrc/game/Game.ts:686:      ballStyleId: player.ballStyleId,\nsrc/game/Game.ts:779:        isLocal: player.kind === 'human',\nsrc/game/Game.ts:834:    const style = player ? ballStyleById(player.ballStyleId) : undefined;",
+    "outputDigest": "47b99ee86931d84acdbcbb6faf62f8c72428b5002784b934782fdc0d1acd16cd",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:22:31.725Z"
+}
