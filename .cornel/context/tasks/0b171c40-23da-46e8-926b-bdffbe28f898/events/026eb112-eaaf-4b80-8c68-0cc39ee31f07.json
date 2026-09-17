@@ -1,0 +1,12 @@
+{
+  "id": "026eb112-eaaf-4b80-8c68-0cc39ee31f07",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-2",
+    "operation": "run",
+    "command": "cat -n src/main.ts"
+  },
+  "createdAt": "2026-09-17T02:52:03.272Z"
+}
