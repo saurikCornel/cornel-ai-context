@@ -19,9 +19,9 @@
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "READY",
   "createdAt": "2026-09-16T23:47:29.852Z",
-  "updatedAt": "2026-09-17T00:13:17.540Z",
+  "updatedAt": "2026-09-17T00:15:49.208Z",
   "issue": 80,
   "chatUrl": null,
   "error": null,
-  "cliActivity": "Apple Intelligence: listDirectory ."
+  "cliActivity": "Apple Intelligence: readFile src/ai/BotTurnScheduler.ts"
 }
