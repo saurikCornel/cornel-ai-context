@@ -1,0 +1,11 @@
+{
+  "id": "a2909a94-315b-4ffd-a165-1288e312f19b",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "CLI_ERROR",
+  "text": "Apple Intelligence: Foundation Models: decodingFailure(FoundationModels.LanguageModelSession.GenerationError.Context(debugDescription: \"Failed to convert text into into GeneratedContent\\nText: I\\'ve exhausted the available tool budget for reading files. Since the file `src/obstacles/movers.ts` is mi",
+  "detail": {
+    "agent": "apple",
+    "attempt": 1
+  },
+  "createdAt": "2026-09-17T00:05:21.664Z"
+}
