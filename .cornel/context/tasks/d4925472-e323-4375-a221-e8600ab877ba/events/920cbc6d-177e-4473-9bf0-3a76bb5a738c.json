@@ -1,0 +1,17 @@
+{
+  "id": "920cbc6d-177e-4473-9bf0-3a76bb5a738c",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "resolve-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+    "output": "=== index.ts written, markers left: ===\n0\n=== DIFF base->ours ui.css ===\ndiff --git a/tmp/mrg/ui.css.1 b/tmp/mrg/ui.css.2\nindex 42be580..b4748a9 100644\n--- a/tmp/mrg/ui.css.1\n+++ b/tmp/mrg/ui.css.2\n@@ -34,0 +35,4 @@\n\n{+.cpa-leaderboard{display:flex;justify-content:center}+}\n{+.cpa-leaderboard .leaderboard{width:min(880px,100%);max-height:none}+}\n{+.cpa-note{margin:0 0 18px;color:#91a7b9;font-size:13px;font-weight:750;letter-spacing:.04em}+}\n",
+    "outputDigest": "9497382281dbd0c0318682c6f4bf5c30ab5172c4be6cbedb72aac1122dda46c4",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:32:37.392Z"
+}
