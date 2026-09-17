@@ -1,0 +1,12 @@
+{
+  "id": "da5eb875-ebac-4383-bbeb-87cf5786e89d",
+  "taskId": "72ad9ab1-d451-4d42-847e-9cba5adb804d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-1",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && ls -d node_modules 2>/dev/null || npm install --no-audit --no-fund 2>&1 | tail -20"
+  },
+  "createdAt": "2026-09-17T04:27:48.600Z"
+}
