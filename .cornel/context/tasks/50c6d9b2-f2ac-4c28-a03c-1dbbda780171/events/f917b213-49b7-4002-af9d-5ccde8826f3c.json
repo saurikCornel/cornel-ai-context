@@ -1,0 +1,11 @@
+{
+  "id": "f917b213-49b7-4002-af9d-5ccde8826f3c",
+  "taskId": "50c6d9b2-f2ac-4c28-a03c-1dbbda780171",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "qa-1",
+    "output": "+ npm run typecheck\n\n> Delete2@0.0.1 typecheck\n> tsc --noEmit\n\nsh: tsc: command not found\n+ echo TYPECHECK_EXIT=127\nTYPECHECK_EXIT=127\n+ npx jest --ci\n+ tail -40\n"
+  },
+  "createdAt": "2026-09-17T17:38:04.525Z"
+}
