@@ -1,9 +1,9 @@
 {
   "taskId": "80c7178d-a60e-436e-ac67-5d3063a48bee",
   "branch": "cornel/candy-factory-ts-i-pirate-bay-ts-zapisan-80c717",
-  "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+  "headSha": "8083931e2850fff54b9465f9e7c0a182073e3c18",
   "status": "RUNNING",
-  "summary": "Всё зелёное: 36 файлов тестов / 239 тестов, `npm run build` успешен, изменены ровно три файла моей карточки. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"80c7178d-a60e-436e-ac67-5d3063a48bee\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"message\":\"refactor(courses): rewrite candy-factory and pirate-bay on the shared layoutKit\\n\\nБоба курса были записаны минифицированными однострочниками с локальными\\nодносимвольными хелперами (v, d, w, c, b, sea), из-за чего их нельзя было\\nревьюить и правки конфликтовали. Теперь оба используют общий layoutKit и\\nобычное форматирование, как остальные восемь курсов.\\n\\n- layoutKit: добавлены springPad и conveyor (механики Candy Factory по ТЗ §11),\\n  у bumper появился необязательный depth для брусков-пушек Pirate Bay\\n- candy-factory.ts: 19 -> 180 строк, pirate-bay.ts: 19 -> 156 строк\\n- сохранены id лунок, названия, par и параметры препятствий; bounds теперь\\n  считает fitBounds, hazard-объёмы переведены на конвенцию kit\\n\\nПроверки: npm run typecheck, npm test (36 файлов / 239 тестов), npm run build\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано: `8083931e2850fff54b9465f9e7c0a182073e3c18`. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"80c7178d-a60e-436e-ac67-5d3063a48bee\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"8083931e2850fff54b9465f9e7c0a182073e3c18\",\"message\":\"Курсы candy-factory и pirate-bay переписаны с минифицированных однострочников на общий layoutKit с читаемым форматированием.\\n\\nИзменённые файлы:\\n- src/courses/data/candy-factory.ts (19 -> 180 строк)\\n- src/courses/data/pirate-bay.ts (19 -> 156 строк)\\n- src/courses/data/layoutKit.ts (+47 строк): добавлены springPad и conveyor (темовые механики Candy Factory по ТЗ §11 — их в kit не было), у bumper появился необязательный параметр depth для пушек-брусков 1.2x3 в Pirate Bay. Изменение обратно совместимо, neon-city/haunted-mansion/space-station не затронуты.\\n\\nСохранено: все 18 id лунок, названия, par и параметры препятствий (скорости, distance, restitution, strength, maxSpeed, coupling, penaltyStrokes). Локальные односимвольные хелперы v/d/w/c/b/sea удалены; bounds теперь считает fitBounds из kit, hazard-объёмы (water, reset-zone) переведены на конвенцию kit — объём лежит под плоскостью пола и ловит падающий шар (радиус шара 0.22, центр на площадке ~0.37 выше верха воды 0.3), поведение эквивалентно исходному.\\n\\nПроверки на этом commit: npm run typecheck — чисто; npm test — 36 файлов / 239 тестов пройдено, включая tests/course-data-validation.test.ts (те же 90 лунок, уникальные id, темовые механики spring-pad и conveyor у candy-factory на месте); npm run build — успешно. PR не открывался: слияние ветки выполнит сборщик.\"}\n```\n\nЖду результат worker.\n\n**Сводка.** Решение: переписать оба курса на общий `layoutKit`, а недостающие темовые примитивы (`springPad`, `conveyor`) добавить в сам kit, а не плодить локальные хелперы — это и есть требование ТЗ §11 о переиспользуемых компонентах. Изменённые файлы: `src/courses/data/candy-factory.ts`, `src/courses/data/pirate-bay.ts`, `src/courses/data/layoutKit.ts`. Проверки: typecheck, полный `npm test` (239 тестов), `npm run build` — все успешны на опубликованном commit. Следующий шаг: слияние ветки сборщиком.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "8083931e2850fff54b9465f9e7c0a182073e3c18",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
-      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "headSha": "8083931e2850fff54b9465f9e7c0a182073e3c18",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:17:48.973Z"
+  "createdAt": "2026-09-17T03:18:40.427Z"
 }
