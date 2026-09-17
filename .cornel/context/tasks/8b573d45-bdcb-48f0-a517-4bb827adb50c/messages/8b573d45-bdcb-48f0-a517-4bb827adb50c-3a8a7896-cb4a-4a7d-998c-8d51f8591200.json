@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Нужна успешная проверка на новом headSha — прогоняю полный набор на опубликованном коммите.\n\n```json\n{\"version\":1,\"taskId\":\"8b573d45-bdcb-48f0-a517-4bb827adb50c\",\"commandId\":\"check-8\",\"operation\":\"run\",\"headSha\":\"0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0\",\"command\":\"npm run typecheck && echo TYPECHECK_OK; npx vitest run > vitest-run.log 2>&1 && echo VITEST_OK || echo VITEST_FAIL; grep -E 'Test Files|Tests ' vitest-run.log; rm -f vitest-run.log; npm run build > build.log 2>&1 && echo BUILD_OK || echo BUILD_FAIL; rm -f build.log; echo '=== LONG LINES (src >200) ==='; awk 'length>200 {print FILENAME \\\":\\\" FNR \\\" len=\\\" length}' $(git ls-files src)\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:27:41.874Z"
+}
