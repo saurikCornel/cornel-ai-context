@@ -1,0 +1,17 @@
+{
+  "id": "e2e06210-9969-4fc5-bd04-e4dc17ce1d7e",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+    "output": "     316 src/ui/index.ts\n     446 src/ui/ui.css\n     762 total\n--- MARKERS ---\nsrc/ui/index.ts:7:<<<<<<< HEAD\nsrc/ui/index.ts:32:=======\nsrc/ui/index.ts:303:>>>>>>> 0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0\nsrc/ui/ui.css:197:<<<<<<< HEAD\nsrc/ui/ui.css:234:=======\nsrc/ui/ui.css:446:>>>>>>> 0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0\n--- STAGES ---\nsrc/ui/index.ts stage1:       32\nsrc/ui/index.ts stage2:       36\nsrc/ui/index.ts stage3:      288\nsrc/ui/ui.css stage1:       34\nsrc/ui/ui.css stage2:       38\nsrc/ui/ui.css stage3:      407\n",
+    "outputDigest": "17eef9f57bca3b3d7b728a29f9a4a71e8dbc96d5fad4dd6d0162b7259a4cea3b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:29:32.975Z"
+}
