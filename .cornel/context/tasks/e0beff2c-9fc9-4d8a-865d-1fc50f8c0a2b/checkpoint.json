@@ -2,8 +2,8 @@
   "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
   "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
-  "status": "WAITING_CHATGPT",
-  "summary": "Расхождение head блокирует и `run`, и `publish`. Пробую форму с полем `heads`, чтобы получить/сопоставить фактический SHA ветки.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"check-4\",\"operation\":\"run\",\"heads\":[\"5c3050d91bd69a61cd8d614fdc716690ee24017f\"],\"timeoutSeconds\":120,\"command\":\"git rev-parse HEAD; git status --short; git log --oneline -3\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "status": "RUNNING",
+  "summary": "Поле `heads` — объект, но фактического нового SHA у меня нет. Пробую повторить проверку с прежним headSha: расхождение могло быть гонкой с чужими пушами.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"check-5\",\"operation\":\"run\",\"headSha\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\",\"timeoutSeconds\":600,\"command\":\"set -e\\ngit rev-parse HEAD\\nif [ ! -x node_modules/.bin/tsc ]; then echo 'installing deps'; npm install --no-audit --no-fund; fi\\nnode_modules/.bin/tsc -b --pretty false\\necho 'TYPECHECK OK'\\ngit status --short\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -46,7 +46,13 @@
       "status": "FAILED",
       "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
       "exitCode": null
+    },
+    {
+      "commandId": "check-5",
+      "status": "STARTED",
+      "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:56:01.568Z"
+  "createdAt": "2026-09-17T01:56:26.227Z"
 }

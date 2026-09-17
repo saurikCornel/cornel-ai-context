@@ -1,0 +1,12 @@
+{
+  "id": "2ddeef27-62f4-438c-98b2-0466f30211cf",
+  "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-5",
+    "operation": "run",
+    "command": "set -e\ngit rev-parse HEAD\nif [ ! -x node_modules/.bin/tsc ]; then echo 'installing deps'; npm install --no-audit --no-fund; fi\nnode_modules/.bin/tsc -b --pretty false\necho 'TYPECHECK OK'\ngit status --short"
+  },
+  "createdAt": "2026-09-17T01:56:26.224Z"
+}
