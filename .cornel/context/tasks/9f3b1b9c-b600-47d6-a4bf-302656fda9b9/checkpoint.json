@@ -1,9 +1,9 @@
 {
   "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
   "branch": "cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b",
-  "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+  "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
   "status": "RUNNING",
-  "summary": "Изменены ровно два файла моей карточки. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"message\":\"fix(runtime): drive sliding walls, doors and pendulums from the hole clock\\n\\nHoleRuntime treated only spinner/windmill/gate/platform as moving, so sliding-wall,\\ndoor and pendulum descriptors got fixed bodies and stood still. isMoving now covers\\nevery MovingObstacle type via an exhaustive record, and update() is built on the\\npure helpers: rotationAngle() from obstacles/rotating for rotate and swing motion\\n(pendulums carry their body along the arc around the pivot) and sampleMover() from\\nobstacles/movers for translate motion, which brings loop, once and end pauses.\\nAdds moverPose() to read a kinematic pose back and a test covering the three types.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано (5d42db4e). Прогоняю проверку на новом headSha перед finish.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"5d42db4e649a3ac6d72d6852e40655e29478a987\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && npm run typecheck && npm test 2>&1 | grep -vi 'getContext' | tail -8 && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -115,10 +115,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-1",
       "status": "STARTED",
-      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:29:15.718Z"
+  "createdAt": "2026-09-17T03:29:39.899Z"
 }

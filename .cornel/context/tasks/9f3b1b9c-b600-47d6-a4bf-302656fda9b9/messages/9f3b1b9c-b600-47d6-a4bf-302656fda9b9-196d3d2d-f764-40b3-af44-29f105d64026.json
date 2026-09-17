@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Опубликовано (5d42db4e). Прогоняю проверку на новом headSha перед finish.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"5d42db4e649a3ac6d72d6852e40655e29478a987\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && npm run typecheck && npm test 2>&1 | grep -vi 'getContext' | tail -8 && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:29:39.895Z"
+}

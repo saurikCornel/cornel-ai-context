@@ -1,0 +1,17 @@
+{
+  "id": "97074598-30ec-46ef-8d81-50fc8cbae419",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f2e7fbf39d39e03a1fe2245632a2e7882cab0e6b",
+    "output": "Лимит ударов больше не зашит числом 8: бюджет лунки считается через resolveMaxShots(hole, settings).\n\nИзменения (коммит f2e7fbf, ветка cornel/limit-udarov-zashit-chislom-8-vmesto-max-b43996):\n- src/game/Game.ts: удалён STROKE_LIMIT = 8; настройки матча больше не задают strokeLimitPerHole принудительно; finishTurn сравнивает strokes с resolveMaxShots(this.hole, this.match.settings).\n- src/contracts/game.ts: MatchSettings.strokeLimitPerHole стал необязательным override, по умолчанию действует правило ТЗ §9 (maxShots лунки, иначе par + 7).\n- src/courses/HoleBuilder.ts: HoleBuilderOptions принимает maxShots и переносит его в дескриптор лунки (проверка maxShots >= par уже есть в validateHole).\n- src/courses/data/green-hills.ts: HoleSetup поддерживает maxShots; короткой par-2 лунке gh-01-meadow-line задан явный maxShots = 6 (par + 7 = 9 для коридора 14 м избыточно).\n- src/game/strokeBudget.test.ts (новый, 4 теста): par-5 лунка без maxShots даёт лимит 12 и штрафной счёт 13 (strokeLimitScore), gh-01 отдаёт 6 из данных (source 'hole'), ни одна лунка всех 10 курсов не резолвится в плоский лимит, прогон MatchManager на реальной par-5 лунке после 12 ударов закрывает лунку со strokes = 13 и strokeLimitReached.\n\nПроверки на опубликованном коммите f2e7fbf: npm run typecheck — ОК; npm test — 37 файлов, 243 теста пройдены; npm run build — успешно. PR не открывал, слияние ветки за сборщиком.",
+    "outputDigest": "303caecfc6945c806180684daefdb4e755f6a0f4574e6414c90a78298151d9f5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:29:39.799Z"
+}

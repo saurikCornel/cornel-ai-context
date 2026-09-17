@@ -1,0 +1,12 @@
+{
+  "id": "03a68e2f-fe65-476d-be90-782929295802",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-1",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && npm run typecheck && npm test 2>&1 | grep -vi 'getContext' | tail -8 && npm run build 2>&1 | tail -3"
+  },
+  "createdAt": "2026-09-17T03:29:39.895Z"
+}
