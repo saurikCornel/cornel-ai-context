@@ -1,0 +1,12 @@
+{
+  "id": "3f595464-b850-4e97-aef8-d31be10d37f4",
+  "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "merge-1",
+    "operation": "run",
+    "command": "git fetch origin cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656 && git merge --no-edit FETCH_HEAD; echo \"MERGE_EXIT=$?\"; git status --short"
+  },
+  "createdAt": "2026-09-17T03:43:23.150Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "01ce969e-9397-46df-bee8-e51907133bbf",
+  "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656 -> FETCH_HEAD\nAuto-merging src/game/Game.ts\nCONFLICT (content): Merge conflict in src/game/Game.ts\nAutomatic merge failed; fix conflicts and then commit the result.\nMERGE_EXIT=1\nA  src/assets/audioManifest.test.ts\nA  src/assets/audioManifest.ts\nA  src/core/QualitySettings.ts\nM  src/core/Renderer.ts\nA  src/effects/FeedbackSystem.ts\nA  src/effects/feedback.test.ts\nM  src/effects/index.ts\nUU src/game/Game.ts\nA  src/game/feedback.test.ts\nM  src/main.ts\n",
+    "outputDigest": "a15643ff6b17e919e95cebaaf031b2de20be560cf44c63d500a3c69f0efe4cbc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:43:27.595Z"
+}
