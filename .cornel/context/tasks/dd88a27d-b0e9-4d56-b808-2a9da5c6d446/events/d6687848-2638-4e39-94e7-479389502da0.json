@@ -1,0 +1,17 @@
+{
+  "id": "d6687848-2638-4e39-94e7-479389502da0",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-modes-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "     173 src/camera/CameraModes.ts\n      11 src/camera/index.ts\n     184 total\n",
+    "outputDigest": "ac333fdf742415f55f976e286295d18d3443b90cd2b8901c55506eeb674493d5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:15:15.196Z"
+}

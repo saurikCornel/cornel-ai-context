@@ -1,0 +1,17 @@
+{
+  "id": "73f6a724-ccee-47a5-a1d3-bd403845fa9f",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "### src/obstacles/rotating.ts (строки 1-80 из 121)\n1: import type { Vec3 } from '../contracts/math';\n2: import {\n3:   addVec3,\n4:   cloneVec3,\n5:   dotVec3,\n6:   normalizeVec3,\n7:   rotateAroundY,\n8:   scaleVec3,\n9:   subVec3,\n10:   vec3,\n11: } from './vec';\n12: \n13: export type RotatingKind = 'bar' | 'windmill' | 'spinner' | 'pendulum';\n14: \n15: export interface RotatingConfig {\n16:   id: string;\n17:   kind: RotatingKind;\n18:   center: Vec3;\n19:   armLength: number;\n20:   speed: number;\n21:   phase?: number;\n22:   clockwise?: boolean;\n23:   swingAngle?: number;\n24:   enabled?: boolean;\n25: }\n26: \n27: /** Pendulums swing this far to each side unless the hole overrides it. */\n28: const DEFAULT_SWING_ANGLE = Math.PI / 3;\n29: \n30: function finite(value: number | undefined, fallback = 0): number {\n31:   return typeof value === 'number' && Number.isFinite(value) ? value : fallback;\n32: }\n33: \n34: function isFiniteVec3(v: Vec3 | null | undefined): boolean {\n35:   return !!v && Number.isFinite(v.x) && Number.isFinite(v.y) && Number.isFinite(v.z);\n36: }\n37: \n38: function spinSign(config: RotatingConfig): number {\n39:   return config.clockwise === true ? -1 : 1;\n40: }\n41: \n42: /** Disabled obstacles keep their pose but stop moving. */\n43: function activeSpeed(config: RotatingConfig): number {\n44:   return config.enabled === false ? 0 : finite(config.speed);\n45: }\n46: \n47: export function rotationAngle(config: RotatingConfig, elapsed: number): number {\n48:   const phase = finite(config.phase);\n49:   const speed = activeSpeed(config);\n50:   if (speed === 0) return phase;\n51:   const time = finite(elapsed);\n52:   if (config.kind === 'pendulum') {\n53:     const swing = finite(config.swingAngle, DEFAULT_SWING_ANGLE);\n54:     return phase + swing * Math.sin(speed * time);\n55:   }\n56:   return phase + spinSign(config) * speed * time;\n57: }\n58: \n59: export function armTipPosition(config: RotatingConfig, elapsed: number): Vec3 {\n60:   const center = isFiniteVec3(config.center) ? cloneVec3(config.center) : vec3();\n61:   const arm = vec3(finite(config.armLength), 0, 0);\n62:   return addVec3(center, rotateAroundY(arm, rotationAngle(config, elapsed)));\n63: }\n64: \n65: /** d(angle)/dt around the Y axis. */\n66: function angularVelocity(config: RotatingConfig, elapsed: number): number {\n67:   const speed = activeSpeed(config);\n68:   if (speed === 0) return 0;\n69:   const time = finite(elapsed);\n70:   if (config.kind === 'pendulum') {\n71:     const swing = finite(config.swingAngle, DEFAULT_SWING_ANGLE);\n72:     return swing * speed * Math.cos(speed * time);\n73:   }\n74:   return spinSign(config) * speed;\n75: }\n76: \n77: export function surfaceVelocityAt(config: RotatingConfig, point: Vec3, elapsed: number): Vec3 {\n78:   const omega = angularVelocity(config, elapsed);\n79:   if (omega === 0 || !isFiniteVec3(point) || !isFiniteVec3(config.center)) return vec3();\n80:   const radius = subVec3(point, config.center);\n… ещё 41 строк",
+    "outputDigest": "b156db24c5252aa1312c19da7cfcda3a75277ce8098cc954163a8eb38fd62087",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:15:13.306Z"
+}
