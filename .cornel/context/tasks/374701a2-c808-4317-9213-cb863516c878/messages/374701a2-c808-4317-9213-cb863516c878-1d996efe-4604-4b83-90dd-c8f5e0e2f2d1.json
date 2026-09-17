@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Слияние восстановлено из локально сохранившегося объекта `87e05bb` («docs: rewrite README to match the actual build state»), конфликт разрешён тем же способом: 145 строк, маркеров нет, все разделы входящей переработки на месте (`Current state`, `Project structure`, `Debug flags`, `Audio assets`, `Known gaps`) плюс актуальная секция Test. Typecheck и build прошли чисто. Публикую слияние.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"012ffb90c6c91afd0be84e73d07ce4a07a511c7a\",\"message\":\"Merge «README описывает функциональность, которой нет в сборке»: разрешён конфликт README.md\\n\\nСохранена переработка README из ветки c8ba46 (87e05bb): разделы Current state,\\ntaблица реализованных, но не подключённых модулей, точная структура src/,\\nреальное поведение debug-флагов, Audio assets и Known gaps.\\n\\nСекция Test взята со стороны cornel/office: в слитом дереве package.json уже\\nсодержит \\\"test\\\": \\\"vitest run\\\", а в tests/ пять файлов и все .test.ts, поэтому\\nописание двух раннеров, node:test и нерабочего tests/save-manager.test.mjs с\\n.test-build/ устарело. Из Known gaps по той же причине убран пункт про\\nотсутствие агрегирующего тестового скрипта.\\n\\nПроверки: npm run typecheck, npm test, npm run build.\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:48:04.296Z"
+}
