@@ -3,7 +3,7 @@
   "branch": "cornel/slit-progress-igroka-ne-sohranyaetsya-sa-6504e2",
   "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"6504e250-f048-46e4-bb78-33f15ab141f9\",\"commandId\":\"read-6\",\"operation\":\"read\",\"headSha\":\"168a63b4d9a5ca746281bf07acc6873303139434\",\"paths\":[\"src/ui/index.ts:29-44\"]}\n```\n\nЖду результат от worker.\n\n",
+  "summary": "Локальный `origin/cornel/office` ушёл на 45e3ae6 — похоже, мою ветку обновили до новой головы офиса. Проверяю этот SHA безопасной операцией чтения.\n\n```json\n{\"version\":1,\"taskId\":\"6504e250-f048-46e4-bb78-33f15ab141f9\",\"commandId\":\"read-7\",\"operation\":\"read\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"paths\":[\"src/ui/index.ts:29-44\"]}\n```\n\nЖду результат от worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "read-6",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
+      "exitCode": null
+    },
+    {
+      "commandId": "read-7",
+      "status": "STARTED",
+      "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:43:47.885Z"
+  "createdAt": "2026-09-17T04:45:12.334Z"
 }
