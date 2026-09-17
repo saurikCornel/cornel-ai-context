@@ -1,0 +1,17 @@
+{
+  "id": "e9888828-cd98-4b70-9f30-5d977f8fade0",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-9",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "### src/physics/PhysicsWorld.ts (строки 1-29 из 29)\n1: import RAPIER from '@dimforge/rapier3d-compat';\n2: import { GAME_CONFIG } from '../config/GameConfig';\n3: import type { Vec3 } from '../contracts/math';\n4: \n5: export class PhysicsWorld {\n6:   readonly world: RAPIER.World;\n7:   private accumulator = 0;\n8:   readonly fixedStep: number;\n9: \n10:   constructor(gravity: Vec3 = GAME_CONFIG.physics.gravity, fixedStep = 1 / GAME_CONFIG.targetFps) {\n11:     this.world = new RAPIER.World(gravity);\n12:     this.fixedStep = fixedStep;\n13:     this.world.timestep = fixedStep;\n14:   }\n15: \n16:   step(deltaSeconds: number, beforeStep?: (dt: number) => void): void {\n17:     this.accumulator += Math.min(Math.max(deltaSeconds, 0), 0.25);\n18:     while (this.accumulator >= this.fixedStep) {\n19:       beforeStep?.(this.fixedStep);\n20:       this.world.step();\n21:       this.accumulator -= this.fixedStep;\n22:     }\n23:   }\n24: \n25:   dispose(): void {\n26:     this.world.free();\n27:   }\n28: }\n29:",
+    "outputDigest": "825001a6252f620d566ae90d30882606061a543041df748a5ba9ecc2c2787fde",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:23:01.605Z"
+}
