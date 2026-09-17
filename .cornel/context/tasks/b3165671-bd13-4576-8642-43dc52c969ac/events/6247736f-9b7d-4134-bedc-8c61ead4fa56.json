@@ -1,0 +1,17 @@
+{
+  "id": "6247736f-9b7d-4134-bedc-8c61ead4fa56",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "     175 src/main.ts\n M src/core/Renderer.ts\n M src/effects/index.ts\n M src/game/Game.ts\n M src/main.ts\n?? src/assets/audioManifest.ts\n?? src/core/QualitySettings.ts\n?? src/effects/FeedbackSystem.ts\n",
+    "outputDigest": "13daf502f543acade3f3923bedd67c241078fbb62d20c8dc154faad9d69b93ac",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:37:26.614Z"
+}
