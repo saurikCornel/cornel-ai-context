@@ -20,11 +20,13 @@
   "branch": "cornel/slit-progress-igroka-ne-sohranyaetsya-sa-6504e2",
   "baseSha": "168a63b4d9a5ca746281bf07acc6873303139434",
   "workspaceSyncedSha": "168a63b4d9a5ca746281bf07acc6873303139434",
-  "status": "READY",
+  "status": "RUNNING",
   "createdAt": "2026-09-17T04:41:34.603Z",
-  "updatedAt": "2026-09-17T04:41:38.012Z",
+  "updatedAt": "2026-09-17T04:41:53.812Z",
   "issue": 113,
-  "chatUrl": null,
+  "chatUrl": "cli://claude/d5f7323d-f50f-48ee-ab3f-eeca7767915f",
   "error": null,
-  "cliActivity": "Claude CLI: запускается (opus)"
+  "cliActivity": null,
+  "cliSession": "d5f7323d-f50f-48ee-ab3f-eeca7767915f",
+  "browserError": null
 }
