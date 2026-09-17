@@ -3,7 +3,7 @@
   "branch": "cornel/reformat-minified-src-dev-modules-60f661",
   "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
   "status": "RUNNING",
-  "summary": "Изменены только три целевых файла. Запускаю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"60f661d1-a07b-4ecb-bc83-b0a9a43f5736\",\"commandId\":\"verify-dev-1\",\"operation\":\"run\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/input src/dev && npx tsc -b --pretty false && git diff --stat\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Зависимости не установлены в этой рабочей копии. Ставлю и повторяю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"60f661d1-a07b-4ecb-bc83-b0a9a43f5736\",\"commandId\":\"verify-dev-2\",\"operation\":\"run\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"timeoutSeconds\":600,\"command\":\"npm install --no-audit --no-fund >/dev/null 2>&1; npx vitest run src/input src/dev && npx tsc -b --pretty false && git diff --stat\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-dev-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "verify-dev-1",
+      "status": "FAILED",
+      "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+      "exitCode": 1
+    },
+    {
+      "commandId": "verify-dev-2",
       "status": "STARTED",
       "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T05:09:11.095Z"
+  "createdAt": "2026-09-17T05:09:26.557Z"
 }
