@@ -3,7 +3,7 @@
   "branch": "cornel/polnyy-progon-testov-padaet-net-skripta-ccab25",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "node_modules в рабочей копии нет — сначала установка зависимостей, затем baseline.\n\n```json\n{\"version\":1,\"taskId\":\"ccab2579-71ad-4d17-82a6-894c63ff810d\",\"commandId\":\"install-1\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"npm install --no-audit --no-fund 2>&1 | tail -15; echo \\\"---INSTALL_EXIT=${PIPESTATUS[0]}---\\\"; node -p \\\"'vitest ' + require('vitest/package.json').version\\\"; npx vitest run --reporter=basic > /tmp/vitest-baseline.log 2>&1; echo \\\"---VITEST_EXIT=$?---\\\"; tail -60 /tmp/vitest-baseline.log\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "`basic` reporter в vitest 5 больше нет. Повторяю прогон с дефолтным репортером.\n\n```json\n{\"version\":1,\"taskId\":\"ccab2579-71ad-4d17-82a6-894c63ff810d\",\"commandId\":\"baseline-2\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"npx vitest run > /tmp/vitest-baseline.log 2>&1; echo \\\"---VITEST_EXIT=$?---\\\"; grep -E 'Test Files|Tests |No test suite|FAIL|Error:' /tmp/vitest-baseline.log | head -40\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "baseline-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "install-1",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "baseline-2",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:12:09.530Z"
+  "createdAt": "2026-09-17T02:13:16.859Z"
 }
