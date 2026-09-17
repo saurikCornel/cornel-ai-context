@@ -3,7 +3,7 @@
   "branch": "cornel/slit-chast-moduley-zapisana-minificirova-d49254",
   "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
   "status": "RUNNING",
-  "summary": "Локальные refs устарели, а сетевой запрос без одобрения недоступен. Пробую ещё раз с исходным SHA назначения — возможно, рассинхрон был временным.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"probe-2\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git rev-parse HEAD; git rev-parse MERGE_HEAD 2>/dev/null || echo no-merge; git status --short | head -5; head -4 src/ui/index.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Рассинхрон был временным — рабочая копия цела, merge в процессе, index.ts сохранён. Продолжаю с CSS.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"inspect-6\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"mkdir -p /tmp/mrg && git show :3:src/ui/ui.css > /tmp/mrg/ui.css.3 && echo '=== THEIRS ui.css tail (last 40 lines) ===' && tail -40 /tmp/mrg/ui.css.3 | cat -n; echo '=== leaderboard/note rules in theirs ==='; grep -n 'cpa-note\\\\|cpa-leaderboard\\\\|leaderboard' /tmp/mrg/ui.css.3 | head -20; echo '=== total lines ==='; wc -l /tmp/mrg/ui.css.3\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "probe-2",
+      "status": "SUCCEEDED",
+      "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-6",
       "status": "STARTED",
       "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:35:01.342Z"
+  "createdAt": "2026-09-17T04:35:19.915Z"
 }
