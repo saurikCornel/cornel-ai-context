@@ -1,0 +1,12 @@
+{
+  "id": "292d0163-2b2e-4020-abcb-76a5c0f9cb1f",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "readme-check-3",
+    "operation": "run",
+    "command": "node -v; npm -v; echo '--- typecheck ---'; npm run typecheck > /tmp/cpa-tc.log 2>&1; echo \"typecheck_exit=$?\"; tail -20 /tmp/cpa-tc.log; echo '--- test:ui ---'; npm run test:ui > /tmp/a.log 2>&1; echo \"ui_exit=$?\"; grep -E 'Test Files|Tests ' /tmp/a.log; echo '--- test:input ---'; npm run test:input > /tmp/b.log 2>&1; echo \"input_exit=$?\"; grep -E 'Test Files|Tests ' /tmp/b.log; echo '--- test:camera ---'; npm run test:camera > /tmp/c.log 2>&1; echo \"camera_exit=$?\"; grep -E 'Test Files|Tests ' /tmp/c.log; echo '--- node --test tests ---'; node --test tests/course-data-validation.test.ts tests/leaderboard-generator.test.ts tests/leaderboard-render.test.ts tests/physics/helpers.test.ts > /tmp/d.log 2>&1; echo \"nodetest_exit=$?\"; tail -15 /tmp/d.log; echo '--- grep test-build refs ---'; git grep -n 'test-build' -- . | head -10; echo '--- gitignore ---'; cat .gitignore"
+  },
+  "createdAt": "2026-09-17T02:13:53.830Z"
+}

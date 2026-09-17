@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Тесты в `tests/` написаны на `node:test`, а не на vitest — отсюда «No test suite found»; `save-manager.test.mjs` импортирует несуществующий `.test-build/`. Уточняю typecheck, версию Node и поведение `node --test`.\n\n```json\n{\"version\":1,\"taskId\":\"c8ba46b9-2646-4ae8-b256-ef943a1c8c80\",\"commandId\":\"readme-check-3\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"node -v; npm -v; echo '--- typecheck ---'; npm run typecheck > /tmp/cpa-tc.log 2>&1; echo \\\"typecheck_exit=$?\\\"; tail -20 /tmp/cpa-tc.log; echo '--- test:ui ---'; npm run test:ui > /tmp/a.log 2>&1; echo \\\"ui_exit=$?\\\"; grep -E 'Test Files|Tests ' /tmp/a.log; echo '--- test:input ---'; npm run test:input > /tmp/b.log 2>&1; echo \\\"input_exit=$?\\\"; grep -E 'Test Files|Tests ' /tmp/b.log; echo '--- test:camera ---'; npm run test:camera > /tmp/c.log 2>&1; echo \\\"camera_exit=$?\\\"; grep -E 'Test Files|Tests ' /tmp/c.log; echo '--- node --test tests ---'; node --test tests/course-data-validation.test.ts tests/leaderboard-generator.test.ts tests/leaderboard-render.test.ts tests/physics/helpers.test.ts > /tmp/d.log 2>&1; echo \\\"nodetest_exit=$?\\\"; tail -15 /tmp/d.log; echo '--- grep test-build refs ---'; git grep -n 'test-build' -- . | head -10; echo '--- gitignore ---'; cat .gitignore\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:13:53.829Z"
+}
