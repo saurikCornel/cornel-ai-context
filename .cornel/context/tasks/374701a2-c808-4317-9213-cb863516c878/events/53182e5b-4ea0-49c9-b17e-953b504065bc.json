@@ -1,0 +1,11 @@
+{
+  "id": "53182e5b-4ea0-49c9-b17e-953b504065bc",
+  "taskId": "374701a2-c808-4317-9213-cb863516c878",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "redo-2",
+    "headSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a"
+  },
+  "createdAt": "2026-09-17T02:47:24.992Z"
+}

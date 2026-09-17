@@ -1,0 +1,11 @@
+{
+  "id": "6bbf0f85-a571-4cdd-8116-f4b13e36ffe4",
+  "taskId": "374701a2-c808-4317-9213-cb863516c878",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "redo-2",
+    "headSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a"
+  },
+  "createdAt": "2026-09-17T02:47:27.345Z"
+}
