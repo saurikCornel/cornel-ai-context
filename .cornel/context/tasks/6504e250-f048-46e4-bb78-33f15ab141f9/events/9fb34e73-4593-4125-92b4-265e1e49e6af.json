@@ -1,0 +1,17 @@
+{
+  "id": "9fb34e73-4593-4125-92b4-265e1e49e6af",
+  "taskId": "6504e250-f048-46e4-bb78-33f15ab141f9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597 -> FETCH_HEAD\nAuto-merging src/main.ts\nCONFLICT (content): Merge conflict in src/main.ts\nAuto-merging src/ui/index.ts\nCONFLICT (content): Merge conflict in src/ui/index.ts\nAutomatic merge failed; fix conflicts and then commit the result.\nEXIT=1\nA  src/core/ProfileStore.ts\nM  src/core/SaveManager.ts\nA  src/core/matchProgress.test.ts\nA  src/core/profileStore.test.ts\nM  src/game/Game.ts\nUU src/main.ts\nM  src/player/profile.ts\nM  src/player/types.ts\nUU src/ui/index.ts\n",
+    "outputDigest": "762beb52708adbd4c3f3f3e6bd6f6a97be84cb806e9e1819b100af1dc0f467b1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:41:57.882Z"
+}

@@ -1,9 +1,9 @@
 {
   "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
   "branch": "cornel/slit-chast-moduley-zapisana-minificirova-d49254",
-  "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+  "headSha": "85c33d82206067b6363859e4e050d8e1e34e2db6",
   "status": "RUNNING",
-  "summary": "`dist/` и `node_modules/` игнорируются. Публикую слияние.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"message\":\"Слить «Часть модулей записана минифицированными однострочниками»: разминифицированный код + экран Leaderboard\\n\\nКонфликты src/ui/index.ts и src/ui/ui.css разрешены объединением обеих сторон:\\n- за основу взята разминифицированная (многострочная) версия встречной ветки;\\n- поверх неё восстановлена функциональность офиса: экран Leaderboard (тип Screen, пункт меню, AppUIOptions.playerRating, LEADERBOARD_SIZE, leaderboardScreen(), mountLeaderboard(), ветка в view() и вызов в render()), записанная в том же многострочном стиле;\\n- в ui.css к разминифицированным правилам дописаны стили офиса .cpa-leaderboard, .cpa-leaderboard .leaderboard и .cpa-note в развёрнутом форматировании.\\n\\nПроверки: tsc -b без ошибок, vitest run — 45 файлов / 286 тестов пройдены, vite build успешен.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано как `85c33d8`. Проверяю, что коммит записан как настоящее слияние (два родителя) и содержимое на месте.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"verify-4\",\"operation\":\"run\",\"headSha\":\"85c33d82206067b6363859e4e050d8e1e34e2db6\",\"command\":\"echo '=== commit ==='; git log --oneline -1; echo '=== parents ==='; git cat-file -p HEAD | grep '^parent'; echo '=== status ==='; git status --short | head -5; echo '=== leaderboard preserved ==='; grep -n \\\"leaderboardScreen\\\\|mountLeaderboard\\\\|'leaderboard'\\\\|playerRating\\\" src/ui/index.ts | head -12; echo '=== css ==='; grep -n 'cpa-leaderboard\\\\|cpa-note' src/ui/ui.css; echo '=== deminified check ==='; wc -l src/ui/index.ts src/ui/ui.css src/courses/data/pirate-bay.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -109,10 +109,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "85c33d82206067b6363859e4e050d8e1e34e2db6",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-4",
       "status": "STARTED",
-      "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+      "headSha": "85c33d82206067b6363859e4e050d8e1e34e2db6",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:41:34.926Z"
+  "createdAt": "2026-09-17T04:41:54.605Z"
 }
