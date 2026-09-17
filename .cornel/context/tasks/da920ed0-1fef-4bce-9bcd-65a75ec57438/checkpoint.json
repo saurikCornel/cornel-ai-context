@@ -3,7 +3,7 @@
   "branch": "cornel/otsutstvuet-maxshots-i-shtrafnoy-rezulta-da920e",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "`tsc` не найден — в рабочей копии нет установленных зависимостей. Ставлю их и повторяю проверки (файл теста уже записан).\n\n```json\n{\"version\":1,\"taskId\":\"da920ed0-1fef-4bce-9bcd-65a75ec57438\",\"commandId\":\"check-2\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"set -e\\nls src/gameplay/StrokeLimit.ts src/gameplay/strokeLimit.test.ts\\nif [ ! -x node_modules/.bin/tsc ]; then npm install --no-audit --no-fund; fi\\nnode_modules/.bin/tsc -b --pretty false\\nnode_modules/.bin/vitest run\",\"timeoutSeconds\":600}\n```\n\nЖду результат по `check-2`.\n\n",
+  "summary": "Typecheck прошёл (`tsc -b` отработал до vitest), все 173 теста зелёные, включая новые 7 в `src/gameplay/strokeLimit.test.ts`. Три упавших «suite» — предсуществующие и к карточке не относятся: `tests/leaderboard-*.test.ts` написаны под `node:test` (vitest не видит в них suite, сами тесты там печатают ✔), а `tests/save-manager.test.mjs` требует артефакт `.test-build/`, которого нет без предварительной сборки. Ни один из этих файлов я не трогал.\n\nПубликую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"da920ed0-1fef-4bce-9bcd-65a75ec57438\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(gameplay): add maxShots budget with penalty score on stroke limit\\n\\n- Hole.maxShots (optional) + validation in validateHole\\n- StrokeLimit.ts: resolveMaxShots (hole data > match settings > par + 7), strokeLimitScore\\n- ScoreManager.applyStrokeLimit books penalty result (maxShots + 1) and strokeLimitReached\\n- MatchManager auto-closes the hole on ball-stopped when the budget is spent\\n- unit tests for budget resolution, penalty score and auto-completion\"}\n```\n\nЖду результат по `publish-1` (новый SHA), затем отправлю `finish` с итогом.\n\n",
   "commands": [
     {
       "commandId": "impl-1a",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "check-2",
+      "status": "FAILED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 1
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:17:26.463Z"
+  "createdAt": "2026-09-17T02:18:49.393Z"
 }

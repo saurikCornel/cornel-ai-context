@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Typecheck прошёл (`tsc -b` отработал до vitest), все 173 теста зелёные, включая новые 7 в `src/gameplay/strokeLimit.test.ts`. Три упавших «suite» — предсуществующие и к карточке не относятся: `tests/leaderboard-*.test.ts` написаны под `node:test` (vitest не видит в них suite, сами тесты там печатают ✔), а `tests/save-manager.test.mjs` требует артефакт `.test-build/`, которого нет без предварительной сборки. Ни один из этих файлов я не трогал.\n\nПубликую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"da920ed0-1fef-4bce-9bcd-65a75ec57438\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(gameplay): add maxShots budget with penalty score on stroke limit\\n\\n- Hole.maxShots (optional) + validation in validateHole\\n- StrokeLimit.ts: resolveMaxShots (hole data > match settings > par + 7), strokeLimitScore\\n- ScoreManager.applyStrokeLimit books penalty result (maxShots + 1) and strokeLimitReached\\n- MatchManager auto-closes the hole on ball-stopped when the budget is spent\\n- unit tests for budget resolution, penalty score and auto-completion\"}\n```\n\nЖду результат по `publish-1` (новый SHA), затем отправлю `finish` с итогом.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:18:49.384Z"
+}
