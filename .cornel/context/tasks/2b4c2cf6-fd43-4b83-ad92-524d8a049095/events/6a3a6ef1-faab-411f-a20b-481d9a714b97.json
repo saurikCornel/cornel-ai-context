@@ -1,0 +1,12 @@
+{
+  "id": "6a3a6ef1-faab-411f-a20b-481d9a714b97",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-15",
+    "operation": "run",
+    "command": "cd src/courses/data && for f in *.ts; do if [ $f != layoutKit.ts ]; then printf '%-24s md5=%s surfaces=%s cupX=' $f $(grep -o 'size: {[^}]*}' $f | sort | md5 | cut -c1-10) $(grep -c shape: $f); grep -o 'cup: { position: { x: [-0-9.]*' $f | sed 's/.*x: //' | tr '\\n' ' '; echo; fi; done; echo; echo LAYOUTKIT_USERS:; grep -l layoutKit *.ts"
+  },
+  "createdAt": "2026-09-17T04:03:56.265Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-2b4c2c",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Подтверждено: ancient-temple, arctic-base и volcano — один и тот же макет (совпадают спауны, размеры полов и состав препятствий). Сверяю остальные курсы отпечатком геометрии.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-14\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"cd src/courses/data; echo '== отпечаток геометрии (md5 списка размеров) =='; for f in *.ts; do [ \\\"$f\\\" = layoutKit.ts ] && continue; echo -n \\\"$f  \\\"; grep -o 'size: {[^}]*}' $f | sort | md5 | cut -c1-12; done; echo; echo '== число поверхностей и cup.x =='; for f in *.ts; do [ \\\"$f\\\" = layoutKit.ts ] && continue; echo -n \\\"$f surfaces=$(grep -o \\\\\\\"shape: '\\\\\\\" $f | wc -l | tr -d ' ') cupX: \\\"; grep -o 'cup: { position: { x: [-0-9.]*' $f | sed 's/.*x: //' | tr '\\\\n' ' '; echo; done; echo; echo '== курсы, построенные через layoutKit =='; grep -l layoutKit *.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Ошибка кавычек в скрипте. Повторяю проще.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-15\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"cd src/courses/data && for f in *.ts; do if [ $f != layoutKit.ts ]; then printf '%-24s md5=%s surfaces=%s cupX=' $f $(grep -o 'size: {[^}]*}' $f | sort | md5 | cut -c1-10) $(grep -c shape: $f); grep -o 'cup: { position: { x: [-0-9.]*' $f | sed 's/.*x: //' | tr '\\\\n' ' '; echo; fi; done; echo; echo LAYOUTKIT_USERS:; grep -l layoutKit *.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -85,10 +85,16 @@
     },
     {
       "commandId": "check-14",
+      "status": "FAILED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 2
+    },
+    {
+      "commandId": "check-15",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:03:41.469Z"
+  "createdAt": "2026-09-17T04:03:56.270Z"
 }

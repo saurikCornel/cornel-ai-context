@@ -1,0 +1,17 @@
+{
+  "id": "4e026257-2960-4c6d-a2ce-08117b4bd3db",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-15",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "ancient-temple.ts        md5=33cc322087 surfaces=16 cupX=0 0 2 0 0 2 0 0 2 \narctic-base.ts           md5=33cc322087 surfaces=16 cupX=0 0 2 0 0 2 0 0 2 \ncandy-factory.ts         md5=d41d8cd98f surfaces=0 cupX=\nchaos-dimension.ts       md5=d41d8cd98f surfaces=3 cupX=\ngreen-hills.ts           md5=d41d8cd98f surfaces=0 cupX=\nhaunted-mansion.ts       md5=d41d8cd98f surfaces=0 cupX=\nneon-city.ts             md5=d41d8cd98f surfaces=0 cupX=\npirate-bay.ts            md5=d41d8cd98f surfaces=0 cupX=\nspace-station.ts         md5=d41d8cd98f surfaces=0 cupX=\nvolcano.ts               md5=3b41a2decc surfaces=16 cupX=0 0 2 0 0 2 0 0 2 \n\nLAYOUTKIT_USERS:\ncandy-factory.ts\nhaunted-mansion.ts\nneon-city.ts\npirate-bay.ts\nspace-station.ts\n",
+    "outputDigest": "d9e3731bcfc5e53d40db13236a62820451d27a5cee7f1b97018f0008d3a7b220",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:03:58.566Z"
+}
