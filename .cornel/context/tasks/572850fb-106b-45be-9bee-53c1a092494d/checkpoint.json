@@ -3,7 +3,7 @@
   "branch": "cornel/three-js-hole-scene-builder-572850",
   "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "RUNNING",
-  "summary": "Нет файла src/core/HoleSceneBuilder.ts. Проверь путь и файл.\n\n```json\n{\"commandId\":\"apple-ff9f2090\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"finish\",\"operation\":\"finish\",\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"version\":1}\n```\n\n",
+  "summary": "Нет файла src/core/HoleSceneBuilder.ts. Проверь путь и повторите.\n\n```json\n{\"commandId\":\"apple-0c16008c\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"Нет файла src/core/HoleSceneBuilder.ts. Проверь путь и повторите.\",\"operation\":\"finish\",\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"version\":1}\n```\n\n",
   "commands": [
     {
       "commandId": "apple-32420d36",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "apple-ff9f2090",
+      "status": "FAILED",
+      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+      "exitCode": null
+    },
+    {
+      "commandId": "apple-0c16008c",
       "status": "STARTED",
       "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T00:44:29.388Z"
+  "createdAt": "2026-09-17T00:45:06.199Z"
 }
