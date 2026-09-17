@@ -1,0 +1,14 @@
+{
+  "id": "fdaf0206-b0de-42af-9b48-ed701398c05c",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: src/courses/data/haunted-mansion.ts, src/courses/data/neon-city.ts, src/courses/data/space-station.ts",
+  "detail": {
+    "files": [
+      "src/courses/data/haunted-mansion.ts",
+      "src/courses/data/neon-city.ts",
+      "src/courses/data/space-station.ts"
+    ]
+  },
+  "createdAt": "2026-09-17T02:50:14.664Z"
+}

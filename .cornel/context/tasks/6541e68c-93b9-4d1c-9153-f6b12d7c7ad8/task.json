@@ -1,0 +1,30 @@
+{
+  "id": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "claude",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "4d95a134-12d5-4265-9e65-37fad0a554b7",
+    "base": {
+      "": "5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: Реализованные препятствия и зоны нельзя разместить в лунке",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3 (карточка «Реализованные препятствия и зоны нельзя разместить в лунке») не сливается в ветку офиса cornel/office: конфликт в файлах src/courses/data/haunted-mansion.ts, src/courses/data/neon-city.ts, src/courses/data/space-station.ts.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3 && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/slit-realizovannye-prepyatstviya-i-zony-6541e6",
+  "baseSha": "5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236",
+  "workspaceSyncedSha": "5e4bd2eae3f2ccdd62de68ec3676f89e2bc9c236",
+  "status": "READY",
+  "createdAt": "2026-09-17T02:50:16.791Z",
+  "updatedAt": "2026-09-17T02:50:24.570Z",
+  "issue": 94,
+  "chatUrl": null,
+  "error": null,
+  "cliActivity": "Claude CLI: начал ход (claude-opus-5)"
+}
