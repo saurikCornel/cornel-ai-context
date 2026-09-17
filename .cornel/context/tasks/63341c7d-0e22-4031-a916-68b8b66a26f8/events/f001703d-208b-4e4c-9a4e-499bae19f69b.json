@@ -1,0 +1,17 @@
+{
+  "id": "f001703d-208b-4e4c-9a4e-499bae19f69b",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "resolve-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+    "output": "resolved regions: 4\n---REMAINING MARKERS---\nnone\n",
+    "outputDigest": "6991e65e425a5e0d63763e70ec172e3d234bf8377b80bc911f83e7790fbedb88",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:36:08.936Z"
+}
