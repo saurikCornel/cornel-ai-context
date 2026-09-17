@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Все 11 тестов лидерборда прошли. Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"a2c2938e-c34d-46d1-9d7a-abcb66fb3bda\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"feat(ui): экран Leaderboard в главном меню с позицией игрока по сохранённому рейтингу\\n\\n- src/leaderboard/standings.ts: buildLeaderboardStandings вмешивает локального игрока в процедурное поле AI, пересортировывает и переприсваивает ранги; loadPlayerRating/savePlayerRating хранят рейтинг в localStorage с клампом и защитой от повреждённых данных\\n- src/leaderboard/index.ts: реэкспорт нового API и подключение style.css\\n- src/ui/index.ts: экран 'leaderboard', пункт меню Leaderboard, строка «You are #N of M», монтирование renderLeaderboard с подсветкой игрока; AppUIOptions.playerRating\\n- src/main.ts: рейтинг из хранилища передаётся в меню и в Game.create\\n- src/ui/ui.css: стили обёртки экрана\\n- тесты: src/ui/leaderboard.test.ts (DOM-открытие из меню, 65 строк, подсветка и ранг), tests/leaderboard-standings.test.ts\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:21:15.724Z"
+}
