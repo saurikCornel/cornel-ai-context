@@ -1,0 +1,17 @@
+{
+  "id": "4f10f3be-d247-4e09-ae66-5167201a0a50",
+  "taskId": "fd5dc768-2e5c-404a-9426-c8cc952cd365",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-typecheck-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "ec4e86728618e3cc8b2fd7cb596ee94dc753c69fc529f44f1b7d23b0e310cce6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:24:15.145Z"
+}
