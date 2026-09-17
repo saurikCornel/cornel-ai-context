@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Скриншот экрана запрещён политикой доступа. Использую headless Chrome с программным WebGL — он даст и кадр, и консоль.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-9\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"SHOT=/private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad; mkdir -p $SHOT; '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --window-size=1440,900 --virtual-time-budget=25000 --screenshot=$SHOT/game-1.png --user-data-dir=$SHOT/chrome-profile 'http://localhost:5199/?debug=1&course=green-hills&hole=1' 2>&1 | grep -iv 'gpu\\\\|fontconfig\\\\|Fallback' | head -20; echo EXIT=$?; ls -l $SHOT/game-1.png\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:53:19.656Z"
+}
