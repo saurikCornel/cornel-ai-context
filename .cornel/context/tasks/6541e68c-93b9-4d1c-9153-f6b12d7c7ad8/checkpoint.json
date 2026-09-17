@@ -3,7 +3,7 @@
   "branch": "cornel/slit-realizovannye-prepyatstviya-i-zony-6541e6",
   "headSha": "5e2d11da8c90e1fe90f4a7fc7863816c3df8b525",
   "status": "RUNNING",
-  "summary": "Worker сообщает, что голова ветки на GitHub отличается от `5e2d11da`. Сверяю фактическое состояние ветки.\n\n```json\n{\"version\":1,\"taskId\":\"6541e68c-93b9-4d1c-9153-f6b12d7c7ad8\",\"commandId\":\"check-head-1\",\"operation\":\"run\",\"headSha\":\"5e2d11da8c90e1fe90f4a7fc7863816c3df8b525\",\"command\":\"git fetch origin cornel/slit-realizovannye-prepyatstviya-i-zony-6541e6 2>&1 | tail -3; echo '--- local HEAD ---'; git rev-parse HEAD; echo '--- remote branch ---'; git rev-parse FETCH_HEAD; echo '--- remote log ---'; git log --oneline -3 FETCH_HEAD; echo '--- diff local vs remote ---'; git diff --stat HEAD FETCH_HEAD | tail -10\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Локальная и удалённая головы совпадают (`5e2d11da`), расхождений нет — прошлый отказ был рассинхроном. Повторяю finish.\n\n```json\n{\"version\":1,\"taskId\":\"6541e68c-93b9-4d1c-9153-f6b12d7c7ad8\",\"commandId\":\"finish-3\",\"operation\":\"finish\",\"headSha\":\"5e2d11da8c90e1fe90f4a7fc7863816c3df8b525\",\"message\":\"Ветка cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3 слита, конфликты разрешены с сохранением работы обеих сторон.\\n\\nПричина: обе стороны переписали массивы лунок целиком в haunted-mansion.ts, neon-city.ts, space-station.ts.\\n\\nРазрешение:\\n- Геометрия — из ветки офиса (планировки на layoutKit: повороты, развилки, этажи, рампы). Её охраняет src/courses/layoutDiversity.test.ts, возврат к коридорам был бы регрессом.\\n- Механики — из входящей ветки, перенесены внутрь этих планировок: haunted-mansion — pendulum (часы, бальный зал), sliding-wall (стеллаж), door (погреб), teleporter (тайный ход библиотеки), platform (доска над затопленным погребом); neon-city — boost-pad (3 лунки), jump-pad, teleporter (туннель skyrail и служебная линия мегагрида); space-station — magnet-zone (центрифуга, сингулярность), gravity-zone (zero-G причал, горизонт событий). Ровно эти типы требует THEME_MECHANICS в tests/course-data-validation.test.ts.\\n- В layoutKit.ts добавлены конструкторы slidingWall, door, pendulum, teleporter, boostPad, jumpPad, gravityZone, magnetZone.\\n- Содержательный конфликт смыслов: валидатор из входящей ветки считал курсом каждый файл в src/courses/data, а офис добавил туда общий модуль layoutKit.ts. Валидатор научен отличать хелпер от курса; требования «ровно один Course на модуль» и «10 курсов × 9 лунок = 90» сохранены.\\n\\nИзменены: src/courses/data/{haunted-mansion,neon-city,space-station,layoutKit}.ts, tests/course-data-validation.test.ts. Остальное влилось автоматически (courses/types.ts, obstacles/descriptors.ts, HoleSceneBuilder, BotPlanner, Minimap, candy-factory, volcano).\\n\\nПроверки на 5e2d11da: npm run typecheck — чисто; npm test — 35 файлов, 237 тестов, все прошли; npm run build — успешно. Merge-коммит 5e2d11da с двумя родителями (5e4bd2ea, 1f5b4da8), дерево чистое, локальная и удалённая головы совпадают. PR не открывал: это слияние карточки в ветку офиса.\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "check-head-1",
+      "status": "SUCCEEDED",
+      "headSha": "5e2d11da8c90e1fe90f4a7fc7863816c3df8b525",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-3",
       "status": "STARTED",
       "headSha": "5e2d11da8c90e1fe90f4a7fc7863816c3df8b525",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:59:17.968Z"
+  "createdAt": "2026-09-17T02:59:51.223Z"
 }

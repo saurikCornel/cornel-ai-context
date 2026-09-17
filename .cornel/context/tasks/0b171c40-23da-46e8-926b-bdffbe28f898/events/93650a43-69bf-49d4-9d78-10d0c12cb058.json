@@ -1,0 +1,17 @@
+{
+  "id": "93650a43-69bf-49d4-9d78-10d0c12cb058",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "118a525ed6f76d4cdcf1484b26f6579d828a7863",
+    "output": "118a525 Merge «Собрать игру: связать подсистемы в играбельный цикл» (a57de8)\nPARENTS=fe890d7c4a1756f69b9c126df7d1866e70bcd9c6 93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\n=== markers ===\nnone\n",
+    "outputDigest": "36c4e6624ca274b8314d2b2193816807be46e63f8654078385b82db6eef8dbd3",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:59:42.683Z"
+}
