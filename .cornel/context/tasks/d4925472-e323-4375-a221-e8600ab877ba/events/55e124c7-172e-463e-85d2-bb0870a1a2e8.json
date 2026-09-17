@@ -1,0 +1,17 @@
+{
+  "id": "55e124c7-172e-463e-85d2-bb0870a1a2e8",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "85c33d82206067b6363859e4e050d8e1e34e2db6",
+    "output": "=== commit ===\n85c33d8 Слить «Часть модулей записана минифицированными однострочниками»: разминифицированный код + экран Leaderboard\n=== parents ===\nparent 1b051708839c6a0b4094c1f74261e1937e59fc27\nparent 0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0\n=== status ===\n=== leaderboard preserved ===\n7:type Screen = 'main' | 'play' | 'custom' | 'ranked' | 'settings' | 'profile' | 'leaderboard';\n41:  playerRating?: number;\n127:  private playerRating: number;\n139:    const rating = options.playerRating;\n140:    this.playerRating =\n164:      nav('Leaderboard', 'leaderboard'),\n198:  private leaderboardScreen() {\n236:      case 'leaderboard':\n237:        return this.leaderboardScreen();\n246:  private mountLeaderboard() {\n254:        rating: this.playerRating,\n323:    if (this.screen === 'leaderboard') this.mountLeaderboard();\n=== css ===\n408:.cpa-leaderboard {\n412:.cpa-leaderboard .leaderboard {\n416:.cpa-note {\n=== deminified check ===\n     337 src/ui/index.ts\n     422 src/ui/ui.css\n     156 src/courses/data/pirate-bay.ts\n     915 total\n",
+    "outputDigest": "5e9525ccd300e7a8f80e37f7f77d1372c00f305484998965d0f04b0d500d453a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:42:15.311Z"
+}

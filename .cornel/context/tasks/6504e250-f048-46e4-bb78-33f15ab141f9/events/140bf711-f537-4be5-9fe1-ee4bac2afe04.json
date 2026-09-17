@@ -1,0 +1,17 @@
+{
+  "id": "140bf711-f537-4be5-9fe1-ee4bac2afe04",
+  "taskId": "6504e250-f048-46e4-bb78-33f15ab141f9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
+    "output": "     203 src/main.ts\n      53 src/ui/index.ts\n      97 src/core/ProfileStore.ts\n       9 src/core/SaveManager.ts\n       8 src/player/profile.ts\n       7 src/player/types.ts\n     862 src/game/Game.ts\n    1239 total\n--- conflict markers main.ts ---\n106:<<<<<<< HEAD\n117:>>>>>>> b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\n147:<<<<<<< HEAD\n151:>>>>>>> b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\n--- conflict markers ui/index.ts ---\n13:<<<<<<< HEAD\n23:>>>>>>> b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\n31:<<<<<<< HEAD\n47:>>>>>>> b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\n",
+    "outputDigest": "53782508a1c6ca4c77d3cc37bc095bf81711006127c69672a18e638477480813",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:42:14.040Z"
+}

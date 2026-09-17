@@ -1,0 +1,12 @@
+{
+  "id": "31c7ae3a-5fb9-4d42-b4bb-c978cb241fb9",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-5",
+    "operation": "run",
+    "command": "echo '=== commit ==='; git log --oneline -1; echo '=== parents ==='; git cat-file -p HEAD | grep '^parent'; echo '=== status ==='; git status --short | head -5; echo '=== leaderboard preserved ==='; grep -n \"leaderboardScreen\\|mountLeaderboard\\|'leaderboard'\\|playerRating\" src/ui/index.ts | head -12; echo '=== css ==='; grep -n 'cpa-leaderboard\\|cpa-note' src/ui/ui.css; echo '=== deminified check ==='; wc -l src/ui/index.ts src/ui/ui.css src/courses/data/pirate-bay.ts"
+  },
+  "createdAt": "2026-09-17T04:42:13.147Z"
+}
