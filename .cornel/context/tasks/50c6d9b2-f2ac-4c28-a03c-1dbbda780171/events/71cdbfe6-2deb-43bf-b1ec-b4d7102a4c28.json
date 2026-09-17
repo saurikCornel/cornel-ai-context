@@ -1,0 +1,17 @@
+{
+  "id": "71cdbfe6-2deb-43bf-b1ec-b4d7102a4c28",
+  "taskId": "50c6d9b2-f2ac-4c28-a03c-1dbbda780171",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "qa-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+    "output": "+ npm run typecheck\n\n> Delete2@0.0.1 typecheck\n> tsc --noEmit\n\nsh: tsc: command not found\n+ echo TYPECHECK_EXIT=127\nTYPECHECK_EXIT=127\n+ npx jest --ci\n+ tail -40\nnpm warn exec The following package was not found and will be installed: jest@30.5.1\nnpm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me\n● Validation Error:\n\n  Preset @react-native/jest-preset not found relative to rootDir /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/50c6d9b2-f2ac-4c28-a03c-1dbbda780171.\n\n  Configuration Documentation:\n  https://jestjs.io/docs/configuration\n\n+ echo JEST_EXIT=1\nJEST_EXIT=1\n+ npm run lint\n+ tail -20\n\n> Delete2@0.0.1 lint\n> eslint .\n\nsh: eslint: command not found\n+ echo LINT_EXIT=0\nLINT_EXIT=0\n",
+    "outputDigest": "f4965124fe0a69ad0ecb84b1783e7b4819d1c8a285b48f4476cb13ca1591e2a8",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T17:38:10.119Z"
+}
