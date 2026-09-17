@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Нужна проверка на новом headSha — прогоняю тесты и сборку на 29e0908.\n\n```json\n{\"version\":1,\"taskId\":\"fd5dc768-2e5c-404a-9426-c8cc952cd365\",\"commandId\":\"check-head-2\",\"operation\":\"run\",\"headSha\":\"29e0908a7881a9ac254c1272ed61a504113fd830\",\"command\":\"npm run typecheck 2>&1 | tail -5; echo '=== TEST ==='; npm test 2>&1 | grep -E 'Test Files|Tests ' ; echo '=== BUILD ==='; npm run build 2>&1 | tail -3\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:29:56.403Z"
+}

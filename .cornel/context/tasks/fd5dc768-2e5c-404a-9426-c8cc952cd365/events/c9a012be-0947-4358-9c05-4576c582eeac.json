@@ -1,0 +1,12 @@
+{
+  "id": "c9a012be-0947-4358-9c05-4576c582eeac",
+  "taskId": "fd5dc768-2e5c-404a-9426-c8cc952cd365",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-head-2",
+    "operation": "run",
+    "command": "npm run typecheck 2>&1 | tail -5; echo '=== TEST ==='; npm test 2>&1 | grep -E 'Test Files|Tests ' ; echo '=== BUILD ==='; npm run build 2>&1 | tail -3"
+  },
+  "createdAt": "2026-09-17T03:29:56.404Z"
+}
