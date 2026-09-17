@@ -1,0 +1,12 @@
+{
+  "id": "3ba1d5f5-1cd4-4eb1-8c7c-49cd3d7d91b9",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-2",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund 2>&1 | tail -5; echo '--- typecheck ---'; npm run typecheck 2>&1 | tail -30; echo '--- test ---'; npm test 2>&1 | tail -60; echo '--- build ---'; npm run build 2>&1 | tail -15"
+  },
+  "createdAt": "2026-09-17T02:55:50.649Z"
+}
