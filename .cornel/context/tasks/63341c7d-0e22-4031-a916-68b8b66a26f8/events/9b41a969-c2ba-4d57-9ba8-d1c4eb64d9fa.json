@@ -1,0 +1,12 @@
+{
+  "id": "9b41a969-c2ba-4d57-9ba8-d1c4eb64d9fa",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "restore-1",
+    "operation": "run",
+    "command": "git checkout a4d56688f1eecfcdae27addf49b66fa6b8142cca -- src/game/HoleRuntime.ts src/game/holeMovers.test.ts && echo '---STATUS---' && git status --short && echo '---DIFF CHECK---' && git diff --stat a4d56688f1eecfcdae27addf49b66fa6b8142cca -- src && echo '(пусто = содержимое совпадает со слиянием)' && echo '---TYPECHECK---' && npm run typecheck 2>&1 | tail -20 && echo '---TESTS---' && npm test 2>&1 | grep -E 'Test Files|Tests |holeMovers|FAIL' && echo '---BUILD---' && npm run build 2>&1 | tail -3"
+  },
+  "createdAt": "2026-09-17T03:39:15.406Z"
+}

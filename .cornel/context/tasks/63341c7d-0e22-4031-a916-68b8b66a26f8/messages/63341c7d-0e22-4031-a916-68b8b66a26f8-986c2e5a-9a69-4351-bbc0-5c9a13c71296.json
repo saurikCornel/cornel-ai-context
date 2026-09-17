@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Коммит слияния цел. Возвращаю его содержимое в рабочую копию (без локального коммита) и перепроверяю.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"restore-1\",\"operation\":\"run\",\"headSha\":\"d445b64dd49d167d188682add1e9981ddc1fd76f\",\"command\":\"git checkout a4d56688f1eecfcdae27addf49b66fa6b8142cca -- src/game/HoleRuntime.ts src/game/holeMovers.test.ts && echo '---STATUS---' && git status --short && echo '---DIFF CHECK---' && git diff --stat a4d56688f1eecfcdae27addf49b66fa6b8142cca -- src && echo '(пусто = содержимое совпадает со слиянием)' && echo '---TYPECHECK---' && npm run typecheck 2>&1 | tail -20 && echo '---TESTS---' && npm test 2>&1 | grep -E 'Test Files|Tests |holeMovers|FAIL' && echo '---BUILD---' && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:39:15.405Z"
+}

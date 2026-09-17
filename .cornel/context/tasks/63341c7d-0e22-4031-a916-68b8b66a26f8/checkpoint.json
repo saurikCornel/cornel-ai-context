@@ -3,7 +3,7 @@
   "branch": "cornel/slit-sliding-wall-door-i-pendulum-ne-dvi-63341c",
   "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
   "status": "RUNNING",
-  "summary": "Publish синхронизировал рабочую копию обратно на d445b64: локальный merge-коммит на ветку не ушёл. Проверяю состояние и содержимое сохранённого слияния.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"inspect-1\",\"operation\":\"run\",\"headSha\":\"d445b64dd49d167d188682add1e9981ddc1fd76f\",\"command\":\"echo '---OBJECT---' && git cat-file -t a4d56688f1eecfcdae27addf49b66fa6b8142cca && echo '---STATUS---' && git status --short && echo '---DIFF vs BASE---' && git diff --name-status d445b64dd49d167d188682add1e9981ddc1fd76f a4d56688f1eecfcdae27addf49b66fa6b8142cca && echo '---MERGE STATE---' && (test -f .git/MERGE_HEAD && cat .git/MERGE_HEAD || echo 'no MERGE_HEAD')\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Коммит слияния цел. Возвращаю его содержимое в рабочую копию (без локального коммита) и перепроверяю.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"restore-1\",\"operation\":\"run\",\"headSha\":\"d445b64dd49d167d188682add1e9981ddc1fd76f\",\"command\":\"git checkout a4d56688f1eecfcdae27addf49b66fa6b8142cca -- src/game/HoleRuntime.ts src/game/holeMovers.test.ts && echo '---STATUS---' && git status --short && echo '---DIFF CHECK---' && git diff --stat a4d56688f1eecfcdae27addf49b66fa6b8142cca -- src && echo '(пусто = содержимое совпадает со слиянием)' && echo '---TYPECHECK---' && npm run typecheck 2>&1 | tail -20 && echo '---TESTS---' && npm test 2>&1 | grep -E 'Test Files|Tests |holeMovers|FAIL' && echo '---BUILD---' && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "inspect-1",
+      "status": "SUCCEEDED",
+      "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "restore-1",
       "status": "STARTED",
       "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:38:55.762Z"
+  "createdAt": "2026-09-17T03:39:15.407Z"
 }
