@@ -1,0 +1,12 @@
+{
+  "id": "56027edb-e0ed-4629-909d-e99baf845aa8",
+  "taskId": "a2c2938e-c34d-46d1-9d7a-abcb66fb3bda",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-1",
+    "operation": "run",
+    "command": "set -e\nnpx vitest run 2>&1 | tail -30\nnpm run build 2>&1 | tail -15"
+  },
+  "createdAt": "2026-09-17T04:19:46.371Z"
+}
