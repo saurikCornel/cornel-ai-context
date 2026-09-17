@@ -1,9 +1,9 @@
 {
   "taskId": "6504e250-f048-46e4-bb78-33f15ab141f9",
   "branch": "cornel/slit-progress-igroka-ne-sohranyaetsya-sa-6504e2",
-  "headSha": "571525c92ea7825072831452d65574ef523d2eb9",
-  "status": "RUNNING",
-  "summary": "Проверки прошли: `npm run typecheck`, 48 файлов / 329 тестов (`npm test`), `npm run build`. Отдельного линтера в проекте нет. Публикую слияние.\n\n```json\n{\"version\":1,\"taskId\":\"6504e250-f048-46e4-bb78-33f15ab141f9\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"168a63b4d9a5ca746281bf07acc6873303139434\",\"message\":\"Слить ветку SaveManager с лидербордом офиса: профиль из сейва питает меню, рейтинг синхронизируется\"}\n```\n\nЖду результат от worker.\n\n",
+  "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
+  "status": "WAITING_CHATGPT",
+  "summary": "Опубликовано. Отправляю finish.\n\n```json\n{\"version\":1,\"taskId\":\"6504e250-f048-46e4-bb78-33f15ab141f9\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"168a63b4d9a5ca746281bf07acc6873303139434\",\"message\":\"Слияние cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597 в ветку задачи выполнено, merge-коммит 571525c, конфликты в src/main.ts и src/ui/index.ts разрешены объединением смысла обеих сторон.\\n\\nsrc/ui/index.ts:\\n- AppUIOptions объединён: initialCourseId + playerRating (сторона офиса, лидерборд) + profile + settings (сторона карточки).\\n- Захардкоженный объект profile ('Putt Pilot', рейтинг 1240) удалён — его заменяет defaultProfile() из стороны карточки как заглушка до передачи сейва; LEADERBOARD_SIZE=64 сохранён.\\n- В классе остались обе фичи: поля profile и playerRating; конструктор применяет options.profile и options.settings и берёт рейтинг из options.playerRating, иначе из профиля; setProfile обновляет профиль и рейтинг и перерисовывает меню.\\n- view(): экран настроек и экран профиля — версия карточки (значения из сейва, безопасная арифметика при нулевых матчах); кнопка Leaderboard в главном меню и экран лидерборда — версия офиса.\\n- render() снова монтирует лидерборд, mountLeaderboard() берёт данные из this.profile вместо удалённой константы.\\n\\nsrc/main.ts:\\n- Game.create получает и playerRating (офис), и playerName/ballStyleId/onMatchComplete (карточка).\\n- onMatchComplete: профиль обновляется applyMatchOutcome, пишется SaveManager, рейтинг синхронизируется в ключ лидерборда savePlayerRating и меню обновляется ui.setProfile.\\n- Рейтинг теперь один: let playerRating = loadPlayerRating(undefined, profile.rating) — сейв профиля главный источник, отдельный ключ лидерборда остаётся фолбэком и зеркалом.\\n- AppUI получает initialCourseId + playerRating + profile: profileSummary(profile) + settings.\\n\\nПроверки на этом же коммите (worker, commandId checks-2, exitCode 0): npm ci, npm run typecheck (tsc -b) — без ошибок; npm test — 48 файлов, 329 тестов пройдено, включая src/ui/leaderboard.test.ts (сторона офиса) и src/core/profileStore.test.ts, src/core/matchProgress.test.ts (сторона карточки); npm run build (tsc -b && vite build) — успешно. Отдельного линтера в package.json нет.\\n\\nPR не создавал: ветка задачи опубликована для слияния офисом. Примечание для владельца: дважды worker отклонял команды с «Ветка изменилась: headSha не совпадает с GitHub» при SHA 168a63b и 45e3ae6, затем тот же 168a63b прошёл — стоит проверить, не сдвигает ли кто-то ветку задачи параллельно.\"}\n```\n\nЖду подтверждения finish от worker.\n\n**Сводка**\n\n- **Решение:** конфликт был наложением двух фич — лидерборда офиса (рейтинг из отдельного ключа, захардкоженный профиль в меню) и подключения SaveManager (профиль/настройки/XP из сейва). Обе сохранены: сейв профиля стал единственным источником данных меню, а лидерборд и его рейтинг получают данные из этого профиля и синхронизируются после матча.\n- **Изменённые файлы:** `src/main.ts`, `src/ui/index.ts` (merge-коммит 571525c приносит также `src/core/ProfileStore.ts`, `src/core/SaveManager.ts`, `src/game/Game.ts`, `src/player/*` и два новых теста со стороны карточки).\n- **Проверки:** `npm run typecheck`, `npm test` (48 файлов, 329 тестов), `npm run build` — все успешно на опубликованном коммите.\n- **Следующий шаг:** офису можно сливать ветку `cornel/slit-progress-igroka-ne-sohranyaetsya-sa-6504e2` в `cornel/office`.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -73,10 +73,10 @@
     },
     {
       "commandId": "publish-1",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
-      "exitCode": null
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-17T04:54:22.958Z"
+  "createdAt": "2026-09-17T04:55:00.064Z"
 }
