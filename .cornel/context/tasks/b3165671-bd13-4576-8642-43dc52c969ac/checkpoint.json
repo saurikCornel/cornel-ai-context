@@ -3,7 +3,7 @@
   "branch": "cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"read-17\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/game/CourseRegistry.ts\",\"src/courses/types.ts:1-90\"]}\n```\n\nОжидаю worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"read-18\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/courses/types.ts:90-139\",\"src/game/HoleRuntime.ts:1-80\"]}\n```\n\nОжидаю worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -127,10 +127,16 @@
     },
     {
       "commandId": "read-17",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-18",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:27:34.754Z"
+  "createdAt": "2026-09-17T03:27:52.724Z"
 }
