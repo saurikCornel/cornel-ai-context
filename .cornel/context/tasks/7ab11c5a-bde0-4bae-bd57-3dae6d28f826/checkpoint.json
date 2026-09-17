@@ -3,7 +3,7 @@
   "branch": "cornel/slit-chast-moduley-zapisana-minificirova-7ab11c",
   "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
   "status": "RUNNING",
-  "summary": "Причина сбоя: после локального fast-forward HEAD уехал на 45e3ae6, и worker перед каждой командой пытается вернуть рабочую копию на 1b05170 обычным checkout — незавершённое слияние это блокирует. Пробую командой сбросить состояние в чистый вид (сама команда как раз снимает merge-состояние).\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"reset-1\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git merge --abort 2>/dev/null; git reset --hard 1b051708839c6a0b4094c1f74261e1937e59fc27 && git status --short && git log --oneline -1\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Worker падает на синхронизации до запуска команды. Проверяю, работают ли read-операции (они могут не требовать checkout).\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"path\":\"src/courses/data\",\"maxLines\":60}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "reset-1",
+      "status": "FAILED",
+      "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+      "exitCode": null
+    },
+    {
+      "commandId": "ls-1",
       "status": "STARTED",
       "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:47:54.891Z"
+  "createdAt": "2026-09-17T04:48:29.405Z"
 }
