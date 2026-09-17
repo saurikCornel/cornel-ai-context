@@ -3,7 +3,7 @@
   "branch": "cornel/slit-progress-igroka-ne-sohranyaetsya-sa-6504e2",
   "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
   "status": "RUNNING",
-  "summary": "Вывод обрезался. Читаю конфликтные файлы по отдельности.\n\n```json\n{\"version\":1,\"taskId\":\"6504e250-f048-46e4-bb78-33f15ab141f9\",\"commandId\":\"read-3\",\"operation\":\"read\",\"headSha\":\"168a63b4d9a5ca746281bf07acc6873303139434\",\"paths\":[\"src/ui/index.ts\",\"src/main.ts:90-165\"]}\n```\n\nЖду результат от worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"6504e250-f048-46e4-bb78-33f15ab141f9\",\"commandId\":\"read-4\",\"operation\":\"read\",\"headSha\":\"168a63b4d9a5ca746281bf07acc6873303139434\",\"paths\":[\"src/main.ts:1-89\"]}\n```\n\nЖду результат от worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "read-3",
+      "status": "SUCCEEDED",
+      "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-4",
       "status": "STARTED",
       "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:42:49.275Z"
+  "createdAt": "2026-09-17T04:43:06.203Z"
 }
