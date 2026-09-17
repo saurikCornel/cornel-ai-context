@@ -1,0 +1,11 @@
+{
+  "id": "40746664-3a1d-434b-aef8-e1040e9d7277",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "check-8",
+    "output": "HTTP=200\n"
+  },
+  "createdAt": "2026-09-17T03:52:40.838Z"
+}
