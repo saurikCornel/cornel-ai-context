@@ -1,0 +1,12 @@
+{
+  "id": "72c415bb-e83a-449d-b92e-530db9a36430",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-head-1",
+    "operation": "run",
+    "command": "npm run typecheck 2>&1 | tail -5 && npm run test:camera 2>&1 | tail -8 && npx vitest run src/game 2>&1 | tail -6 && npm run build 2>&1 | tail -3"
+  },
+  "createdAt": "2026-09-17T03:23:09.715Z"
+}
