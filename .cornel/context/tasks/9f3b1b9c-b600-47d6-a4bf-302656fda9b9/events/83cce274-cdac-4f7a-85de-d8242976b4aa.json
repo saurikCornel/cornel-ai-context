@@ -1,0 +1,17 @@
+{
+  "id": "83cce274-cdac-4f7a-85de-d8242976b4aa",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "patch-d",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "--- typecheck ---\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "ecceebabf8f7643784bb9ce4b245f35630e623f10ec00e3423e99f37d2995e0a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:27:14.618Z"
+}

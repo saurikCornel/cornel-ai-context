@@ -1,0 +1,12 @@
+{
+  "id": "3a8fe4ef-6e24-47e9-aaf6-fdd7bedb18b0",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-10",
+    "operation": "run",
+    "command": "npx vitest run src/game/strokeBudget.test.ts 2>&1 | tail -20; echo '=== build ==='; npm run build 2>&1 | tail -12"
+  },
+  "createdAt": "2026-09-17T03:27:16.424Z"
+}
