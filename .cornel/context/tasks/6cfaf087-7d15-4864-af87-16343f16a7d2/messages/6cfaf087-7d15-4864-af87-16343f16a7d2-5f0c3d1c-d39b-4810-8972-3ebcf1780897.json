@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Рабочее дерево чистое, кроме нужных четырёх файлов. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"6cfaf087-7d15-4864-af87-16343f16a7d2\",\"commandId\":\"publish-4\",\"operation\":\"publish\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"message\":\"Переформатировать минифицированные модули игрока и сохранения\\n\\nsrc/player/types.ts, profile.ts, progression.ts и src/core/SaveManager.ts\\nразвёрнуты в читаемый многострочный TypeScript: по одному члену интерфейса\\nи одной инструкции на строку, отступ 2 пробела. Поведение не изменено —\\nимена, значения по умолчанию, ограничения (clamp), SAVE_VERSION,\\nDEFAULT_SAVE_KEY и логика миграции сохранены.\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T05:10:12.462Z"
+}

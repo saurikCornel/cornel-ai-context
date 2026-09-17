@@ -1,9 +1,9 @@
 {
   "taskId": "60f661d1-a07b-4ecb-bc83-b0a9a43f5736",
   "branch": "cornel/reformat-minified-src-dev-modules-60f661",
-  "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+  "headSha": "b991d05c3678197f1049fe46b0956d960e5acb5d",
   "status": "RUNNING",
-  "summary": "Обе проверки прошли (5 тестов, `tsc -b` без ошибок), diff — только три целевых файла. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"60f661d1-a07b-4ecb-bc83-b0a9a43f5736\",\"commandId\":\"publish-dev-1\",\"operation\":\"publish\",\"headSha\":\"45e3ae615faa03ce491d158aff9684253276ee7e\",\"message\":\"Развернуть минифицированные модули src/dev в читаемый код\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано (`b991d05`). Прогоняю проверки на новом headSha перед finish.\n\n```json\n{\"version\":1,\"taskId\":\"60f661d1-a07b-4ecb-bc83-b0a9a43f5736\",\"commandId\":\"verify-dev-3\",\"operation\":\"run\",\"headSha\":\"b991d05c3678197f1049fe46b0956d960e5acb5d\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/input src/dev && npx tsc -b --pretty false && git status --short && git diff --stat HEAD~1 HEAD\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-dev-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "publish-dev-1",
+      "status": "SUCCEEDED",
+      "headSha": "b991d05c3678197f1049fe46b0956d960e5acb5d",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-dev-3",
       "status": "STARTED",
-      "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+      "headSha": "b991d05c3678197f1049fe46b0956d960e5acb5d",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T05:09:49.240Z"
+  "createdAt": "2026-09-17T05:10:08.411Z"
 }
