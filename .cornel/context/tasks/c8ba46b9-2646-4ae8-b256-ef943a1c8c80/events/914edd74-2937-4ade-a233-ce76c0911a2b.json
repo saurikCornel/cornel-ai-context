@@ -1,0 +1,17 @@
+{
+  "id": "914edd74-2937-4ade-a233-ce76c0911a2b",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "readme-check-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "v24.8.0\n11.8.0\n--- typecheck ---\ntypecheck_exit=0\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n--- test:ui ---\nui_exit=0\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m11 passed\u001b[39m\u001b[22m\u001b[90m (11)\u001b[39m\n--- test:input ---\ninput_exit=0\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n--- test:camera ---\ncamera_exit=0\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m32 passed\u001b[39m\u001b[22m\u001b[90m (32)\u001b[39m\n--- node --test tests ---\nnodetest_exit=1\nℹ fail 2\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 228.713\n\n✖ failing tests:\n\ntest at tests/course-data-validation.test.ts:1:1\n✖ tests/course-data-validation.test.ts (219.448875ms)\n  'test failed'\n\ntest at tests/physics/helpers.test.ts:1:1\n✖ tests/physics/helpers.test.ts (179.171542ms)\n  'test failed'\n--- grep test-build refs ---\ntests/save-manager.test.mjs:3:import { DEFAULT_SAVE_KEY, SaveManager, migrateSave } from '../.test-build/core/SaveManager.js';\ntests/save-manager.test.mjs:4:import { createDefaultProfile } from '../.test-build/player/profile.js';\ntests/save-manager.test.mjs:5:import { MAX_PLAYER_LEVEL, MAX_PLAYER_XP, levelForXp, xpForLevel } from '../.test-build/player/progression.js';\n--- gitignore ---\n\n# Cornel AI local files\nnode_modules/\n.data/\n.env\n.env.*\n!.env.example\n*.pem\n*.key\n.DS_Store\n\n# Build artifacts\ndist/\n*.tsbuildinfo\n",
+    "outputDigest": "28e55a1dfe06e9b10d2dd42b86bd43c942c68359e24dfb8cc04d153152db1b88",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:14:04.501Z"
+}
