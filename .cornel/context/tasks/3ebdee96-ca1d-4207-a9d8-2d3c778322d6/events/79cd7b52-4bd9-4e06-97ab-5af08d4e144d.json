@@ -1,0 +1,12 @@
+{
+  "id": "79cd7b52-4bd9-4e06-97ab-5af08d4e144d",
+  "taskId": "3ebdee96-ca1d-4207-a9d8-2d3c778322d6",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-3",
+    "operation": "run",
+    "command": "B=$(ls dist/assets/index-*.js | head -1); echo \"BUNDLE=$B\"; for s in rapier RAPIER green-hills pirate-bay candy-factory ancient-temple arctic-base volcano neon-city haunted-mansion space-station chaos-dimension MatchManager TurnManager HoleSystem ScoreManager RatingSystem CameraController HoleSceneBuilder BotPlanner BotTurnScheduler Minimap MatchRewards maxShots teleporter conveyor lava powerMeter; do printf '%-20s %s\\n' \"$s\" \"$(grep -o \"$s\" \"$B\" | wc -l | tr -d ' ')\"; done; echo '--- SRC TREE ---'; find src -name '*.ts' -not -name '*.test.ts' | sort | head -120; echo '--- COUNTS ---'; find src -name '*.ts' -not -name '*.test.ts' | wc -l; find src -name '*.test.ts' | wc -l; echo '--- TESTS DIR ---'; ls tests 2>/dev/null"
+  },
+  "createdAt": "2026-09-17T03:02:03.149Z"
+}
