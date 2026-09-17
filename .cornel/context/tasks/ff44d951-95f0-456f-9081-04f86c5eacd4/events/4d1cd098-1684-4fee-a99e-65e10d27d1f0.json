@@ -1,0 +1,17 @@
+{
+  "id": "4d1cd098-1684-4fee-a99e-65e10d27d1f0",
+  "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "verify-1",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "e53f9709892cb8c6eec3dcc009c3927de489f9d6",
+    "output": "569:  /** Belts, fans, teleporters, pads and force fields act on the ball while a shot is live. */\ne53f970 Merge branch 'cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "01e3145b8a11452724234cd16122d52b4487db1139916c2d7829613640f2cc90",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:45:08.747Z"
+}
