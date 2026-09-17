@@ -1,0 +1,17 @@
+{
+  "id": "33135d69-4060-4e7d-8081-57ac0e782974",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4d56688f1eecfcdae27addf49b66fa6b8142cca",
+    "output": "[detached HEAD a4d5668] Merge branch 'cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n---BUILD---\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 91 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m    0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-CXd6WqYx.css  \u001b[39m\u001b[1m\u001b[2m    8.11 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     2.57 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-92J0xwZJ.js   \u001b[39m\u001b[1m\u001b[2m    2.43 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     1.11 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-dc_1DatP.js   \u001b[39m\u001b[1m\u001b[33m3,045.62 kB\u001b[39m\u001b[22m\u001b[2m │ gzip: 1,062.97 kB\u001b[22m\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.26s\u001b[39m\n---LOG---\na4d5668 Merge branch 'cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\nd445b64 Merge «Лава и силовые препятствия работают как сплошные стены» (fd5dc768-2e5c-404a-9426-c8cc952cd365)\n90b1f92 Merge «Лимит ударов зашит числом 8 вместо maxShots = par + 7» (b439967f-0ec9-4fad-9162-03372e506c65)\n",
+    "outputDigest": "2268ddb4b51518b31ae99c278ca1dccf96b79a4a87c3f19894eb1d31266e6359",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:37:17.648Z"
+}
