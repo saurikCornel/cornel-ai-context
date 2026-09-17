@@ -1,0 +1,11 @@
+{
+  "id": "ed091392-b480-44b0-9b49-ca4c1fc2358f",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "CLI_ERROR",
+  "text": "Apple Intelligence: CONTEXT Foundation Models: exceededContextWindowSize(FoundationModels.LanguageModelSession.GenerationError.Context(debugDescription: \"Content contains 4091 tokens, which exceeds the maximum allowed context size of 4096.\", underlyingErrors: [Provided 4,091 tokens, but the maximum ",
+  "detail": {
+    "agent": "apple",
+    "attempt": 1
+  },
+  "createdAt": "2026-09-17T01:02:42.634Z"
+}

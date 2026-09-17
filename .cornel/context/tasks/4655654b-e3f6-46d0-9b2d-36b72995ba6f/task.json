@@ -19,12 +19,12 @@
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T23:47:18.290Z",
-  "updatedAt": "2026-09-17T01:02:15.621Z",
+  "updatedAt": "2026-09-17T01:02:42.634Z",
   "issue": 78,
   "chatUrl": "cli://apple/4655654b-e3f6-46d0-9b2d-36b72995ba6f",
   "error": null,
-  "cliActivity": "Apple Intelligence: recallKnowledge Ball cosmetics catalog and unlocks",
-  "browserError": null,
+  "cliActivity": null,
+  "browserError": "Apple Intelligence: CONTEXT Foundation Models: exceededContextWindowSize(FoundationModels.LanguageModelSession.GenerationError.Context(debugDescription: \"Content contains 4091 tokens, which exceeds the maximum allowed context size of 4096.\", underlyingErrors: [Provided 4,091 tokens, but the maximum allowed is 4,096.], ",
   "statusChecks": 2,
   "currentHead": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6"
 }
