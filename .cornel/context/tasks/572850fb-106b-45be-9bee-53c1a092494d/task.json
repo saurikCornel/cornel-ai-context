@@ -19,11 +19,11 @@
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T23:47:12.678Z",
-  "updatedAt": "2026-09-17T00:34:22.753Z",
+  "updatedAt": "2026-09-17T00:34:50.051Z",
   "issue": 77,
   "chatUrl": "cli://apple/572850fb-106b-45be-9bee-53c1a092494d",
   "error": null,
-  "cliActivity": "Apple Intelligence: listDirectory .",
+  "cliActivity": "Apple Intelligence: retry GenerationError — asking for a short structured answer",
   "browserError": null,
   "currentHead": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6"
 }
