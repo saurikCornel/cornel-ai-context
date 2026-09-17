@@ -3,7 +3,7 @@
   "branch": "cornel/slit-popadanie-v-lunku-bez-zvuka-i-chast-ff44d9",
   "headSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
   "status": "RUNNING",
-  "summary": "Похоже, worker синхронизировал копию обратно на e1fce95 — проверяю, сохранился ли merge-коммит.\n\n```json\n{\"version\":1,\"taskId\":\"ff44d951-95f0-456f-9081-04f86c5eacd4\",\"commandId\":\"state-1\",\"operation\":\"run\",\"headSha\":\"e1fce954743cc27101c89a1c87e83f395570f13c\",\"command\":\"git log --oneline -3; echo ---; git status --short | head; echo ---; ls src/effects/ src/assets/ 2>&1; echo ---; git cat-file -t e53f9709892cb8c6eec3dcc009c3927de489f9d6 2>&1; echo ---; git reflog -5\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Merge-коммит откатился при синхронизации worker (HEAD вернулся на e1fce95), проверки verify-3 шли на старой версии. Восстанавливаю содержимое слияния как рабочие правки и прогоняю проверки заново.\n\n```json\n{\"version\":1,\"taskId\":\"ff44d951-95f0-456f-9081-04f86c5eacd4\",\"commandId\":\"verify-4\",\"operation\":\"run\",\"headSha\":\"e1fce954743cc27101c89a1c87e83f395570f13c\",\"command\":\"git checkout e53f9709892cb8c6eec3dcc009c3927de489f9d6 -- . && git status --short && grep -c '<<<<<<<' src/game/Game.ts; npm run typecheck && echo TYPECHECK_OK && npm test 2>&1 | grep -E 'Test Files|Tests |FAIL|feedback' | head -20 && npm run build 2>&1 | tail -4\",\"timeoutSeconds\":1800}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "state-1",
+      "status": "SUCCEEDED",
+      "headSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-4",
       "status": "STARTED",
       "headSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:46:11.427Z"
+  "createdAt": "2026-09-17T03:46:41.619Z"
 }
