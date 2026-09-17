@@ -3,7 +3,7 @@
   "branch": "cornel/ball-cosmetics-catalog-and-unlocks-465565",
   "headSha": "31eaea56e032edfe548b6e0fc15c251a4a58e106",
   "status": "RUNNING",
-  "summary": "Опубликовано (`31eaea5`). Прогоняю проверки на опубликованном коммите, чтобы finish опирался на успешную проверку того же headSha.\n\n```json\n{\"version\":1,\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"commandId\":\"verify-published-7\",\"operation\":\"run\",\"headSha\":\"31eaea56e032edfe548b6e0fc15c251a4a58e106\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/player/cosmetics.test.ts && npx tsc -b --pretty false && echo CHECKS_OK\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Проверки на опубликованном коммите прошли. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"commandId\":\"finish-8\",\"operation\":\"finish\",\"headSha\":\"31eaea56e032edfe548b6e0fc15c251a4a58e106\",\"message\":\"Ball cosmetics catalog and unlocks. Добавлены src/player/cosmetics.ts (BallFinish, BallStyle, BALL_STYLES из 14 стилей: 8 solid на уровне 1, marble 5, metal 8, neon 12, galaxy 18, lava 24 с emissive, ice 30; ballStyleById, unlockedBallStyles, syncUnlockedCosmetics — чистое объединение владения и наград уровня в порядке каталога, откат на classic-white для заблокированного выбора, вход не мутируется) и src/player/cosmetics.test.ts (6 тестов). index.ts, types.ts, profile.ts, progression.ts не изменялись. Проверки на коммите 31eaea5: npx vitest run src/player/cosmetics.test.ts — 6/6 passed; npx tsc -b --pretty false — без ошибок. PR не открывался: слияние ветки выполняет сборщик.\"}\n```\n\nИтог: карточка выполнена.\n\n- **Решения**: один стиль на каждый премиальный финиш (14 стилей всего), emissive только у neon/galaxy/lava; неизвестные («событийные») id из профиля сохраняются после стилей каталога, чтобы sync не отбирал уже выданную косметику; все возвращаемые массивы — новые.\n- **Изменённые файлы**: `src/player/cosmetics.ts` (перезаписана однострочная заглушка из прежнего коммита), `src/player/cosmetics.test.ts` (новый).\n- **Проверки**: vitest 6/6 и `tsc -b` — оба зелёные на опубликованном коммите `31eaea5` (в worktree предварительно потребовался `npm install`).\n- **Следующий шаг**: ждать результат `finish`; слияние ветки — за сборщиком.\n\n",
   "commands": [
     {
       "commandId": "apple-32dd9b9f",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "verify-published-7",
+      "status": "SUCCEEDED",
+      "headSha": "31eaea56e032edfe548b6e0fc15c251a4a58e106",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-8",
       "status": "STARTED",
       "headSha": "31eaea56e032edfe548b6e0fc15c251a4a58e106",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:52:01.694Z"
+  "createdAt": "2026-09-17T01:52:52.771Z"
 }

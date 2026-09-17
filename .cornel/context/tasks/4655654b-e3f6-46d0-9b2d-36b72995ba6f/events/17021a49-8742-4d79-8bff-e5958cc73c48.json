@@ -1,0 +1,17 @@
+{
+  "id": "17021a49-8742-4d79-8bff-e5958cc73c48",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-8",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "31eaea56e032edfe548b6e0fc15c251a4a58e106",
+    "output": "Ball cosmetics catalog and unlocks. Добавлены src/player/cosmetics.ts (BallFinish, BallStyle, BALL_STYLES из 14 стилей: 8 solid на уровне 1, marble 5, metal 8, neon 12, galaxy 18, lava 24 с emissive, ice 30; ballStyleById, unlockedBallStyles, syncUnlockedCosmetics — чистое объединение владения и наград уровня в порядке каталога, откат на classic-white для заблокированного выбора, вход не мутируется) и src/player/cosmetics.test.ts (6 тестов). index.ts, types.ts, profile.ts, progression.ts не изменялись. Проверки на коммите 31eaea5: npx vitest run src/player/cosmetics.test.ts — 6/6 passed; npx tsc -b --pretty false — без ошибок. PR не открывался: слияние ветки выполняет сборщик.",
+    "outputDigest": "acd7260d2378be1c6768abd1e248d0b350e28f2dc4f75e730c6948d1ad489f70",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:52:55.533Z"
+}
