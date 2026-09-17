@@ -3,14 +3,20 @@
   "branch": "cornel/rotatingbar-windmill-spinner-pendulum-ki-babe14",
   "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "RUNNING",
-  "summary": "Дата и время: 2025-02-01 10:00:00.000Z\n\n```json\n{\"command\":\"npx vitest run src/obstacles/rotating.test.ts\",\"commandId\":\"apple-8c421de4\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"operation\":\"run\",\"taskId\":\"babe14b3-0d35-418a-acf6-a312e646c585\",\"timeoutSeconds\":300,\"version\":1}\n```\n\n",
+  "summary": "Не удалось прочитать файл src/obstacles/rotating.ts. Попробуйте список файлов в папке.\n\n```json\n{\"commandId\":\"apple-52a3c06e\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"operation\":\"ls\",\"path\":\".\",\"taskId\":\"babe14b3-0d35-418a-acf6-a312e646c585\",\"version\":1}\n```\n\n",
   "commands": [
     {
       "commandId": "apple-8c421de4",
+      "status": "FAILED",
+      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+      "exitCode": 1
+    },
+    {
+      "commandId": "apple-52a3c06e",
       "status": "STARTED",
       "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T00:04:11.702Z"
+  "createdAt": "2026-09-17T00:19:54.416Z"
 }

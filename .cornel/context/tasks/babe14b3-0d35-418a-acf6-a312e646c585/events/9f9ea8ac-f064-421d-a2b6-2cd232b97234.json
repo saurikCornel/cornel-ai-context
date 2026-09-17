@@ -1,0 +1,11 @@
+{
+  "id": "9f9ea8ac-f064-421d-a2b6-2cd232b97234",
+  "taskId": "babe14b3-0d35-418a-acf6-a312e646c585",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "apple-52a3c06e",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-17T00:19:54.411Z"
+}
