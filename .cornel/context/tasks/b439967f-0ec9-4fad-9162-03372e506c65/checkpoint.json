@@ -3,7 +3,7 @@
   "branch": "cornel/limit-udarov-zashit-chislom-8-vmesto-max-b43996",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"read-2\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/gameplay/StrokeLimit.ts:1-80\",\"src/game/Game.ts:200-250\",\"src/game/Game.ts:410-470\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"grep-1\",\"operation\":\"grep\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"pattern\":\"STROKE_LIMIT|strokeLimitPerHole|resolveMaxShots|maxShots|strokeLimitScore\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "read-2",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "grep-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:08:37.218Z"
+  "createdAt": "2026-09-17T03:14:31.496Z"
 }

@@ -1,0 +1,11 @@
+{
+  "id": "9fcac0e1-00f3-4043-8634-aa225eae92b9",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "grep-1",
+    "operation": "grep"
+  },
+  "createdAt": "2026-09-17T03:14:31.491Z"
+}

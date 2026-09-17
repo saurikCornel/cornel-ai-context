@@ -3,7 +3,7 @@
   "branch": "cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Вывод обрезался — читаю начало HoleRuntime.ts и готовые хелперы.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"read-2\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/game/HoleRuntime.ts:1-160\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Теперь читаю готовые хелперы, которые надо подключить.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"read-3\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/obstacles/rotating.ts\",\"src/obstacles/movers.ts\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "read-2",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-3",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:08:25.054Z"
+  "createdAt": "2026-09-17T03:14:26.522Z"
 }
