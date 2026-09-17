@@ -1,0 +1,17 @@
+{
+  "id": "41f45c1d-6849-42c8-b874-93b658cf06e1",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "remerge-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8 -> FETCH_HEAD\nAuto-merging src/main.ts\nCONFLICT (content): Merge conflict in src/main.ts\nAuto-merging vitest.config.ts\nCONFLICT (add/add): Merge conflict in vitest.config.ts\nAutomatic merge failed; fix conflicts and then commit the result.\n=== markers ===\nnone\nMERGE_HEAD=93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\n=== typecheck ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n=== test ===\n \u001b[32m✓\u001b[39m src/game/game.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 244\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m33 passed\u001b[39m\u001b[22m\u001b[90m (33)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m195 passed\u001b[39m\u001b[22m\u001b[90m (195)\u001b[39m\n\u001b[2m   Start at \u001b[22m 05:58:54\n\u001b[2m   Duration \u001b[22m 2.33s\u001b[2m (environment 61%, transform 23%, import 8%, tests 6%, worker 2%)\u001b[22m\n\n\u001b[2m    Isolate \u001b[22m \u001b[33m33 workers spawned\u001b[39m\u001b[2m · ~385ms startup each (spawn + environment, per file)\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mat least ~1.03s faster with \u001b[22m\u001b[33misolate: false\u001b[39m\u001b[2m — reuses workers across files instead of one per file\u001b[22m\n\n=== build ===\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.27s\u001b[39m\n",
+    "outputDigest": "d8af01477cdd58e3d874e8a98b456e4a8ca86c339bb5c8da061c536eb56ef892",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:59:00.015Z"
+}
