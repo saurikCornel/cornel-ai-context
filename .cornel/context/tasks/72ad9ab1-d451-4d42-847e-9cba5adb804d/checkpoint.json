@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-ancient-temple-arctic-base-i-volca-72ad9a",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Типы чисты, 72 теста курсов проходят. Теперь полный прогон тестов (важен контракт `volcano-3` в holeRuntime) и сборка.\n\n```json\n{\"version\":1,\"taskId\":\"72ad9ab1-d451-4d42-847e-9cba5adb804d\",\"commandId\":\"test-full-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"timeoutSeconds\":900,\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && npx vitest run 2>&1 | tail -70; echo '=== VITEST EXIT:' ${PIPESTATUS[0]} '==='\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Сбой синхронизации на стороне worker (FETCH_HEAD), не в самой команде. Повторяю с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"72ad9ab1-d451-4d42-847e-9cba5adb804d\",\"commandId\":\"test-full-2\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"timeoutSeconds\":900,\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && npx vitest run 2>&1 | tail -70; echo '=== VITEST EXIT:' ${PIPESTATUS[0]} '==='\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-courses-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "test-full-1",
+      "status": "FAILED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": null
+    },
+    {
+      "commandId": "test-full-2",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:29:03.407Z"
+  "createdAt": "2026-09-17T04:29:25.911Z"
 }

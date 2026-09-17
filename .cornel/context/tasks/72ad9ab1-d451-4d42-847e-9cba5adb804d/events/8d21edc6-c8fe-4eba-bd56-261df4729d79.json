@@ -1,0 +1,12 @@
+{
+  "id": "8d21edc6-c8fe-4eba-bd56-261df4729d79",
+  "taskId": "72ad9ab1-d451-4d42-847e-9cba5adb804d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "test-full-2",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && npx vitest run 2>&1 | tail -70; echo '=== VITEST EXIT:' ${PIPESTATUS[0]} '==='"
+  },
+  "createdAt": "2026-09-17T04:29:25.907Z"
+}
