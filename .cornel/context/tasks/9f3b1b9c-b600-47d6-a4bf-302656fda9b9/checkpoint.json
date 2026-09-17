@@ -3,7 +3,7 @@
   "branch": "cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b",
   "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
   "status": "RUNNING",
-  "summary": "Формат `heads` подобрать не удаётся — возвращаюсь к `headSha` и завершаю карточку опубликованным SHA (проверки прогнаны на том же содержимом файлов, что и в коммите).\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"5d42db4e649a3ac6d72d6852e40655e29478a987\",\"message\":\"sliding-wall, door и pendulum теперь движутся. src/game/HoleRuntime.ts: isMoving построен на исчерпывающей карте всех типов MovingObstacle (раньше только spinner|windmill|gate|platform, остальные получали fixed-тело); update() переписан поверх готовых чистых хелперов — rotationAngle() из src/obstacles/rotating.ts для kind:'rotate' и 'swing' (маятник ограничен swingAngle, тело едет по дуге вокруг пивота, поддержан clockwise и armLength) и sampleMover() из src/obstacles/movers.ts для kind:'translate' (ping-pong, loop, once и паузы pauseSeconds на концах). Добавлен публичный moverPose(id) для чтения позы кинематического тела. Новый тест src/game/holeMovers.test.ts строит лунку с pendulum/door/sliding-wall, крутит физику и проверяет: три кинематических мовера, дуга маятника не выходит за swingAngle и совпадает с поворотом тела, дверь ходит между концами и стоит на паузе, стена-слайдер по loop прыгает в начало, меш синхронизирован с телом. Проверки: npm run typecheck — чисто; npm test — 37 файлов, 243 теста пройдено; npm run build — успешно. Попутно замечено (не трогал, вне карточки): isHazard в HoleRuntime не включает 'lava', поэтому лавовые зоны становятся твёрдым препятствием. PR не открывал — слияние за сборщиком.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "headSha принят — значит расхождение было временным (push ещё не долетел до GitHub). Повторяю проверку на нём.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"verify-5\",\"operation\":\"run\",\"headSha\":\"5d42db4e649a3ac6d72d6852e40655e29478a987\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && git log --oneline -1 && npm run typecheck && npm test 2>&1 | grep -vi 'getContext' | tail -6 && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -133,10 +133,16 @@
     },
     {
       "commandId": "finish-1",
+      "status": "FAILED",
+      "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
+      "exitCode": null
+    },
+    {
+      "commandId": "verify-5",
       "status": "STARTED",
       "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:31:28.035Z"
+  "createdAt": "2026-09-17T03:31:45.727Z"
 }
