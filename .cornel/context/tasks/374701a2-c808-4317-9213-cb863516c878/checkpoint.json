@@ -3,7 +3,7 @@
   "branch": "cornel/slit-readme-opisyvaet-funkcionalnost-kot-374701",
   "headSha": "5bee874feebe6ea883dda565c03401ad1d7b95bc",
   "status": "RUNNING",
-  "summary": "Похоже, ветка на GitHub сдвинулась между запросами: сначала не совпадал `5bee874`, затем перестал совпадать и `012ffb9`. Наиболее вероятно, что merge-коммит уже опубликован. Проверяю фактическое состояние на `5bee874`.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"probe-3\",\"operation\":\"run\",\"headSha\":\"5bee874feebe6ea883dda565c03401ad1d7b95bc\",\"command\":\"git rev-parse HEAD && git status --short --branch && git log --oneline -5 && echo '--- remote branch ---' && git ls-remote origin cornel/slit-readme-opisyvaet-funkcionalnost-kot-374701\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Ни один известный SHA не принимается — голова ветки на стороне приложения сдвинулась. Проверяю исходный SHA: на нём последняя `run`-команда проходила.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"probe-4\",\"operation\":\"run\",\"headSha\":\"012ffb90c6c91afd0be84e73d07ce4a07a511c7a\",\"command\":\"git rev-parse HEAD && git status --short --branch && git log --oneline -5 && echo '--- remote branch ---' && git ls-remote origin cornel/slit-readme-opisyvaet-funkcionalnost-kot-374701\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "probe-3",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "5bee874feebe6ea883dda565c03401ad1d7b95bc",
+      "exitCode": null
+    },
+    {
+      "commandId": "probe-4",
+      "status": "STARTED",
+      "headSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:42:25.744Z"
+  "createdAt": "2026-09-17T02:43:49.198Z"
 }

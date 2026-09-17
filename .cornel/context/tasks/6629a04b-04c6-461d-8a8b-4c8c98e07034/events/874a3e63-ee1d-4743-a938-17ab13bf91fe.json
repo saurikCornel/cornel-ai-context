@@ -1,0 +1,12 @@
+{
+  "id": "874a3e63-ee1d-4743-a938-17ab13bf91fe",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chk-6",
+    "operation": "run",
+    "command": "set -e\nnpm run typecheck\nnpx vitest run src/courses tests/course-data-validation.test.ts 2>&1 | tail -12"
+  },
+  "createdAt": "2026-09-17T02:43:48.987Z"
+}
