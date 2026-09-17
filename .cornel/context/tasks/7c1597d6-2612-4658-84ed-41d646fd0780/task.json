@@ -17,9 +17,10 @@
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "baseSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "workspaceSyncedSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-17T04:07:53.845Z",
-  "updatedAt": "2026-09-17T04:07:53.845Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-17T04:07:56.793Z",
+  "issue": 106,
+  "chatUrl": null,
+  "error": null
 }
