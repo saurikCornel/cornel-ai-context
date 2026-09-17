@@ -17,14 +17,14 @@
   "branch": "cornel/candy-factory-ts-i-pirate-bay-ts-zapisan-80c717",
   "baseSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "workspaceSyncedSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
-  "status": "RUNNING",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T03:07:40.116Z",
-  "updatedAt": "2026-09-17T03:17:48.974Z",
+  "updatedAt": "2026-09-17T03:17:54.168Z",
   "issue": 101,
   "chatUrl": "cli://claude/4611206a-7afb-4560-8743-b32d2310898c",
   "error": null,
   "cliActivity": null,
   "cliSession": "4611206a-7afb-4560-8743-b32d2310898c",
   "browserError": null,
-  "currentHead": "e0a720a0b8185824d35e09937c677a9ed3d5752e"
+  "currentHead": "8083931e2850fff54b9465f9e7c0a182073e3c18"
 }
