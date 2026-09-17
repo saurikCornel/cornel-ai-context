@@ -1,0 +1,17 @@
+{
+  "id": "cc176920-533d-4a13-83d0-780c120ac1a2",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "readme-check-6",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "build_exit=0\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 20 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-Bb53Nhb8.css  \u001b[39m\u001b[1m\u001b[2m  7.01 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.32 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-ESTV255h.js   \u001b[39m\u001b[1m\u001b[2m  2.61 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   1.21 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-B2ei82-g.js   \u001b[39m\u001b[1m\u001b[2m477.15 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 120.43 kB\u001b[22m\n\u001b[32m✓ built in 1.18s\u001b[39m\nassets\naudio\nindex.html\n",
+    "outputDigest": "df2039f9ec4d558828fd1929b182efa400dbd9f9f10217aee1dc89a7814bfd6f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:18:17.202Z"
+}
