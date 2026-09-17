@@ -1,0 +1,17 @@
+{
+  "id": "ba583c4f-3ea6-4e4f-89f4-4f736b1213cd",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-6",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "### src/assets/AudioManager.ts (строки 1-67 из 159)\n1: export type AudioCategory = 'music' | 'sfx' | 'ui' | 'ambient';\n2: \n3: export interface AudioEventDefinition {\n4:   id: string;\n5:   url: string;\n6:   category: AudioCategory;\n7:   volume?: number;\n8:   loop?: boolean;\n9:   optional?: boolean;\n10: }\n11: \n12: export interface AudioPlaybackOptions {\n13:   category: AudioCategory;\n14:   volume: number;\n15:   loop: boolean;\n16: }\n17: \n18: export interface AudioBackend {\n19:   load(url: string): Promise<AudioBuffer>;\n20:   play(buffer: AudioBuffer, options: AudioPlaybackOptions): void;\n21:   stopAll?(): void;\n22:   dispose?(): void;\n23: }\n24: \n25: export interface AudioLoadResult {\n26:   id: string;\n27:   loaded: boolean;\n28:   fallback: boolean;\n29:   error?: unknown;\n30: }\n31: \n32: export interface AudioLoadProgress {\n33:   completed: number;\n34:   total: number;\n35:   ratio: number;\n36:   currentId?: string;\n37: }\n38: \n39: export type AudioProgressListener = (progress: AudioLoadProgress) => void;\n40: \n41: class WebAudioBackend implements AudioBackend {\n42:   private readonly context: AudioContext;\n43: \n44:   constructor(context?: AudioContext) {\n45:     const AudioContextCtor = globalThis.AudioContext;\n46:     if (!context && !AudioContextCtor) throw new Error('Web Audio API is not available');\n47:     this.context = context ?? new AudioContextCtor();\n48:   }\n49: \n50:   async load(url: string): Promise<AudioBuffer> {\n51:     const response = await fetch(url);\n52:     if (!response.ok) throw new Error(`Audio request failed: ${response.status} ${response.statusText}`);\n53:     const data = await response.arrayBuffer();\n54:     return this.context.decodeAudioData(data.slice(0));\n55:   }\n56: \n57:   play(buffer: AudioBuffer, options: AudioPlaybackOptions): void {\n58:     const source = this.context.createBufferSource();\n59:     const gain = this.context.createGain();\n60:     source.buffer = buffer;\n61:     source.loop = options.loop;\n62:     gain.gain.value = options.volume;\n63:     source.connect(gain);\n64:     gain.connect(this.context.destination);\n65:     source.start();\n66:   }\n67: \n… ещё 92 строк\n\n### src/assets/index.ts (строки 1-3 из 3)\n1: export * from './AssetManager';\n2: export * from './AudioManager';\n3: \n\n### src/effects/index.ts (строки 1-2 из 2)\n1: export * from './ParticleManager';\n2:",
+    "outputDigest": "90b94fc568af2a00daaa6ac2f999cb94e2eb55cb0c0caafc17a71b4c2066f803",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:18:18.789Z"
+}
