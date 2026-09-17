@@ -1,0 +1,17 @@
+{
+  "id": "9ff4b110-9d1b-49af-917d-26193e1d6608",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-6",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+    "output": "src/courses/CourseRegistry.ts:106:export function resolveCourseSelection(\nsrc/courses/registry.test.ts:12:  resolveCourseSelection,\nsrc/courses/registry.test.ts:44:    const selection = resolveCourseSelection(parseLaunchOptions('?course=volcano&hole=4'));\nsrc/courses/registry.test.ts:54:    const unknown = resolveCourseSelection({ courseId: 'starter-tour', hole: 2 });\nsrc/courses/registry.test.ts:59:    const empty = resolveCourseSelection();\nsrc/courses/registry.test.ts:66:    const selection = resolveCourseSelection({ courseId: 'neon-city', hole: 42 });\nsrc/courses/registry.test.ts:73:    const first = resolveCourseSelection({ courseId: RANDOM_COURSE_ID }, () => 0);\nsrc/courses/registry.test.ts:74:    const last = resolveCourseSelection({ courseId: RANDOM_COURSE_ID }, () => 0.999999);\nsrc/main.ts:4:import { resolveCourseSelection } from './courses';\nsrc/main.ts:19:const selection=resolveCourseSelection(launch);\n=== body ===\nexport interface CourseSelectionRequest {\n  courseId?: string;\n  hole?: number;\n}\n\nexport interface CourseSelection {\n  course: Course;\n  hole: Hole;\n  /** Zero-based index inside `course.holes`. */\n  holeIndex: number;\n  /** One-based hole number shown in HUD and URLs. */\n  holeNumber: number;\n  /** False when the request fell back to the default course. */\n  matchedCourse: boolean;\n  /** False when the requested hole was missing or out of range. */\n  matchedHole: boolean;\n}\n\n/** Resolves a menu or URL request into a concrete course and starting hole. */\nexport function resolveCourseSelection(\n  request: CourseSelectionRequest = {},\n  random: CourseRandom = Math.random,\n): CourseSelection {\n  const requested = request.courseId?.trim();\n  const isRandom = requested === RANDOM_COURSE_ID;\n  const course = isRandom ? pickRandomCourse(random) : getCourse(requested) ?? requireCourse(DEFAULT_COURSE_ID);\n  const requestedHole = request.hole;\n  const matchedHole =\n    requestedHole !== undefined &&\n    Number.isInteger(requestedHole) &&\n    requestedHole >= 1 &&\n    requestedHole <= course.holes.length;\n  const holeIndex = matchedHole ? requestedHole - 1 : 0;\n  return {\n    course,\n    hole: course.holes[holeIndex]!,\n    holeIndex,\n    holeNumber: holeIndex + 1,\n    matchedCourse: isRandom || (requested !== undefined && course.id === requested),\n    matchedHole,\n=== UIActions ===\nexport type UiPlayerStatus = 'playing' | 'finished' | 'waiting' | 'disconnected';\n\nexport interface UiPlayer {\n  id: string;\n  name: string;\n  color: string;\n  strokes: number;\n  totalStrokes: number;\n  parDelta: number;\n  status: UiPlayerStatus;\n  isLocal?: boolean;\n}\n\nexport interface HudState {\n  holeNumber: number;\n  holeCount: number;\n  holeName: string;\n  par: number;\n  strokes: number;\n  power: number;\n  canShoot: boolean;\n  statusText?: string;\n}\n\nexport interface ScoreboardState {\n  players: UiPlayer[];\n  holeNumber: number;\n  holeCount: number;\n}\n\n",
+    "outputDigest": "6b57c60a599916fe5c378b7f0de2d327dcfb98fcc975d77893497d58b66bff2e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:53:34.950Z"
+}

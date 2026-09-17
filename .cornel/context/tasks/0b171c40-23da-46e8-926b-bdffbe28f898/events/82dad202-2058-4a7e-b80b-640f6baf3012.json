@@ -1,0 +1,12 @@
+{
+  "id": "82dad202-2058-4a7e-b80b-640f6baf3012",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-6",
+    "operation": "run",
+    "command": "git grep -n 'resolveCourseSelection' -- src | cat; echo '=== body ==='; awk '/resolveCourseSelection|CourseSelection/{found=1} found' src/courses/CourseRegistry.ts | head -40; echo '=== UIActions ==='; sed -n '1,30p' src/ui/types.ts"
+  },
+  "createdAt": "2026-09-17T02:53:32.390Z"
+}

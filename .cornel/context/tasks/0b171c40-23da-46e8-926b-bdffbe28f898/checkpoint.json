@@ -3,7 +3,7 @@
   "branch": "cornel/slit-sobrat-igru-svyazat-podsistemy-v-ig-0b171c",
   "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"0b171c40-23da-46e8-926b-bdffbe28f898\",\"commandId\":\"inspect-5\",\"operation\":\"run\",\"headSha\":\"fe890d7c4a1756f69b9c126df7d1866e70bcd9c6\",\"command\":\"echo '=== resolveCourseSelection ==='; git grep -n 'resolveCourseSelection' -- src/courses; echo '---'; sed -n '1,60p' src/courses/CourseRegistry.ts; echo '=== game/CourseRegistry ==='; sed -n '1,40p' src/game/CourseRegistry.ts; echo '=== Game.create opts ==='; sed -n '1,60p' src/game/Game.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"0b171c40-23da-46e8-926b-bdffbe28f898\",\"commandId\":\"inspect-6\",\"operation\":\"run\",\"headSha\":\"fe890d7c4a1756f69b9c126df7d1866e70bcd9c6\",\"command\":\"git grep -n 'resolveCourseSelection' -- src | cat; echo '=== body ==='; awk '/resolveCourseSelection|CourseSelection/{found=1} found' src/courses/CourseRegistry.ts | head -40; echo '=== UIActions ==='; sed -n '1,30p' src/ui/types.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "inspect-5",
+      "status": "SUCCEEDED",
+      "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-6",
       "status": "STARTED",
       "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:53:12.266Z"
+  "createdAt": "2026-09-17T02:53:32.393Z"
 }
