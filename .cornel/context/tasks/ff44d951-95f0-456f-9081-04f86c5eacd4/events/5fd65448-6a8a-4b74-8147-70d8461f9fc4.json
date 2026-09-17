@@ -1,0 +1,11 @@
+{
+  "id": "5fd65448-6a8a-4b74-8147-70d8461f9fc4",
+  "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "verify-5",
+    "output": "fa6ee5f Слить «Попадание в лунку без звука и частиц»: обратная связь (частицы, звук, качество, громкость) поверх рантайма препятствий\n0\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nTYPECHECK_OK\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m43 passed\u001b[39m\u001b[22m\u001b[90m (43)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m278 passed\u001b[39m\u001b[22m\u001b[90m (278)\u001b[39m\n"
+  },
+  "createdAt": "2026-09-17T03:48:08.096Z"
+}

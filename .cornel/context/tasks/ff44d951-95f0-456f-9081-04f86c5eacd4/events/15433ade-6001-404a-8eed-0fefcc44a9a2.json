@@ -1,0 +1,17 @@
+{
+  "id": "15433ade-6001-404a-8eed-0fefcc44a9a2",
+  "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "fa6ee5f Слить «Попадание в лунку без звука и частиц»: обратная связь (частицы, звук, качество, громкость) поверх рантайма препятствий\n0\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nTYPECHECK_OK\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m43 passed\u001b[39m\u001b[22m\u001b[90m (43)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m278 passed\u001b[39m\u001b[22m\u001b[90m (278)\u001b[39m\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 2.34s\u001b[39m\n",
+    "outputDigest": "dd4b187cf36f83ccc9246ffb06465614e4540fc616e4695d3d0c0e29c1918e7a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:48:10.498Z"
+}
