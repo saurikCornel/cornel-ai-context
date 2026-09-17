@@ -1,0 +1,17 @@
+{
+  "id": "06cc6fcd-993a-43bc-a641-8cc150b6b7ff",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "patch-ui",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "ui patched\n3\n",
+    "outputDigest": "44a3c1a1c488a2beb2588c193e04b5b77244fcf249361d73617e464e88c49218",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:33:33.542Z"
+}

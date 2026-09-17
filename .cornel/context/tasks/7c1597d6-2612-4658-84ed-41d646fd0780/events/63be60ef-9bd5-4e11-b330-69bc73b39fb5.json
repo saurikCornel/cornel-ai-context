@@ -1,0 +1,11 @@
+{
+  "id": "63be60ef-9bd5-4e11-b330-69bc73b39fb5",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "patch-ui",
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68"
+  },
+  "createdAt": "2026-09-17T04:33:33.447Z"
+}
