@@ -1,0 +1,12 @@
+{
+  "id": "046264bf-69eb-4602-bc2c-ef742e3e24f7",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "readme-check-1",
+    "operation": "run",
+    "command": "npm run typecheck > /tmp/cpa-tc.log 2>&1; echo \"typecheck_exit=$?\"; tail -25 /tmp/cpa-tc.log; echo '--- vitest all ---'; npx vitest run --reporter=dot > /tmp/cpa-vt.log 2>&1; echo \"vitest_exit=$?\"; tail -60 /tmp/cpa-vt.log"
+  },
+  "createdAt": "2026-09-17T02:08:04.405Z"
+}

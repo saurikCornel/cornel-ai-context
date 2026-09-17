@@ -17,11 +17,14 @@
   "branch": "cornel/readme-opisyvaet-funkcionalnost-kotoroy-c8ba46",
   "baseSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "workspaceSyncedSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T02:06:20.169Z",
-  "updatedAt": "2026-09-17T02:07:48.459Z",
+  "updatedAt": "2026-09-17T02:08:07.870Z",
   "issue": 91,
-  "chatUrl": null,
+  "chatUrl": "cli://claude/e244c940-a8e6-4149-870f-425c83c7862d",
   "error": null,
-  "cliActivity": "Claude CLI: Read: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/c8ba46b9-2646-4ae8-b256-ef943a1c8c80/AGENTS.md"
+  "cliActivity": null,
+  "cliSession": "e244c940-a8e6-4149-870f-425c83c7862d",
+  "browserError": null,
+  "currentHead": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
 }
