@@ -3,7 +3,7 @@
   "branch": "cornel/movingplatform-slidingwall-and-door-move-bb10e7",
   "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "WAITING_CHATGPT",
-  "summary": "Проверка файлов не удалась. Попробуйте еще раз.\n\n",
+  "summary": "Невозможно выполнить предыдущую задачу. Попробуйте еще раз.\n\n",
   "commands": [
     {
       "commandId": "apple-ad185a2c",
@@ -12,5 +12,5 @@
       "exitCode": 1
     }
   ],
-  "createdAt": "2026-09-17T00:37:58.121Z"
+  "createdAt": "2026-09-17T00:57:22.438Z"
 }

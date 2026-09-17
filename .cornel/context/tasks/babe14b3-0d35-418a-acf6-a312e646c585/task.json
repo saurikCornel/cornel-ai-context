@@ -19,11 +19,11 @@
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T23:46:49.649Z",
-  "updatedAt": "2026-09-17T00:51:07.679Z",
+  "updatedAt": "2026-09-17T00:57:26.672Z",
   "issue": 73,
   "chatUrl": "cli://apple/babe14b3-0d35-418a-acf6-a312e646c585",
   "error": null,
-  "cliActivity": null,
+  "cliActivity": "Apple Intelligence: думает",
   "browserError": null,
   "currentHead": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "statusChecks": 1
