@@ -3,7 +3,7 @@
   "branch": "cornel/movingplatform-slidingwall-and-door-move-bb10e7",
   "headSha": "4af072d630a32b5641c84dc46dd3bc34c112a24d",
   "status": "RUNNING",
-  "summary": "Finish требует успешной проверки именно на `4af072d6`, а мои две попытки на этом SHA упали на синхронизации (`FETCH_HEAD`, затем расхождение с GitHub — вероятно, отставание ответа GitHub сразу после push). Сам finish уже принял этот head как актуальный, значит ветка на GitHub видна. Повторяю проверку с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"bb10e70d-fd00-4b90-ac80-a219928d212f\",\"commandId\":\"movers-verify-5\",\"operation\":\"run\",\"headSha\":\"4af072d630a32b5641c84dc46dd3bc34c112a24d\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/obstacles/movers.test.ts && npx tsc -b --pretty false && echo CHECKS_OK_AT_HEAD\"}\n```\n\nЖду результат worker по `movers-verify-5` в этом чате.\n\n**Сводка.** Состояние: код опубликован (`4af072d6`, файлы `src/obstacles/movers.ts` и `src/obstacles/movers.test.ts`), проверки до публикации зелёные (vitest 8/8, `tsc -b` без ошибок). Блокирует только требование прогнать проверку на опубликованном SHA. Следующий шаг: при успехе — повторный `finish`; при повторном отказе синхронизации сообщу владельцу для сверки состояния ветки на GitHub.\n\n",
+  "summary": "Проверки прошли на опубликованном коммите `4af072d6`: 8/8 тестов и `tsc -b --pretty false` без ошибок (`CHECKS_OK_AT_HEAD`). Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"bb10e70d-fd00-4b90-ac80-a219928d212f\",\"commandId\":\"movers-finish-2\",\"operation\":\"finish\",\"headSha\":\"4af072d630a32b5641c84dc46dd3bc34c112a24d\",\"message\":\"MovingPlatform, SlidingWall and Door movers — готово. Созданы src/obstacles/movers.ts и src/obstacles/movers.test.ts; другие файлы, включая src/obstacles/index.ts и types.ts, не изменялись. sampleMover(config, elapsed) возвращает position/velocity/progress чисто по времени лунки (без внутреннего состояния), carryVelocity отдаёт скорость мувера только при contact, иначе нулевой вектор. Режимы цикла: ping-pong (период 2*travel + 2*pause, 0->1->0), loop (travel + pause, обёртка 0->1), once (фиксация на progress=1 с нулевой скоростью). travel = distance/speed; pauseSeconds (по умолчанию 0) замораживает скорость на концах; phase (секунды) сдвигает таймлайн; ось нормализуется, длину хода задаёт distance; position = origin + normalizedAxis*distance*progress, velocity — производная. Вырожденные конфиги (speed или distance <= 0, нулевая либо нефинитная ось, enabled:false, NaN времени или фазы) дают статичную выборку в origin с нулевой скоростью и progress 0. Без Three.js, Rapier и DOM. Проверки worker на этом headSha (commandId movers-verify-5, exitCode 0): npx vitest run src/obstacles/movers.test.ts — 8/8 passed; npx tsc -b --pretty false — без ошибок. PR не открывался: слияние ветки cornel/movingplatform-slidingwall-and-door-move-bb10e7 выполняет сборщик.\"}\n```\n\nЖду результат worker по `movers-finish-2`.\n\n**Сводка.** Решения: детерминированный по времени мувер без состояния — три режима цикла, паузы на концах, фазовый сдвиг, нормализация оси, статичный фолбэк для вырожденных конфигов; `carryVelocity` как единственная точка передачи скорости шару. Изменённые файлы: `src/obstacles/movers.ts`, `src/obstacles/movers.test.ts` (8 тестов: разворот ping-pong, обёртка loop, кламп once с нулевой скоростью, заморозка на паузе, сдвиг фазой, статичные и вырожденные конфиги, нормализация оси, contact/no-contact). Проверки: vitest 8/8 и `tsc -b` — зелёные на коммите `4af072d6`. Следующий шаг: подтверждение finish от worker; слияние ветки — за сборщиком.\n\n",
   "commands": [
     {
       "commandId": "apple-ad185a2c",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "movers-verify-5",
+      "status": "SUCCEEDED",
+      "headSha": "4af072d630a32b5641c84dc46dd3bc34c112a24d",
+      "exitCode": 0
+    },
+    {
+      "commandId": "movers-finish-2",
       "status": "STARTED",
       "headSha": "4af072d630a32b5641c84dc46dd3bc34c112a24d",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:50:39.829Z"
+  "createdAt": "2026-09-17T01:51:25.309Z"
 }

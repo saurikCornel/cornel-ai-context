@@ -1,0 +1,11 @@
+{
+  "id": "2d4fca5a-11c5-43c3-8a8a-737a118c4186",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "movers-finish-2",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-17T01:51:25.304Z"
+}

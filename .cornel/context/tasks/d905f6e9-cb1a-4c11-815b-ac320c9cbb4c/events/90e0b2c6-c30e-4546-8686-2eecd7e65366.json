@@ -1,0 +1,12 @@
+{
+  "id": "90e0b2c6-c30e-4546-8686-2eecd7e65366",
+  "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "minimap-2",
+    "operation": "run",
+    "command": "npm ci --no-audit --no-fund && node -e \"console.log('vitest', require('vitest/package.json').version)\""
+  },
+  "createdAt": "2026-09-17T01:51:35.436Z"
+}
