@@ -1,0 +1,11 @@
+{
+  "id": "97f1d52d-402e-49d9-be18-bde7a22e3e2e",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "patch-consumers",
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
+  },
+  "createdAt": "2026-09-17T02:42:17.627Z"
+}

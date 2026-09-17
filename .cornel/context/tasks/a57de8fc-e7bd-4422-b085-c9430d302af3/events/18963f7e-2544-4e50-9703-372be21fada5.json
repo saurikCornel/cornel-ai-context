@@ -1,0 +1,17 @@
+{
+  "id": "18963f7e-2544-4e50-9703-372be21fada5",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-final",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "93be8f7845d4a7893e4a70e11e3a9152d55e1b6d",
+    "output": "\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-ESTV255h.js   \u001b[39m\u001b[1m\u001b[2m    2.61 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     1.21 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-4LQVk3Ea.js   \u001b[39m\u001b[1m\u001b[33m3,014.91 kB\u001b[39m\u001b[22m\u001b[2m │ gzip: 1,051.41 kB\u001b[22m\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 2.52s\u001b[39m\n--- bundle checks ---\ndist/assets/index-4LQVk3Ea.js:1\ndist/assets/index-ESTV255h.js:0\ngreen-hills: dist/assets/index-4LQVk3Ea.js:1\npirate-bay: dist/assets/index-4LQVk3Ea.js:1\nchaos-dimension: dist/assets/index-4LQVk3Ea.js:1\n--- tests ---\n\u001b[31m\u001b[1mError\u001b[22m: Cannot find module '../.test-build/core/SaveManager.js' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/a57de8fc-e7bd-4422-b085-c9430d302af3/tests/save-manager.test.mjs\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/save-manager.test.mjs:\u001b[2m3:1\u001b[22m\u001b[39m\n    \u001b[90m  1|\u001b[39m import assert from 'node:assert/strict';\n    \u001b[90m  2|\u001b[39m import test from 'node:test';\n    \u001b[90m  3|\u001b[39m import { DEFAULT_SAVE_KEY, SaveManager, migrateSave } from '../.test-b…\n    \u001b[90m   |\u001b[39m \u001b[31m^\u001b[39m\n    \u001b[90m  4|\u001b[39m import { createDefaultProfile } from '../.test-build/player/profile.js…\n    \u001b[90m  5|\u001b[39m import { MAX_PLAYER_LEVEL, MAX_PLAYER_XP, levelForXp, xpForLevel } fro…\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯\u001b[22m\u001b[39m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m3 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m27 passed\u001b[39m\u001b[22m\u001b[90m (30)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m168 passed\u001b[39m\u001b[22m\u001b[90m (168)\u001b[39m\n\u001b[2m   Start at \u001b[22m 05:42:08\n\u001b[2m   Duration \u001b[22m 3.45s\u001b[2m (environment 48%, transform 36%, import 7%, tests 6%, worker 3%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 5.42s\u001b[39m\u001b[2m · 36% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n",
+    "outputDigest": "91fec52a3f65808c713adfe4d7d4e5483a73143f099d59bd6b7e526c2fdcf1ba",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:42:12.354Z"
+}

@@ -3,7 +3,7 @@
   "branch": "cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Dependencies aren't installed in this worktree. Installing, then type-checking.\n\n```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"install-1\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"ls -d node_modules 2>/dev/null || npm install --no-audit --no-fund 2>&1 | tail -5; npm run typecheck 2>&1 | head -40\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Adapters compile. Now updating the three consumers (renderer colors, minimap categories, bot hazard awareness).\n\n```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"patch-consumers\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":300,\"command\":\"python3 - <<'PY'\\nfrom pathlib import Path\\n\\ndef patch(path, old, new):\\n    p = Path(path)\\n    text = p.read_text()\\n    assert text.count(old) == 1, (path, old[:60], text.count(old))\\n    p.write_text(text.replace(old, new))\\n\\npatch('src/core/HoleSceneBuilder.ts',\\n\\\"  'reset-zone': 0xd45fa0,\\\\n};\\\",\\n\\\"\\\"\\\"  'reset-zone': 0xd45fa0,\\n  'sliding-wall': 0x7d8794,\\n  door: 0x5f7f9f,\\n  pendulum: 0xd8b94a,\\n  teleporter: 0x9b5de5,\\n  fan: 0x67e8f9,\\n  conveyor: 0xa3a3a3,\\n  'spring-pad': 0xf472b6,\\n  'boost-pad': 0x22d3ee,\\n  'jump-pad': 0x84cc16,\\n  'gravity-zone': 0x6366f1,\\n  'magnet-zone': 0xf59e0b,\\n  lava: 0xff5722,\\n};\\\"\\\"\\\")\\n\\npatch('src/ui/Minimap.ts',\\n\\\"const SOLID_COLOR = '#64748b';\\\",\\n\\\"const SOLID_COLOR = '#64748b';\\\\nconst FORCE_COLOR = '#34d399';\\\")\\n\\npatch('src/ui/Minimap.ts',\\n\\\"\\\"\\\"const HAZARD_TYPES: readonly ObstacleType[] = ['water', 'void', 'reset-zone'];\\nconst MOVING_TYPES: readonly ObstacleType[] = ['spinner', 'windmill', 'gate', 'platform'];\\n\\nfunction obstacleColor(type: ObstacleType): string {\\n  if (HAZARD_TYPES.includes(type)) return HAZARD_COLOR;\\n  if (MOVING_TYPES.includes(type)) return MOVING_COLOR;\\n  return SOLID_COLOR;\\n}\\\"\\\"\\\",\\n\\\"\\\"\\\"const HAZARD_TYPES: readonly ObstacleType[] = ['water', 'void', 'reset-zone', 'lava'];\\nconst MOVING_TYPES: readonly ObstacleType[] = [\\n  'spinner', 'windmill', 'gate', 'platform', 'sliding-wall', 'door', 'pendulum',\\n];\\nconst FORCE_TYPES: readonly ObstacleType[] = [\\n  'teleporter', 'fan', 'conveyor', 'spring-pad', 'boost-pad', 'jump-pad', 'gravity-zone', 'magnet-zone',\\n];\\n\\nfunction obstacleColor(type: ObstacleType): string {\\n  if (HAZARD_TYPES.includes(type)) return HAZARD_COLOR;\\n  if (MOVING_TYPES.includes(type)) return MOVING_COLOR;\\n  if (FORCE_TYPES.includes(type)) return FORCE_COLOR;\\n  return SOLID_COLOR;\\n}\\\"\\\"\\\")\\n\\npatch('src/ai/BotPlanner.ts',\\n\\\"  obstacle.type === 'water' || obstacle.type === 'void' || obstacle.type === 'reset-zone';\\\",\\n\\\"  obstacle.type === 'water' ||\\\\n  obstacle.type === 'void' ||\\\\n  obstacle.type === 'reset-zone' ||\\\\n  obstacle.type === 'lava';\\\")\\n\\npatch('src/ai/BotPlanner.ts',\\n\\\"  obstacle.type === 'spinner' || obstacle.type === 'windmill' || obstacle.type === 'gate' || obstacle.type === 'platform';\\\",\\n\\\"  obstacle.type === 'spinner' ||\\\\n  obstacle.type === 'windmill' ||\\\\n  obstacle.type === 'gate' ||\\\\n  obstacle.type === 'platform' ||\\\\n  obstacle.type === 'sliding-wall' ||\\\\n  obstacle.type === 'door' ||\\\\n  obstacle.type === 'pendulum';\\\")\\n\\nprint('patched')\\nPY\\nnpm run typecheck 2>&1 | head -30\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -115,10 +115,16 @@
     },
     {
       "commandId": "install-1",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "patch-consumers",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:41:35.306Z"
+  "createdAt": "2026-09-17T02:42:17.628Z"
 }
