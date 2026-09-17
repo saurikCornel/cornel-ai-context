@@ -1,0 +1,11 @@
+{
+  "id": "354fa880-dfa1-4c1d-a7ff-924011ba4e1f",
+  "taskId": "72ad9ab1-d451-4d42-847e-9cba5adb804d",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "rework-dupes-1",
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68"
+  },
+  "createdAt": "2026-09-17T04:33:03.332Z"
+}
