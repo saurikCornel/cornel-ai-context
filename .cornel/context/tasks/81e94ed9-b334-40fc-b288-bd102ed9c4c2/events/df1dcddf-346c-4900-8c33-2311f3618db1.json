@@ -1,0 +1,11 @@
+{
+  "id": "df1dcddf-346c-4900-8c33-2311f3618db1",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "write-haunted-1",
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
+  },
+  "createdAt": "2026-09-17T02:34:39.733Z"
+}

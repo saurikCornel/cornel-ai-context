@@ -1,0 +1,17 @@
+{
+  "id": "2133ca2f-e040-48ca-a88b-04d126ccce12",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-haunted-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "     219 src/courses/data/haunted-mansion.ts\n",
+    "outputDigest": "34f1c8b05448eed766b99220e4b8a8906840ff3b79aa73e6f4e06f2099670d2f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:34:42.119Z"
+}
