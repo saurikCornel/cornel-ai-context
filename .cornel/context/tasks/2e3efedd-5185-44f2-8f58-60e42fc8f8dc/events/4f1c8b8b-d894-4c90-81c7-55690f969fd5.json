@@ -1,0 +1,12 @@
+{
+  "id": "4f1c8b8b-d894-4c90-81c7-55690f969fd5",
+  "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "impl-6",
+    "operation": "run",
+    "command": "set -e\ncat > src/ui/courseSelect.test.ts <<'EOF'\n// @vitest-environment jsdom\nimport { describe, expect, it, vi } from 'vitest';\nimport { AppUI } from './index';\nimport { COURSE_SUMMARIES, DEFAULT_COURSE_ID, RANDOM_COURSE_ID, getCourse } from '../courses';\n\nconst openSetup = (ui: AppUI, root: HTMLElement): HTMLSelectElement => {\n  ui.navigate('play');\n  return root.querySelector<HTMLSelectElement>('[name=\"course\"]')!;\n};\n\ndescribe('course selector', () => {\n  it('lists every registered course plus the random tour', () => {\n    const root = document.createElement('div');\n    const select = openSetup(new AppUI(root), root);\n    const values = [...select.options].map(option => option.value);\n    expect(values).toEqual([...COURSE_SUMMARIES.map(summary => summary.id), RANDOM_COURSE_ID]);\n    for (const value of values) {\n      if (value !== RANDOM_COURSE_ID) expect(getCourse(value), `course \"${value}\" must exist`).toBeDefined();\n    }\n    expect(select.value).toBe(DEFAULT_COURSE_ID);\n  });\n\n  it('preselects the launch course and starts a match with a real course id', () => {\n    const root = document.createElement('div');\n    const startMatch = vi.fn();\n    const ui = new AppUI(root, { startMatch }, { initialCourseId: 'volcano' });\n    const select = openSetup(ui, root);\n    expect(select.value).toBe('volcano');\n    root.querySelector<HTMLElement>('[data-start]')!.click();\n    expect(startMatch).toHaveBeenCalledOnce();\n    expect(startMatch.mock.calls[0]![1].courseId).toBe('volcano');\n  });\n\n  it('keeps the chosen course when navigating away and back', () => {\n    const root = document.createElement('div');\n    const ui = new AppUI(root);\n    const select = openSetup(ui, root);\n    select.value = 'space-station';\n    select.dispatchEvent(new Event('change'));\n    ui.navigate('main');\n    expect(openSetup(ui, root).value).toBe('space-station');\n  });\n});\nEOF\nnpm run typecheck\nnpx vitest run src/courses src/ui src/dev tests/course-data-validation.test.ts 2>&1 | tail -40"
+  },
+  "createdAt": "2026-09-17T02:18:56.381Z"
+}
