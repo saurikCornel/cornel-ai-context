@@ -1,0 +1,13 @@
+{
+  "id": "adcf6769-a75e-455b-a112-6f34cc618b78",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Ветка cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b слита; конфликт в src/game/HoleRuntime.ts разрешён объединением обеих сторон (4 региона, все аддитивные).\n\n1) Импорты: оставлены оба набора — ZoneManager, descriptors, PadObstacle (офис) и sampleMover/MoverConfig/MoverKind, rotationAngle/RotatingConfig/RotatingKind (карточка).\n2) Типы: TranslateMover и union Mover (карточка) рядом с BallEffect и HazardResolution (офис). Локальный хелпер isHazard из чужой ветки не перенесён: он строго уже, чем isHazardObstacle из ../obstacles/descriptors (без lava), который уже используется в addObstacle и создаёт зону хазарда — функциональность не потеряна.\n3) Методы: сохранены геттеры bodyCount и sensorCount (офис) и moverPose (карточка).\n4) Шаг симуляции: сохранены приватные updateSpin/updateTranslate на rotationAngle и sampleMover (карточка) и applyBallEffects с resetObstacles для сил, падов и полей (офис). Автослитые части (MOVING_TYPES/ROTATING_KINDS/MOVER_KINDS, SpinMover, isMoving, addObstacle) оставлены как есть: addObstacle сначала отводит объёмные дескрипторы в сенсорные пути офиса, затем строит кинематические движители, включая sliding-wall, door и pendulum.\n\nПроверки на опубликованном содержимом: npm run typecheck — чисто; npm test — 40 файлов, 259 тестов пройдено, включая новый src/game/holeMovers.test.ts (маятник, ping-pong двери, loop сдвижной стены); npm run build — успешно. Линтера в проекте нет.\n\nЗамечание: publish воркера синхронизирует рабочую копию на headSha и публикует изменения рабочего дерева, поэтому локальный merge-коммит (a4d5668) на ветку не попал — опубликован обычный коммит e1fce95 с идентичным содержимым (git diff a4d5668..origin -- src пуст). Связи предков с веткой карточки в истории нет, офису стоит учесть это при слиянии в cornel/office. PR не открывал.",
+  "detail": {
+    "commands": 14,
+    "failed": 2,
+    "headSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
+    "branch": "cornel/slit-sliding-wall-door-i-pendulum-ne-dvi-63341c"
+  },
+  "createdAt": "2026-09-17T03:41:18.906Z"
+}
