@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Слияние разрешено и зафиксировано (571525c). Проверки упали только из-за отсутствующих зависимостей (`tsc: command not found`) — устанавливаю зависимости и прогоняю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"6504e250-f048-46e4-bb78-33f15ab141f9\",\"commandId\":\"checks-1\",\"operation\":\"run\",\"headSha\":\"571525c92ea7825072831452d65574ef523d2eb9\",\"timeoutSeconds\":900,\"command\":\"set -e\\ngit rev-parse HEAD\\ngit status --short\\nif [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else npm install --no-audit --no-fund; fi\\nnpm run typecheck\\nnpm test\\nnpm run build\"}\n```\n\nЖду результат от worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:53:24.164Z"
+}

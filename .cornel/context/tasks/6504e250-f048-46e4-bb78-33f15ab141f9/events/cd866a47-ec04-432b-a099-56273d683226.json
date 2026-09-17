@@ -1,0 +1,12 @@
+{
+  "id": "cd866a47-ec04-432b-a099-56273d683226",
+  "taskId": "6504e250-f048-46e4-bb78-33f15ab141f9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "checks-1",
+    "operation": "run",
+    "command": "set -e\ngit rev-parse HEAD\ngit status --short\nif [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else npm install --no-audit --no-fund; fi\nnpm run typecheck\nnpm test\nnpm run build"
+  },
+  "createdAt": "2026-09-17T04:53:24.164Z"
+}
