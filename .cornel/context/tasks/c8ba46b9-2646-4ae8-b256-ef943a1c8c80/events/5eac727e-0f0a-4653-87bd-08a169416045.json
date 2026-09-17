@@ -1,0 +1,17 @@
+{
+  "id": "5eac727e-0f0a-4653-87bd-08a169416045",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "readme-finish-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "87e05bb601a988545be09272d01c792629279b49",
+    "output": "README приведён к фактическому состоянию сборки (commit 87e05bb, один файл README.md; PR не нужен).\n\nУбраны неверные утверждения: работающее прицеливание, power meter, таблица/рейтинг/награды после матча, старт лунки по ?course&hole.\n\nДобавлено: раздел Current state (main.ts поднимает пустую сцену Three.js и меню AppUI, Start Match зовёт непереданный callback, в бандле ~20 модулей); таблица реализованных, но не подключённых систем; раздел Test с обоими раннерами — три частичных vitest-скрипта (2/11, 2/5, 3/32), полный npx vitest run = 26 файлов и 166 тестов проходят, 3 файла падают (два leaderboard-набора на node:test, save-manager.test.mjs требует несуществующий .test-build), рабочая команда node --test и пояснение, почему save-manager.test.mjs сейчас не запускается; исправленные debug-флаги (?course/?hole только пишутся в dataset, F3 — dev-миникарта); Known gaps.\n\nПроверки worker на 87e05bb: typecheck exit 0, build exit 0, node --test по leaderboard-наборам exit 0, дерево чистое. Ранее на 39e05ff: полный vitest (26/166 passed, 3 файла failed), test:ui/test:input/test:camera exit 0, воспроизведён ERR_MODULE_NOT_FOUND у save-manager. Id курсов и 10x9 лунок сверены с src/courses/data и tests/course-data-validation.test.ts.\n\nОговорка: поведение страницы проверено чтением src/main.ts, src/ui/index.ts, src/dev/* и выводом сборки, не ручной сессией в браузере. Дальше: после сборки игрового цикла обновить Current state и Known gaps.",
+    "outputDigest": "41993255106dc1ce3bca18daad511534d48f16e7edde3613ebecd9235bf6f1e3",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:30:07.667Z"
+}

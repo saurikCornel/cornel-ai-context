@@ -1,0 +1,12 @@
+{
+  "id": "be634e5a-6c40-4800-ab09-8f1dd5b6c9a5",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: README.md",
+  "detail": {
+    "files": [
+      "README.md"
+    ]
+  },
+  "createdAt": "2026-09-17T02:30:11.331Z"
+}
