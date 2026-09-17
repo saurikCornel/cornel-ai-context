@@ -1,0 +1,11 @@
+{
+  "id": "9771d7fa-3058-4dfa-9d30-d27bccb18526",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "patch-store",
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68"
+  },
+  "createdAt": "2026-09-17T04:30:05.269Z"
+}

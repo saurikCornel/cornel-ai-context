@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-ancient-temple-arctic-base-i-volca-72ad9a",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Сбой синхронизации на стороне worker (FETCH_HEAD), не в самой команде. Повторяю с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"72ad9ab1-d451-4d42-847e-9cba5adb804d\",\"commandId\":\"test-full-2\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"timeoutSeconds\":900,\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && npx vitest run 2>&1 | tail -70; echo '=== VITEST EXIT:' ${PIPESTATUS[0]} '==='\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Все 308 тестов проходят, включая рантайм-контракт `volcano-3`. Собираю прод-сборку и заодно печатаю top-down карты лунок для доказательства, что планировки действительно разные.\n\n```json\n{\"version\":1,\"taskId\":\"72ad9ab1-d451-4d42-847e-9cba5adb804d\",\"commandId\":\"build-map-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"timeoutSeconds\":900,\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && npm run build 2>&1 | tail -15; echo '=== BUILD EXIT:' ${PIPESTATUS[0]} '==='; cat > src/courses/__map.tmp.test.ts <<'EOF'\\nimport { describe, it } from 'vitest';\\nimport { requireCourse } from './index';\\nimport type { Hole } from './types';\\n\\nconst draw = (hole: Hole): string => {\\n  const xs = hole.surfaces.flatMap((s) => [s.transform.position.x - s.size.x / 2, s.transform.position.x + s.size.x / 2]);\\n  const zs = hole.surfaces.flatMap((s) => [s.transform.position.z - s.size.z / 2, s.transform.position.z + s.size.z / 2]);\\n  const minX = Math.min(...xs), maxX = Math.max(...xs), minZ = Math.min(...zs), maxZ = Math.max(...zs);\\n  const cols = 40, rows = 24;\\n  const grid = Array.from({ length: rows }, () => Array.from({ length: cols }, () => ' '));\\n  for (let r = 0; r < rows; r += 1) {\\n    for (let c = 0; c < cols; c += 1) {\\n      const x = minX + ((c + 0.5) / cols) * (maxX - minX);\\n      const z = maxZ - ((r + 0.5) / rows) * (maxZ - minZ);\\n      const slab = hole.surfaces.find((s) => Math.abs(x - s.transform.position.x) <= s.size.x / 2 && Math.abs(z - s.transform.position.z) <= s.size.z / 2);\\n      if (slab) grid[r]![c] = slab.shape === 'ramp' ? '/' : slab.transform.position.y > 0.2 ? '#' : slab.transform.position.y < -0.2 ? '_' : '.';\\n    }\\n  }\\n  const mark = (px: number, pz: number, ch: string) => {\\n    const c = Math.round(((px - minX) / (maxX - minX)) * (cols - 1));\\n    const r = Math.round(((maxZ - pz) / (maxZ - minZ)) * (rows - 1));\\n    if (grid[r] && grid[r]![c] !== undefined) grid[r]![c] = ch;\\n  };\\n  mark(hole.spawn.x, hole.spawn.z, 'T');\\n  mark(hole.cup.position.x, hole.cup.position.z, 'O');\\n  return grid.map((row) => row.join('')).join('\\\\n');\\n};\\n\\ndescribe('layout report', () => {\\n  it('prints the fourth hole of each themed course', () => {\\n    for (const id of ['volcano', 'arctic-base', 'ancient-temple']) {\\n      const course = requireCourse(id);\\n      const hole = course.holes[3]!;\\n      const kinds = [...new Set(hole.obstacles.map((o) => o.type))].join(', ');\\n      console.log(`\\\\n### ${id} hole 4 - ${hole.name} (par ${hole.par}, ${hole.surfaces.length} slabs)\\\\nmechanics: ${kinds}\\\\n${draw(hole)}`);\\n    }\\n  });\\n});\\nEOF\\nnpx vitest run src/courses/__map.tmp.test.ts 2>&1 | sed -n '1,140p'; rm -f src/courses/__map.tmp.test.ts; echo '=== temp spec removed ==='; git status --short\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-courses-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "test-full-2",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "build-map-1",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:29:25.911Z"
+  "createdAt": "2026-09-17T04:30:08.945Z"
 }

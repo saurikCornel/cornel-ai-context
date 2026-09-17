@@ -1,0 +1,11 @@
+{
+  "id": "fb024f28-c875-4a1a-bf8b-edc707bf070f",
+  "taskId": "72ad9ab1-d451-4d42-847e-9cba5adb804d",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "build-map-1",
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68"
+  },
+  "createdAt": "2026-09-17T04:30:08.939Z"
+}
