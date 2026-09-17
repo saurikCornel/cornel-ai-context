@@ -1,0 +1,17 @@
+{
+  "id": "66795cbb-391d-466a-ab1d-65c15b9f98f2",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "install-and-check-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/4655654b-e3f6-46d0-9b2d-36b72995ba6f\u001b[39m\n\n \u001b[32m✓\u001b[39m src/player/cosmetics.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n\u001b[2m   Start at \u001b[22m 04:49:59\n\u001b[2m   Duration \u001b[22m 303ms\u001b[2m (transform 70%, import 17%, tests 8%, worker 5%)\u001b[22m\n\nCHECKS_OK\n",
+    "outputDigest": "73932ede9fb4fcc8b6e18bf42e11e0c20fa7e6b78c5d527742a6f4cb8265a5ff",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:50:04.637Z"
+}

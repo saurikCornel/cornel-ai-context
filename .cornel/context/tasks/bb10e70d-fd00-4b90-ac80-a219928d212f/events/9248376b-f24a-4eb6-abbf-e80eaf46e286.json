@@ -1,0 +1,12 @@
+{
+  "id": "9248376b-f24a-4eb6-abbf-e80eaf46e286",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "movers-finish-1",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-17T01:50:03.022Z"
+}
