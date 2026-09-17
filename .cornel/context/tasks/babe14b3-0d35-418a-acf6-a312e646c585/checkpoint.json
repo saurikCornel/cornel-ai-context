@@ -1,9 +1,9 @@
 {
   "taskId": "babe14b3-0d35-418a-acf6-a312e646c585",
   "branch": "cornel/rotatingbar-windmill-spinner-pendulum-ki-babe14",
-  "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+  "headSha": "acf5baee1c3d7c045f911a9eaa4dbc8a29ff37a0",
   "status": "RUNNING",
-  "summary": "Диф чистый — только два новых файла. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"babe14b3-0d35-418a-acf6-a312e646c585\",\"commandId\":\"apple-4a\",\"operation\":\"publish\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"feat(obstacles): rotating bar/windmill/spinner/pendulum kinematics helpers\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано (head `acf5bae`). Прогоняю проверки на новом commit перед finish.\n\n```json\n{\"version\":1,\"taskId\":\"babe14b3-0d35-418a-acf6-a312e646c585\",\"commandId\":\"apple-5a\",\"operation\":\"run\",\"headSha\":\"acf5baee1c3d7c045f911a9eaa4dbc8a29ff37a0\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/obstacles/rotating.test.ts && npx tsc -b --pretty false && echo CHECKS_OK\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "apple-8c421de4",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "apple-4a",
+      "status": "SUCCEEDED",
+      "headSha": "acf5baee1c3d7c045f911a9eaa4dbc8a29ff37a0",
+      "exitCode": 0
+    },
+    {
+      "commandId": "apple-5a",
       "status": "STARTED",
-      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+      "headSha": "acf5baee1c3d7c045f911a9eaa4dbc8a29ff37a0",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:45:27.950Z"
+  "createdAt": "2026-09-17T01:46:47.133Z"
 }

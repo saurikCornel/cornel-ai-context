@@ -1,0 +1,12 @@
+{
+  "id": "528527e2-7c2a-4556-891f-a0b29a3f402c",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "RESULT",
+  "text": "fatal: ambiguous argument 'FETCH_HEAD': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\nFETCH_HEAD\n",
+  "detail": {
+    "commandId": "movers-verify-3",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-17T01:46:35.046Z"
+}

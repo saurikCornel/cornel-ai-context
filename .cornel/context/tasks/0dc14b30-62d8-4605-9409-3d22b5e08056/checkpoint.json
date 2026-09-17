@@ -3,7 +3,7 @@
   "branch": "cornel/surface-friction-model-ice-mud-sand-0dc14b",
   "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
   "status": "WAITING_CHATGPT",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"ls-2\",\"operation\":\"ls\",\"heads\":[\"cornel/surface-friction-model-ice-mud-sand-0dc14b\"],\"path\":\"src/obstacles\",\"maxLines\":100}\n```\n\nЗапрос ушёл: пробую прочитать каталог, указав ветку вместо устаревшего SHA (после publish головной коммит сменился, а нового SHA у меня нет). Жду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"ls-3\",\"operation\":\"ls\",\"heads\":{\"cornel/surface-friction-model-ice-mud-sand-0dc14b\":\"HEAD\"},\"path\":\"src/obstacles\",\"maxLines\":100}\n```\n\nПробую формат `heads` как записи «ветка → ревизия», чтобы узнать актуальное состояние: прежний headSha устарел после publish, а нового SHA у меня нет. Жду результат worker.\n\n",
   "commands": [
     {
       "commandId": "apple-a7cf8a48",
@@ -24,5 +24,5 @@
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:44:32.822Z"
+  "createdAt": "2026-09-17T01:46:36.599Z"
 }

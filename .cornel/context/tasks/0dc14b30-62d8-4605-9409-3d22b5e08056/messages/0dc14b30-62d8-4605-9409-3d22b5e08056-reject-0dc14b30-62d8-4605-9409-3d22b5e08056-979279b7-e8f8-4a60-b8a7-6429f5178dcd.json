@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"ls-3\",\"operation\":\"ls\",\"heads\":{\"cornel/surface-friction-model-ice-mud-sand-0dc14b\":\"HEAD\"},\"path\":\"src/obstacles\",\"maxLines\":100}\n```\n\nПробую формат `heads` как записи «ветка → ревизия», чтобы узнать актуальное состояние: прежний headSha устарел после publish, а нового SHA у меня нет. Жду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:46:36.598Z"
+}
