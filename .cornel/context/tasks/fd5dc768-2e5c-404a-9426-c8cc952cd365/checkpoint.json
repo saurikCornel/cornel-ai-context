@@ -1,9 +1,9 @@
 {
   "taskId": "fd5dc768-2e5c-404a-9426-c8cc952cd365",
   "branch": "cornel/lava-i-silovye-prepyatstviya-rabotayut-k-fd5dc7",
-  "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+  "headSha": "29e0908a7881a9ac254c1272ed61a504113fd830",
   "status": "RUNNING",
-  "summary": "Файл целостный. Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"fd5dc768-2e5c-404a-9426-c8cc952cd365\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"message\":\"fix(runtime): lava, force volumes, pads and fields act as sensors instead of walls\\n\\nHoleRuntime now routes every authored volume through src/obstacles/descriptors:\\nhazards (including lava) keep their trigger patch plus the gameplay zone that\\ndictates penalty and respawn, teleporters/fans/conveyors become force obstacles,\\nspring/boost/jump pads become impulse pads and gravity/magnet volumes register\\nin a ZoneManager. None of them create a collider any more, so volcano lava pools,\\nthe candy-factory belts and the layout-kit teleporters stop behaving like walls.\\n\\nGame applies the new applyBallEffects() each fixed step while a shot is live and\\nresets teleporter latches and pad cooldowns per turn.\\n\\nTests: src/game/holeRuntime.test.ts covers the volcano-3 lava drop (+2 strokes,\\nreset to the last safe position), the cf-07 conveyor drift, a layout-kit teleporter\\nexit and a boost pad; npm test (243 tests) and npm run build pass.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано (29e0908). Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"fd5dc768-2e5c-404a-9426-c8cc952cd365\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"29e0908a7881a9ac254c1272ed61a504113fd830\",\"message\":\"Лава и силовые препятствия больше не сплошные стены.\\n\\nЧто сделано (commit 29e0908, ветка cornel/lava-i-silovye-prepyatstviya-rabotayut-k-fd5dc7):\\n- src/game/HoleRuntime.ts: классификация препятствий переведена на src/obstacles/descriptors.ts. Hazard-ветка теперь через isHazardObstacle принимает 'lava' (8 лавовых бассейнов volcano больше не получают cuboid-коллайдер); teleporter/fan/conveyor создаются как BallObstacle, spring/boost/jump-pad — как PadObstacle, gravity-zone/magnet-zone регистрируются в ZoneManager. Ни один из этих объёмов не создаёт rigid body — конвейеры cf-07/cf-09 и пады перестали перегораживать фервей.\\n- Новый метод applyBallEffects(sample, dt, mass): за один фиксированный шаг применяет силовые препятствия (ленты, вентиляторы, телепорт), затем импульсные пады, затем силовые поля, и возвращает новую скорость и позицию телепорта. Ускорение полей ограничено 8 м/с^2 (ниже гравитации), пады не срабатывают на практически стоящем шаре — иначе шар вечно подбрасывало бы на jump-pad.\\n- resolveHazard(hazard, lastSafePosition) отдаёт штраф и точку респавна из зоны (LavaZone = +2, вода/ямы = +1, resetPosition из дескриптора учитывается); resetObstacles() сбрасывает защёлку телепортера и кулдауны падов.\\n- src/game/Game.ts: applyObstacleEffects вызывается в физическом шаге, пока идёт симуляция удара; сброс объёмов при смене хода и при возврате шара; resetBall использует resolveHazard рантайма.\\n\\nПроверки (worker, тот же headSha):\\n- новый src/game/holeRuntime.test.ts (4 теста): падение шара в лаву volcano-3 (тип hazard 'lava', шар доходит до пола y<0.7, penaltyStrokes=2, reset на lastSafePosition, bodyCount=5 без лавы); проход шара по конвейеру cf-07 (боковой снос +x, скорость по x >0.8, лента без коллайдера); телепортер из layoutKit (выход ровно в exit-координате); boost-pad (разгон и проезд дальше пада).\\n- npm test: 37 файлов, 243 теста — все проходят; npm run build: сборка успешна; npm run typecheck без ошибок.\\n\\nPR не открывал — слияние выполнит сборщик.\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "impl-1a",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "29e0908a7881a9ac254c1272ed61a504113fd830",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
-      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "headSha": "29e0908a7881a9ac254c1272ed61a504113fd830",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:28:43.453Z"
+  "createdAt": "2026-09-17T03:29:24.375Z"
 }
