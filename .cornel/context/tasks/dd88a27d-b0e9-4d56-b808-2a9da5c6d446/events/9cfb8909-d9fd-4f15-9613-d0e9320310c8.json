@@ -1,0 +1,17 @@
+{
+  "id": "9cfb8909-d9fd-4f15-9613-d0e9320310c8",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/dd88a27d-b0e9-4d56-b808-2a9da5c6d446\u001b[39m\n\n \u001b[32m✓\u001b[39m src/camera/CameraCollision.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/camera/CameraController.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/camera/CameraSmoothing.test.ts \u001b[2m(\u001b[22m\u001b[2m23 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/camera/CameraDirector.test.ts \u001b[2m(\u001b[22m\u001b[2m8 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 12\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m40 passed\u001b[39m\u001b[22m\u001b[90m (40)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:22:00\n\u001b[2m   Duration \u001b[22m 370ms\u001b[2m (transform 85%, import 8%, tests 4%, worker 3%)\u001b[22m\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 75 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m    0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-CXd6WqYx.css  \u001b[39m\u001b[1m\u001b[2m    8.11 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     2.57 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-CbC0Feow.js   \u001b[39m\u001b[1m\u001b[2m    2.43 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     1.11 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-BLZdCg73.js   \u001b[39m\u001b[1m\u001b[33m3,036.85 kB\u001b[39m\u001b[22m\u001b[2m │ gzip: 1,059.50 kB\u001b[22m\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.32s\u001b[39m\n",
+    "outputDigest": "bbbf3de6c04316405e1e6b53aeddbdac1eec3d62bbae894e2063883706574132",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:22:05.080Z"
+}
