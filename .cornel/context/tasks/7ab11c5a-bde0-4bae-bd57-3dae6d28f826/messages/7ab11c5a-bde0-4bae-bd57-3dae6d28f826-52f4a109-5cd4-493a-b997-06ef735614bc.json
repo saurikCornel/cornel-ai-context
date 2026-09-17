@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "headSha должен указывать на SHA моей ветки на GitHub (он не менялся — 1b05170), локальный fast-forward его не сдвигает. Повторяю диагностику с правильным headSha.\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"probe-2\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git log --oneline -1; for f in src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; do echo \\\"=== $f ===\\\"; for s in 1 2 3; do L=$(git show :$s:$f | wc -l); M=$(git show :$s:$f | awk '{ if (length($0)>m) m=length($0) } END { print m }'); echo \\\"  stage$s: lines=$L maxlinelen=$M\\\"; done; echo '  --- ours(office) head ---'; git show :2:$f | head -10; done; echo '=== long lines in src ==='; git grep -n '.\\\\{400,\\\\}' -- src | cut -c1-100\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:46:35.112Z"
+}
