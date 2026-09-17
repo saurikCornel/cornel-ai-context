@@ -1,0 +1,12 @@
+{
+  "id": "dc91a5a5-69ce-4a6a-a30c-8662ec3844c9",
+  "taskId": "80c7178d-a60e-436e-ac67-5d3063a48bee",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-deps-1",
+    "operation": "run",
+    "command": "node -v; npm -v; ls node_modules/.bin 2>/dev/null | head -20 || echo 'no node_modules'"
+  },
+  "createdAt": "2026-09-17T03:14:57.004Z"
+}
