@@ -1,0 +1,11 @@
+{
+  "id": "6823b8bb-2bdb-47fd-bc8d-ac1bf7615deb",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "readme-finish-3",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-17T02:30:05.050Z"
+}
