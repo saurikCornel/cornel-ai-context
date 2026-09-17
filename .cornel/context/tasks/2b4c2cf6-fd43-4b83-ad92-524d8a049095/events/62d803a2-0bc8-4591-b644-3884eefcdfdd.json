@@ -1,0 +1,17 @@
+{
+  "id": "62d803a2-0bc8-4591-b644-3884eefcdfdd",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "== camera wiring ==\nsrc/game/Game.ts:7:import { CameraDirector } from '../camera/CameraDirector';\nsrc/game/Game.ts:115:  private readonly cameraDirector = new CameraDirector({\n== particles wiring ==\nsrc/game/Game.ts:16:import { FeedbackSystem, detectBounce } from '../effects/FeedbackSystem';\nsrc/game/Game.ts:17:import type { FeedbackAudioSink } from '../effects/FeedbackSystem';\nsrc/game/Game.ts:18:import type { ParticleColor } from '../effects/ParticleManager';\nsrc/game/Game.ts:122:  private readonly effects: FeedbackSystem;\nsrc/game/Game.ts:160:    this.effects = new FeedbackSystem({ audio: options.audio, quality: options.quality, volume: options.volume });\nsrc/game/Game.ts:192:  get feedback(): FeedbackSystem {\nsrc/effects/FeedbackSystem.ts:5:import { ParticleManager } from './ParticleManager';\nsrc/effects/FeedbackSystem.ts:6:import type { ParticleColor } from './ParticleManager';\nsrc/effects/FeedbackSystem.ts:49:  particles?: ParticleManager;\nsrc/effects/FeedbackSystem.ts:82:export class FeedbackSystem {\nsrc/effects/FeedbackSystem.ts:83:  readonly particles: ParticleManager;\nsrc/effects/FeedbackSystem.ts:103:      new ParticleManager({ capacity: PARTICLE_POOL_CAPACITY, pointSize: 0.11, gravity: -7.5, opacity: 0.95 });\nsrc/effects/index.ts:1:export * from './ParticleManager';\nsrc/effects/index.ts:2:export * from './FeedbackSystem';\nsrc/effects/ParticleManager.ts:14:export interface ParticleManagerOptions {\nsrc/effects/ParticleManager.ts:36:export class ParticleManager {\nsrc/effects/ParticleManager.ts:55:  constructor(options: ParticleManagerOptions = {}) {\nsrc/effects/ParticleManager.ts:58:      throw new Error('ParticleManager capacity must be a positive finite integer');\n== длинные строки (минифицированный стиль) ==\nsrc/ai/BotProfiles.ts: 2 строк >300 символов (всего 5)\nsrc/core/SaveManager.ts: 3 строк >300 символов (всего 9)\nsrc/dev/DeveloperDiagnostics.ts: 1 строк >300 символов (всего 4)\nsrc/dev/LaunchOptions.ts: 1 строк >300 символов (всего 2)\nsrc/dev/PresentationMinimap.ts: 1 строк >300 символов (всего 3)\nsrc/input/InputManager.ts: 3 строк >300 символов (всего 23)\nsrc/ui/Overlays.ts: 1 строк >300 символов (всего 45)\nsrc/ui/domTests.ts: 1 строк >300 символов (всего 2)\nsrc/ui/index.ts: 4 строк >300 символов (всего 32)\n",
+    "outputDigest": "29db1c7c8f50b944fc6a547f6e2853e24f35f606986234dd7fd20744601bfbbf",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:50:46.680Z"
+}
