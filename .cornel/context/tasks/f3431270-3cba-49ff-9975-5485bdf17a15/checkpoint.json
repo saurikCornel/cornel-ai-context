@@ -3,7 +3,7 @@
   "branch": "cornel/lava-i-drugie-sensornye-zony-renderyatsy-f34312",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Сборка и тесты сцены зелёные. Финальный полный прогон + проверка статуса рабочей копии перед публикацией.\n\n```json\n{\"version\":1,\"taskId\":\"f3431270-3cba-49ff-9975-5485bdf17a15\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"npx vitest run 2>&1 | tail -6; echo '--- STATUS ---'; git status --short\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Изменены ровно два файла, посторонних правок нет. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"f3431270-3cba-49ff-9975-5485bdf17a15\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"Render sensor volumes flat and translucent instead of solid blocks\\n\\nLava, water, void and reset zones are triggers the ball rolls through, but\\nHoleSceneBuilder rendered them with the full collider height, so volcano-3 lava\\nlooked like an orange wall standing 0.55 above the fairway. Hazards now paint a\\nthin emissive spill flush with the highest surface crossing their trigger volume\\n(a hazard over a gap keeps the top of its own volume), and gravity/magnet fields\\nkeep their authored volume but render as a double-sided see-through haze. Solid\\nobstacles are untouched.\\n\\nsrc/core/holeSceneSensors.test.ts covers slab height, flush placement, material\\ntransparency/emission and the untouched solid path.\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "write-1a",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "check-3",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:22:31.298Z"
+  "createdAt": "2026-09-17T04:23:37.373Z"
 }
