@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Ключ не подошёл. Пробую ключ репозитория.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"head-check-6\",\"operation\":\"run\",\"heads\":{\"code\":\"b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\"},\"command\":\"git rev-parse HEAD; git log --oneline -3\",\"timeoutSeconds\":180}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:40:06.356Z"
+}
