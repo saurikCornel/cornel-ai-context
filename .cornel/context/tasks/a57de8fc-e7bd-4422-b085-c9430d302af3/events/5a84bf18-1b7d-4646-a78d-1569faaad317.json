@@ -1,0 +1,17 @@
+{
+  "id": "5a84bf18-1b7d-4646-a78d-1569faaad317",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-scope",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "93be8f7845d4a7893e4a70e11e3a9152d55e1b6d",
+    "output": "=== my suites on merged head ===\n \u001b[32m✓\u001b[39m src/game/game.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[33m 509\u001b[2mms\u001b[22m\u001b[39m\n   \u001b[32m✓\u001b[39m Game \u001b[2m(1)\u001b[22m\n     \u001b[33m\u001b[2m✓\u001b[22m\u001b[39m plays a one hole match from keyboard putts to the results table\u001b[33m 409\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m11 passed\u001b[39m\u001b[22m\u001b[90m (11)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m73 passed\u001b[39m\u001b[22m\u001b[90m (73)\u001b[39m\n\u001b[2m   Start at \u001b[22m 05:43:00\n\u001b[2m   Duration \u001b[22m 5.91s\u001b[2m (environment 77%, transform 15%, tests 4%, import 3%)\u001b[22m\n\n\u001b[2m    Isolate \u001b[22m \u001b[33m11 workers spawned\u001b[39m\u001b[2m · ~1.97s startup each (spawn + environment, per file)\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mat least ~439ms faster with \u001b[22m\u001b[33misolate: false\u001b[39m\u001b[2m — reuses workers across files instead of one per file\u001b[22m\n\n=== pre-existing tests/ without my config ===\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/leaderboard-generator.test.ts\u001b[2m [ tests/leaderboard-generator.test.ts ]\u001b[22m\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/leaderboard-render.test.ts\u001b[2m [ tests/leaderboard-render.test.ts ]\u001b[22m\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/save-manager.test.mjs\u001b[2m [ tests/save-manager.test.mjs ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Cannot find module '../.test-build/core/SaveManager.js' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/a57de8fc-e7bd-4422-b085-c9430d302af3/tests/save-manager.test.mjs\u001b[39m\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m3 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n=== git status ===\n",
+    "outputDigest": "c95b71c805034a23cf90b02755b39925236e8114146de81505de30fa2c285f05",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:43:07.853Z"
+}

@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(courses): rework neon-city, haunted-mansion and space-station layouts\\n\\nReplaces the nine straight corridors in each of the three courses with\\nturns, forks, multi-level sections, side branches and hidden shortcuts:\\n\\n- neon-city: right-angle blocks, express/grip forks, skyrails over voids,\\n  a service alley and a two-level megagrid finale\\n- haunted-mansion: T-shaped foyer, aisles forking around a chapel, secret\\n  crypt passage, flooded cellar below the entry level, clocktower spiral\\n- space-station: angled docking bay, closed centrifuge ring, perpendicular\\n  solar wings, zero-g catwalks and a service tunnel bypass\\n\\nTees and cups now move around each course instead of sitting on x=0, and\\nevery hole is built from several slabs. Adds src/courses/data/layoutKit.ts\\nwith shared slab/ramp/obstacle primitives (bounds are derived from the\\nsurfaces) and src/courses/layoutDiversity.test.ts, which fails if a hole\\ndegenerates back into a single straight corridor.\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:42:58.149Z"
+}
