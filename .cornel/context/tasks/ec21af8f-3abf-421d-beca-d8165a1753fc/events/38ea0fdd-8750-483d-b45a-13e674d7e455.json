@@ -1,0 +1,17 @@
+{
+  "id": "38ea0fdd-8750-483d-b45a-13e674d7e455",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "wc-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+    "output": "      36    8301 src/ui/index.ts\n1: 65\n2: 51\n3: 94\n4: 78\n5: 18\n6: 0\n7: 79\n8: 35\n9: 136\n10: 86\n11: 139\n12: 145\n13: 79\n14: 0\n15: 182\n16: 26\n17: 103\n18: 135\n19: 305\n20: 1086\n21: 0\n22: 20\n23: 133\n24: 54\n25: 394\n26: 79\n27: 2311\n28: 1352\n29: 100\n30: 716\n31: 1\n32: 0\n33: 28\n34: 42\n35: 72\n36: 121\n",
+    "outputDigest": "2bee2315679b75217007b3914c9cdc3346e5899ced5a0d0ab241400b8d0c192d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:08:01.840Z"
+}
