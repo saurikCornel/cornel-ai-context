@@ -1,0 +1,17 @@
+{
+  "id": "a129abb6-67ec-49e1-a939-5d4289fbdb46",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-22",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "### tsconfig.json (строки 1-5 из 5)\n1: {\n2:   \"files\": [],\n3:   \"references\": [{ \"path\": \"./tsconfig.app.json\" }, { \"path\": \"./tsconfig.node.json\" }]\n4: }\n5: \n\n### vite.config.ts (строки 1-7 из 7)\n1: import { defineConfig } from 'vite';\n2: \n3: export default defineConfig({\n4:   server: { host: true },\n5:   build: { target: 'es2022' },\n6: });\n7: \n\n### src/config/GameConfig.ts (строки 1-19 из 19)\n1: export const GAME_CONFIG = {\n2:   title: 'Crazy Putt Arena',\n3:   maxPlayers: 8,\n4:   targetFps: 60,\n5:   physics: {\n6:     gravity: { x: 0, y: -9.81, z: 0 },\n7:     ballRadius: 0.22,\n8:     ballMass: 0.045,\n9:     ballStopThreshold: 0.075,\n10:     sleepDelaySeconds: 0.6,\n11:     minShotPower: 0.6,\n12:     maxShotPower: 14,\n13:     maxBallSpeed: 24,\n14:     powerExponent: 1.65,\n15:   },\n16: } as const;\n17: \n18: export type GameConfig = typeof GAME_CONFIG;\n19:",
+    "outputDigest": "618971a1c770a4132219d785fc05a14a3683a34712404c74f18e154df4a42404",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:32:40.686Z"
+}

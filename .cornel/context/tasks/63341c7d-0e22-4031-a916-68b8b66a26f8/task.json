@@ -1,0 +1,30 @@
+{
+  "id": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "claude",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "f125b3cf-8a23-44ad-9af1-f0c54f06ae7c",
+    "base": {
+      "": "d445b64dd49d167d188682add1e9981ddc1fd76f"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: sliding-wall, door и pendulum не двигаются",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b (карточка «sliding-wall, door и pendulum не двигаются») не сливается в ветку офиса cornel/office: конфликт в файлах src/game/HoleRuntime.ts.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/slit-sliding-wall-door-i-pendulum-ne-dvi-63341c",
+  "baseSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+  "workspaceSyncedSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+  "status": "READY",
+  "createdAt": "2026-09-17T03:32:28.663Z",
+  "updatedAt": "2026-09-17T03:32:36.045Z",
+  "issue": 102,
+  "chatUrl": null,
+  "error": null,
+  "cliActivity": "Claude CLI: начал ход (claude-opus-5)"
+}
