@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-neon-city-haunted-mansion-space-st-81e94e",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Читаю схему данных и целевые курсы.\n\n```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"read-types-1\",\"operation\":\"read\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"paths\":[\"src/courses/types.ts\",\"src/courses/data/neon-city.ts:1-80\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"read-src-2\",\"operation\":\"read\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"paths\":[\"src/courses/types.ts:1-26\",\"src/courses/data/haunted-mansion.ts\",\"src/courses/data/space-station.ts\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-courses-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "read-types-1",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-src-2",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:11:55.426Z"
+  "createdAt": "2026-09-17T02:13:05.399Z"
 }
