@@ -1,0 +1,12 @@
+{
+  "id": "3bbcfaae-0c8b-41fa-8ce1-fa557b45057c",
+  "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-1",
+    "operation": "run",
+    "command": "npx vitest run src/core/holeScene.test.ts && npx tsc -b --pretty false && git status --short"
+  },
+  "createdAt": "2026-09-17T01:54:24.037Z"
+}

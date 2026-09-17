@@ -1,9 +1,9 @@
 {
   "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
   "branch": "cornel/three-js-hole-scene-builder-572850",
-  "headSha": "13a701e9eaf897051969ae2734580f7c44add08c",
+  "headSha": "134b4974883323edd586d7187b760ec316e66030",
   "status": "RUNNING",
-  "summary": "Обе проверки прошли: `vitest` — 6/6 тестов, `tsc -b --pretty false` — без ошибок (общий exitCode 0). Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"13a701e9eaf897051969ae2734580f7c44add08c\",\"message\":\"feat(core): hole scene builder with shared geometry and material caches\\n\\nHoleSceneBuilder turns a Hole descriptor into a THREE.Group: one cached\\nBoxGeometry(1,1,1) and one cached CylinderGeometry for every mesh (scaled\\nvia mesh.scale), MeshStandardMaterial cached per surface material and per\\nobstacle type, cup marker named <holeId>-cup, shadow flags per descriptor\\nkind, result.dispose() clears the group and builder.dispose() releases the\\ncaches. Adds 6 unit tests in src/core/holeScene.test.ts.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано, новый head `134b4974883323edd586d7187b760ec316e66030`. Прогоняю проверки на опубликованном коммите, чтобы finish опирался на успешную проверку того же headSha.\n\n```json\n{\"version\":1,\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"134b4974883323edd586d7187b760ec316e66030\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/core/holeScene.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "apple-32420d36",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "134b4974883323edd586d7187b760ec316e66030",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-1",
       "status": "STARTED",
-      "headSha": "13a701e9eaf897051969ae2734580f7c44add08c",
+      "headSha": "134b4974883323edd586d7187b760ec316e66030",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:54:05.346Z"
+  "createdAt": "2026-09-17T01:54:24.042Z"
 }
