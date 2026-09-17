@@ -3,7 +3,7 @@
   "branch": "cornel/slit-popadanie-v-lunku-bez-zvuka-i-chast-ff44d9",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Опубликовано (fa6ee5f). Завершаю задачу.\n\n```json\n{\"version\":1,\"taskId\":\"ff44d951-95f0-456f-9081-04f86c5eacd4\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"Ветка cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656 слита в cornel/slit-popadanie-v-lunku-bez-zvuka-i-chast-ff44d9 (создана от головы cornel/office).\\n\\nКонфликт был только в src/game/Game.ts, обе стороны сохранены:\\n1) resetBall — оставлена логика office (holeSystem.getLastSafePosition + HoleRuntime.resolveHazard + runtime.resetObstacles), в неё добавлена обратная связь входящей ветки: снимок точки попадания в опасную зону, this.effects.hazard(impact, hazard?.type ?? 'void') и сброс previousVelocity. Типы совпадают: HazardObstacle.type ('water' | 'void' | 'reset-zone' | 'lava') = HazardKind.\\n2) Конфликтовали два независимых новых метода — applyObstacleEffects (ленты, вентиляторы, телепорты, пады, силовые поля из office) и trackImpacts (детект отскока для звука и частиц). Сохранены оба; frame() уже вызывает trackImpacts(), runtime.update(), applyObstacleEffects() по порядку, ничего дописывать не потребовалось.\\nОстальные файлы входящей ветки (src/effects/FeedbackSystem.ts, src/assets/audioManifest.ts, src/core/QualitySettings.ts, изменения Renderer.ts, effects/index.ts, main.ts) влились автоматически.\\n\\nПроверки на итоговом содержимом слияния: npm run typecheck — успешно; npm test — 43 файла, 278 тестов, все прошли (в т.ч. src/effects/feedback.test.ts и src/game/feedback.test.ts); npm run build — успешно (только предупреждение vite о размере чанка). Отдельного линтера в package.json нет.\\n\\nPR не открывал: ветка предназначена для слияния офисом. Опубликованный commit: fa6ee5f.\"}\n```\n\nЖду подтверждения worker.\n\n",
+  "summary": "Нужна успешная проверка на опубликованном SHA — прогоняю тесты и сборку на fa6ee5f.\n\n```json\n{\"version\":1,\"taskId\":\"ff44d951-95f0-456f-9081-04f86c5eacd4\",\"commandId\":\"verify-5\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"git log --oneline -1 && grep -c '<<<<<<<' src/game/Game.ts; npm run typecheck && echo TYPECHECK_OK && npm test 2>&1 | grep -E 'Test Files|Tests |FAIL' && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":1800}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "finish-1",
+      "status": "FAILED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": null
+    },
+    {
+      "commandId": "verify-5",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:47:41.622Z"
+  "createdAt": "2026-09-17T03:47:55.606Z"
 }
