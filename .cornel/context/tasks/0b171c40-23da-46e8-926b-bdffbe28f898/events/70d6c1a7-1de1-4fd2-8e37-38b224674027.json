@@ -1,0 +1,12 @@
+{
+  "id": "70d6c1a7-1de1-4fd2-8e37-38b224674027",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-3",
+    "operation": "run",
+    "command": "git log --oneline -1; echo PARENTS=$(git rev-parse HEAD^@ | tr '\\n' ' '); git status --short | head; echo '=== markers ==='; git grep -n -e '^<<<<<<< ' -e '^>>>>>>> ' || echo none"
+  },
+  "createdAt": "2026-09-17T02:59:40.250Z"
+}

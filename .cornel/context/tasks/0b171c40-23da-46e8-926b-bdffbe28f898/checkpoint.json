@@ -1,9 +1,9 @@
 {
   "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
   "branch": "cornel/slit-sobrat-igru-svyazat-podsistemy-v-ig-0b171c",
-  "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+  "headSha": "118a525ed6f76d4cdcf1484b26f6579d828a7863",
   "status": "RUNNING",
-  "summary": "Слияние разрешено и проверено на объединённом дереве: `tsc -b` чист, 33 файла тестов / 195 тестов прошли (включая `src/game/game.test.ts` из вливаемой ветки), production-сборка собралась. Публикую merge-коммит.\n\n```json\n{\"version\":1,\"taskId\":\"0b171c40-23da-46e8-926b-bdffbe28f898\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"fe890d7c4a1756f69b9c126df7d1866e70bcd9c6\",\"message\":\"Merge «Собрать игру: связать подсистемы в играбельный цикл» (a57de8)\\n\\nКонфликты src/main.ts и vitest.config.ts разрешены объединением обеих сторон:\\n- main.ts: играбельный цикл (Game.create, слои меню/игры, LoadingOverlay, пауза кадров, debug-автостарт) сохранён и запитан выбором курса из реестра — parseLaunchOptions + resolveCourseSelection задают dataset.course/hole, initialCourseId для AppUI и стартовую лунку debug-запуска;\\n- vitest.config.ts: объединены include для src/** и tests/** с environment node и alias на ES-сборку @dimforge/rapier3d-compat.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано как `118a525`. Проверяю, что коммит записан именно как слияние с двумя родителями.\n\n```json\n{\"version\":1,\"taskId\":\"0b171c40-23da-46e8-926b-bdffbe28f898\",\"commandId\":\"verify-3\",\"operation\":\"run\",\"headSha\":\"118a525ed6f76d4cdcf1484b26f6579d828a7863\",\"command\":\"git log --oneline -1; echo PARENTS=$(git rev-parse HEAD^@ | tr '\\\\n' ' '); git status --short | head; echo '=== markers ==='; git grep -n -e '^<<<<<<< ' -e '^>>>>>>> ' || echo none\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -97,10 +97,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "118a525ed6f76d4cdcf1484b26f6579d828a7863",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-3",
       "status": "STARTED",
-      "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+      "headSha": "118a525ed6f76d4cdcf1484b26f6579d828a7863",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:59:20.950Z"
+  "createdAt": "2026-09-17T02:59:40.253Z"
 }
