@@ -1,9 +1,9 @@
 {
   "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
   "branch": "cornel/chast-moduley-zapisana-minificirovannymi-8b573d",
-  "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+  "headSha": "0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0",
   "status": "RUNNING",
-  "summary": "Все проверки зелёные на текущем состоянии дерева: typecheck OK, 278/278 тестов, `npm run build` ✓. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"8b573d45-bdcb-48f0-a517-4bb827adb50c\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"style(src): переформатировать минифицированные модули в многострочный код\\n\\nПереформатированы одностроч(ечн)ые модули без изменения поведения и публичных API:\\nsrc/ui/{index,Overlays,domTests}.ts, src/input/InputManager.ts, src/core/SaveManager.ts,\\nsrc/ai/{BotProfiles,random}.ts, src/dev/{LaunchOptions,DeveloperDiagnostics,PresentationMinimap}.ts,\\nsrc/player/{profile,progression,types}.ts, src/gameplay/ScoreManager.ts,\\nsrc/courses/data/{volcano,ancient-temple,arctic-base,chaos-dimension}.ts и CSS-файлы.\\n\\nДлинные шаблонные литералы UI и оверлея диагностики разбиты на массивы строк с join(''),\\nразметка собирается побайтово идентично прежней (проверено временным тестом сравнения\\nс версией из HEAD на всех экранах). Вне тестов в src не осталось строк длиннее 200 символов.\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Опубликовано: `0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0`. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"8b573d45-bdcb-48f0-a517-4bb827adb50c\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0\",\"message\":\"Переформатированы минифицированные модули в обычный многострочный код без изменения поведения и публичных API.\\n\\nЗатронуто 22 файла: src/ui/{index,Overlays,domTests}.ts, src/input/InputManager.ts, src/core/SaveManager.ts, src/ai/{BotProfiles,random}.ts, src/dev/{LaunchOptions,DeveloperDiagnostics,PresentationMinimap}.ts, src/player/{profile,progression,types}.ts, src/gameplay/ScoreManager.ts, src/courses/data/{volcano,ancient-temple,arctic-base,chaos-dimension}.ts, src/{style,ui/ui,game/game,leaderboard/style}.css.\\n\\nРешения: базовое форматирование сделано prettier (single-quote, print-width 100, arrow-parens avoid — под стиль репозитория); длинные шаблонные литералы, которые prettier не переносит, разбиты вручную: экраны AppUI (main/settings/profile/setup) вынесены в отдельные методы и собираются массивом строк через join(''), оверлей DeveloperDiagnostics — через join('\\\\n'). Экспорты и сигнатуры не менялись.\\n\\nПроверки на опубликованном дереве: npm run typecheck — OK; npx vitest run — 43 файла / 278 тестов пройдено; npm run build — успешно. Отдельно проверена неизменность разметки: временный тест сравнивал innerHTML новой AppUI и версии из HEAD на экранах main/settings/profile/play/custom/ranked и при initialCourseId=volcano — совпадение побайтовое (временные файлы удалены). Вне тестов в src не осталось строк длиннее 200 символов (остались только src/dev/dev.test.ts, src/gameplay/gameplay.test.ts, src/input/InputManager.test.ts).\\n\\nКоммит 0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0 в ветке cornel/chast-moduley-zapisana-minificirovannymi-8b573d; PR не открывал, слияние за сборщиком.\"}\n```\n\nСводка: карточка выполнена — минифицированные модули приведены к читаемому виду, поведение и публичные API не изменены (подтверждено побайтовым сравнением разметки UI, typecheck, 278 тестами и сборкой). Изменения опубликованы, отправлен finish; жду подтверждения worker.\n\n",
   "commands": [
     {
       "commandId": "fmt-1",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
-      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "headSha": "0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:26:16.067Z"
+  "createdAt": "2026-09-17T04:27:03.512Z"
 }
