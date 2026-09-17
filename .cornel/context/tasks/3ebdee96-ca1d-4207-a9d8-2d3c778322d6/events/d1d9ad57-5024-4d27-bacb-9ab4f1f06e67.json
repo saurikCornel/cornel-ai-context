@@ -1,0 +1,17 @@
+{
+  "id": "d1d9ad57-5024-4d27-bacb-9ab4f1f06e67",
+  "taskId": "3ebdee96-ca1d-4207-a9d8-2d3c778322d6",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "e0a720a Merge «Слить: Собрать игру: связать подсистемы в играбельный цикл» (0b171c40-23da-46e8-926b-bdffbe28f898)\n118a525 Merge «Собрать игру: связать подсистемы в играбельный цикл» (a57de8)\n5e2d11d Merge «Реализованные препятствия и зоны нельзя разместить в лунке»: конфликты курсов разрешены\n5e4bd2e Merge «Слить: README описывает функциональность, которой нет в сборке» (374701a2-c808-4317-9213-cb863516c878)\n1f5b4da feat(courses): descriptors for teleporters, fans, conveyors, pads, fields and lava\n--- STATUS ---\n--- TEST ---\nsh: vitest: command not found\nTEST_EXIT=0\n--- TYPECHECK ---\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\nTC_EXIT=0\n--- BUILD ---\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\nsh: tsc: command not found\nBUILD_EXIT=0\n",
+    "outputDigest": "1778640dddc2ab96b90656caae1a8838d0896af213b80387e448a0aab5c648ec",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:01:16.574Z"
+}
