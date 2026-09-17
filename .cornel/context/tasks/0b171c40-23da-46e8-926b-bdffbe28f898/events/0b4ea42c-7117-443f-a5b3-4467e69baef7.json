@@ -1,0 +1,12 @@
+{
+  "id": "0b4ea42c-7117-443f-a5b3-4467e69baef7",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "remerge-1",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-17T02:56:35.865Z"
+}
