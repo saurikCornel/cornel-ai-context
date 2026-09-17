@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Worker при синхронизации делает жёсткий откат к запрошенному SHA — мой merge-коммит и разрешения снесены. Прежде чем переделывать работу, выясняю механику синхронизации по reflog.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"probe-3\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git reflog -12; echo '--- status ---'; git status --short | head -5; echo '--- node_modules? ---'; test -d node_modules && echo present || echo absent\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:38:29.500Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "41b49a88-4951-4aa7-af03-cd42dc4fe5db",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "head-check",
+    "operation": "run",
+    "command": "git rev-parse HEAD; git log --oneline -3; git status --short"
+  },
+  "createdAt": "2026-09-17T04:38:26.281Z"
+}
