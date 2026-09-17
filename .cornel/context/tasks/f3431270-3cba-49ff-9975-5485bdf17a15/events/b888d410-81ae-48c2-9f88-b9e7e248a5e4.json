@@ -1,0 +1,12 @@
+{
+  "id": "b888d410-81ae-48c2-9f88-b9e7e248a5e4",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-4",
+    "operation": "run",
+    "command": "npx vitest run 2>&1 | tail -6; echo '--- BUILD ---'; npm run build 2>&1 | tail -4"
+  },
+  "createdAt": "2026-09-17T04:25:27.926Z"
+}

@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Нужна проверка уже на опубликованном коммите. Прогоняю тесты и сборку на `251d640`.\n\n```json\n{\"version\":1,\"taskId\":\"f3431270-3cba-49ff-9975-5485bdf17a15\",\"commandId\":\"check-4\",\"operation\":\"run\",\"headSha\":\"251d640f4cf839d94618ec8f2021654da077f43e\",\"command\":\"npx vitest run 2>&1 | tail -6; echo '--- BUILD ---'; npm run build 2>&1 | tail -4\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:25:27.925Z"
+}
