@@ -1,0 +1,12 @@
+{
+  "id": "06dcd686-bf4e-4c43-bdb4-0e50cf795f16",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-1",
+    "operation": "run",
+    "command": "ls -d node_modules 2>/dev/null || npm install --no-audit --no-fund; npx vitest run src/core"
+  },
+  "createdAt": "2026-09-17T04:19:53.280Z"
+}
