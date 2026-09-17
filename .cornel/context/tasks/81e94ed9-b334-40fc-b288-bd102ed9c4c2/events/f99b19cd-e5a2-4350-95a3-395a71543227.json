@@ -1,0 +1,17 @@
+{
+  "id": "f99b19cd-e5a2-4350-95a3-395a71543227",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-kit-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "     256 src/courses/data/layoutKit.ts\n",
+    "outputDigest": "411416f699186f3563c6b0368c7297a5ae800ca5113369604dd8c2ee23b6d48c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:30:14.938Z"
+}

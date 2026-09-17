@@ -1,0 +1,29 @@
+{
+  "id": "374701a2-c808-4317-9213-cb863516c878",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "claude",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "25e60eb3-00bb-4d62-b9c8-7f9523bada04",
+    "base": {
+      "": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: README описывает функциональность, которой нет в сборке",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/readme-opisyvaet-funkcionalnost-kotoroy-c8ba46 (карточка «README описывает функциональность, которой нет в сборке») не сливается в ветку офиса cornel/office: конфликт в файлах README.md.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/readme-opisyvaet-funkcionalnost-kotoroy-c8ba46 && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/slit-readme-opisyvaet-funkcionalnost-kot-374701",
+  "baseSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a",
+  "workspaceSyncedSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a",
+  "status": "READY",
+  "createdAt": "2026-09-17T02:30:13.789Z",
+  "updatedAt": "2026-09-17T02:30:17.068Z",
+  "issue": 92,
+  "chatUrl": null,
+  "error": null
+}
