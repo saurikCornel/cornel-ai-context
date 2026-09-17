@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "headSha должен соответствовать ветке на GitHub — локальный merge-коммит ещё не опубликован. Повторяю с прежним SHA.\n\n```json\n{\"version\":1,\"taskId\":\"ff44d951-95f0-456f-9081-04f86c5eacd4\",\"commandId\":\"verify-3\",\"operation\":\"run\",\"headSha\":\"e1fce954743cc27101c89a1c87e83f395570f13c\",\"command\":\"git log --oneline -1 && npm install --no-audit --no-fund 2>&1 | tail -3 && npm run typecheck && echo TYPECHECK_OK && npm test 2>&1 | tail -25\",\"timeoutSeconds\":1800}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:45:39.719Z"
+}
