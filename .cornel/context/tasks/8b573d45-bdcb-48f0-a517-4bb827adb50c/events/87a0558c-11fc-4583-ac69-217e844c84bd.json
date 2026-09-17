@@ -1,0 +1,17 @@
+{
+  "id": "87a0558c-11fc-4583-ac69-217e844c84bd",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-6",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nTYPECHECK_OK\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 2.93s\u001b[39m\u001b[2m · 26% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n=== BUILD ===\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.11s\u001b[39m\n=== STATUS ===\n M src/ai/BotProfiles.ts\n M src/ai/random.ts\n M src/core/SaveManager.ts\n M src/courses/data/ancient-temple.ts\n M src/courses/data/arctic-base.ts\n M src/courses/data/chaos-dimension.ts\n M src/courses/data/volcano.ts\n M src/dev/DeveloperDiagnostics.ts\n M src/dev/LaunchOptions.ts\n M src/dev/PresentationMinimap.ts\n M src/game/game.css\n M src/gameplay/ScoreManager.ts\n M src/input/InputManager.ts\n M src/leaderboard/style.css\n M src/player/profile.ts\n M src/player/progression.ts\n M src/player/types.ts\n M src/style.css\n M src/ui/Overlays.ts\n M src/ui/domTests.ts\n M src/ui/index.ts\n M src/ui/ui.css\n",
+    "outputDigest": "5cc9b5ee220b53d7986a258d1a7650e10f2c0342862e5b7c5204e419e1a97ebd",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:24:01.778Z"
+}

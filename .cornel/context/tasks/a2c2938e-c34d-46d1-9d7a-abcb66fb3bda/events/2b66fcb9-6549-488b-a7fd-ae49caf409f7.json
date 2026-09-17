@@ -1,0 +1,13 @@
+{
+  "id": "2b66fcb9-6549-488b-a7fd-ae49caf409f7",
+  "taskId": "a2c2938e-c34d-46d1-9d7a-abcb66fb3bda",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Лидерборд стал достижим из приложения (коммит 1b05170 в ветке cornel/liderbord-nedostizhim-iz-prilozheniya-a2c293).\n\nСделано:\n- Пункт меню Leaderboard между Profile и Settings; новый экран 'leaderboard' в AppUI: заголовок GLOBAL RANKING, строка «You are #N of M · Rating R», смонтированный renderLeaderboard с подсветкой игрока и возврат в меню.\n- src/leaderboard/standings.ts: buildLeaderboardStandings() вмешивает локального игрока в процедурное поле из 64 AI-записей, сортирует по тому же правилу, что и генератор, и заново нумерует ранги (65 строк); loadPlayerRating/savePlayerRating хранят рейтинг в localStorage (ключ crazy-putt-arena.rating) с клампом 100..3500 и устойчивостью к повреждённым данным и отсутствию storage.\n- src/leaderboard/index.ts реэкспортирует новое API и подключает style.css; src/main.ts читает сохранённый рейтинг и передаёт его в меню (AppUIOptions.playerRating) и в Game.create; стили обёртки экрана — в src/ui/ui.css.\n\nПроверки worker на этом коде:\n- npm run typecheck (tsc -b) — без ошибок.\n- npx vitest run — 45 файлов, 286 тестов, все зелёные; адресный прогон четырёх файлов лидерборда — 11 тестов зелёные: DOM-открытие экрана из главного меню, 50+ ранжированных строк с монотонным рейтингом, подсветка строки local-player и её ранг по сохранённому рейтингу (включая крайние значения — первая и последняя позиции), возврат в меню, вмешивание игрока и round-trip рейтинга через хранилище.\n- npm run build — успешно, 102 модуля.\n\nСледующий шаг для другой карточки: вызвать savePlayerRating после матча из Game.ts/итогов — этот файл вне моей карточки, поэтому сейчас экран читает сохранённое значение, а при пустом хранилище показывает базовый рейтинг. PR не открывал: слияние делает сборщик.",
+  "detail": {
+    "commands": 11,
+    "failed": 3,
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+    "branch": "cornel/liderbord-nedostizhim-iz-prilozheniya-a2c293"
+  },
+  "createdAt": "2026-09-17T04:23:51.455Z"
+}

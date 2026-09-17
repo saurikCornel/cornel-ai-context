@@ -3,7 +3,7 @@
   "branch": "cornel/liderbord-nedostizhim-iz-prilozheniya-a2c293",
   "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
   "status": "RUNNING",
-  "summary": "Finish упал на той же синхронизации FETCH_HEAD, что и ранний `read` (operation `run`/`publish` при этом работают). Проверяю фактическое состояние ветки на новом SHA, затем повторю finish.\n\n```json\n{\"version\":1,\"taskId\":\"a2c2938e-c34d-46d1-9d7a-abcb66fb3bda\",\"commandId\":\"state-1\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"timeoutSeconds\":300,\"command\":\"git status --short && git log --oneline -3 && git rev-parse HEAD && git for-each-ref --format='%(refname) %(objectname:short)' refs/remotes | head -5\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Ветка опубликована (`origin/cornel/liderbord-…-a2c293` = `1b05170`), рабочее дерево чистое. Повторяю finish на актуальном SHA.\n\n```json\n{\"version\":1,\"taskId\":\"a2c2938e-c34d-46d1-9d7a-abcb66fb3bda\",\"commandId\":\"finish-2\",\"operation\":\"finish\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"message\":\"Лидерборд стал достижим из приложения (коммит 1b05170 в ветке cornel/liderbord-nedostizhim-iz-prilozheniya-a2c293).\\n\\nСделано:\\n- Пункт меню Leaderboard между Profile и Settings; новый экран 'leaderboard' в AppUI: заголовок GLOBAL RANKING, строка «You are #N of M · Rating R», смонтированный renderLeaderboard с подсветкой игрока и возврат в меню.\\n- src/leaderboard/standings.ts: buildLeaderboardStandings() вмешивает локального игрока в процедурное поле из 64 AI-записей, сортирует по тому же правилу, что и генератор, и заново нумерует ранги (65 строк); loadPlayerRating/savePlayerRating хранят рейтинг в localStorage (ключ crazy-putt-arena.rating) с клампом 100..3500 и устойчивостью к повреждённым данным и отсутствию storage.\\n- src/leaderboard/index.ts реэкспортирует новое API и подключает style.css; src/main.ts читает сохранённый рейтинг и передаёт его в меню (AppUIOptions.playerRating) и в Game.create; стили обёртки экрана — в src/ui/ui.css.\\n\\nПроверки worker на этом коде:\\n- npm run typecheck (tsc -b) — без ошибок.\\n- npx vitest run — 45 файлов, 286 тестов, все зелёные; адресный прогон четырёх файлов лидерборда — 11 тестов зелёные: DOM-открытие экрана из главного меню, 50+ ранжированных строк с монотонным рейтингом, подсветка строки local-player и её ранг по сохранённому рейтингу (включая крайние значения — первая и последняя позиции), возврат в меню, вмешивание игрока и round-trip рейтинга через хранилище.\\n- npm run build — успешно, 102 модуля.\\n\\nСледующий шаг для другой карточки: вызвать savePlayerRating после матча из Game.ts/итогов — этот файл вне моей карточки, поэтому сейчас экран читает сохранённое значение, а при пустом хранилище показывает базовый рейтинг. PR не открывал: слияние делает сборщик.\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "state-1",
+      "status": "SUCCEEDED",
+      "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-2",
       "status": "STARTED",
       "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:22:49.356Z"
+  "createdAt": "2026-09-17T04:23:49.231Z"
 }
