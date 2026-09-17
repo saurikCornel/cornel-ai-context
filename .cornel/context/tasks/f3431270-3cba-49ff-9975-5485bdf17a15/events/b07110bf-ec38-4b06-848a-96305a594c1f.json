@@ -1,0 +1,17 @@
+{
+  "id": "b07110bf-ec38-4b06-848a-96305a594c1f",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "251d640f4cf839d94618ec8f2021654da077f43e",
+    "output": "\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m44 passed\u001b[39m\u001b[22m\u001b[90m (44)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m284 passed\u001b[39m\u001b[22m\u001b[90m (284)\u001b[39m\nvitest exit=0\n",
+    "outputDigest": "dec989e4bfc1abd6b639d0ffdb6aa9cfc91d653677a4c0ef5d477b31efa64c11",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:26:29.490Z"
+}

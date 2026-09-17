@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Хвост вывода обрезал строку с итогом тестов (в пайпе теряется их код возврата). Подтверждаю тесты явно, с кодом возврата самого vitest.\n\n```json\n{\"version\":1,\"taskId\":\"f3431270-3cba-49ff-9975-5485bdf17a15\",\"commandId\":\"check-5\",\"operation\":\"run\",\"headSha\":\"251d640f4cf839d94618ec8f2021654da077f43e\",\"command\":\"TMP=$(mktemp); npx vitest run > \\\"$TMP\\\" 2>&1; CODE=$?; grep -E 'Test Files|Tests ' \\\"$TMP\\\"; echo \\\"vitest exit=$CODE\\\"; rm -f \\\"$TMP\\\"; exit $CODE\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:26:23.659Z"
+}
