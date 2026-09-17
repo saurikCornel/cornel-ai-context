@@ -1,0 +1,17 @@
+{
+  "id": "8aca331b-318d-41f3-bd02-7dae3008f6a3",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-build",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\n\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 62 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m    0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-CXd6WqYx.css  \u001b[39m\u001b[1m\u001b[2m    8.11 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     2.57 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-ESTV255h.js   \u001b[39m\u001b[1m\u001b[2m    2.61 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     1.21 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-bZT1FQDT.js   \u001b[39m\u001b[1m\u001b[33m3,014.86 kB\u001b[39m\u001b[22m\u001b[2m │ gzip: 1,051.39 kB\u001b[22m\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.51s\u001b[39m\n--- grep rapier ---\ndist/assets/index-ESTV255h.js:0\ndist/assets/index-bZT1FQDT.js:1\ndist/assets/index-bZT1FQDT.js\n--- course ids ---\ngreen-hills:        3\nneon-city:        2\nchaos-dimension:        2\nvolcano:       73\nspace-station:        2\n--- wasm/init ---\ndist/assets/index-bZT1FQDT.js:rapier_wasm3d\ntotal 5920\n-rw-r--r--@ 1 alex  staff   7.9K Sep 17 05:34 index-CXd6WqYx.css\n-rw-r--r--@ 1 alex  staff   2.5K Sep 17 05:34 index-ESTV255h.js\n-rw-r--r--@ 1 alex  staff   2.9M Sep 17 05:34 index-bZT1FQDT.js\n",
+    "outputDigest": "b7abc9443816613c140def06bf30abab1c86d886d5a94b39e6caf40dd8e8101d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:34:10.246Z"
+}
