@@ -1,0 +1,12 @@
+{
+  "id": "370b7256-57a4-4866-be48-926fa6356b45",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-1",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund 2>&1 | tail -15 && npx vitest run src/camera 2>&1 | tail -45"
+  },
+  "createdAt": "2026-09-17T03:18:58.223Z"
+}
