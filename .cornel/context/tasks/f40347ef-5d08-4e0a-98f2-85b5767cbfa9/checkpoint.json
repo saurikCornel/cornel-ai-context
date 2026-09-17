@@ -3,7 +3,7 @@
   "branch": "cornel/u-chashki-net-flaga-i-uglubleniya-f40347",
   "headSha": "a3c88df6695c7b596dcb670ca6091cc58c7d70e2",
   "status": "RUNNING",
-  "summary": "Опубликовано, новый head `a3c88df`. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"f40347ef-5d08-4e0a-98f2-85b5767cbfa9\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"a3c88df6695c7b596dcb670ca6091cc58c7d70e2\",\"message\":\"Чашка получила углубление и флаг (ТЗ §7).\\n\\nИзменения:\\n- src/core/HoleSceneBuilder.ts: buildCup строит группу '<hole>-cup-assembly' из пяти мешей — тёмный диск устья '<hole>-cup' (позиция и размер прежние), лайнер '<hole>-cup-liner' на открытом цилиндре с BackSide, утопленный на max(captureDepth, radius), дно '<hole>-cup-floor', шест '<hole>-flag-pole' и полотно '<hole>-flag' на треугольной геометрии (DoubleSide). Цвет полотна берётся из карты THEME_FLAG_COLORS по themeId курса, неизвестная тема даёт дефолтный цвет. Добавлены два общих кэша геометрий (открытый цилиндр, единичный треугольник), оба освобождаются в dispose(); materialFor кэширует материалы с учётом side/roughness/metalness, флаг кэшируется по цвету. result.dispose() чистит и вложенную группу.\\n- src/game/HoleRuntime.ts: необязательный параметр themeId прокинут в builder.build.\\n- src/game/Game.ts: loadHole передаёт this.course.themeId.\\n- src/core/holeScene.test.ts: 4 новых теста — углубление с лайнером и дном, флаг над чашкой с цветом темы neon-city, откат к дефолтному цвету и кэш материала по цвету, сохранение meshCount (части чашки — один дочерний узел, dispose их очищает).\\n\\nПроверки на worker: npx vitest run — 43 файла, 282 теста, все зелёные; npm run build (tsc -b + vite build) — успешно, 97 модулей. PR не открывал: слияние ветки выполнит сборщик.\\n\\nСледующий шаг: визуальная проверка ?debug=1&course=green-hills&hole=1 владельцем; при желании флаг можно анимировать (колыхание) в отдельной карточке.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Нужна проверка на новом headSha — прогоняю тесты и сборку на опубликованном коммите.\n\n```json\n{\"version\":1,\"taskId\":\"f40347ef-5d08-4e0a-98f2-85b5767cbfa9\",\"commandId\":\"check-6\",\"operation\":\"run\",\"headSha\":\"a3c88df6695c7b596dcb670ca6091cc58c7d70e2\",\"timeoutSeconds\":600,\"command\":\"npx vitest run 2>&1 | tail -8 && npm run build 2>&1 | tail -4\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -127,10 +127,16 @@
     },
     {
       "commandId": "finish-1",
+      "status": "FAILED",
+      "headSha": "a3c88df6695c7b596dcb670ca6091cc58c7d70e2",
+      "exitCode": null
+    },
+    {
+      "commandId": "check-6",
       "status": "STARTED",
       "headSha": "a3c88df6695c7b596dcb670ca6091cc58c7d70e2",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:31:15.121Z"
+  "createdAt": "2026-09-17T04:31:28.594Z"
 }

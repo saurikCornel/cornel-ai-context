@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Нужна проверка на новом headSha — прогоняю тесты и сборку на опубликованном коммите.\n\n```json\n{\"version\":1,\"taskId\":\"f40347ef-5d08-4e0a-98f2-85b5767cbfa9\",\"commandId\":\"check-6\",\"operation\":\"run\",\"headSha\":\"a3c88df6695c7b596dcb670ca6091cc58c7d70e2\",\"timeoutSeconds\":600,\"command\":\"npx vitest run 2>&1 | tail -8 && npm run build 2>&1 | tail -4\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:31:28.588Z"
+}
