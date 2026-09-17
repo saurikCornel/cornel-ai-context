@@ -1,0 +1,12 @@
+{
+  "id": "a3534eef-b07f-423e-9c63-0491b868ad00",
+  "taskId": "374701a2-c808-4317-9213-cb863516c878",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-3",
+    "operation": "run",
+    "command": "set -e\ngit rev-parse HEAD\ngit log --oneline -3\ngit status --short\nif [ -f package-lock.json ]; then npm ci; else npm install; fi\necho '===== typecheck ====='\nnpm run typecheck\necho '===== test ====='\nnpm test\necho '===== build ====='\nnpm run build\necho '===== ALL CHECKS DONE ====='"
+  },
+  "createdAt": "2026-09-17T02:45:21.956Z"
+}
