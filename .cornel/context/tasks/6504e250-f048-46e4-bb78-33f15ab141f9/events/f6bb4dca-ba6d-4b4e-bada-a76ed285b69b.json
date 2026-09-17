@@ -1,0 +1,17 @@
+{
+  "id": "f6bb4dca-ba6d-4b4e-bada-a76ed285b69b",
+  "taskId": "6504e250-f048-46e4-bb78-33f15ab141f9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "168a63b4d9a5ca746281bf07acc6873303139434",
+    "output": "Слияние cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597 выполнено, merge-коммит 571525c. Конфликты в src/main.ts и src/ui/index.ts разрешены объединением обеих сторон.\n\nsrc/ui/index.ts: AppUIOptions объединён (initialCourseId + playerRating от офиса + profile и settings от карточки). Захардкоженный profile ('Putt Pilot', 1240) убран — вместо него defaultProfile() как заглушка, LEADERBOARD_SIZE сохранён. В классе есть и profile, и playerRating: конструктор применяет options.profile/options.settings, рейтинг берёт из options.playerRating, иначе из профиля; setProfile обновляет профиль и рейтинг. Экраны настроек и профиля — версия карточки (данные из сейва, безопасная арифметика при нуле матчей); кнопка Leaderboard и экран лидерборда — версия офиса; render() снова монтирует лидерборд, mountLeaderboard() читает this.profile.\n\nsrc/main.ts: Game.create получает и playerRating, и playerName/ballStyleId/onMatchComplete. В onMatchComplete профиль обновляется applyMatchOutcome, сохраняется SaveManager, рейтинг зеркалится через savePlayerRating и меню обновляется ui.setProfile. Источник рейтинга один: let playerRating = loadPlayerRating(undefined, profile.rating) — сейв профиля главный, ключ лидерборда остаётся фолбэком. AppUI получает initialCourseId, playerRating, profile: profileSummary(profile), settings.\n\nПроверки на этом коммите (worker checks-2, exitCode 0): npm ci; npm run typecheck (tsc -b) без ошибок; npm test — 48 файлов, 329 тестов пройдено, включая src/ui/leaderboard.test.ts (офис) и src/core/profileStore.test.ts, src/core/matchProgress.test.ts (карточка); npm run build (tsc -b && vite build) успешно. Отдельного линтера в package.json нет.\n\nPR не создавал: ветка задачи опубликована для слияния офисом. Примечание владельцу: дважды worker отклонял команды с «Ветка изменилась» на SHA 168a63b и 45e3ae6, потом тот же 168a63b прошёл — возможно, ветку задачи сдвигают параллельно.",
+    "outputDigest": "1c009ff516f3241e6d1395d4719945da8f6021b8fd82330341579a35baa30841",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:55:28.383Z"
+}
