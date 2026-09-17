@@ -1,0 +1,17 @@
+{
+  "id": "5395fce4-4dcd-4fe5-b6e6-339b33304a82",
+  "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "probe-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f",
+    "output": "src/courses: 17 файлов\nsrc/courses/Course.ts\nsrc/courses/CourseBuilder.ts\nsrc/courses/CourseRegistry.ts\nsrc/courses/Hole.ts\nsrc/courses/data/ancient-temple.ts\nsrc/courses/data/arctic-base.ts\nsrc/courses/data/candy-factory.ts\nsrc/courses/data/chaos-dimension.ts\nsrc/courses/data/green-hills.ts\nsrc/courses/data/haunted-mansion.ts\nsrc/courses/data/neon-city.ts\nsrc/courses/data/pirate-bay.ts\nsrc/courses/data/space-station.ts\nsrc/courses/data/volcano.ts\nsrc/courses/index.ts\nsrc/courses/registry.test.ts\nsrc/courses/types.ts",
+    "outputDigest": "6acde365a6f21351ecd0af40c9766ed46773a7d770107296f6fcec4d59ab54e6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:30:51.971Z"
+}

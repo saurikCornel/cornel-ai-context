@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-nedostizhimy-iz-prilozheniya-net-r-2e3efe",
   "headSha": "94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f",
   "status": "RUNNING",
-  "summary": "Ветка на GitHub ушла вперёд. Узнаю фактический SHA.\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"sync-1\",\"operation\":\"run\",\"headSha\":\"94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f\",\"timeoutSeconds\":300,\"command\":\"git rev-parse HEAD; git rev-parse --abbrev-ref HEAD; git ls-remote origin cornel/kursy-nedostizhimy-iz-prilozheniya-net-r-2e3efe; git log --oneline -5 HEAD\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Локальные ссылки указывают на 94fdd9d, но worker видит на GitHub другой head. Проверю фактический head через read-операцию (она выполняется без подтверждения).\n\n```json\n{\"version\":1,\"taskId\":\"2e3efedd-5185-44f2-8f58-60e42fc8f8dc\",\"commandId\":\"probe-1\",\"operation\":\"ls\",\"headSha\":\"94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f\",\"path\":\"src/courses\",\"maxLines\":40}\n```\n\nЖду результат worker: в строке результата придёт фактический head ветки.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "sync-1",
+      "status": "FAILED",
+      "headSha": "94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f",
+      "exitCode": null
+    },
+    {
+      "commandId": "probe-1",
       "status": "STARTED",
       "headSha": "94fdd9d2a8bbe2890c045d498e2d1e2e07b0024f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:28:58.288Z"
+  "createdAt": "2026-09-17T02:30:49.594Z"
 }
