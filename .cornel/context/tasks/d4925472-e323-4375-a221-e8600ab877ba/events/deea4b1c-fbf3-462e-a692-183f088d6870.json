@@ -1,0 +1,14 @@
+{
+  "id": "deea4b1c-fbf3-462e-a692-183f088d6870",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: src/courses/data/ancient-temple.ts, src/courses/data/arctic-base.ts, src/courses/data/volcano.ts",
+  "detail": {
+    "files": [
+      "src/courses/data/ancient-temple.ts",
+      "src/courses/data/arctic-base.ts",
+      "src/courses/data/volcano.ts"
+    ]
+  },
+  "createdAt": "2026-09-17T04:43:25.008Z"
+}
