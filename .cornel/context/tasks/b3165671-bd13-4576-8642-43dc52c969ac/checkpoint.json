@@ -1,9 +1,9 @@
 {
   "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
   "branch": "cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656",
-  "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
-  "status": "RUNNING",
-  "summary": "Все проверки зелёные: `npm test` — 39 файлов / 258 тестов, `npm run build` собрался, `npm run typecheck` чистый. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"message\":\"feat(feedback): particles and audio for putts, bounces, hazards and the cup\\n\\n- new FeedbackSystem binds ParticleManager and AudioManager to gameplay beats\\n- Game emits shot/bounce/hazard/holed feedback; cup burst matches the ball colour\\n- new QualitySettings maps menu presets onto pixel ratio, shadows and particle budget\\n- main.ts runs on core/Renderer (context-loss recovery) and forwards quality/volume\\n- audio manifest loader registers public/audio/manifest.json on the mixer\"}\n```\n\nОжидаю worker.\n\n",
+  "headSha": "6032c8b24949d3e22e54acc7c26eb53058bcc9ca",
+  "status": "WAITING_CHATGPT",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"6032c8b24949d3e22e54acc7c26eb53058bcc9ca\",\"message\":\"Попадание в лунку теперь озвучено и подкреплено частицами, настройки качества и громкости дошли до рендера и микшера.\\n\\nЧто сделано:\\n- src/effects/FeedbackSystem.ts (новый): связывает ParticleManager и AudioManager с игровыми событиями — удар (hit), отскок от стены (wall-bounce, с rate limit 0.07 с), опасная зона (water/lava/teleport по типу зоны), попадание в лунку (hole). Отскоки выводятся из резкого разворота горизонтальной скорости между фиксированными шагами (detectBounce), т.к. контакты Rapier здесь не пробрасываются.\\n- src/core/QualitySettings.ts (новый): пресеты low/medium/high/ultra -> максимальный pixel ratio, тени, множитель и бюджет частиц; volumeToGain переводит ползунок 0..100 в усиление микшера; applyQuality пушит пресет в рендер.\\n- src/core/Renderer.ts: добавлены setMaxPixelRatio/setShadowsEnabled и геттеры, чтобы пресет качества применялся на живом рендере.\\n- src/game/Game.ts: создаёт FeedbackSystem, монтирует пул частиц в сцену, вызывает эффекты в fireShot/completeHole/resetBall и трекинг отскоков в фиксированном шаге; публичные setQuality/setVolume и геттер feedback; появился опциональный course для детерминированных тестов и будущего level builder.\\n- src/main.ts: переведён на core/Renderer (восстановление после WebGL context lost, повторное применение пресета в onContextRestored), создаёт AudioManager (без Web Audio игра просто молчит), регистрирует public/audio/manifest.json и прокидывает quality/volume в игру и при сохранении настроек.\\n- src/assets/audioManifest.ts (новый): парсинг и регистрация манифеста, битые записи отбрасываются, отсутствующий манифест не является ошибкой.\\n\\nПроверки (worker, тот же headSha):\\n- npm run typecheck — без ошибок;\\n- npm test — 39 файлов, 258 тестов пройдено, включая новые src/effects/feedback.test.ts (14), src/assets/audioManifest.test.ts (4) и src/game/feedback.test.ts (интеграционный: матч на синтетической лунке доходит до completeHole, проверяется, что родились частицы 'holed' и запрошены звуки hit/hole, а смена quality/volume доходит до микшера);\\n- npm run build — dist собран.\\n\\nPR не открывал: слияние ветки выполнит сборщик.\"}\n```\n\nИтог: попадание в лунку теперь даёт частицы и звук, настройки качества и громкости реально применяются.\n\n- **Новое:** `src/effects/FeedbackSystem.ts` (эффекты удара/отскока/опасной зоны/лунки), `src/core/QualitySettings.ts` (пресеты качества + громкость→усиление), `src/assets/audioManifest.ts` (регистрация `public/audio/manifest.json`), три тестовых файла.\n- **Изменено:** `src/game/Game.ts` (вызовы эффектов, `setQuality`/`setVolume`, опциональный `course`), `src/main.ts` (переход на `core/Renderer`, микшер, проброс quality/volume), `src/core/Renderer.ts` (`setMaxPixelRatio`/`setShadowsEnabled`), `src/effects/index.ts`.\n- **Проверки:** `npm run typecheck` чисто, `npm test` — 258 тестов пройдено, `npm run build` собрался; опубликовано коммитом `6032c8b`.\n- **Дальше:** ждать результат `finish` от worker; слияние ветки — за сборщиком.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -229,10 +229,10 @@
     },
     {
       "commandId": "publish-1",
-      "status": "STARTED",
-      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
-      "exitCode": null
+      "status": "SUCCEEDED",
+      "headSha": "6032c8b24949d3e22e54acc7c26eb53058bcc9ca",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-17T03:40:57.493Z"
+  "createdAt": "2026-09-17T03:41:31.900Z"
 }
