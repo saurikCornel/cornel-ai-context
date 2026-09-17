@@ -1,0 +1,17 @@
+{
+  "id": "b87897b0-be6f-49f6-82a5-345d0440db93",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "readme-verify-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "87e05bb601a988545be09272d01c792629279b49",
+    "output": "typecheck_exit=0\nbuild_exit=0\nnodetest_exit=0\n# Crazy Putt Arena\n\nCrazy Putt Arena is an original browser-based arcade mini-golf game built with TypeScript, Three.js, Rapier 3D and Vite. The target product is a full match: one human player against configurable bot opponents across themed holes, with mouse aiming, a charged power meter, arcade-tuned ball physics, a scoreboard between holes, and a rating and progression update at the end.\n87e05bb docs: rewrite README to match the actual build state\n",
+    "outputDigest": "4c6fb298cdad022e238cac23da6516ff851409284e3d157c05c96e491af4836e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:26:31.988Z"
+}

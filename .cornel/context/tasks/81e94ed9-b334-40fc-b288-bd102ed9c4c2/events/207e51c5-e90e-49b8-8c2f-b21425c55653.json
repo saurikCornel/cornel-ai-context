@@ -1,0 +1,17 @@
+{
+  "id": "207e51c5-e90e-49b8-8c2f-b21425c55653",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-root-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": ".: 152 файлов\n.cornel/CHATGPT.md\n.gitignore\nAGENTS.md\nREADME.md\nindex.html\npackage-lock.json\npackage.json\npublic/audio/README.md\npublic/audio/manifest.json\nsrc/ai/BotPlanner.ts\nsrc/ai/BotProfiles.ts\nsrc/ai/BotTurnScheduler.ts\nsrc/ai/Matchmaking.ts\nsrc/ai/index.ts\nsrc/ai/planner.test.ts\nsrc/ai/random.ts\nsrc/ai/scheduler.test.ts\nsrc/ai/skill-rating.test.ts\nsrc/ai/types.ts\nsrc/app/GameState.ts\nsrc/assets/AssetManager.ts\nsrc/assets/AudioManager.ts\nsrc/assets/assets.test.ts\nsrc/assets/index.ts\nsrc/camera/CameraCollision.test.ts\nsrc/camera/CameraCollision.ts\nsrc/camera/CameraController.test.ts\nsrc/camera/CameraController.ts\nsrc/camera/CameraPose.ts\nsrc/camera/CameraSmoothing.test.ts\nsrc/camera/CameraTransition.ts\nsrc/camera/Easing.ts\nsrc/camera/RapierCameraCollision.ts\nsrc/camera/SmoothCameraRig.ts\nsrc/camera/Smoothing.ts\nsrc/camera/ThreeCameraBinding.ts\nsrc/camera/index.ts\nsrc/config/GameConfig.ts\nsrc/contracts/events.ts\nsrc/contracts/game.ts\nsrc/contracts/index.ts\nsrc/contracts/math.ts\nsrc/contracts/services.ts\nsrc/contracts/zones.ts\nsrc/core/HoleSceneBuilder.ts\nsrc/core/Renderer.ts\nsrc/core/SaveManager.ts\nsrc/core/SceneManager.ts\nsrc/core/holeScene.test.ts\nsrc/courses/Course.ts\nsrc/courses/CourseBuilder.ts\nsrc/courses/Hole.ts\nsrc/courses/data/ancient-temple.ts\nsrc/courses/data/arctic-base.ts\nsrc/courses/data/candy-factory.ts\nsrc/courses/data/chaos-dimension.ts\nsrc/courses/data/green-hills.ts\nsrc/courses/data/haunted-mansion.ts\nsrc/courses/data/neon-city.ts\nsrc/courses/data/pirate-bay.ts\n… (обрезано)",
+    "outputDigest": "32581db6e27ce2233dd5bd949fc19f2cb7cfbd01fb7cc7a527530c87bf0df8f1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:26:42.574Z"
+}
