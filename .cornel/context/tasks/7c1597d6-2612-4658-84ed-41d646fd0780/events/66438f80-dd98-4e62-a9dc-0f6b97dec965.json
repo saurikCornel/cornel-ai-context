@@ -1,0 +1,12 @@
+{
+  "id": "66438f80-dd98-4e62-a9dc-0f6b97dec965",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Путь вне рабочей копии: .git/HEAD",
+  "detail": {
+    "commandId": "read-head",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-17T04:31:48.513Z"
+}

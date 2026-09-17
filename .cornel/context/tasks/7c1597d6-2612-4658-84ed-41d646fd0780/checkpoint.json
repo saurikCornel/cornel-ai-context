@@ -3,7 +3,7 @@
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Ветка на GitHub сдвинулась. Проверяю фактическое состояние операцией чтения.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"ls-2\",\"operation\":\"ls\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"path\":\"src/core\",\"maxLines\":40}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Операции чтения работают, файл на месте. Узнаю фактический SHA ветки.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"read-head\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\".git/HEAD\",\".git/refs/heads/cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597\",\".git/FETCH_HEAD\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -109,10 +109,16 @@
     },
     {
       "commandId": "ls-2",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-head",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:31:16.336Z"
+  "createdAt": "2026-09-17T04:31:46.301Z"
 }
