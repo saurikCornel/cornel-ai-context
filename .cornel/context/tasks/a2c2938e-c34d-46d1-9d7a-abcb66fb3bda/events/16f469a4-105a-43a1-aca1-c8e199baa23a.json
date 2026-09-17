@@ -1,0 +1,17 @@
+{
+  "id": "16f469a4-105a-43a1-aca1-c8e199baa23a",
+  "taskId": "a2c2938e-c34d-46d1-9d7a-abcb66fb3bda",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "state-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+    "output": "1b05170 feat(ui): экран Leaderboard в главном меню с позицией игрока по сохранённому рейтингу\nfa6ee5f Слить «Попадание в лунку без звука и частиц»: обратная связь (частицы, звук, качество, громкость) поверх рантайма препятствий\ne1fce95 Слить «sliding-wall, door и pendulum не двигаются»: система движителей и сенсорные объёмы в HoleRuntime\n1b051708839c6a0b4094c1f74261e1937e59fc27\nrefs/remotes/origin/HEAD c0e49dd\nrefs/remotes/origin/cornel/chast-moduley-zapisana-minificirovannymi-8b573d fa6ee5f\nrefs/remotes/origin/cornel/kursy-ancient-temple-arctic-base-i-volca-72ad9a fa6ee5f\nrefs/remotes/origin/cornel/lava-i-drugie-sensornye-zony-renderyatsy-f34312 fa6ee5f\nrefs/remotes/origin/cornel/liderbord-nedostizhim-iz-prilozheniya-a2c293 1b05170\n",
+    "outputDigest": "80c78ae09b2fa7618ac3eedbc00e5aaba941baafd8875903d24f8bf2a314528a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:22:51.503Z"
+}
