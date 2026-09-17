@@ -1,0 +1,17 @@
+{
+  "id": "af8000eb-3b6e-4191-b785-a6350af7c550",
+  "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "apple-32420d36",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+    "output": "### src/core/HoleSceneBuilder.ts\n(нет файла)\n\n### src/core/holeScene.test.ts\n(нет файла)",
+    "outputDigest": "219961c6104b696e8af1b92bc21ad7f198c256abfe365bdf636335c077983b77",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T00:05:44.963Z"
+}
