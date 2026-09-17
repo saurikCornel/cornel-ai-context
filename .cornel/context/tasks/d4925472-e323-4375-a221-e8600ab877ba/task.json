@@ -22,11 +22,11 @@
   "workspaceSyncedSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T04:28:35.265Z",
-  "updatedAt": "2026-09-17T04:41:14.912Z",
+  "updatedAt": "2026-09-17T04:41:24.168Z",
   "issue": 111,
   "chatUrl": "cli://claude/d9a6ed75-a7ae-4e1b-880f-83e0d7cc7782",
   "error": null,
-  "cliActivity": "Claude CLI: начал ход (claude-opus-5)",
+  "cliActivity": "Claude CLI: Read: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/d4925472-e323-4375-a221-e8600ab877ba/.gitignore",
   "cliSession": "d9a6ed75-a7ae-4e1b-880f-83e0d7cc7782",
   "browserError": null,
   "currentHead": "1b051708839c6a0b4094c1f74261e1937e59fc27"
