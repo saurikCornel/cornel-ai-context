@@ -1,0 +1,12 @@
+{
+  "id": "a07dd120-cbe1-4196-bd3a-6a55cbb5b1eb",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-3",
+    "operation": "run",
+    "command": "git show HEAD:src/ui/index.ts > src/ui/__legacy.ts\ncat > src/ui/__parity.test.ts <<'EOF'\nimport { describe, expect, it } from 'vitest';\nimport { AppUI } from './index';\nimport { AppUI as LegacyAppUI } from './__legacy';\n\nconst screens = ['main', 'settings', 'profile', 'play', 'custom', 'ranked'];\n\ndescribe('AppUI formatting parity', () => {\n  it('renders identical markup on every screen', () => {\n    for (const screen of screens) {\n      const a = document.createElement('div');\n      const b = document.createElement('div');\n      const ui = new AppUI(a);\n      const legacy = new LegacyAppUI(b);\n      ui.navigate(screen as never);\n      legacy.navigate(screen as never);\n      expect(a.innerHTML).toBe(b.innerHTML);\n    }\n  });\n\n  it('renders identical markup for an explicit course', () => {\n    const a = document.createElement('div');\n    const b = document.createElement('div');\n    new AppUI(a, {}, { initialCourseId: 'volcano' }).navigate('custom' as never);\n    new LegacyAppUI(b, {}, { initialCourseId: 'volcano' }).navigate('custom' as never);\n    expect(a.innerHTML).toBe(b.innerHTML);\n  });\n});\nEOF\nnpx vitest run src/ui/__parity.test.ts 2>&1 | tail -15\nrm -f src/ui/__legacy.ts src/ui/__parity.test.ts\necho '=== STATUS ==='\ngit status --short"
+  },
+  "createdAt": "2026-09-17T04:21:07.909Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "7dadbbfe-d59f-4bb6-9091-7a79096a9c48",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "    \u001b[90m 19|\u001b[39m\n    \u001b[90m 20|\u001b[39m   it('renders identical markup for an explicit course', () => {\n    \u001b[90m 21|\u001b[39m     const a = document.createElement('div');\n    \u001b[90m   |\u001b[39m               \u001b[31m^\u001b[39m\n    \u001b[90m 22|\u001b[39m     const b = document.createElement('div');\n    \u001b[90m 23|\u001b[39m     new AppUI(a, {}, { initialCourseId: 'volcano' }).navigate('custom'…\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯\u001b[22m\u001b[39m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[31m2 failed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:21:10\n\u001b[2m   Duration \u001b[22m 233ms\u001b[2m (transform 81%, import 15%, tests 2%, worker 2%)\u001b[22m\n\n=== STATUS ===\n M src/ai/BotProfiles.ts\n M src/ai/random.ts\n M src/core/SaveManager.ts\n M src/courses/data/ancient-temple.ts\n M src/courses/data/arctic-base.ts\n M src/courses/data/chaos-dimension.ts\n M src/courses/data/volcano.ts\n M src/dev/DeveloperDiagnostics.ts\n M src/dev/LaunchOptions.ts\n M src/dev/PresentationMinimap.ts\n M src/game/game.css\n M src/gameplay/ScoreManager.ts\n M src/input/InputManager.ts\n M src/leaderboard/style.css\n M src/player/profile.ts\n M src/player/progression.ts\n M src/player/types.ts\n M src/style.css\n M src/ui/Overlays.ts\n M src/ui/domTests.ts\n M src/ui/index.ts\n M src/ui/ui.css\n",
+    "outputDigest": "1631f2e0513b8c76433531139787e482489462f6ee7cc411175191e5e421bc6e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:21:10.801Z"
+}
