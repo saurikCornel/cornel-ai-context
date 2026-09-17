@@ -1,9 +1,9 @@
 {
   "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
   "branch": "cornel/kursy-neon-city-haunted-mansion-space-st-81e94e",
-  "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+  "headSha": "b24e4ebbae887a84ee584b3dac83bf2d4667d55b",
   "status": "RUNNING",
-  "summary": "Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(courses): rework neon-city, haunted-mansion and space-station layouts\\n\\nReplaces the nine straight corridors in each of the three courses with\\nturns, forks, multi-level sections, side branches and hidden shortcuts:\\n\\n- neon-city: right-angle blocks, express/grip forks, skyrails over voids,\\n  a service alley and a two-level megagrid finale\\n- haunted-mansion: T-shaped foyer, aisles forking around a chapel, secret\\n  crypt passage, flooded cellar below the entry level, clocktower spiral\\n- space-station: angled docking bay, closed centrifuge ring, perpendicular\\n  solar wings, zero-g catwalks and a service tunnel bypass\\n\\nTees and cups now move around each course instead of sitting on x=0, and\\nevery hole is built from several slabs. Adds src/courses/data/layoutKit.ts\\nwith shared slab/ramp/obstacle primitives (bounds are derived from the\\nsurfaces) and src/courses/layoutDiversity.test.ts, which fails if a hole\\ndegenerates back into a single straight corridor.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано. Повторяю проверки на новом commit перед завершением.\n\n```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"check-5\",\"operation\":\"run\",\"headSha\":\"b24e4ebbae887a84ee584b3dac83bf2d4667d55b\",\"timeoutSeconds\":600,\"command\":\"npm run typecheck 2>&1 | tail -20; echo '--- vitest src/courses ---'; npx vitest run src/courses 2>&1 | tail -12; echo '--- build ---'; npm run build 2>&1 | tail -6\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-courses-1",
@@ -139,10 +139,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "b24e4ebbae887a84ee584b3dac83bf2d4667d55b",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-5",
       "status": "STARTED",
-      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "headSha": "b24e4ebbae887a84ee584b3dac83bf2d4667d55b",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:42:58.159Z"
+  "createdAt": "2026-09-17T02:43:34.491Z"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "853b7631-1a7e-40e7-b5b4-ae80cdba2b26",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-5",
+    "operation": "run",
+    "command": "npm run typecheck 2>&1 | tail -20; echo '--- vitest src/courses ---'; npx vitest run src/courses 2>&1 | tail -12; echo '--- build ---'; npm run build 2>&1 | tail -6"
+  },
+  "createdAt": "2026-09-17T02:43:34.489Z"
+}
