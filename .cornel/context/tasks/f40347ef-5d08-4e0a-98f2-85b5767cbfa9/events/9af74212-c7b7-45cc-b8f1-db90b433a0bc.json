@@ -1,0 +1,17 @@
+{
+  "id": "9af74212-c7b7-45cc-b8f1-db90b433a0bc",
+  "taskId": "f40347ef-5d08-4e0a-98f2-85b5767cbfa9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "\u001b[36mvite v7.3.6 \u001b[32mbuilding client environment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 97 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m    0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-CXd6WqYx.css  \u001b[39m\u001b[1m\u001b[2m    8.11 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     2.57 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-B79VnYu1.js   \u001b[39m\u001b[1m\u001b[2m    2.43 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:     1.11 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-bZlkfrZD.js   \u001b[39m\u001b[1m\u001b[33m3,067.49 kB\u001b[39m\u001b[22m\u001b[2m │ gzip: 1,069.52 kB\u001b[22m\n\u001b[33m\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.83s\u001b[39m\n",
+    "outputDigest": "fe85b6eac6b9c39716e61f961732aa7ccf83fb1faf7ba89adb4ddb1c4169dfeb",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:30:11.903Z"
+}
