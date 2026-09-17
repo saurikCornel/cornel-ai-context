@@ -1,0 +1,11 @@
+{
+  "id": "ecca667b-1ab6-4512-9da1-e6433dc75359",
+  "taskId": "916bc9cd-88fb-4b38-8399-f8c960544439",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "pads-finish-1",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-17T01:47:14.957Z"
+}

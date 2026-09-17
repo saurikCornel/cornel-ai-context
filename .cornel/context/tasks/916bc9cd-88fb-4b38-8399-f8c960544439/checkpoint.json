@@ -3,7 +3,7 @@
   "branch": "cornel/bumper-springpad-boostpad-and-jumppad-916bc9",
   "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
   "status": "RUNNING",
-  "summary": "Публикация прошла, новый head `739687ec`. Прогоняю проверки на опубликованном коммите (finish требует успешной проверки на том же headSha).\n\n```json\n{\"version\":1,\"taskId\":\"916bc9cd-88fb-4b38-8399-f8c960544439\",\"commandId\":\"pads-check-3\",\"operation\":\"run\",\"headSha\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/obstacles/pads.test.ts && npx tsc -b --pretty false\"}\n```\n\nЖду результат worker по `pads-check-3`.\n\nСводка: коммит `739687ec` содержит `src/obstacles/pads.ts` и `src/obstacles/pads.test.ts`. Следующий шаг: при зелёном прогоне — `finish` с итогом.\n\n",
+  "summary": "Проверки на опубликованном коммите зелёные. Закрываю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"916bc9cd-88fb-4b38-8399-f8c960544439\",\"commandId\":\"pads-finish-1\",\"operation\":\"finish\",\"headSha\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"message\":\"Карточка «Bumper, SpringPad, BoostPad and JumpPad» выполнена. Новые файлы: src/obstacles/pads.ts, src/obstacles/pads.test.ts (index.ts и types.ts не тронуты). PadObstacle(config) с полями id/kind/enabled, update(position,velocity,elapsed):PadHit|null и reset(). Поведение: bumper отражает горизонтальную скорость от центра зоны и множит на strength, минимум отскока strength*0.5; spring добавляет strength вдоль direction (по умолчанию {0,1,0}), горизонталь сохраняется; boost добавляет strength вдоль нормализованного direction с масштабом zoneFalloff; jump задаёт вертикальную скорость = strength и сохраняет горизонталь. Итог всегда ограничен cappedVelocity(maxSpeed, по умолчанию 24); cooldownSeconds (по умолчанию 0.25) блокирует повторное срабатывание по времени последнего триггера, reset() его сбрасывает; null при disabled, вне зоны или в cooldown. Переиспользованы zones.ts (zoneContains/zoneFalloff, ZoneShape), vec.ts (add/sub/scale/normalize/length/dot) и physics/helpers.ts (cappedVelocity); без Three.js, Rapier и DOM. Проверки на коммите 739687ec: npx vitest run src/obstacles/pads.test.ts — 9/9 passed; npx tsc -b --pretty false — exit 0. PR не открывался: слияние ветки cornel/bumper-springpad-boostpad-and-jumppad-916bc9 выполнит сборщик.\"}\n```\n\nЖду подтверждение worker по `pads-finish-1`.\n\nИтог: реализованы четыре импульсных пада с cooldown и ограничением скорости, покрыты 9 тестами (по одному на каждый вид, минимальный отскок бампера, падение boost по falloff, блокировка cooldown, сброс через reset, клэмп maxSpeed, disabled/вне зоны). Изменённые файлы: `src/obstacles/pads.ts`, `src/obstacles/pads.test.ts`. Проверки: vitest 9/9 и `tsc -b` — оба exit 0 на коммите `739687ec`. Следующий шаг — подтверждение finish и слияние сборщиком.\n\n",
   "commands": [
     {
       "commandId": "pads-write-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "pads-check-3",
+      "status": "SUCCEEDED",
+      "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
+      "exitCode": 0
+    },
+    {
+      "commandId": "pads-finish-1",
       "status": "STARTED",
       "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:45:54.849Z"
+  "createdAt": "2026-09-17T01:47:14.965Z"
 }
