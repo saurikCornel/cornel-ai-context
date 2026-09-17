@@ -1,0 +1,12 @@
+{
+  "id": "e0d55d07-088a-4f46-865c-797fcb3bcb70",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-2",
+    "operation": "run",
+    "command": "grep -rn --include=*.ts -E 'STROKE_LIMIT|strokeLimitPerHole|resolveMaxShots|maxShots|strokeLimitScore' src | head -80; echo '--- head of StrokeLimit.ts ---'; sed -n '1,30p' src/gameplay/StrokeLimit.ts"
+  },
+  "createdAt": "2026-09-17T03:15:23.487Z"
+}
