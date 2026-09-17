@@ -1,0 +1,17 @@
+{
+  "id": "2e487856-47b5-456d-a37e-bc7b084211dd",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-23",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "### tsconfig.app.json (строки 1-21 из 21)\n1: {\n2:   \"compilerOptions\": {\n3:     \"target\": \"ES2022\",\n4:     \"useDefineForClassFields\": true,\n5:     \"module\": \"ESNext\",\n6:     \"lib\": [\"ES2022\", \"DOM\", \"DOM.Iterable\"],\n7:     \"skipLibCheck\": true,\n8:     \"moduleResolution\": \"Bundler\",\n9:     \"allowImportingTsExtensions\": false,\n10:     \"verbatimModuleSyntax\": true,\n11:     \"moduleDetection\": \"force\",\n12:     \"noEmit\": true,\n13:     \"strict\": true,\n14:     \"noUnusedLocals\": true,\n15:     \"noUnusedParameters\": true,\n16:     \"noFallthroughCasesInSwitch\": true,\n17:     \"noUncheckedIndexedAccess\": true\n18:   },\n19:   \"include\": [\"src\"]\n20: }\n21: \n\n### vitest.config.ts (строки 1-16 из 16)\n1: import { defineConfig } from 'vitest/config';\n2: \n3: // Tests live in two places: colocated unit tests next to the modules they cover\n4: // (src/**) and cross-module integration tests (tests/**). Both run under `npm test`.\n5: // Rapier ships a CommonJS \"main\" inside an ESM package, which Node cannot load,\n6: // so tests resolve the ES build directly; the Vite app build already picks it.\n7: export default defineConfig({\n8:   resolve: {\n9:     alias: { '@dimforge/rapier3d-compat': '@dimforge/rapier3d-compat/rapier.es.js' },\n10:   },\n11:   test: {\n12:     include: ['src/**/*.test.ts', 'tests/**/*.test.ts'],\n13:     environment: 'node',\n14:   },\n15: });\n16: \n\n### package.json (строки 1-29 из 29)\n1: {\n2:   \"name\": \"crazy-putt-arena\",\n3:   \"private\": true,\n4:   \"version\": \"0.1.0\",\n5:   \"type\": \"module\",\n6:   \"scripts\": {\n7:     \"dev\": \"vite\",\n8:     \"build\": \"tsc -b && vite build\",\n9:     \"typecheck\": \"tsc -b --pretty false\",\n10:     \"test\": \"vitest run\",\n11:     \"test:watch\": \"vitest\",\n12:     \"test:ui\": \"vitest run src/ui\",\n13:     \"test:input\": \"vitest run src/input src/dev\",\n14:     \"test:camera\": \"vitest run src/camera\",\n15:     \"test:courses\": \"vitest run src/courses\"\n16:   },\n17:   \"dependencies\": {\n18:     \"@dimforge/rapier3d-compat\": \"^0.17.3\",\n19:     \"three\": \"^0.180.0\"\n20:   },\n21:   \"devDependencies\": {\n22:     \"@types/three\": \"^0.180.0\",\n23:     \"jsdom\": \"^29.1.1\",\n24:     \"typescript\": \"^5.9.2\",\n25:     \"vite\": \"^7.1.5\",\n26:     \"vitest\": \"^5.0.1\"\n27:   }\n28: }\n29:",
+    "outputDigest": "20d5e526d2189b79b829e8f5538f5e30bc6bec2a865df5298c1f1b6eaee31990",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:32:55.331Z"
+}
