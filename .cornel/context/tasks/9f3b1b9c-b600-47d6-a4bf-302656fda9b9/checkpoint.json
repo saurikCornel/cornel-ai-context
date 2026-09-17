@@ -3,7 +3,7 @@
   "branch": "cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b",
   "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
   "status": "RUNNING",
-  "summary": "headSha принят — значит расхождение было временным (push ещё не долетел до GitHub). Повторяю проверку на нём.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"verify-5\",\"operation\":\"run\",\"headSha\":\"5d42db4e649a3ac6d72d6852e40655e29478a987\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && git log --oneline -1 && npm run typecheck && npm test 2>&1 | grep -vi 'getContext' | tail -6 && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Проверка на опубликованном коммите прошла (typecheck чисто, полный `npm test` и `npm run build` успешны). Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"finish-2\",\"operation\":\"finish\",\"headSha\":\"5d42db4e649a3ac6d72d6852e40655e29478a987\",\"message\":\"sliding-wall, door и pendulum теперь движутся. src/game/HoleRuntime.ts: isMoving построен на исчерпывающей карте всех типов MovingObstacle (раньше только spinner|windmill|gate|platform, остальные получали fixed-тело и стояли); update() переписан поверх готовых чистых хелперов — rotationAngle() из src/obstacles/rotating.ts для kind 'rotate' и 'swing' (дуга маятника ограничена swingAngle, тело едет по дуге вокруг пивота, учтены armLength и clockwise) и sampleMover() из src/obstacles/movers.ts для kind 'translate' (ping-pong, loop, once и паузы pauseSeconds на концах). Добавлен публичный moverPose(id) для чтения позы кинематического тела. Новый тест src/game/holeMovers.test.ts строит лунку с pendulum/door/sliding-wall, прогоняет физику и проверяет: три кинематических мовера вместо статичных, дуга маятника не выходит за swingAngle и совпадает с поворотом тела, дверь ходит между концами и стоит на паузе, стена по loop прыгает в начало, меш синхронизирован с телом. Проверки на этом коммите: npm run typecheck — чисто, npm test — 37 файлов / 243 теста пройдено, npm run build — успешно. Попутно замечено и не трогалось (вне карточки): isHazard в HoleRuntime не включает 'lava', из-за чего лавовые зоны становятся твёрдым препятствием. PR не открывал — слияние за сборщиком.\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -139,10 +139,16 @@
     },
     {
       "commandId": "verify-5",
+      "status": "SUCCEEDED",
+      "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-2",
       "status": "STARTED",
       "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:31:45.727Z"
+  "createdAt": "2026-09-17T03:32:21.511Z"
 }
