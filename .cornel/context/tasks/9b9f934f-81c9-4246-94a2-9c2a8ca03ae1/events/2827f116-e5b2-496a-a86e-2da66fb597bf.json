@@ -1,0 +1,12 @@
+{
+  "id": "2827f116-e5b2-496a-a86e-2da66fb597bf",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "fix-1",
+    "operation": "run",
+    "command": "sed -i '' -e '349d' -e '277,286d' -e '238d' src/core/HoleSceneBuilder.ts && grep -n -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts; echo '--- markers above (empty = ok) ---'; sed -n '230,300p' src/core/HoleSceneBuilder.ts"
+  },
+  "createdAt": "2026-09-17T04:35:44.502Z"
+}

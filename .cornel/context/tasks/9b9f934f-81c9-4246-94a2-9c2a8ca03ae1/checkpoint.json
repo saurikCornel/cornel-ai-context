@@ -3,7 +3,7 @@
   "branch": "cornel/slit-u-chashki-net-flaga-i-uglubleniya-9b9f93",
   "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"read-5\",\"operation\":\"read\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"paths\":[\"src/core/HoleSceneBuilder.ts:120-250\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "SHA ветки прежний — сбой read-5 был разовым. Разрешаю конфликт: сохраняю из HEAD `buildHazard`/`buildField` (плоские сенсорные объёмы) и беру из встречной ветки новый `buildCup` с углублением, дном, флагштоком и флагом.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"fix-1\",\"operation\":\"run\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"command\":\"sed -i '' -e '349d' -e '277,286d' -e '238d' src/core/HoleSceneBuilder.ts && grep -n -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts; echo '--- markers above (empty = ok) ---'; sed -n '230,300p' src/core/HoleSceneBuilder.ts\",\"timeoutSeconds\":120}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "read-5",
+      "status": "FAILED",
+      "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+      "exitCode": null
+    },
+    {
+      "commandId": "fix-1",
       "status": "STARTED",
       "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:34:54.679Z"
+  "createdAt": "2026-09-17T04:35:44.505Z"
 }
