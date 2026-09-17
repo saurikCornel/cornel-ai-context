@@ -1,0 +1,12 @@
+{
+  "id": "04badc3e-021e-46f7-869d-24b72805156f",
+  "taskId": "1579b8fd-06c3-4735-9396-ad5f1bb96671",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "qa-test-2",
+    "operation": "run",
+    "command": "npx vitest run 2>&1 | tail -80; echo \"VITEST_EXIT=${PIPESTATUS[0]}\"; node --test tests/save-manager.test.mjs 2>&1 | tail -20; echo \"NODETEST_EXIT=$?\""
+  },
+  "createdAt": "2026-09-17T02:02:26.896Z"
+}
