@@ -1,0 +1,17 @@
+{
+  "id": "1d996efe-4604-4b83-90dd-c8f5e0e2f2d1",
+  "taskId": "374701a2-c808-4317-9213-cb863516c878",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "redo-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a",
+    "output": "--- status after restore ---\n(empty = clean)\nINCOMING COMMIT PRESENT LOCALLY\n87e05bb docs: rewrite README to match the actual build state\nAuto-merging README.md\nCONFLICT (content): Merge conflict in README.md\nAutomatic merge failed; fix conflicts and then commit the result.\nCONFLICT expected\nREADME.md resolved, 145 lines\n--- conflict markers ---\nnone\n--- sections ---\n7:## Current state\n32:## Requirements\n37:## Install\n43:## Run\n51:## Build\n59:## Typecheck\n65:## Test\n85:## Project structure\n111:## Debug flags\n133:## Audio assets\n139:## Known gaps\n--- merge state ---\n/Users/alex/Cornel AI Projects/fun-golf/.git/worktrees/374701a2-c808-4317-9213-cb863516c878\n===== typecheck =====\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n===== test =====\n\u001b[2m   Start at \u001b[22m 05:47:29\n\u001b[2m   Duration \u001b[22m 1.59s\u001b[2m (environment 48%, transform 33%, import 10%, tests 6%, worker 2%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 2.13s\u001b[39m\u001b[2m · 33% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n===== build =====\n\u001b[32m✓\u001b[39m 20 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                 \u001b[39m\u001b[1m\u001b[2m  0.45 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[35mindex-Bb53Nhb8.css  \u001b[39m\u001b[1m\u001b[2m  7.01 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   2.32 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-ESTV255h.js   \u001b[39m\u001b[1m\u001b[2m  2.61 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   1.21 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[2massets/\u001b[22m\u001b[36mindex-B2ei82-g.js   \u001b[39m\u001b[1m\u001b[2m477.15 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 120.43 kB\u001b[22m\n\u001b[32m✓ built in 656ms\u001b[39m\n===== ALL CHECKS DONE =====\n",
+    "outputDigest": "fba510a6bf66e786857bc1ce73d2d0d3e1edf4fdd67b36da76d4cd4c91bf2121",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:47:33.493Z"
+}
