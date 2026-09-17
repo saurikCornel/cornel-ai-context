@@ -1,0 +1,17 @@
+{
+  "id": "f8e7d4f8-9c57-4e36-994a-57b0cd92c24a",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "grep-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "src/game/Game.ts:21:import { calculateMatchReward } from '../gameplay/MatchRewards';\nsrc/game/Game.ts:22:import { computeMatchRatings, participantsFromStandings } from '../gameplay/RatingSystem';\nsrc/game/Game.ts:30:import { Hud, MatchResults, PauseOverlay, Scoreboard } from '../ui';\nsrc/game/Game.ts:39:export interface GameOptions {\nsrc/game/Game.ts:61:  onExit?: () => void;\nsrc/game/Game.ts:103:  static async create(options: GameOptions): Promise<Game> {\nsrc/game/Game.ts:120:  private readonly results = new MatchResults();\nsrc/game/Game.ts:155:  private constructor(private readonly options: GameOptions) {\nsrc/game/Game.ts:689:    const changes = computeMatchRatings(participantsFromStandings(standings, profiles));\nsrc/game/Game.ts:701:      const reward = calculateMatchReward({\nsrc/game/Game.ts:745:    this.options.onExit?.();",
+    "outputDigest": "4c9807fc2e5f377095aa9f1f2b961f3ea1f109f14645f4cad929c0066bc5e200",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:20:15.327Z"
+}
