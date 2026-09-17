@@ -1,0 +1,12 @@
+{
+  "id": "c3695b21-bc3e-4d6d-9839-2cdc263c0690",
+  "taskId": "fd5dc768-2e5c-404a-9426-c8cc952cd365",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-1",
+    "operation": "run",
+    "command": "ls -d node_modules 2>/dev/null || echo NO_NODE_MODULES; npm install --no-audit --no-fund 2>&1 | tail -5; npm run typecheck 2>&1 | tail -30"
+  },
+  "createdAt": "2026-09-17T03:24:43.824Z"
+}

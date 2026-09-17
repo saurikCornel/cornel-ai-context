@@ -3,7 +3,7 @@
   "branch": "cornel/lava-i-silovye-prepyatstviya-rabotayut-k-fd5dc7",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Опечатка в taskId, повторяю с верным значением.\n\n```json\n{\"version\":1,\"taskId\":\"fd5dc768-2e5c-404a-9426-c8cc952cd365\",\"commandId\":\"check-typecheck-2\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"npm run typecheck 2>&1 | tail -30\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Зависимости, похоже, не установлены. Ставлю их и запускаю typecheck.\n\n```json\n{\"version\":1,\"taskId\":\"fd5dc768-2e5c-404a-9426-c8cc952cd365\",\"commandId\":\"install-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"ls -d node_modules 2>/dev/null || echo NO_NODE_MODULES; npm install --no-audit --no-fund 2>&1 | tail -5; npm run typecheck 2>&1 | tail -30\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "impl-1a",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "check-typecheck-2",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "install-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:24:12.470Z"
+  "createdAt": "2026-09-17T03:24:43.828Z"
 }

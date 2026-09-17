@@ -1,0 +1,11 @@
+{
+  "id": "d2a25a1b-ec11-431c-bbc4-db3defe03ff1",
+  "taskId": "fd5dc768-2e5c-404a-9426-c8cc952cd365",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "install-1",
+    "output": "NO_NODE_MODULES\n\nadded 84 packages in 6s\n"
+  },
+  "createdAt": "2026-09-17T03:24:56.196Z"
+}
