@@ -1,0 +1,17 @@
+{
+  "id": "b0d1c358-f833-40ab-ade0-045432807cb6",
+  "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "minimap-12",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da",
+    "output": "In-game minimap projection and renderer. Добавлены только два файла: src/ui/Minimap.ts (MinimapModel, чистая функция buildMinimapModel(hole, ballPosition?) и виджет-класс Minimap) и src/ui/minimap.test.ts (6 тестов, @vitest-environment jsdom). buildMinimapModel: bounds берутся из hole.bounds по x/z с паддингом 5% и ненулевым спаном для вырожденных границ; точки — spawn (#8fd6ff, START), cup (#ffd166, HOLE), по точке на каждое препятствие (water/void/reset-zone #ff6b6b, spinner/windmill/gate/platform #c084fc, остальные #64748b), мяч (#ffffff, radius 5) добавляется последним и только при переданной позиции. Minimap: div.cpa-minimap с canvas 200x140, render() проецирует world x/z в пиксели с осью z вверх, пропускает отрисовку при getContext('2d') === null (jsdom) и не бросает исключений; setVisible/visible переключают видимость. Импорты типов только через import type (verbatimModuleSyntax); src/ui/index.ts, src/ui/ui.css и src/dev не затронуты. Проверки на опубликованном bc9831b: npx vitest run src/ui/minimap.test.ts — 6/6 passed; npx tsc -b --pretty false — без ошибок; git status чистый. PR не открывался: слияние ветки выполнит сборщик.",
+    "outputDigest": "ae2fe4316357fced11e4975185c789df035f36b16f0da965e87271a0b1aafe83",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:58:57.582Z"
+}
