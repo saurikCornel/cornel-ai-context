@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-2b4c2c",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Профиль/рейтинг не сохраняются, лидерборда в src/ui нет. Уточняю последним запросом, прежде чем выносить вердикт.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-18\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"echo '== Leaderboard где-либо =='; grep -rln 'Leaderboard\\\\|leaderboard' src tests 2>/dev/null | head; echo; echo '== SaveManager использование =='; grep -rn 'SaveManager' src --include=*.ts | grep -v 'core/SaveManager' | head; echo; echo '== профиль в меню (плейсхолдер?) =='; grep -o 'Putt Pilot[^\\\"]*\\\\|rating:[0-9]*\\\\|level:[0-9]*\\\\|xp:[0-9]*' src/ui/index.ts | head -10; echo; echo '== progression/statistics модули =='; ls src/player; echo; echo '== использование progression =='; grep -rn \\\"from '../player\\\" src --include=*.ts | grep -v test | head\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Все проверки собраны. Останавливаю dev-сервер и временные профили Chrome перед вердиктом.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"cleanup-1\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"pkill -f 'vite --port 5199' ; sleep 1; echo VITE_LEFT=$(pgrep -f 'vite --port 5199' | wc -l | tr -d ' '); rm -rf /private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad/p2 /private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad/p3 /private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad/p4 /private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad/p5 /private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad/p6 /private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad/chrome-profile; git status --short | head\",\"timeoutSeconds\":120}\n```\n\nЖду результат worker, затем выдам вердикт приёмки.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -109,10 +109,16 @@
     },
     {
       "commandId": "check-18",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "cleanup-1",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:06:00.778Z"
+  "createdAt": "2026-09-17T04:06:35.725Z"
 }

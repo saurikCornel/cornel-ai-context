@@ -1,0 +1,11 @@
+{
+  "id": "8d91ce41-5fe9-4ab6-9095-68f76ef09852",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "cleanup-1",
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68"
+  },
+  "createdAt": "2026-09-17T04:06:35.723Z"
+}
