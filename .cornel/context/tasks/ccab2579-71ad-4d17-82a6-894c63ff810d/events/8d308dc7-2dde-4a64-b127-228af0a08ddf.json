@@ -1,0 +1,17 @@
+{
+  "id": "8d308dc7-2dde-4a64-b127-228af0a08ddf",
+  "taskId": "ccab2579-71ad-4d17-82a6-894c63ff810d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "baseline-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "---VITEST_EXIT=1---\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/leaderboard-generator.test.ts\u001b[2m [ tests/leaderboard-generator.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: No test suite found in file /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/ccab2579-71ad-4d17-82a6-894c63ff810d/tests/leaderboard-generator.test.ts\u001b[39m\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/leaderboard-render.test.ts\u001b[2m [ tests/leaderboard-render.test.ts ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: No test suite found in file /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/ccab2579-71ad-4d17-82a6-894c63ff810d/tests/leaderboard-render.test.ts\u001b[39m\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/save-manager.test.mjs\u001b[2m [ tests/save-manager.test.mjs ]\u001b[22m\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m3 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m26 passed\u001b[39m\u001b[22m\u001b[90m (29)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m166 passed\u001b[39m\u001b[22m\u001b[90m (166)\u001b[39m\n",
+    "outputDigest": "6ec16d205a753824b28de99b4f57cb4b8d8b63a1f76e8463a3a50f18cb1198bc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:13:22.176Z"
+}
