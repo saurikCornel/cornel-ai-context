@@ -1,0 +1,8 @@
+{
+  "id": "63446f4d-d149-4607-8b73-160dfc887c53",
+  "taskId": "dd88a27d-b0e9-4d56-b808-2a9da5c6d446",
+  "type": "READY",
+  "text": "Задача создана. Worker ожидает команды от агента Claude CLI.",
+  "detail": {},
+  "createdAt": "2026-09-17T03:07:32.573Z"
+}
