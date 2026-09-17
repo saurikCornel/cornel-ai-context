@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Диф чистый — только два файла карточки. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"commandId\":\"publish-6\",\"operation\":\"publish\",\"headSha\":\"0ff1b57531671012649ac69fb36983eaa39e6389\",\"message\":\"Ball cosmetics: BALL_STYLES catalog, level unlocks and syncUnlockedCosmetics + tests\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:51:39.572Z"
+}

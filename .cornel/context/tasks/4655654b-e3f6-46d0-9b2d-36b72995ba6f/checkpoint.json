@@ -3,7 +3,7 @@
   "branch": "cornel/ball-cosmetics-catalog-and-unlocks-465565",
   "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
   "status": "RUNNING",
-  "summary": "Проверки прошли (6/6 тестов, `tsc -b` чистый). Перед публикацией проверю, не задел ли `npm install` файл lock.\n\n```json\n{\"version\":1,\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"commandId\":\"status-5\",\"operation\":\"run\",\"headSha\":\"0ff1b57531671012649ac69fb36983eaa39e6389\",\"timeoutSeconds\":120,\"command\":\"git status --short\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Диф чистый — только два файла карточки. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"commandId\":\"publish-6\",\"operation\":\"publish\",\"headSha\":\"0ff1b57531671012649ac69fb36983eaa39e6389\",\"message\":\"Ball cosmetics: BALL_STYLES catalog, level unlocks and syncUnlockedCosmetics + tests\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "apple-32dd9b9f",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "status-5",
+      "status": "SUCCEEDED",
+      "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-6",
       "status": "STARTED",
       "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:50:55.909Z"
+  "createdAt": "2026-09-17T01:51:39.640Z"
 }

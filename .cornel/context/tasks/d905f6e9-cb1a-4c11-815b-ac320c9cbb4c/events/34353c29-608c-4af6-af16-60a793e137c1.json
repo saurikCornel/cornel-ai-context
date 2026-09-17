@@ -1,0 +1,17 @@
+{
+  "id": "34353c29-608c-4af6-af16-60a793e137c1",
+  "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "minimap-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
+    "output": "\nadded 84 packages in 12s\nvitest 5.0.1\n",
+    "outputDigest": "5c271d0f67564dd75423895d599feb3124986f984a87232428968314b3c6e15d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:51:50.330Z"
+}
