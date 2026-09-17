@@ -1,0 +1,17 @@
+{
+  "id": "6b4dadff-67e7-40e8-ac70-afa04a9b5e6c",
+  "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-6",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
+    "output": "5c3050d91bd69a61cd8d614fdc716690ee24017f\nREADME.md\nmanifest.json\nmanifest events: 15 unique: 15\ninstalling deps\n\nadded 84 packages in 2s\nTYPECHECK OK\n?? README.md\n?? public/\n",
+    "outputDigest": "c920b07c9e5d38d852d2642675ea8dd5d5947c88c47a93c70e50d16fd2c0a4da",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:59:21.550Z"
+}
