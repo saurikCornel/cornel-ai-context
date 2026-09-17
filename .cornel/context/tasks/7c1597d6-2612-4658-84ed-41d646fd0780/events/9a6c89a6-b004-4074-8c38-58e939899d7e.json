@@ -1,0 +1,13 @@
+{
+  "id": "9a6c89a6-b004-4074-8c38-58e939899d7e",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Прогресс игрока сохраняется: SaveManager подключён к приложению (коммит b9babeb).\n\nСделано:\n- Новый src/core/ProfileStore.ts: applyMatchOutcome (XP из MatchRewards, рейтинг из RatingSystem, статистика через applyMatchStatistics, разблокировки через syncUnlockedCosmetics), profileSummary для меню, settingsToUi/uiToSettings.\n- src/main.ts: профиль и настройки грузятся SaveManager при старте, передаются в AppUI (экран Profile) и в Game (playerName, playerRating, ballStyleId); после матча onMatchComplete сохраняет профиль и обновляет меню; saveSettings пишет настройки в localStorage.\n- src/game/Game.ts: опция onMatchComplete отдаёт результат локального игрока один раз (флаг outcomeReported); id локального игрока вынесен в LOCAL_PLAYER_ID.\n- src/ui/index.ts: удалены фиктивные данные ('Putt Pilot', rating 1240, level 7 и т.д.) — профиль и настройки приходят через AppUIOptions, добавлен setProfile, форма настроек предзаполняется сохранёнными значениями, убрано деление на ноль при 0 матчей.\n- src/player/types.ts, src/player/profile.ts, src/core/SaveManager.ts: поле rating (DEFAULT_RATING=1000), пресет качества ultra, нормализация и миграция без смены SAVE_VERSION — старые сохранения читаются.\n\nПроверки worker на этом headSha: npm run typecheck — чисто; npx vitest run — 45 файлов, 285 тестов зелёные; npm run build — успешно. Новые тесты: src/core/profileStore.test.ts (матч -> сохранение -> перезагрузка, накопление за два матча с разблокировкой косметики, круг настроек, DOM-проверки экранов Profile и Settings) и src/core/matchProgress.test.ts (реальный матч в Game на green-hills: onMatchComplete -> SaveManager -> перезагруженный профиль -> экран Profile). Вручную в браузере не проверял. PR не открывал — слияние ветки выполнит сборщик.",
+  "detail": {
+    "commands": 35,
+    "failed": 7,
+    "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
+    "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597"
+  },
+  "createdAt": "2026-09-17T04:41:28.926Z"
+}

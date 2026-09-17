@@ -1,9 +1,9 @@
 {
   "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
   "branch": "cornel/slit-u-chashki-net-flaga-i-uglubleniya-9b9f93",
-  "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+  "headSha": "034be634f1cae30618aaa51331790d860965b502",
   "status": "RUNNING",
-  "summary": "Тот же разовый отказ проверки headSha (чередуется через раз). Повторяю публикацию с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"message\":\"Слить «У чашки нет флага и углубления»: углублённая чашка с флагом поверх плоских сенсорных зон\\n\\nКонфликт в src/core/HoleSceneBuilder.ts разрешён объединением обеих сторон:\\n- из cornel/office сохранены buildHazard и buildField (плоские полупрозрачные сенсорные объёмы);\\n- из встречной ветки взят новый buildCup: группа из горловины, лунки-углубления (liner), дна, флагштока и флага с цветом по теме курса.\\n\\nПроверки: tsc -b (0), vitest run — 46 файлов / 296 тестов пройдено, vite build успешен.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано, head 034be634. Проверяю фактическое содержимое опубликованного коммита.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"check-final\",\"operation\":\"run\",\"headSha\":\"034be634f1cae30618aaa51331790d860965b502\",\"command\":\"git log --oneline -1; echo \\\"PARENTS=$(git rev-list --parents -n1 HEAD)\\\"; git status --short; echo \\\"MARKERS=$(grep -rc -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts)\\\"; grep -n 'private buildCup\\\\|private buildHazard\\\\|private buildField\\\\|cup-liner\\\\|-flag-pole' src/core/HoleSceneBuilder.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -109,10 +109,16 @@
     },
     {
       "commandId": "publish-2",
+      "status": "SUCCEEDED",
+      "headSha": "034be634f1cae30618aaa51331790d860965b502",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-final",
       "status": "STARTED",
-      "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+      "headSha": "034be634f1cae30618aaa51331790d860965b502",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:41:16.331Z"
+  "createdAt": "2026-09-17T04:41:39.416Z"
 }

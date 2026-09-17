@@ -1,0 +1,12 @@
+{
+  "id": "35f9583e-3515-478b-998d-c3d8c9a37e63",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-final",
+    "operation": "run",
+    "command": "git log --oneline -1; echo \"PARENTS=$(git rev-list --parents -n1 HEAD)\"; git status --short; echo \"MARKERS=$(grep -rc -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts)\"; grep -n 'private buildCup\\|private buildHazard\\|private buildField\\|cup-liner\\|-flag-pole' src/core/HoleSceneBuilder.ts"
+  },
+  "createdAt": "2026-09-17T04:41:39.413Z"
+}

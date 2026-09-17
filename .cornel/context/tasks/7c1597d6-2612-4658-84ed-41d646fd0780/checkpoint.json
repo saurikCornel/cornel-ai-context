@@ -3,7 +3,7 @@
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
   "status": "RUNNING",
-  "summary": "Head принят — нужна успешная проверка именно на этом SHA. Запускаю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"verify-5\",\"operation\":\"run\",\"headSha\":\"b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\",\"command\":\"set -e\\ngit log --oneline -2\\nnpm run typecheck 2>&1 | tail -4\\nnpx vitest run 2>&1 | grep -v 'Not implemented' | tail -8\\nnpm run build 2>&1 | tail -3\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Проверка на опубликованном коммите b9babeb прошла: typecheck чистый, 285 тестов в 45 файлах зелёные, сборка успешна. Завершаю.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"finish-3\",\"operation\":\"finish\",\"headSha\":\"b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\",\"message\":\"Прогресс игрока сохраняется: SaveManager подключён к приложению (коммит b9babeb).\\n\\nСделано:\\n- Новый src/core/ProfileStore.ts: applyMatchOutcome (XP из MatchRewards, рейтинг из RatingSystem, статистика через applyMatchStatistics, разблокировки через syncUnlockedCosmetics), profileSummary для меню, settingsToUi/uiToSettings.\\n- src/main.ts: профиль и настройки грузятся SaveManager при старте, передаются в AppUI (экран Profile) и в Game (playerName, playerRating, ballStyleId); после матча onMatchComplete сохраняет профиль и обновляет меню; saveSettings пишет настройки в localStorage.\\n- src/game/Game.ts: опция onMatchComplete отдаёт результат локального игрока один раз (флаг outcomeReported); id локального игрока вынесен в LOCAL_PLAYER_ID.\\n- src/ui/index.ts: удалены фиктивные данные ('Putt Pilot', rating 1240, level 7 и т.д.) — профиль и настройки приходят через AppUIOptions, добавлен setProfile, форма настроек предзаполняется сохранёнными значениями, убрано деление на ноль при 0 матчей.\\n- src/player/types.ts, src/player/profile.ts, src/core/SaveManager.ts: поле rating (DEFAULT_RATING=1000), пресет качества ultra, нормализация и миграция без смены SAVE_VERSION — старые сохранения читаются.\\n\\nПроверки worker на этом headSha: npm run typecheck — чисто; npx vitest run — 45 файлов, 285 тестов зелёные; npm run build — успешно. Новые тесты: src/core/profileStore.test.ts (матч -> сохранение -> перезагрузка, накопление за два матча с разблокировкой косметики, круг настроек, DOM-проверки экранов Profile и Settings) и src/core/matchProgress.test.ts (реальный матч в Game на green-hills: onMatchComplete -> SaveManager -> перезагруженный профиль -> экран Profile). Вручную в браузере не проверял. PR не открывал — слияние ветки выполнит сборщик.\"}\n```\n\nИтог: карточка закрыта — профиль, рейтинг, XP, статистика, косметика и настройки переживают перезагрузку; меню показывает реальные данные вместо литералов. Жду подтверждения worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -205,10 +205,16 @@
     },
     {
       "commandId": "verify-5",
+      "status": "SUCCEEDED",
+      "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-3",
       "status": "STARTED",
       "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:40:51.441Z"
+  "createdAt": "2026-09-17T04:41:26.692Z"
 }

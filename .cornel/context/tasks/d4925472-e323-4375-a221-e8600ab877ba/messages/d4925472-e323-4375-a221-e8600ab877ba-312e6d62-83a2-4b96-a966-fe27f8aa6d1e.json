@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "`dist/` и `node_modules/` игнорируются. Публикую слияние.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"message\":\"Слить «Часть модулей записана минифицированными однострочниками»: разминифицированный код + экран Leaderboard\\n\\nКонфликты src/ui/index.ts и src/ui/ui.css разрешены объединением обеих сторон:\\n- за основу взята разминифицированная (многострочная) версия встречной ветки;\\n- поверх неё восстановлена функциональность офиса: экран Leaderboard (тип Screen, пункт меню, AppUIOptions.playerRating, LEADERBOARD_SIZE, leaderboardScreen(), mountLeaderboard(), ветка в view() и вызов в render()), записанная в том же многострочном стиле;\\n- в ui.css к разминифицированным правилам дописаны стили офиса .cpa-leaderboard, .cpa-leaderboard .leaderboard и .cpa-note в развёрнутом форматировании.\\n\\nПроверки: tsc -b без ошибок, vitest run — 45 файлов / 286 тестов пройдены, vite build успешен.\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:41:34.920Z"
+}
