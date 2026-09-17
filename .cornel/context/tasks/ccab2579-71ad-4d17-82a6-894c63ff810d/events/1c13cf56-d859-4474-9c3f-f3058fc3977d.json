@@ -1,0 +1,12 @@
+{
+  "id": "1c13cf56-d859-4474-9c3f-f3058fc3977d",
+  "taskId": "ccab2579-71ad-4d17-82a6-894c63ff810d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "baseline-1",
+    "operation": "run",
+    "command": "node -e \"console.log('vitest',require('./node_modules/vitest/package.json').version)\" ; npx vitest run --reporter=basic 2>&1 | tail -50 ; echo EXIT=$?"
+  },
+  "createdAt": "2026-09-17T02:07:22.955Z"
+}

@@ -17,11 +17,14 @@
   "branch": "cornel/polnyy-progon-testov-padaet-net-skripta-ccab25",
   "baseSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "workspaceSyncedSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T02:05:52.394Z",
-  "updatedAt": "2026-09-17T02:06:35.902Z",
+  "updatedAt": "2026-09-17T02:07:26.739Z",
   "issue": 86,
-  "chatUrl": null,
+  "chatUrl": "cli://claude/c6ff23a5-b9b9-41b9-9546-e32b86a12f80",
   "error": null,
-  "cliActivity": "Claude CLI: Bash"
+  "cliActivity": null,
+  "cliSession": "c6ff23a5-b9b9-41b9-9546-e32b86a12f80",
+  "browserError": null,
+  "currentHead": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
 }

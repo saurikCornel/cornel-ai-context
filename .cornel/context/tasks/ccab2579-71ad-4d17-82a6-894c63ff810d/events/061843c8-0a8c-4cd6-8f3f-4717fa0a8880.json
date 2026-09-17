@@ -1,0 +1,17 @@
+{
+  "id": "061843c8-0a8c-4cd6-8f3f-4717fa0a8880",
+  "taskId": "ccab2579-71ad-4d17-82a6-894c63ff810d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "baseline-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "node:internal/modules/cjs/loader:1423\n  throw err;\n  ^\n\nError: Cannot find module './node_modules/vitest/package.json'\nRequire stack:\n- /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/ccab2579-71ad-4d17-82a6-894c63ff810d/[eval]\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)\n    at Module._load (node:internal/modules/cjs/loader:1226:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)\n    at Module.require (node:internal/modules/cjs/loader:1503:12)\n    at require (node:internal/modules/helpers:152:16)\n    at [eval]:1:22\n    at runScriptInThisContext (node:internal/vm:219:10) {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: [\n    '/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/ccab2579-71ad-4d17-82a6-894c63ff810d/[eval]'\n  ]\n}\n\nNode.js v24.8.0\nvite.config.ts (1:529) \u001b[33m[UNRESOLVED_IMPORT] \u001b[0mCould not resolve 'vite' in vite.config.ts\n - Module not found, treating it as an external dependency in vite.config.ts at 529..535\n\n\u001b[31mfailed to load config from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/ccab2579-71ad-4d17-82a6-894c63ff810d/vite.config.ts\u001b[39m\n\n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Startup Error \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯⎯\u001b[39m\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/ccab2579-71ad-4d17-82a6-894c63ff810d/vite.config.ts.timestamp-1789610846687-90d187722623a.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:858:18)\n    at defaultResolve (node:internal/modules/esm/resolve:990:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:768:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:745:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:318:38)\n    at #link (node:internal/modules/esm/module_job:208:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\n\n\nEXIT=0\n",
+    "outputDigest": "06c145484e2658b0bc483122802c85960f13a76245d95ab3505af1e324dd0dc0",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:07:26.740Z"
+}

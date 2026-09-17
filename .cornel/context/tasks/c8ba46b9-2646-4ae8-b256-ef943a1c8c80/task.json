@@ -19,9 +19,9 @@
   "workspaceSyncedSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "READY",
   "createdAt": "2026-09-17T02:06:20.169Z",
-  "updatedAt": "2026-09-17T02:07:14.109Z",
+  "updatedAt": "2026-09-17T02:07:27.009Z",
   "issue": 91,
   "chatUrl": null,
   "error": null,
-  "cliActivity": "Claude CLI: начал ход (claude-opus-5)"
+  "cliActivity": "Claude CLI: Read: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/c8ba46b9-2646-4ae8-b256-ef943a1c8c80/src/main.ts"
 }
