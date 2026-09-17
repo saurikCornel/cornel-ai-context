@@ -1,0 +1,11 @@
+{
+  "id": "f71bb67a-37ee-4239-a4ee-39f0e7cfbbcf",
+  "taskId": "6cfaf087-7d15-4864-af87-16343f16a7d2",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "reformat-1",
+    "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e"
+  },
+  "createdAt": "2026-09-17T05:09:01.152Z"
+}
