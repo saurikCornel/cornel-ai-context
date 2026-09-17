@@ -1,0 +1,17 @@
+{
+  "id": "d81035c4-ac56-4401-b180-d42f4b912484",
+  "taskId": "374701a2-c808-4317-9213-cb863516c878",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a",
+    "output": "012ffb9 Merge «Полный прогон тестов падает, нет скрипта npm test» (ccab2579-71ad-4d17-82a6-894c63ff810d)\n9842aeb test: unify the suite on vitest and add an npm test script\n34b3fa1 feat(gameplay): add maxShots budget with penalty score on stroke limit\nFrom github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/readme-opisyvaet-funkcionalnost-kotoroy-c8ba46 -> FETCH_HEAD\nAuto-merging README.md\nCONFLICT (content): Merge conflict in README.md\nAutomatic merge failed; fix conflicts and then commit the result.\nMERGE_EXIT=1\nUU README.md\n",
+    "outputDigest": "fd37b683143c1547648b2d623a8125b890506dfc906f01934eaa885481ae7dd0",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:31:22.122Z"
+}
