@@ -1,0 +1,17 @@
+{
+  "id": "d1b3cbf6-1a5e-4c9a-b378-4aad86c3fd25",
+  "taskId": "72ad9ab1-d451-4d42-847e-9cba5adb804d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-kit-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "layoutKit patched\n211:export const lava = (\n426:export const fan = (\n",
+    "outputDigest": "f748f44b141d401dd956b2713b869c844e7a002eb71548eed87ba730ea9e68a5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:21:55.210Z"
+}
