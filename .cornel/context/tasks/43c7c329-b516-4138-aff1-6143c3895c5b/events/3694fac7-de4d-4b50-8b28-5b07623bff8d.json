@@ -1,0 +1,17 @@
+{
+  "id": "3694fac7-de4d-4b50-8b28-5b07623bff8d",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-adapters-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "\n\u001b[41m                                                                               \u001b[0m\n\u001b[41m\u001b[37m                This is not the tsc command you are looking for                \u001b[0m\n\u001b[41m                                                                               \u001b[0m\n\nTo get access to the TypeScript compiler, \u001b[34mtsc\u001b[0m, from the command line either:\n\n- Use \u001b[1mnpm install typescript\u001b[0m to first add TypeScript to your project \u001b[1mbefore\u001b[0m using npx\n- Use \u001b[1myarn\u001b[0m to avoid accidentally running code from un-installed packages\n",
+    "outputDigest": "7c15b3332e4499e079231e6358190fe040a1ade2fd0c51233afa399fbc42411f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:40:58.833Z"
+}
