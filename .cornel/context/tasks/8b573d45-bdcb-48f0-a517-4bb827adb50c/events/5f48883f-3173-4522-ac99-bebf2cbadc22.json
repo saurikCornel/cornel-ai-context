@@ -1,0 +1,17 @@
+{
+  "id": "5f48883f-3173-4522-ac99-bebf2cbadc22",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-8",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nTYPECHECK_OK\nVITEST_OK\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m43 passed\u001b[39m\u001b[22m\u001b[90m (43)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m278 passed\u001b[39m\u001b[22m\u001b[90m (278)\u001b[39m\nBUILD_OK\n=== LONG LINES (src >200) ===\nsrc/dev/dev.test.ts:5 len=488\nsrc/gameplay/gameplay.test.ts:82 len=221\nsrc/gameplay/gameplay.test.ts:89 len=221\nsrc/input/InputManager.test.ts:4 len=883\n",
+    "outputDigest": "013b1545690ed19f684ab2e23a20f468e6b5ae5e00cd5fc0ff68f8d7238e815c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:27:52.375Z"
+}
