@@ -1,0 +1,17 @@
+{
+  "id": "3190039e-adab-4fe1-bbd9-25c1bf81c21b",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "ebf646642e53594522c192e17cebe7b52117b9e7",
+    "output": "ebf6466 Merge branch 'cornel/u-chashki-net-flaga-i-uglubleniya-f40347' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n=== typecheck ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\nTS_EXIT=127\n=== tests ===\n\n> crazy-putt-arena@0.1.0 test\n> vitest run\n\nsh: vitest: command not found\n",
+    "outputDigest": "983d05d0863a6a21a12d948d0b155fd738a63c614994d49da419a3526de9e99e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:37:15.020Z"
+}

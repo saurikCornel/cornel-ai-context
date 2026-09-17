@@ -3,7 +3,7 @@
   "branch": "cornel/slit-u-chashki-net-flaga-i-uglubleniya-9b9f93",
   "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
   "status": "RUNNING",
-  "summary": "Доступ восстановлен — предыдущие отказы были разовыми. Повторяю правку конфликта (команда fix-1 не исполнялась).\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"fix-2\",\"operation\":\"run\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"command\":\"grep -c -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts; sed -i '' -e '349d' -e '277,286d' -e '238d' src/core/HoleSceneBuilder.ts; echo '--- markers left ---'; grep -n -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts; echo '--- 232..292 ---'; sed -n '232,292p' src/core/HoleSceneBuilder.ts\",\"timeoutSeconds\":120}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Маркеры сняты, обе стороны сохранены. Завершаю слияние и прогоняю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"9b9f934f-81c9-4246-94a2-9c2a8ca03ae1\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"command\":\"git add -A && git commit --no-edit -q && git log --oneline -1 && echo '=== typecheck ===' && npm run typecheck; echo \\\"TS_EXIT=$?\\\"; echo '=== tests ==='; npm test 2>&1 | tail -40\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "fix-2",
+      "status": "SUCCEEDED",
+      "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-1",
       "status": "STARTED",
       "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:36:36.334Z"
+  "createdAt": "2026-09-17T04:37:12.499Z"
 }

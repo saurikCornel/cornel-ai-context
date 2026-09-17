@@ -1,0 +1,17 @@
+{
+  "id": "b39dffa8-ff6f-4619-a47b-44153be8cf53",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n \u001b[32m✓\u001b[39m src/obstacles/teleporter.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/dev/dev.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/input/InputManager.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m45 passed\u001b[39m\u001b[22m\u001b[90m (45)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m285 passed\u001b[39m\u001b[22m\u001b[90m (285)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:37:03\n\u001b[2m   Duration \u001b[22m 4.16s\u001b[2m (environment 59%, transform 25%, tests 8%, import 8%, worker 1%)\u001b[22m\n\n\u001b[2m    Isolate \u001b[22m \u001b[33m45 workers spawned\u001b[39m\u001b[2m · ~498ms startup each (spawn + environment, per file)\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mat least ~1.99s faster with \u001b[22m\u001b[33misolate: false\u001b[39m\u001b[2m — reuses workers across files instead of one per file\u001b[22m\n\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.21s\u001b[39m\n M src/core/SaveManager.ts\n M src/game/Game.ts\n M src/main.ts\n M src/player/profile.ts\n M src/player/types.ts\n M src/ui/index.ts\n?? src/core/ProfileStore.ts\n?? src/core/matchProgress.test.ts\n?? src/core/profileStore.test.ts\n",
+    "outputDigest": "04a090454459c993efc2d8c0ff446eca93d09f8dc64db71511911e7bbdac93a5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:37:10.905Z"
+}
