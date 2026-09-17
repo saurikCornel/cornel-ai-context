@@ -1,0 +1,11 @@
+{
+  "id": "544086d3-1c38-44ea-b3bb-bc2d89eb541c",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-tsconfig-2",
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
+  },
+  "createdAt": "2026-09-17T02:28:32.507Z"
+}

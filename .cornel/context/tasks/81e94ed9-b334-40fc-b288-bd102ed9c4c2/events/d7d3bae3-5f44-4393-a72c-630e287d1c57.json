@@ -1,0 +1,17 @@
+{
+  "id": "d7d3bae3-5f44-4393-a72c-630e287d1c57",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-tsconfig-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "### tsconfig.app.json (строки 1-21 из 21)\n1: {\n2:   \"compilerOptions\": {\n3:     \"target\": \"ES2022\",\n4:     \"useDefineForClassFields\": true,\n5:     \"module\": \"ESNext\",\n6:     \"lib\": [\"ES2022\", \"DOM\", \"DOM.Iterable\"],\n7:     \"skipLibCheck\": true,\n8:     \"moduleResolution\": \"Bundler\",\n9:     \"allowImportingTsExtensions\": false,\n10:     \"verbatimModuleSyntax\": true,\n11:     \"moduleDetection\": \"force\",\n12:     \"noEmit\": true,\n13:     \"strict\": true,\n14:     \"noUnusedLocals\": true,\n15:     \"noUnusedParameters\": true,\n16:     \"noFallthroughCasesInSwitch\": true,\n17:     \"noUncheckedIndexedAccess\": true\n18:   },\n19:   \"include\": [\"src\"]\n20: }\n21:",
+    "outputDigest": "297d8610a2394e2f8e229f5d03c48832ff47cb72f29a1fa299f4f6093c118980",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:28:34.803Z"
+}
