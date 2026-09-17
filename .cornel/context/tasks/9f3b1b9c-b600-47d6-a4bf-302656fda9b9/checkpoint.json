@@ -3,7 +3,7 @@
   "branch": "cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b",
   "headSha": "5d42db4e649a3ac6d72d6852e40655e29478a987",
   "status": "WAITING_CHATGPT",
-  "summary": "Похоже, ветка на GitHub ушла вперёд после публикации. Пробую указать допустимые heads, чтобы выяснить фактический SHA.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"verify-3\",\"operation\":\"run\",\"heads\":[\"5d42db4e649a3ac6d72d6852e40655e29478a987\",\"e0a720a0b8185824d35e09937c677a9ed3d5752e\"],\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && git log --oneline -2 && git status --short && npm run typecheck && npm test 2>&1 | grep -vi 'getContext' | tail -6 && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
+  "summary": "`heads` ожидает объект, а не массив. Пробую формат «ветка → SHA» и заодно повторяю полную проверку.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"verify-4\",\"operation\":\"run\",\"heads\":{\"cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b\":\"5d42db4e649a3ac6d72d6852e40655e29478a987\"},\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && git log --oneline -2 && git status --short && npm run typecheck && npm test 2>&1 | grep -vi 'getContext' | tail -6 && npm run build 2>&1 | tail -3\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -132,5 +132,5 @@
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:30:28.783Z"
+  "createdAt": "2026-09-17T03:31:03.529Z"
 }
