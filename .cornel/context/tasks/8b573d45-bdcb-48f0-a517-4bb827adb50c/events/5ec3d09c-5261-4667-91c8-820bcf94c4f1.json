@@ -1,0 +1,17 @@
+{
+  "id": "5ec3d09c-5261-4667-91c8-820bcf94c4f1",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "src/ui/domTests.ts 2ms (unchanged)\nsrc/ui/index.ts 15ms\nsrc/ui/ui.css 14ms (unchanged)\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/8b573d45-bdcb-48f0-a517-4bb827adb50c\u001b[39m\n\n \u001b[32m✓\u001b[39m src/ui/__parity.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 51\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:22:21\n\u001b[2m   Duration \u001b[22m 904ms\u001b[2m (environment 74%, transform 17%, tests 6%, import 3%)\u001b[22m\n\n=== LONG LINES (src >200) ===\nsrc/dev/dev.test.ts:5 len=488\nsrc/gameplay/gameplay.test.ts:82 len=221\nsrc/gameplay/gameplay.test.ts:89 len=221\nsrc/input/InputManager.test.ts:4 len=883\n",
+    "outputDigest": "9f49173535af49dd4020fe459a10eacbf389df445302c39870833f5d2197deac",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:22:22.371Z"
+}
