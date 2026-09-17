@@ -1,9 +1,9 @@
 {
   "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
   "branch": "cornel/ball-cosmetics-catalog-and-unlocks-465565",
-  "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "RUNNING",
-  "summary": "Невозможно выполнить команду. Попробуйте еще раз.\n\n```json\n{\"commandId\":\"apple-0033d92d\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"Apply card changes: Невозможно выполнить команду. Попробуйте еще раз.\",\"operation\":\"publish\",\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"version\":1}\n```\n\n",
+  "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
+  "status": "WAITING_CHATGPT",
+  "summary": "Невозможно выполнить команду. Попробуйте еще раз.\n\n",
   "commands": [
     {
       "commandId": "apple-32dd9b9f",
@@ -13,10 +13,10 @@
     },
     {
       "commandId": "apple-0033d92d",
-      "status": "STARTED",
-      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-      "exitCode": null
+      "status": "SUCCEEDED",
+      "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-17T01:08:13.153Z"
+  "createdAt": "2026-09-17T01:10:51.510Z"
 }
