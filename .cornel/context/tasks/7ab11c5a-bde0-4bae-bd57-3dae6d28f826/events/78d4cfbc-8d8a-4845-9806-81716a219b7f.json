@@ -1,0 +1,17 @@
+{
+  "id": "78d4cfbc-8d8a-4845-9806-81716a219b7f",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+    "output": "85c33d8 parents: 1b051708839c6a0b4094c1f74261e1937e59fc27 0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0\nUpdating 1b05170..45e3ae6\nFast-forward\n src/core/HoleSceneBuilder.ts        | 256 +++++++++++++++++++++++--\n src/core/holeScene.test.ts          |  69 +++++++\n src/core/holeSceneSensors.test.ts   | 178 +++++++++++++++++\n src/courses/data/ancient-temple.ts  | 352 +++++++++++++++++++++++-----------\n src/courses/data/arctic-base.ts     | 364 ++++++++++++++++++++++++-----------\n src/courses/data/layoutKit.ts       |  39 ++++\n src/courses/data/volcano.ts         | 368 +++++++++++++++++++++++-------------\n src/courses/layoutDiversity.test.ts | 127 +++++++++++--\n src/game/Game.ts                    |   2 +-\n src/game/HoleRuntime.ts             |   3 +-\n 10 files changed, 1369 insertions(+), 389 deletions(-)\n create mode 100644 src/core/holeSceneSensors.test.ts\n--- now HEAD ---\n45e3ae6 Merge «Слить: У чашки нет флага и углубления» (9b9f934f-81c9-4246-94a2-9c2a8ca03ae1)\nAuto-merging src/courses/data/ancient-temple.ts\nCONFLICT (content): Merge conflict in src/courses/data/ancient-temple.ts\nAuto-merging src/courses/data/arctic-base.ts\nCONFLICT (content): Merge conflict in src/courses/data/arctic-base.ts\nAuto-merging src/courses/data/volcano.ts\nCONFLICT (content): Merge conflict in src/courses/data/volcano.ts\nAutomatic merge failed; fix conflicts and then commit the result.\nMERGE_EXIT=1\n--- status ---\nM  src/ai/BotProfiles.ts\nM  src/ai/random.ts\nM  src/core/SaveManager.ts\nUU src/courses/data/ancient-temple.ts\nUU src/courses/data/arctic-base.ts\nM  src/courses/data/chaos-dimension.ts\nUU src/courses/data/volcano.ts\nM  src/dev/DeveloperDiagnostics.ts\nM  src/dev/LaunchOptions.ts\nM  src/dev/PresentationMinimap.ts\nM  src/game/game.css\nM  src/gameplay/ScoreManager.ts\nM  src/input/InputManager.ts\nM  src/leaderboard/style.css\nM  src/player/profile.ts\nM  src/player/progression.ts\nM  src/player/types.ts\nM  src/style.css\nM  src/ui/Overlays.ts\nM  src/ui/domTests.ts\nM  src/ui/index.ts\nM  src/ui/ui.css\n--- conflicts ---\nsrc/courses/data/ancient-temple.ts\nsrc/courses/data/arctic-base.ts\nsrc/courses/data/volcano.ts\n",
+    "outputDigest": "fdce09e06d24d2a64edfbeea18350ce0cf0742058b5f751c963e4c97d0650736",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:45:51.899Z"
+}
