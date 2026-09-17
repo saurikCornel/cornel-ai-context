@@ -1,0 +1,17 @@
+{
+  "id": "a6335a8b-0f7b-4513-bf81-87e5376852e4",
+  "taskId": "babe14b3-0d35-418a-acf6-a312e646c585",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "apple-8c421de4",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+    "output": "vite.config.ts (1:529) \u001b[33m[UNRESOLVED_IMPORT] \u001b[0mCould not resolve 'vite' in vite.config.ts\n - Module not found, treating it as an external dependency in vite.config.ts at 529..535\n\n\u001b[31mfailed to load config from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/babe14b3-0d35-418a-acf6-a312e646c585/vite.config.ts\u001b[39m\n\n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Startup Error \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯⎯\u001b[39m\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'vite' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/babe14b3-0d35-418a-acf6-a312e646c585/vite.config.ts.timestamp-1789603456576-c31c9b0c61d978.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:858:18)\n    at defaultResolve (node:internal/modules/esm/resolve:990:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:768:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:745:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:318:38)\n    at #link (node:internal/modules/esm/module_job:208:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\n\n\n",
+    "outputDigest": "a8fe6d45a2bb2d3cfa3c5b59d346d4aafb74413daf4df7d9d9ac6178cc6d9500",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T00:04:16.647Z"
+}
