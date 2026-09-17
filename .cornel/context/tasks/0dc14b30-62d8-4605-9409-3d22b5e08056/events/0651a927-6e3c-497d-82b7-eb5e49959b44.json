@@ -1,0 +1,17 @@
+{
+  "id": "0651a927-6e3c-497d-82b7-eb5e49959b44",
+  "taskId": "0dc14b30-62d8-4605-9409-3d22b5e08056",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/0dc14b30-62d8-4605-9409-3d22b5e08056\u001b[39m\n\n \u001b[32m✓\u001b[39m src/obstacles/surfaces.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 04:56:56\n\u001b[2m   Duration \u001b[22m 171ms\u001b[2m (transform 72%, import 18%, tests 5%, worker 5%)\u001b[22m\n\n",
+    "outputDigest": "ccef72eefa4377ac36eb1c2656631a9023c8259642594794a402152e0257d938",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:56:58.245Z"
+}

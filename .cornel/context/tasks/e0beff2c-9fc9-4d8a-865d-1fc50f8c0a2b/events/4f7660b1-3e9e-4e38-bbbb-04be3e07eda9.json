@@ -1,0 +1,12 @@
+{
+  "id": "4f7660b1-3e9e-4e38-bbbb-04be3e07eda9",
+  "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "probe-1",
+    "operation": "run",
+    "command": "git rev-parse HEAD; git log --oneline -3; git status --short; ls public/audio 2>/dev/null || echo 'public/audio missing'"
+  },
+  "createdAt": "2026-09-17T01:57:05.382Z"
+}
