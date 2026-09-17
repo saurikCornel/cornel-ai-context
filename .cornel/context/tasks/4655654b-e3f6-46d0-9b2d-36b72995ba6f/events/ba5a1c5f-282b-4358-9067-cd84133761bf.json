@@ -1,0 +1,11 @@
+{
+  "id": "ba5a1c5f-282b-4358-9067-cd84133761bf",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "CLI_ERROR",
+  "text": "Apple Intelligence завершился с кодом null: log and unlocks\"}\n{\"type\":\"tool\",\"name\":\"webSearch\",\"args\":\"Ball cosmetics catalog and unlocks\"}\n{\"name\":\"webSearch\",\"args\":\"Ball cosmetics catalog and unlocks\",\"type\":\"tool\"}\n{\"name\":\"listDirectory\",\"args\":\"tests\\/\",\"type\":\"tool\"}\n{\"type\":\"tool\",\"name\":\"r",
+  "detail": {
+    "agent": "apple",
+    "attempt": 1
+  },
+  "createdAt": "2026-09-17T00:22:35.864Z"
+}
