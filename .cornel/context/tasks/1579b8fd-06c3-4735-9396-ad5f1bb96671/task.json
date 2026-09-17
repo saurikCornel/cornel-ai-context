@@ -20,13 +20,14 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-1579b8",
   "baseSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "workspaceSyncedSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
-  "status": "RUNNING",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T02:00:51.310Z",
-  "updatedAt": "2026-09-17T02:02:01.122Z",
+  "updatedAt": "2026-09-17T02:02:11.361Z",
   "issue": 83,
   "chatUrl": "cli://claude/1a1d9e74-888b-4c51-a36f-fbe6ca8de686",
   "error": null,
-  "cliActivity": null,
+  "cliActivity": "Claude CLI: запускается (opus)",
   "cliSession": "1a1d9e74-888b-4c51-a36f-fbe6ca8de686",
-  "browserError": null
+  "browserError": null,
+  "currentHead": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
 }
