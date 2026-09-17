@@ -3,7 +3,7 @@
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
   "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
   "status": "RUNNING",
-  "summary": "Нужна проверка на опубликованном коммите — прогоняю её на `9191bea`.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"check-7\",\"operation\":\"run\",\"headSha\":\"9191bea9f7fc6673403115c591c29f9a9d0a3bb7\",\"timeoutSeconds\":600,\"command\":\"set -e\\ngit rev-parse HEAD\\nnode -e \\\"const m=require('./public/audio/manifest.json');const ids=m.events.map(e=>e.id);const cats=new Set(['music','sfx','ui','ambient']);if(m.version!==1)throw new Error('version');if(ids.length!==15)throw new Error('expected 15 events, got '+ids.length);if(new Set(ids).size!==15)throw new Error('duplicate ids');for(const e of m.events){if(!cats.has(e.category))throw new Error('bad category '+e.category);if(e.url!=='/audio/'+e.category+'/'+e.id+'.mp3')throw new Error('bad url '+e.url);if(e.optional!==true)throw new Error('not optional: '+e.id);}console.log('manifest OK: '+ids.length+' unique events');\\\"\\nif [ ! -x node_modules/.bin/tsc ]; then npm install --no-audit --no-fund; fi\\nnode_modules/.bin/tsc -b --pretty false\\necho 'TYPECHECK OK'\\ngit status --short\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "Проверка на опубликованном коммите прошла (`manifest OK: 15 unique events`, `TYPECHECK OK`, рабочее дерево чистое). Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"finish-2\",\"operation\":\"finish\",\"headSha\":\"9191bea9f7fc6673403115c591c29f9a9d0a3bb7\",\"message\":\"README and audio placeholder assets. Added README.md (pitch, Node 20+ requirements, install/dev/build/typecheck/test commands, src/ structure table covering app, ai, assets, camera, config, contracts, core, courses, dev, effects, gameplay, input, leaderboard, obstacles, physics, player, ui; debug section with ?debug=1 / ?course=<id> / ?hole=<n>, the ten course ids and F1/F2/F3 hotkeys; audio section explaining the silent fallback), public/audio/README.md (folder layout sfx/ui/music/ambient, manifest shape, /audio/<category>/<id>.mp3 naming rule, no copyrighted music) and public/audio/manifest.json ({version:1, events:[...]} with 15 unique entries in AudioEventDefinition shape: 8 sfx, 3 ui, 2 looping music, 2 looping ambient, all optional:true). No binary files, no code changes; package.json, AGENTS.md and src/ untouched. Checks on head 9191bea: manifest validated (15 unique ids, category/url/optional consistency) and tsc -b --pretty false passed. PR not needed - the assembler merges the branch.\"}\n```\n\nИтог: карточка выполнена. Созданы `README.md`, `public/audio/README.md`, `public/audio/manifest.json`; манифест — 15 уникальных событий нужной формы, все `optional`. Проверки на опубликованном `9191bea`: валидация манифеста и `tsc -b --pretty false` — успешны. Промежуточные отказы `run`/`publish` были расхождением head из-за параллельных пушей офиса и разрешились повтором. Следующий шаг — слияние ветки сборщиком.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -85,10 +85,16 @@
     },
     {
       "commandId": "check-7",
+      "status": "SUCCEEDED",
+      "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-2",
       "status": "STARTED",
       "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:00:16.967Z"
+  "createdAt": "2026-09-17T02:00:38.931Z"
 }
