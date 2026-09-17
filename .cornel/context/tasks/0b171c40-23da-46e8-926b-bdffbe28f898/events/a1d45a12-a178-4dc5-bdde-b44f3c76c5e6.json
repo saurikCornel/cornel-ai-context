@@ -1,0 +1,17 @@
+{
+  "id": "a1d45a12-a178-4dc5-bdde-b44f3c76c5e6",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+    "output": "HEAD=fe890d7c4a1756f69b9c126df7d1866e70bcd9c6\nMERGE_HEAD=93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\nBRANCH=HEAD\nA  src/game/AimController.ts\nA  src/game/CourseRegistry.ts\nA  src/game/Game.ts\nA  src/game/HoleRuntime.ts\nA  src/game/game.css\nA  src/game/game.test.ts\nUU src/main.ts\nAA vitest.config.ts\n     160 src/main.ts\n      18 vitest.config.ts\n     178 total\n=== markers main.ts ===\n3:<<<<<<< HEAD\n6:=======\n8:>>>>>>> 93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\n14:<<<<<<< HEAD\n35:=======\n160:>>>>>>> 93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\n=== vitest.config.ts ===\nimport { defineConfig } from 'vitest/config';\n\n<<<<<<< HEAD\n// Tests live in two places: colocated unit tests next to the modules they cover\n// (src/**) and cross-module integration tests (tests/**). Both run under `npm test`.\nexport default defineConfig({\n  test: {\n    include: ['src/**/*.test.ts', 'tests/**/*.test.ts'],\n    environment: 'node',\n=======\n// Rapier ships a CommonJS \"main\" inside an ESM package, which Node cannot load.\n// Tests therefore resolve the ES build directly; the Vite app build already picks it.\nexport default defineConfig({\n  resolve: {\n    alias: { '@dimforge/rapier3d-compat': '@dimforge/rapier3d-compat/rapier.es.js' },\n>>>>>>> 93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\n  },\n});\n",
+    "outputDigest": "24d41aba8a1ae8dfb28d9df1198c48ed462438792f506d7b92df3b190800e960",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:51:44.309Z"
+}

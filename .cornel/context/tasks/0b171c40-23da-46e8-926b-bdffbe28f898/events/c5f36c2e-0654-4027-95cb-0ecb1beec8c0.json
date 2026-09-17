@@ -1,0 +1,12 @@
+{
+  "id": "c5f36c2e-0654-4027-95cb-0ecb1beec8c0",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-1",
+    "operation": "run",
+    "command": "echo HEAD=$(git rev-parse HEAD); echo MERGE_HEAD=$(git rev-parse MERGE_HEAD 2>/dev/null || echo none); echo BRANCH=$(git rev-parse --abbrev-ref HEAD); git status --short; wc -l src/main.ts vitest.config.ts; echo '=== markers main.ts ==='; grep -n '^\\(<<<<<<<\\|=======\\|>>>>>>>\\)' src/main.ts; echo '=== vitest.config.ts ==='; cat vitest.config.ts"
+  },
+  "createdAt": "2026-09-17T02:51:41.927Z"
+}
