@@ -1,0 +1,17 @@
+{
+  "id": "bb46cca9-5d77-40fb-98bc-cb893ecd7857",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "### src/ui/index.ts (строки 19-24 из 33)\n19: \n20: export class AppUI {\n21:  private screen:Screen='main'; private settings:UISettings={controlScheme:'drag-power',quality:'high',volume:80,reducedMotion:false};\n22:  private courseId:string;\n23:  constructor(private root:HTMLElement,private actions:UIActions={},options:AppUIOptions={}){const requested=options.initialCourseId?.trim();this.courseId=requested===RANDOM_COURSE_ID?RANDOM_COURSE_ID:getCourse(requested)?.id??DEFAULT_COURSE_ID;this.render()}\n24:  navigate=(s:Screen)=>{this.screen=s;this.actions.navigate?.(s);this.render()};\n… ещё 9 строк\n\n### src/ui/index.ts (строки 26-33 из 33)\n26:  private render(){this.root.innerHTML=this.view();this.root.querySelectorAll<HTMLElement>('[data-nav]').forEach(x=>x.onclick=()=>this.navigate(x.dataset.nav as Screen));const range=this.root.querySelector<HTMLInputElement>('input[type=range]');if(range)range.oninput=()=>{const o=range.parentElement?.querySelector('output');if(o)o.textContent=range.value+'%'};const form=this.root.querySelector<HTMLFormElement>('[data-settings]');if(form)form.onsubmit=e=>{e.preventDefault();const f=new FormData(form);this.settings={controlScheme:String(f.get('controls')) as ControlScheme,quality:String(f.get('quality')) as UISettings['quality'],volume:Number(f.get('volume')),reducedMotion:f.get('motion')==='on'};this.actions.saveSettings?.(this.settings);this.navigate('main')};const course=this.root.querySelector<HTMLSelectElement>('[name=\"course\"]');if(course)course.onchange=()=>{this.courseId=course.value};const start=this.root.querySelector<HTMLElement>('[data-start]');if(start)start.onclick=()=>{const mode=start.dataset.start as Mode;const get=(n:string)=>this.root.querySelector<HTMLSelectElement>(`[name=\"${n}\"]`)?.value;this.actions.startMatch?.(mode,{players:Number(get('players')||4),bots:Number(get('bots')||3),holes:Number(get('holes')||9) as 9|18,courseId:get('course')||this.courseId})}}\n27: }\n28: \n29: export { Hud } from './Hud';\n30: export { Scoreboard } from './Scoreboard';\n31: export { LoadingOverlay, MatchResults, PauseOverlay } from './Overlays';\n32: export type { HudState, MatchResultPlayer, MatchResultsState, ScoreboardState, UiPlayer, UiPlayerStatus } from './types';\n33:",
+    "outputDigest": "528ef71a4eb7aa8b9671079e4fb44f18ae3d66496bb0e984b5ac19899bb28606",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:19:39.774Z"
+}
