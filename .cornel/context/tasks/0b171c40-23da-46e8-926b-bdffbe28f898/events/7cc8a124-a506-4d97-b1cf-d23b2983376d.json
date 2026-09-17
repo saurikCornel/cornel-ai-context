@@ -1,0 +1,11 @@
+{
+  "id": "7cc8a124-a506-4d97-b1cf-d23b2983376d",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "remerge-2",
+    "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6"
+  },
+  "createdAt": "2026-09-17T02:58:48.139Z"
+}
