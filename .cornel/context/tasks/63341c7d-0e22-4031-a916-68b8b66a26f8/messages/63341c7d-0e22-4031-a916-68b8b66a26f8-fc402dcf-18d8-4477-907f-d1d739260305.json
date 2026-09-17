@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Содержимое совпадает со слиянием, все проверки зелёные. Публикую изменения через worker.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"publish-3\",\"operation\":\"publish\",\"headSha\":\"d445b64dd49d167d188682add1e9981ddc1fd76f\",\"message\":\"Слить «sliding-wall, door и pendulum не двигаются»: система движителей и сенсорные объёмы в HoleRuntime\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:39:42.978Z"
+}
