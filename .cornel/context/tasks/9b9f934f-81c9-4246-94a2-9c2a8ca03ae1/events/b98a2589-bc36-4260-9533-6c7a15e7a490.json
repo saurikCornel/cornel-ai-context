@@ -1,0 +1,12 @@
+{
+  "id": "b98a2589-bc36-4260-9533-6c7a15e7a490",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-4",
+    "operation": "run",
+    "command": "npm run build 2>&1 | tail -15; echo '=== git ==='; git status --short; git log --oneline -3"
+  },
+  "createdAt": "2026-09-17T04:38:37.536Z"
+}
