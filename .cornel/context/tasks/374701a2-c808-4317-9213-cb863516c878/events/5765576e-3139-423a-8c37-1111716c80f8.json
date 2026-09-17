@@ -1,0 +1,12 @@
+{
+  "id": "5765576e-3139-423a-8c37-1111716c80f8",
+  "taskId": "374701a2-c808-4317-9213-cb863516c878",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-final",
+    "operation": "run",
+    "command": "set -e\necho '--- head and parents ---'\ngit log --oneline -1\ngit rev-list --parents -n 1 HEAD\ngit log --oneline -1 --format='%H %p'\necho '--- merged branches contain incoming commit? ---'\ngit merge-base --is-ancestor 87e05bb601a988545be09272d01c792629279b49 HEAD && echo 'YES: 87e05bb is an ancestor of HEAD'\ngit merge-base --is-ancestor 012ffb90c6c91afd0be84e73d07ce4a07a511c7a HEAD && echo 'YES: 012ffb9 (office) is an ancestor of HEAD'\necho '--- working tree clean? ---'\ngit status --short; echo '(empty = clean)'\necho '--- conflict markers in tree ---'\ngit grep -n -E '^(<<<<<<<|>>>>>>>|=======)$' || echo none\necho '===== typecheck ====='; npm run typecheck\necho '===== test ====='; npm test\necho '===== build ====='; npm run build\necho '===== ALL CHECKS PASSED ====='"
+  },
+  "createdAt": "2026-09-17T02:48:29.863Z"
+}

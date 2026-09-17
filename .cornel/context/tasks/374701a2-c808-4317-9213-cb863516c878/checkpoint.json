@@ -1,9 +1,9 @@
 {
   "taskId": "374701a2-c808-4317-9213-cb863516c878",
   "branch": "cornel/slit-readme-opisyvaet-funkcionalnost-kot-374701",
-  "headSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a",
+  "headSha": "f466d82a3158f161068567f8aa1bfdc32ee29486",
   "status": "RUNNING",
-  "summary": "Слияние восстановлено из локально сохранившегося объекта `87e05bb` («docs: rewrite README to match the actual build state»), конфликт разрешён тем же способом: 145 строк, маркеров нет, все разделы входящей переработки на месте (`Current state`, `Project structure`, `Debug flags`, `Audio assets`, `Known gaps`) плюс актуальная секция Test. Typecheck и build прошли чисто. Публикую слияние.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"012ffb90c6c91afd0be84e73d07ce4a07a511c7a\",\"message\":\"Merge «README описывает функциональность, которой нет в сборке»: разрешён конфликт README.md\\n\\nСохранена переработка README из ветки c8ba46 (87e05bb): разделы Current state,\\ntaблица реализованных, но не подключённых модулей, точная структура src/,\\nреальное поведение debug-флагов, Audio assets и Known gaps.\\n\\nСекция Test взята со стороны cornel/office: в слитом дереве package.json уже\\nсодержит \\\"test\\\": \\\"vitest run\\\", а в tests/ пять файлов и все .test.ts, поэтому\\nописание двух раннеров, node:test и нерабочего tests/save-manager.test.mjs с\\n.test-build/ устарело. Из Known gaps по той же причине убран пункт про\\nотсутствие агрегирующего тестового скрипта.\\n\\nПроверки: npm run typecheck, npm test, npm run build.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано, новая голова `f466d82`. Подтверждаю на ней merge-родство и прогоняю полный набор проверок без конвейера, чтобы код возврата тестов учитывался.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"verify-final\",\"operation\":\"run\",\"headSha\":\"f466d82a3158f161068567f8aa1bfdc32ee29486\",\"command\":\"set -e\\necho '--- head and parents ---'\\ngit log --oneline -1\\ngit rev-list --parents -n 1 HEAD\\ngit log --oneline -1 --format='%H %p'\\necho '--- merged branches contain incoming commit? ---'\\ngit merge-base --is-ancestor 87e05bb601a988545be09272d01c792629279b49 HEAD && echo 'YES: 87e05bb is an ancestor of HEAD'\\ngit merge-base --is-ancestor 012ffb90c6c91afd0be84e73d07ce4a07a511c7a HEAD && echo 'YES: 012ffb9 (office) is an ancestor of HEAD'\\necho '--- working tree clean? ---'\\ngit status --short; echo '(empty = clean)'\\necho '--- conflict markers in tree ---'\\ngit grep -n -E '^(<<<<<<<|>>>>>>>|=======)$' || echo none\\necho '===== typecheck ====='; npm run typecheck\\necho '===== test ====='; npm test\\necho '===== build ====='; npm run build\\necho '===== ALL CHECKS PASSED ====='\",\"timeoutSeconds\":1800}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -91,10 +91,16 @@
     },
     {
       "commandId": "publish-2",
+      "status": "SUCCEEDED",
+      "headSha": "f466d82a3158f161068567f8aa1bfdc32ee29486",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-final",
       "status": "STARTED",
-      "headSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a",
+      "headSha": "f466d82a3158f161068567f8aa1bfdc32ee29486",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:48:04.300Z"
+  "createdAt": "2026-09-17T02:48:29.865Z"
 }
