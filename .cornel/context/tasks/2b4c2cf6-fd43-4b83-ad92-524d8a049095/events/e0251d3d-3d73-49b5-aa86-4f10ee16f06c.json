@@ -1,0 +1,12 @@
+{
+  "id": "e0251d3d-3d73-49b5-aa86-4f10ee16f06c",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-10",
+    "operation": "run",
+    "command": "SHOT=/private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad; CH='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'; \"$CH\" --headless=new --disable-gpu --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --window-size=1440,900 --virtual-time-budget=120000 --enable-logging=stderr --log-level=0 --screenshot=$SHOT/game-2.png --user-data-dir=$SHOT/p2 'http://localhost:5199/?debug=1&course=volcano&hole=3' 2>&1 | grep -i 'CONSOLE\\|Uncaught\\|Unhandled' | head -25; echo '--- menu ---'; \"$CH\" --headless=new --disable-gpu --use-gl=angle --use-angle=swiftshader --enable-unsafe-swiftshader --window-size=1440,900 --virtual-time-budget=15000 --screenshot=$SHOT/menu.png --user-data-dir=$SHOT/p3 'http://localhost:5199/' 2>&1 | grep -ci error; ls -l $SHOT/game-2.png $SHOT/menu.png"
+  },
+  "createdAt": "2026-09-17T03:54:06.422Z"
+}
