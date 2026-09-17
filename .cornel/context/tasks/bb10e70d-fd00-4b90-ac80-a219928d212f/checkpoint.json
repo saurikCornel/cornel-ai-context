@@ -2,15 +2,15 @@
   "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
   "branch": "cornel/movingplatform-slidingwall-and-door-move-bb10e7",
   "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "RUNNING",
-  "summary": "Для реализации модернизации моторов используйте современные библиотеки и технологии. В данном случае, рекомендуется использовать библиотеку Three.js для реализации моторов с треугольным проекцией. В Three.js, вы можете создать модель объекта, который будет представлять мотор, и использовать методы для управления его скоростью, углом и положением. Подробнее информация о Three.js и его использовании в моделях объектов можно найти в документации Three.js.\n\n```json\n{\"command\":\"npx three.js --version\",\"commandId\":\"apple-ad185a2c\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"operation\":\"run\",\"taskId\":\"bb10e70d-fd00-4b90-ac80-a219928d212f\",\"timeoutSeconds\":300,\"version\":1}\n```\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Проверка файлов не удалась. Попробуйте еще раз.\n\n",
   "commands": [
     {
       "commandId": "apple-ad185a2c",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-      "exitCode": null
+      "exitCode": 1
     }
   ],
-  "createdAt": "2026-09-17T00:13:42.244Z"
+  "createdAt": "2026-09-17T00:37:58.121Z"
 }
