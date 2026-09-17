@@ -3,7 +3,7 @@
   "branch": "cornel/slit-sliding-wall-door-i-pendulum-ne-dvi-63341c",
   "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
   "status": "RUNNING",
-  "summary": "Маркеры сняты. Прогоняю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"check-1\",\"operation\":\"run\",\"headSha\":\"d445b64dd49d167d188682add1e9981ddc1fd76f\",\"command\":\"npm run typecheck && npm test 2>&1 | tail -40\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Зависимости не установлены в рабочей копии. Устанавливаю и повторяю проверки.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"check-2\",\"operation\":\"run\",\"headSha\":\"d445b64dd49d167d188682add1e9981ddc1fd76f\",\"command\":\"npm install --no-audit --no-fund 2>&1 | tail -5 && echo '---TYPECHECK---' && npm run typecheck 2>&1 | tail -30 && echo '---TESTS---' && npm test 2>&1 | tail -40\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "check-1",
+      "status": "FAILED",
+      "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+      "exitCode": 127
+    },
+    {
+      "commandId": "check-2",
       "status": "STARTED",
       "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:36:24.069Z"
+  "createdAt": "2026-09-17T03:36:37.475Z"
 }
