@@ -1,0 +1,12 @@
+{
+  "id": "121d6f80-8a33-4f5b-b69e-578ec5e89e25",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-4",
+    "operation": "run",
+    "command": "echo '=== dataset refs ==='; git grep -n 'debugCourse\\|debugHole\\|dataset.course\\|dataset.hole\\|initialCourseId' -- src | head -40; echo '=== AppUI ctor ==='; git grep -n 'class AppUI' -A 12 -- src/ui; echo '=== courses exports ==='; sed -n '1,40p' src/courses/index.ts; echo '=== LaunchOptions ==='; sed -n '1,60p' src/dev/LaunchOptions.ts; echo '=== dev index ==='; sed -n '1,30p' src/dev/index.ts"
+  },
+  "createdAt": "2026-09-17T02:52:52.566Z"
+}

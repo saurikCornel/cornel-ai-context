@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Обе стороны понятны: HEAD даёт выбор курса/лунки через реестр, их ветка — играбельный цикл с `Game`. Проверяю сигнатуры API перед объединением.\n\n```json\n{\"version\":1,\"taskId\":\"0b171c40-23da-46e8-926b-bdffbe28f898\",\"commandId\":\"inspect-4\",\"operation\":\"run\",\"headSha\":\"fe890d7c4a1756f69b9c126df7d1866e70bcd9c6\",\"command\":\"echo '=== dataset refs ==='; git grep -n 'debugCourse\\\\|debugHole\\\\|dataset.course\\\\|dataset.hole\\\\|initialCourseId' -- src | head -40; echo '=== AppUI ctor ==='; git grep -n 'class AppUI' -A 12 -- src/ui; echo '=== courses exports ==='; sed -n '1,40p' src/courses/index.ts; echo '=== LaunchOptions ==='; sed -n '1,60p' src/dev/LaunchOptions.ts; echo '=== dev index ==='; sed -n '1,30p' src/dev/index.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:52:52.565Z"
+}

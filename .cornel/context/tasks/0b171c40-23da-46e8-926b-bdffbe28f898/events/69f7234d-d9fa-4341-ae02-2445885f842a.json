@@ -1,0 +1,17 @@
+{
+  "id": "69f7234d-d9fa-4341-ae02-2445885f842a",
+  "taskId": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+    "output": "=== dataset refs ===\nsrc/main.ts:20:document.documentElement.dataset.course=selection.course.id;\nsrc/main.ts:21:document.documentElement.dataset.hole=String(selection.holeNumber);\nsrc/main.ts:25:const uiRoot=document.createElement('div');uiRoot.className='cpa-layer';root.append(uiRoot);new AppUI(uiRoot,{},{initialCourseId:selection.course.id});\nsrc/main.ts:134:    if (options.courseId) document.documentElement.dataset.debugCourse = options.courseId;\nsrc/main.ts:135:    if (options.hole) document.documentElement.dataset.debugHole = String(options.hole);\nsrc/ui/courseSelect.test.ts:26:    const ui = new AppUI(root, { startMatch }, { initialCourseId: 'volcano' });\nsrc/ui/index.ts:12:export interface AppUIOptions { initialCourseId?:string }\nsrc/ui/index.ts:23: constructor(private root:HTMLElement,private actions:UIActions={},options:AppUIOptions={}){const requested=options.initialCourseId?.trim();this.courseId=requested===RANDOM_COURSE_ID?RANDOM_COURSE_ID:getCourse(requested)?.id??DEFAULT_COURSE_ID;this.render()}\n=== AppUI ctor ===\nfatal: unable to resolve revision: -A\n=== courses exports ===\nexport * from './CourseRegistry';\nexport { defineCourse, validateCourse } from './Course';\nexport type { CourseDefinition } from './Course';\nexport { defineHole, validateHole } from './Hole';\nexport type { HoleDefinition } from './Hole';\nexport { CourseBuilder, createCourseBuilder } from './CourseBuilder';\nexport type { CourseBuilderOptions } from './CourseBuilder';\nexport type {\n  Course,\n  HazardObstacle,\n  Hole,\n  MovingObstacle,\n  ObstacleBase,\n  ObstacleDescriptor,\n  StaticObstacle,\n  SurfaceDescriptor,\n  SurfaceMaterial,\n  TransformDescriptor,\n} from './types';\n=== LaunchOptions ===\nexport interface LaunchOptions{debug:boolean;courseId?:string;hole?:number}\nexport function parseLaunchOptions(search:string):LaunchOptions{const p=new URLSearchParams(search);const courseId=p.get('course')?.trim()||undefined;const n=Number(p.get('hole'));const hole=Number.isInteger(n)&&n>0?n:undefined;return{debug:p.get('debug')==='1',...(courseId?{courseId}:{}),...(hole?{hole}:{})}}\n=== dev index ===\nexport {DeveloperDiagnostics} from './DeveloperDiagnostics';\nexport {PresentationMinimap} from './PresentationMinimap';\nexport {parseLaunchOptions} from './LaunchOptions';\nexport type {DeveloperDiagnosticsOptions} from './DeveloperDiagnostics';\nexport type {MinimapBounds,MinimapPoint} from './PresentationMinimap';\nexport type {LaunchOptions} from './LaunchOptions';\n",
+    "outputDigest": "c07ec17265c538722cbb1562f674fe091c0e9bf7908f3e8982406fd9c93e025d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:52:54.849Z"
+}
