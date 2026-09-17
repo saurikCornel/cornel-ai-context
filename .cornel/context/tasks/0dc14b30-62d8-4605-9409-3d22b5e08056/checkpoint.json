@@ -3,7 +3,7 @@
   "branch": "cornel/surface-friction-model-ice-mud-sand-0dc14b",
   "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
   "status": "RUNNING",
-  "summary": "Проверяю фактическое состояние ветки после публикации предыдущего шага.\n\n```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"state-1\",\"operation\":\"run\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"command\":\"git rev-parse HEAD && git log --oneline -3 && git status --short && ls -la src/obstacles\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"path\":\"src/obstacles\",\"maxLines\":100}\n```\n\nЖду результат worker в этом чате.\n\n",
   "commands": [
     {
       "commandId": "apple-a7cf8a48",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "state-1",
+      "status": "FAILED",
+      "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+      "exitCode": null
+    },
+    {
+      "commandId": "ls-1",
       "status": "STARTED",
       "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:38:35.160Z"
+  "createdAt": "2026-09-17T01:42:13.132Z"
 }
