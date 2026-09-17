@@ -1,0 +1,17 @@
+{
+  "id": "bf4e8c5a-1cb5-428b-b9c5-0fe326d0c0f4",
+  "taskId": "babe14b3-0d35-418a-acf6-a312e646c585",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "apple-1a",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+    "output": "### src/contracts/math.ts (строки 1-4 из 4)\n1: export interface Vec2 { x: number; y: number }\n2: export interface Vec3 { x: number; y: number; z: number }\n3: export interface Quat { x: number; y: number; z: number; w: number }\n4: \n\n### src/obstacles/vec.ts (строки 1-51 из 51)\n1: import type { Vec3 } from '../contracts/math';\n2: \n3: export const ZERO_VEC3: Vec3 = { x: 0, y: 0, z: 0 };\n4: \n5: export function vec3(x = 0, y = 0, z = 0): Vec3 {\n6:   return { x, y, z };\n7: }\n8: \n9: export function cloneVec3(v: Vec3): Vec3 {\n10:   return { x: v.x, y: v.y, z: v.z };\n11: }\n12: \n13: export function addVec3(a: Vec3, b: Vec3): Vec3 {\n14:   return { x: a.x + b.x, y: a.y + b.y, z: a.z + b.z };\n15: }\n16: \n17: export function subVec3(a: Vec3, b: Vec3): Vec3 {\n18:   return { x: a.x - b.x, y: a.y - b.y, z: a.z - b.z };\n19: }\n20: \n21: export function scaleVec3(v: Vec3, scalar: number): Vec3 {\n22:   return { x: v.x * scalar, y: v.y * scalar, z: v.z * scalar };\n23: }\n24: \n25: export function dotVec3(a: Vec3, b: Vec3): number {\n26:   return a.x * b.x + a.y * b.y + a.z * b.z;\n27: }\n28: \n29: export function lengthVec3(v: Vec3): number {\n30:   return Math.hypot(v.x, v.y, v.z);\n31: }\n32: \n33: export function distanceVec3(a: Vec3, b: Vec3): number {\n34:   return Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z);\n35: }\n36: \n37: /** Returns null for zero length or non finite vectors so callers can bail out early. */\n38: export function normalizeVec3(v: Vec3): Vec3 | null {\n39:   const length = lengthVec3(v);\n40:   if (!Number.isFinite(length) || length < 1e-8) return null;\n41:   return { x: v.x / length, y: v.y / length, z: v.z / length };\n42: }\n43: \n44: /** Right handed rotation around the Y axis, matching the Three.js convention. */\n45: export function rotateAroundY(v: Vec3, radians: number): Vec3 {\n46:   if (!radians) return cloneVec3(v);\n47:   const cos = Math.cos(radians);\n48:   const sin = Math.sin(radians);\n49:   return { x: v.x * cos + v.z * sin, y: v.y, z: -v.x * sin + v.z * cos };\n50: }\n51: \n\n### package.json (строки 1-26 из 26)\n1: {\n2:   \"name\": \"crazy-putt-arena\",\n3:   \"private\": true,\n4:   \"version\": \"0.1.0\",\n5:   \"type\": \"module\",\n6:   \"scripts\": {\n7:     \"dev\": \"vite\",\n8:     \"build\": \"tsc -b && vite build\",\n9:     \"typecheck\": \"tsc -b --pretty false\",\n10:     \"test:ui\": \"vitest run src/ui\",\n11:     \"test:input\": \"vitest run src/input src/dev\",\n12:     \"test:camera\": \"vitest run src/camera\"\n13:   },\n14:   \"dependencies\": {\n15:     \"@dimforge/rapier3d-compat\": \"^0.17.3\",\n16:     \"three\": \"^0.180.0\"\n17:   },\n18:   \"devDependencies\": {\n19:     \"@types/three\": \"^0.180.0\",\n20:     \"jsdom\": \"^29.1.1\",\n21:     \"typescript\": \"^5.9.2\",\n22:     \"vite\": \"^7.1.5\",\n23:     \"vitest\": \"^5.0.1\"\n24:   }\n25: }\n26:",
+    "outputDigest": "3367f9d26eab217f0e1a74f72c129233dc655407f9276f364d5f5afd1350f34d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:38:15.384Z"
+}
