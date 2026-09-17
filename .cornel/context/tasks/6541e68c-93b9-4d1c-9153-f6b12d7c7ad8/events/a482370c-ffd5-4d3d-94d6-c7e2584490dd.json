@@ -1,0 +1,17 @@
+{
+  "id": "a482370c-ffd5-4d3d-94d6-c7e2584490dd",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5e2d11da8c90e1fe90f4a7fc7863816c3df8b525",
+    "output": "Ветка cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3 слита, конфликты разрешены с сохранением работы обеих сторон.\n\nПричина: обе стороны переписали массивы лунок целиком в haunted-mansion.ts, neon-city.ts, space-station.ts.\n\nРазрешение:\n- Геометрия — из ветки офиса (планировки на layoutKit: повороты, развилки, этажи, рампы). Её охраняет src/courses/layoutDiversity.test.ts, возврат к коридорам был бы регрессом.\n- Механики — из входящей ветки, перенесены внутрь этих планировок: haunted-mansion — pendulum (часы, бальный зал), sliding-wall (стеллаж), door (погреб), teleporter (тайный ход библиотеки), platform (доска над затопленным погребом); neon-city — boost-pad (3 лунки), jump-pad, teleporter (туннель skyrail и служебная линия мегагрида); space-station — magnet-zone (центрифуга, сингулярность), gravity-zone (zero-G причал, горизонт событий). Ровно эти типы требует THEME_MECHANICS в tests/course-data-validation.test.ts.\n- В layoutKit.ts добавлены конструкторы slidingWall, door, pendulum, teleporter, boostPad, jumpPad, gravityZone, magnetZone.\n- Содержательный конфликт смыслов: валидатор из входящей ветки считал курсом каждый файл в src/courses/data, а офис добавил туда общий модуль layoutKit.ts. Валидатор научен отличать хелпер от курса; требования «ровно один Course на модуль» и «10 курсов × 9 лунок = 90» сохранены.\n\nИзменены: src/courses/data/{haunted-mansion,neon-city,space-station,layoutKit}.ts, tests/course-data-validation.test.ts. Остальное влилось автоматически (courses/types.ts, obstacles/descriptors.ts, HoleSceneBuilder, BotPlanner, Minimap, candy-factory, volcano).\n\nПроверки на 5e2d11da: npm run typecheck — чисто; npm test — 35 файлов, 237 тестов, все прошли; npm run build — успешно. Merge-коммит 5e2d11da с двумя родителями (5e4bd2ea, 1f5b4da8), дерево чистое, локальная и удалённая головы совпадают. PR не открывал: это слияние карточки в ветку офиса.",
+    "outputDigest": "ae33f833e466a2bca4e1ace27aadb0d7a1ac602db8801ce7200cf80d86e60732",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:59:53.631Z"
+}
