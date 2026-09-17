@@ -1,0 +1,17 @@
+{
+  "id": "f69e7ba0-108e-4169-b31f-7a2404b21f59",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "### src/core/SaveManager.ts (строки 1-6 из 10)\n1: import { createDefaultProfile,defaultCosmetics,defaultSettings,defaultStatistics } from '../player/profile';\n2: import { createProgression } from '../player/progression';\n3: import type { PlayerProfile } from '../player/types';\n4: export const SAVE_VERSION=2; export const DEFAULT_SAVE_KEY='crazy-putt-arena.save';\n5: export interface StorageLike { getItem(k:string):string|null; setItem(k:string,v:string):void; removeItem(k:string):void }\n6: type R=Record<string,unknown>; const rec=(v:unknown):v is R=>typeof v==='object'&&v!==null&&!Array.isArray(v); const num=(v:unknown,d=0)=>typeof v==='number'&&Number.isFinite(v)?v:d; const str=(v:unknown,d:string)=>typeof v==='string'&&v.length?v:d;\n… ещё 4 строк\n\n### src/ui/types.ts (строки 1-43 из 43)\n1: export type UiPlayerStatus = 'playing' | 'finished' | 'waiting' | 'disconnected';\n2: \n3: export interface UiPlayer {\n4:   id: string;\n5:   name: string;\n6:   color: string;\n7:   strokes: number;\n8:   totalStrokes: number;\n9:   parDelta: number;\n10:   status: UiPlayerStatus;\n11:   isLocal?: boolean;\n12: }\n13: \n14: export interface HudState {\n15:   holeNumber: number;\n16:   holeCount: number;\n17:   holeName: string;\n18:   par: number;\n19:   strokes: number;\n20:   power: number;\n21:   canShoot: boolean;\n22:   statusText?: string;\n23: }\n24: \n25: export interface ScoreboardState {\n26:   players: UiPlayer[];\n27:   holeNumber: number;\n28:   holeCount: number;\n29: }\n30: \n31: export interface MatchResultPlayer extends UiPlayer {\n32:   rank: number;\n33:   ratingBefore?: number;\n34:   ratingAfter?: number;\n35:   xpEarned?: number;\n36: }\n37: \n38: export interface MatchResultsState {\n39:   players: MatchResultPlayer[];\n40:   courseName: string;\n41:   holesPlayed: number;\n42: }\n43:",
+    "outputDigest": "5d6b16fcad6dda21c5f0d22f44cd2d34435257583c22fb9860065b2f6698bd2f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:16:00.596Z"
+}
