@@ -1,0 +1,11 @@
+{
+  "id": "2b03ab83-7416-4ecc-a6c0-3922d8a7958f",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "check-10",
+    "output": "[55665:11856083:0917/065410.692817:INFO:CONSOLE:733] \"[vite] connecting...\", source: http://localhost:5199/@vite/client (733)\n[55665:11856083:0917/065410.723682:INFO:CONSOLE:827] \"[vite] connected.\", source: http://localhost:5199/@vite/client (827)\n[55665:11856083:0917/065411.014040:INFO:CONSOLE:0] \"[.WebGL-0x124000e6200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels\", source: http://localhost:5199/?debug=1&course=volcano&hole=3 (0)\n[55665:11856083:0917/065411.028659:INFO:CONSOLE:0] \"[.WebGL-0x124000e6200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels\", source: http://localhost:5199/?debug=1&course=volcano&hole=3 (0)\n[55665:11856083:0917/065411.047406:INFO:CONSOLE:0] \"[.WebGL-0x124000e6200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels\", source: http://localhost:5199/?debug=1&course=volcano&hole=3 (0)\n[55665:11856083:0917/065411.066734:INFO:CONSOLE:2490] \"using deprecated parameters for the initialization function; pass a single object instead\", source: http://localhost:5199/node_modules/.vite/deps/@dimforge_rapier3d-compat.js?v=dd863ad2 (2490)\n[55665:11856083:0917/065411.067284:INFO:CONSOLE:0] \"[.WebGL-0x124000e6200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)\", source: http://localhost:5199/?debug=1&course=volcano&hole=3 (0)\n--- menu ---\n"
+  },
+  "createdAt": "2026-09-17T03:54:18.797Z"
+}
