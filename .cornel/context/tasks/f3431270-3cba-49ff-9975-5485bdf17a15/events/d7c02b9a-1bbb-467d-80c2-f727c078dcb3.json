@@ -1,0 +1,17 @@
+{
+  "id": "d7c02b9a-1bbb-467d-80c2-f727c078dcb3",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-1b",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "     279 src/core/HoleSceneBuilder.ts\n",
+    "outputDigest": "b5c6ab07ade77729d48a6eaedd13e4227d4e618fbaccfebbcb04272ff4c1b270",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:17:25.725Z"
+}
