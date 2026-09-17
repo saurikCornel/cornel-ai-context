@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Ветки с таким именем на origin нет. Смотрю фактический список удалённых веток.\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"lsremote-1\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git ls-remote --heads origin | sed 's#\\\\trefs/heads/#  #'\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:44:47.464Z"
+}

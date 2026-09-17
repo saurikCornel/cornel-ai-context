@@ -1,0 +1,11 @@
+{
+  "id": "2d55cb67-be84-4ca0-b38a-2db19d4e19f3",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "lsremote-1",
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27"
+  },
+  "createdAt": "2026-09-17T04:44:47.466Z"
+}

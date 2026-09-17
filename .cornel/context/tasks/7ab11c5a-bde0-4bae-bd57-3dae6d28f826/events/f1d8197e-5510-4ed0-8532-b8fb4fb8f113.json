@@ -1,0 +1,12 @@
+{
+  "id": "f1d8197e-5510-4ed0-8532-b8fb4fb8f113",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "lsremote-1",
+    "operation": "run",
+    "command": "git ls-remote --heads origin | sed 's#\\trefs/heads/#  #'"
+  },
+  "createdAt": "2026-09-17T04:44:47.465Z"
+}
