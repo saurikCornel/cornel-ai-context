@@ -1,0 +1,17 @@
+{
+  "id": "0f71bdce-c52a-4edf-a359-b5ec50ca86e6",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "grep-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "warning: could not open directory 'src/core/HoleSceneBuilder.ts src/ui/Minimap.ts src/gameplay/HoleSystem.ts src/ai/': No such file or directory",
+    "outputDigest": "23b2cbb694dc8b217713d1128dc19d18c1c0637f68826e6bce4d2c329e1bf5bb",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:22:14.782Z"
+}

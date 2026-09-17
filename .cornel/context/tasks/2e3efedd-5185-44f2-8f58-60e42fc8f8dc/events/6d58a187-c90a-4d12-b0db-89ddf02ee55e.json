@@ -1,0 +1,11 @@
+{
+  "id": "6d58a187-c90a-4d12-b0db-89ddf02ee55e",
+  "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "check-2",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\ntypecheck exit: 0\n=== tests ===\n"
+  },
+  "createdAt": "2026-09-17T02:22:10.617Z"
+}
