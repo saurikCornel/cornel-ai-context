@@ -1,0 +1,11 @@
+{
+  "id": "154e5324-eff8-4711-b1a0-6302a86bafc3",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "read-tsconfig-1",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-17T02:27:22.680Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ef163455-d003-446e-b03a-41a16d2283cb",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-tsconfig-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "### tsconfig.json (строки 1-5 из 5)\n1: {\n2:   \"files\": [],\n3:   \"references\": [{ \"path\": \"./tsconfig.app.json\" }, { \"path\": \"./tsconfig.node.json\" }]\n4: }\n5:",
+    "outputDigest": "ff05220e4a050ee6804ac6993cf8ee560f6b79455931e8db7983010011b346c9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:27:25.036Z"
+}
