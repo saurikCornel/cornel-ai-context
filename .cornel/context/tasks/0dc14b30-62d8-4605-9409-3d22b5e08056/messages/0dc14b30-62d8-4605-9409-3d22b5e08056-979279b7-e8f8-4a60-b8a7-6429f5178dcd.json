@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"ls-2\",\"operation\":\"ls\",\"heads\":[\"cornel/surface-friction-model-ice-mud-sand-0dc14b\"],\"path\":\"src/obstacles\",\"maxLines\":100}\n```\n\nЗапрос ушёл: пробую прочитать каталог, указав ветку вместо устаревшего SHA (после publish головной коммит сменился, а нового SHA у меня нет). Жду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:44:32.821Z"
+}
