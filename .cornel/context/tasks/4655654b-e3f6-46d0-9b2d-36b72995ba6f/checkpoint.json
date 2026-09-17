@@ -1,9 +1,9 @@
 {
   "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
   "branch": "cornel/ball-cosmetics-catalog-and-unlocks-465565",
-  "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
+  "headSha": "31eaea56e032edfe548b6e0fc15c251a4a58e106",
   "status": "RUNNING",
-  "summary": "Диф чистый — только два файла карточки. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"commandId\":\"publish-6\",\"operation\":\"publish\",\"headSha\":\"0ff1b57531671012649ac69fb36983eaa39e6389\",\"message\":\"Ball cosmetics: BALL_STYLES catalog, level unlocks and syncUnlockedCosmetics + tests\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Опубликовано (`31eaea5`). Прогоняю проверки на опубликованном коммите, чтобы finish опирался на успешную проверку того же headSha.\n\n```json\n{\"version\":1,\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"commandId\":\"verify-published-7\",\"operation\":\"run\",\"headSha\":\"31eaea56e032edfe548b6e0fc15c251a4a58e106\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/player/cosmetics.test.ts && npx tsc -b --pretty false && echo CHECKS_OK\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "apple-32dd9b9f",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "publish-6",
+      "status": "SUCCEEDED",
+      "headSha": "31eaea56e032edfe548b6e0fc15c251a4a58e106",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-published-7",
       "status": "STARTED",
-      "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389",
+      "headSha": "31eaea56e032edfe548b6e0fc15c251a4a58e106",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:51:39.640Z"
+  "createdAt": "2026-09-17T01:52:01.694Z"
 }
