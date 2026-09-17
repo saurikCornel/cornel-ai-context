@@ -1,0 +1,17 @@
+{
+  "id": "6662b095-6b33-40cb-a3cb-38e45613cf2f",
+  "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "write-1",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
+    "output": "manifest OK: 15 unique events\n\n\u001b[41m                                                                               \u001b[0m\n\u001b[41m\u001b[37m                This is not the tsc command you are looking for                \u001b[0m\n\u001b[41m                                                                               \u001b[0m\n\nTo get access to the TypeScript compiler, \u001b[34mtsc\u001b[0m, from the command line either:\n\n- Use \u001b[1mnpm install typescript\u001b[0m to first add TypeScript to your project \u001b[1mbefore\u001b[0m using npx\n- Use \u001b[1myarn\u001b[0m to avoid accidentally running code from un-installed packages\n",
+    "outputDigest": "37259418406e1f2a7a0321a78f0da660b6d332d3af1464141f4689cd059a0226",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:52:36.117Z"
+}
