@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Всё зелёное: typecheck, 285 тестов в 45 файлах, production-сборка. Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"Подключить SaveManager: профиль, рейтинг, XP и настройки переживают перезагрузку\\n\\n- core/ProfileStore: применение итога матча к профилю (XP, рейтинг, статистика, разблокировки), маппинг настроек меню <-> сохранения и сводка профиля для меню\\n- main.ts: загрузка профиля и настроек при старте, передача их в AppUI и Game, сохранение после матча и при saveSettings\\n- Game: опция onMatchComplete сообщает результат локального игрока (XP из MatchRewards, рейтинг из RatingSystem)\\n- ui: экран Profile и форма настроек читают реальные данные вместо литералов 'Putt Pilot'/1240\\n- player/SaveManager: поле rating в профиле, пресет качества ultra, безопасная миграция старых сохранений\\n- тесты: цикл матч -> сохранение -> перезагрузка (модульный и интеграционный через Game) + DOM-проверки меню\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:37:32.144Z"
+}

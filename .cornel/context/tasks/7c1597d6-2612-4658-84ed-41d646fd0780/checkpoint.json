@@ -3,7 +3,7 @@
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Интеграционный тест проходит (матч действительно доигран: holesCompleted=1, strokes>0). Финальный прогон всего набора и сборки.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"verify-4\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"set -e\\nnpm run typecheck 2>&1 | tail -5\\nnpx vitest run 2>&1 | grep -v 'Not implemented' | tail -12\\nnpm run build 2>&1 | tail -4\\ngit status --short\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Всё зелёное: typecheck, 285 тестов в 45 файлах, production-сборка. Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"Подключить SaveManager: профиль, рейтинг, XP и настройки переживают перезагрузку\\n\\n- core/ProfileStore: применение итога матча к профилю (XP, рейтинг, статистика, разблокировки), маппинг настроек меню <-> сохранения и сводка профиля для меню\\n- main.ts: загрузка профиля и настроек при старте, передача их в AppUI и Game, сохранение после матча и при saveSettings\\n- Game: опция onMatchComplete сообщает результат локального игрока (XP из MatchRewards, рейтинг из RatingSystem)\\n- ui: экран Profile и форма настроек читают реальные данные вместо литералов 'Putt Pilot'/1240\\n- player/SaveManager: поле rating в профиле, пресет качества ultra, безопасная миграция старых сохранений\\n- тесты: цикл матч -> сохранение -> перезагрузка (модульный и интеграционный через Game) + DOM-проверки меню\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -163,10 +163,16 @@
     },
     {
       "commandId": "verify-4",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:36:58.526Z"
+  "createdAt": "2026-09-17T04:37:32.147Z"
 }

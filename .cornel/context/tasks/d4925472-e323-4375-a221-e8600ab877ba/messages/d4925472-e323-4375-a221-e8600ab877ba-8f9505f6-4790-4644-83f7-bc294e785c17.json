@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверка head флапает (та же команда с этим SHA проходила ранее). Повторяю запуск проверок.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"verify-3\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git log --oneline -1; echo '=== typecheck ==='; npm run typecheck 2>&1 | tail -25; echo '=== test ==='; npm test 2>&1 | tail -35; echo '=== build ==='; npm run build 2>&1 | tail -15\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:37:30.927Z"
+}
