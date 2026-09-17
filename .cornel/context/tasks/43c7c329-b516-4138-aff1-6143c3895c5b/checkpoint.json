@@ -1,9 +1,9 @@
 {
   "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
   "branch": "cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3",
-  "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+  "headSha": "1f5b4da8a67a95c9dfd3b9d68237082bfaa8462a",
   "status": "RUNNING",
-  "summary": "The 3 failing suites are `node:test`-based files (and one needing a `.test-build` step) — they aren't vitest suites and are untouched by this card. Typecheck, build and all 176 vitest tests pass. Publishing.\n\n```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"message\":\"feat(courses): descriptors for teleporters, fans, conveyors, pads, fields and lava\\n\\nExtend ObstacleDescriptor with force volumes (teleporter/fan/conveyor),\\nimpulse pads (spring/boost/jump), field zones (gravity/magnet), lava hazards\\nand pendulum/sliding-wall/door movers, then wire them to the existing runtime\\nmodules through src/obstacles/descriptors.ts. Themed mechanics are now used by\\nVolcano, Neon City, Haunted Mansion, Candy Factory and Space Station.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Published as `1f5b4da`. Running the verification on the published head.\n\n```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"verify-head\",\"operation\":\"run\",\"headSha\":\"1f5b4da8a67a95c9dfd3b9d68237082bfaa8462a\",\"timeoutSeconds\":600,\"command\":\"npm run typecheck 2>&1 | tail -5; npx vitest run tests/course-data-validation.test.ts src/obstacles src/ui src/ai src/core 2>&1 | tail -20\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -163,10 +163,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "1f5b4da8a67a95c9dfd3b9d68237082bfaa8462a",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-head",
       "status": "STARTED",
-      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "headSha": "1f5b4da8a67a95c9dfd3b9d68237082bfaa8462a",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:48:35.132Z"
+  "createdAt": "2026-09-17T02:48:53.671Z"
 }
