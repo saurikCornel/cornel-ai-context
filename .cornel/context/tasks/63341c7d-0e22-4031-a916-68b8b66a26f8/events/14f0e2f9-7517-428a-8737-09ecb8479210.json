@@ -1,0 +1,12 @@
+{
+  "id": "14f0e2f9-7517-428a-8737-09ecb8479210",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "dump-1",
+    "operation": "run",
+    "command": "mkdir -p /tmp/cornel-63341c7d && git show HEAD:src/game/HoleRuntime.ts > /tmp/cornel-63341c7d/ours.ts && git show MERGE_HEAD:src/game/HoleRuntime.ts > /tmp/cornel-63341c7d/theirs.ts && git show $(git merge-base HEAD MERGE_HEAD):src/game/HoleRuntime.ts > /tmp/cornel-63341c7d/base.ts && wc -l /tmp/cornel-63341c7d/*.ts && echo '---METHODS OURS---' && grep -n '^  [a-zA-Z].*(\\|^  private [a-zA-Z].*(\\|^  get ' /tmp/cornel-63341c7d/ours.ts && echo '---METHODS THEIRS---' && grep -n '^  [a-zA-Z].*(\\|^  private [a-zA-Z].*(\\|^  get ' /tmp/cornel-63341c7d/theirs.ts"
+  },
+  "createdAt": "2026-09-17T03:34:11.083Z"
+}

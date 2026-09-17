@@ -1,0 +1,17 @@
+{
+  "id": "f5a83a74-b600-426c-9902-aa4074412a44",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "dump-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+    "output": "     275 /tmp/cornel-63341c7d/base.ts\n     412 /tmp/cornel-63341c7d/ours.ts\n     404 /tmp/cornel-63341c7d/theirs.ts\n    1091 total\n---METHODS OURS---\n107:  return new THREE.Vector3(size.x * (scale?.x ?? 1), size.y * (scale?.y ?? 1), size.z * (scale?.z ?? 1));\n145:  private readonly fieldManager = new ZoneManager();\n146:  private readonly tmpVector = new THREE.Vector3();\n147:  private readonly tmpQuaternion = new THREE.Quaternion();\n150:  constructor(\n161:  get moverCount(): number {\n166:  get bodyCount(): number {\n171:  get sensorCount(): number {\n176:  update(dt: number): void {\n204:  applyBallEffects(sample: BallSample, dt: number, mass: number): BallEffect {\n248:  resetObstacles(): void {\n254:  decelerationAt(position: Vec3): number {\n264:  hazardAt(position: Vec3): HazardObstacle | undefined {\n276:  resolveHazard(hazard: HazardObstacle | undefined, lastSafePosition: Vec3): HazardResolution {\n288:  dispose(): void {\n302:  private addSurface(surface: SurfaceDescriptor): void {\n345:  private addObstacle(obstacle: ObstacleDescriptor): void {\n---METHODS THEIRS---\n130:  const arm = new THREE.Vector3(0, -1, 0);\n131:  arm.addScaledVector(axis, -arm.dot(axis));\n132:  if (arm.lengthSq() < 1e-6) arm.set(1, 0, 0).addScaledVector(axis, -axis.x);\n133:  return arm.normalize();\n138:  return new THREE.Vector3(size.x * (scale?.x ?? 1), size.y * (scale?.y ?? 1), size.z * (scale?.z ?? 1));\n173:  private readonly tmpVector = new THREE.Vector3();\n174:  private readonly tmpQuaternion = new THREE.Quaternion();\n175:  private readonly tmpSpin = new THREE.Quaternion();\n178:  constructor(\n189:  get moverCount(): number {\n194:  moverPose(id: string): { position: Vec3; rotation: { x: number; y: number; z: number; w: number } } | undefined {\n206:  update(dt: number): void {\n215:  private updateSpin(mover: SpinMover): void {\n233:  private updateTranslate(mover: TranslateMover): void {\n240:  decelerationAt(position: Vec3): number {\n250:  hazardAt(position: Vec3): HazardObstacle | undefined {\n258:  dispose(): void {\n268:  private addSurface(surface: SurfaceDescriptor): void {\n311:  private addObstacle(obstacle: ObstacleDescriptor): void {\n",
+    "outputDigest": "9a9a50d45de6983c654ca3f940734b1efe5ff088d48db80c2b6ee883cb306c4e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:34:13.608Z"
+}
