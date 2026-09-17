@@ -1,0 +1,17 @@
+{
+  "id": "cc476b36-a9ae-4b4a-89a1-a6eb388f3770",
+  "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
+    "output": "public: 2 файлов\npublic/audio/README.md\npublic/audio/manifest.json",
+    "outputDigest": "3ebf795a21590a37bbbf273df2100a681aa5d3b8c8bb5bc6b0201ce1c5282e73",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:54:30.174Z"
+}

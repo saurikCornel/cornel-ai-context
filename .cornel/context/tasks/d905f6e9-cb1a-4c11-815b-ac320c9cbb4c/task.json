@@ -19,11 +19,11 @@
   "workspaceSyncedSha": "739687ec79598c402229dd1b1ef76589aa825b02",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T01:47:28.480Z",
-  "updatedAt": "2026-09-17T01:54:25.628Z",
+  "updatedAt": "2026-09-17T01:54:36.132Z",
   "issue": 81,
   "chatUrl": "cli://claude/d2a7cb2a-11ba-4822-8709-72f0b3f81524",
   "error": null,
-  "cliActivity": "Claude CLI: запускается (opus)",
+  "cliActivity": "Claude CLI: Read: /Users/alex/Cornel AI Projects/fun-golf/.git/refs/remotes/origin/cornel/office",
   "cliSession": "d2a7cb2a-11ba-4822-8709-72f0b3f81524",
   "browserError": null,
   "currentHead": "739687ec79598c402229dd1b1ef76589aa825b02"
