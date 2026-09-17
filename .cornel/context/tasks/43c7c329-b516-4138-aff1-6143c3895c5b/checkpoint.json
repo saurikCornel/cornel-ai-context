@@ -3,7 +3,7 @@
   "branch": "cornel/realizovannye-prepyatstviya-i-zony-nelzy-43c7c3",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"grep-1\",\"operation\":\"grep\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"pattern\":\"ObstacleDescriptor|obstacle.type|HazardObstacle|MovingObstacle|StaticObstacle\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "git grep uses basic regex — retrying with `-E`-style separate patterns.\n\n```json\n{\"version\":1,\"taskId\":\"43c7c329-b516-4138-aff1-6143c3895c5b\",\"commandId\":\"grep-2\",\"operation\":\"grep\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"pattern\":\"courses/types\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "grep-1",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "grep-2",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:19:15.425Z"
+  "createdAt": "2026-09-17T02:20:29.756Z"
 }
