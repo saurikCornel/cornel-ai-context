@@ -1,0 +1,17 @@
+{
+  "id": "bf2705a1-c91b-470d-a801-2e2857d7d6c2",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "course-neon-haunted",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "neon + haunted ok\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "5aa3bf35204ee40efd9632fe2872bd0cb14a5fae9d642f711470d2acd269e851",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:45:00.696Z"
+}

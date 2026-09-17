@@ -1,0 +1,13 @@
+{
+  "id": "880acb49-0f15-4001-8835-c06058b7820c",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Level Builder API из ТЗ §11 реализован.\n\nЧто сделано:\n- src/courses/HoleBuilder.ts (новый): fluent hole-builder поверх существующих дескрипторов. Методы: addFloor, addWall, addRamp, addCurve (дуга из сегментов с yaw-кватернионами), addHole (лунка/чашка), addObstacle, addSpinner, addMovingPlatform, addBumper, addTeleporter, addFan, addConveyor, addWater, addKillZone, плюс setSpawn/setPar/setBounds. buildHole() возвращает валидированный Hole (через validateHole), build() — HoleBlueprint с рантайм-зонами (ZoneDescriptor) и force-obstacle конфигами (TeleporterConfig/FanConfig/ConveyorConfig). Автогенерация id, защита от дублей, автовывод bounds по размещённой геометрии. types.ts и index.ts не тронуты.\n- src/courses/CourseBuilder.ts: добавлен addHoleWith(options, configure) — построение лунки через новый API прямо в курсе; addHole/addHoles/build без изменений.\n- src/courses/data/green-hills.ts: курс переведён на hole-builder с сохранением всех id, геометрии, bounds, cup и препятствий.\n- src/courses/builder.test.ts (новый): 9 тестов — валидный Hole из всех методов, геометрия дуги, зоны и force-obstacles, автовывод bounds, автогенерация id и отказ на дублях, обязательная чашка, CourseBuilder.addHoleWith, сохранение геометрии green-hills.\n- package.json: скрипт test:courses.\n\nПроверки (worker, headSha 03b8682): npm run typecheck — OK; npx vitest run src/courses tests/course-data-validation.test.ts — 2 файла, 12 тестов passed, валидация 90 лунок зелёная. Полный прогон vitest: 175 тестов passed; три файла tests/leaderboard-generator.test.ts, tests/leaderboard-render.test.ts, tests/save-manager.test.mjs падают предсуществующе и не связаны с карточкой (написаны под node:test, vitest не находит suite; save-manager дополнительно требует отсутствующий каталог .test-build).\n\nPR не открывался — слияние ветки выполняет сборщик.",
+  "detail": {
+    "commands": 23,
+    "failed": 0,
+    "headSha": "03b868289884446ce8ab164a5ed263a8acbce72d",
+    "branch": "cornel/level-builder-api-iz-tz-11-ne-realizovan-6629a0"
+  },
+  "createdAt": "2026-09-17T02:45:00.251Z"
+}
