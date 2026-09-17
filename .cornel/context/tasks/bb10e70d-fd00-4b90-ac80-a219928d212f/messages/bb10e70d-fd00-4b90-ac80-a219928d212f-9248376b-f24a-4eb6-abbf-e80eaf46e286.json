@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Finish требует успешной проверки именно на `4af072d6`, а мои две попытки на этом SHA упали на синхронизации (`FETCH_HEAD`, затем расхождение с GitHub — вероятно, отставание ответа GitHub сразу после push). Сам finish уже принял этот head как актуальный, значит ветка на GitHub видна. Повторяю проверку с новым commandId.\n\n```json\n{\"version\":1,\"taskId\":\"bb10e70d-fd00-4b90-ac80-a219928d212f\",\"commandId\":\"movers-verify-5\",\"operation\":\"run\",\"headSha\":\"4af072d630a32b5641c84dc46dd3bc34c112a24d\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/obstacles/movers.test.ts && npx tsc -b --pretty false && echo CHECKS_OK_AT_HEAD\"}\n```\n\nЖду результат worker по `movers-verify-5` в этом чате.\n\n**Сводка.** Состояние: код опубликован (`4af072d6`, файлы `src/obstacles/movers.ts` и `src/obstacles/movers.test.ts`), проверки до публикации зелёные (vitest 8/8, `tsc -b` без ошибок). Блокирует только требование прогнать проверку на опубликованном SHA. Следующий шаг: при успехе — повторный `finish`; при повторном отказе синхронизации сообщу владельцу для сверки состояния ветки на GitHub.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:50:39.823Z"
+}

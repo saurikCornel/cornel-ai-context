@@ -1,0 +1,11 @@
+{
+  "id": "ff35e86c-a6e3-4129-a6f9-b42b915521b2",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "movers-verify-5",
+    "headSha": "4af072d630a32b5641c84dc46dd3bc34c112a24d"
+  },
+  "createdAt": "2026-09-17T01:50:39.825Z"
+}

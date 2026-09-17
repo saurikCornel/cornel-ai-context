@@ -1,0 +1,11 @@
+{
+  "id": "81173502-9971-4405-9de7-25e323b808c2",
+  "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
+  "type": "CLI_TURN",
+  "text": "Claude CLI ответил",
+  "detail": {
+    "agent": "claude",
+    "model": "opus"
+  },
+  "createdAt": "2026-09-17T01:50:46.599Z"
+}

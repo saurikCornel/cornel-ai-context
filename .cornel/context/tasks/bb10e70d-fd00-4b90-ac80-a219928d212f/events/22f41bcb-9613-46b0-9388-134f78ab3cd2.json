@@ -1,0 +1,12 @@
+{
+  "id": "22f41bcb-9613-46b0-9388-134f78ab3cd2",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "movers-verify-5",
+    "operation": "run",
+    "command": "npx vitest run src/obstacles/movers.test.ts && npx tsc -b --pretty false && echo CHECKS_OK_AT_HEAD"
+  },
+  "createdAt": "2026-09-17T01:50:39.823Z"
+}
