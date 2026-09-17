@@ -1,0 +1,9 @@
+{
+  "taskId": "0dc14b30-62d8-4605-9409-3d22b5e08056",
+  "branch": "cornel/surface-friction-model-ice-mud-sand-0dc14b",
+  "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+  "status": "WAITING_CHATGPT",
+  "summary": "Файл 'src/obstacles/surfaces.ts' не найден. Проверьте путь и попробуйте еще раз.\n\n",
+  "commands": [],
+  "createdAt": "2026-09-17T00:04:34.109Z"
+}
