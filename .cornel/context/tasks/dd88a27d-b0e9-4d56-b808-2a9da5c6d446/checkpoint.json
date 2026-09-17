@@ -3,7 +3,7 @@
   "branch": "cornel/net-rezhimov-kamery-overview-free-i-plav-dd88a2",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Тесты камеры зелёные (40 из 40, включая 8 новых). Теперь перевожу `Game.ts` на `CameraDirector`.\n\n```json\n{\"version\":1,\"taskId\":\"dd88a27d-b0e9-4d56-b808-2a9da5c6d446\",\"commandId\":\"patch-game-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"timeoutSeconds\":600,\"command\":\"cat > /tmp/patch-game.cjs <<'EOF'\\nconst fs = require('fs');\\nconst file = 'src/game/Game.ts';\\nlet src = fs.readFileSync(file, 'utf8');\\n\\nconst oldUpdateCamera = `  private updateCamera(dt: number): void {\\n    if (this.match.phase === 'simulating' || this.match.phase === 'hole-intro') {\\n      const focus = this.ballPosition();\\n      this.cameraController.setTarget({ x: focus.x, y: focus.y + 0.35, z: focus.z });\\n    }\\n    this.cameraController.update(dt, this.cameraView());\\n    if (this.options.input.wasPressed('camera-reset')) this.focusCamera(this.ballPosition());\\n    const pose = this.cameraController.state;\\n    const camera = this.options.camera;\\n    camera.position.set(pose.position.x, pose.position.y, pose.position.z);\\n    camera.lookAt(pose.target.x, pose.target.y, pose.target.z);\\n  }`;\\n\\nconst newUpdateCamera = `  /** The director owns the reset key, the mode machine and the damping; feed it the ball. */\\n  private updateCamera(dt: number): void {\\n    this.cameraDirector.setFocus(this.ballPosition());\\n    applyCameraPose(this.options.camera, this.cameraDirector.update(dt, this.cameraView()));\\n  }`;\\n\\nconst oldFocusCamera = `  private focusCamera(position: Vec3): void {\\n    const dx = this.hole.cup.position.x - position.x;\\n    const dz = this.hole.cup.position.z - position.z;\\n    const yaw = Math.abs(dx) + Math.abs(dz) < 1e-5 ? Math.PI : Math.atan2(-dx, -dz);\\n    this.cameraController.reset({ x: position.x, y: position.y + 0.35, z: position.z });\\n    this.cameraController.setOrbit(yaw, CAMERA_PITCH, CAMERA_DISTANCE);\\n  }`;\\n\\nconst newFocusCamera = `  /** Slides the camera behind the ball facing the cup; the pose is never cut. */\\n  private focusCamera(position: Vec3): void {\\n    this.cameraDirector.focusOn(position);\\n  }`;\\n\\nconst edits = [\\n  [\\n    `import { CameraController } from '../camera/CameraController';`,\\n    `import { CameraDirector } from '../camera/CameraDirector';\\\\nimport { applyCameraPose } from '../camera/ThreeCameraBinding';`,\\n  ],\\n  [\\n    `  private readonly cameraController = new CameraController({ pitch: CAMERA_PITCH, distance: CAMERA_DISTANCE });`,\\n    `  private readonly cameraDirector = new CameraDirector({\\\\n    modes: { aim: { pitch: CAMERA_PITCH, distance: CAMERA_DISTANCE } },\\\\n  });`,\\n  ],\\n  [\\n    `    this.focusCamera(hole.spawn);`,\\n    `    this.cameraDirector.setFraming({ bounds: hole.bounds, spawn: hole.spawn, cup: hole.cup.position });\\\\n    this.cameraDirector.setFocus(hole.spawn);\\\\n    this.cameraDirector.setMode('overview', { force: true, immediate: first });`,\\n  ],\\n  [`this.cameraController.state.yaw`, `this.cameraDirector.yaw`],\\n  [\\n    `    this.statusText = undefined;\\\\n    this.aimArrow.visible = false;\\\\n  }\\\\n\\\\n  private finishTurn`,\\n    `    this.statusText = undefined;\\\\n    this.aimArrow.visible = false;\\\\n    this.cameraDirector.setMode('follow');\\\\n  }\\\\n\\\\n  private finishTurn`,\\n  ],\\n  [oldUpdateCamera, newUpdateCamera],\\n  [oldFocusCamera, newFocusCamera],\\n];\\n\\nfor (const [from, to] of edits) {\\n  if (!src.includes(from)) throw new Error('anchor not found: ' + from.slice(0, 70));\\n  src = src.replace(from, to);\\n}\\n\\nfs.writeFileSync(file, src);\\nconsole.log('Game.ts patched');\\nEOF\\nnode /tmp/patch-game.cjs && grep -n 'cameraDirector\\\\|applyCameraPose\\\\|cameraController' src/game/Game.ts\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "`Game.ts` переведён на директора. Теперь типизация, сборка и тесты (камера + игровой цикл).\n\n```json\n{\"version\":1,\"taskId\":\"dd88a27d-b0e9-4d56-b808-2a9da5c6d446\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"timeoutSeconds\":600,\"command\":\"npm run typecheck 2>&1 | tail -20 && npx vitest run src/camera src/game 2>&1 | tail -35\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-camera-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "patch-game-1",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:20:39.018Z"
+  "createdAt": "2026-09-17T03:21:17.317Z"
 }
