@@ -1,0 +1,17 @@
+{
+  "id": "b353bd71-b26f-454f-91b0-a70c5b31ca51",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-13",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "== spawn/cup по курсам (x:z -> x:z) ==\n-- ancient-temple\n0  z=-8\n0  z=-9.5\n0  z=-11\n0  z=-12.5\n0  z=-14\n0  z=-15.5\n0  z=-17\n0  z=-18.5\n0  z=-20\n-- arctic-base\n0  z=-8\n0  z=-9.5\n0  z=-11\n0  z=-12.5\n0  z=-14\n0  z=-15.5\n0  z=-17\n0  z=-18.5\n0  z=-20\n-- volcano\n0  z=-8\n0  z=-9.5\n0  z=-11\n0  z=-12.5\n0  z=-14\n0  z=-15.5\n0  z=-17\n0  z=-18.5\n0  z=-20\n-- green-hills\n-- chaos-dimension\n\n== размеры полов ==\n-n ancient-temple floors: \nsize: { x: 12, y: 0.5, z: 20 } size: { x: 12, y: 0.5, z: 23 } size: { x: 12, y: 0.5, z: 26 } size: { x: 11, y: 0.5, z: 29 } size: { x: 7, y: 0.5, z: 0.6 } size: { x: 11, y: 0.5, z: 32 } size: { x: 7, y: 0.5, z: 0.6 } size: { x: 11, y: 0.5, z: 35 } size: { x: 7\n\n-n arctic-base floors: \nsize: { x: 12, y: 0.5, z: 20 } size: { x: 12, y: 0.5, z: 23 } size: { x: 12, y: 0.5, z: 26 } size: { x: 11, y: 0.5, z: 29 } size: { x: 7, y: 0.5, z: 0.6 } size: { x: 11, y: 0.5, z: 32 } size: { x: 7, y: 0.5, z: 0.6 } size: { x: 11, y: 0.5, z: 35 } size: { x: 7\n\n-n volcano floors: \nsize: { x: 12, y: 0.5, z: 20 } size: { x: 12, y: 0.5, z: 23 } size: { x: 12, y: 0.5, z: 26 } size: { x: 11, y: 0.5, z: 29 } size: { x: 7, y: 0.5, z: 0.6 } size: { x: 11, y: 0.5, z: 32 } size: { x: 7, y: 0.5, z: 0.6 } size: { x: 11, y: 0.5, z: 35 } size: { x: 7\n\n\n== флаг и тема в билдере ==\n155\nsrc/game/Game.ts:305:    const head = new THREE.Mesh(new THREE.ConeGeometry(0.13, 0.3, 12), this.aimMaterial);\n",
+    "outputDigest": "478caa80c67eb2203e6425271c09a06933173447b8951addd0822c6f2033c75f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:03:03.880Z"
+}

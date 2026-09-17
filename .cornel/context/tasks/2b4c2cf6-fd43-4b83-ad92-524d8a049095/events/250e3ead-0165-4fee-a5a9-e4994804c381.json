@@ -1,0 +1,12 @@
+{
+  "id": "250e3ead-0165-4fee-a5a9-e4994804c381",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-13",
+    "operation": "run",
+    "command": "echo '== spawn/cup по курсам (x:z -> x:z) =='; for f in ancient-temple arctic-base volcano green-hills chaos-dimension; do echo \"-- $f\"; grep -o \"spawn: { x: [-0-9.]*, y: [-0-9.]*, z: [-0-9.]* }\" src/courses/data/$f.ts | sed 's/spawn: { x: //; s/, y: [-0-9.]*, z: /  z=/; s/ }//' | head -9; done 2>&1 | cut -c1-80; echo; echo '== размеры полов =='; for f in ancient-temple arctic-base volcano; do echo -n \"$f floors: \"; grep -o \"size: { x: [0-9.]*, y: 0.5, z: [0-9.]* }\" src/courses/data/$f.ts | tr '\\n' ' ' | cut -c1-260; echo; done; echo; echo '== флаг и тема в билдере =='; grep -c '' src/core/HoleSceneBuilder.ts; grep -n 'flag\\|Flag\\|cone\\|Cone\\|theme\\|Theme\\|background\\|fog' src/core/HoleSceneBuilder.ts src/game/Game.ts | cut -c1-130 | head -25"
+  },
+  "createdAt": "2026-09-17T04:03:01.880Z"
+}
