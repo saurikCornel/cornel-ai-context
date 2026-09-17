@@ -19,11 +19,11 @@
   "workspaceSyncedSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T03:07:13.058Z",
-  "updatedAt": "2026-09-17T03:28:06.472Z",
+  "updatedAt": "2026-09-17T03:28:21.634Z",
   "issue": 96,
   "chatUrl": "cli://claude/aa9551b1-9678-4fa4-a520-0871578c83a4",
   "error": null,
-  "cliActivity": null,
+  "cliActivity": "Claude CLI: Read: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/fd5dc768-2e5c-404a-9426-c8cc952cd365/src/game/Hole",
   "cliSession": "aa9551b1-9678-4fa4-a520-0871578c83a4",
   "browserError": null,
   "currentHead": "e0a720a0b8185824d35e09937c677a9ed3d5752e"
