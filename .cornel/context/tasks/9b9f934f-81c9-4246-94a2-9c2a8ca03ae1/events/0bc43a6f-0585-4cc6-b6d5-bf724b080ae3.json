@@ -1,0 +1,17 @@
+{
+  "id": "0bc43a6f-0585-4cc6-b6d5-bf724b080ae3",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "fix-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+    "output": "3\n--- markers left ---\n--- 232..292 ---\n    applyTransform(mesh, obstacle.transform, obstacle.size);\n    mesh.castShadow = true;\n    mesh.visible = obstacle.enabled !== false;\n    return mesh;\n  }\n\n  /** Flat emissive spill laid on the course; the collider height stays invisible. */\n  private buildHazard(obstacle: ObstacleDescriptor, hole: Hole): THREE.Mesh {\n    const key = 'hazard:' + obstacle.type;\n    const mesh = new THREE.Mesh(\n      this.boxGeometry,\n      this.sensorMaterialFor(key, OBSTACLE_COLORS[obstacle.type], HAZARD_OPACITY, false),\n    );\n    mesh.name = obstacle.id;\n    const size = scaledSize(obstacle);\n    const position = obstacle.transform.position;\n    const top = hazardSurfaceTop(hole, obstacle);\n    mesh.position.set(position.x, top + HAZARD_SLAB_LIFT + HAZARD_SLAB_HEIGHT / 2, position.z);\n    const rotation = obstacle.transform.rotation;\n    if (rotation) {\n      mesh.quaternion.set(rotation.x, rotation.y, rotation.z, rotation.w);\n    }\n    mesh.scale.set(size.x, HAZARD_SLAB_HEIGHT, size.z);\n    mesh.castShadow = false;\n    mesh.receiveShadow = false;\n    mesh.visible = obstacle.enabled !== false;\n    return mesh;\n  }\n\n  /** Force fields keep their volume so the reach stays readable, but stay a see-through haze. */\n  private buildField(obstacle: ObstacleDescriptor): THREE.Mesh {\n    const key = 'field:' + obstacle.type;\n    const mesh = new THREE.Mesh(\n      this.boxGeometry,\n      this.sensorMaterialFor(key, OBSTACLE_COLORS[obstacle.type], FIELD_OPACITY, true),\n    );\n    mesh.name = obstacle.id;\n    applyTransform(mesh, obstacle.transform, obstacle.size);\n    mesh.castShadow = false;\n    mesh.receiveShadow = false;\n    mesh.visible = obstacle.enabled !== false;\n    return mesh;\n  }\n\n  /**\n   * Cup assembly: the dark mouth marker, a recess lined down to a floor and the flag above it.\n   * All parts live in one child group, so a hole still reports a single cup entry in its mesh count.\n   */\n  private buildCup(hole: Hole, themeId?: string): THREE.Group {\n    const assembly = new THREE.Group();\n    assembly.name = hole.id + '-cup-assembly';\n\n    const center = hole.cup.position;\n    const radius = hole.cup.radius;\n    const diameter = radius * 2;\n    const depth = Math.max(hole.cup.captureDepth, radius);\n\n    const mouth = new THREE.Mesh(this.cylinderGeometry, this.materialFor('cup', CUP_COLOR));\n    mouth.name = hole.id + '-cup';\n    mouth.position.set(center.x, center.y, center.z);\n    mouth.scale.set(diameter, radius, diameter);\n",
+    "outputDigest": "c3c2d644a7757c192ea5b8173a21b1412f6f8aac0bbb311b4d05f8f48cb17ac9",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:36:38.642Z"
+}

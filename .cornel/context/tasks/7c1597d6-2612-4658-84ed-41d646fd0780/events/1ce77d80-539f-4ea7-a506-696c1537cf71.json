@@ -1,0 +1,17 @@
+{
+  "id": "1ce77d80-539f-4ea7-a506-696c1537cf71",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "patch-integration",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/7c1597d6-2612-4658-84ed-41d646fd0780\u001b[39m\n\n\u001b[90mstderr\u001b[2m | src/core/matchProgress.test.ts\n\u001b[22m\u001b[39musing deprecated parameters for the initialization function; pass a single object instead\n\n \u001b[32m✓\u001b[39m src/core/matchProgress.test.ts \u001b[2m(\u001b[22m\u001b[2m1 test\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 182\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:36:34\n\u001b[2m   Duration \u001b[22m 1.45s\u001b[2m (environment 50%, transform 29%, tests 13%, import 7%)\u001b[22m\n\n",
+    "outputDigest": "5a7a9ba795de6bccaa3c23c7a0ef94eb4d616637c6f3caef1643e9ab8bd32545",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:36:35.547Z"
+}
