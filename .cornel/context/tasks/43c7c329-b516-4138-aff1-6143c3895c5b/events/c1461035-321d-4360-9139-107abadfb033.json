@@ -1,0 +1,17 @@
+{
+  "id": "c1461035-321d-4360-9139-107abadfb033",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "course-candy-space",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "candy + space ok\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "035ccb03dd3b3a0fcd04d8c9f9c76da126794be5c64591c7bbc011807f1c0c5c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:45:55.519Z"
+}

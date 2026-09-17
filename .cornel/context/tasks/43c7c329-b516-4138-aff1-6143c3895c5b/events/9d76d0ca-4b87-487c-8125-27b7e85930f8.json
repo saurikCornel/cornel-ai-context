@@ -1,0 +1,11 @@
+{
+  "id": "9d76d0ca-4b87-487c-8125-27b7e85930f8",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "course-candy-space",
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
+  },
+  "createdAt": "2026-09-17T02:45:51.881Z"
+}
