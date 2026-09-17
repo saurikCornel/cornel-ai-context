@@ -1,0 +1,12 @@
+{
+  "id": "e79dce2b-e93e-44b9-9f48-7fdc8d4b9663",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-14",
+    "operation": "run",
+    "command": "cd src/courses/data; echo '== отпечаток геометрии (md5 списка размеров) =='; for f in *.ts; do [ \"$f\" = layoutKit.ts ] && continue; echo -n \"$f  \"; grep -o 'size: {[^}]*}' $f | sort | md5 | cut -c1-12; done; echo; echo '== число поверхностей и cup.x =='; for f in *.ts; do [ \"$f\" = layoutKit.ts ] && continue; echo -n \"$f surfaces=$(grep -o \\\"shape: '\\\" $f | wc -l | tr -d ' ') cupX: \"; grep -o 'cup: { position: { x: [-0-9.]*' $f | sed 's/.*x: //' | tr '\\n' ' '; echo; done; echo; echo '== курсы, построенные через layoutKit =='; grep -l layoutKit *.ts"
+  },
+  "createdAt": "2026-09-17T04:03:41.435Z"
+}
