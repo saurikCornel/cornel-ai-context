@@ -1,0 +1,12 @@
+{
+  "id": "12ffe501-e01f-4895-8fcc-6e3a01006571",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "wc-1",
+    "operation": "run",
+    "command": "wc -l -c src/ui/index.ts && awk '{print NR\": \"length($0)}' src/ui/index.ts"
+  },
+  "createdAt": "2026-09-17T05:07:59.594Z"
+}
