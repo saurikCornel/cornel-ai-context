@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-2b4c2c",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-7\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/main.ts:140-176\",\"src/courses/index.ts:1-40\",\"README.md:60-95\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Глубокая ссылка стартует матч только с `?debug=1` — это соответствует коду. Теперь проба как пользователь: поднимаю dev-сервер и открываю игру в Chrome со снимком экрана.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-8\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"SHOT=/private/tmp/claude-501/-Users-alex-Library-Application-Support-Cornel-AI-workspace-worktrees-2b4c2cf6-fd43-4b83-ad92-524d8a049095/9d886d11-3bbd-40d7-a5d0-a7e3672859ae/scratchpad; mkdir -p $SHOT; (nohup npx vite --port 5199 --strictPort >/tmp/cpa-vite.log 2>&1 &); sleep 8; echo HTTP=$(curl -s -o /dev/null -w '%{http_code}' 'http://localhost:5199/'); open -a 'Google Chrome' 'http://localhost:5199/?debug=1&course=green-hills&hole=1'; sleep 20; screencapture -x $SHOT/game-1.png; echo SHOT_EXIT=$?; ls -l $SHOT/game-1.png; tail -5 /tmp/cpa-vite.log\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "check-7",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-8",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:52:02.032Z"
+  "createdAt": "2026-09-17T03:52:28.495Z"
 }
