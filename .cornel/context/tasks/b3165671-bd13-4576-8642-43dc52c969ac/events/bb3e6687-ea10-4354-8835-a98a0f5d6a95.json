@@ -1,0 +1,17 @@
+{
+  "id": "bb3e6687-ea10-4354-8835-a98a0f5d6a95",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-head-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "6032c8b24949d3e22e54acc7c26eb53058bcc9ca",
+    "output": "\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n \u001b[32m✓\u001b[39m src/input/InputManager.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m39 passed\u001b[39m\u001b[22m\u001b[90m (39)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m258 passed\u001b[39m\u001b[22m\u001b[90m (258)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:42:12\n\u001b[2m   Duration \u001b[22m 2.63s\u001b[2m (environment 51%, transform 31%, import 9%, tests 8%, worker 1%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 4.65s\u001b[39m\u001b[2m · 31% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.21s\u001b[39m\n",
+    "outputDigest": "b685aa34401737f504b037ebc3c076595b77adb53bbe1a10624e96a6dda14f01",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:42:18.265Z"
+}
