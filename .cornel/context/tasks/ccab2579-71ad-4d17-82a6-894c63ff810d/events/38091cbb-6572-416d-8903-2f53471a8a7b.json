@@ -1,0 +1,17 @@
+{
+  "id": "38091cbb-6572-416d-8903-2f53471a8a7b",
+  "taskId": "ccab2579-71ad-4d17-82a6-894c63ff810d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "9842aeb95066d3e694b849408db0e7853bc6e045",
+    "output": "Полный прогон тестов починен, добавлен скрипт npm test.\n\nБыло (baseline на 39e05ff): npx vitest run → exit 1, 3 файла из 29 падали. leaderboard-generator и leaderboard-render написаны на node:test → 'No test suite found'; save-manager.test.mjs импортировал ../.test-build/**, который не собирал ни один скрипт; скрипта \"test\" в package.json не было.\n\nСделано:\n- tests/leaderboard-generator.test.ts и tests/leaderboard-render.test.ts переведены на vitest (describe/it/expect), проверки сохранены; убрано расширение .ts в импорте;\n- tests/save-manager.test.mjs удалён, вместо него tests/save-manager.test.ts на vitest с импортом TS-исходников напрямую (SaveManager, profile, progression) — .test-build и промежуточный build-шаг больше не нужны; все 6 кейсов сохранены, MemoryStorage типизирован через StorageLike;\n- новый vitest.config.ts с явными корнями: ['src/**/*.test.ts','tests/**/*.test.ts'];\n- package.json: добавлены \"test\": \"vitest run\" и \"test:watch\"; test:ui/test:input/test:camera не тронуты;\n- tsconfig.node.json: vitest.config.ts включён в typecheck;\n- README.md: раздел Test описывает полный прогон и частичные скрипты.\n\nПроверки worker на 9842aeb9 (дерево чистое): npm test → exit 0, Test Files 29 passed (29), Tests 175 passed (175); npm run typecheck → exit 0. Число найденных файлов не изменилось (было 26 passed + 3 failed), новый include ничего не отбросил; +9 тестов дали переписанные файлы.\n\nФайлы: package.json, vitest.config.ts (новый), tsconfig.node.json, README.md, tests/leaderboard-generator.test.ts, tests/leaderboard-render.test.ts, tests/save-manager.test.ts (новый, вместо save-manager.test.mjs). PR не открывал — слияние выполнит сборщик.",
+    "outputDigest": "45a741249d539ef26388876d90c7507fdc7729302769fdfa9d0e863aba90dc0a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:23:56.327Z"
+}
