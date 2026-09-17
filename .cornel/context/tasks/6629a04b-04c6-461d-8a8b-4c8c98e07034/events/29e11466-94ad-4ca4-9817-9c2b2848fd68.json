@@ -1,0 +1,17 @@
+{
+  "id": "29e11466-94ad-4ca4-9817-9c2b2848fd68",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "hb-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "     493 src/courses/HoleBuilder.ts\nexport function createHoleBuilder(options: HoleBuilderOptions): HoleBuilder {\n  return new HoleBuilder(options);\n}\n",
+    "outputDigest": "6413c982d9d2c2086569bba32f95109d05b626459ed8e7ac10c296311468f398",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:36:18.423Z"
+}
