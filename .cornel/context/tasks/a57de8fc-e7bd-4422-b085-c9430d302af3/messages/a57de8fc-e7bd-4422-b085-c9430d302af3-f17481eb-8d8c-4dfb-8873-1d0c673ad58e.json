@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Vitest резолвит CommonJS-вход Rapier; добавляю vitest.config.ts с алиасом на ES-сборку.\n\n```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"write-6\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"cat > vitest.config.ts <<'EOF'\\nimport { defineConfig } from 'vitest/config';\\n\\n// Rapier ships a CommonJS \\\"main\\\" inside an ESM package, which Node cannot load.\\n// Tests therefore resolve the ES build directly; the Vite app build already picks it.\\nexport default defineConfig({\\n  resolve: {\\n    alias: { '@dimforge/rapier3d-compat': '@dimforge/rapier3d-compat/rapier.es.js' },\\n  },\\n});\\nEOF\\nnpx vitest run src/game 2>&1 | tail -45\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:39:45.388Z"
+}
