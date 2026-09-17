@@ -1,0 +1,17 @@
+{
+  "id": "b3c1eb9d-4f1d-4452-b746-5e0840a5d975",
+  "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
+    "output": "A  src/assets/audioManifest.test.ts\nA  src/assets/audioManifest.ts\nA  src/core/QualitySettings.ts\nM  src/core/Renderer.ts\nA  src/effects/FeedbackSystem.ts\nA  src/effects/feedback.test.ts\nM  src/effects/index.ts\nM  src/game/Game.ts\nA  src/game/feedback.test.ts\nM  src/main.ts\n0\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nTYPECHECK_OK\n \u001b[32m✓\u001b[39m src/effects/feedback.test.ts \u001b[2m(\u001b[22m\u001b[2m14 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 22\u001b[2mms\u001b[22m\u001b[39m\n\u001b[90mstderr\u001b[2m | src/game/feedback.test.ts\n \u001b[32m✓\u001b[39m src/game/feedback.test.ts \u001b[2m(\u001b[22m\u001b[2m1 test\u001b[22m\u001b[2m)\u001b[22m\u001b[33m 410\u001b[2mms\u001b[22m\u001b[39m\n   \u001b[32m✓\u001b[39m match feedback \u001b[2m(1)\u001b[22m\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m43 passed\u001b[39m\u001b[22m\u001b[90m (43)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m278 passed\u001b[39m\u001b[22m\u001b[90m (278)\u001b[39m\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\u001b[39m\n\u001b[32m✓ built in 1.35s\u001b[39m\n",
+    "outputDigest": "976569c3a7c2dfa9185f8190755d420f0ee13335cf4cf353dab89cba76e7b9d1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:46:53.783Z"
+}
