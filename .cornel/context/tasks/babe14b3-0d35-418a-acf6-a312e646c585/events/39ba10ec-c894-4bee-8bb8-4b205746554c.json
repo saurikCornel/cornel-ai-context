@@ -1,0 +1,17 @@
+{
+  "id": "39ba10ec-c894-4bee-8bb8-4b205746554c",
+  "taskId": "babe14b3-0d35-418a-acf6-a312e646c585",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "apple-6a",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "acf5baee1c3d7c045f911a9eaa4dbc8a29ff37a0",
+    "output": "RotatingBar/Windmill/Spinner/Pendulum kinematics. Добавлены только src/obstacles/rotating.ts и src/obstacles/rotating.test.ts (существующие файлы не менялись, index.ts/types.ts не затронуты, без Three.js/Rapier/DOM). rotating.ts: RotatingKind, RotatingConfig, rotationAngle (линейный угол для bar/windmill/spinner со сменой знака при clockwise, синусоидальный для pendulum со swingAngle по умолчанию PI/3), armTipPosition (center + rotateAroundY({armLength,0,0}, angle)), surfaceVelocityAt (omega = d(angle)/dt, {x: omega*r.z, y:0, z:-omega*r.x}), deflectBall (проекция на отрезок center..tip, null вне hitRadius, иначе отражение скорости относительно нормали руки плюс поверхностная скорость). Защиты: нефинитные числа/векторы, speed 0, hitRadius <= 0, enabled=false (поза замирает, удара нет). Тесты: 8 шт. в 5 describe — прогрессия угла, знак clockwise, границы маятника и заморозка, позиция кончика при 0 и PI/2, тангенциальная скорость, null вне радиуса/за кончиком/при NaN/нулевом радиусе/выключенном препятствии, чистое зеркальное отражение при неподвижной руке, прибавка скорости руки при ударе. Проверки на commit acf5bae: npx vitest run src/obstacles/rotating.test.ts — 8 passed; npx tsc -b --pretty false — exitCode 0. PR не открывался: слияние ветки cornel/rotatingbar-windmill-spinner-pendulum-ki-babe14 выполняет сборщик.",
+    "outputDigest": "86cb3b6d9547f567f55053be7177d338b29cf0f9476aef6d2e67915931045d8b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:48:25.189Z"
+}
