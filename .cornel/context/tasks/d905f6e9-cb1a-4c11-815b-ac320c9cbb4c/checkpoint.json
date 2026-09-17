@@ -2,8 +2,8 @@
   "taskId": "d905f6e9-cb1a-4c11-815b-ac320c9cbb4c",
   "branch": "cornel/in-game-minimap-projection-and-renderer-d905f6",
   "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
-  "status": "RUNNING",
-  "summary": "`heads` — это record, а не массив. Но корневая причина другая: фактический SHA назначенной ветки на GitHub мне недоступен (worker отклоняет команду до синхронизации, локальное зеркало показывает старое значение). Пробую `publish` с тем headSha, на котором стоит рабочая копия — он должен зафиксировать два новых файла и вернуть актуальный SHA ветки, после чего сразу прогоню проверки:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-6\",\"operation\":\"publish\",\"headSha\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"message\":\"feat(ui): add in-game minimap projection and canvas widget\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** исправил форму запроса (`heads` ожидает record); чтобы не гадать SHA, иду через `publish` — он вернёт актуальный head ветки. Дальше на новом SHA запущу `npx vitest run src/ui/minimap.test.ts` и `npx tsc -b --pretty false`; finish отправлю только после успешных проверок. Если publish тоже упрётся в несовпадение head, попрошу владельца сообщить текущий SHA ветки `cornel/in-game-minimap-projection-and-renderer-d905f6`.\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Publish тоже отклонён — значит расхождение именно в SHA ветки, и мне нужно узнать её фактическую голову. Пробую форму `heads` как record (пустой — без привязки к конкретному SHA) с диагностической read-only командой:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-7\",\"operation\":\"run\",\"heads\":{},\"timeoutSeconds\":300,\"command\":\"git rev-parse HEAD && git ls-remote origin 'refs/heads/cornel/in-game-minimap-projection-and-renderer-d905f6' && git status --short\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** работа по карточке готова локально (`src/ui/Minimap.ts`, `src/ui/minimap.test.ts`), зависимости установлены; проверки и публикация блокируются сверкой head — назначенная ветка на GitHub сдвинулась, её текущий SHA локально не виден (зеркало отклонённые команды не обновляют). Этой командой пытаюсь получить настоящий SHA через `git ls-remote`. Если worker не примет `heads: {}`, попрошу владельца прислать актуальный SHA ветки `cornel/in-game-minimap-projection-and-renderer-d905f6` — без него ни run, ни publish не проходят.\n\n",
   "commands": [
     {
       "commandId": "minimap-1",
@@ -31,10 +31,10 @@
     },
     {
       "commandId": "minimap-6",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:55:29.819Z"
+  "createdAt": "2026-09-17T01:55:57.737Z"
 }
