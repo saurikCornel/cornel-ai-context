@@ -1,0 +1,17 @@
+{
+  "id": "9d889d43-f0f0-406b-9211-3f6735671c27",
+  "taskId": "ccab2579-71ad-4d17-82a6-894c63ff810d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "fix-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "README updated\n=== git status ===\n M README.md\n M package.json\n M tests/leaderboard-generator.test.ts\n M tests/leaderboard-render.test.ts\n D tests/save-manager.test.mjs\n M tsconfig.node.json\n?? tests/save-manager.test.ts\n?? vitest.config.ts\n=== npm test ===\n---TEST_EXIT=0---\n \u001b[32m✓\u001b[39m src/obstacles/conveyor.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/physics/helpers.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 2\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/obstacles/fan.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/ui/minimap.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 12\u001b[2mms\u001b[22m\u001b[39m\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/dev/dev.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 9\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/ui.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 33\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/input/InputManager.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m29 passed\u001b[39m\u001b[22m\u001b[90m (29)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m175 passed\u001b[39m\u001b[22m\u001b[90m (175)\u001b[39m\n\u001b[2m   Start at \u001b[22m 05:17:51\n\u001b[2m   Duration \u001b[22m 2.77s\u001b[2m (environment 51%, transform 36%, import 8%, tests 4%, worker 1%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 4.17s\u001b[39m\u001b[2m · 36% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n=== typecheck ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n---TYPECHECK_EXIT=0---\n",
+    "outputDigest": "3607cf49e7864dd0ab5d048f7e4a95a34c971be0e04e8b6a4d75de124e351924",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:17:57.288Z"
+}
