@@ -1,0 +1,12 @@
+{
+  "id": "612e48d7-b92b-4378-a8d6-970bcefd8e3b",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chk-3",
+    "operation": "run",
+    "command": "ls tests 2>/dev/null; echo '---'; grep -rl '.test-build' tests 2>/dev/null; echo '--- untracked/modified:'; git status --short; echo '--- test-build dir:'; ls -d .test-build 2>/dev/null || echo 'no .test-build'"
+  },
+  "createdAt": "2026-09-17T02:41:24.707Z"
+}

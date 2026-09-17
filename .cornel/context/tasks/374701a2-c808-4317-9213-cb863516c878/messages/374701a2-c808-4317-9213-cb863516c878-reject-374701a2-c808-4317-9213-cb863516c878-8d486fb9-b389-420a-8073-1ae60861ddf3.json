@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Поле `heads` — объект, не массив. Пробую соответствие «ветка → SHA» с локальным merge-коммитом, чтобы получить фактическое состояние.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"probe-2\",\"operation\":\"run\",\"heads\":{\"cornel/slit-readme-opisyvaet-funkcionalnost-kot-374701\":\"5bee874feebe6ea883dda565c03401ad1d7b95bc\"},\"command\":\"git rev-parse HEAD && git status --short --branch && git log --oneline -5 && echo '--- remote ---' && git ls-remote origin cornel/slit-readme-opisyvaet-funkcionalnost-kot-374701\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:41:19.961Z"
+}
