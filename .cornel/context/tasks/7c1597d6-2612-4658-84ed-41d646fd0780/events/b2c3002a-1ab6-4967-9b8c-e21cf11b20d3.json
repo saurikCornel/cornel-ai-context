@@ -1,0 +1,17 @@
+{
+  "id": "b2c3002a-1ab6-4967-9b8c-e21cf11b20d3",
+  "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "src/core: 7 файлов\nsrc/core/ProfileStore.ts\nsrc/core/HoleSceneBuilder.ts\nsrc/core/QualitySettings.ts\nsrc/core/Renderer.ts\nsrc/core/SaveManager.ts\nsrc/core/SceneManager.ts\nsrc/core/holeScene.test.ts",
+    "outputDigest": "8ae9b1547d144a4ffc12b8404ddc7a58b50d5bd44618a27930845e9f2403dc17",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:31:18.549Z"
+}
