@@ -3,7 +3,7 @@
   "branch": "cornel/slit-chast-moduley-zapisana-minificirova-7ab11c",
   "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
   "status": "RUNNING",
-  "summary": "Рабочая копия worker не переживает незавершённое слияние между командами — нужно делать merge и разрешение в одной команде. Сбрасываю состояние и сравниваю обе стороны по refs.\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"probe-3\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git merge --abort 2>/dev/null; echo \\\"HEAD=$(git log --oneline -1)\\\"; git status --short | head -5; O=origin/cornel/office; C=origin/cornel/slit-chast-moduley-zapisana-minificirova-d49254; B=$(git merge-base $O $C); echo \\\"base=$B\\\"; for f in src/courses/data/ancient-temple.ts src/courses/data/arctic-base.ts src/courses/data/volcano.ts; do echo \\\"=== $f ===\\\"; for r in \\\"$B base\\\" \\\"$O office\\\" \\\"$C card\\\"; do set -- $r; L=$(git show $1:$f | wc -l); M=$(git show $1:$f | awk '{if(length($0)>m)m=length($0)}END{print m}'); echo \\\"  $2: lines=$L maxlen=$M\\\"; done; echo '  --- office head ---'; git show $O:$f | head -8 | cut -c1-140; done; echo '=== card-vs-base changed files ==='; git diff --stat $B $C | tail -30\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Причина сбоя: после локального fast-forward HEAD уехал на 45e3ae6, и worker перед каждой командой пытается вернуть рабочую копию на 1b05170 обычным checkout — незавершённое слияние это блокирует. Пробую командой сбросить состояние в чистый вид (сама команда как раз снимает merge-состояние).\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"reset-1\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git merge --abort 2>/dev/null; git reset --hard 1b051708839c6a0b4094c1f74261e1937e59fc27 && git status --short && git log --oneline -1\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "probe-3",
+      "status": "FAILED",
+      "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+      "exitCode": null
+    },
+    {
+      "commandId": "reset-1",
       "status": "STARTED",
       "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:47:06.076Z"
+  "createdAt": "2026-09-17T04:47:54.891Z"
 }
