@@ -1,0 +1,17 @@
+{
+  "id": "b3ed0997-1f84-4e36-b4de-1422135a03cb",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-18",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "== Leaderboard где-либо ==\nsrc/leaderboard/generator.ts\nsrc/leaderboard/types.ts\nsrc/leaderboard/style.css\nsrc/leaderboard/index.ts\nsrc/leaderboard/Leaderboard.ts\ntests/leaderboard-render.test.ts\ntests/leaderboard-generator.test.ts\n\n== SaveManager использование ==\n\n== профиль в меню (плейсхолдер?) ==\nlevel:\nxp:\nPutt Pilot',kind:'human',ballStyleId:'classic-white',rating:1240,level:7,xp:680,xpNext:1000,matches:34,wins:11,bestRound:31};\n\n== progression/statistics модули ==\ncosmetics.test.ts\ncosmetics.ts\nindex.ts\nprofile.ts\nprogression.ts\ntypes.ts\n\n== использование progression ==\nsrc/core/SaveManager.ts:1:import { createDefaultProfile,defaultCosmetics,defaultSettings,defaultStatistics } from '../player/profile';\nsrc/core/SaveManager.ts:2:import { createProgression } from '../player/progression';\nsrc/core/SaveManager.ts:3:import type { PlayerProfile } from '../player/types';\nsrc/game/Game.ts:29:import { DEFAULT_BALL_ID, ballStyleById } from '../player/cosmetics';\nsrc/gameplay/MatchRewards.ts:1:import type { PlayerStatistics } from '../player/types';\n",
+    "outputDigest": "39acff0a4bfb2796dc0287360ed6ff3296849dfaf9f693129f9b49bd49eb0a91",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:06:03.115Z"
+}
