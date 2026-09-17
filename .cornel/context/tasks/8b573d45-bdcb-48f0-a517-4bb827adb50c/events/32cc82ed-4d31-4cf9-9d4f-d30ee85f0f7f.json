@@ -1,0 +1,17 @@
+{
+  "id": "32cc82ed-4d31-4cf9-9d4f-d30ee85f0f7f",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "fmt-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "     112 src/ui/index.ts\n      82 src/dev/DeveloperDiagnostics.ts\n     194 total\n",
+    "outputDigest": "c587edb663d580decc5825066ee025a040aa57713a749e42af9bcdbc6d882626",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:17:17.298Z"
+}

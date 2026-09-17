@@ -1,0 +1,11 @@
+{
+  "id": "efd37a83-e611-4e86-8bea-d6f3b6c94930",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "fmt-3",
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68"
+  },
+  "createdAt": "2026-09-17T04:17:15.268Z"
+}
