@@ -1,0 +1,11 @@
+{
+  "id": "8224f776-ba12-4a41-8a78-25bac2621d52",
+  "taskId": "babe14b3-0d35-418a-acf6-a312e646c585",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "apple-4a",
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6"
+  },
+  "createdAt": "2026-09-17T01:45:29.899Z"
+}
