@@ -1,0 +1,12 @@
+{
+  "id": "555de254-f21c-4119-aa6f-86d59f011c00",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-4",
+    "operation": "run",
+    "command": "grep -rn --include=*.ts -E 'STROKE_LIMIT|strokeLimitPerHole|resolveMaxShots|maxShots|strokeLimitScore' src | head -60; echo '=== StrokeLimit head ==='; sed -n '1,34p' src/gameplay/StrokeLimit.ts; echo '=== enforceStrokeLimit ==='; grep -rn -A 30 'enforceStrokeLimit' src/gameplay/MatchManager.ts | head -60"
+  },
+  "createdAt": "2026-09-17T03:16:57.044Z"
+}
