@@ -1,0 +1,12 @@
+{
+  "id": "a3768c09-2cab-4881-ad6b-656e6c799fac",
+  "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "apple-ff9f2090",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-17T00:44:31.594Z"
+}
