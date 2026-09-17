@@ -3,7 +3,7 @@
   "branch": "cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656",
   "headSha": "6032c8b24949d3e22e54acc7c26eb53058bcc9ca",
   "status": "RUNNING",
-  "summary": "Сообщение было слишком длинным — сокращаю.\n\n```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"finish-2\",\"operation\":\"finish\",\"headSha\":\"6032c8b24949d3e22e54acc7c26eb53058bcc9ca\",\"message\":\"Попадание в лунку теперь с частицами и звуком; quality/volume доходят до рендера и микшера.\\n\\nИзменения:\\n- src/effects/FeedbackSystem.ts (новый): ParticleManager + AudioManager на события удара (hit), отскока (wall-bounce, rate limit 0.07 с), опасной зоны (water/lava/teleport) и лунки (hole). Отскок выводится из разворота горизонтальной скорости между фиксированными шагами (detectBounce), контакты Rapier здесь не пробрасываются.\\n- src/core/QualitySettings.ts (новый): пресеты low/medium/high/ultra -> pixel ratio, тени, множитель и бюджет частиц; volumeToGain (0..100 -> усиление); applyQuality пушит пресет в рендер.\\n- src/core/Renderer.ts: setMaxPixelRatio/setShadowsEnabled + геттеры.\\n- src/game/Game.ts: создаёт FeedbackSystem, монтирует пул частиц в сцену, вызывает эффекты в fireShot/completeHole/resetBall, трекинг отскоков в фиксированном шаге; публичные setQuality/setVolume, геттер feedback, опциональный course для детерминированных тестов.\\n- src/main.ts: на core/Renderer (восстановление после WebGL context lost, повторное применение пресета), AudioManager с регистрацией public/audio/manifest.json, проброс quality/volume в игру и при сохранении настроек.\\n- src/assets/audioManifest.ts (новый): парсинг/регистрация манифеста, битые записи отбрасываются, отсутствующий манифест не ошибка.\\n\\nПроверки (worker, тот же headSha): npm run typecheck без ошибок; npm test — 39 файлов, 258 тестов пройдено, включая новые src/effects/feedback.test.ts (14), src/assets/audioManifest.test.ts (4), src/game/feedback.test.ts (матч доходит до completeHole: родились частицы holed, запрошены звуки hit и hole, смена quality/volume дошла до микшера); npm run build собран.\\n\\nPR не открывал: слияние выполнит сборщик.\"}\n```\n\n",
+  "summary": "Нужна проверка на новом SHA — перезапускаю тесты и сборку на нём.\n\n```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"check-head-1\",\"operation\":\"run\",\"headSha\":\"6032c8b24949d3e22e54acc7c26eb53058bcc9ca\",\"timeoutSeconds\":600,\"command\":\"npm run typecheck && npm test 2>&1 | grep -Ev 'Not implemented|deprecated parameters' | tail -12 && npm run build 2>&1 | tail -4\"}\n```\n\nОжидаю worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -235,10 +235,16 @@
     },
     {
       "commandId": "finish-2",
+      "status": "FAILED",
+      "headSha": "6032c8b24949d3e22e54acc7c26eb53058bcc9ca",
+      "exitCode": null
+    },
+    {
+      "commandId": "check-head-1",
       "status": "STARTED",
       "headSha": "6032c8b24949d3e22e54acc7c26eb53058bcc9ca",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:41:51.916Z"
+  "createdAt": "2026-09-17T03:42:08.086Z"
 }
