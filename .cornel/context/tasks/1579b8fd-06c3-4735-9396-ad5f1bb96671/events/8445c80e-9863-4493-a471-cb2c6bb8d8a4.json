@@ -1,0 +1,12 @@
+{
+  "id": "8445c80e-9863-4493-a471-cb2c6bb8d8a4",
+  "taskId": "1579b8fd-06c3-4735-9396-ad5f1bb96671",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "qa-build-1",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund && npx vitest run --reporter=basic; echo \"VITEST_EXIT=$?\"; npm run typecheck; echo \"TSC_EXIT=$?\"; npm run build; echo \"BUILD_EXIT=$?\""
+  },
+  "createdAt": "2026-09-17T02:02:01.085Z"
+}

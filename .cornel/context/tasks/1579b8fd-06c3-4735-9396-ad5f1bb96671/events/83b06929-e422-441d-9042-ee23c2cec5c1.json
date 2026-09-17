@@ -1,0 +1,11 @@
+{
+  "id": "83b06929-e422-441d-9042-ee23c2cec5c1",
+  "taskId": "1579b8fd-06c3-4735-9396-ad5f1bb96671",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "qa-build-1",
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034"
+  },
+  "createdAt": "2026-09-17T02:02:01.118Z"
+}
