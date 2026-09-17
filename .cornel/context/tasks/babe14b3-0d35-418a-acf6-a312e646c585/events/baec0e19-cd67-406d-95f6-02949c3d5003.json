@@ -1,0 +1,12 @@
+{
+  "id": "baec0e19-cd67-406d-95f6-02949c3d5003",
+  "taskId": "babe14b3-0d35-418a-acf6-a312e646c585",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "apple-3a",
+    "operation": "run",
+    "command": "git status --short"
+  },
+  "createdAt": "2026-09-17T01:44:13.907Z"
+}
