@@ -3,7 +3,7 @@
   "branch": "cornel/candy-factory-ts-i-pirate-bay-ts-zapisan-80c717",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Typecheck и валидация курсов зелёные. Запускаю полный прогон тестов и сборку.\n\n```json\n{\"version\":1,\"taskId\":\"80c7178d-a60e-436e-ac67-5d3063a48bee\",\"commandId\":\"verify-2\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"timeoutSeconds\":900,\"command\":\"set -e\\nnpm test\\nnpm run build\\ngit status --short\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Всё зелёное: 36 файлов тестов / 239 тестов, `npm run build` успешен, изменены ровно три файла моей карточки. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"80c7178d-a60e-436e-ac67-5d3063a48bee\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"message\":\"refactor(courses): rewrite candy-factory and pirate-bay on the shared layoutKit\\n\\nБоба курса были записаны минифицированными однострочниками с локальными\\nодносимвольными хелперами (v, d, w, c, b, sea), из-за чего их нельзя было\\nревьюить и правки конфликтовали. Теперь оба используют общий layoutKit и\\nобычное форматирование, как остальные восемь курсов.\\n\\n- layoutKit: добавлены springPad и conveyor (механики Candy Factory по ТЗ §11),\\n  у bumper появился необязательный depth для брусков-пушек Pirate Bay\\n- candy-factory.ts: 19 -> 180 строк, pirate-bay.ts: 19 -> 156 строк\\n- сохранены id лунок, названия, par и параметры препятствий; bounds теперь\\n  считает fitBounds, hazard-объёмы переведены на конвенцию kit\\n\\nПроверки: npm run typecheck, npm test (36 файлов / 239 тестов), npm run build\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "verify-2",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:16:40.328Z"
+  "createdAt": "2026-09-17T03:17:48.973Z"
 }
