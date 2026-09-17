@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-1579b8",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "`--reporter=basic` не поддерживается этой версией vitest — прогон тестов не состоялся (typecheck и build прошли, exit 0). Перезапускаю тесты без флага репортера.\n\nВажное наблюдение из build: `20 modules transformed` — в production-бандл попадает только main.ts + UI + three. Практически весь код (физика, геймплей, камеры, боты, 10 курсов, сцена лунки) не подключён к приложению.\n\n```json\n{\"version\":1,\"taskId\":\"1579b8fd-06c3-4735-9396-ad5f1bb96671\",\"commandId\":\"qa-test-2\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"npx vitest run 2>&1 | tail -80; echo \\\"VITEST_EXIT=${PIPESTATUS[0]}\\\"; node --test tests/save-manager.test.mjs 2>&1 | tail -20; echo \\\"NODETEST_EXIT=$?\\\"\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker по `qa-test-2`.\n\n",
+  "summary": "Тесты: 166 проходят, но 3 файла падают. Проверю ещё, что фактически попадает в собранный бандл и поднимается ли dev-сервер.\n\n```json\n{\"version\":1,\"taskId\":\"1579b8fd-06c3-4735-9396-ad5f1bb96671\",\"commandId\":\"qa-bundle-3\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"echo '--- bundle content probes ---'; for s in green-hills space-station RigidBody rapier MatchManager BotPlanner HoleSceneBuilder CameraController ballStopThreshold powerExponent Hud Scoreboard; do printf '%-20s %s\\\\n' \\\"$s\\\" \\\"$(grep -rlo \\\"$s\\\" dist/assets/*.js 2>/dev/null | wc -l | tr -d ' ')\\\"; done; echo '--- dist files ---'; ls -la dist/assets; echo '--- dev server ---'; (npx vite --port 5199 >/tmp/vite.log 2>&1 &) ; sleep 6; curl -s -o /tmp/page.html -w 'HTTP %{http_code}\\\\n' http://localhost:5199/; curl -s -o /dev/null -w 'MAIN %{http_code}\\\\n' http://localhost:5199/src/main.ts; head -5 /tmp/vite.log; pkill -f 'vite --port 5199' || true\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker по `qa-bundle-3`.\n\n",
   "commands": [
     {
       "commandId": "qa-build-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "qa-test-2",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "qa-bundle-3",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:02:26.902Z"
+  "createdAt": "2026-09-17T02:03:07.100Z"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "27c9abee-b609-486c-97a1-4c52a33088e4",
+  "taskId": "1579b8fd-06c3-4735-9396-ad5f1bb96671",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "qa-bundle-3",
+    "operation": "run",
+    "command": "echo '--- bundle content probes ---'; for s in green-hills space-station RigidBody rapier MatchManager BotPlanner HoleSceneBuilder CameraController ballStopThreshold powerExponent Hud Scoreboard; do printf '%-20s %s\\n' \"$s\" \"$(grep -rlo \"$s\" dist/assets/*.js 2>/dev/null | wc -l | tr -d ' ')\"; done; echo '--- dist files ---'; ls -la dist/assets; echo '--- dev server ---'; (npx vite --port 5199 >/tmp/vite.log 2>&1 &) ; sleep 6; curl -s -o /tmp/page.html -w 'HTTP %{http_code}\\n' http://localhost:5199/; curl -s -o /dev/null -w 'MAIN %{http_code}\\n' http://localhost:5199/src/main.ts; head -5 /tmp/vite.log; pkill -f 'vite --port 5199' || true"
+  },
+  "createdAt": "2026-09-17T02:03:07.095Z"
+}
