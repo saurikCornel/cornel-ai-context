@@ -1,0 +1,17 @@
+{
+  "id": "fd5f15be-4e0e-40ea-b307-494f33c9d8aa",
+  "taskId": "f3431270-3cba-49ff-9975-5485bdf17a15",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/game/game.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 246\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m44 passed\u001b[39m\u001b[22m\u001b[90m (44)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m284 passed\u001b[39m\u001b[22m\u001b[90m (284)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:20:27\n\u001b[2m   Duration \u001b[22m 2.23s\u001b[2m (environment 51%, transform 30%, import 10%, tests 8%, worker 1%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 3.51s\u001b[39m\u001b[2m · 30% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n--- BUILD ---\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\nsrc/core/holeSceneSensors.test.ts(110,35): error TS2345: Argument of type 'ObstacleDescriptor | undefined' is not assignable to parameter of type 'ObstacleDescriptor'.\n  Type 'undefined' is not assignable to type 'ObstacleDescriptor'.\n",
+    "outputDigest": "6cea41242edb819720a9bd1f83dd87635907fbc1b763b9a88e23338667fb956c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:20:32.567Z"
+}

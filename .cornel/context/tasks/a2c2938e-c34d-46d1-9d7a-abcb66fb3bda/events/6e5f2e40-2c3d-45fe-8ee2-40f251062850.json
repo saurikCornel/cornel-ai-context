@@ -1,0 +1,17 @@
+{
+  "id": "6e5f2e40-2c3d-45fe-8ee2-40f251062850",
+  "taskId": "a2c2938e-c34d-46d1-9d7a-abcb66fb3bda",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/a2c2938e-c34d-46d1-9d7a-abcb66fb3bda\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/leaderboard-render.test.ts\u001b[2m > \u001b[22mleaderboard renderer\u001b[2m > \u001b[22mexposes accessible table structure and key statistics\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/leaderboard-standings.test.ts\u001b[2m > \u001b[22mleaderboard standings\u001b[2m > \u001b[22mmerges the local player into the AI field and re-ranks every row\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/leaderboard-standings.test.ts\u001b[2m > \u001b[22mleaderboard standings\u001b[2m > \u001b[22mkeeps the generated field untouched when no player is supplied\u001b[32m 0\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/leaderboard-standings.test.ts\u001b[2m > \u001b[22mleaderboard standings\u001b[2m > \u001b[22mderives the win rate and clamps an out-of-range rating\u001b[32m 0\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/leaderboard-standings.test.ts\u001b[2m > \u001b[22mleaderboard standings\u001b[2m > \u001b[22mround-trips the saved rating through storage\u001b[32m 0\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/leaderboard-generator.test.ts\u001b[2m > \u001b[22mAI leaderboard generator\u001b[2m > \u001b[22mgenerates 50+ deterministic AI leaderboard entries\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/leaderboard-generator.test.ts\u001b[2m > \u001b[22mAI leaderboard generator\u001b[2m > \u001b[22mentries satisfy profile and statistics invariants\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/leaderboard.test.ts\u001b[2m > \u001b[22mleaderboard screen\u001b[2m > \u001b[22mis reachable from the main menu and lists 50+ ranked players\u001b[32m 70\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/leaderboard.test.ts\u001b[2m > \u001b[22mleaderboard screen\u001b[2m > \u001b[22mhighlights the local player at the position of the saved rating\u001b[32m 11\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/leaderboard.test.ts\u001b[2m > \u001b[22mleaderboard screen\u001b[2m > \u001b[22mmoves the player to the top or the bottom with extreme ratings\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/leaderboard.test.ts\u001b[2m > \u001b[22mleaderboard screen\u001b[2m > \u001b[22mreturns to the main menu\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m11 passed\u001b[39m\u001b[22m\u001b[90m (11)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:20:30\n\u001b[2m   Duration \u001b[22m 1.44s\u001b[2m (environment 53%, transform 33%, tests 7%, import 6%, worker 1%)\u001b[22m\n\n",
+    "outputDigest": "f53e3da265fca92a3fa88c72dd91b45dd143f622497076a2a21f0551b2430e8a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:20:31.939Z"
+}
