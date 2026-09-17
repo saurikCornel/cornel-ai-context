@@ -1,0 +1,17 @@
+{
+  "id": "ea88e902-40f5-412d-872a-77cdbc787aaa",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-install",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "\nadded 84 packages in 2s\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "21ff260913a8b0b6fa2ede559f3b601abfbe432eddd9df2e37000ded2c39ab69",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:40:02.241Z"
+}
