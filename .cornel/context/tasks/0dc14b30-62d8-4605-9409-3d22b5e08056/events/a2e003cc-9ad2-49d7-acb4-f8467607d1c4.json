@@ -1,0 +1,17 @@
+{
+  "id": "a2e003cc-9ad2-49d7-acb4-f8467607d1c4",
+  "taskId": "0dc14b30-62d8-4605-9409-3d22b5e08056",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "apple-a7cf8a48",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T00:34:09.853Z"
+}
