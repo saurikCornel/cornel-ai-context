@@ -3,7 +3,7 @@
   "branch": "cornel/slit-chast-moduley-zapisana-minificirova-d49254",
   "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
   "status": "RUNNING",
-  "summary": "Ключевая картина: встречная ветка разминифицировала файлы (32→288 строк, 34→407), а офис внёс свои правки поверх минифицированной версии. Нужно понять, что именно изменил офис относительно базы.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"inspect-2\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"mkdir -p /tmp/mrg && for f in index.ts ui.css; do for s in 1 2 3; do git show :$s:src/ui/$f > /tmp/mrg/$f.$s; done; done; wc -c /tmp/mrg/*; echo '=== DIFF base->ours index.ts (word-diff) ==='; git diff --no-index --word-diff=plain --unified=0 /tmp/mrg/index.ts.1 /tmp/mrg/index.ts.2 | head -c 12000\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Понял правку офиса: добавлен экран Leaderboard. Теперь читаю разминифицированную версию встречной ветки, чтобы наложить на неё функциональность офиса.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"inspect-3\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"echo '=== OURS stage2 index.ts lines 1-7 ==='; sed -n '1,7p' /tmp/mrg/index.ts.2; echo; echo '=== THEIRS stage3 index.ts (full) ==='; cat -n /tmp/mrg/index.ts.3\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "inspect-2",
+      "status": "SUCCEEDED",
+      "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-3",
       "status": "STARTED",
       "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:29:52.717Z"
+  "createdAt": "2026-09-17T04:30:30.233Z"
 }
