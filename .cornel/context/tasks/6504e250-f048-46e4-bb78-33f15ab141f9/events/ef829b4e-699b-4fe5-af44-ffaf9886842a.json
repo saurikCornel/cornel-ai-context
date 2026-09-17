@@ -1,0 +1,17 @@
+{
+  "id": "ef829b4e-699b-4fe5-af44-ffaf9886842a",
+  "taskId": "6504e250-f048-46e4-bb78-33f15ab141f9",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "resolve-1",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "571525c92ea7825072831452d65574ef523d2eb9",
+    "output": "HEAD=168a63b4d9a5ca746281bf07acc6873303139434\nresolved ok\n[detached HEAD 571525c] Merge branch 'cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n571525c Merge branch 'cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597' of github.com:saurikCornel/fun-golf-cornel-ai into HEAD\n168a63b Merge «Курсы ancient-temple, arctic-base и volcano — один шаблон прямого коридора» (72ad9ab1-d451-4d42-847e-9cba5adb804d)\nb9babeb Подключить SaveManager: профиль, рейтинг, XP и настройки переживают перезагрузку\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n",
+    "outputDigest": "c3a0f5da4aa73f6df64c001abca6a384b0f4004e7ebf52880679976f20cee325",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:53:00.712Z"
+}
