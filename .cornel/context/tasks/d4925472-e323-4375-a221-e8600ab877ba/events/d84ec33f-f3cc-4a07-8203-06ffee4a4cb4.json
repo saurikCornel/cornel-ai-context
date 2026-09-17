@@ -1,0 +1,17 @@
+{
+  "id": "d84ec33f-f3cc-4a07-8203-06ffee4a4cb4",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+    "output": "1b05170 feat(ui): экран Leaderboard в главном меню с позицией игрока по сохранённому рейтингу\n=== typecheck ===\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\nsh: tsc: command not found\n=== test ===\n\n> crazy-putt-arena@0.1.0 test\n> vitest run\n\nsh: vitest: command not found\n=== build ===\n\n> crazy-putt-arena@0.1.0 build\n> tsc -b && vite build\n\nsh: tsc: command not found\n",
+    "outputDigest": "e75df05f93126ad65ff71ef6260724be348e826eae6b3a4968113cc079aba82e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:37:33.689Z"
+}
