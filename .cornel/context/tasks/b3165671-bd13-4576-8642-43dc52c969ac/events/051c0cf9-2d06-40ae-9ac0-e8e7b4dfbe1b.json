@@ -1,0 +1,12 @@
+{
+  "id": "051c0cf9-2d06-40ae-9ac0-e8e7b4dfbe1b",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-install",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund 2>&1 | tail -5 && npm run typecheck"
+  },
+  "createdAt": "2026-09-17T03:39:55.586Z"
+}
