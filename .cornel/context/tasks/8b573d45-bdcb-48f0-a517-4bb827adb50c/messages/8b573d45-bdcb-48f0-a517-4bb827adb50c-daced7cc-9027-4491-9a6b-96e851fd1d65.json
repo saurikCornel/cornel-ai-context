@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Все проверки зелёные на текущем состоянии дерева: typecheck OK, 278/278 тестов, `npm run build` ✓. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"8b573d45-bdcb-48f0-a517-4bb827adb50c\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"style(src): переформатировать минифицированные модули в многострочный код\\n\\nПереформатированы одностроч(ечн)ые модули без изменения поведения и публичных API:\\nsrc/ui/{index,Overlays,domTests}.ts, src/input/InputManager.ts, src/core/SaveManager.ts,\\nsrc/ai/{BotProfiles,random}.ts, src/dev/{LaunchOptions,DeveloperDiagnostics,PresentationMinimap}.ts,\\nsrc/player/{profile,progression,types}.ts, src/gameplay/ScoreManager.ts,\\nsrc/courses/data/{volcano,ancient-temple,arctic-base,chaos-dimension}.ts и CSS-файлы.\\n\\nДлинные шаблонные литералы UI и оверлея диагностики разбиты на массивы строк с join(''),\\nразметка собирается побайтово идентично прежней (проверено временным тестом сравнения\\nс версией из HEAD на всех экранах). Вне тестов в src не осталось строк длиннее 200 символов.\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:26:16.061Z"
+}

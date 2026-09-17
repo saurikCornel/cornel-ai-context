@@ -3,7 +3,7 @@
   "branch": "cornel/chast-moduley-zapisana-minificirovannymi-8b573d",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Хвост вывода срезал сводку vitest — прогоняю тесты ещё раз с явным кодом возврата (после последнего переформатирования подтверждения ещё не было).\n\n```json\n{\"version\":1,\"taskId\":\"8b573d45-bdcb-48f0-a517-4bb827adb50c\",\"commandId\":\"check-7\",\"operation\":\"run\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"command\":\"npx vitest run > vitest-run.log 2>&1 && echo VITEST_OK || echo VITEST_FAIL; grep -E 'Test Files|Tests ' vitest-run.log; rm -f vitest-run.log\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Все проверки зелёные на текущем состоянии дерева: typecheck OK, 278/278 тестов, `npm run build` ✓. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"8b573d45-bdcb-48f0-a517-4bb827adb50c\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"style(src): переформатировать минифицированные модули в многострочный код\\n\\nПереформатированы одностроч(ечн)ые модули без изменения поведения и публичных API:\\nsrc/ui/{index,Overlays,domTests}.ts, src/input/InputManager.ts, src/core/SaveManager.ts,\\nsrc/ai/{BotProfiles,random}.ts, src/dev/{LaunchOptions,DeveloperDiagnostics,PresentationMinimap}.ts,\\nsrc/player/{profile,progression,types}.ts, src/gameplay/ScoreManager.ts,\\nsrc/courses/data/{volcano,ancient-temple,arctic-base,chaos-dimension}.ts и CSS-файлы.\\n\\nДлинные шаблонные литералы UI и оверлея диагностики разбиты на массивы строк с join(''),\\nразметка собирается побайтово идентично прежней (проверено временным тестом сравнения\\nс версией из HEAD на всех экранах). Вне тестов в src не осталось строк длиннее 200 символов.\"}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "fmt-1",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "check-7",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:25:15.914Z"
+  "createdAt": "2026-09-17T04:26:16.067Z"
 }
