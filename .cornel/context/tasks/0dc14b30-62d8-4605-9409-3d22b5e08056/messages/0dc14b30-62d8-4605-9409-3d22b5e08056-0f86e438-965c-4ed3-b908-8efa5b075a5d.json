@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Диф чистый — только два файла карточки. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"5ba9747c3eadb19841c05f0cf18a662b8865169b\",\"message\":\"Surface friction model: рабочая реализация SURFACE_PROPERTIES, resolveSurface, applySurfaceDamping, stopsOnSurface + 5 тестов\"}\n```\n\nЖду результат worker: после успешной публикации отправлю finish.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:56:35.337Z"
+}

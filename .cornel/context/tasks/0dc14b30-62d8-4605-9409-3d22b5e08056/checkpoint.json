@@ -3,7 +3,7 @@
   "branch": "cornel/surface-friction-model-ice-mud-sand-0dc14b",
   "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"status-2\",\"operation\":\"run\",\"headSha\":\"5ba9747c3eadb19841c05f0cf18a662b8865169b\",\"timeoutSeconds\":120,\"command\":\"git status --short\"}\n```\n\nПроверяю, что именно попадёт в коммит (npm install мог создать `package-lock.json`). Жду результат worker.\n\n",
+  "summary": "Диф чистый — только два файла карточки. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"5ba9747c3eadb19841c05f0cf18a662b8865169b\",\"message\":\"Surface friction model: рабочая реализация SURFACE_PROPERTIES, resolveSurface, applySurfaceDamping, stopsOnSurface + 5 тестов\"}\n```\n\nЖду результат worker: после успешной публикации отправлю finish.\n\n",
   "commands": [
     {
       "commandId": "apple-a7cf8a48",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "status-2",
+      "status": "SUCCEEDED",
+      "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-2",
       "status": "STARTED",
       "headSha": "5ba9747c3eadb19841c05f0cf18a662b8865169b",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:56:21.566Z"
+  "createdAt": "2026-09-17T01:56:35.345Z"
 }
