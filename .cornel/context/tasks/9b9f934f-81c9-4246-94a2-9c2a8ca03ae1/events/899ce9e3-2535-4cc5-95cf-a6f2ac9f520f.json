@@ -1,0 +1,12 @@
+{
+  "id": "899ce9e3-2535-4cc5-95cf-a6f2ac9f520f",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "redo-1",
+    "operation": "run",
+    "command": "git merge --abort 2>/dev/null; git fetch origin cornel/u-chashki-net-flaga-i-uglubleniya-f40347 && git merge --no-commit --no-edit FETCH_HEAD; echo \"MERGE_EXIT=$?\"; M=$(grep -n -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts | cut -d: -f1 | tr '\\n' ' '); echo \"MARKERS=[$M]\"; if [ \"$M\" = \"238 286 349 \" ]; then sed -i '' -e '349d' -e '277,286d' -e '238d' src/core/HoleSceneBuilder.ts && git add -A && echo RESOLVED; else echo UNEXPECTED_MARKERS; fi; echo \"MARKERS_LEFT=$(grep -c -E '^(<<<<<<<|=======|>>>>>>>)' src/core/HoleSceneBuilder.ts)\"; echo '=== status ==='; git status --short | head -20; echo '=== typecheck ==='; npm run typecheck; echo \"TS_EXIT=$?\"; echo '=== tests ==='; npm test 2>&1 | grep -E 'Test Files|Tests |FAIL|✗' | tail -20; echo '=== build ==='; npm run build 2>&1 | tail -4"
+  },
+  "createdAt": "2026-09-17T04:39:30.104Z"
+}
