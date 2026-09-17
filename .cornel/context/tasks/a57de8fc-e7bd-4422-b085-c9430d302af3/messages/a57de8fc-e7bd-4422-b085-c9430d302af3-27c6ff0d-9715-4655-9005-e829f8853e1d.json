@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Оба теста проходят: удар по плану бота попадает в чашку, а матч доходит до таблицы результатов. Проверю весь набор тестов и артефакт с экранированием в комментарии.\n\n```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"check-all\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"grep -n 'ramp descriptor' src/game/HoleRuntime.ts; npx vitest run 2>&1 | grep -v 'Not implemented' | tail -30\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:40:30.898Z"
+}

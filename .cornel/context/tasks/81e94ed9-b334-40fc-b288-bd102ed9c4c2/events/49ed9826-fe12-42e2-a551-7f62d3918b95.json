@@ -1,0 +1,17 @@
+{
+  "id": "49ed9826-fe12-42e2-a551-7f62d3918b95",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "install-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "\nadded 84 packages in 6s\n",
+    "outputDigest": "83f0fcae776a85b8797fe7b85390a32e1935e29a2a429f348b37d5c22853263b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:40:36.934Z"
+}

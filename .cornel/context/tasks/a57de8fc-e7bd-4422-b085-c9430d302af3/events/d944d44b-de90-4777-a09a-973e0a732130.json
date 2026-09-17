@@ -1,0 +1,12 @@
+{
+  "id": "d944d44b-de90-4777-a09a-973e0a732130",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-all",
+    "operation": "run",
+    "command": "grep -n 'ramp descriptor' src/game/HoleRuntime.ts; npx vitest run 2>&1 | grep -v 'Not implemented' | tail -30"
+  },
+  "createdAt": "2026-09-17T02:40:30.947Z"
+}
