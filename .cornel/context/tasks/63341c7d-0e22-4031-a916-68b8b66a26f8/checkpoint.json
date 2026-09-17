@@ -3,7 +3,7 @@
   "branch": "cornel/slit-sliding-wall-door-i-pendulum-ne-dvi-63341c",
   "headSha": "a4d56688f1eecfcdae27addf49b66fa6b8142cca",
   "status": "RUNNING",
-  "summary": "Слияние завершено коммитом a4d5668, сборка проходит. Публикую ветку.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"a4d56688f1eecfcdae27addf49b66fa6b8142cca\",\"message\":\"Слить «sliding-wall, door и pendulum не двигаются» в ветку офиса: объединить систему движителей и сенсорные объёмы в HoleRuntime\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Ветка на GitHub всё ещё на d445b64 — слияние существует только локально. Повторяю publish с фактическим SHA ветки на GitHub.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"d445b64dd49d167d188682add1e9981ddc1fd76f\",\"message\":\"Слить «sliding-wall, door и pendulum не двигаются» в ветку офиса: объединить систему движителей и сенсорные объёмы в HoleRuntime\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -43,10 +43,16 @@
     },
     {
       "commandId": "publish-1",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "a4d56688f1eecfcdae27addf49b66fa6b8142cca",
+      "exitCode": null
+    },
+    {
+      "commandId": "publish-2",
+      "status": "STARTED",
+      "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:37:33.680Z"
+  "createdAt": "2026-09-17T03:37:58.617Z"
 }
