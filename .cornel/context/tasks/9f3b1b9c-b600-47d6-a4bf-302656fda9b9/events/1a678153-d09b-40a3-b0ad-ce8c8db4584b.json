@@ -1,0 +1,12 @@
+{
+  "id": "1a678153-d09b-40a3-b0ad-ce8c8db4584b",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "scan-1",
+    "operation": "run",
+    "command": "cd \"$(git rev-parse --show-toplevel)\" && echo '--- usages ---' && git grep -nE \"pendulum|sliding-wall|'door'\" -- src | grep -v 'src/obstacles/rotating.ts' | head -40 && echo '--- game dir ---' && ls src/game && echo '--- HoleRuntime refs ---' && git grep -ln 'HoleRuntime' -- src && echo '--- test files ---' && ls src/game/*.test.ts src/**/*.test.ts 2>/dev/null | head -40"
+  },
+  "createdAt": "2026-09-17T03:16:09.324Z"
+}
