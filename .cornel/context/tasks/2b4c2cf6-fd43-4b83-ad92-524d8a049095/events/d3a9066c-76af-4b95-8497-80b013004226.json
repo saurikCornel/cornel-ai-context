@@ -1,0 +1,17 @@
+{
+  "id": "d3a9066c-76af-4b95-8497-80b013004226",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-16",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "LAVA=0\nNEON=0\n== цвета препятствий в билдере ==\n12:  green: 0x4aa657,\n13:  rough: 0x6b7d3a,\n14:  sand: 0xe3d09a,\n15:  ice: 0xbfe9ff,\n16:  wood: 0xa9713f,\n17:  stone: 0x8d8d8d,\n18:  metal: 0xc0c6cc,\n22:  wall: 0x9aa0a6,\n23:  bumper: 0xe2573f,\n24:  pillar: 0x7f6a55,\n25:  block: 0x6f7b8a,\n26:  spinner: 0xf2b134,\n27:  windmill: 0xf2f2f2,\n28:  gate: 0x4f86c6,\n29:  platform: 0x8f6fb5,\n30:  water: 0x2f7fd0,\n31:  void: 0x1b1b24,\n32:  'reset-zone': 0xd45fa0,\n33:  'sliding-wall': 0x7d8794,\n34:  door: 0x5f7f9f,\n35:  pendulum: 0xd8b94a,\n36:  teleporter: 0x9b5de5,\n37:  fan: 0x67e8f9,\n38:  conveyor: 0xa3a3a3,\n39:  'spring-pad': 0xf472b6,\n40:  'boost-pad': 0x22d3ee,\n41:  'jump-pad': 0x84cc16,\n42:  'gravity-zone': 0x6366f1,\n43:  'magnet-zone': 0xf59e0b,\n44:  lava: 0xff5722,\n== тесты игрового цикла ==\nsrc/game/game.test.ts:20:  await RAPIER.init();\nsrc/game/game.test.ts:23:describe('hole runtime', () => {\nsrc/game/game.test.ts:24:  it('rolls planned shots into the cup of the opening hole', () => {\nsrc/game/game.test.ts:73:describe('Game', () => {\nsrc/game/game.test.ts:74:  it('plays a one hole match from keyboard putts to the results table', async () => {\nsrc/game/feedback.test.ts:58:  await RAPIER.init();\nsrc/game/feedback.test.ts:61:describe('match feedback', () => {\nsrc/game/feedback.test.ts:62:  it('fires particles and audio for the putt and for the cup', async () => {\n",
+    "outputDigest": "ced171f40b422515d8b50beb43ba22a46d5eb305e9242f9e86ad206d77746418",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:04:43.977Z"
+}
