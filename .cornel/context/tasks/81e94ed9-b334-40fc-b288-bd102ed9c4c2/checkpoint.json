@@ -3,7 +3,7 @@
   "branch": "cornel/kursy-neon-city-haunted-mansion-space-st-81e94e",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Типизация и новый тест зелёные. Прогоняю весь набор тестов и продакшн-сборку.\n\n```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"npx vitest run 2>&1 | tail -30; echo '--- build ---'; npm run build 2>&1 | tail -15\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Сборка и 188 тестов зелёные; 4 упавших файла — в каталоге `tests/` (leaderboard, save-manager), к курсам отношения не имеют. Проверяю, что это не мои изменения, и как читается `?course=&hole=`.\n\n```json\n{\"version\":1,\"taskId\":\"81e94ed9-b334-40fc-b288-bd102ed9c4c2\",\"commandId\":\"check-4\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":180,\"command\":\"git status --short; echo '--- launch options ---'; grep -n \\\"course\\\\|hole\\\" src/dev/LaunchOptions.ts | head -30\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-courses-1",
@@ -127,10 +127,16 @@
     },
     {
       "commandId": "check-3",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-4",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:41:44.514Z"
+  "createdAt": "2026-09-17T02:42:23.106Z"
 }

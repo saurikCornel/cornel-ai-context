@@ -1,0 +1,17 @@
+{
+  "id": "d1ed105f-7ed6-4887-8217-99b4ea42e67c",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "patch-consumers",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "patched\n\n> crazy-putt-arena@0.1.0 typecheck\n> tsc -b --pretty false\n\n",
+    "outputDigest": "2120184866763feb359d6baf8993d0af8ea6f5b2daa43772175535b2c631b7af",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:42:22.412Z"
+}

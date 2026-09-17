@@ -1,0 +1,17 @@
+{
+  "id": "836e61fb-16ed-4c8b-8f4f-8ca58d99303f",
+  "taskId": "81e94ed9-b334-40fc-b288-bd102ed9c4c2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": " M src/courses/data/haunted-mansion.ts\n M src/courses/data/neon-city.ts\n M src/courses/data/space-station.ts\n?? src/courses/data/layoutKit.ts\n?? src/courses/layoutDiversity.test.ts\n--- launch options ---\n1:export interface LaunchOptions{debug:boolean;courseId?:string;hole?:number}\n2:export function parseLaunchOptions(search:string):LaunchOptions{const p=new URLSearchParams(search);const courseId=p.get('course')?.trim()||undefined;const n=Number(p.get('hole'));const hole=Number.isInteger(n)&&n>0?n:undefined;return{debug:p.get('debug')==='1',...(courseId?{courseId}:{}),...(hole?{hole}:{})}}\n",
+    "outputDigest": "6d6e99e1ec21889cafa25a7359daa3d7d6a2c10b95389e9eb7306c94547e6cd2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:42:25.729Z"
+}
