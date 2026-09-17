@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"read-9\",\"operation\":\"read\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"paths\":[\"src/game/Game.ts:160-330\"]}\n```\n\nОжидаю worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:21:02.145Z"
+}

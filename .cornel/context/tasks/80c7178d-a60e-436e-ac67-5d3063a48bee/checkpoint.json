@@ -3,7 +3,7 @@
   "branch": "cornel/candy-factory-ts-i-pirate-bay-ts-zapisan-80c717",
   "headSha": "8083931e2850fff54b9465f9e7c0a182073e3c18",
   "status": "RUNNING",
-  "summary": "Нужна проверка на новом headSha. Перезапускаю тесты и сборку на опубликованном commit.\n\n```json\n{\"version\":1,\"taskId\":\"80c7178d-a60e-436e-ac67-5d3063a48bee\",\"commandId\":\"verify-3\",\"operation\":\"run\",\"headSha\":\"8083931e2850fff54b9465f9e7c0a182073e3c18\",\"timeoutSeconds\":900,\"command\":\"set -e\\nnpm run typecheck\\nnpm test\\nnpm run build\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Проверки на `8083931` прошли успешно (typecheck, 36 файлов / 239 тестов, build). Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"80c7178d-a60e-436e-ac67-5d3063a48bee\",\"commandId\":\"finish-2\",\"operation\":\"finish\",\"headSha\":\"8083931e2850fff54b9465f9e7c0a182073e3c18\",\"message\":\"Курсы candy-factory и pirate-bay переписаны с минифицированных однострочников на общий layoutKit с читаемым форматированием.\\n\\nИзменённые файлы:\\n- src/courses/data/candy-factory.ts (19 -> 180 строк)\\n- src/courses/data/pirate-bay.ts (19 -> 156 строк)\\n- src/courses/data/layoutKit.ts (+47 строк): добавлены springPad и conveyor (темовые механики Candy Factory по ТЗ §11, которых в kit не было), у bumper появился необязательный параметр depth для пушек-брусков 1.2x3 в Pirate Bay. Изменение обратно совместимо: neon-city, haunted-mansion и space-station не затронуты.\\n\\nСохранено: все 18 id лунок, названия, par и параметры препятствий (скорости, distance, restitution, strength, maxSpeed, coupling, penaltyStrokes). Локальные односимвольные хелперы v/d/w/c/b/sea удалены; bounds считает fitBounds из kit, hazard-объёмы (water, reset-zone) переведены на конвенцию kit — объём лежит под плоскостью пола и ловит падающий шар (радиус шара 0.22, центр на площадке ~0.37 выше верха воды 0.3), поведение эквивалентно исходному.\\n\\nПроверки выполнены на этом commit (команда verify-3, exitCode 0): npm run typecheck — чисто; npm test — 36 файлов / 239 тестов пройдено, включая tests/course-data-validation.test.ts (те же 90 лунок, уникальные id, темовые механики spring-pad и conveyor у candy-factory на месте); npm run build — успешно. PR не открывался: слияние ветки выполнит сборщик.\"}\n```\n\nЖду результат worker.\n\n**Сводка.** Решения: оба курса переведены на общий `layoutKit`; недостающие темовые примитивы добавлены в сам kit (`springPad`, `conveyor`, опциональный `depth` у `bumper`), а не продублированы локально — это выполняет требование ТЗ §11 о переиспользуемых компонентах и убирает конфликтоопасные однострочники. Изменённые файлы: `src/courses/data/candy-factory.ts`, `src/courses/data/pirate-bay.ts`, `src/courses/data/layoutKit.ts`. Проверки на `8083931`: typecheck, `npm test` (239 тестов), `npm run build` — все зелёные. Следующий шаг: слияние ветки сборщиком.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "verify-3",
+      "status": "SUCCEEDED",
+      "headSha": "8083931e2850fff54b9465f9e7c0a182073e3c18",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-2",
       "status": "STARTED",
       "headSha": "8083931e2850fff54b9465f9e7c0a182073e3c18",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:19:39.777Z"
+  "createdAt": "2026-09-17T03:21:01.556Z"
 }

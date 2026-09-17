@@ -1,0 +1,13 @@
+{
+  "id": "05d67d48-a0b1-4382-a4e5-c36f0c38d027",
+  "taskId": "80c7178d-a60e-436e-ac67-5d3063a48bee",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Курсы candy-factory и pirate-bay переписаны с минифицированных однострочников на общий layoutKit с читаемым форматированием.\n\nИзменённые файлы:\n- src/courses/data/candy-factory.ts (19 -> 180 строк)\n- src/courses/data/pirate-bay.ts (19 -> 156 строк)\n- src/courses/data/layoutKit.ts (+47 строк): добавлены springPad и conveyor (темовые механики Candy Factory по ТЗ §11, которых в kit не было), у bumper появился необязательный параметр depth для пушек-брусков 1.2x3 в Pirate Bay. Изменение обратно совместимо: neon-city, haunted-mansion и space-station не затронуты.\n\nСохранено: все 18 id лунок, названия, par и параметры препятствий (скорости, distance, restitution, strength, maxSpeed, coupling, penaltyStrokes). Локальные односимвольные хелперы v/d/w/c/b/sea удалены; bounds считает fitBounds из kit, hazard-объёмы (water, reset-zone) переведены на конвенцию kit — объём лежит под плоскостью пола и ловит падающий шар (радиус шара 0.22, центр на площадке ~0.37 выше верха воды 0.3), поведение эквивалентно исходному.\n\nПроверки выполнены на этом commit (команда verify-3, exitCode 0): npm run typecheck — чисто; npm test — 36 файлов / 239 тестов пройдено, включая tests/course-data-validation.test.ts (те же 90 лунок, уникальные id, темовые механики spring-pad и conveyor у candy-factory на месте); npm run build — успешно. PR не открывался: слияние ветки выполнит сборщик.",
+  "detail": {
+    "commands": 9,
+    "failed": 2,
+    "headSha": "8083931e2850fff54b9465f9e7c0a182073e3c18",
+    "branch": "cornel/candy-factory-ts-i-pirate-bay-ts-zapisan-80c717"
+  },
+  "createdAt": "2026-09-17T03:21:03.918Z"
+}
