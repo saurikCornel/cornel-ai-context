@@ -3,7 +3,7 @@
   "branch": "cornel/surface-friction-model-ice-mud-sand-0dc14b",
   "headSha": "3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2",
   "status": "RUNNING",
-  "summary": "Публикация прошла, новый head `3d0e302`. Прогоняю проверки ещё раз уже на опубликованном коммите, чтобы finish опирался на тот же headSha.\n\n```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/obstacles/surfaces.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Проверки на опубликованном коммите прошли: 5/5 тестов, `tsc -b` без ошибок, рабочее дерево чистое. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"0dc14b30-62d8-4605-9409-3d22b5e08056\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2\",\"message\":\"Surface friction model (ice, mud, sand) готов. Файлы: src/obstacles/surfaces.ts, src/obstacles/surfaces.test.ts (других файлов не касался). Ранее опубликованные в ветке версии этих файлов были нерабочими заглушками (объявления без тел, строка green с параметрами ice, тест без импортов) — переписаны. Реализовано: SurfaceProperties, SURFACE_PROPERTIES по заданной таблице для всех 7 материалов, resolveSurface с приоритетом descriptor.friction/restitution и клампом 0..2 / 0..1, applySurfaceDamping (новый Vec3, x и z на max(0,1-rollingResistance*dt), y без изменений), stopsOnSurface (speed <= stopThreshold*(1+rollingResistance)). Без Three.js, Rapier и DOM. Проверки на коммите 3d0e302: npx vitest run src/obstacles/surfaces.test.ts — 5/5 passed; npx tsc -b --pretty false — exit 0; git status --short пуст. PR не открывал, слияние ветки за сборщиком.\"}\n```\n\nИтог по карточке:\n\n- **Решение:** прежний коммит ветки содержал не код, а скопированные из задания сигнатуры — реализацию написал заново, минимальным диффом в двух разрешённых файлах.\n- **Изменённые файлы:** `src/obstacles/surfaces.ts`, `src/obstacles/surfaces.test.ts`.\n- **Проверки:** `vitest` (5 тестов: лёд против песка после секунды демпинга, приоритет и кламп переопределений, отсутствие отрицательной скорости и неизменность оси Y, порог остановки, полнота таблицы по всем `SurfaceMaterial`) и `tsc -b` — оба зелёные на коммите `3d0e302`.\n- **Попутно:** в рабочей копии не было `node_modules` — выполнен `npm install` (в коммит не попал, каталог в `.gitignore`).\n- **Следующий шаг:** ожидание слияния ветки сборщиком.\n\n",
   "commands": [
     {
       "commandId": "apple-a7cf8a48",
@@ -61,10 +61,16 @@
     },
     {
       "commandId": "verify-1",
+      "status": "SUCCEEDED",
+      "headSha": "3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
       "headSha": "3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:56:53.310Z"
+  "createdAt": "2026-09-17T01:57:20.865Z"
 }

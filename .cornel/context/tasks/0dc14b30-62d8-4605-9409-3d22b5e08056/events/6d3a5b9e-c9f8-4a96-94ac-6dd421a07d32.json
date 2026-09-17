@@ -1,0 +1,17 @@
+{
+  "id": "6d3a5b9e-c9f8-4a96-94ac-6dd421a07d32",
+  "taskId": "0dc14b30-62d8-4605-9409-3d22b5e08056",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2",
+    "output": "Surface friction model (ice, mud, sand) готов. Файлы: src/obstacles/surfaces.ts, src/obstacles/surfaces.test.ts (других файлов не касался). Ранее опубликованные в ветке версии этих файлов были нерабочими заглушками (объявления без тел, строка green с параметрами ice, тест без импортов) — переписаны. Реализовано: SurfaceProperties, SURFACE_PROPERTIES по заданной таблице для всех 7 материалов, resolveSurface с приоритетом descriptor.friction/restitution и клампом 0..2 / 0..1, applySurfaceDamping (новый Vec3, x и z на max(0,1-rollingResistance*dt), y без изменений), stopsOnSurface (speed <= stopThreshold*(1+rollingResistance)). Без Three.js, Rapier и DOM. Проверки на коммите 3d0e302: npx vitest run src/obstacles/surfaces.test.ts — 5/5 passed; npx tsc -b --pretty false — exit 0; git status --short пуст. PR не открывал, слияние ветки за сборщиком.",
+    "outputDigest": "f950f93bdcfba4b7a0e33940ff8403452a45a9fe8b8c570080ffeb35cd926f64",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:57:23.309Z"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "cd1818fd-3ca8-4ca0-b237-6a708ed29020",
+  "taskId": "0dc14b30-62d8-4605-9409-3d22b5e08056",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Surface friction model (ice, mud, sand) готов. Файлы: src/obstacles/surfaces.ts, src/obstacles/surfaces.test.ts (других файлов не касался). Ранее опубликованные в ветке версии этих файлов были нерабочими заглушками (объявления без тел, строка green с параметрами ice, тест без импортов) — переписаны. Реализовано: SurfaceProperties, SURFACE_PROPERTIES по заданной таблице для всех 7 материалов, resolveSurface с приоритетом descriptor.friction/restitution и клампом 0..2 / 0..1, applySurfaceDamping (новый Vec3, x и z на max(0,1-rollingResistance*dt), y без изменений), stopsOnSurface (speed <= stopThreshold*(1+rollingResistance)). Без Three.js, Rapier и DOM. Проверки на коммите 3d0e302: npx vitest run src/obstacles/surfaces.test.ts — 5/5 passed; npx tsc -b --pretty false — exit 0; git status --short пуст. PR не открывал, слияние ветки за сборщиком.",
+  "detail": {
+    "commands": 11,
+    "failed": 5,
+    "headSha": "3d0e302bb4f13d7243dc72c52cc1caf527c0e3d2",
+    "branch": "cornel/surface-friction-model-ice-mud-sand-0dc14b"
+  },
+  "createdAt": "2026-09-17T01:57:23.309Z"
+}
