@@ -17,12 +17,13 @@
   "branch": "cornel/movingplatform-slidingwall-and-door-move-bb10e7",
   "baseSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "RUNNING",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T23:46:55.230Z",
-  "updatedAt": "2026-09-17T00:13:42.244Z",
+  "updatedAt": "2026-09-17T00:13:46.113Z",
   "issue": 74,
   "chatUrl": "cli://apple/bb10e70d-fd00-4b90-ac80-a219928d212f",
   "error": null,
   "cliActivity": null,
-  "browserError": null
+  "browserError": null,
+  "currentHead": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6"
 }

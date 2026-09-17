@@ -1,0 +1,17 @@
+{
+  "id": "7d1c4e98-d5f5-4a64-89da-c0f77c404a3d",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "apple-ad185a2c",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+    "output": "npm error could not determine executable to run\nnpm error A complete log of this run can be found in: /Users/alex/.npm/_logs/2026-09-17T00_13_45_084Z-debug-0.log\n",
+    "outputDigest": "066147eed6bf4dc1cc4cc0445b19e49cedfefabfd59091ba4204458c6dc1f879",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T00:13:46.114Z"
+}
