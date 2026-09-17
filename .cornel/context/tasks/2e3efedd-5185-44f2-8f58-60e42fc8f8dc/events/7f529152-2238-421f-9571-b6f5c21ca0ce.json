@@ -1,0 +1,17 @@
+{
+  "id": "7f529152-2238-421f-9571-b6f5c21ca0ce",
+  "taskId": "2e3efedd-5185-44f2-8f58-60e42fc8f8dc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "impl-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "     139 src/courses/CourseRegistry.ts\n",
+    "outputDigest": "594b1ea5622f00a01cac59b733a424480923f5404a2bf440321ec326647f8c6f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:13:38.685Z"
+}
