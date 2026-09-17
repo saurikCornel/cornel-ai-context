@@ -1,0 +1,17 @@
+{
+  "id": "a9776b7d-dc68-4c24-bd14-c2fcca8682ce",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "== LOC курсов ==\n     120 src/courses/data/ancient-temple.ts\n     120 src/courses/data/arctic-base.ts\n     180 src/courses/data/candy-factory.ts\n     183 src/courses/data/chaos-dimension.ts\n     190 src/courses/data/green-hills.ts\n     229 src/courses/data/haunted-mansion.ts\n     456 src/courses/data/layoutKit.ts\n     233 src/courses/data/neon-city.ts\n     156 src/courses/data/pirate-bay.ts\n     234 src/courses/data/space-station.ts\n     132 src/courses/data/volcano.ts\n    2233 total\n== spawn в трёх спорных курсах ==\nsrc/courses/data/neon-city.ts:0\nsrc/courses/data/haunted-mansion.ts:0\nsrc/courses/data/space-station.ts:0\n== камера ==\nsrc/camera/CameraDirector.test.ts:4:CameraMode\nsrc/camera/CameraDirector.test.ts:5:CameraMode\nsrc/camera/CameraDirector.test.ts:5:CameraMode\nsrc/camera/CameraDirector.test.ts:41:CameraMode\nsrc/camera/CameraDirector.test.ts:41:'overview'\nsrc/camera/CameraDirector.test.ts:42:CameraMode\nsrc/camera/CameraDirector.test.ts:43:'aim'\nsrc/camera/CameraDirector.test.ts:46:'aim'\nsrc/camera/CameraDirector.test.ts:75:'aim'\nsrc/camera/CameraDirector.test.ts:76:'follow'\nsrc/camera/CameraDirector.test.ts:77:'follow'\nsrc/camera/CameraDirector.test.ts:78:'follow'\nsrc/camera/CameraDirector.test.ts:79:'overview'\nsrc/camera/CameraDirector.test.ts:80:'overview'\nsrc/camera/CameraDirector.test.ts:86:'follow'\nsrc/camera/CameraDirector.test.ts:91:'overview'\nsrc/camera/CameraDirector.test.ts:99:'aim'\nsrc/camera/CameraDirector.test.ts:132:'free'\nsrc/camera/CameraDirector.test.ts:136:'aim'\nsrc/camera/CameraDirector.ts:5:CameraMode\n== эффекты/аудио в игре ==\nsrc/game/Game.ts:18:import type { ParticleColor } from '../effects/ParticleManager';\nsrc/main.ts:2:import { AudioManager } from './assets/AudioManager';\nsrc/main.ts:6:import { Renderer } from './core/Renderer';\nsrc/main.ts:28:// core/Renderer owns the WebGL state and survives a lost context; recovery resets\nsrc/main.ts:37:function createMixer(): AudioManager | undefined {\nsrc/main.ts:39:    const mixer = new AudioManager();\n== maxShots ==\nsrc/contracts/game.ts\nsrc/game/strokeBudget.test.ts\nsrc/courses/types.ts\nsrc/courses/HoleBuilder.ts\nsrc/courses/Hole.ts\nsrc/courses/data/green-hills.ts\nsrc/gameplay/MatchManager.ts\nsrc/gameplay/strokeLimit.test.ts\nsrc/gameplay/ScoreManager.ts\nsrc/gameplay/StrokeLimit.ts\n== реестр курсов ==\nCourse.ts\nCourseBuilder.ts\nCourseRegistry.ts\nHole.ts\nHoleBuilder.ts\nbuilder.test.ts\ndata\nindex.ts\nlayoutDiversity.test.ts\nregistry.test.ts\ntypes.ts\n== типы препятствий ==\n35:  kind: 'rotate' | 'translate' | 'swing';\n",
+    "outputDigest": "4c4a9f46190e6e9f46b255c24bd98ae617557c7a6746166da528aff96b7050c6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:49:57.201Z"
+}
