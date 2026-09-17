@@ -1,0 +1,13 @@
+{
+  "id": "5f1b94e0-1b2b-40eb-91cf-1dfe8cc3b7e0",
+  "taskId": "04dfcdc3-bb27-43a2-9b96-be60053e814c",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Match rewards: XP и статистика после матча. Добавлены src/gameplay/MatchRewards.ts (calculateMatchReward, applyMatchStatistics, константы XP) и src/gameplay/rewards.test.ts (11 тестов). Чистый модуль без DOM/Three.js/Rapier, существующие gameplay-файлы и index.ts не изменялись. Правила XP: completion 100, win +50, podium (2-3 место при 4+ игроках) +25 взаимоисключающе с win, +20 за hole-in-one, +10 за birdie; сумма не ниже 0 и целая. applyMatchStatistics возвращает новый объект, не мутирует вход, bestRoundStrokes обновляется только на полном круге и хранит меньшее значение, нефинитные числа трактуются как 0. Проверки на коммите 516cb1d: npx vitest run src/gameplay/rewards.test.ts — 11/11 passed; npx tsc -b --pretty false — exitCode 0. Перед запуском потребовался npm install (в рабочей копии отсутствовал node_modules, из-за чего падал предыдущий прогон). PR не открывался: слияние ветки выполняет сборщик.",
+  "detail": {
+    "commands": 6,
+    "failed": 1,
+    "headSha": "516cb1dda05f1f1dd95b8227b6230544fa2b1b98",
+    "branch": "cornel/match-rewards-xp-and-statistics-update-04dfcd"
+  },
+  "createdAt": "2026-09-17T01:48:48.602Z"
+}

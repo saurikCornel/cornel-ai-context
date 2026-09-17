@@ -17,9 +17,10 @@
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
   "baseSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
   "workspaceSyncedSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-17T01:48:36.819Z",
-  "updatedAt": "2026-09-17T01:48:36.819Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-17T01:48:40.160Z",
+  "issue": 82,
+  "chatUrl": null,
+  "error": null
 }

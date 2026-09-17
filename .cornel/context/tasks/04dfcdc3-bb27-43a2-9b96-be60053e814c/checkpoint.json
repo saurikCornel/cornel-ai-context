@@ -3,7 +3,7 @@
   "branch": "cornel/match-rewards-xp-and-statistics-update-04dfcd",
   "headSha": "516cb1dda05f1f1dd95b8227b6230544fa2b1b98",
   "status": "RUNNING",
-  "summary": "Опубликовано (head `516cb1d`). Прогоняю проверки повторно уже на новом headSha, чтобы finish опирался на подтверждение на том же коммите.\n\n```json\n{\"version\":1,\"taskId\":\"04dfcdc3-bb27-43a2-9b96-be60053e814c\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"516cb1dda05f1f1dd95b8227b6230544fa2b1b98\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/gameplay/rewards.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Проверки на опубликованном коммите зелёные, рабочее дерево чистое (`git status --short` без вывода). Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"04dfcdc3-bb27-43a2-9b96-be60053e814c\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"516cb1dda05f1f1dd95b8227b6230544fa2b1b98\",\"message\":\"Match rewards: XP и статистика после матча. Добавлены src/gameplay/MatchRewards.ts (calculateMatchReward, applyMatchStatistics, константы XP) и src/gameplay/rewards.test.ts (11 тестов). Чистый модуль без DOM/Three.js/Rapier, существующие gameplay-файлы и index.ts не изменялись. Правила XP: completion 100, win +50, podium (2-3 место при 4+ игроках) +25 взаимоисключающе с win, +20 за hole-in-one, +10 за birdie; сумма не ниже 0 и целая. applyMatchStatistics возвращает новый объект, не мутирует вход, bestRoundStrokes обновляется только на полном круге и хранит меньшее значение, нефинитные числа трактуются как 0. Проверки на коммите 516cb1d: npx vitest run src/gameplay/rewards.test.ts — 11/11 passed; npx tsc -b --pretty false — exitCode 0. Перед запуском потребовался npm install (в рабочей копии отсутствовал node_modules, из-за чего падал предыдущий прогон). PR не открывался: слияние ветки выполняет сборщик.\"}\n```\n\n**Итог**\n\n- **Решения:** чистый модуль наград без зависимостей от рендера/физики; константы XP вынесены в экспорты, win и podium взаимоисключающие; все входные числа нормализуются (`Number.isFinite` → 0, счётчики через `Math.max(0, Math.floor(...))`), статистика возвращается новым объектом.\n- **Изменённые файлы:** `src/gameplay/MatchRewards.ts` (был перезаписан — в рабочей копии от прошлой попытки лежал текст спецификации вместо кода), `src/gameplay/rewards.test.ts`.\n- **Проверки:** `npx vitest run src/gameplay/rewards.test.ts` — 11 тестов passed; `npx tsc -b --pretty false` — exitCode 0; оба прогона повторены на опубликованном коммите `516cb1d`.\n- **Следующий шаг:** слияние ветки `cornel/match-rewards-xp-and-statistics-update-04dfcd` сборщиком; связывание `calculateMatchReward`/`applyMatchStatistics` с экраном результатов и профилем — задача следующей волны (Game.ts и сведение экспортов).\n\n",
   "commands": [
     {
       "commandId": "apple-add65e8e",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "check-3",
+      "status": "SUCCEEDED",
+      "headSha": "516cb1dda05f1f1dd95b8227b6230544fa2b1b98",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
       "headSha": "516cb1dda05f1f1dd95b8227b6230544fa2b1b98",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:46:50.621Z"
+  "createdAt": "2026-09-17T01:48:46.273Z"
 }
