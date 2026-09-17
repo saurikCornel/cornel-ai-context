@@ -17,9 +17,10 @@
   "branch": "cornel/lava-i-drugie-sensornye-zony-renderyatsy-f34312",
   "baseSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "workspaceSyncedSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
-  "status": "CREATING",
+  "status": "READY",
   "createdAt": "2026-09-17T04:08:09.472Z",
-  "updatedAt": "2026-09-17T04:08:09.472Z",
-  "issue": null,
-  "chatUrl": null
+  "updatedAt": "2026-09-17T04:08:12.420Z",
+  "issue": 109,
+  "chatUrl": null,
+  "error": null
 }
