@@ -1,0 +1,12 @@
+{
+  "id": "90d483ec-a4de-43aa-8f00-0e963edd0da6",
+  "taskId": "f40347ef-5d08-4e0a-98f2-85b5767cbfa9",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: src/core/HoleSceneBuilder.ts",
+  "detail": {
+    "files": [
+      "src/core/HoleSceneBuilder.ts"
+    ]
+  },
+  "createdAt": "2026-09-17T04:32:14.240Z"
+}

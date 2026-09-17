@@ -1,0 +1,28 @@
+{
+  "id": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "claude",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "9908ac18-c26e-4165-9f86-6c183237cae6",
+    "base": {
+      "": "f757284c9a10172deda23fc481f9234e3d7325ed"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: У чашки нет флага и углубления",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/u-chashki-net-flaga-i-uglubleniya-f40347 (карточка «У чашки нет флага и углубления») не сливается в ветку офиса cornel/office: конфликт в файлах src/core/HoleSceneBuilder.ts.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/u-chashki-net-flaga-i-uglubleniya-f40347 && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/slit-u-chashki-net-flaga-i-uglubleniya-9b9f93",
+  "baseSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+  "workspaceSyncedSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+  "status": "CREATING",
+  "createdAt": "2026-09-17T04:32:16.435Z",
+  "updatedAt": "2026-09-17T04:32:16.435Z",
+  "issue": null,
+  "chatUrl": null
+}
