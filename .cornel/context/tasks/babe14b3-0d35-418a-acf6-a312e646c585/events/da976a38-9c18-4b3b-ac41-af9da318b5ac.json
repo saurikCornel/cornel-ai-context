@@ -1,0 +1,17 @@
+{
+  "id": "da976a38-9c18-4b3b-ac41-af9da318b5ac",
+  "taskId": "babe14b3-0d35-418a-acf6-a312e646c585",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "apple-3a",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+    "output": "?? src/obstacles/rotating.test.ts\n?? src/obstacles/rotating.ts\n",
+    "outputDigest": "d7c916a4aa5cfe6abd1fd798efd93205e44bdb2143d624bbf261debc66d4b37d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:44:16.462Z"
+}
