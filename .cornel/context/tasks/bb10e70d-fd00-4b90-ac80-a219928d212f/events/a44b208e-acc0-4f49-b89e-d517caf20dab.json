@@ -1,0 +1,11 @@
+{
+  "id": "a44b208e-acc0-4f49-b89e-d517caf20dab",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "movers-check-2",
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6"
+  },
+  "createdAt": "2026-09-17T01:43:45.476Z"
+}

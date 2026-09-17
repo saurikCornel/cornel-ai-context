@@ -1,0 +1,17 @@
+{
+  "id": "d3b17ac7-c7b6-4c46-8e57-41755dc8d91f",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "movers-check-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+    "output": "\nadded 84 packages in 2s\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/bb10e70d-fd00-4b90-ac80-a219928d212f\u001b[39m\n\n \u001b[32m✓\u001b[39m src/obstacles/movers.test.ts \u001b[2m(\u001b[22m\u001b[2m8 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m8 passed\u001b[39m\u001b[22m\u001b[90m (8)\u001b[39m\n\u001b[2m   Start at \u001b[22m 04:43:51\n\u001b[2m   Duration \u001b[22m 222ms\u001b[2m (transform 67%, import 20%, tests 9%, worker 4%)\u001b[22m\n\nCHECKS_OK\n",
+    "outputDigest": "cb0668a115c1aeeeb1b5c37cd134435cd11e15386c64af285f51e4547c755bdf",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:43:53.690Z"
+}

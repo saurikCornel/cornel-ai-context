@@ -1,0 +1,12 @@
+{
+  "id": "2d955a9c-0512-4e64-a864-25558e9a2ee6",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "movers-check-2",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund && npx vitest run src/obstacles/movers.test.ts && npx tsc -b --pretty false && echo CHECKS_OK"
+  },
+  "createdAt": "2026-09-17T01:43:45.474Z"
+}
