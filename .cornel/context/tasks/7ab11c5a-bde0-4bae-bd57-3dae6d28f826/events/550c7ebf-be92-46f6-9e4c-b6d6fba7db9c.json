@@ -1,0 +1,12 @@
+{
+  "id": "550c7ebf-be92-46f6-9e4c-b6d6fba7db9c",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "reset-2",
+    "operation": "run",
+    "command": "git rev-parse --abbrev-ref HEAD; git merge --abort 2>&1 | head -3; git reset --hard 1b051708839c6a0b4094c1f74261e1937e59fc27 2>&1 | head -3; git status --short | head -5; git log --oneline -1"
+  },
+  "createdAt": "2026-09-17T04:51:15.786Z"
+}
