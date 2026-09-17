@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "node_modules в рабочей копии нет — сначала установка зависимостей, затем baseline.\n\n```json\n{\"version\":1,\"taskId\":\"ccab2579-71ad-4d17-82a6-894c63ff810d\",\"commandId\":\"install-1\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"command\":\"npm install --no-audit --no-fund 2>&1 | tail -15; echo \\\"---INSTALL_EXIT=${PIPESTATUS[0]}---\\\"; node -p \\\"'vitest ' + require('vitest/package.json').version\\\"; npx vitest run --reporter=basic > /tmp/vitest-baseline.log 2>&1; echo \\\"---VITEST_EXIT=$?---\\\"; tail -60 /tmp/vitest-baseline.log\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:12:09.523Z"
+}

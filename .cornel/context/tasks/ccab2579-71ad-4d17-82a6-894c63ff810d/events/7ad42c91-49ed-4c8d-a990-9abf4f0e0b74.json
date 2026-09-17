@@ -1,0 +1,12 @@
+{
+  "id": "7ad42c91-49ed-4c8d-a990-9abf4f0e0b74",
+  "taskId": "ccab2579-71ad-4d17-82a6-894c63ff810d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-1",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund 2>&1 | tail -15; echo \"---INSTALL_EXIT=${PIPESTATUS[0]}---\"; node -p \"'vitest ' + require('vitest/package.json').version\"; npx vitest run --reporter=basic > /tmp/vitest-baseline.log 2>&1; echo \"---VITEST_EXIT=$?---\"; tail -60 /tmp/vitest-baseline.log"
+  },
+  "createdAt": "2026-09-17T02:12:09.523Z"
+}
