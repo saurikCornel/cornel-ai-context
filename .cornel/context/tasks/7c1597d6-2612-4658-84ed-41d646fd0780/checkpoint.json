@@ -3,7 +3,7 @@
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"read-3\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/core/SaveManager.ts:1-6\",\"src/ui/types.ts\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"grep-1\",\"operation\":\"grep\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"pattern\":\"Putt Pilot|1240|xpNext|bestRound|interface UISettings|class AppUI|constructor|saveSettings|startMatch|profile\",\"path\":\"src/ui/index.ts\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "read-3",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "grep-1",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:15:58.424Z"
+  "createdAt": "2026-09-17T04:16:53.787Z"
 }
