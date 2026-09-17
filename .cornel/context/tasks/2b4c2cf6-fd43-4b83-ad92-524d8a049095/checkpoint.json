@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-2b4c2c",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Игровой цикл выглядит собранным. Хочу проверить как пользователь — в реальном браузере. Сначала читаю точку входа, чтобы понять, можно ли стартовать матч из URL.\n\n```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-6\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/main.ts:1-140\",\"src/dev/LaunchOptions.ts:1-3\"]}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"2b4c2cf6-fd43-4b83-ad92-524d8a049095\",\"commandId\":\"check-7\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/main.ts:140-176\",\"src/courses/index.ts:1-40\",\"README.md:60-95\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "check-6",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-7",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:51:44.180Z"
+  "createdAt": "2026-09-17T03:52:02.032Z"
 }
