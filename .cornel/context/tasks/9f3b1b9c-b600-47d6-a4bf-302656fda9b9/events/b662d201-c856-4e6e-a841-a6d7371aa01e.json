@@ -1,0 +1,17 @@
+{
+  "id": "b662d201-c856-4e6e-a841-a6d7371aa01e",
+  "taskId": "9f3b1b9c-b600-47d6-a4bf-302656fda9b9",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "patch-a",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "part a ok\n",
+    "outputDigest": "a88bba2132f5cd2aec82df3c38e2db4d74cc2e148892a0a38453b63fb03f6ddb",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:25:25.424Z"
+}
