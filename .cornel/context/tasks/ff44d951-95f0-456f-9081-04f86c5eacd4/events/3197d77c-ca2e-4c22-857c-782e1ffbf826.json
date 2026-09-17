@@ -1,0 +1,17 @@
+{
+  "id": "3197d77c-ca2e-4c22-857c-782e1ffbf826",
+  "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "Ветка cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656 слита в cornel/slit-popadanie-v-lunku-bez-zvuka-i-chast-ff44d9 (создана от головы cornel/office). Итоговый commit: fa6ee5f.\n\nКонфликт был только в src/game/Game.ts (два места), обе стороны сохранены:\n1) resetBall — оставлена логика office (holeSystem.getLastSafePosition + HoleRuntime.resolveHazard + runtime.resetObstacles), в неё добавлена обратная связь входящей ветки: снимок точки попадания в опасную зону, this.effects.hazard(impact, hazard?.type ?? 'void'), сброс previousVelocity. Типы совпадают: HazardObstacle.type ('water' | 'void' | 'reset-zone' | 'lava') соответствует HazardKind.\n2) Конфликтовали два независимых новых метода — applyObstacleEffects (ленты, вентиляторы, телепорты, пады, силовые поля из office) и trackImpacts (детект отскока для звука и частиц). Сохранены оба; frame() уже вызывает trackImpacts(), runtime.update() и applyObstacleEffects() по порядку, дописывать вызовы не потребовалось.\nОстальные файлы входящей ветки (src/effects/FeedbackSystem.ts, src/assets/audioManifest.ts, src/core/QualitySettings.ts, правки Renderer.ts, effects/index.ts, main.ts, новые тесты) влились автоматически.\n\nПроверки на fa6ee5f: npm run typecheck — успешно; npm test — 43 файла, 278 тестов, все прошли (включая src/effects/feedback.test.ts и src/game/feedback.test.ts); npm run build — успешно (только предупреждение vite о размере чанка). Маркеров конфликта в файле не осталось (grep -c '<<<<<<<' = 0). Отдельного линтера в package.json нет.\n\nPR не открывал: ветка предназначена для слияния офисом.",
+    "outputDigest": "c7d49113a35d65defb4026e79337d421ee299b23c9140f5079b0a45700fc6daf",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:48:40.250Z"
+}
