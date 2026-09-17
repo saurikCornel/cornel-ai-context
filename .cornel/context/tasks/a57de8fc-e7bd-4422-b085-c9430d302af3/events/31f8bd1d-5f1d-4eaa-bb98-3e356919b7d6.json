@@ -1,0 +1,12 @@
+{
+  "id": "31f8bd1d-5f1d-4eaa-bb98-3e356919b7d6",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-scope",
+    "operation": "run",
+    "command": "echo '=== my suites on merged head ===' && npx vitest run src/game src/ui src/input src/dev src/camera 2>&1 | grep -v 'Not implemented' | tail -12 && echo '=== pre-existing tests/ without my config ===' && npx vitest run tests --config vite.config.ts 2>&1 | grep -E 'FAIL|Cannot find module|Test Files|Tests ' | head -20 && echo '=== git status ===' && git status --short | head"
+  },
+  "createdAt": "2026-09-17T02:42:56.001Z"
+}

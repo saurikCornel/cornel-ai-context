@@ -3,7 +3,7 @@
   "branch": "cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8",
   "headSha": "93be8f7845d4a7893e4a70e11e3a9152d55e1b6d",
   "status": "RUNNING",
-  "summary": "Опубликовано (head 93be8f78). Финальная проверка на новом SHA: сборка, артефакты и весь набор тестов.\n\n```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"check-final\",\"operation\":\"run\",\"headSha\":\"93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\",\"timeoutSeconds\":900,\"command\":\"rm -rf dist && npm run build 2>&1 | tail -8 && echo '--- bundle checks ---' && grep -c rapier dist/assets/*.js | tail -2 && for id in green-hills pirate-bay chaos-dimension; do printf '%s: ' \\\"$id\\\"; grep -c \\\"$id\\\" dist/assets/index-*.js | head -1; done && echo '--- tests ---' && npx vitest run 2>&1 | grep -v 'Not implemented' | tail -22\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"check-scope\",\"operation\":\"run\",\"headSha\":\"93be8f7845d4a7893e4a70e11e3a9152d55e1b6d\",\"timeoutSeconds\":600,\"command\":\"echo '=== my suites on merged head ===' && npx vitest run src/game src/ui src/input src/dev src/camera 2>&1 | grep -v 'Not implemented' | tail -12 && echo '=== pre-existing tests/ without my config ===' && npx vitest run tests --config vite.config.ts 2>&1 | grep -E 'FAIL|Cannot find module|Test Files|Tests ' | head -20 && echo '=== git status ===' && git status --short | head\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -97,10 +97,16 @@
     },
     {
       "commandId": "check-final",
+      "status": "SUCCEEDED",
+      "headSha": "93be8f7845d4a7893e4a70e11e3a9152d55e1b6d",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-scope",
       "status": "STARTED",
       "headSha": "93be8f7845d4a7893e4a70e11e3a9152d55e1b6d",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:42:00.121Z"
+  "createdAt": "2026-09-17T02:42:56.006Z"
 }
