@@ -1,0 +1,17 @@
+{
+  "id": "9d7db471-1a4e-4a05-8adb-c4d3ea15ee9a",
+  "taskId": "72ad9ab1-d451-4d42-847e-9cba5adb804d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-temple-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+    "output": "bytes 7634\n",
+    "outputDigest": "cd896c8f01414882f66864dc81e73b4b1472ad9442bd50d0d3918b2a7479f1af",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:23:25.296Z"
+}
