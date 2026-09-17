@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-nado-koroche-sdelat-prilozhenie-36fdec",
   "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
   "status": "RUNNING",
-  "summary": "Структура на месте. Читаю ключевые файлы сервисного слоя и экрана.\n\n```json\n{\"version\":1,\"taskId\":\"36fdec08-3715-4fa8-bc3d-b7fa0c749cf6\",\"commandId\":\"read-1\",\"operation\":\"read\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"paths\":[\"src/types/market.ts\",\"src/models/market.ts\",\"src/services/marketService.ts\",\"src/services/recommendation.ts\"]}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
+  "summary": "Сервисный слой выглядит корректно. Читаю экран и хук.\n\n```json\n{\"version\":1,\"taskId\":\"36fdec08-3715-4fa8-bc3d-b7fa0c749cf6\",\"commandId\":\"read-2\",\"operation\":\"read\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"paths\":[\"src/hooks/useMarketData.ts\",\"src/screens/HomeScreen.tsx\"]}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "read-1",
+      "status": "SUCCEEDED",
+      "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-2",
       "status": "STARTED",
       "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T17:37:24.499Z"
+  "createdAt": "2026-09-17T17:37:39.403Z"
 }
