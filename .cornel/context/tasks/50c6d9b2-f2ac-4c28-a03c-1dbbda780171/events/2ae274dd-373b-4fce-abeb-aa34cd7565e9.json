@@ -1,0 +1,12 @@
+{
+  "id": "2ae274dd-373b-4fce-abeb-aa34cd7565e9",
+  "taskId": "50c6d9b2-f2ac-4c28-a03c-1dbbda780171",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "qa-1",
+    "operation": "run",
+    "command": "set -x; npm run typecheck; echo \"TYPECHECK_EXIT=$?\"; npx jest --ci 2>&1 | tail -40; echo \"JEST_EXIT=${PIPESTATUS[0]}\"; npm run lint 2>&1 | tail -20; echo \"LINT_EXIT=$?\""
+  },
+  "createdAt": "2026-09-17T17:37:52.395Z"
+}

@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Нужна верхняя часть экрана и хук — читаю диапазонами.\n\n```json\n{\"version\":1,\"taskId\":\"36fdec08-3715-4fa8-bc3d-b7fa0c749cf6\",\"commandId\":\"read-3\",\"operation\":\"read\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"paths\":[\"src/hooks/useMarketData.ts:1-120\",\"src/screens/HomeScreen.tsx:1-180\"]}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T17:37:52.780Z"
+}

@@ -1,0 +1,16 @@
+{
+  "taskId": "50c6d9b2-f2ac-4c28-a03c-1dbbda780171",
+  "branch": "cornel/proverka-nado-koroche-sdelat-prilozhenie-50c6d9",
+  "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+  "status": "RUNNING",
+  "summary": "Читаю код закончил. Запускаю проверки через worker.\n\n```json\n{\"version\":1,\"taskId\":\"50c6d9b2-f2ac-4c28-a03c-1dbbda780171\",\"commandId\":\"qa-1\",\"operation\":\"run\",\"headSha\":\"51b38f0e713aa53ea9cd86f046e0e62f42cae086\",\"command\":\"set -x; npm run typecheck; echo \\\"TYPECHECK_EXIT=$?\\\"; npx jest --ci 2>&1 | tail -40; echo \\\"JEST_EXIT=${PIPESTATUS[0]}\\\"; npm run lint 2>&1 | tail -20; echo \\\"LINT_EXIT=$?\\\"\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker по `qa-1` — он придёт отдельным сообщением в этот чат.\n\n",
+  "commands": [
+    {
+      "commandId": "qa-1",
+      "status": "STARTED",
+      "headSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-17T17:37:52.405Z"
+}

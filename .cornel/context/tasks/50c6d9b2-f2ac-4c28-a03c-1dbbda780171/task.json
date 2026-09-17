@@ -20,11 +20,13 @@
   "branch": "cornel/proverka-nado-koroche-sdelat-prilozhenie-50c6d9",
   "baseSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
   "workspaceSyncedSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
-  "status": "READY",
+  "status": "RUNNING",
   "createdAt": "2026-09-17T17:36:51.781Z",
-  "updatedAt": "2026-09-17T17:37:39.364Z",
+  "updatedAt": "2026-09-17T17:37:52.406Z",
   "issue": 120,
-  "chatUrl": null,
+  "chatUrl": "cli://claude/696e1771-dd84-450c-8bee-fc4b68f26d86",
   "error": null,
-  "cliActivity": "Claude CLI: вызывает Bash"
+  "cliActivity": null,
+  "cliSession": "696e1771-dd84-450c-8bee-fc4b68f26d86",
+  "browserError": null
 }
