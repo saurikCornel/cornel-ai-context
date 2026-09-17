@@ -1,0 +1,13 @@
+{
+  "id": "aa7a0fcb-b741-49a0-9ca2-ff056ae4c841",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Переформатированы минифицированные модули в обычный многострочный код без изменения поведения и публичных API.\n\nЗатронуто 22 файла: src/ui/{index,Overlays,domTests}.ts, src/input/InputManager.ts, src/core/SaveManager.ts, src/ai/{BotProfiles,random}.ts, src/dev/{LaunchOptions,DeveloperDiagnostics,PresentationMinimap}.ts, src/player/{profile,progression,types}.ts, src/gameplay/ScoreManager.ts, src/courses/data/{volcano,ancient-temple,arctic-base,chaos-dimension}.ts, src/style.css, src/ui/ui.css, src/game/game.css, src/leaderboard/style.css.\n\nРешения: базовое форматирование сделано prettier (single-quote, print-width 100, arrow-parens avoid — под стиль репозитория); длинные шаблонные литералы, которые prettier не переносит, разбиты вручную: экраны AppUI (main/settings/profile/setup) вынесены в отдельные приватные методы и собираются массивом строк через join(''), оверлей DeveloperDiagnostics — через join('\\n'). Экспорты, сигнатуры и DOM-поведение не менялись.\n\nПроверки на опубликованном коммите 0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0 (команда check-8, exitCode 0): npm run typecheck — TYPECHECK_OK; npx vitest run — 43 файла / 278 тестов пройдено; npm run build — BUILD_OK. Вне тестов в src не осталось строк длиннее 200 символов (остались только src/dev/dev.test.ts, src/gameplay/gameplay.test.ts, src/input/InputManager.test.ts). Дополнительно неизменность разметки подтверждена временным тестом, сравнивавшим innerHTML новой AppUI и версии из HEAD на экранах main/settings/profile/play/custom/ranked и при initialCourseId=volcano — совпадение побайтовое; временные файлы удалены до публикации.\n\nВетка cornel/chast-moduley-zapisana-minificirovannymi-8b573d; PR не открывал, слияние за сборщиком.",
+  "detail": {
+    "commands": 14,
+    "failed": 2,
+    "headSha": "0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0",
+    "branch": "cornel/chast-moduley-zapisana-minificirovannymi-8b573d"
+  },
+  "createdAt": "2026-09-17T04:28:30.752Z"
+}

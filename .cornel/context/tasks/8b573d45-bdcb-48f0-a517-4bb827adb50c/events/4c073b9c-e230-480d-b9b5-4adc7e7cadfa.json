@@ -1,0 +1,13 @@
+{
+  "id": "4c073b9c-e230-480d-b9b5-4adc7e7cadfa",
+  "taskId": "8b573d45-bdcb-48f0-a517-4bb827adb50c",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: src/ui/index.ts, src/ui/ui.css",
+  "detail": {
+    "files": [
+      "src/ui/index.ts",
+      "src/ui/ui.css"
+    ]
+  },
+  "createdAt": "2026-09-17T04:28:33.319Z"
+}
