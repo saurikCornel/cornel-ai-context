@@ -1,0 +1,17 @@
+{
+  "id": "47cc6613-b90d-4a7f-9e51-28066972e56b",
+  "taskId": "6cfaf087-7d15-4864-af87-16343f16a7d2",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-6",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "3658877e1fd6778efff955482b1baf976da46a6d",
+    "output": "Переформатированы минифицированные модули игрока и сохранения (только форматирование).\n\nИзменённые файлы (коммит 3658877, ветка cornel/reformat-minified-player-and-save-module-6cfaf0):\n- src/player/types.ts — по одному члену интерфейса на строку для PlayerCosmetics, PlayerStatistics, PlayerSettings, PlayerProgression, PlayerProfile;\n- src/player/profile.ts — развёрнуты defaultCosmetics/defaultStatistics/defaultSettings/createDefaultProfile/awardPlayerXp;\n- src/player/progression.ts — развёрнуты xpForLevel/levelForXp/createProgression/addXp, MAX_PLAYER_LEVEL=50 без изменений;\n- src/core/SaveManager.ts — развёрнуты SAVE_VERSION=2, DEFAULT_SAVE_KEY, валидаторы normalize()/migrateSave() и класс SaveManager.\n\nПоведение не менялось: имена и экспорты, значения по умолчанию (0.8/0.65/0.8/1, 'drag', 'high', 'classic-white'), clamp-ы (0..1, 0.1..3, slice(0,32)), номер версии и ключ хранилища, логика миграции v1→v2 ('hold'→'charge') сохранены. Отступ 2 пробела, одна инструкция на строку.\n\nПроверки на headSha 3658877: npx vitest run tests/save-manager.test.ts — 6 тестов пройдено; npx tsc -b --pretty false — без ошибок; git diff --stat 45e3ae6..HEAD — затронуты только 4 указанных файла (250+/24-). Файл теста в репозитории называется tests/save-manager.test.ts, а не .mjs, как указано в карточке. PR не открывался: слияние ветки выполнит сборщик.",
+    "outputDigest": "02b740e5f389be5f46cacc57b5f1c8d57e2522f1edcfb7290bc07c8af29636e1",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:10:59.979Z"
+}

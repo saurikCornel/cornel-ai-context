@@ -1,0 +1,12 @@
+{
+  "id": "fa1c2da1-c296-4dc2-bb7d-55a683d432c7",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-2",
+    "operation": "run",
+    "command": "npm install --no-audit --no-fund 2>&1 | tail -5\necho '--- tsc ---'\nnpx tsc -b --pretty false; echo \"tsc exit=$?\"\necho '--- vitest src/ui ---'\nnpx vitest run src/ui 2>&1 | tail -25\necho \"vitest pipeline exit=${PIPESTATUS[0]}\"\necho '--- diff stat ---'\ngit diff --stat"
+  },
+  "createdAt": "2026-09-17T05:10:57.412Z"
+}
