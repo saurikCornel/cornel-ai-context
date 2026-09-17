@@ -1,0 +1,17 @@
+{
+  "id": "4d262cf8-8e28-4667-a7e5-29d9f2db777b",
+  "taskId": "916bc9cd-88fb-4b38-8399-f8c960544439",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "pads-publish-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "739687ec79598c402229dd1b1ef76589aa825b02",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:44:58.379Z"
+}
