@@ -1,0 +1,17 @@
+{
+  "id": "e6d5987c-d83b-4aea-b5d9-20b11b32a867",
+  "taskId": "60f661d1-a07b-4ecb-bc83-b0a9a43f5736",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "verify-dev-1",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
+    "output": "vitest.config.ts (1:533) \u001b[33m[UNRESOLVED_IMPORT] \u001b[0mCould not resolve 'vitest/config' in vitest.config.ts\n - Module not found, treating it as an external dependency in vitest.config.ts at 533..548\n\n\u001b[31mfailed to load config from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/60f661d1-a07b-4ecb-bc83-b0a9a43f5736/vitest.config.ts\u001b[39m\n\n\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Startup Error \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯⎯\u001b[39m\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'vitest' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/60f661d1-a07b-4ecb-bc83-b0a9a43f5736/vitest.config.ts.timestamp-1789621754143-6b18b3ed48bed.mjs\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:858:18)\n    at defaultResolve (node:internal/modules/esm/resolve:990:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:768:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:745:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:318:38)\n    at #link (node:internal/modules/esm/module_job:208:49) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\n\n\n",
+    "outputDigest": "2045371003249dbb85887871625abe4120daf36e5b947b3776f7b166df698be7",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:09:14.193Z"
+}
