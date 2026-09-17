@@ -1,0 +1,12 @@
+{
+  "id": "dbe8e33b-93e8-4c19-8b63-b1bbb3e28424",
+  "taskId": "2b4c2cf6-fd43-4b83-ad92-524d8a049095",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-3",
+    "operation": "run",
+    "command": "echo '== CameraDirector/Controller usage =='; grep -rn 'CameraDirector\\|CameraController' src --include=*.ts | grep -v '/camera/' | head -20; echo '== ParticleManager usage =='; grep -rn 'new ParticleManager\\|particles\\.\\|emit(' src/game src/main.ts --include=*.ts | head -20; echo '== клавиши/управление =='; grep -rn \"'Tab'\\|'Escape'\\|KeyR\\|Space\\|wheel\\|KeyW\\|aimStyle\\|controlScheme\" src/input src/game src/main.ts --include=*.ts | head -25; echo '== настройки качество/громкость =='; grep -rn 'quality\\|masterVolume\\|volume' src/main.ts src/game/Game.ts | head -20; echo '== миникарта/косметика/боты =='; grep -rn 'Minimap\\|cosmetics\\|BotTurnScheduler\\|MatchRewards' src/game src/main.ts --include=*.ts | head -20; echo '== файлы src/game =='; ls src/game src/input"
+  },
+  "createdAt": "2026-09-17T03:50:21.548Z"
+}
