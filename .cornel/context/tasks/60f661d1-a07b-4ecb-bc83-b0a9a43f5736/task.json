@@ -19,8 +19,9 @@
   "workspaceSyncedSha": "45e3ae615faa03ce491d158aff9684253276ee7e",
   "status": "READY",
   "createdAt": "2026-09-17T05:07:22.394Z",
-  "updatedAt": "2026-09-17T05:07:25.452Z",
+  "updatedAt": "2026-09-17T05:07:38.527Z",
   "issue": 116,
   "chatUrl": null,
-  "error": null
+  "error": null,
+  "cliActivity": "Claude CLI: Bash"
 }
