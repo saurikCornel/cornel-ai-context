@@ -17,13 +17,14 @@
   "branch": "cornel/match-rewards-xp-and-statistics-update-04dfcd",
   "baseSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "RUNNING",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-16T23:47:24.041Z",
-  "updatedAt": "2026-09-17T00:52:52.607Z",
+  "updatedAt": "2026-09-17T00:53:00.239Z",
   "issue": 79,
   "chatUrl": "cli://apple/04dfcdc3-bb27-43a2-9b96-be60053e814c",
   "error": null,
-  "cliActivity": null,
+  "cliActivity": "Apple Intelligence: думает",
   "browserError": null,
-  "statusChecks": 2
+  "statusChecks": 2,
+  "currentHead": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6"
 }
