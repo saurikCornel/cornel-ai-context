@@ -3,7 +3,7 @@
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
   "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
   "status": "RUNNING",
-  "summary": "Опубликовано: новый head `9191bea`. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"9191bea9f7fc6673403115c591c29f9a9d0a3bb7\",\"message\":\"README and audio placeholder assets. Added README.md (pitch, Node 20+ requirements, install/dev/build/typecheck/test commands, src/ structure table for all 17 subfolders, debug section with ?debug=1 / ?course=<id> / ?hole=<n> and F1/F2/F3 hotkeys, audio section), public/audio/README.md (folder layout sfx/ui/music/ambient, manifest shape, /audio/<category>/<id>.mp3 naming rule, no copyrighted music) and public/audio/manifest.json ({version:1, events:[...]} with 15 unique optional entries matching AudioEventDefinition: 8 sfx, 3 ui, 2 looping music, 2 looping ambient). No binaries, no code or package.json changes. Checks on head 5c3050d: manifest parsed and validated (15 unique ids, categories and urls consistent, all optional), tsc -b --pretty false passed (TYPECHECK OK). PR not needed - branch merged by the assembler.\"}\n```\n\nИтог: созданы `README.md`, `public/audio/README.md`, `public/audio/manifest.json`; изменений в `src/`, `package.json`, `AGENTS.md` нет. Проверки: валидация манифеста (15 уникальных id, корректные категории/пути/`optional`) и `tsc -b --pretty false` — обе успешны, затем publish (`9191bea`). Промежуточные отказы `run`/`publish` были расхождением head с GitHub из-за параллельных пушей офиса; после повтора команда прошла на том же SHA. Следующий шаг — слияние ветки сборщиком.\n\n",
+  "summary": "Нужна проверка на опубликованном коммите — прогоняю её на `9191bea`.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"check-7\",\"operation\":\"run\",\"headSha\":\"9191bea9f7fc6673403115c591c29f9a9d0a3bb7\",\"timeoutSeconds\":600,\"command\":\"set -e\\ngit rev-parse HEAD\\nnode -e \\\"const m=require('./public/audio/manifest.json');const ids=m.events.map(e=>e.id);const cats=new Set(['music','sfx','ui','ambient']);if(m.version!==1)throw new Error('version');if(ids.length!==15)throw new Error('expected 15 events, got '+ids.length);if(new Set(ids).size!==15)throw new Error('duplicate ids');for(const e of m.events){if(!cats.has(e.category))throw new Error('bad category '+e.category);if(e.url!=='/audio/'+e.category+'/'+e.id+'.mp3')throw new Error('bad url '+e.url);if(e.optional!==true)throw new Error('not optional: '+e.id);}console.log('manifest OK: '+ids.length+' unique events');\\\"\\nif [ ! -x node_modules/.bin/tsc ]; then npm install --no-audit --no-fund; fi\\nnode_modules/.bin/tsc -b --pretty false\\necho 'TYPECHECK OK'\\ngit status --short\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -79,10 +79,16 @@
     },
     {
       "commandId": "finish-1",
+      "status": "FAILED",
+      "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
+      "exitCode": null
+    },
+    {
+      "commandId": "check-7",
       "status": "STARTED",
       "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:59:59.138Z"
+  "createdAt": "2026-09-17T02:00:16.967Z"
 }
