@@ -1,0 +1,17 @@
+{
+  "id": "f0fc2fcf-731c-465e-b5ed-862c7b55d4d0",
+  "taskId": "374701a2-c808-4317-9213-cb863516c878",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "012ffb90c6c91afd0be84e73d07ce4a07a511c7a",
+    "output": "===== HEAD (office) README =====\n    55\t\n    56\tAll gameplay code lives under `src/`:\n    57\t\n    58\t| Folder | Contents |\n    59\t| --- | --- |\n    60\t| `app` | top-level game state wiring |\n    61\t| `ai` | bot planners, bot profiles, matchmaking and skill rating |\n    62\t| `assets` | asset and audio managers with graceful fallbacks |\n    63\t| `camera` | camera controller, modes, smoothing and collision avoidance |\n    64\t| `config` | tunable game configuration values |\n    65\t| `contracts` | shared types for events, math, services and zones |\n    66\t| `core` | renderer, scene manager and save manager |\n    67\t| `courses` | course builder, hole model and the course data sets |\n    68\t| `dev` | launch options, diagnostics overlay and presentation minimap |\n    69\t| `effects` | particle effects |\n    70\t| `gameplay` | match flow, turns, scoring, rating, state machine and zones |\n    71\t| `input` | keyboard, mouse and touch-ready input handling |\n    72\t| `leaderboard` | leaderboard model, generator and styles |\n    73\t| `obstacles` | rotating parts, conveyors, fans, pads, teleporters |\n    74\t| `physics` | physics world, ball physics, shot system and collision layers |\n    75\t| `player` | player profile, progression and types |\n    76\t| `ui` | HUD, overlays, scoreboard and DOM helpers |\n    77\t\n    78\t## Debug mode\n    79\t\n    80\tDebug features are enabled through URL flags (see `src/dev/LaunchOptions.ts`):\n    81\t\n    82\t| Flag | Effect |\n    83\t| --- | --- |\n    84\t| `?debug=1` | enable debug mode and the developer overlay |\n    85\t| `?course=<id>` | start directly on the given course |\n    86\t| `?hole=<n>` | start directly on the given hole number |\n    87\t\n    88\tAvailable course ids: `green-hills`, `pirate-bay`, `candy-factory`, `ancient-temple`, `arctic-base`, `volcano`, `neon-city`, `haunted-mansion`, `space-station`, `chaos-dimension`.\n    89\t\n    90\tExample: `http://localhost:5173/?debug=1&course=volcano&hole=4`\n    91\t\n    92\tHotkeys available while debug mode is active:\n    93\t\n    94\t| Key | Effect |\n    95\t| --- | --- |\n    96\t| `F1` | toggle the diagnostics overlay |\n    97\t| `F2` | toggle wireframe rendering |\n    98\t| `F3` | toggle the minimap |\n    99\t\n   100\t## Audio assets\n   101\t\n   102\t`public/audio` holds the placeholder structure for sound. No audio binaries are committed to the repository: `public/audio/manifest.json` lists every audio event the game can play, using the definition shape consumed by `src/assets/AudioManager.ts` (`id`, `url`, `category`, `volume`, `loop`, `optional`). Every entry is marked `optional`, so the AudioManager treats a missing file as a non-fatal fallback and the game simply runs silently.\n   103\t\n   104\tTo enable sound, drop `.mp3` files into `public/audio/<category>/<id>.mp3` matching the manifest entries. See `public/audio/README.md` for the folder layout and naming rules.\n",
+    "outputDigest": "ace97cf89bde56cad71d4e0418e3df34ffa93d7fef02a73bce4de6a567a5ff1f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:35:17.972Z"
+}
