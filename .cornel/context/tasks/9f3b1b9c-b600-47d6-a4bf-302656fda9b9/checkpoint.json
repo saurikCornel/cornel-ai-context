@@ -3,7 +3,7 @@
   "branch": "cornel/sliding-wall-door-i-pendulum-ne-dvigayut-9f3b1b",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Всё зелёное. Перед публикацией проверю, что в рабочей копии нет посторонних правок (на старте сессии файл уже числился изменённым).\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && git status --short && echo '--- stat ---' && git diff --stat && echo '--- moving/mover diff ---' && git diff -- src/game/HoleRuntime.ts | grep -E '^[+-]' | grep -vE '^(\\\\+\\\\+\\\\+|---)' | head -60\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Странная ошибка от обёртки worker (FETCH_HEAD). Повторю проверку упрощённой командой.\n\n```json\n{\"version\":1,\"taskId\":\"9f3b1b9c-b600-47d6-a4bf-302656fda9b9\",\"commandId\":\"check-4\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"cd \\\"$(git rev-parse --show-toplevel)\\\" && git status --short && echo '--- stat ---' && git diff --stat\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -103,10 +103,16 @@
     },
     {
       "commandId": "check-3",
+      "status": "FAILED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": null
+    },
+    {
+      "commandId": "check-4",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:28:38.781Z"
+  "createdAt": "2026-09-17T03:28:58.104Z"
 }

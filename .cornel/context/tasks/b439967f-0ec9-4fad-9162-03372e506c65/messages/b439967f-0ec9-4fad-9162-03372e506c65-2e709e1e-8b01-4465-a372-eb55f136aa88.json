@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Нужна успешная проверка уже на опубликованном SHA — прогоняю тесты и сборку на `f2e7fbf`.\n\n```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"check-12\",\"operation\":\"run\",\"headSha\":\"f2e7fbf39d39e03a1fe2245632a2e7882cab0e6b\",\"command\":\"npm run typecheck && npm test 2>&1 | tail -8 && npm run build 2>&1 | tail -4\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T03:28:51.797Z"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "cab4c1c0-5faf-4a45-862b-b864ee28622c",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "check-12",
+    "headSha": "f2e7fbf39d39e03a1fe2245632a2e7882cab0e6b"
+  },
+  "createdAt": "2026-09-17T03:28:51.799Z"
+}

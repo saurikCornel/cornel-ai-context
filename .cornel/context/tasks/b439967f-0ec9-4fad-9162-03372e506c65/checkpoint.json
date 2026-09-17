@@ -3,7 +3,7 @@
   "branch": "cornel/limit-udarov-zashit-chislom-8-vmesto-max-b43996",
   "headSha": "f2e7fbf39d39e03a1fe2245632a2e7882cab0e6b",
   "status": "RUNNING",
-  "summary": "Опубликовано, новый head `f2e7fbf`. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"f2e7fbf39d39e03a1fe2245632a2e7882cab0e6b\",\"message\":\"Лимит ударов больше не зашит числом 8: бюджет лунки считается через resolveMaxShots(hole, settings).\\n\\nИзменения (коммит f2e7fbf, ветка cornel/limit-udarov-zashit-chislom-8-vmesto-max-b43996):\\n- src/game/Game.ts: удалён STROKE_LIMIT = 8; настройки матча больше не задают strokeLimitPerHole принудительно; finishTurn сравнивает strokes с resolveMaxShots(this.hole, this.match.settings).\\n- src/contracts/game.ts: MatchSettings.strokeLimitPerHole стал необязательным override (по умолчанию правило ТЗ §9 — par + 7 или maxShots лунки).\\n- src/courses/HoleBuilder.ts: HoleBuilderOptions принимает maxShots и переносит его в дескриптор лунки (валидация maxShots >= par уже есть в validateHole).\\n- src/courses/data/green-hills.ts: HoleSetup поддерживает maxShots; короткой par-2 лунке gh-01-meadow-line задан явный maxShots = 6 (par + 7 = 9 для коридора в 14 м избыточен).\\n- src/game/strokeBudget.test.ts (новый, 4 теста): par-5 лунка без maxShots даёт лимит 12 и штрафной счёт 13 (strokeLimitScore), gh-01 отдаёт 6 из данных (source 'hole'), ни одна из лунок всех 10 курсов не резолвится в плоский лимит, и прогон MatchManager на реальной par-5 лунке после 12 ударов закрывает лунку со strokes = 13 и strokeLimitReached.\\n\\nПроверки на этом же коде: npm run typecheck — ОК; npm test — 37 файлов, 243 теста пройдены; npm run build — успешно. PR не открывал, слияние ветки за сборщиком.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Нужна успешная проверка уже на опубликованном SHA — прогоняю тесты и сборку на `f2e7fbf`.\n\n```json\n{\"version\":1,\"taskId\":\"b439967f-0ec9-4fad-9162-03372e506c65\",\"commandId\":\"check-12\",\"operation\":\"run\",\"headSha\":\"f2e7fbf39d39e03a1fe2245632a2e7882cab0e6b\",\"command\":\"npm run typecheck && npm test 2>&1 | tail -8 && npm run build 2>&1 | tail -4\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -127,10 +127,16 @@
     },
     {
       "commandId": "finish-1",
+      "status": "FAILED",
+      "headSha": "f2e7fbf39d39e03a1fe2245632a2e7882cab0e6b",
+      "exitCode": null
+    },
+    {
+      "commandId": "check-12",
       "status": "STARTED",
       "headSha": "f2e7fbf39d39e03a1fe2245632a2e7882cab0e6b",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:28:35.569Z"
+  "createdAt": "2026-09-17T03:28:51.802Z"
 }

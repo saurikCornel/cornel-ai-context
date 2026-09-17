@@ -1,0 +1,12 @@
+{
+  "id": "63dfc14e-a4b7-4080-a20e-fbd19fd7de2d",
+  "taskId": "b439967f-0ec9-4fad-9162-03372e506c65",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-12",
+    "operation": "run",
+    "command": "npm run typecheck && npm test 2>&1 | tail -8 && npm run build 2>&1 | tail -4"
+  },
+  "createdAt": "2026-09-17T03:28:51.798Z"
+}
