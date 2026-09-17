@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Фактический статус: слияние не завершено, ветка на `1b05170`, worker блокирован незавершённым merge. Прошло время — проверяю, не пересоздал ли worker рабочую копию, и той же командой пробую снять состояние.\n\n```json\n{\"version\":1,\"taskId\":\"7ab11c5a-bde0-4bae-bd57-3dae6d28f826\",\"commandId\":\"probe-4\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git rev-parse --abbrev-ref HEAD; git log --oneline -1; test -f .git/MERGE_HEAD && git merge --abort; git status --short | head -5\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:56:56.577Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "13c831c9-bd6e-4ea8-abe1-97e85319fd68",
+  "taskId": "7ab11c5a-bde0-4bae-bd57-3dae6d28f826",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "probe-4",
+    "operation": "run",
+    "command": "git rev-parse --abbrev-ref HEAD; git log --oneline -1; test -f .git/MERGE_HEAD && git merge --abort; git status --short | head -5"
+  },
+  "createdAt": "2026-09-17T04:56:56.578Z"
+}
