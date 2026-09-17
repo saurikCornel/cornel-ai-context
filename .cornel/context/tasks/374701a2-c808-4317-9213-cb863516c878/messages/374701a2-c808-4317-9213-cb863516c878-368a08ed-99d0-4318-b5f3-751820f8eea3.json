@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Worker отклонил команду: `5bee874` — локальный merge-коммит, его ещё нет на GitHub. Публикую слияние, чтобы получить реальный SHA ветки, а затем прогоню проверки на нём.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"012ffb90c6c91afd0be84e73d07ce4a07a511c7a\",\"message\":\"Merge «README описывает функциональность, которой нет в сборке»: разрешён конфликт README.md\\n\\nСохранена переработка README из ветки c8ba46 (разделы Current state, точная\\nтаблица модулей, реальные debug-флаги, Known gaps, audio). Секция Test взята со\\nстороны cornel/office: весь набор тестов уже унифицирован на Vitest и есть\\nскрипт npm test, поэтому описание двух раннеров, node:test и нерабочего\\ntests/save-manager.test.mjs устарело. Из Known gaps убран пункт про отсутствие\\nагрегирующего тестового скрипта.\"}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:40:13.403Z"
+}
