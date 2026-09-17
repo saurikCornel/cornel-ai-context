@@ -1,0 +1,12 @@
+{
+  "id": "bd409906-0dff-4e9b-9927-2d1f36efb3a9",
+  "taskId": "3ebdee96-ca1d-4207-a9d8-2d3c778322d6",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-4",
+    "operation": "run",
+    "command": "npx vite --port 5199 > /tmp/cpa-dev.log 2>&1 & DEV=$!; sleep 6; echo '--- HTTP ---'; curl -s -o /dev/null -w 'index=%{http_code}\\n' http://localhost:5199/; curl -s -o /dev/null -w 'main=%{http_code}\\n' http://localhost:5199/src/main.ts; curl -s http://localhost:5199/src/game/Game.ts | head -3; kill $DEV 2>/dev/null; echo '--- DEV LOG ---'; tail -6 /tmp/cpa-dev.log; echo '--- README test section ---'; grep -n -A8 -i '^## *Test\\|npm test' README.md | head -30"
+  },
+  "createdAt": "2026-09-17T03:05:22.775Z"
+}

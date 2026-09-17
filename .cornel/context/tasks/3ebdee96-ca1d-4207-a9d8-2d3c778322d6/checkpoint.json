@@ -3,7 +3,7 @@
   "branch": "cornel/proverka-ty-senior-game-developer-gamepl-3ebdee",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Тесты (239), typecheck и build зелёные; бандл вырос до 3 МБ / 67 модулей — похоже, сборка теперь подтягивает геймплей. Проверяю, что реально попало в бандл и как связан entry point.\n\n```json\n{\"version\":1,\"taskId\":\"3ebdee96-ca1d-4207-a9d8-2d3c778322d6\",\"commandId\":\"check-3\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"B=$(ls dist/assets/index-*.js | head -1); echo \\\"BUNDLE=$B\\\"; for s in rapier RAPIER green-hills pirate-bay candy-factory ancient-temple arctic-base volcano neon-city haunted-mansion space-station chaos-dimension MatchManager TurnManager HoleSystem ScoreManager RatingSystem CameraController HoleSceneBuilder BotPlanner BotTurnScheduler Minimap MatchRewards maxShots teleporter conveyor lava powerMeter; do printf '%-20s %s\\\\n' \\\"$s\\\" \\\"$(grep -o \\\"$s\\\" \\\"$B\\\" | wc -l | tr -d ' ')\\\"; done; echo '--- SRC TREE ---'; find src -name '*.ts' -not -name '*.test.ts' | sort | head -120; echo '--- COUNTS ---'; find src -name '*.ts' -not -name '*.test.ts' | wc -l; find src -name '*.test.ts' | wc -l; echo '--- TESTS DIR ---'; ls tests 2>/dev/null\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Проверяю запуск dev-сервера как пользователь и актуальность README.\n\n```json\n{\"version\":1,\"taskId\":\"3ebdee96-ca1d-4207-a9d8-2d3c778322d6\",\"commandId\":\"check-4\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"command\":\"npx vite --port 5199 > /tmp/cpa-dev.log 2>&1 & DEV=$!; sleep 6; echo '--- HTTP ---'; curl -s -o /dev/null -w 'index=%{http_code}\\\\n' http://localhost:5199/; curl -s -o /dev/null -w 'main=%{http_code}\\\\n' http://localhost:5199/src/main.ts; curl -s http://localhost:5199/src/game/Game.ts | head -3; kill $DEV 2>/dev/null; echo '--- DEV LOG ---'; tail -6 /tmp/cpa-dev.log; echo '--- README test section ---'; grep -n -A8 -i '^## *Test\\\\|npm test' README.md | head -30\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "check-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "check-3",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-4",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:02:03.182Z"
+  "createdAt": "2026-09-17T03:05:22.793Z"
 }
