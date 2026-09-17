@@ -1,0 +1,17 @@
+{
+  "id": "93414e30-1be4-4ce4-87e7-172b26f47cd5",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "patch-validation-test",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "validation test patched\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/43c7c329-b516-4138-aff1-6143c3895c5b\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/course-data-validation.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 44\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 05:46:42\n\u001b[2m   Duration \u001b[22m 359ms\u001b[2m (transform 67%, tests 17%, import 15%, worker 2%)\u001b[22m\n\n",
+    "outputDigest": "d4bad214517a1c39047eb6d1f0fc8a33ea2cc75a118a344bfbb15370946fb3c5",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:46:43.232Z"
+}
