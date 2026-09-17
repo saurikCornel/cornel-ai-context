@@ -1,0 +1,17 @@
+{
+  "id": "67176259-84e2-40bc-a33a-7b685489cfd3",
+  "taskId": "3ebdee96-ca1d-4207-a9d8-2d3c778322d6",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-4",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "--- HTTP ---\nindex=200\nmain=200\n<!doctype html>\n<html lang=\"ru\">\n  <head>\n--- DEV LOG ---\n\n  \u001b[32m\u001b[1mVITE\u001b[22m v7.3.6\u001b[39m  \u001b[2mready in \u001b[0m\u001b[1m177\u001b[22m\u001b[2m\u001b[0m ms\u001b[22m\n\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m5199\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mNetwork\u001b[22m: \u001b[36mhttp://192.168.2.187:\u001b[1m5199\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mNetwork\u001b[22m: \u001b[36mhttp://192.168.139.3:\u001b[1m5199\u001b[22m/\u001b[39m\n--- README test section ---\n65:## Test\n66-\n67-```bash\n68:npm test\n69-```\n70-\n71:`npm test` runs the whole Vitest suite: the colocated unit tests under `src/**` and the\n72-cross-module integration tests under `tests/**` (`course-data-validation` checks 10 courses x 9\n73-holes; the rest cover physics helpers, the leaderboard and the save manager). Focused subsets:\n74-\n75-```bash\n76-npm run test:ui      # UI layer (src/ui)\n77-npm run test:input   # input and developer tools (src/input, src/dev)\n78-npm run test:camera  # camera system (src/camera)\n79-npm run test:watch   # re-run affected tests on change\n",
+    "outputDigest": "0ca8c531efa3b1f50bfed4e3d110c9db55336f47a60d1406a03140bc9cf3439d",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:05:31.011Z"
+}
