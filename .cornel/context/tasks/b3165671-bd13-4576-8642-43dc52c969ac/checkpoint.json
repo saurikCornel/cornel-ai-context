@@ -3,7 +3,7 @@
   "branch": "cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Зависимости не установлены — ставлю их.\n\n```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"check-install\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"timeoutSeconds\":600,\"command\":\"npm install --no-audit --no-fund 2>&1 | tail -5 && npm run typecheck\"}\n```\n\nОжидаю worker.\n\n",
+  "summary": "Типизация чистая. Запускаю новые тесты.\n\n```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"check-tests-1\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/effects src/assets src/game/feedback.test.ts 2>&1 | tail -40\"}\n```\n\nОжидаю worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -211,10 +211,16 @@
     },
     {
       "commandId": "check-install",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-tests-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:39:55.589Z"
+  "createdAt": "2026-09-17T03:40:13.893Z"
 }
