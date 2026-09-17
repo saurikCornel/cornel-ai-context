@@ -1,0 +1,12 @@
+{
+  "id": "a388a5c9-8a53-44ac-bf8a-fea4b7262db0",
+  "taskId": "3ebdee96-ca1d-4207-a9d8-2d3c778322d6",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-2",
+    "operation": "run",
+    "command": "npm install 2>&1 | tail -5; echo '--- TEST ---'; npx vitest run 2>&1 | tail -45; echo \"TEST_EXIT=${PIPESTATUS[0]}\"; echo '--- TYPECHECK ---'; npm run typecheck 2>&1 | tail -20; echo \"TC_EXIT=$?\"; echo '--- BUILD ---'; npm run build 2>&1 | tail -25; echo \"BUILD_EXIT=$?\""
+  },
+  "createdAt": "2026-09-17T03:01:30.956Z"
+}
