@@ -3,7 +3,7 @@
   "branch": "cornel/in-game-minimap-projection-and-renderer-d905f6",
   "headSha": "bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da",
   "status": "RUNNING",
-  "summary": "Опубликовано, новый head `bc9831b`. Перед finish прогоняю проверки на этом же SHA:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-11\",\"operation\":\"run\",\"headSha\":\"bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da\",\"timeoutSeconds\":600,\"command\":\"npx vitest run src/ui/minimap.test.ts && npx tsc -b --pretty false && git status --short && git log --oneline -1\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** коммит с `src/ui/Minimap.ts` и `src/ui/minimap.test.ts` опубликован в ветке (`bc9831b`). Повторяю vitest + tsc на опубликованном SHA, как требует finish; затем отправлю finish с итогом.\n\n",
+  "summary": "Проверки на опубликованном `bc9831b` прошли: vitest 6/6, `tsc -b --pretty false` без ошибок (цепочка `&&` дошла до `git log`), рабочее дерево чистое. Завершаю карточку:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-12\",\"operation\":\"finish\",\"headSha\":\"bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da\",\"message\":\"In-game minimap projection and renderer. Добавлены только два файла: src/ui/Minimap.ts (MinimapModel, чистая функция buildMinimapModel(hole, ballPosition?) и виджет-класс Minimap) и src/ui/minimap.test.ts (6 тестов, @vitest-environment jsdom). buildMinimapModel: bounds берутся из hole.bounds по x/z с паддингом 5% и ненулевым спаном для вырожденных границ; точки — spawn (#8fd6ff, START), cup (#ffd166, HOLE), по точке на каждое препятствие (water/void/reset-zone #ff6b6b, spinner/windmill/gate/platform #c084fc, остальные #64748b), мяч (#ffffff, radius 5) добавляется последним и только при переданной позиции. Minimap: div.cpa-minimap с canvas 200x140, render() проецирует world x/z в пиксели с осью z вверх, пропускает отрисовку при getContext('2d') === null (jsdom) и не бросает исключений; setVisible/visible переключают видимость. Импорты типов только через import type (verbatimModuleSyntax); src/ui/index.ts, src/ui/ui.css и src/dev не затронуты. Проверки на опубликованном bc9831b: npx vitest run src/ui/minimap.test.ts — 6/6 passed; npx tsc -b --pretty false — без ошибок; git status чистый. PR не открывался: слияние ветки выполнит сборщик.\"}\n```\n\nЖду подтверждения finish от worker в этом чате.\n\n**Сводка:** решения — чистая проекция лунки отделена от рендера, типы `MinimapBounds`/`MinimapPoint` переиспользованы из `src/dev/PresentationMinimap.ts` как type-only импорт, canvas-контекст берётся лениво с защитой от `null` под jsdom. Изменённые файлы: `src/ui/Minimap.ts`, `src/ui/minimap.test.ts` (коммит `bc9831b`). Проверки: vitest 6/6 и `tsc -b` — оба на опубликованном SHA. Попутно: `npm ci` пришлось выполнить (в worktree не было `node_modules`), а несколько отказов «ветка изменилась» были гонкой со слияниями ветки офиса — `git ls-remote` подтвердил, что ветка не менялась. Следующий шаг — подключение виджета к HUD/настройкам в волне сведения экспортов и `Game.ts`.\n\n",
   "commands": [
     {
       "commandId": "minimap-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "minimap-11",
+      "status": "SUCCEEDED",
+      "headSha": "bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da",
+      "exitCode": 0
+    },
+    {
+      "commandId": "minimap-12",
       "status": "STARTED",
       "headSha": "bc9831b7a049cddb4d0e55c0f30e57c1f8bd97da",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:58:23.357Z"
+  "createdAt": "2026-09-17T01:58:54.941Z"
 }
