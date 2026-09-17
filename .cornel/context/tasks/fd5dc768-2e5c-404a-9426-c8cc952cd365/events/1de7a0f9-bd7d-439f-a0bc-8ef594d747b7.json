@@ -1,0 +1,17 @@
+{
+  "id": "1de7a0f9-bd7d-439f-a0bc-8ef594d747b7",
+  "taskId": "fd5dc768-2e5c-404a-9426-c8cc952cd365",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "impl-1b",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+    "output": "ok\n",
+    "outputDigest": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T03:21:29.398Z"
+}
