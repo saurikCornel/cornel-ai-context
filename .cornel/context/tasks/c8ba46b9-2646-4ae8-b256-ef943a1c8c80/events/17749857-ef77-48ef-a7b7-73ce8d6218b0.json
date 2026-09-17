@@ -1,0 +1,12 @@
+{
+  "id": "17749857-ef77-48ef-a7b7-73ce8d6218b0",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "readme-verify-1",
+    "operation": "run",
+    "command": "npm run typecheck > /tmp/i.log 2>&1; echo \"typecheck_exit=$?\"; npm run build > /tmp/j.log 2>&1; echo \"build_exit=$?\"; rm -rf dist; node --test tests/leaderboard-generator.test.ts tests/leaderboard-render.test.ts > /tmp/k.log 2>&1; echo \"nodetest_exit=$?\"; head -3 README.md; git log --oneline -1; git status --short"
+  },
+  "createdAt": "2026-09-17T02:26:22.943Z"
+}

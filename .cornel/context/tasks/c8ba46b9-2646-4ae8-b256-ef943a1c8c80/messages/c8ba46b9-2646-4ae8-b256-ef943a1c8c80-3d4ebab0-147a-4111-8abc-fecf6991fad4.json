@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Опубликовано, новый head `87e05bb`. Прогоняю контрольную проверку на этом SHA перед finish.\n\n```json\n{\"version\":1,\"taskId\":\"c8ba46b9-2646-4ae8-b256-ef943a1c8c80\",\"commandId\":\"readme-verify-1\",\"operation\":\"run\",\"headSha\":\"87e05bb601a988545be09272d01c792629279b49\",\"command\":\"npm run typecheck > /tmp/i.log 2>&1; echo \\\"typecheck_exit=$?\\\"; npm run build > /tmp/j.log 2>&1; echo \\\"build_exit=$?\\\"; rm -rf dist; node --test tests/leaderboard-generator.test.ts tests/leaderboard-render.test.ts > /tmp/k.log 2>&1; echo \\\"nodetest_exit=$?\\\"; head -3 README.md; git log --oneline -1; git status --short\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker — он придёт отдельным сообщением в этот чат.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:26:22.942Z"
+}
