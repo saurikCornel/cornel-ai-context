@@ -1,0 +1,12 @@
+{
+  "id": "575caa2a-474e-4ae0-8b91-fabd561399de",
+  "taskId": "bb10e70d-fd00-4b90-ac80-a219928d212f",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "movers-verify-4",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-17T01:48:01.932Z"
+}

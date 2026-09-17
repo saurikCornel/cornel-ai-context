@@ -1,0 +1,11 @@
+{
+  "id": "dc6befbb-1bb6-43c3-9c3f-2dfa52f95c45",
+  "taskId": "4655654b-e3f6-46d0-9b2d-36b72995ba6f",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "write-cosmetics-3",
+    "headSha": "0ff1b57531671012649ac69fb36983eaa39e6389"
+  },
+  "createdAt": "2026-09-17T01:47:59.198Z"
+}
