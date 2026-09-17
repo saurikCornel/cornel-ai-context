@@ -2,15 +2,15 @@
   "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
   "branch": "cornel/three-js-hole-scene-builder-572850",
   "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "RUNNING",
-  "summary": "Дата и время: 2025-02-01 10:00:00.000Z. Программа запущена. Проверка наличия необходимых файлов и папк.\n\n```json\n{\"commandId\":\"apple-32420d36\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"operation\":\"read\",\"paths\":[\"src/core/HoleSceneBuilder.ts\",\"src/core/holeScene.test.ts\"],\"taskId\":\"572850fb-106b-45be-9bee-53c1a092494d\",\"version\":1}\n```\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Проверка файлов не удалась. Попробуйте еще раз.\n\n",
   "commands": [
     {
       "commandId": "apple-32420d36",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-      "exitCode": null
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-17T00:05:42.647Z"
+  "createdAt": "2026-09-17T00:34:55.218Z"
 }
