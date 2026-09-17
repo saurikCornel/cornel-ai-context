@@ -1,0 +1,17 @@
+{
+  "id": "14cee34c-b145-4b99-9fe1-af5fa098fd43",
+  "taskId": "572850fb-106b-45be-9bee-53c1a092494d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "134b4974883323edd586d7187b760ec316e66030",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/572850fb-106b-45be-9bee-53c1a092494d\u001b[39m\n\n \u001b[32m✓\u001b[39m src/core/holeScene.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 19\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n\u001b[2m   Start at \u001b[22m 04:54:50\n\u001b[2m   Duration \u001b[22m 898ms\u001b[2m (import 61%, transform 33%, tests 4%, worker 2%)\u001b[22m\n\n",
+    "outputDigest": "8df6d0ba79cbf8077f7ffb033fa00208f8c79df96b18725679b19ba5d57b4447",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T01:54:56.255Z"
+}
