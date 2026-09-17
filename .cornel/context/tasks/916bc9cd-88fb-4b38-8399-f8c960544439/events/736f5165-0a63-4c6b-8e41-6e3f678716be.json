@@ -1,0 +1,11 @@
+{
+  "id": "736f5165-0a63-4c6b-8e41-6e3f678716be",
+  "taskId": "916bc9cd-88fb-4b38-8399-f8c960544439",
+  "type": "CLI_TURN",
+  "text": "Apple Intelligence ответил",
+  "detail": {
+    "agent": "apple",
+    "model": ""
+  },
+  "createdAt": "2026-09-17T00:35:56.717Z"
+}
