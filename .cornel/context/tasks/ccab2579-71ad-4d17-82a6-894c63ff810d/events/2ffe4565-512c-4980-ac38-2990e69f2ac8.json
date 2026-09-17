@@ -1,0 +1,12 @@
+{
+  "id": "2ffe4565-512c-4980-ac38-2990e69f2ac8",
+  "taskId": "ccab2579-71ad-4d17-82a6-894c63ff810d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-1",
+    "operation": "run",
+    "command": "git status --short; npm test > /tmp/vitest-verify.log 2>&1; echo \"---TEST_EXIT=$?---\"; grep -E 'Test Files|Tests ' /tmp/vitest-verify.log; npm run typecheck 2>&1 | tail -5; echo \"---TYPECHECK_EXIT=${PIPESTATUS[0]}---\""
+  },
+  "createdAt": "2026-09-17T02:20:03.884Z"
+}

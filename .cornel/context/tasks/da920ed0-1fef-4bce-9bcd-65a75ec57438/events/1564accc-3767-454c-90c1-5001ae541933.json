@@ -1,0 +1,17 @@
+{
+  "id": "1564accc-3767-454c-90c1-5001ae541933",
+  "taskId": "da920ed0-1fef-4bce-9bcd-65a75ec57438",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "34b3fa120b9811e220f53f4a9df189d8154e1ef6",
+    "output": "\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/da920ed0-1fef-4bce-9bcd-65a75ec57438\u001b[39m\n\n \u001b[32m✓\u001b[39m src/gameplay/rewards.test.ts \u001b[2m(\u001b[22m\u001b[2m11 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/gameplay/gameplay.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/gameplay/strokeLimit.test.ts \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/gameplay/zones/zones.test.ts \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/course-data-validation.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 70\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m33 passed\u001b[39m\u001b[22m\u001b[90m (33)\u001b[39m\n\u001b[2m   Start at \u001b[22m 05:19:56\n\u001b[2m   Duration \u001b[22m 486ms\u001b[2m (transform 75%, import 13%, tests 10%, worker 3%)\u001b[22m\n\n",
+    "outputDigest": "95da502ac5cb2de4d06b37990ca8eb67ba0d037e8fc8ae098c89070b68aebe81",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:19:57.416Z"
+}

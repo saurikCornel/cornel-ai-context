@@ -1,0 +1,17 @@
+{
+  "id": "41e4b22a-ec81-4e3b-a854-40c28c14a734",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "HoleRuntime written\n     275 src/game/HoleRuntime.ts\n",
+    "outputDigest": "9aaa318b3a905b17bddf3853cd97946d8dcf25894846b3256174d941e5b9f368",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:20:07.672Z"
+}
