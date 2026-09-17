@@ -1,0 +1,11 @@
+{
+  "id": "3cb62a63-4e5a-49ed-be72-dc91187b868c",
+  "taskId": "b3165671-bd13-4576-8642-43dc52c969ac",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "publish-1",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-17T03:40:57.489Z"
+}

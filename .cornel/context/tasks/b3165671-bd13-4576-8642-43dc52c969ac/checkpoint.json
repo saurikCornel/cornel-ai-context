@@ -3,7 +3,7 @@
   "branch": "cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656",
   "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
   "status": "RUNNING",
-  "summary": "Все 28 тестов прошли. Полный прогон и сборка.\n\n```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"check-full\",\"operation\":\"run\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"timeoutSeconds\":600,\"command\":\"npm test 2>&1 | grep -Ev 'Not implemented|deprecated parameters' | tail -35 && npm run build 2>&1 | tail -12\"}\n```\n\nОжидаю worker.\n\n",
+  "summary": "Все проверки зелёные: `npm test` — 39 файлов / 258 тестов, `npm run build` собрался, `npm run typecheck` чистый. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"b3165671-bd13-4576-8642-43dc52c969ac\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"e0a720a0b8185824d35e09937c677a9ed3d5752e\",\"message\":\"feat(feedback): particles and audio for putts, bounces, hazards and the cup\\n\\n- new FeedbackSystem binds ParticleManager and AudioManager to gameplay beats\\n- Game emits shot/bounce/hazard/holed feedback; cup burst matches the ball colour\\n- new QualitySettings maps menu presets onto pixel ratio, shadows and particle budget\\n- main.ts runs on core/Renderer (context-loss recovery) and forwards quality/volume\\n- audio manifest loader registers public/audio/manifest.json on the mixer\"}\n```\n\nОжидаю worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -223,10 +223,16 @@
     },
     {
       "commandId": "check-full",
+      "status": "SUCCEEDED",
+      "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
+      "exitCode": 0
+    },
+    {
+      "commandId": "publish-1",
       "status": "STARTED",
       "headSha": "e0a720a0b8185824d35e09937c677a9ed3d5752e",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:40:31.916Z"
+  "createdAt": "2026-09-17T03:40:57.493Z"
 }
