@@ -3,7 +3,7 @@
   "branch": "cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8",
   "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
   "status": "RUNNING",
-  "summary": "Зависимости не установлены — ставлю и запускаю проверку типов.\n\n```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"check-install\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"npm install --no-audit --no-fund 2>&1 | tail -5 && npm run typecheck 2>&1 | tail -60\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Типы проходят. Теперь сборка и проверка артефактов (rapier + id курсов в бандле) плюс существующие тесты.\n\n```json\n{\"version\":1,\"taskId\":\"a57de8fc-e7bd-4422-b085-c9430d302af3\",\"commandId\":\"check-build\",\"operation\":\"run\",\"headSha\":\"39e05ff6bd2ffe0fb005bb3ce122a544423e3034\",\"timeoutSeconds\":600,\"command\":\"rm -rf dist && npm run build 2>&1 | tail -20 && echo '--- grep rapier ---' && grep -ilc rapier dist/assets/*.js | head -5 && echo '--- course ids ---' && for id in green-hills neon-city chaos-dimension volcano space-station; do printf '%s: ' \\\"$id\\\"; grep -o \\\"$id\\\" dist/assets/*.js | wc -l; done && echo '--- wasm/init ---' && grep -o 'rapier_wasm3d' dist/assets/*.js | head -2 && ls -lh dist/assets | head\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "check-install",
+      "status": "SUCCEEDED",
+      "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-build",
       "status": "STARTED",
       "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T02:32:41.936Z"
+  "createdAt": "2026-09-17T02:34:00.986Z"
 }

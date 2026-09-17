@@ -1,0 +1,12 @@
+{
+  "id": "f66a731f-a0a8-44b6-8add-e6d8153c3b6c",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-build",
+    "operation": "run",
+    "command": "rm -rf dist && npm run build 2>&1 | tail -20 && echo '--- grep rapier ---' && grep -ilc rapier dist/assets/*.js | head -5 && echo '--- course ids ---' && for id in green-hills neon-city chaos-dimension volcano space-station; do printf '%s: ' \"$id\"; grep -o \"$id\" dist/assets/*.js | wc -l; done && echo '--- wasm/init ---' && grep -o 'rapier_wasm3d' dist/assets/*.js | head -2 && ls -lh dist/assets | head"
+  },
+  "createdAt": "2026-09-17T02:34:00.983Z"
+}
