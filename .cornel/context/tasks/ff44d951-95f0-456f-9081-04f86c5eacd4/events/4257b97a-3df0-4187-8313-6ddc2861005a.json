@@ -1,0 +1,12 @@
+{
+  "id": "4257b97a-3df0-4187-8313-6ddc2861005a",
+  "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "resolve-1",
+    "operation": "run",
+    "command": "python3 - <<'PY'\nimport re\np='src/game/Game.ts'\ns=open(p,encoding='utf-8').read()\npat=re.compile(r'<<<<<<< HEAD\\n(.*?)\\n=======\\n(.*?)\\n>>>>>>> [0-9a-f]+\\n', re.S)\nblocks=pat.findall(s)\nassert len(blocks)==2, len(blocks)\nres1=\"\"\"    const impact = { ...this.ball.position };\n    const safe = this.holeSystem.getLastSafePosition(playerId, this.hole.spawn);\n    const resolution = this.runtime?.resolveHazard(hazard, safe) ?? { resetPosition: safe, penaltyStrokes: 1 };\n    this.ball.reset(resolution.resetPosition);\n    this.runtime?.resetObstacles();\n    this.effects.hazard(impact, hazard?.type ?? 'void');\n    this.previousVelocity = undefined;\n\"\"\"\nres2=blocks[1][0]+'\\n  }\\n\\n'+blocks[1][1]+'\\n'\nit=iter([res1,res2])\ns=pat.sub(lambda m: next(it), s)\nopen(p,'w',encoding='utf-8').write(s)\nPY\ngrep -c '<<<<<<<\\|>>>>>>>' src/game/Game.ts; sed -n '500,535p;570,615p' src/game/Game.ts"
+  },
+  "createdAt": "2026-09-17T03:44:42.508Z"
+}
