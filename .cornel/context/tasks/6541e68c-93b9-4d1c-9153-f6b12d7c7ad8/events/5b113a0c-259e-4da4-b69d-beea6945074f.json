@@ -1,0 +1,12 @@
+{
+  "id": "5b113a0c-259e-4da4-b69d-beea6945074f",
+  "taskId": "6541e68c-93b9-4d1c-9153-f6b12d7c7ad8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "fix-2",
+    "operation": "run",
+    "command": "python3 - <<'PY'\nimport io,sys\npath='tests/course-data-validation.test.ts'\nold=\"const courses = Object.entries(courseModules)\\n  .map(([path, module]) => {\"\nnew=(\"/** Modules in the data folder that ship shared layout primitives instead of a course. */\\n\"\n     \"const HELPER_MODULES = new Set(['layoutKit.ts']);\\n\\n\"\n     \"const courses = Object.entries(courseModules)\\n\"\n     \"  .filter(([path]) => !HELPER_MODULES.has(path.slice(path.lastIndexOf('/') + 1)))\\n\"\n     \"  .map(([path, module]) => {\")\nsrc=io.open(path,encoding='utf-8').read()\nif src.count(old)!=1: sys.exit('anchor not unique')\nio.open(path,'w',encoding='utf-8').write(src.replace(old,new))\nprint('patched',path)\nPY\necho '--- typecheck ---'; npm run typecheck 2>&1 | tail -15; echo '--- test ---'; npm test 2>&1 | tail -30"
+  },
+  "createdAt": "2026-09-17T02:56:59.824Z"
+}
