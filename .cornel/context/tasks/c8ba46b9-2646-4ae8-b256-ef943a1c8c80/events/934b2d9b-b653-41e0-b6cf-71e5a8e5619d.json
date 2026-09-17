@@ -1,0 +1,11 @@
+{
+  "id": "934b2d9b-b653-41e0-b6cf-71e5a8e5619d",
+  "taskId": "c8ba46b9-2646-4ae8-b256-ef943a1c8c80",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "readme-publish-1",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-17T02:24:49.061Z"
+}
