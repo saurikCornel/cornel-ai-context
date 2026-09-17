@@ -1,0 +1,17 @@
+{
+  "id": "c71bc98e-5cd0-4f39-be73-3f0b02b80a03",
+  "taskId": "ec21af8f-3abf-421d-beca-d8165a1753fc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "97f1a5bbe8008a2f368fc6804b948670d7c97716",
+    "output": "--- tsc ---\ntsc exit=0\n--- vitest src/ui ---\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.1 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/ec21af8f-3abf-421d-beca-d8165a1753fc\u001b[39m\n\nNot implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package\n \u001b[32m✓\u001b[39m src/ui/minimap.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/ui.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 27\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/courseSelect.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 30\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m src/ui/leaderboard.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 77\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m18 passed\u001b[39m\u001b[22m\u001b[90m (18)\u001b[39m\n\u001b[2m   Start at \u001b[22m 08:12:36\n\u001b[2m   Duration \u001b[22m 795ms\u001b[2m (environment 78%, transform 13%, tests 6%, import 3%)\u001b[22m\n\nvitest exit=0\n--- log ---\n97f1a5b Переформатировать минифицированный src/ui/index.ts в читаемый многострочный TypeScript\n97f1a5b Переформатировать минифицированный src/ui/index.ts в читаемый многострочный TypeScript\n src/ui/index.ts | 217 ++++++++++++++++++++++++++++++++++++++++++++++++++------\n 1 file changed, 195 insertions(+), 22 deletions(-)\n",
+    "outputDigest": "7429ed6baee20e3ac95a32668e6feb16a91ccb507649372b880a0e28ec0f630c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T05:12:37.209Z"
+}
