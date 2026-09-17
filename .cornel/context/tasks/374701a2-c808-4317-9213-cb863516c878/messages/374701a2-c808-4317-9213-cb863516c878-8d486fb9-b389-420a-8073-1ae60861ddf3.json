@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Обе попытки отклонены — значит голова ветки на GitHub отличается от обоих известных мне SHA. Пробую через поле `heads` со списком кандидатов, чтобы worker сам сопоставил актуальную голову и показал состояние.\n\n```json\n{\"version\":1,\"taskId\":\"374701a2-c808-4317-9213-cb863516c878\",\"commandId\":\"probe-1\",\"operation\":\"run\",\"heads\":[\"5bee874feebe6ea883dda565c03401ad1d7b95bc\",\"012ffb90c6c91afd0be84e73d07ce4a07a511c7a\"],\"command\":\"git rev-parse HEAD && git status --short --branch && git log --oneline -5 && echo '--- remote ---' && git ls-remote origin cornel/slit-readme-opisyvaet-funkcionalnost-kot-374701\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T02:40:50.441Z"
+}

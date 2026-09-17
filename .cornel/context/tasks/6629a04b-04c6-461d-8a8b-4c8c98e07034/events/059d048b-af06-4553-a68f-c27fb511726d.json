@@ -1,0 +1,17 @@
+{
+  "id": "059d048b-af06-4553-a68f-c27fb511726d",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "chk-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯\u001b[22m\u001b[39m\n\n\u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m tests/save-manager.test.mjs\u001b[2m [ tests/save-manager.test.mjs ]\u001b[22m\n\u001b[31m\u001b[1mError\u001b[22m: Cannot find module '../.test-build/core/SaveManager.js' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/6629a04b-04c6-461d-8a8b-4c8c98e07034/tests/save-manager.test.mjs\u001b[39m\n\u001b[36m \u001b[2m❯\u001b[22m tests/save-manager.test.mjs:\u001b[2m3:1\u001b[22m\u001b[39m\n    \u001b[90m  1|\u001b[39m import assert from 'node:assert/strict';\n    \u001b[90m  2|\u001b[39m import test from 'node:test';\n    \u001b[90m  3|\u001b[39m import { DEFAULT_SAVE_KEY, SaveManager, migrateSave } from '../.test-b…\n    \u001b[90m   |\u001b[39m \u001b[31m^\u001b[39m\n    \u001b[90m  4|\u001b[39m import { createDefaultProfile } from '../.test-build/player/profile.js…\n    \u001b[90m  5|\u001b[39m import { MAX_PLAYER_LEVEL, MAX_PLAYER_XP, levelForXp, xpForLevel } fro…\n\n\u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯\u001b[22m\u001b[39m\n\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m3 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m27 passed\u001b[39m\u001b[22m\u001b[90m (30)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m175 passed\u001b[39m\u001b[22m\u001b[90m (175)\u001b[39m\n\u001b[2m   Start at \u001b[22m 05:40:50\n\u001b[2m   Duration \u001b[22m 1.60s\u001b[2m (environment 48%, transform 37%, import 8%, tests 5%, worker 2%)\u001b[22m\n\n\u001b[2m  Transform \u001b[22m \u001b[33mtransforming modules took 2.38s\u001b[39m\u001b[2m · 37% of tracked time, re-done on every run\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mpersist transforms across runs with \u001b[22m\u001b[33mfsModuleCache: true\u001b[39m\n\u001b[2m            \u001b[22m \u001b[2mon CI this only helps when the cache directory is persisted between runs\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mlearn more: https://vitest.dev/guide/improving-performance#caching-between-reruns\u001b[22m\n\n",
+    "outputDigest": "d59ad8a0c64ceb6987629c26f7780eab53a7daee3217ef224077b7607fd395f7",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:40:51.882Z"
+}
