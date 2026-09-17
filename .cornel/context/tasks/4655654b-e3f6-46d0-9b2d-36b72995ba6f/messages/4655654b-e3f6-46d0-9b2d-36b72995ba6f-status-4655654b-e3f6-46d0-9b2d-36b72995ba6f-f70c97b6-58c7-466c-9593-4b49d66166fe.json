@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Невозможно выполнить команду. Попробуйте еще раз.\n\n```json\n{\"commandId\":\"apple-0033d92d\",\"headSha\":\"1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6\",\"message\":\"Apply card changes: Невозможно выполнить команду. Попробуйте еще раз.\",\"operation\":\"publish\",\"taskId\":\"4655654b-e3f6-46d0-9b2d-36b72995ba6f\",\"version\":1}\n```\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:08:13.145Z"
+}

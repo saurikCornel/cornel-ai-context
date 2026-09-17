@@ -17,14 +17,14 @@
   "branch": "cornel/ball-cosmetics-catalog-and-unlocks-465565",
   "baseSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
   "workspaceSyncedSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
-  "status": "WAITING_CHATGPT",
+  "status": "RUNNING",
   "createdAt": "2026-09-16T23:47:18.290Z",
-  "updatedAt": "2026-09-17T01:07:38.991Z",
+  "updatedAt": "2026-09-17T01:08:13.155Z",
   "issue": 78,
   "chatUrl": "cli://apple/4655654b-e3f6-46d0-9b2d-36b72995ba6f",
   "error": null,
-  "cliActivity": "Apple Intelligence: retry NSError — asking for a short structured answer",
-  "browserError": "Apple Intelligence: CONTEXT Foundation Models: exceededContextWindowSize(FoundationModels.LanguageModelSession.GenerationError.Context(debugDescription: \"Content contains 4091 tokens, which exceeds the maximum allowed context size of 4096.\", underlyingErrors: [Provided 4,091 tokens, but the maximum allowed is 4,096.], ",
+  "cliActivity": null,
+  "browserError": null,
   "statusChecks": 2,
   "currentHead": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6"
 }
