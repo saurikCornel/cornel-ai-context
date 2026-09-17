@@ -1,0 +1,29 @@
+{
+  "id": "0b171c40-23da-46e8-926b-bdffbe28f898",
+  "projectId": "ae05bad4-3b73-4d16-8117-10da95324090",
+  "effort": "current",
+  "agent": "claude",
+  "attachments": [],
+  "office": {
+    "kind": "fix",
+    "role": "integrator",
+    "workerId": "integrator",
+    "cardId": "0014b0b9-d72e-4241-acf6-a4014d6fe99b",
+    "base": {
+      "": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6"
+    }
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Слить: Собрать игру: связать подсистемы в играбельный цикл",
+  "prompt": "Ты — Сборщик, сборщик AI-офиса проекта «fun-golf». \n\nВетка cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8 (карточка «Собрать игру: связать подсистемы в играбельный цикл») не сливается в ветку офиса cornel/office: конфликт в файлах src/main.ts, vitest.config.ts.\n\nТвоя ветка создана от текущей головы cornel/office. Через worker выполни: git fetch origin cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8 && git merge --no-edit FETCH_HEAD (конфликт ожидаем), затем разреши конфликты в файлах так, чтобы сохранить смысл обеих сторон (читай обе версии, не выбрасывай чужую работу), сними маркеры конфликтов, заверши слияние (git add -A && git commit --no-edit), прогони проверки проекта (тесты, сборка, линтер). Затем publish и finish с описанием, как разрешены конфликты. Если конфликт содержательный и требует решения владельца, напиши CORNEL_AI_BLOCKED и опиши варианты.",
+  "branch": "cornel/slit-sobrat-igru-svyazat-podsistemy-v-ig-0b171c",
+  "baseSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+  "workspaceSyncedSha": "fe890d7c4a1756f69b9c126df7d1866e70bcd9c6",
+  "status": "READY",
+  "createdAt": "2026-09-17T02:44:00.463Z",
+  "updatedAt": "2026-09-17T02:44:03.573Z",
+  "issue": 93,
+  "chatUrl": null,
+  "error": null
+}

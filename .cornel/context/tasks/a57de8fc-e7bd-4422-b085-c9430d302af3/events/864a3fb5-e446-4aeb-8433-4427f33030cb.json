@@ -1,0 +1,13 @@
+{
+  "id": "864a3fb5-e446-4aeb-8433-4427f33030cb",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Игра собрана в играбельный цикл.\n\nНовое: src/game/Game.ts — инициализация Rapier (await RAPIER.init), построение сцены лунки через HoleSceneBuilder, шар на GolfBallPhysics, прицеливание/сила/удар, ход-за-ходом через MatchManager+TurnManager+HoleSystem, боты через planShot+BotTurnScheduler, переходы по лункам, Hud/Scoreboard/Pause/MatchResults (рейтинг Elo + XP), миникарта. src/game/HoleRuntime.ts — коллайдеры из дескрипторов (в т.ч. наклон ramp и синхронизация меша), кинематические spinner/windmill/gate/platform, зоны воды/void/reset, модель качения по материалу поверхности (согласована с моделью BotPlanner). src/game/AimController.ts — две схемы управления (hold-to-charge и drag-power). src/game/CourseRegistry.ts — 10 курсов, выбор и обрезка по числу лунок. src/game/game.css. Переписан src/main.ts: меню AppUI -> запуск матча -> общий кадровый цикл, авто-старт и диагностика при ?debug=1. Добавлен vitest.config.ts (алиас на ESM-сборку Rapier, иначе Node грузит CJS-вход).\n\nПроверки на этом SHA: npm run typecheck — чисто; npm run build — успешно, в dist/assets/index-*.js есть 'rapier'/'rapier_wasm3d' и id курсов (green-hills, pirate-bay, chaos-dimension); npx vitest run src/game src/ui src/input src/dev src/camera — 11 файлов, 73 теста пройдено. Новый src/game/game.test.ts: (1) спланированный ботом удар реально закатывается в чашку на первой лунке green-hills в реальной физике Rapier; (2) матч из одной лунки проходит от удара с клавиатуры до видимой таблицы результатов (MATCH COMPLETE, Green Hills, ходы), шар проезжает более 2 м от старта.\n\nИзвестное (не моя карточка): tests/leaderboard-*.test.ts и tests/save-manager.test.mjs падают из-за отсутствующего каталога .test-build — воспроизводится и без моего конфига. Ручная проверка в браузере (npm run dev) владельцем не выполнялась; автотест эквивалентного сценария зелёный.",
+  "detail": {
+    "commands": 18,
+    "failed": 1,
+    "headSha": "93be8f7845d4a7893e4a70e11e3a9152d55e1b6d",
+    "branch": "cornel/sobrat-igru-svyazat-podsistemy-v-igrabel-a57de8"
+  },
+  "createdAt": "2026-09-17T02:43:55.411Z"
+}

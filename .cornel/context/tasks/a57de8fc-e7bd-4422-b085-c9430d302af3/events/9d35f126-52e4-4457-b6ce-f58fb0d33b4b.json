@@ -1,0 +1,13 @@
+{
+  "id": "9d35f126-52e4-4457-b6ce-f58fb0d33b4b",
+  "taskId": "a57de8fc-e7bd-4422-b085-c9430d302af3",
+  "type": "CONFLICT",
+  "text": "Конфликт слияния: src/main.ts, vitest.config.ts",
+  "detail": {
+    "files": [
+      "src/main.ts",
+      "vitest.config.ts"
+    ]
+  },
+  "createdAt": "2026-09-17T02:43:58.124Z"
+}
