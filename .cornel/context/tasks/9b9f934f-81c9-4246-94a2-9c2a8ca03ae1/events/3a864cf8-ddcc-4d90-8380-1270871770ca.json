@@ -1,0 +1,17 @@
+{
+  "id": "3a864cf8-ddcc-4d90-8380-1270871770ca",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "merge-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+    "output": "From github.com:saurikCornel/fun-golf-cornel-ai\n * branch            cornel/u-chashki-net-flaga-i-uglubleniya-f40347 -> FETCH_HEAD\nAuto-merging src/core/HoleSceneBuilder.ts\nCONFLICT (content): Merge conflict in src/core/HoleSceneBuilder.ts\nAutomatic merge failed; fix conflicts and then commit the result.\nEXIT=1\nUU src/core/HoleSceneBuilder.ts\nM  src/core/holeScene.test.ts\nM  src/game/Game.ts\nM  src/game/HoleRuntime.ts\n",
+    "outputDigest": "95db6dd41bfd2a436b9a07bc3aefe392be5b3f97afddeef43e9f0fd12ceaa480",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:32:51.538Z"
+}

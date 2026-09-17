@@ -1,0 +1,11 @@
+{
+  "id": "4be75abe-2864-44be-a2ed-3bc4d71b9f80",
+  "taskId": "9b9f934f-81c9-4246-94a2-9c2a8ca03ae1",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "merge-1",
+    "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed"
+  },
+  "createdAt": "2026-09-17T04:32:47.459Z"
+}

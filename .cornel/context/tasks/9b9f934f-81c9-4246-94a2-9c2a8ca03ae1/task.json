@@ -20,11 +20,14 @@
   "branch": "cornel/slit-u-chashki-net-flaga-i-uglubleniya-9b9f93",
   "baseSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
   "workspaceSyncedSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T04:32:16.435Z",
-  "updatedAt": "2026-09-17T04:32:39.781Z",
+  "updatedAt": "2026-09-17T04:32:51.538Z",
   "issue": 112,
-  "chatUrl": null,
+  "chatUrl": "cli://claude/24773944-bbc4-4b66-8c98-d43fd4f4a037",
   "error": null,
-  "cliActivity": "Claude CLI: начал ход (claude-opus-5)"
+  "cliActivity": null,
+  "cliSession": "24773944-bbc4-4b66-8c98-d43fd4f4a037",
+  "browserError": null,
+  "currentHead": "f757284c9a10172deda23fc481f9234e3d7325ed"
 }
