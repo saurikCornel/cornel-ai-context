@@ -1,0 +1,12 @@
+{
+  "id": "e669746f-abd5-40fb-8bb4-1e9e40dfbc2b",
+  "taskId": "6629a04b-04c6-461d-8a8b-4c8c98e07034",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "chk-4",
+    "operation": "run",
+    "command": "npx vitest run tests/course-data-validation.test.ts 2>&1 | tail -20; echo '=== FULL SUITE FAILING FILES ==='; npx vitest run 2>&1 | grep -E '^ *(FAIL|❯|Test Files|Tests)| FAIL ' | head -20"
+  },
+  "createdAt": "2026-09-17T02:41:50.523Z"
+}
