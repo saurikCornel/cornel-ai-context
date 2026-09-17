@@ -1,0 +1,17 @@
+{
+  "id": "bdc8771c-49f7-4c26-9aae-7a3be19ddf09",
+  "taskId": "5dd3f980-b998-4c0f-8ff6-6230938b256d",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "apple-e6169b3c",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "1759b6d65283ac00ae1bbef2a2b3aa7118abbcd6",
+    "output": "\n\u001b[41m                                                                               \u001b[0m\n\u001b[41m\u001b[37m                This is not the tsc command you are looking for                \u001b[0m\n\u001b[41m                                                                               \u001b[0m\n\nTo get access to the TypeScript compiler, \u001b[34mtsc\u001b[0m, from the command line either:\n\n- Use \u001b[1mnpm install typescript\u001b[0m to first add TypeScript to your project \u001b[1mbefore\u001b[0m using npx\n- Use \u001b[1myarn\u001b[0m to avoid accidentally running code from un-installed packages\n",
+    "outputDigest": "7c15b3332e4499e079231e6358190fe040a1ade2fd0c51233afa399fbc42411f",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T00:23:32.181Z"
+}
