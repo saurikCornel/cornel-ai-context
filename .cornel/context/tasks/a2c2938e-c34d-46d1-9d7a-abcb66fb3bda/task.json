@@ -17,14 +17,14 @@
   "branch": "cornel/liderbord-nedostizhim-iz-prilozheniya-a2c293",
   "baseSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "workspaceSyncedSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
-  "status": "RUNNING",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-17T04:07:58.809Z",
-  "updatedAt": "2026-09-17T04:21:15.730Z",
+  "updatedAt": "2026-09-17T04:21:20.499Z",
   "issue": 107,
   "chatUrl": "cli://claude/0a211817-355a-4932-bb86-fbdfbbab7c7a",
   "error": null,
   "cliActivity": null,
   "cliSession": "0a211817-355a-4932-bb86-fbdfbbab7c7a",
   "browserError": null,
-  "currentHead": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68"
+  "currentHead": "1b051708839c6a0b4094c1f74261e1937e59fc27"
 }

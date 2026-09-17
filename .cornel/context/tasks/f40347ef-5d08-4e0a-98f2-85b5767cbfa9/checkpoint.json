@@ -3,7 +3,7 @@
   "branch": "cornel/u-chashki-net-flaga-i-uglubleniya-f40347",
   "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"f40347ef-5d08-4e0a-98f2-85b5767cbfa9\",\"commandId\":\"grep-4\",\"operation\":\"grep\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"pattern\":\"new HoleRuntime\",\"path\":\"src\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"f40347ef-5d08-4e0a-98f2-85b5767cbfa9\",\"commandId\":\"read-5\",\"operation\":\"read\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"paths\":[\"src/game/Game.ts:315-345\"]}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "grep-4",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-5",
       "status": "STARTED",
       "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:20:45.919Z"
+  "createdAt": "2026-09-17T04:21:27.173Z"
 }
