@@ -1,9 +1,9 @@
 {
   "taskId": "e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b",
   "branch": "cornel/readme-and-audio-placeholder-assets-e0beff",
-  "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
+  "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
   "status": "RUNNING",
-  "summary": "Проверка прошла: манифест валиден (15 уникальных событий), `tsc -b --pretty false` завершился без ошибок. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"publish-2\",\"operation\":\"publish\",\"headSha\":\"5c3050d91bd69a61cd8d614fdc716690ee24017f\",\"message\":\"docs: add README and public/audio placeholder manifest\"}\n```\n\nЖду результат worker — он придёт в этот чат отдельным сообщением.\n\n",
+  "summary": "Опубликовано: новый head `9191bea`. Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"e0beff2c-9fc9-4d8a-865d-1fc50f8c0a2b\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"9191bea9f7fc6673403115c591c29f9a9d0a3bb7\",\"message\":\"README and audio placeholder assets. Added README.md (pitch, Node 20+ requirements, install/dev/build/typecheck/test commands, src/ structure table for all 17 subfolders, debug section with ?debug=1 / ?course=<id> / ?hole=<n> and F1/F2/F3 hotkeys, audio section), public/audio/README.md (folder layout sfx/ui/music/ambient, manifest shape, /audio/<category>/<id>.mp3 naming rule, no copyrighted music) and public/audio/manifest.json ({version:1, events:[...]} with 15 unique optional entries matching AudioEventDefinition: 8 sfx, 3 ui, 2 looping music, 2 looping ambient). No binaries, no code or package.json changes. Checks on head 5c3050d: manifest parsed and validated (15 unique ids, categories and urls consistent, all optional), tsc -b --pretty false passed (TYPECHECK OK). PR not needed - branch merged by the assembler.\"}\n```\n\nИтог: созданы `README.md`, `public/audio/README.md`, `public/audio/manifest.json`; изменений в `src/`, `package.json`, `AGENTS.md` нет. Проверки: валидация манифеста (15 уникальных id, корректные категории/пути/`optional`) и `tsc -b --pretty false` — обе успешны, затем publish (`9191bea`). Промежуточные отказы `run`/`publish` были расхождением head с GitHub из-за параллельных пушей офиса; после повтора команда прошла на том же SHA. Следующий шаг — слияние ветки сборщиком.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -73,10 +73,16 @@
     },
     {
       "commandId": "publish-2",
+      "status": "SUCCEEDED",
+      "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
-      "headSha": "5c3050d91bd69a61cd8d614fdc716690ee24017f",
+      "headSha": "9191bea9f7fc6673403115c591c29f9a9d0a3bb7",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T01:59:34.302Z"
+  "createdAt": "2026-09-17T01:59:59.138Z"
 }
