@@ -1,9 +1,9 @@
 {
   "taskId": "ff44d951-95f0-456f-9081-04f86c5eacd4",
   "branch": "cornel/slit-popadanie-v-lunku-bez-zvuka-i-chast-ff44d9",
-  "headSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
+  "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
   "status": "RUNNING",
-  "summary": "Все проверки прошли на объединённом коде: typecheck OK, 43 файла / 278 тестов (включая `src/effects/feedback.test.ts` и `src/game/feedback.test.ts`), сборка успешна. Публикую.\n\n```json\n{\"version\":1,\"taskId\":\"ff44d951-95f0-456f-9081-04f86c5eacd4\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"e1fce954743cc27101c89a1c87e83f395570f13c\",\"message\":\"Слить «Попадание в лунку без звука и частиц»: обратная связь (частицы, звук, качество, громкость) поверх рантайма препятствий\\n\\nКонфликт в src/game/Game.ts разрешён объединением обеих сторон:\\n- resetBall: сохранена логика office (последняя безопасная позиция + HoleRuntime.resolveHazard + resetObstacles) и добавлены эффекты из входящей ветки (снимок точки падения, effects.hazard, сброс previousVelocity);\\n- конфликт двух разных методов снят сохранением обоих: applyObstacleEffects (движители, пады, поля) и trackImpacts (детект отскока для звука и частиц); оба уже вызываются в frame().\\n\\nПроверки: npm run typecheck, npm test (43 файла, 278 тестов), npm run build — успешно.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано (fa6ee5f). Завершаю задачу.\n\n```json\n{\"version\":1,\"taskId\":\"ff44d951-95f0-456f-9081-04f86c5eacd4\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"Ветка cornel/popadanie-v-lunku-bez-zvuka-i-chastic-na-b31656 слита в cornel/slit-popadanie-v-lunku-bez-zvuka-i-chast-ff44d9 (создана от головы cornel/office).\\n\\nКонфликт был только в src/game/Game.ts, обе стороны сохранены:\\n1) resetBall — оставлена логика office (holeSystem.getLastSafePosition + HoleRuntime.resolveHazard + runtime.resetObstacles), в неё добавлена обратная связь входящей ветки: снимок точки попадания в опасную зону, this.effects.hazard(impact, hazard?.type ?? 'void') и сброс previousVelocity. Типы совпадают: HazardObstacle.type ('water' | 'void' | 'reset-zone' | 'lava') = HazardKind.\\n2) Конфликтовали два независимых новых метода — applyObstacleEffects (ленты, вентиляторы, телепорты, пады, силовые поля из office) и trackImpacts (детект отскока для звука и частиц). Сохранены оба; frame() уже вызывает trackImpacts(), runtime.update(), applyObstacleEffects() по порядку, ничего дописывать не потребовалось.\\nОстальные файлы входящей ветки (src/effects/FeedbackSystem.ts, src/assets/audioManifest.ts, src/core/QualitySettings.ts, изменения Renderer.ts, effects/index.ts, main.ts) влились автоматически.\\n\\nПроверки на итоговом содержимом слияния: npm run typecheck — успешно; npm test — 43 файла, 278 тестов, все прошли (в т.ч. src/effects/feedback.test.ts и src/game/feedback.test.ts); npm run build — успешно (только предупреждение vite о размере чанка). Отдельного линтера в package.json нет.\\n\\nPR не открывал: ветка предназначена для слияния офисом. Опубликованный commit: fa6ee5f.\"}\n```\n\nЖду подтверждения worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
-      "headSha": "e1fce954743cc27101c89a1c87e83f395570f13c",
+      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:47:13.575Z"
+  "createdAt": "2026-09-17T03:47:41.622Z"
 }
