@@ -3,7 +3,7 @@
   "branch": "cornel/slit-sliding-wall-door-i-pendulum-ne-dvi-63341c",
   "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
   "status": "RUNNING",
-  "summary": "Проверяю, что коммит слияния действительно ушёл в ветку.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"verify-push-1\",\"operation\":\"run\",\"headSha\":\"d445b64dd49d167d188682add1e9981ddc1fd76f\",\"command\":\"git fetch origin cornel/slit-sliding-wall-door-i-pendulum-ne-dvi-63341c && echo '---LOCAL HEAD---' && git rev-parse HEAD && echo '---REMOTE---' && git log --oneline -3 FETCH_HEAD && echo '---PARENTS---' && git rev-list --parents -n 1 FETCH_HEAD && echo '---MARKERS---' && (git grep -n '^<<<<<<<' FETCH_HEAD -- src || echo none)\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Publish синхронизировал рабочую копию обратно на d445b64: локальный merge-коммит на ветку не ушёл. Проверяю состояние и содержимое сохранённого слияния.\n\n```json\n{\"version\":1,\"taskId\":\"63341c7d-0e22-4031-a916-68b8b66a26f8\",\"commandId\":\"inspect-1\",\"operation\":\"run\",\"headSha\":\"d445b64dd49d167d188682add1e9981ddc1fd76f\",\"command\":\"echo '---OBJECT---' && git cat-file -t a4d56688f1eecfcdae27addf49b66fa6b8142cca && echo '---STATUS---' && git status --short && echo '---DIFF vs BASE---' && git diff --name-status d445b64dd49d167d188682add1e9981ddc1fd76f a4d56688f1eecfcdae27addf49b66fa6b8142cca && echo '---MERGE STATE---' && (test -f .git/MERGE_HEAD && cat .git/MERGE_HEAD || echo 'no MERGE_HEAD')\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -55,10 +55,16 @@
     },
     {
       "commandId": "verify-push-1",
+      "status": "SUCCEEDED",
+      "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
+      "exitCode": 0
+    },
+    {
+      "commandId": "inspect-1",
       "status": "STARTED",
       "headSha": "d445b64dd49d167d188682add1e9981ddc1fd76f",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T03:38:16.960Z"
+  "createdAt": "2026-09-17T03:38:55.762Z"
 }

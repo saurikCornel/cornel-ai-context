@@ -1,0 +1,12 @@
+{
+  "id": "60ea182d-1d8d-4d02-b0a0-af85af5d7b5e",
+  "taskId": "63341c7d-0e22-4031-a916-68b8b66a26f8",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-1",
+    "operation": "run",
+    "command": "echo '---OBJECT---' && git cat-file -t a4d56688f1eecfcdae27addf49b66fa6b8142cca && echo '---STATUS---' && git status --short && echo '---DIFF vs BASE---' && git diff --name-status d445b64dd49d167d188682add1e9981ddc1fd76f a4d56688f1eecfcdae27addf49b66fa6b8142cca && echo '---MERGE STATE---' && (test -f .git/MERGE_HEAD && cat .git/MERGE_HEAD || echo 'no MERGE_HEAD')"
+  },
+  "createdAt": "2026-09-17T03:38:55.760Z"
+}
