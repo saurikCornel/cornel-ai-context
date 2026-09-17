@@ -3,7 +3,7 @@
   "branch": "cornel/slit-chast-moduley-zapisana-minificirova-d49254",
   "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
   "status": "RUNNING",
-  "summary": "Ветка офиса ушла вперёд (f757284), моя рабочая ветка на GitHub, похоже, переведена на неё. Проверяю фактическое состояние через worker с актуальным SHA.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"probe-1\",\"operation\":\"run\",\"headSha\":\"f757284c9a10172deda23fc481f9234e3d7325ed\",\"command\":\"git log --oneline -3; echo '--- STATUS ---'; git status --short | head -30; echo '--- MERGE_HEAD ---'; git rev-parse MERGE_HEAD 2>/dev/null || echo none; echo '--- index.ts head ---'; head -8 src/ui/index.ts; echo '--- markers ---'; grep -c '<<<<<<<' src/ui/index.ts src/ui/ui.css\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Локальные refs устарели, а сетевой запрос без одобрения недоступен. Пробую ещё раз с исходным SHA назначения — возможно, рассинхрон был временным.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"probe-2\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git rev-parse HEAD; git rev-parse MERGE_HEAD 2>/dev/null || echo no-merge; git status --short | head -5; head -4 src/ui/index.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "merge-1",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "probe-1",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "f757284c9a10172deda23fc481f9234e3d7325ed",
+      "exitCode": null
+    },
+    {
+      "commandId": "probe-2",
+      "status": "STARTED",
+      "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:34:08.390Z"
+  "createdAt": "2026-09-17T04:35:01.342Z"
 }

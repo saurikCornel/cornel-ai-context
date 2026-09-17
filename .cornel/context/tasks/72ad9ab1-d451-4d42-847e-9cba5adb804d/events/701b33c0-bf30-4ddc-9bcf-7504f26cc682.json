@@ -1,0 +1,17 @@
+{
+  "id": "701b33c0-bf30-4ddc-9bcf-7504f26cc682",
+  "taskId": "72ad9ab1-d451-4d42-847e-9cba5adb804d",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "visual-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a7b0f33f7b409b26dd8894f144140e4b72778f90",
+    "output": "--- server log ---\n\n  \u001b[32m\u001b[1mVITE\u001b[22m v7.3.6\u001b[39m  \u001b[2mready in \u001b[0m\u001b[1m169\u001b[22m\u001b[2m\u001b[0m ms\u001b[22m\n\n  \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m5179\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mNetwork\u001b[22m: \u001b[36mhttp://192.168.2.187:\u001b[1m5179\u001b[22m/\u001b[39m\n  \u001b[32m➜\u001b[39m  \u001b[1mNetwork\u001b[22m: \u001b[36mhttp://192.168.139.3:\u001b[1m5179\u001b[22m/\u001b[39m\n--- HTTP checks ---\nindex 200\nmain.ts 200\nopened both URLs; vite pid 38102\n",
+    "outputDigest": "0e27d18fdc9106ab4a475178f72acd09a66ecb0cfe3ec2f103f3bb66353bed28",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:35:04.796Z"
+}

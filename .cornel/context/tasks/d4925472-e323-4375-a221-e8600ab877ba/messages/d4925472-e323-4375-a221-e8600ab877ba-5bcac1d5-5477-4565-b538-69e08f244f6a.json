@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Локальные refs устарели, а сетевой запрос без одобрения недоступен. Пробую ещё раз с исходным SHA назначения — возможно, рассинхрон был временным.\n\n```json\n{\"version\":1,\"taskId\":\"d4925472-e323-4375-a221-e8600ab877ba\",\"commandId\":\"probe-2\",\"operation\":\"run\",\"headSha\":\"1b051708839c6a0b4094c1f74261e1937e59fc27\",\"command\":\"git rev-parse HEAD; git rev-parse MERGE_HEAD 2>/dev/null || echo no-merge; git status --short | head -5; head -4 src/ui/index.ts\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T04:35:01.338Z"
+}

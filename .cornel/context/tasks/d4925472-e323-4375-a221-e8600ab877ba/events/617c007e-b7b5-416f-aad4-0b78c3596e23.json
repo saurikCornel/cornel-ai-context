@@ -1,0 +1,12 @@
+{
+  "id": "617c007e-b7b5-416f-aad4-0b78c3596e23",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "probe-2",
+    "operation": "run",
+    "command": "git rev-parse HEAD; git rev-parse MERGE_HEAD 2>/dev/null || echo no-merge; git status --short | head -5; head -4 src/ui/index.ts"
+  },
+  "createdAt": "2026-09-17T04:35:01.339Z"
+}

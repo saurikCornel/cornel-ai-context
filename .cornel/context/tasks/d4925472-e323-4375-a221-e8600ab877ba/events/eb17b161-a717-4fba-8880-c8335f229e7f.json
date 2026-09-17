@@ -1,0 +1,17 @@
+{
+  "id": "eb17b161-a717-4fba-8880-c8335f229e7f",
+  "taskId": "d4925472-e323-4375-a221-e8600ab877ba",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "probe-2",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "1b051708839c6a0b4094c1f74261e1937e59fc27",
+    "output": "1b051708839c6a0b4094c1f74261e1937e59fc27\n0f78e5474ee45afe3fd7ea1bddea0ba88e3efde0\nM  src/ai/BotProfiles.ts\nM  src/ai/random.ts\nM  src/core/SaveManager.ts\nM  src/courses/data/ancient-temple.ts\nM  src/courses/data/arctic-base.ts\nimport type { ControlScheme, PlayerProfile } from '../contracts';\nimport { GAME_CONFIG } from '../config/GameConfig';\nimport { COURSE_SUMMARIES, DEFAULT_COURSE_ID, RANDOM_COURSE_ID, getCourse } from '../courses';\nimport { buildLeaderboardStandings, renderLeaderboard } from '../leaderboard';\n",
+    "outputDigest": "e50ea1684e8a8ac1112b25fcf11c171aac886026fb38597ec1e798f7c22ec562",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T04:35:03.666Z"
+}
