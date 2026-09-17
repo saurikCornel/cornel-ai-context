@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Локальное зеркало показывает: моя ветка на GitHub всё ещё `739687e`, а вот ветка офиса быстро движется (`54b782a` → `74bb470` за минуты). Похоже, сверка идёт не только по моей ветке. Пробую комбинированную форму — `headSha` моей ветки плюс record `heads` с обеими ветками:\n\n```json\n{\"version\":1,\"taskId\":\"d905f6e9-cb1a-4c11-815b-ac320c9cbb4c\",\"commandId\":\"minimap-8\",\"operation\":\"run\",\"headSha\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"heads\":{\"cornel/in-game-minimap-projection-and-renderer-d905f6\":\"739687ec79598c402229dd1b1ef76589aa825b02\",\"cornel/office\":\"74bb470db744b2a84cb41f32611418281cbd30f9\"},\"timeoutSeconds\":600,\"command\":\"git rev-parse HEAD && git ls-remote origin 'refs/heads/cornel/in-game-minimap-projection-and-renderer-d905f6' && npx vitest run src/ui/minimap.test.ts && npx tsc -b --pretty false && git status --short\"}\n```\n\nЖду результат worker в этом чате.\n\n**Сводка:** карточка реализована локально (`src/ui/Minimap.ts`, `src/ui/minimap.test.ts`), `npm ci` прошёл; остаётся пройти сверку head. По данным зеркала моя ветка не менялась (`739687e`), а `cornel/office` обновляется каждые пару минут — вероятно, именно она и не совпадает. Команда заодно выводит реальный `git ls-remote` моей ветки, чтобы дальше указывать точный SHA. Если и это не пройдёт — прошу владельца прислать актуальный SHA ветки `cornel/in-game-minimap-projection-and-renderer-d905f6`, иначе ни run, ни publish не исполняются.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-17T01:56:43.951Z"
+}
