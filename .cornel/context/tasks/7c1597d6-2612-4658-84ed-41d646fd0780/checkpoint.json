@@ -1,9 +1,9 @@
 {
   "taskId": "7c1597d6-2612-4658-84ed-41d646fd0780",
   "branch": "cornel/progress-igroka-ne-sohranyaetsya-saveman-7c1597",
-  "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+  "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
   "status": "RUNNING",
-  "summary": "Всё зелёное: typecheck, 285 тестов в 45 файлах, production-сборка. Публикую изменения.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"fa6ee5f21306772e461e99b5ad5f8c4a194eef68\",\"message\":\"Подключить SaveManager: профиль, рейтинг, XP и настройки переживают перезагрузку\\n\\n- core/ProfileStore: применение итога матча к профилю (XP, рейтинг, статистика, разблокировки), маппинг настроек меню <-> сохранения и сводка профиля для меню\\n- main.ts: загрузка профиля и настроек при старте, передача их в AppUI и Game, сохранение после матча и при saveSettings\\n- Game: опция onMatchComplete сообщает результат локального игрока (XP из MatchRewards, рейтинг из RatingSystem)\\n- ui: экран Profile и форма настроек читают реальные данные вместо литералов 'Putt Pilot'/1240\\n- player/SaveManager: поле rating в профиле, пресет качества ultra, безопасная миграция старых сохранений\\n- тесты: цикл матч -> сохранение -> перезагрузка (модульный и интеграционный через Game) + DOM-проверки меню\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Опубликовано (b9babeb). Завершаю карточку.\n\n```json\n{\"version\":1,\"taskId\":\"7c1597d6-2612-4658-84ed-41d646fd0780\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"b9babebb09c24b95aae3d7477a64f45fd6ca4aa8\",\"message\":\"Прогресс игрока сохраняется: SaveManager подключён к приложению.\\n\\nСделано:\\n- Новый src/core/ProfileStore.ts: applyMatchOutcome (XP из MatchRewards, рейтинг из RatingSystem, статистика через applyMatchStatistics, разблокировки через syncUnlockedCosmetics), profileSummary для меню, settingsToUi/uiToSettings.\\n- src/main.ts: при старте профиль и настройки грузятся SaveManager, передаются в AppUI (Profile) и в Game (playerName, playerRating, ballStyleId); после матча onMatchComplete сохраняет профиль и обновляет меню; saveSettings пишет настройки в localStorage.\\n- src/game/Game.ts: опция onMatchComplete отдаёт результат локального игрока один раз (флаг outcomeReported), reward-вход вынесен в rewardInput, id локального игрока — константа LOCAL_PLAYER_ID.\\n- src/ui/index.ts: удалены фиктивные данные 'Putt Pilot'/rating 1240; профиль и настройки приходят через AppUIOptions, добавлен setProfile, форма настроек предзаполняется сохранёнными значениями, убрано деление на ноль при 0 матчей.\\n- src/player/types.ts, profile.ts, src/core/SaveManager.ts: поле rating (DEFAULT_RATING=1000), пресет качества ultra, нормализация/миграция без смены SAVE_VERSION — старые сохранения читаются.\\n\\nПроверки (worker, на этом коммите): npm run typecheck — чисто; npx vitest run — 45 файлов, 285 тестов, все зелёные; npm run build — успешно. Новые тесты: src/core/profileStore.test.ts (цикл матч -> сохранение -> перезагрузка, накопление за два матча с разблокировкой косметики на 5 уровне, круг настроек, DOM-проверки экранов Profile и Settings) и src/core/matchProgress.test.ts (реальный матч в Game на green-hills: onMatchComplete -> SaveManager -> перезагруженный профиль -> экран Profile). В браузере не проверял: запуск игры вручную вне доступных команд. PR не открывал — слияние ветки выполнит сборщик.\"}\n```\n\nИтог: карточка выполнена — профиль, рейтинг, XP, статистика, косметика и настройки теперь читаются и пишутся через SaveManager, меню показывает реальные данные. Жду подтверждения worker.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -169,10 +169,16 @@
     },
     {
       "commandId": "publish-1",
+      "status": "SUCCEEDED",
+      "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
-      "headSha": "fa6ee5f21306772e461e99b5ad5f8c4a194eef68",
+      "headSha": "b9babebb09c24b95aae3d7477a64f45fd6ca4aa8",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-17T04:37:32.147Z"
+  "createdAt": "2026-09-17T04:38:03.592Z"
 }
