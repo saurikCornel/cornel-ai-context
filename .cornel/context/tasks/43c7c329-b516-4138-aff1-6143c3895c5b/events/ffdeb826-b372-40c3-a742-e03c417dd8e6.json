@@ -1,0 +1,17 @@
+{
+  "id": "ffdeb826-b372-40c3-a742-e03c417dd8e6",
+  "taskId": "43c7c329-b516-4138-aff1-6143c3895c5b",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-10",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "39e05ff6bd2ffe0fb005bb3ce122a544423e3034",
+    "output": "### src/ui/Minimap.ts (строки 1-70 из 120)\n1: import type { Vec3 } from '../contracts/math';\n2: import type { Hole, ObstacleDescriptor } from '../courses/types';\n3: import type { MinimapBounds, MinimapPoint } from '../dev/PresentationMinimap';\n4: \n5: export interface MinimapModel {\n6:   bounds: MinimapBounds;\n7:   points: MinimapPoint[];\n8: }\n9: \n10: const PADDING_RATIO = 0.05;\n11: const FALLBACK_SPAN = 1;\n12: const CANVAS_WIDTH = 200;\n13: const CANVAS_HEIGHT = 140;\n14: \n15: const SPAWN_COLOR = '#8fd6ff';\n16: const CUP_COLOR = '#ffd166';\n17: const BALL_COLOR = '#ffffff';\n18: const HAZARD_COLOR = '#ff6b6b';\n19: const MOVING_COLOR = '#c084fc';\n20: const SOLID_COLOR = '#64748b';\n21: \n22: type ObstacleType = ObstacleDescriptor['type'];\n23: \n24: const HAZARD_TYPES: readonly ObstacleType[] = ['water', 'void', 'reset-zone'];\n25: const MOVING_TYPES: readonly ObstacleType[] = ['spinner', 'windmill', 'gate', 'platform'];\n26: \n27: function obstacleColor(type: ObstacleType): string {\n28:   if (HAZARD_TYPES.includes(type)) return HAZARD_COLOR;\n29:   if (MOVING_TYPES.includes(type)) return MOVING_COLOR;\n30:   return SOLID_COLOR;\n31: }\n32: \n33: function padAxis(a: number, b: number): { min: number; max: number } {\n34:   const min = Math.min(a, b);\n35:   const max = Math.max(a, b);\n36:   const span = max - min;\n37:   const padding = span > 0 ? span * PADDING_RATIO : FALLBACK_SPAN / 2;\n38:   return { min: min - padding, max: max + padding };\n39: }\n40: \n41: /** Projects a hole (and the optional live ball position) onto a top-down minimap model. */\n42: export function buildMinimapModel(hole: Hole, ballPosition?: Vec3): MinimapModel {\n43:   const x = padAxis(hole.bounds.min.x, hole.bounds.max.x);\n44:   const z = padAxis(hole.bounds.min.z, hole.bounds.max.z);\n45:   const points: MinimapPoint[] = [\n46:     { x: hole.spawn.x, z: hole.spawn.z, color: SPAWN_COLOR, label: 'START' },\n47:     { x: hole.cup.position.x, z: hole.cup.position.z, color: CUP_COLOR, label: 'HOLE' },\n48:   ];\n49:   for (const obstacle of hole.obstacles) {\n50:     points.push({\n51:       x: obstacle.transform.position.x,\n52:       z: obstacle.transform.position.z,\n53:       color: obstacleColor(obstacle.type),\n54:       radius: 3,\n55:     });\n56:   }\n57:   if (ballPosition) {\n58:     points.push({ x: ballPosition.x, z: ballPosition.z, color: BALL_COLOR, radius: 5 });\n59:   }\n60:   return { bounds: { minX: x.min, maxX: x.max, minZ: z.min, maxZ: z.max }, points };\n61: }\n62: \n63: /** Small in-game minimap widget; hidden until enabled from settings. */\n64: export class Minimap {\n65:   readonly element: HTMLElement;\n66:   private readonly canvas: HTMLCanvasElement;\n67: \n68:   constructor() {\n69:     this.element = document.createElement('div');\n70:     this.element.className = 'cpa-minimap';\n… ещё 50 строк",
+    "outputDigest": "a82682fc93945eb9df98d95c0344c3acdfc083875c3864c8b1c64dc18c0991d6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-17T02:29:46.832Z"
+}
