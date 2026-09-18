@@ -1,0 +1,17 @@
+{
+  "id": "76ad651e-c46b-4ad3-9e67-9d51496ef6f2",
+  "taskId": "b6f06242-fb99-4c77-8c23-96031d78c44d",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "check-ui-1",
+    "status": "FAILED",
+    "exitCode": 2,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "npm warn exec The following package was not found and will be installed: eslint@10.10.0\n\nOops! Something went wrong! :(\n\nESLint: 10.10.0\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package '@eslint/js' imported from /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/b6f06242-fb99-4c77-8c23-96031d78c44d/eslint.config.js\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)\n    at packageResolve (node:internal/modules/esm/resolve:768:81)\n    at moduleResolve (node:internal/modules/esm/resolve:858:18)\n    at defaultResolve (node:internal/modules/esm/resolve:990:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:768:20)\n    at ModuleLoader.resolve (node:internal/modules/esm/loader:745:38)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:318:38)\n    at #link (node:internal/modules/esm/module_job:208:49)\n",
+    "outputDigest": "4a9c97be675c6701da29b63a27bef2f0de5944b494235eb6b2391261f6b838ad",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:51:56.585Z"
+}
