@@ -1,0 +1,17 @@
+{
+  "id": "88890a74-d135-444e-bca6-a8d6a9f4c77d",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "create-auth-index-9",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "",
+    "outputDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:45:38.928Z"
+}

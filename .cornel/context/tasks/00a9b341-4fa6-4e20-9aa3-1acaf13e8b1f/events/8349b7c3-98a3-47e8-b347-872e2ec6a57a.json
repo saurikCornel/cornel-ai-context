@@ -1,0 +1,11 @@
+{
+  "id": "8349b7c3-98a3-47e8-b347-872e2ec6a57a",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "fix-1-storage",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:45:34.450Z"
+}

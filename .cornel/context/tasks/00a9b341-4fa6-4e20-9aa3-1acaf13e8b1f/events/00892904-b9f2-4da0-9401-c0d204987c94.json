@@ -1,0 +1,17 @@
+{
+  "id": "00892904-b9f2-4da0-9401-c0d204987c94",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "fix-1-storage",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "",
+    "outputDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:45:36.535Z"
+}
