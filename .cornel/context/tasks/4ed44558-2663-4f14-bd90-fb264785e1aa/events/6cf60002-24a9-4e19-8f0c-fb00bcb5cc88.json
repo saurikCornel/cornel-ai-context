@@ -1,0 +1,13 @@
+{
+  "id": "6cf60002-24a9-4e19-8f0c-fb00bcb5cc88",
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "type": "SUMMARY",
+  "text": "Чат завершён: CORNEL_AI_BLOCKED: тесты API сервера невозможны — в apps/server/src/{auth,chats,media,store,ws} только .gitkeep, соседние ветки server-store-auth и server-chaty-media-ws без реализации (a4bf6e6). Прод-код в карточке менять нельзя; harness не из чего импортировать. Нужны слитые store/auth + chats/messages/media (Fastify), затем apps/server/src/__tests__/* + npm test. Проверки: ls/git по веткам; тесты не запускались — модулей нет.",
+  "detail": {
+    "commands": 7,
+    "failed": 0,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "branch": "cornel/testy-api-servera-4ed445"
+  },
+  "createdAt": "2026-09-18T04:43:13.452Z"
+}
