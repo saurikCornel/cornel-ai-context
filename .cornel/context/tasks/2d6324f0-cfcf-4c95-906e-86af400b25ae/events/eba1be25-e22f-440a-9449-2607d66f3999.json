@@ -1,0 +1,17 @@
+{
+  "id": "eba1be25-e22f-440a-9449-2607d66f3999",
+  "taskId": "2d6324f0-cfcf-4c95-906e-86af400b25ae",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-expected-ts-7",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "\n> @msngr/mobile@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\nApp.tsx(4,30): error TS2307: Cannot find module './src/session/AuthContext' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(4,32): error TS2307: Cannot find module '../screens/ChatListScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(5,28): error TS2307: Cannot find module '../screens/ChatScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(6,29): error TS2307: Cannot find module '../screens/LoginScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(7,31): error TS2307: Cannot find module '../screens/NewChatScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(8,32): error TS2307: Cannot find module '../screens/RegisterScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(9,25): error TS2307: Cannot find module '../session/AuthContext' or its corresponding type declarations.\nnpm error Lifecycle script `typecheck` failed with error:\nnpm error code 2\nnpm error path /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error workspace @msngr/mobile@0.1.0\nnpm error location /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error command failed\nnpm error command sh -c tsc -p tsconfig.json --noEmit\nTypeScript diagnostics are limited to expected screen/session modules from parallel cards.\n M App.tsx\n M app.json\n M package.json\n M ../../package-lock.json\n?? .gitignore\n?? README.md\n?? metro.config.js\n?? src/navigation/RootNavigator.tsx\n?? src/navigation/types.ts\n?? src/theme/index.ts\n",
+    "outputDigest": "8bb6472082c6542ca120fabbe407bd715d5e14470cfc93df7acd9b667faba77c",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:42:21.335Z"
+}
