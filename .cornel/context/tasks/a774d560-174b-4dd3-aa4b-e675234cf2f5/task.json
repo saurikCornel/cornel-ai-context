@@ -23,11 +23,11 @@
   "workspaceSyncedSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-18T04:23:22.221Z",
-  "updatedAt": "2026-09-18T04:24:26.150Z",
+  "updatedAt": "2026-09-18T04:24:47.520Z",
   "issue": null,
   "chatUrl": "cli://grok/01a0b2c1-4bfc-7e42-aec0-efc2cdfdddb1",
   "error": null,
-  "cliActivity": "Grok CLI: запускается",
+  "cliActivity": "Grok CLI: думает",
   "cliSession": "01a0b2c1-4bfc-7e42-aec0-efc2cdfdddb1",
   "browserError": null,
   "currentHead": "d0db4c9c0b6931d24eaa55511e7f39a729109667"
