@@ -1,0 +1,17 @@
+{
+  "id": "f55ba157-7b7e-438c-87bc-9cf1fb419753",
+  "taskId": "c3cd509f-c9cc-4e53-b86b-ceaadd73f294",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-ws",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "    2718 apps/server/src/ws.ts\n       0 apps/server/uploads/.gitkeep\n    2718 total\n",
+    "outputDigest": "0dc554372306f3692e4eed2709c0b9f26284808098385c74a1a0ea3ee58272bc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:42:27.296Z"
+}
