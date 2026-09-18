@@ -3,7 +3,7 @@
   "branch": "cornel/osnova-proekta-stek-struktura-sborka-a774d5",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "WAITING_CHATGPT",
-  "summary": "Записываю команды запуска и проверок.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"mem-howto-1\",\"operation\":\"remember\",\"kind\":\"howto\",\"module\":\"\",\"text\":\"Из корня: npm install; npm run dev:server (watch, :3000); npm run start:server; npm run build:server; npm run dev:mobile (Expo); npm run typecheck; npm run lint; npm test; npm run build. Health: GET http://localhost:3000/health. Node >=20.\",\"files\":[\"package.json\",\"README.md\"]}\n```\n\n",
+  "summary": "Записываю соглашения по именованию.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"mem-naming-1\",\"operation\":\"remember\",\"kind\":\"convention\",\"module\":\"\",\"text\":\"Именование: пакеты @msngr/<name>; пути kebab-case; React-компоненты PascalCase (ChatScreen.tsx); функции/переменные camelCase; типы PascalCase; env SCREAMING_SNAKE. Импорты между пакетами только через @msngr/*, внутри — относительные. Тесты *.test.ts(x) или __tests__/. Детали в CONVENTIONS.md.\",\"files\":[\"CONVENTIONS.md\"]}\n```\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -85,7 +85,12 @@
       "commandId": "mem-howto-1",
       "status": "SUCCEEDED",
       "exitCode": 0
+    },
+    {
+      "commandId": "mem-naming-1",
+      "status": "SUCCEEDED",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-18T04:34:39.510Z"
+  "createdAt": "2026-09-18T04:34:54.648Z"
 }

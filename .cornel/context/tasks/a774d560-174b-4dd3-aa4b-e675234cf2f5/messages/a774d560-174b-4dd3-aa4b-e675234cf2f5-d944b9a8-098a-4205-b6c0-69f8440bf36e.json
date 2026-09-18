@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Записываю соглашения по именованию.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"mem-naming-1\",\"operation\":\"remember\",\"kind\":\"convention\",\"module\":\"\",\"text\":\"Именование: пакеты @msngr/<name>; пути kebab-case; React-компоненты PascalCase (ChatScreen.tsx); функции/переменные camelCase; типы PascalCase; env SCREAMING_SNAKE. Импорты между пакетами только через @msngr/*, внутри — относительные. Тесты *.test.ts(x) или __tests__/. Детали в CONVENTIONS.md.\",\"files\":[\"CONVENTIONS.md\"]}\n```\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:34:54.645Z"
+}

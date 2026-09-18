@@ -1,0 +1,16 @@
+{
+  "id": "ed62fe08-19f5-4a83-b0f7-e012b01fc6f8",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "mem-naming-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "output": "Записано в память проекта: Именование: пакеты @msngr/<name>; пути kebab-case; React-компоненты PascalCase (ChatScreen.tsx); функции/переменные camelCase; типы PascalCase; env SCREAMING_SNAKE. Импорты между пакетами только через @msngr/*, внутри — относительные. Тесты *.test.ts(x) или __tests__/. Детали в CONVENTIONS.md.",
+    "outputDigest": "feea14ec4e9f95eec604eb85c976e55e4eaa4c1dd75f52e4e5e68b7a1b1292ca",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:34:54.647Z"
+}
