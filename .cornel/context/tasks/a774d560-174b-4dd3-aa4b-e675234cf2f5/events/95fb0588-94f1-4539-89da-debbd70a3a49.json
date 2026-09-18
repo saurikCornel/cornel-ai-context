@@ -1,0 +1,11 @@
+{
+  "id": "95fb0588-94f1-4539-89da-debbd70a3a49",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "scaffold-docs-1",
+    "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667"
+  },
+  "createdAt": "2026-09-18T04:29:17.758Z"
+}

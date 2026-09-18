@@ -1,0 +1,17 @@
+{
+  "id": "a50da896-53b6-4504-be36-379620f5eaa2",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "scaffold-docs-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
+    "output": "OK_DOCS\n      59 README.md\n      38 CONVENTIONS.md\n      97 total\n",
+    "outputDigest": "9a88956bbc1e540d0b01b1957de2e0563332223260502a05e07d6189c3123b16",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:29:17.808Z"
+}
