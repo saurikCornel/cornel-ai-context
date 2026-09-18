@@ -1,0 +1,17 @@
+{
+  "id": "327707cf-5302-420e-8f99-b610e09a16fa",
+  "taskId": "64e61d47-08d0-4d92-9f14-491fc2a736fd",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": ".: 48 файлов\n.cornel/CHATGPT.md\n.editorconfig\n.env.example\n.gitignore\n.npmrc\nAGENTS.md\nCONVENTIONS.md\nREADME.md\napps/mobile/App.tsx\napps/mobile/__tests__/config.test.ts\napps/mobile/app.json\napps/mobile/assets/.gitkeep\napps/mobile/babel.config.js\napps/mobile/index.js\napps/mobile/jest.config.cjs\napps/mobile/package.json\napps/mobile/src/api/.gitkeep\napps/mobile/src/audio/.gitkeep\napps/mobile/src/config.ts\napps/mobile/src/navigation/.gitkeep\napps/mobile/src/screens/.gitkeep\napps/mobile/src/session/.gitkeep\napps/mobile/src/theme/.gitkeep\napps/mobile/tsconfig.json\napps/server/__tests__/app.test.ts\napps/server/__tests__/config.test.ts\napps/server/jest.config.cjs\napps/server/package.json\napps/server/src/app.ts\napps/server/src/auth/.gitkeep\napps/server/src/chats/.gitkeep\napps/server/src/config.ts\napps/server/src/index.ts\napps/server/src/media/.gitkeep\napps/server/src/store/.gitkeep\napps/server/src/ws/.gitkeep\napps/server/tsconfig.jest.json\napps/server/tsconfig.json\neslint.config.js\npackage-lock.json\npackage.json\npackages/shared/__tests__/index.test.ts\npackages/shared/jest.config.cjs\npackages/shared/package.json\npackages/shared/src/index.ts\npackages/shared/tsconfig.jest.json\npackages/shared/tsconfig.json\ntsconfig.base.json",
+    "outputDigest": "0d0c35c12f48f5747f5208b60148a5617f07671f58d7bdafad999ae272c05e21",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:37:17.136Z"
+}

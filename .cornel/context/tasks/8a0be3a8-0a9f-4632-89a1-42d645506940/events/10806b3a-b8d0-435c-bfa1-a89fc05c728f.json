@@ -1,0 +1,11 @@
+{
+  "id": "10806b3a-b8d0-435c-bfa1-a89fc05c728f",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-checkpoint-1",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:37:20.345Z"
+}
