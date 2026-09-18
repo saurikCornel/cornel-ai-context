@@ -20,9 +20,9 @@
   "branch": "cornel/razvedka-delete2-335bf7",
   "baseSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
   "workspaceSyncedSha": "51b38f0e713aa53ea9cd86f046e0e62f42cae086",
-  "status": "READY",
+  "status": "CANCELLED",
   "createdAt": "2026-09-18T03:15:54.485Z",
-  "updatedAt": "2026-09-18T03:15:57.469Z",
+  "updatedAt": "2026-09-18T03:23:56.530Z",
   "issue": null,
   "chatUrl": null,
   "error": null
