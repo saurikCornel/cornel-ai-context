@@ -1,9 +1,9 @@
 {
   "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
   "branch": "cornel/osnova-proekta-stek-struktura-sborka-a774d5",
-  "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
-  "status": "RUNNING",
-  "summary": "Дымовой тест `/health` прошёл — публикую каркас в ветку.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"publish-1\",\"operation\":\"publish\",\"headSha\":\"d0db4c9c0b6931d24eaa55511e7f39a729109667\",\"message\":\"feat: monorepo foundation with Expo client, Fastify server, and tooling\"}\n```\n\nЖду `publish-1`, затем запишу решения в память и сделаю `finish`.\n\n",
+  "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "WAITING_CHATGPT",
+  "summary": "Публикация прошла (`a4bf6e68`). Записываю в память принятое решение по стеку.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"mem-stack-1\",\"operation\":\"remember\",\"kind\":\"decision\",\"module\":\"\",\"text\":\"Стек основы: npm workspaces monorepo; клиент Expo 52 + RN 0.76 + TS (iOS/Android); сервер Node 20+ + TS + Fastify + ws; тесты Jest; линтер ESLint flat + typescript-eslint. Обоснование — один код мобильных клиентов, простой REST/WS на Node, без лишнего monorepo-tooling.\",\"files\":[\"package.json\",\"apps/server/package.json\",\"apps/mobile/package.json\",\"README.md\"]}\n```\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -67,10 +67,15 @@
     },
     {
       "commandId": "publish-1",
-      "status": "STARTED",
-      "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
-      "exitCode": null
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "mem-stack-1",
+      "status": "SUCCEEDED",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-18T04:33:09.228Z"
+  "createdAt": "2026-09-18T04:33:47.909Z"
 }

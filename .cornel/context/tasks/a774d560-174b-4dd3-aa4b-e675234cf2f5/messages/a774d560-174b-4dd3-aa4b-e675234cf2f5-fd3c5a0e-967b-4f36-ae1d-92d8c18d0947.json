@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикация прошла (`a4bf6e68`). Записываю в память принятое решение по стеку.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"mem-stack-1\",\"operation\":\"remember\",\"kind\":\"decision\",\"module\":\"\",\"text\":\"Стек основы: npm workspaces monorepo; клиент Expo 52 + RN 0.76 + TS (iOS/Android); сервер Node 20+ + TS + Fastify + ws; тесты Jest; линтер ESLint flat + typescript-eslint. Обоснование — один код мобильных клиентов, простой REST/WS на Node, без лишнего monorepo-tooling.\",\"files\":[\"package.json\",\"apps/server/package.json\",\"apps/mobile/package.json\",\"README.md\"]}\n```\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:33:47.905Z"
+}
