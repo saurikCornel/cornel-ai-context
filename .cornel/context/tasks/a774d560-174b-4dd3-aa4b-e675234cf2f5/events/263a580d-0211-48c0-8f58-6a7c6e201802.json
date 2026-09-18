@@ -1,0 +1,17 @@
+{
+  "id": "263a580d-0211-48c0-8f58-6a7c6e201802",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "scaffold-root-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
+    "output": "OK_ROOT_SHARED\neslint.config.js\npackage.json\npackages/shared/src/index.ts\ntsconfig.base.json\n",
+    "outputDigest": "40e4f89484a1bc64676ae54dc5a68279d757452c7c8cf668e248abecb2bc5a6e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:27:38.768Z"
+}
