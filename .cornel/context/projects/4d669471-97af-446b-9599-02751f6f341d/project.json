@@ -1,0 +1,11 @@
+{
+  "name": "msngr",
+  "repo": "saurikCornel/msngr-cornel-ai",
+  "baseBranch": "main",
+  "files": [
+    ".cornel/CHATGPT.md",
+    ".gitignore",
+    "AGENTS.md"
+  ],
+  "instructions": ".cornel/CHATGPT.md"
+}
