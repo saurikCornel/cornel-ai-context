@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Фактический статус: задача не завершена. Worker отклонил `contracts-1`, потому что назначенная ветка изменилась после последнего успешного чтения; новый SHA в `RESULT` не указан. Без актуального полного `headSha` worker не принимает ни чтение, ни изменения, а `heads` для операции `read` не заменяет `headSha`.\n\nCORNEL_AI_BLOCKED: нужен текущий полный SHA ветки `cornel/ekrany-vhod-i-spisok-chatov-b6f062` либо обновлённое назначение с этим SHA.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:42:41.714Z"
+}
