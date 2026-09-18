@@ -3,7 +3,7 @@
   "branch": "cornel/server-store-auth-http-1213d3",
   "headSha": "b95635a9f163bf415d1ce3076f49703a853ab8a0",
   "status": "WAITING_CHATGPT",
-  "summary": "Публичный GitHub ref недоступен без авторизации. Перехожу обратно к worker и использую `heads` в его record-формате: репозиторий → назначенная ветка. Это read-only запрос текущего SHA, не проверка и не изменение.\n\n```json\n{\"version\":1,\"taskId\":\"1213d394-6ee0-4a60-ba1f-35af126d1fdc\",\"commandId\":\"resolve-current-head-22\",\"operation\":\"run\",\"heads\":{\"saurikCornel/msngr-cornel-ai\":\"cornel/server-store-auth-http-1213d3\"},\"command\":\"git rev-parse HEAD\",\"timeoutSeconds\":300}\n```\n\nЖду RESULT worker.\n\n",
+  "summary": "`heads` принимает только ограниченные ключи; имя репозитория не подходит. Использую идентификатор текущей задачи как ключ и назначенную ветку как значение для read-only разрешения актуального SHA.\n\n```json\n{\"version\":1,\"taskId\":\"1213d394-6ee0-4a60-ba1f-35af126d1fdc\",\"commandId\":\"resolve-current-head-23\",\"operation\":\"run\",\"heads\":{\"1213d394-6ee0-4a60-ba1f-35af126d1fdc\":\"cornel/server-store-auth-http-1213d3\"},\"command\":\"git rev-parse HEAD\",\"timeoutSeconds\":300}\n```\n\nЖду RESULT worker.\n\n",
   "commands": [
     {
       "commandId": "read-server-scope-4",
@@ -89,5 +89,5 @@
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:51:43.294Z"
+  "createdAt": "2026-09-18T04:52:06.980Z"
 }
