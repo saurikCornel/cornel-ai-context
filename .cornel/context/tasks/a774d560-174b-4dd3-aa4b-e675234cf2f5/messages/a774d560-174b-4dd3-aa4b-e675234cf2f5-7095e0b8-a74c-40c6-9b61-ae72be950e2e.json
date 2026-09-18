@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Проверки зелёные. Уберу предупреждение ESLint, дымово проверю `/health`, затем опубликую.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"smoke-server-1\",\"operation\":\"run\",\"headSha\":\"d0db4c9c0b6931d24eaa55511e7f39a729109667\",\"timeoutSeconds\":60,\"command\":\"set -euo pipefail\\nnode -e '\\nconst fs=require(\\\"fs\\\");\\nconst p=\\\"package.json\\\";\\nconst j=JSON.parse(fs.readFileSync(p,\\\"utf8\\\"));\\nj.type=\\\"module\\\";\\nfs.writeFileSync(p, JSON.stringify(j,null,2)+\\\"\\\\n\\\");\\n'\\n\\n# smoke: start server, hit /health, stop\\nnpm run start -w @msngr/server &\\nPID=$!\\ncleanup() { kill $PID 2>/dev/null || true; wait $PID 2>/dev/null || true; }\\ntrap cleanup EXIT\\nfor i in $(seq 1 30); do\\n  if curl -sf http://127.0.0.1:3000/health >/tmp/msngr-health.json; then\\n    break\\n  fi\\n  sleep 0.2\\ndone\\ncat /tmp/msngr-health.json\\necho\\ngrep -q '\\\"ok\\\":true' /tmp/msngr-health.json\\necho OK_SMOKE\\ntest -f package-lock.json && echo HAS_LOCK\\ngit status --short | head -80\\n\"}\n```\n\nЖду `smoke-server-1`, затем `publish`.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:32:39.864Z"
+}

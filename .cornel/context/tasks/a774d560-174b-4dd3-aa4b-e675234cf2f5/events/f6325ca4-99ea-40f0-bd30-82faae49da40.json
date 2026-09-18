@@ -1,0 +1,11 @@
+{
+  "id": "f6325ca4-99ea-40f0-bd30-82faae49da40",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "smoke-server-1",
+    "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667"
+  },
+  "createdAt": "2026-09-18T04:32:39.866Z"
+}

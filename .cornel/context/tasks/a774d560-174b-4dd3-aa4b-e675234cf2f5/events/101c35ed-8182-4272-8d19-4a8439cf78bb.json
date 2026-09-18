@@ -1,0 +1,11 @@
+{
+  "id": "101c35ed-8182-4272-8d19-4a8439cf78bb",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "smoke-server-1",
+    "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667"
+  },
+  "createdAt": "2026-09-18T04:32:42.304Z"
+}
