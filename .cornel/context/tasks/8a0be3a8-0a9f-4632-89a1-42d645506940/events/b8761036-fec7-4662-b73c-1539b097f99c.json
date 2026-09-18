@@ -1,0 +1,12 @@
+{
+  "id": "b8761036-fec7-4662-b73c-1539b097f99c",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-published-head-15",
+    "operation": "run",
+    "command": "git rev-parse HEAD && git status --short && git diff --check && npm run typecheck --workspace @msngr/mobile && npm run lint --workspace @msngr/mobile && npm test --workspace @msngr/mobile -- --runInBand"
+  },
+  "createdAt": "2026-09-18T04:48:11.486Z"
+}

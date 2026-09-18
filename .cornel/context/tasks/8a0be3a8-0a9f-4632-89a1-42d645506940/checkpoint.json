@@ -3,7 +3,7 @@
   "branch": "cornel/klient-audiosoobscheniya-8a0be3",
   "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa",
   "status": "RUNNING",
-  "summary": "Изменения опубликованы коммитом `e61ad45e`. Завершаю карточку с зафиксированными проверками.\n\n```json\n{\"version\":1,\"taskId\":\"8a0be3a8-0a9f-4632-89a1-42d645506940\",\"commandId\":\"finish-audio-14\",\"operation\":\"finish\",\"headSha\":\"e61ad45efe4628c5e936a86ec495019619cb5efa\",\"message\":\"Реализованы клиентские аудиосообщения: Expo AV-рекордер с разрешением, m4a/HIGH_QUALITY, автостопом 60с и отменой; единый плеер с прогрессом, остановкой предыдущего звука и Bearer-загрузкой медиа в кэш; AudioBubble с waveform/play-pause/длительностью/ошибкой; HoldToRecordButton 48px с hold-to-record, отменой свайпом >80pt, отсечением <500мс и отправкой. Изменены только 4 разрешённых файла. Проверки: mobile typecheck, lint, Jest (1 suite, 2 tests), git diff --check — успешно.\"}\n```\n\n",
+  "summary": "Публикация успешна, но при завершении GitHub ещё сообщил другой head ветки — вероятна задержка синхронизации либо параллельное обновление. Безопасно сверяю опубликованный SHA и повторяю проверки именно на нём; никаких новых изменений команда не делает.\n\n```json\n{\"version\":1,\"taskId\":\"8a0be3a8-0a9f-4632-89a1-42d645506940\",\"commandId\":\"verify-published-head-15\",\"operation\":\"run\",\"headSha\":\"e61ad45efe4628c5e936a86ec495019619cb5efa\",\"command\":\"git rev-parse HEAD && git status --short && git diff --check && npm run typecheck --workspace @msngr/mobile && npm run lint --workspace @msngr/mobile && npm test --workspace @msngr/mobile -- --runInBand\",\"timeoutSeconds\":300}\n```\n\nЖду результат worker; если head действительно сменён, остановлюсь без перезаписи чужих изменений.\n\n",
   "commands": [
     {
       "commandId": "read-checkpoint-1",
@@ -78,10 +78,16 @@
     },
     {
       "commandId": "finish-audio-14",
+      "status": "FAILED",
+      "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa",
+      "exitCode": null
+    },
+    {
+      "commandId": "verify-published-head-15",
       "status": "STARTED",
       "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:47:32.810Z"
+  "createdAt": "2026-09-18T04:48:11.487Z"
 }

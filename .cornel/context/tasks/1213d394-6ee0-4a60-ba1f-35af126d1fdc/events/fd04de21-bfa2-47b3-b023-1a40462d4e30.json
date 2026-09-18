@@ -1,0 +1,10 @@
+{
+  "id": "fd04de21-bfa2-47b3-b023-1a40462d4e30",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "remember-server-layer-14"
+  },
+  "createdAt": "2026-09-18T04:48:08.722Z"
+}
