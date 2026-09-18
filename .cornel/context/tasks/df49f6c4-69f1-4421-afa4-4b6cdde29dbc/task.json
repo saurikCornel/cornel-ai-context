@@ -21,11 +21,13 @@
   "branch": "cornel/plan-realizuy-klient-servernyy-messendzh-df49f6",
   "baseSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
   "workspaceSyncedSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-18T04:16:22.819Z",
-  "updatedAt": "2026-09-18T04:21:21.792Z",
+  "updatedAt": "2026-09-18T04:23:20.029Z",
   "issue": null,
-  "chatUrl": null,
+  "chatUrl": "cli://grok/01a0b2bb-e8b5-7352-a45b-ddd773f219b1",
   "error": null,
-  "cliActivity": "Grok CLI: думает"
+  "cliActivity": null,
+  "cliSession": "01a0b2bb-e8b5-7352-a45b-ddd773f219b1",
+  "browserError": null
 }
