@@ -2,8 +2,8 @@
   "taskId": "b6f06242-fb99-4c77-8c23-96031d78c44d",
   "branch": "cornel/ekrany-vhod-i-spisok-chatov-b6f062",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
-  "status": "RUNNING",
-  "summary": "Структура подтверждена: мобильный пакет есть, но соседние слои пока представлены `.gitkeep` и будут добавлены параллельными карточками. Читаю только контракты основы и конфигурацию TypeScript, чтобы согласовать будущие импорты и типы.\n\n```json\n{\"version\":1,\"taskId\":\"b6f06242-fb99-4c77-8c23-96031d78c44d\",\"commandId\":\"contracts-1\",\"operation\":\"read\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"paths\":[\"apps/mobile/package.json\",\"apps/mobile/tsconfig.json\",\"apps/mobile/App.tsx\",\"packages/shared/src/index.ts\",\"CONVENTIONS.md\"]}\n```\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Фактический статус: `contracts-1` не выполнялся — worker отклонил его до чтения из-за устаревшего SHA. Публичный просмотр ветки недоступен, поэтому запрашиваю то же чтение через разрешённое поле `heads`, привязанное к назначенной ветке.\n\n```json\n{\"version\":1,\"taskId\":\"b6f06242-fb99-4c77-8c23-96031d78c44d\",\"commandId\":\"contracts-2\",\"operation\":\"read\",\"heads\":[\"cornel/ekrany-vhod-i-spisok-chatov-b6f062\"],\"paths\":[\"apps/mobile/package.json\",\"apps/mobile/tsconfig.json\",\"apps/mobile/App.tsx\",\"packages/shared/src/index.ts\",\"CONVENTIONS.md\"]}\n```\n\n",
   "commands": [
     {
       "commandId": "inspect-3",
@@ -19,10 +19,10 @@
     },
     {
       "commandId": "contracts-1",
-      "status": "STARTED",
+      "status": "FAILED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:39:16.973Z"
+  "createdAt": "2026-09-18T04:40:25.590Z"
 }
