@@ -3,7 +3,7 @@
   "branch": "cornel/testy-api-servera-4ed445",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Ветки server-* пока без реализации. Смотрю их коммиты и клиентский API — оттуда можно вытащить ожидаемые эндпоинты.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"run-3\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"echo '=== store-auth log ==='; git log --oneline origin/cornel/office..origin/cornel/server-store-auth-http-1213d3 | head -20; echo '=== chats log ==='; git log --oneline origin/cornel/office..origin/cornel/server-chaty-soobscheniya-media-ws-c3cd50 | head -20; echo '=== client-api log ==='; git log --oneline origin/cornel/office..origin/cornel/klient-api-ws-sessiya-00a9b3 | head -20; echo '=== client-api files ==='; git ls-tree -r --name-only origin/cornel/klient-api-ws-sessiya-00a9b3 apps/mobile/src packages/shared | head -80; echo '=== office vs store-auth diffstat ==='; git diff --stat origin/cornel/office...origin/cornel/server-store-auth-http-1213d3 | tail -30\",\"timeoutSeconds\":60}\n```\n\n",
+  "summary": "Соседние server-ветки пустые. Ищу зафиксированный REST-контракт в plan/manager и свежие коммиты на origin — без него тесты писать нельзя.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"run-4\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"git fetch origin --prune 2>&1 | tail -20; echo '---'; for b in origin/cornel/plan-realizuy-klient-servernyy-messendzh-df49f6 origin/cornel/menedzher-ofisa-msngr-f64cb9 origin/cornel/server-store-auth-http-1213d3 origin/cornel/server-chaty-soobscheniya-media-ws-c3cd50 origin/cornel/testy-api-servera-4ed445; do echo \\\"## $b\\\"; git log -1 --oneline $b 2>/dev/null; git diff --stat origin/cornel/office...$b 2>/dev/null | tail -5; done; echo '---'; git ls-tree -r --name-only origin/cornel/plan-realizuy-klient-servernyy-messendzh-df49f6 | head -40\",\"timeoutSeconds\":120}\n```\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "run-3",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "run-4",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:41:41.148Z"
+  "createdAt": "2026-09-18T04:42:10.266Z"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "516772db-6c4a-4ea2-982d-7a9c49271fa1",
+  "taskId": "64e61d47-08d0-4d92-9f14-491fc2a736fd",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "write-1",
+    "operation": "run",
+    "command": "mkdir -p apps/mobile/src/components apps/mobile/src/screens && cat > apps/mobile/src/components/Tick.tsx <<'EOF'\nimport { Text, StyleSheet } from 'react-native';\nimport { theme } from '../theme';\n\nexport type MessageStatus = 'sending' | 'sent' | 'delivered' | 'read';\n\ntype TickProps = {\n  status?: MessageStatus;\n};\n\n/** One/two checkmarks: muted by default, accent when read (Telegram-style). */\nexport function Tick({ status }: TickProps) {\n  if (!status || status === 'sending') {\n    return null;\n  }\n\n  const isRead = status === 'read';\n  const double = status === 'delivered' || status === 'read';\n\n  return (\n    <Text\n      style={[\n        styles.tick,\n        { color: isRead ? theme.colors.accent : theme.colors.muted },\n      ]}\n    >\n      {double ? '✓✓' : '✓'}\n    </Text>\n  );\n}\n\nconst styles = StyleSheet.create({\n  tick: {\n    fontSize: theme.typography.time.fontSize,\n    marginLeft: 4,\n    lineHeight: 14,\n  },\n});\nEOF"
+  },
+  "createdAt": "2026-09-18T04:42:09.632Z"
+}

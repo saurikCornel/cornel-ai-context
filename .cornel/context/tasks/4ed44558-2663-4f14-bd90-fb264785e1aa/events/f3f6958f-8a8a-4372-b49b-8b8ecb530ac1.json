@@ -1,0 +1,12 @@
+{
+  "id": "f3f6958f-8a8a-4372-b49b-8b8ecb530ac1",
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "run-4",
+    "operation": "run",
+    "command": "git fetch origin --prune 2>&1 | tail -20; echo '---'; for b in origin/cornel/plan-realizuy-klient-servernyy-messendzh-df49f6 origin/cornel/menedzher-ofisa-msngr-f64cb9 origin/cornel/server-store-auth-http-1213d3 origin/cornel/server-chaty-soobscheniya-media-ws-c3cd50 origin/cornel/testy-api-servera-4ed445; do echo \"## $b\"; git log -1 --oneline $b 2>/dev/null; git diff --stat origin/cornel/office...$b 2>/dev/null | tail -5; done; echo '---'; git ls-tree -r --name-only origin/cornel/plan-realizuy-klient-servernyy-messendzh-df49f6 | head -40"
+  },
+  "createdAt": "2026-09-18T04:42:10.264Z"
+}
