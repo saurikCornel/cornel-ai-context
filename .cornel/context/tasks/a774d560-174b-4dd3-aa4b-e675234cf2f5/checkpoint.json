@@ -2,8 +2,8 @@
   "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
   "branch": "cornel/osnova-proekta-stek-struktura-sborka-a774d5",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
-  "status": "WAITING_CHATGPT",
-  "summary": "Записываю соглашения по именованию.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"mem-naming-1\",\"operation\":\"remember\",\"kind\":\"convention\",\"module\":\"\",\"text\":\"Именование: пакеты @msngr/<name>; пути kebab-case; React-компоненты PascalCase (ChatScreen.tsx); функции/переменные camelCase; типы PascalCase; env SCREAMING_SNAKE. Импорты между пакетами только через @msngr/*, внутри — относительные. Тесты *.test.ts(x) или __tests__/. Детали в CONVENTIONS.md.\",\"files\":[\"CONVENTIONS.md\"]}\n```\n\n",
+  "status": "RUNNING",
+  "summary": "Перед `finish` ещё раз прогоню проверки на опубликованном `headSha`.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"verify-final-1\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"timeoutSeconds\":300,\"command\":\"set -euo pipefail\\nnpm run build -w @msngr/shared\\nnpm run build -w @msngr/server\\nnpm run typecheck\\nnpm run lint\\nnpm test\\necho OK_FINAL\\n\"}\n```\n\nЖду `verify-final-1`, затем отправлю `finish`.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -90,7 +90,13 @@
       "commandId": "mem-naming-1",
       "status": "SUCCEEDED",
       "exitCode": 0
+    },
+    {
+      "commandId": "verify-final-1",
+      "status": "STARTED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:34:54.648Z"
+  "createdAt": "2026-09-18T04:35:13.865Z"
 }
