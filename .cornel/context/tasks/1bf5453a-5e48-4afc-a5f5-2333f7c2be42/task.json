@@ -20,9 +20,9 @@
   "branch": "cornel/razvedka-delete-weather-1bf545",
   "baseSha": "3eb7d44b97703a64cc61966930d7da0446652689",
   "workspaceSyncedSha": "3eb7d44b97703a64cc61966930d7da0446652689",
-  "status": "READY",
+  "status": "CANCELLED",
   "createdAt": "2026-09-18T03:16:04.194Z",
-  "updatedAt": "2026-09-18T03:16:06.920Z",
+  "updatedAt": "2026-09-18T03:23:56.531Z",
   "issue": null,
   "chatUrl": null,
   "error": null
