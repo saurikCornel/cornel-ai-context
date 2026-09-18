@@ -1,0 +1,17 @@
+{
+  "id": "88d0957e-8af1-4a7a-a6fc-37609a0a4a46",
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "run-3",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "=== store-auth log ===\n=== chats log ===\n=== client-api log ===\n=== client-api files ===\napps/mobile/src/api/.gitkeep\napps/mobile/src/audio/.gitkeep\napps/mobile/src/config.ts\napps/mobile/src/navigation/.gitkeep\napps/mobile/src/screens/.gitkeep\napps/mobile/src/session/.gitkeep\napps/mobile/src/theme/.gitkeep\npackages/shared/__tests__/index.test.ts\npackages/shared/jest.config.cjs\npackages/shared/package.json\npackages/shared/src/index.ts\npackages/shared/tsconfig.jest.json\npackages/shared/tsconfig.json\n=== office vs store-auth diffstat ===\n",
+    "outputDigest": "4ffea95a624ec9bccf7cef08673791a22eaacd19fcd5c9dc68a395158bc2a399",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:41:43.612Z"
+}
