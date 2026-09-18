@@ -1,0 +1,11 @@
+{
+  "id": "21064e53-3651-41b5-b2d5-1b128d405ff3",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "finish-server-auth-18",
+    "operation": "finish"
+  },
+  "createdAt": "2026-09-18T04:49:46.039Z"
+}

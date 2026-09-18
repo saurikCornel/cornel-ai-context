@@ -1,0 +1,12 @@
+{
+  "id": "9d2cd5b2-4454-49da-9fe7-d696b9b4ad9c",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "RESULT",
+  "text": "Нужна успешная команда проверки на этом headSha",
+  "detail": {
+    "commandId": "finish-server-auth-18",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-18T04:49:48.175Z"
+}
