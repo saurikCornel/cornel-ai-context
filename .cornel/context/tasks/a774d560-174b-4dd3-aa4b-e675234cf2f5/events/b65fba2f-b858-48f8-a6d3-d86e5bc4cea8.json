@@ -1,0 +1,11 @@
+{
+  "id": "b65fba2f-b858-48f8-a6d3-d86e5bc4cea8",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "OUTPUT",
+  "text": "Команда выполняется",
+  "detail": {
+    "commandId": "npm-install-1",
+    "output": "v24.8.0\n11.8.0\n"
+  },
+  "createdAt": "2026-09-18T04:29:40.536Z"
+}
