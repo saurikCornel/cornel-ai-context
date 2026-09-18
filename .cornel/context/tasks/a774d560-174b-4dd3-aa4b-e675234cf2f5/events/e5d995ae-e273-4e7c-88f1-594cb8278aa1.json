@@ -1,0 +1,17 @@
+{
+  "id": "e5d995ae-e273-4e7c-88f1-594cb8278aa1",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "scaffold-mobile-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
+    "output": "OK_MOBILE\napps/mobile:\nApp.tsx\n__tests__\napp.json\nassets\nbabel.config.js\nindex.js\njest.config.cjs\npackage.json\nsrc\ntsconfig.json\n\napps/mobile/src:\napi\naudio\nconfig.ts\nnavigation\nscreens\nsession\ntheme\n",
+    "outputDigest": "3eebd749f2d88aeb81ad722a13a63f3c208b05bdf18558928d2356d5404a4adc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:28:53.674Z"
+}
