@@ -1,0 +1,30 @@
+{
+  "id": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "projectId": "4d669471-97af-446b-9599-02751f6f341d",
+  "effort": "current",
+  "agent": "grok",
+  "model": "grok-4.5",
+  "thinking": "medium",
+  "attachments": [],
+  "office": {
+    "kind": "card",
+    "role": "developer",
+    "workerId": "dev-1",
+    "cardId": "e1ab5682-a402-4f6d-85db-dd1eba30e364",
+    "boardId": "main",
+    "module": null
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Тесты API сервера",
+  "prompt": "Ты — Работник 1, работник AI-офиса проекта «msngr». \n\nЗадание владельца: Реализуй клиент-серверный мессенджер на react native (клиенты - ios/android) в современном стиле как telegram. Также там должны быть аудиосообщения\nПодход координатора: Пустой репозиторий: контракт моделей/REST/WS и Telegram-токены зафиксированы в карточках. Слои разведены по файлам — сервер (store/auth и чаты/медиа/ws), Expo-клиент (scaffold/тема/навигация и API/сессия), затем экраны, аудио и тесты. Все 4 работника заняты с первой волны, общих файлов нет.\n\nТвоя карточка: Тесты API сервера\nСлой тестов сервера. НЕ менять прод-код routes/store/auth/index, mobile/, package.json (скрипт test и vitest уже в t1).\n\nФайлы только: server/src/__tests__/auth.test.ts, server/src/__tests__/chats.test.ts, server/src/__tests__/messages.test.ts, server/src/__tests__/media.test.ts.\nИзоляция: перед каждым тестом отдельный db.json в tmp (через env DATA_DIR если t1 его читает из config; если нет — импортировать store и не гонять параллельно). Поднимать app через supertest: либо export app из index (нельзя править index) — тогда собирать express сами в тесте: store+auth+routers, как контракт. Допустимо в тестах создать helper server/src/__tests__/harness.ts (этот файл тоже ваш) который импортирует authRouter, chatsRouter, messagesRouter, mediaRouter и store.\n\nПокрыть: register+login+me; duplicate username 409; unauthorized 401; create direct и повтор той же пары тот же id; text message в ленте; multipart audio → 201 и GET /media/:id 200 audio; чужой чат 403; WS не обязателен в этих файлах.\nПроверка: cd server && npm test. Не утверждать зелёный прогон без фактического вывода. Не ставить iOS/Android тесты.\n\nУже готово и слито в ветку офиса: Основа проекта: стек, структура, сборка.\n\nРезультат — файлы в репозитории проекта (код, текст, таблицы, документы). Другие работники параллельно ведут другие карточки в своих ветках: меняй только то, что нужно для твоей карточки. Если карточка велика и делится на независимые части, не делай всё сам: до изменений ответь блоком ```json {\"cornelSplit\":1,\"tasks\":[{\"key\":\"a\",\"title\":\"…\",\"description\":\"…\",\"dependsOn\":[],\"priority\":\"high\"}]} ``` — подзадачи уйдут параллельным работникам, а этот чат закроется. Твоя ветка создана от ветки офиса cornel/office; после finish её слияние выполнит сборщик, PR открывать не нужно. Проверь результат доступным способом (для кода — тесты и сборка командами worker, для текстов и документов — вычитка и проверка структуры), при локальных правках сделай publish, затем finish с кратким итогом. Если карточку невозможно выполнить, напиши CORNEL_AI_BLOCKED и причину.",
+  "branch": "cornel/testy-api-servera-4ed445",
+  "baseSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "READY",
+  "createdAt": "2026-09-18T04:36:36.465Z",
+  "updatedAt": "2026-09-18T04:36:39.151Z",
+  "issue": null,
+  "chatUrl": null,
+  "error": null
+}

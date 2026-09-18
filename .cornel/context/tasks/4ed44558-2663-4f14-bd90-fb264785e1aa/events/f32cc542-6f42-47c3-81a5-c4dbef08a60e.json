@@ -1,0 +1,8 @@
+{
+  "id": "f32cc542-6f42-47c3-81a5-c4dbef08a60e",
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "type": "READY",
+  "text": "Задача создана. Worker ожидает команды от агента Grok CLI.",
+  "detail": {},
+  "createdAt": "2026-09-18T04:36:39.151Z"
+}
