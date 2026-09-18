@@ -2,8 +2,8 @@
   "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
   "branch": "cornel/testy-api-servera-4ed445",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
-  "status": "RUNNING",
-  "summary": "Соседние server-ветки пустые. Ищу зафиксированный REST-контракт в plan/manager и свежие коммиты на origin — без него тесты писать нельзя.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"run-4\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"git fetch origin --prune 2>&1 | tail -20; echo '---'; for b in origin/cornel/plan-realizuy-klient-servernyy-messendzh-df49f6 origin/cornel/menedzher-ofisa-msngr-f64cb9 origin/cornel/server-store-auth-http-1213d3 origin/cornel/server-chaty-soobscheniya-media-ws-c3cd50 origin/cornel/testy-api-servera-4ed445; do echo \\\"## $b\\\"; git log -1 --oneline $b 2>/dev/null; git diff --stat origin/cornel/office...$b 2>/dev/null | tail -5; done; echo '---'; git ls-tree -r --name-only origin/cornel/plan-realizuy-klient-servernyy-messendzh-df49f6 | head -40\",\"timeoutSeconds\":120}\n```\n\n",
+  "status": "WAITING_CHATGPT",
+  "summary": "Карточка заблокирована: писать и прогонять API-тесты сейчас нельзя.\n\n**CORNEL_AI_BLOCKED**\n\n**Причина:** слой API, от которого зависят тесты, ещё не существует, а менять прод-код в этой карточке нельзя.\n\n1. В `apps/server/src/{auth,chats,media,store,ws}` только `.gitkeep` — нет `store`, `authRouter`, `chatsRouter`, `messagesRouter`, `mediaRouter`.\n2. Соседние ветки `cornel/server-store-auth-http-1213d3` и `cornel/server-chaty-soobscheniya-media-ws-c3cd50` совпадают с foundation (`a4bf6e6`), реализации нет.\n3. В карточке запрещено трогать `routes/store/auth/index` и прод-код — harness из тестов собрать не из чего.\n4. Текст карточки расходится с основой: Express/supertest/vitest и путь `server/`, в репозитории — Fastify + Jest + `apps/server`. Без готовых модулей угадывать экспорты нельзя.\n\n**Что нужно для разблокировки:** слитые (или хотя бы запушенные) карточки store/auth и chats/messages/media с реальными экспортами под Fastify; после этого можно писать `apps/server/src/__tests__/{auth,chats,messages,media}.test.ts` + `harness.ts` и гонять `cd apps/server && npm test`.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"mem-1\",\"operation\":\"remember\",\"kind\":\"gotcha\",\"text\":\"Карточка «Тесты API сервера» блокируется без реализации auth/chats/media/store: в apps/server/src/* только .gitkeep, соседние server-* ветки пустые (a4bf6e6). Тесты должны импортировать store+routers через harness; прод-код в этой карточке менять нельзя. Стек основы — Fastify+Jest+apps/server, не Express/vitest из текста карточки.\",\"files\":[\"apps/server/src/auth\",\"apps/server/src/chats\",\"apps/server/src/media\",\"apps/server/src/store\"]}\n```\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -31,10 +31,15 @@
     },
     {
       "commandId": "run-4",
-      "status": "STARTED",
+      "status": "SUCCEEDED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
-      "exitCode": null
+      "exitCode": 0
+    },
+    {
+      "commandId": "mem-1",
+      "status": "SUCCEEDED",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-18T04:42:10.266Z"
+  "createdAt": "2026-09-18T04:42:52.732Z"
 }

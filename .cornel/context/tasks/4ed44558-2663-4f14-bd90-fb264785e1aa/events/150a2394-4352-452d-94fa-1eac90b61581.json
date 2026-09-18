@@ -1,0 +1,11 @@
+{
+  "id": "150a2394-4352-452d-94fa-1eac90b61581",
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "mem-1",
+    "operation": "remember"
+  },
+  "createdAt": "2026-09-18T04:42:52.730Z"
+}

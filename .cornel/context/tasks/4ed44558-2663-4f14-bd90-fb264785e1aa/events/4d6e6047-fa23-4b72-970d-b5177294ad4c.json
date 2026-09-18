@@ -1,0 +1,10 @@
+{
+  "id": "4d6e6047-fa23-4b72-970d-b5177294ad4c",
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "mem-1"
+  },
+  "createdAt": "2026-09-18T04:42:52.731Z"
+}

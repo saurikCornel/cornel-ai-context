@@ -1,0 +1,16 @@
+{
+  "id": "699f250a-506e-4668-a704-90e4059b4a84",
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "mem-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "output": "Записано в память проекта: Карточка «Тесты API сервера» блокируется без реализации auth/chats/media/store: в apps/server/src/* только .gitkeep, соседние server-* ветки пустые (a4bf6e6). Тесты должны импортировать store+routers через harness; прод-код в этой карточке менять нельзя. Стек основы — Fastify+Jest+apps/server, не Express/vitest из текста карточки.",
+    "outputDigest": "1cf7a76eaba03d6c21a7eb02b134e42c7f0cf37a4b5870ed1d4eba81847bd324",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:42:52.731Z"
+}
