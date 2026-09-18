@@ -2,8 +2,8 @@
   "taskId": "2d6324f0-cfcf-4c95-906e-86af400b25ae",
   "branch": "cornel/expo-proekt-tema-navigaciya-2d6324",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
-  "status": "WAITING_CHATGPT",
-  "summary": "Проверки завершены в допустимом для параллельной разработки состоянии: Jest и ESLint прошли, Expo-манифест валиден, а TypeScript сообщает только о ещё не слитых экранах и контексте сессии. Записываю этот интеграционный нюанс в общую память проекта.\n\n```json\n{\"version\":1,\"taskId\":\"2d6324f0-cfcf-4c95-906e-86af400b25ae\",\"commandId\":\"remember-mobile-integration-8\",\"operation\":\"remember\",\"kind\":\"gotcha\",\"text\":\"Expo-инфраструктура находится в apps/mobile. До слияния карточек экранов и сессии mobile typecheck ожидаемо выдаёт только TS2307 для src/screens/* и src/session/AuthContext; Jest и ESLint проходят. Expo config и микрофонные разрешения проверены.\",\"files\":[\"apps/mobile/App.tsx\",\"apps/mobile/src/navigation/RootNavigator.tsx\",\"apps/mobile/src/theme/index.ts\",\"apps/mobile/app.json\",\"apps/mobile/package.json\"]}\n```\n\nЖду результат worker, затем опубликую изменения.\n\n",
+  "status": "RUNNING",
+  "summary": "Публикую готовую карточку в назначенную ветку одним коммитом.\n\n```json\n{\"version\":1,\"taskId\":\"2d6324f0-cfcf-4c95-906e-86af400b25ae\",\"commandId\":\"publish-mobile-shell-9\",\"operation\":\"publish\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"message\":\"Реализовать Expo-тему и навигацию мобильного клиента\"}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "inspect-mobile-1",
@@ -51,7 +51,13 @@
       "commandId": "remember-mobile-integration-8",
       "status": "SUCCEEDED",
       "exitCode": 0
+    },
+    {
+      "commandId": "publish-mobile-shell-9",
+      "status": "STARTED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:42:50.517Z"
+  "createdAt": "2026-09-18T04:43:00.590Z"
 }
