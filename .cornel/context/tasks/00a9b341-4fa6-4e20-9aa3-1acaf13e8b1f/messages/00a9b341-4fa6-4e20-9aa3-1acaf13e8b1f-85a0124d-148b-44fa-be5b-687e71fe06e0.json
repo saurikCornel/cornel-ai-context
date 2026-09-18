@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "`tsc` не найден — сначала `npm install` из корня, затем typecheck.\n\n```json\n{\"version\":1,\"taskId\":\"00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f\",\"commandId\":\"check-2-install\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"timeoutSeconds\":300,\"command\":\"npm install 2>&1 | tail -30\"}\n```\n\nЖду результат установки зависимостей.\n\n**Сводка:** локально не было `node_modules`/`tsc` · ставлю зависимости · затем typecheck и lint своих файлов.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:44:31.311Z"
+}

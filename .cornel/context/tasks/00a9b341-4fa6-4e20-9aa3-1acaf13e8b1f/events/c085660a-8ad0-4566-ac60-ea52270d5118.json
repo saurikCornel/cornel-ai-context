@@ -1,0 +1,12 @@
+{
+  "id": "c085660a-8ad0-4566-ac60-ea52270d5118",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-2-install",
+    "operation": "run",
+    "command": "npm install 2>&1 | tail -30"
+  },
+  "createdAt": "2026-09-18T04:44:31.312Z"
+}

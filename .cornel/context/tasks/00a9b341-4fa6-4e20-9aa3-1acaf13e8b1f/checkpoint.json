@@ -3,7 +3,7 @@
   "branch": "cornel/klient-api-ws-sessiya-00a9b3",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Все пять файлов на месте — запускаю typecheck по мобильному пакету.\n\n```json\n{\"version\":1,\"taskId\":\"00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f\",\"commandId\":\"check-1-tsc\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"timeoutSeconds\":120,\"command\":\"cd apps/mobile && npx tsc -p tsconfig.json --noEmit 2>&1 | head -80\"}\n```\n\nЖду результат проверки.\n\n**Сводка:** все 5 файлов записаны · сейчас `tsc` по `apps/mobile` · при ошибках (ожидаемо `expo-secure-store`) исправлю в рамках карточки.\n\n",
+  "summary": "`tsc` не найден — сначала `npm install` из корня, затем typecheck.\n\n```json\n{\"version\":1,\"taskId\":\"00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f\",\"commandId\":\"check-2-install\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"timeoutSeconds\":300,\"command\":\"npm install 2>&1 | tail -30\"}\n```\n\nЖду результат установки зависимостей.\n\n**Сводка:** локально не было `node_modules`/`tsc` · ставлю зависимости · затем typecheck и lint своих файлов.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "check-1-tsc",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-2-install",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:44:16.481Z"
+  "createdAt": "2026-09-18T04:44:31.314Z"
 }

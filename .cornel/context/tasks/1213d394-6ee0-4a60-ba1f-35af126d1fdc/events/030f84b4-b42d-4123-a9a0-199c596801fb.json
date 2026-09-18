@@ -1,0 +1,13 @@
+{
+  "id": "030f84b4-b42d-4123-a9a0-199c596801fb",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "REMOTE",
+  "text": "Мост на машине провайдера устарел (нужна версия 1.3.0 и новее): команды выполняются на компьютере владельца. Обновите cornel-bridge там, чтобы задача работала в собственном клоне.",
+  "detail": {
+    "commandId": "create-store-8",
+    "operation": "run",
+    "agent": "rp-alex-ms-7e93ce-codex",
+    "fallback": "bridge"
+  },
+  "createdAt": "2026-09-18T04:44:30.537Z"
+}

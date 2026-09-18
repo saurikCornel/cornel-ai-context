@@ -1,0 +1,11 @@
+{
+  "id": "296ecdde-6eed-4e1c-afc6-55574c5db513",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "check-2-install",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:44:31.313Z"
+}
