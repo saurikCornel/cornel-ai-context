@@ -21,11 +21,14 @@
   "branch": "cornel/ekran-perepiski-i-puzyri-64e61d",
   "baseSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-18T04:36:27.184Z",
-  "updatedAt": "2026-09-18T04:36:54.790Z",
+  "updatedAt": "2026-09-18T04:37:02.744Z",
   "issue": null,
-  "chatUrl": null,
+  "chatUrl": "cli://grok/01a0b2cd-7be2-7982-8a0a-f701b325f0ee",
   "error": null,
-  "cliActivity": "Grok CLI: думает"
+  "cliActivity": "Grok CLI: запускается",
+  "cliSession": "01a0b2cd-7be2-7982-8a0a-f701b325f0ee",
+  "browserError": null,
+  "currentHead": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
 }

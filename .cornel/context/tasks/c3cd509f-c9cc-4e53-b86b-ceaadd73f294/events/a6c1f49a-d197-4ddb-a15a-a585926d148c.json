@@ -1,0 +1,17 @@
+{
+  "id": "a6c1f49a-d197-4ddb-a15a-a585926d148c",
+  "taskId": "c3cd509f-c9cc-4e53-b86b-ceaadd73f294",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "ls-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "apps/server: 14 файлов\napps/server/__tests__/app.test.ts\napps/server/__tests__/config.test.ts\napps/server/jest.config.cjs\napps/server/package.json\napps/server/src/app.ts\napps/server/src/auth/.gitkeep\napps/server/src/chats/.gitkeep\napps/server/src/config.ts\napps/server/src/index.ts\napps/server/src/media/.gitkeep\napps/server/src/store/.gitkeep\napps/server/src/ws/.gitkeep\napps/server/tsconfig.jest.json\napps/server/tsconfig.json",
+    "outputDigest": "c09f861efefe966a3d2b2a87b4c2571f61ac54b752ab516878414d3e08804a62",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:37:03.723Z"
+}

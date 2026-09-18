@@ -21,11 +21,13 @@
   "branch": "cornel/server-store-auth-http-1213d3",
   "baseSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
-  "status": "READY",
+  "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-18T04:36:02.422Z",
-  "updatedAt": "2026-09-18T04:36:49.586Z",
+  "updatedAt": "2026-09-18T04:37:02.097Z",
   "issue": null,
-  "chatUrl": null,
+  "chatUrl": "cli://rp-alex-ms-7e93ce-codex/01a0b2cd-890a-7cf2-85aa-9b0f087206f7",
   "error": null,
-  "cliActivity": "Codex CLI · alex-MS-7E30: начал ход"
+  "cliActivity": null,
+  "cliSession": "01a0b2cd-890a-7cf2-85aa-9b0f087206f7",
+  "browserError": null
 }

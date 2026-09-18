@@ -23,8 +23,9 @@
   "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "READY",
   "createdAt": "2026-09-18T04:36:36.465Z",
-  "updatedAt": "2026-09-18T04:36:39.151Z",
+  "updatedAt": "2026-09-18T04:37:00.743Z",
   "issue": null,
   "chatUrl": null,
-  "error": null
+  "error": null,
+  "cliActivity": "Grok CLI: запускается"
 }
