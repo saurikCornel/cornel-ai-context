@@ -1,0 +1,17 @@
+{
+  "id": "55cf7dcd-d508-425c-a07e-4d6effaaa0f2",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "install-typecheck-test-10",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "\nadded 162 packages, and audited 163 packages in 13s\n\n46 packages are looking for funding\n  run `npm fund` for details\n\n5 vulnerabilities (3 moderate, 1 high, 1 critical)\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n\n> @msngr/server-http@0.1.0 typecheck\n> tsc --noEmit\n\n\n> @msngr/server-http@0.1.0 test\n> vitest run --passWithNoTests\n\n\n\u001b[1m\u001b[7m\u001b[36m RUN \u001b[39m\u001b[27m\u001b[22m \u001b[36mv2.1.9 \u001b[39m\u001b[90m/Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/1213d394-6ee0-4a60-ba1f-35af126d1fdc/server\u001b[39m\n\n\u001b[2minclude: \u001b[22m\u001b[33m**/*.{test,spec}.?(c|m)[jt]s?(x)\u001b[39m\n\u001b[2mexclude:  \u001b[22m\u001b[33m**/node_modules/**\u001b[2m, \u001b[22m**/dist/**\u001b[2m, \u001b[22m**/cypress/**\u001b[2m, \u001b[22m**/.{idea,git,cache,output,temp}/**\u001b[2m, \u001b[22m**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build,eslint,prettier}.config.*\u001b[39m\nNo test files found, exiting with code 0\n\n",
+    "outputDigest": "344ba1a1741d0c64fee55343c06768cdf1dca3bfaf5423a5827fb91b0377f72e",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:46:13.471Z"
+}
