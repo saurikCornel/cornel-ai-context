@@ -1,0 +1,17 @@
+{
+  "id": "0df167fa-051a-49c8-90c4-4f38f898cbfa",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "audit-diff-12",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "?? server/\nUnexpected paths:\nserver/\n",
+    "outputDigest": "a21b9af13dc2322a8a82acd22302365a1258c13d08eab5b9f6637aabec3e8dc6",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:47:25.213Z"
+}

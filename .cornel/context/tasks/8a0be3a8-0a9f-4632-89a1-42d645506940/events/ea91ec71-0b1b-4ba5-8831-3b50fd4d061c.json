@@ -1,0 +1,12 @@
+{
+  "id": "ea91ec71-0b1b-4ba5-8831-3b50fd4d061c",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RESULT",
+  "text": "Ветка изменилась: headSha запроса не совпадает с GitHub",
+  "detail": {
+    "commandId": "finish-audio-14",
+    "status": "FAILED",
+    "exitCode": null
+  },
+  "createdAt": "2026-09-18T04:47:35.246Z"
+}

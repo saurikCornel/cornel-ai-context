@@ -1,0 +1,11 @@
+{
+  "id": "3d2eb496-cf14-4049-87db-214338ba23ba",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "finish-audio-14",
+    "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa"
+  },
+  "createdAt": "2026-09-18T04:47:32.810Z"
+}

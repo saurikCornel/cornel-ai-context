@@ -1,9 +1,9 @@
 {
   "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
   "branch": "cornel/klient-audiosoobscheniya-8a0be3",
-  "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa",
   "status": "RUNNING",
-  "summary": "Память обновлена. Публикую проверенные изменения в назначенную ветку.\n\n```json\n{\"version\":1,\"taskId\":\"8a0be3a8-0a9f-4632-89a1-42d645506940\",\"commandId\":\"publish-audio-13\",\"operation\":\"publish\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"message\":\"Реализовать клиентские аудиосообщения\"}\n```\n\nЖду commit SHA от worker, после чего завершу карточку.\n\n",
+  "summary": "Изменения опубликованы коммитом `e61ad45e`. Завершаю карточку с зафиксированными проверками.\n\n```json\n{\"version\":1,\"taskId\":\"8a0be3a8-0a9f-4632-89a1-42d645506940\",\"commandId\":\"finish-audio-14\",\"operation\":\"finish\",\"headSha\":\"e61ad45efe4628c5e936a86ec495019619cb5efa\",\"message\":\"Реализованы клиентские аудиосообщения: Expo AV-рекордер с разрешением, m4a/HIGH_QUALITY, автостопом 60с и отменой; единый плеер с прогрессом, остановкой предыдущего звука и Bearer-загрузкой медиа в кэш; AudioBubble с waveform/play-pause/длительностью/ошибкой; HoldToRecordButton 48px с hold-to-record, отменой свайпом >80pt, отсечением <500мс и отправкой. Изменены только 4 разрешённых файла. Проверки: mobile typecheck, lint, Jest (1 suite, 2 tests), git diff --check — успешно.\"}\n```\n\n",
   "commands": [
     {
       "commandId": "read-checkpoint-1",
@@ -72,10 +72,16 @@
     },
     {
       "commandId": "publish-audio-13",
+      "status": "SUCCEEDED",
+      "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-audio-14",
       "status": "STARTED",
-      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:47:12.816Z"
+  "createdAt": "2026-09-18T04:47:32.810Z"
 }
