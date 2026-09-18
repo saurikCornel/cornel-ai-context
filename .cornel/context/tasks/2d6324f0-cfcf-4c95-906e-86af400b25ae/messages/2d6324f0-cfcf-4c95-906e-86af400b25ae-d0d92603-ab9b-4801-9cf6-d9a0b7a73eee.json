@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "ESLint прошёл. Сам TypeScript выдал ровно семь ожидаемых `TS2307` для экранов и `AuthContext`; ошибся только фильтр проверки — он не учитывал путь `./src/session/...` из `App.tsx`. Повторяю незавершённую TypeScript-проверку с корректным фильтром; любые иные TS-ошибки останутся фатальными.\n\n```json\n{\"version\":1,\"taskId\":\"2d6324f0-cfcf-4c95-906e-86af400b25ae\",\"commandId\":\"verify-expected-ts-7\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"set -eu\\ncd apps/mobile\\nset +e\\nnpm run typecheck >/tmp/msngr-mobile-tsc-final.log 2>&1\\ntsc_status=$?\\nset -e\\ncat /tmp/msngr-mobile-tsc-final.log\\nif [ \\\"$tsc_status\\\" -eq 0 ]; then\\n  echo 'TypeScript check passed.'\\nelif awk '/error TS/ && ($0 !~ /error TS2307:/ || $0 !~ /(screens|session)\\\\//) { unexpected = 1 } END { exit unexpected }' /tmp/msngr-mobile-tsc-final.log; then\\n  echo 'TypeScript diagnostics are limited to expected screen/session modules from parallel cards.'\\nelse\\n  echo 'Unexpected TypeScript diagnostic detected.' >&2\\n  exit 1\\nfi\\ngit diff --check\\ngit status --short\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:42:15.288Z"
+}
