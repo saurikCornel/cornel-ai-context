@@ -1,0 +1,12 @@
+{
+  "id": "9e70c01a-a9a4-4d84-aadf-3aa0a27939b1",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-published-head-19",
+    "operation": "run",
+    "command": "cd server && npm install --no-package-lock && npm run typecheck && npm test && cd .. && test -z \"$(git status --short --untracked-files=all)\" && printf 'published_head_clean_and_verified\\n'"
+  },
+  "createdAt": "2026-09-18T04:50:07.350Z"
+}

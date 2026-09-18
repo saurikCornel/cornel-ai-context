@@ -1,0 +1,17 @@
+{
+  "id": "3aff0384-631c-4f40-a6bf-560410b18015",
+  "taskId": "c3cd509f-c9cc-4e53-b86b-ceaadd73f294",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "fix-path-ws",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "    2945 server/src/ws.ts\nls: apps/server/src/ws.ts: No such file or directory\n",
+    "outputDigest": "545ee0f74810efd8286c0d89f4ea0e8daf40912c80ba4c267fabe6700a7c1a4b",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:49:59.958Z"
+}
