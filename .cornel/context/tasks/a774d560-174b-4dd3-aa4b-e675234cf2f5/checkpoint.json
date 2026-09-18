@@ -3,7 +3,7 @@
   "branch": "cornel/osnova-proekta-stek-struktura-sborka-a774d5",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Перед `finish` ещё раз прогоню проверки на опубликованном `headSha`.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"verify-final-1\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"timeoutSeconds\":300,\"command\":\"set -euo pipefail\\nnpm run build -w @msngr/shared\\nnpm run build -w @msngr/server\\nnpm run typecheck\\nnpm run lint\\nnpm test\\necho OK_FINAL\\n\"}\n```\n\nЖду `verify-final-1`, затем отправлю `finish`.\n\n",
+  "summary": "Финальные проверки на `a4bf6e68` прошли — закрываю карточку.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"finish-1\",\"operation\":\"finish\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"message\":\"Основа проекта готова (commit a4bf6e68).\\n\\nСтек: npm workspaces; Expo 52/RN/TS клиент; Node+TS+Fastify+ws сервер; Jest; ESLint flat.\\nСтруктура: apps/server, apps/mobile, packages/shared + слоты под соседние карточки; README и CONVENTIONS.\\nПроверки на head: build shared/server, typecheck, lint, test (7) — OK; smoke GET /health — OK.\\nПамять: стек, структура, команды запуска, именование.\\nФункциональность мессенджера не реализовывалась — только каркас для параллельных карточек.\"}\n```\n\n### Итог\n- **Решения:** monorepo на npm workspaces; Expo-клиент; Fastify-сервер; Jest + ESLint.\n- **Артефакты:** `apps/server`, `apps/mobile`, `packages/shared`, `README.md`, `CONVENTIONS.md`.\n- **Проверки:** build / typecheck / lint / test и `/health` на `a4bf6e68`.\n- **Дальше:** соседние карточки (контракты, auth/chats, UI, аудио) могут опираться на эту основу.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -93,10 +93,16 @@
     },
     {
       "commandId": "verify-final-1",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "finish-1",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:35:13.865Z"
+  "createdAt": "2026-09-18T04:35:50.211Z"
 }
