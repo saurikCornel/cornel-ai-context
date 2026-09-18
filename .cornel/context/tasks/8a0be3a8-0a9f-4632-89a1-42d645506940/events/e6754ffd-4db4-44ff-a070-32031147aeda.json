@@ -1,0 +1,12 @@
+{
+  "id": "e6754ffd-4db4-44ff-a070-32031147aeda",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-verify-audio-10",
+    "operation": "run",
+    "command": "npm install && git diff --check && npm run typecheck --workspace @msngr/mobile && npm run lint --workspace @msngr/mobile && npm test --workspace @msngr/mobile -- --runInBand && git status --short"
+  },
+  "createdAt": "2026-09-18T04:45:24.786Z"
+}
