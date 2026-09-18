@@ -1,0 +1,16 @@
+{
+  "id": "5bbfebb3-0329-48b2-b467-f91ef8f248ef",
+  "taskId": "64e61d47-08d0-4d92-9f14-491fc2a736fd",
+  "type": "CLI_TURN",
+  "text": "Grok CLI ответил",
+  "detail": {
+    "agent": "grok",
+    "model": "grok-4.5",
+    "thinking": "medium",
+    "requestedModel": "grok-4.5",
+    "requestedThinking": "medium",
+    "ignoredModel": false,
+    "ignoredThinking": false
+  },
+  "createdAt": "2026-09-18T04:39:11.329Z"
+}
