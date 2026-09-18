@@ -3,7 +3,7 @@
   "branch": "cornel/server-store-auth-http-1213d3",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Живой HTTP-сценарий прошёл полностью; первое сообщение `curl` было ожидаемой попыткой до готовности процесса, после чего readiness-loop получил health 200. Теперь проверяю границы карточки и чистоту diff, не повторяя уже успешные проверки.\n\n```json\n{\"version\":1,\"taskId\":\"1213d394-6ee0-4a60-ba1f-35af126d1fdc\",\"commandId\":\"audit-diff-12\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"git status --short && git diff --check && git diff --stat && changed_paths=\\\"$(git status --short | sed 's/^...//')\\\" && unexpected=\\\"$(printf '%s\\\\n' \\\"$changed_paths\\\" | grep -Ev '^server/(package\\\\.json|tsconfig\\\\.json|\\\\.env\\\\.example|\\\\.gitignore|README\\\\.md|src/(types|config|store|auth|index)\\\\.ts)$' || true)\\\" && if [ -n \\\"$unexpected\\\" ]; then printf 'Unexpected paths:\\\\n%s\\\\n' \\\"$unexpected\\\"; exit 1; fi\",\"timeoutSeconds\":300}\n```\n\nЖду RESULT worker; если diff чист по границам, сохраню полезное знание и опубликую ветку.\n\n",
+  "summary": "Ошибка только в моей проверке: обычный `git status` свернул все новые файлы до `server/`, поэтому фильтр ошибочно счёл каталог неожиданным. Код не меняю; повторяю аудит другим способом, который раскрывает каждый untracked-файл.\n\n```json\n{\"version\":1,\"taskId\":\"1213d394-6ee0-4a60-ba1f-35af126d1fdc\",\"commandId\":\"audit-untracked-files-13\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"set -euo pipefail\\nchanged_paths=\\\"$(git ls-files --others --exclude-standard server | sort)\\\"\\nprintf '%s\\\\n' \\\"$changed_paths\\\"\\nunexpected=\\\"$(printf '%s\\\\n' \\\"$changed_paths\\\" | grep -Ev '^server/(package\\\\.json|tsconfig\\\\.json|\\\\.env\\\\.example|\\\\.gitignore|README\\\\.md|src/(types|config|store|auth|index)\\\\.ts)$' || true)\\\"\\nif [ -n \\\"$unexpected\\\" ]; then printf 'Unexpected paths:\\\\n%s\\\\n' \\\"$unexpected\\\"; exit 1; fi\\nfile_count=\\\"$(printf '%s\\\\n' \\\"$changed_paths\\\" | sed '/^$/d' | wc -l | tr -d ' ')\\\"\\n[ \\\"$file_count\\\" = 10 ]\\nfor required in server/package.json server/tsconfig.json server/.env.example server/.gitignore server/README.md server/src/types.ts server/src/config.ts server/src/store.ts server/src/auth.ts server/src/index.ts; do\\n  printf '%s\\\\n' \\\"$changed_paths\\\" | grep -Fx \\\"$required\\\" >/dev/null\\ndone\\nif git status --short --untracked-files=all | grep -v '^?? server/' >/tmp/msngr-unexpected-status.txt; then\\n  cat /tmp/msngr-unexpected-status.txt\\n  exit 1\\nfi\\nprintf 'scope_ok files=%s\\\\n' \\\"$file_count\\\"\",\"timeoutSeconds\":300}\n```\n\nЖду RESULT worker; после успешного аудита выполню remember и publish.\n\n",
   "commands": [
     {
       "commandId": "read-server-scope-4",
@@ -49,10 +49,16 @@
     },
     {
       "commandId": "audit-diff-12",
+      "status": "FAILED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 1
+    },
+    {
+      "commandId": "audit-untracked-files-13",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:47:21.007Z"
+  "createdAt": "2026-09-18T04:47:51.052Z"
 }

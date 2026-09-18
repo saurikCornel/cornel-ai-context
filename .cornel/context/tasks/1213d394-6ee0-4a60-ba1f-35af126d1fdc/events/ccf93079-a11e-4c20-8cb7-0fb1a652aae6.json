@@ -1,0 +1,11 @@
+{
+  "id": "ccf93079-a11e-4c20-8cb7-0fb1a652aae6",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "audit-untracked-files-13",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:47:51.051Z"
+}
