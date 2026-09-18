@@ -1,0 +1,11 @@
+{
+  "id": "3c90a253-91eb-47d9-a341-33bbf751491d",
+  "taskId": "2d6324f0-cfcf-4c95-906e-86af400b25ae",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "finish-mobile-shell-12",
+    "headSha": "1ddda5e0cc03b9823b5007bff2605c6043549192"
+  },
+  "createdAt": "2026-09-18T04:44:38.625Z"
+}
