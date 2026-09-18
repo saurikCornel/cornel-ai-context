@@ -3,7 +3,7 @@
   "branch": "cornel/ekran-perepiski-i-puzyri-64e61d",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Пути `apps/mobile` отсутствуют — смотрю фактическую структуру рабочей копии.\n\n```json\n{\n  \"version\": 1,\n  \"taskId\": \"64e61d47-08d0-4d92-9f14-491fc2a736fd\",\n  \"commandId\": \"ls-1\",\n  \"operation\": \"ls\",\n  \"headSha\": \"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\n  \"path\": \".\",\n  \"maxLines\": 200\n}\n```\n\n",
+  "summary": "Основа есть, слоты пока пустые — читаю shared-контракты, App и соглашения, чтобы опереться на типы и тему.\n\n```json\n{\n  \"version\": 1,\n  \"taskId\": \"64e61d47-08d0-4d92-9f14-491fc2a736fd\",\n  \"commandId\": \"read-2\",\n  \"operation\": \"read\",\n  \"headSha\": \"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\n  \"paths\": [\n    \"packages/shared/src/index.ts\",\n    \"apps/mobile/App.tsx\",\n    \"apps/mobile/src/config.ts\",\n    \"apps/mobile/package.json\",\n    \"CONVENTIONS.md\",\n    \"README.md\",\n    \"package.json\"\n  ]\n}\n```\n\n",
   "commands": [
     {
       "commandId": "read-1",
@@ -13,10 +13,16 @@
     },
     {
       "commandId": "ls-1",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "read-2",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:37:13.416Z"
+  "createdAt": "2026-09-18T04:38:51.321Z"
 }

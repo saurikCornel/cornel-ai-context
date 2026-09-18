@@ -1,0 +1,16 @@
+{
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "branch": "cornel/testy-api-servera-4ed445",
+  "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "RUNNING",
+  "summary": "Checkpoint отсутствует — это новая карточка. Запрашиваю у worker снимок рабочей копии и статус git. Дальше сверю, есть ли уже реализации auth/chats/media у соседних веток.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"path\":\"apps/server\",\"maxLines\":200}\n```\n\n",
+  "commands": [
+    {
+      "commandId": "ls-1",
+      "status": "STARTED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-18T04:38:52.100Z"
+}

@@ -1,0 +1,16 @@
+{
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "branch": "cornel/klient-api-ws-sessiya-00a9b3",
+  "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "RUNNING",
+  "summary": "Каталоги `apps/mobile/src/api` и `session` пустые; серверные слоты параллельно ещё не заполнены. Дальше создаю пять файлов по контракту карточки через worker.\n\n```json\n{\"version\":1,\"taskId\":\"00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"path\":\"apps/mobile/src\",\"maxLines\":100}\n```\n\nЖду результат worker.\n\n**Сводка:** решений пока нет · изменённых файлов нет · проверка — ls рабочей копии · следующий шаг — запись `types.ts`, `client.ts`, `ws.ts`, `storage.ts`, `AuthContext.tsx`.\n\n",
+  "commands": [
+    {
+      "commandId": "ls-1",
+      "status": "STARTED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": null
+    }
+  ],
+  "createdAt": "2026-09-18T04:39:00.255Z"
+}

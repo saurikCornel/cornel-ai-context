@@ -1,0 +1,11 @@
+{
+  "id": "f95d7147-4323-4db7-984b-4bcd57eb5921",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "ls-1",
+    "operation": "ls"
+  },
+  "createdAt": "2026-09-18T04:39:00.252Z"
+}
