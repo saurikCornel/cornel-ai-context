@@ -1,0 +1,17 @@
+{
+  "id": "0fe641d7-4a88-4f19-90e7-c78d1af0577c",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "finish-audio-16",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa",
+    "output": "Реализованы клиентские аудиосообщения: Expo AV-рекордер с разрешением, HIGH_QUALITY m4a, автостопом 60с и отменой; единый плеер с прогрессом, остановкой предыдущего звука и Bearer-загрузкой медиа в кэш; AudioBubble с waveform/play-pause/длительностью/ошибкой; HoldToRecordButton 48px с hold-to-record, отменой свайпом >80pt, отсечением записей <500мс и отправкой. Изменены только 4 разрешённых файла. На опубликованном e61ad45e успешно выполнены git diff --check, mobile typecheck, lint и Jest (1 suite, 2 tests).",
+    "outputDigest": "78d6e53aa5c97844f04c5c1ae00e44827a6f38a0504a880404e8ab6962217065",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:48:35.600Z"
+}

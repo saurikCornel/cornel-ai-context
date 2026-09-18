@@ -1,0 +1,12 @@
+{
+  "id": "2a98f873-fc41-4357-8e2d-0b2fd0481a24",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "MERGED",
+  "text": "Ветка слита в cornel/office",
+  "detail": {
+    "heads": {
+      "": "3495fce3d12dd5b7e8a0d79492b14eef315ac0c7"
+    }
+  },
+  "createdAt": "2026-09-18T04:48:41.800Z"
+}
