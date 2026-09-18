@@ -1,0 +1,17 @@
+{
+  "id": "04513fa9-557c-4b33-9264-b351e79506e5",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-recorder-5",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "",
+    "outputDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:41:51.285Z"
+}
