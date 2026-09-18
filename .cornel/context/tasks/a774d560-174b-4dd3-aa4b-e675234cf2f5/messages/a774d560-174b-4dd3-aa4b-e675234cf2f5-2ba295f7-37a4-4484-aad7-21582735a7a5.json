@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Записываю команды запуска и проверок.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"mem-howto-1\",\"operation\":\"remember\",\"kind\":\"howto\",\"module\":\"\",\"text\":\"Из корня: npm install; npm run dev:server (watch, :3000); npm run start:server; npm run build:server; npm run dev:mobile (Expo); npm run typecheck; npm run lint; npm test; npm run build. Health: GET http://localhost:3000/health. Node >=20.\",\"files\":[\"package.json\",\"README.md\"]}\n```\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:34:39.503Z"
+}
