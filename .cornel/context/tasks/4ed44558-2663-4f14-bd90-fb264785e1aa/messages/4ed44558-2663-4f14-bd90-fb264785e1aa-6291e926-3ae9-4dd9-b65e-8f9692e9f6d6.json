@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "На remote уже есть ветки `server-store-auth-http` и `server-chaty-soobscheniya-media-ws`. Снимаю с них контракт экспортов и маршрутов — по ним напишу тесты, не трогая прод-код.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"run-2\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"echo '=== store-auth ==='; git ls-tree -r --name-only origin/cornel/server-store-auth-http-1213d3 apps/server packages/shared | head -80; echo '=== chats-media-ws ==='; git ls-tree -r --name-only origin/cornel/server-chaty-soobscheniya-media-ws-c3cd50 apps/server packages/shared | head -80\",\"timeoutSeconds\":60}\n```\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:39:52.967Z"
+}

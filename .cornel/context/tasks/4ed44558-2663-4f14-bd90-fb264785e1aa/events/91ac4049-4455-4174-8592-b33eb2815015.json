@@ -1,0 +1,12 @@
+{
+  "id": "91ac4049-4455-4174-8592-b33eb2815015",
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "run-2",
+    "operation": "run",
+    "command": "echo '=== store-auth ==='; git ls-tree -r --name-only origin/cornel/server-store-auth-http-1213d3 apps/server packages/shared | head -80; echo '=== chats-media-ws ==='; git ls-tree -r --name-only origin/cornel/server-chaty-soobscheniya-media-ws-c3cd50 apps/server packages/shared | head -80"
+  },
+  "createdAt": "2026-09-18T04:39:52.968Z"
+}
