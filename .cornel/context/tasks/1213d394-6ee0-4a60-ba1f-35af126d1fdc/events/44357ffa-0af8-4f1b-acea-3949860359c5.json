@@ -1,0 +1,11 @@
+{
+  "id": "44357ffa-0af8-4f1b-acea-3949860359c5",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "install-typecheck-test-10",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:45:56.252Z"
+}

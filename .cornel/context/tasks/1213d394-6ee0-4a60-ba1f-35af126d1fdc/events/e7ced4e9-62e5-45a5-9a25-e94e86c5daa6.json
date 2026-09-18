@@ -1,0 +1,12 @@
+{
+  "id": "e7ced4e9-62e5-45a5-9a25-e94e86c5daa6",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "install-typecheck-test-10",
+    "operation": "run",
+    "command": "cd server && npm install --no-package-lock && npm run typecheck && npm test"
+  },
+  "createdAt": "2026-09-18T04:45:56.251Z"
+}
