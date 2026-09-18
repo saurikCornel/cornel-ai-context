@@ -23,11 +23,11 @@
   "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "WAITING_CHATGPT",
   "createdAt": "2026-09-18T04:36:27.184Z",
-  "updatedAt": "2026-09-18T04:39:54.859Z",
+  "updatedAt": "2026-09-18T04:40:09.527Z",
   "issue": null,
   "chatUrl": "cli://grok/01a0b2cd-7be2-7982-8a0a-f701b325f0ee",
   "error": null,
-  "cliActivity": "Grok CLI: запускается",
+  "cliActivity": "Grok CLI: grep: /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/64e61d47-08d0-4d92-9f14-491fc2a736fd",
   "cliSession": "01a0b2cd-7be2-7982-8a0a-f701b325f0ee",
   "browserError": null,
   "currentHead": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
