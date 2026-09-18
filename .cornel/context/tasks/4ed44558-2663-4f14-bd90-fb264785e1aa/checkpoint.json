@@ -3,14 +3,20 @@
   "branch": "cornel/testy-api-servera-4ed445",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Checkpoint отсутствует — это новая карточка. Запрашиваю у worker снимок рабочей копии и статус git. Дальше сверю, есть ли уже реализации auth/chats/media у соседних веток.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"path\":\"apps/server\",\"maxLines\":200}\n```\n\n",
+  "summary": "Слоты API пустые (только `.gitkeep`). Смотрю соседние ветки и ожидаемые экспорты — без контракта auth/chats/media тесты не собрать.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"run-1\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"git branch -a | head -80; echo '---'; git log --oneline -5; echo '---'; ls -la apps/server/src/auth apps/server/src/chats apps/server/src/media apps/server/src/store apps/server/src/ws 2>&1; echo '---'; git ls-tree -r --name-only HEAD apps/server/src | head -50\",\"timeoutSeconds\":60}\n```\n\n",
   "commands": [
     {
       "commandId": "ls-1",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "run-1",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:38:52.100Z"
+  "createdAt": "2026-09-18T04:39:30.149Z"
 }

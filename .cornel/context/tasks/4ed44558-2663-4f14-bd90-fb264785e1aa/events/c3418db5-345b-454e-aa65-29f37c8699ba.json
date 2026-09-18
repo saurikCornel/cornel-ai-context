@@ -1,0 +1,12 @@
+{
+  "id": "c3418db5-345b-454e-aa65-29f37c8699ba",
+  "taskId": "4ed44558-2663-4f14-bd90-fb264785e1aa",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "run-1",
+    "operation": "run",
+    "command": "git branch -a | head -80; echo '---'; git log --oneline -5; echo '---'; ls -la apps/server/src/auth apps/server/src/chats apps/server/src/media apps/server/src/store apps/server/src/ws 2>&1; echo '---'; git ls-tree -r --name-only HEAD apps/server/src | head -50"
+  },
+  "createdAt": "2026-09-18T04:39:30.148Z"
+}
