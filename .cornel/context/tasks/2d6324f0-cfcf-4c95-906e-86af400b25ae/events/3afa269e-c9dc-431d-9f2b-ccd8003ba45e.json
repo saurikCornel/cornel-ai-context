@@ -1,0 +1,17 @@
+{
+  "id": "3afa269e-c9dc-431d-9f2b-ccd8003ba45e",
+  "taskId": "2d6324f0-cfcf-4c95-906e-86af400b25ae",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "inspect-mobile-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "apps/mobile: 16 файлов\napps/mobile/App.tsx\napps/mobile/__tests__/config.test.ts\napps/mobile/app.json\napps/mobile/assets/.gitkeep\napps/mobile/babel.config.js\napps/mobile/index.js\napps/mobile/jest.config.cjs\napps/mobile/package.json\napps/mobile/src/api/.gitkeep\napps/mobile/src/audio/.gitkeep\napps/mobile/src/config.ts\napps/mobile/src/navigation/.gitkeep\napps/mobile/src/screens/.gitkeep\napps/mobile/src/session/.gitkeep\napps/mobile/src/theme/.gitkeep\napps/mobile/tsconfig.json",
+    "outputDigest": "e1a124397d18b26c5e622ed0816aa8b41a200a1177a5c0789681b1f02c07c279",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:37:11.930Z"
+}
