@@ -1,0 +1,17 @@
+{
+  "id": "2164e882-8f51-45a9-bb2f-9e6958c059a3",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "fix-audio-races-11",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "\n> @msngr/mobile@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\n\n> @msngr/mobile@0.1.0 lint\n> eslint App.tsx src --max-warnings=0\n\n\n> @msngr/mobile@0.1.0 test\n> jest --runInBand\n\nPASS __tests__/config.test.ts\n  getApiBaseUrl\n    ✓ defaults to localhost:3000 (1 ms)\n    ✓ reads EXPO_PUBLIC_API_URL\n\nTest Suites: 1 passed, 1 total\nTests:       2 passed, 2 total\nSnapshots:   0 total\nTime:        0.251 s, estimated 1 s\nRan all test suites.\n?? apps/mobile/src/audio/player.ts\n?? apps/mobile/src/audio/recorder.ts\n?? apps/mobile/src/components/\n",
+    "outputDigest": "c4e4efa5d31ec65c2ac5f03bc4d12494f536a78aa2406ffe3e3ab3c6ba20ef17",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:46:40.830Z"
+}
