@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 2,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "Публикация успешна: commit `ca1cd382…`. Для `finish` нужна проверка именно на опубликованном SHA, поэтому повторяю неизменяющую lint/whitespace/status-проверку на нём.\n\n```json\n{\"version\":1,\"taskId\":\"b6f06242-fb99-4c77-8c23-96031d78c44d\",\"commandId\":\"check-published-ui-1\",\"operation\":\"run\",\"headSha\":\"ca1cd382eda836110ac749528c025bf0ace5f9aa\",\"command\":\"npx eslint apps/mobile/src/components/Avatar.tsx apps/mobile/src/components/ChatListItem.tsx apps/mobile/src/screens/LoginScreen.tsx apps/mobile/src/screens/RegisterScreen.tsx apps/mobile/src/screens/ChatListScreen.tsx apps/mobile/src/screens/NewChatScreen.tsx --max-warnings=0 && git diff --check && git status --short\",\"timeoutSeconds\":300}\n```\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:52:59.570Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "e2203533-1d9d-43c4-88a1-a529e03ab9c5",
+  "taskId": "b6f06242-fb99-4c77-8c23-96031d78c44d",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-published-ui-1",
+    "operation": "run",
+    "command": "npx eslint apps/mobile/src/components/Avatar.tsx apps/mobile/src/components/ChatListItem.tsx apps/mobile/src/screens/LoginScreen.tsx apps/mobile/src/screens/RegisterScreen.tsx apps/mobile/src/screens/ChatListScreen.tsx apps/mobile/src/screens/NewChatScreen.tsx --max-warnings=0 && git diff --check && git status --short"
+  },
+  "createdAt": "2026-09-18T04:52:59.571Z"
+}
