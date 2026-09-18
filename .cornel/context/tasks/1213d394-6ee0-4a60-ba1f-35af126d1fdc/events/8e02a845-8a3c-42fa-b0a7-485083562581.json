@@ -1,0 +1,12 @@
+{
+  "id": "8e02a845-8a3c-42fa-b0a7-485083562581",
+  "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "audit-diff-12",
+    "operation": "run",
+    "command": "git status --short && git diff --check && git diff --stat && changed_paths=\"$(git status --short | sed 's/^...//')\" && unexpected=\"$(printf '%s\\n' \"$changed_paths\" | grep -Ev '^server/(package\\.json|tsconfig\\.json|\\.env\\.example|\\.gitignore|README\\.md|src/(types|config|store|auth|index)\\.ts)$' || true)\" && if [ -n \"$unexpected\" ]; then printf 'Unexpected paths:\\n%s\\n' \"$unexpected\"; exit 1; fi"
+  },
+  "createdAt": "2026-09-18T04:47:21.005Z"
+}

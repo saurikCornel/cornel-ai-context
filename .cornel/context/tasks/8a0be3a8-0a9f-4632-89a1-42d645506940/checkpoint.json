@@ -2,8 +2,8 @@
   "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
   "branch": "cornel/klient-audiosoobscheniya-8a0be3",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
-  "status": "WAITING_CHATGPT",
-  "summary": "Финальные проверки прошли, изменены только четыре разрешённых файла. Сохраняю полезный для сборщика факт об интеграционных точках аудиомодуля, затем опубликую ветку.\n\n```json\n{\"version\":1,\"taskId\":\"8a0be3a8-0a9f-4632-89a1-42d645506940\",\"commandId\":\"remember-audio-12\",\"operation\":\"remember\",\"kind\":\"where\",\"text\":\"Клиентское аудио реализовано в apps/mobile/src/audio/{recorder,player}.ts и components/{AudioBubble,HoldToRecordButton}.tsx. Интеграция поддерживает client.mediaUrl/audio sendAudio и session storage.getToken; удалённые аудио скачиваются в expo-file-system cache с Bearer перед expo-av playback.\",\"files\":[\"apps/mobile/src/audio/recorder.ts\",\"apps/mobile/src/audio/player.ts\",\"apps/mobile/src/components/AudioBubble.tsx\",\"apps/mobile/src/components/HoldToRecordButton.tsx\"]}\n```\n\nЖду подтверждение worker.\n\n",
+  "status": "RUNNING",
+  "summary": "Память обновлена. Публикую проверенные изменения в назначенную ветку.\n\n```json\n{\"version\":1,\"taskId\":\"8a0be3a8-0a9f-4632-89a1-42d645506940\",\"commandId\":\"publish-audio-13\",\"operation\":\"publish\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"message\":\"Реализовать клиентские аудиосообщения\"}\n```\n\nЖду commit SHA от worker, после чего завершу карточку.\n\n",
   "commands": [
     {
       "commandId": "read-checkpoint-1",
@@ -69,7 +69,13 @@
       "commandId": "remember-audio-12",
       "status": "SUCCEEDED",
       "exitCode": 0
+    },
+    {
+      "commandId": "publish-audio-13",
+      "status": "STARTED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:46:54.072Z"
+  "createdAt": "2026-09-18T04:47:12.816Z"
 }

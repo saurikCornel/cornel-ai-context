@@ -1,0 +1,17 @@
+{
+  "id": "c4f7409e-3a34-4154-9b3e-08346eb20840",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "publish-audio-13",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa",
+    "output": "Изменения опубликованы",
+    "outputDigest": "ac3e04263572990374bd32c368144df19b24af8ba887e1bd7966c2bc7ae34656",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:47:17.749Z"
+}

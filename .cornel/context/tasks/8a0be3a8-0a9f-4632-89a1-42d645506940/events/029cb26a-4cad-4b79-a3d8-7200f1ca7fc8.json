@@ -1,0 +1,11 @@
+{
+  "id": "029cb26a-4cad-4b79-a3d8-7200f1ca7fc8",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "publish-audio-13",
+    "operation": "publish"
+  },
+  "createdAt": "2026-09-18T04:47:12.814Z"
+}
