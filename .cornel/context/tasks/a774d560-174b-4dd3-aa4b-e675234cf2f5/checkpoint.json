@@ -3,7 +3,7 @@
   "branch": "cornel/osnova-proekta-stek-struktura-sborka-a774d5",
   "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
   "status": "RUNNING",
-  "summary": "Документация на месте — ставлю зависимости (`npm install`).```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"npm-install-1\",\"operation\":\"run\",\"headSha\":\"d0db4c9c0b6931d24eaa55511e7f39a729109667\",\"timeoutSeconds\":600,\"command\":\"set -euo pipefail\\nnode -v\\nnpm -v\\nnpm install\\necho OK_INSTALL\\n\"}\n```\n\nЖду `npm-install-1`, затем прогоню typecheck, lint, test и build.\n\n",
+  "summary": "Зависимости установлены — прогоняю typecheck, lint, test и build.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"verify-1\",\"operation\":\"run\",\"headSha\":\"d0db4c9c0b6931d24eaa55511e7f39a729109667\",\"timeoutSeconds\":300,\"command\":\"set -euo pipefail\\nnpm run build -w @msngr/shared\\nnpm run build -w @msngr/server\\nnpm run typecheck\\nnpm run lint\\nnpm test\\necho OK_VERIFY\\n\"}\n```\n\nЖду `verify-1`; при ошибках сразу поправлю.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -37,10 +37,16 @@
     },
     {
       "commandId": "npm-install-1",
+      "status": "SUCCEEDED",
+      "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-1",
       "status": "STARTED",
       "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:29:28.208Z"
+  "createdAt": "2026-09-18T04:30:44.016Z"
 }
