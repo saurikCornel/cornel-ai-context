@@ -1,0 +1,17 @@
+{
+  "id": "65644bbb-f7e4-48bd-9ae6-b8821b0d7a6c",
+  "taskId": "64e61d47-08d0-4d92-9f14-491fc2a736fd",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "grep-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "(совпадений нет)",
+    "outputDigest": "092ef2f84328838180c102e7d82110382276b8435bf98037fba6433c94afdc1a",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:39:42.684Z"
+}
