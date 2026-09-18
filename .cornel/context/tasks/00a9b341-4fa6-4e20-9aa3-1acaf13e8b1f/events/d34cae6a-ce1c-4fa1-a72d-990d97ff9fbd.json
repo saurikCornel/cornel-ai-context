@@ -1,0 +1,12 @@
+{
+  "id": "d34cae6a-ce1c-4fa1-a72d-990d97ff9fbd",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "write-1-types-storage",
+    "operation": "run",
+    "command": "cat > apps/mobile/src/api/types.ts <<'EOF'\n/** Shared client DTO shapes — keep 1:1 with server responses. */\n\nexport type User = {\n  id: string;\n  username: string;\n  displayName: string;\n  avatarUrl: string | null;\n};\n\nexport type MessageType = 'text' | 'audio';\n\nexport type MessageStatus = 'sent' | 'delivered' | 'read';\n\nexport type Message = {\n  id: string;\n  chatId: string;\n  senderId: string;\n  type: MessageType;\n  text: string | null;\n  audioId: string | null;\n  durationMs: number | null;\n  createdAt: string;\n  status: MessageStatus;\n};\n\nexport type Chat = {\n  id: string;\n  type: 'direct' | 'group';\n  title: string | null;\n  participantIds: string[];\n  lastMessage: Message | null;\n  unreadCount: number;\n};\n\nexport type AuthResponse = {\n  token: string;\n  user: User;\n};\n\nexport type MessageStatusPayload = {\n  messageId: string;\n  chatId: string;\n  status: MessageStatus;\n};\n\nexport type TypingPayload = {\n  chatId: string;\n  userId: string;\n};\nEOF\ncat > apps/mobile/src/session/storage.ts <<'EOF'\nimport * as SecureStore from 'expo-secure-store';\nimport type { User } from '../api/types';\n\nconst TOKEN_KEY = 'msngr.token';\nconst USER_KEY = 'msngr.user';\n\nexport async function getToken(): Promise<string | null> {\n  return SecureStore.getItemAsync(TOKEN_KEY);\n}\n\nexport async function setSession(token: string, user: User): Promise<void> {\n  await SecureStore.setItemAsync(TOKEN_KEY, token);\n  await SecureStore.setItemAsync(USER_KEY, JSON.stringify(user));\n}\n\nexport async function clearSession(): Promise<void> {\n  await SecureStore.deleteItemAsync(TOKEN_KEY);\n  await SecureStore.deleteItemAsync(USER_KEY);\n}\n\nexport async function getStoredUser(): Promise<User | null> {\n  const raw = await SecureStore.getItemAsync(USER_KEY);\n  if (!raw) return null;\n  try {\n    return JSON.parse(raw) as User;\n  } catch {\n    return null;\n  }\n}\nEOF\nwc -c apps/mobile/src/api/types.ts apps/mobile/src/session/storage.ts"
+  },
+  "createdAt": "2026-09-18T04:41:57.907Z"
+}
