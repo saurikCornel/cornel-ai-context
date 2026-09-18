@@ -22,8 +22,9 @@
   "workspaceSyncedSha": "3eb7d44b97703a64cc61966930d7da0446652689",
   "status": "CANCELLED",
   "createdAt": "2026-09-18T03:16:04.194Z",
-  "updatedAt": "2026-09-18T03:23:56.531Z",
+  "updatedAt": "2026-09-18T03:24:20.438Z",
   "issue": null,
   "chatUrl": null,
-  "error": null
+  "error": null,
+  "deletedAt": "2026-09-18T03:24:20.436Z"
 }

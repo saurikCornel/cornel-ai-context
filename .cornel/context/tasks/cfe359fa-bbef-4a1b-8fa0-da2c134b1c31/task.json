@@ -8,10 +8,10 @@
   "prompt": "Напиши полнофункциональное приложение погоды с реальными данными и анимациями на ios и запусти на физическом 15 pro max",
   "branch": "cornel/cfe359fa-bbef-4a1b-8fa0-da2c134b1c31",
   "baseSha": "00ccc8f5efa5c6c9bbe79e8b7e4e62cb48191653",
-  "workspaceSyncedSha": "8a753def00339038efc2e9f7f41efbd5cf339ce1",
-  "status": "DONE",
+  "workspaceSyncedSha": "922f640c2ead144a3b91eda419c368bff602f76a",
+  "status": "CANCELLED",
   "createdAt": "2026-09-12T03:17:23.452Z",
-  "updatedAt": "2026-09-12T04:02:21.221Z",
+  "updatedAt": "2026-09-18T03:24:20.437Z",
   "issue": 2,
   "chatUrl": "https://chatgpt.com/c/6aa4c454-badc-83eb-aa8a-06fbfb0283fe",
   "error": null,
@@ -20,5 +20,6 @@
   "currentHead": "922f640c2ead144a3b91eda419c368bff602f76a",
   "statusChecks": 0,
   "attentionReason": null,
-  "intentRevision": 3
+  "intentRevision": 3,
+  "deletedAt": "2026-09-18T03:24:20.436Z"
 }
