@@ -1,0 +1,17 @@
+{
+  "id": "dcd3198b-a258-44a0-9265-8c26382ced7c",
+  "taskId": "c3cd509f-c9cc-4e53-b86b-ceaadd73f294",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "sql-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "records\ntotal 0\ndrwxr-xr-x@  4 alex  staff  128 Sep 18 07:15 .\ndrwxr-xr-x@  8 alex  staff  256 Sep 18 07:15 ..\ndrwxr-xr-x@  4 alex  staff  128 Sep 18 07:15 .cornel\ndrwxr-xr-x@ 14 alex  staff  448 Sep 18 07:38 .git\n00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f\n1213d394-6ee0-4a60-ba1f-35af126d1fdc\n2d6324f0-cfcf-4c95-906e-86af400b25ae\n4ed44558-2663-4f14-bd90-fb264785e1aa\n64e61d47-08d0-4d92-9f14-491fc2a736fd\n8a0be3a8-0a9f-4632-89a1-42d645506940\nb6f06242-fb99-4c77-8c23-96031d78c44d\nc3cd509f-c9cc-4e53-b86b-ceaadd73f294\ndf49f6c4-69f1-4421-afa4-4b6cdde29dbc\nf64cb933-da7d-4e5c-91ba-1ea2deff761c\n",
+    "outputDigest": "36ef3dfbe5703f1cb5b77596aeead2d7f761c20dab6dd9b5407ab9bc355d8e75",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:38:41.596Z"
+}

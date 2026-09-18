@@ -1,0 +1,11 @@
+{
+  "id": "62fc8c1f-6627-49d6-9038-1d2c4ca69fa8",
+  "taskId": "b6f06242-fb99-4c77-8c23-96031d78c44d",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "locate-mobile-1",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:38:44.090Z"
+}
