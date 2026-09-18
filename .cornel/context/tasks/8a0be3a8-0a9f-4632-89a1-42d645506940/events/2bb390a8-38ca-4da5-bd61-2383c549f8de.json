@@ -1,0 +1,17 @@
+{
+  "id": "2bb390a8-38ca-4da5-bd61-2383c549f8de",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "verify-audio-9",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "\n> @msngr/mobile@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\nsh: tsc: command not found\nnpm error Lifecycle script `typecheck` failed with error:\nnpm error code 127\nnpm error path /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error workspace @msngr/mobile@0.1.0\nnpm error location /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error command failed\nnpm error command sh -c tsc -p tsconfig.json --noEmit\n",
+    "outputDigest": "852ed2792e0eac8bcf047424a27c01331398e3b83f5fa73422c30eac2b2e51d7",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:45:07.920Z"
+}
