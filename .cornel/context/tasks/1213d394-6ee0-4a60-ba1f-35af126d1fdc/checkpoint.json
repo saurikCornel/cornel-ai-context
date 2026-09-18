@@ -2,8 +2,8 @@
   "taskId": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
   "branch": "cornel/server-store-auth-http-1213d3",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
-  "status": "WAITING_CHATGPT",
-  "summary": "Аудит подтвердил ровно 10 разрешённых файлов и отсутствие посторонних изменений. Сохраняю для следующих исполнителей расположение и способ проверки нового серверного слоя.\n\n```json\n{\"version\":1,\"taskId\":\"1213d394-6ee0-4a60-ba1f-35af126d1fdc\",\"commandId\":\"remember-server-layer-14\",\"operation\":\"remember\",\"kind\":\"where\",\"text\":\"Карточка server store/auth/HTTP реализована в отдельном server/: src/types.ts, config.ts, store.ts, auth.ts, index.ts. JSON БД — server/data/db.json; data и uploads создаются при старте. Опциональные routes/chats.ts, routes/messages.ts, routes/media.ts и ws.ts подхватываются через existsSync+dynamic import. Проверка: cd server && npm install --no-package-lock && npm run typecheck && npm test; npm start слушает 0.0.0.0:8080.\",\"files\":[\"server/package.json\",\"server/src/types.ts\",\"server/src/config.ts\",\"server/src/store.ts\",\"server/src/auth.ts\",\"server/src/index.ts\"]}\n```\n\nЖду RESULT worker, затем публикую единственный итоговый commit.\n\n",
+  "status": "RUNNING",
+  "summary": "Память проекта обновлена. Публикую проверенные изменения в назначенную ветку одним commit.\n\n```json\n{\"version\":1,\"taskId\":\"1213d394-6ee0-4a60-ba1f-35af126d1fdc\",\"commandId\":\"publish-server-auth-15\",\"operation\":\"publish\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"message\":\"Implement server store authentication and HTTP entrypoint\"}\n```\n\nЖду RESULT worker с новым SHA; после публикации отправлю finish с фактическими проверками.\n\n",
   "commands": [
     {
       "commandId": "read-server-scope-4",
@@ -63,7 +63,13 @@
       "commandId": "remember-server-layer-14",
       "status": "SUCCEEDED",
       "exitCode": 0
+    },
+    {
+      "commandId": "publish-server-auth-15",
+      "status": "STARTED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:48:08.724Z"
+  "createdAt": "2026-09-18T04:48:23.068Z"
 }
