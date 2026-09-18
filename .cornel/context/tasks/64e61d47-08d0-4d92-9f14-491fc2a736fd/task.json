@@ -1,0 +1,30 @@
+{
+  "id": "64e61d47-08d0-4d92-9f14-491fc2a736fd",
+  "projectId": "4d669471-97af-446b-9599-02751f6f341d",
+  "effort": "current",
+  "agent": "grok",
+  "model": "grok-4.5",
+  "thinking": "medium",
+  "attachments": [],
+  "office": {
+    "kind": "card",
+    "role": "developer",
+    "workerId": "dev-4",
+    "cardId": "726a9b23-8549-42b9-b41e-9c2c00bafdd5",
+    "boardId": "main",
+    "module": null
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Экран переписки и пузыри",
+  "prompt": "Ты — Работник 4, работник AI-офиса проекта «msngr». \n\nЗадание владельца: Реализуй клиент-серверный мессенджер на react native (клиенты - ios/android) в современном стиле как telegram. Также там должны быть аудиосообщения\nПодход координатора: Пустой репозиторий: контракт моделей/REST/WS и Telegram-токены зафиксированы в карточках. Слои разведены по файлам — сервер (store/auth и чаты/медиа/ws), Expo-клиент (scaffold/тема/навигация и API/сессия), затем экраны, аудио и тесты. Все 4 работника заняты с первой волны, общих файлов нет.\n\nТвоя карточка: Экран переписки и пузыри\nUI-слой диалога (текст), стиль Telegram. НЕ трогать Login/ChatList, audio/recorder, HoldToRecordButton реализацию, server/, package.json, navigation файлы.\n\nФайлы только: mobile/src/screens/ChatScreen.tsx, mobile/src/components/MessageBubble.tsx, mobile/src/components/MessageList.tsx, mobile/src/components/Composer.tsx, mobile/src/components/Tick.tsx.\n\nTick: одна/две галочки muted; status read → accent (как Telegram).\nMessageBubble: входящие слева incoming, исходящие справа outgoing; хвост скругления 4 на ближнем к краю нижнем углу; text белый; время caption внизу справа + Tick для своих. Для type==='audio' рендерить import { AudioBubble } from './AudioBubble' (компонент из t7): пропсы message, isMine.\nMessageList: инвертированный FlatList (новые снизу), группировка без повтора имени; дата-разделитель «сегодня/вчера/d MMM».\nComposer: поле surface, placeholder «Сообщение», если text.trim() непустой — круглая кнопка accent send; если пустой — import { HoldToRecordButton } from './HoldToRecordButton' с пропсами { chatId, onSent: (msg)=>void }. Не реализовывать запись здесь.\nChatScreen: listMessages, локальный стейт messages; connectWs onMessageNew (если chatId совпал — append), onMessageStatus обновить Tick; sendText через client; после отправки markRead по последнему id; клавиатура KeyboardAvoidingView (iOS padding, Android height). Фон bg. Не ставить свой кастомный header кроме как нужно для клавиатуры.\nПроверка: экран экспортирует ChatScreen; исходящие/входящие пузыри различаются; пустой composer показывает HoldToRecordButton, с текстом — send.\n\nУже готово и слито в ветку офиса: Основа проекта: стек, структура, сборка.\n\nРезультат — файлы в репозитории проекта (код, текст, таблицы, документы). Другие работники параллельно ведут другие карточки в своих ветках: меняй только то, что нужно для твоей карточки. Если карточка велика и делится на независимые части, не делай всё сам: до изменений ответь блоком ```json {\"cornelSplit\":1,\"tasks\":[{\"key\":\"a\",\"title\":\"…\",\"description\":\"…\",\"dependsOn\":[],\"priority\":\"high\"}]} ``` — подзадачи уйдут параллельным работникам, а этот чат закроется. Твоя ветка создана от ветки офиса cornel/office; после finish её слияние выполнит сборщик, PR открывать не нужно. Проверь результат доступным способом (для кода — тесты и сборка командами worker, для текстов и документов — вычитка и проверка структуры), при локальных правках сделай publish, затем finish с кратким итогом. Если карточку невозможно выполнить, напиши CORNEL_AI_BLOCKED и причину.",
+  "branch": "cornel/ekran-perepiski-i-puzyri-64e61d",
+  "baseSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "READY",
+  "createdAt": "2026-09-18T04:36:27.184Z",
+  "updatedAt": "2026-09-18T04:36:29.771Z",
+  "issue": null,
+  "chatUrl": null,
+  "error": null
+}

@@ -1,0 +1,30 @@
+{
+  "id": "b6f06242-fb99-4c77-8c23-96031d78c44d",
+  "projectId": "4d669471-97af-446b-9599-02751f6f341d",
+  "effort": "current",
+  "agent": "rp-alex-ms-7e93ce-codex",
+  "model": "gpt-5.6-sol",
+  "thinking": "high",
+  "attachments": [],
+  "office": {
+    "kind": "card",
+    "role": "developer",
+    "workerId": "dev-3",
+    "cardId": "052180e0-c278-4dc5-84b8-a5e462658754",
+    "boardId": "main",
+    "module": null
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Экраны: вход и список чатов",
+  "prompt": "Ты — Работник 3, работник AI-офиса проекта «msngr». \n\nЗадание владельца: Реализуй клиент-серверный мессенджер на react native (клиенты - ios/android) в современном стиле как telegram. Также там должны быть аудиосообщения\nПодход координатора: Пустой репозиторий: контракт моделей/REST/WS и Telegram-токены зафиксированы в карточках. Слои разведены по файлам — сервер (store/auth и чаты/медиа/ws), Expo-клиент (scaffold/тема/навигация и API/сессия), затем экраны, аудио и тесты. Все 4 работника заняты с первой волны, общих файлов нет.\n\nТвоя карточка: Экраны: вход и список чатов\nUI-слой списков и входа, стиль Telegram. НЕ трогать ChatScreen, Composer, audio/, navigation, api, server/, package.json.\n\nФайлы только: mobile/src/screens/LoginScreen.tsx, mobile/src/screens/RegisterScreen.tsx, mobile/src/screens/ChatListScreen.tsx, mobile/src/screens/NewChatScreen.tsx, mobile/src/components/Avatar.tsx, mobile/src/components/ChatListItem.tsx.\nИмпорты: theme из ../theme, useAuth из ../session/AuthContext, client из ../api/client, типы из ../api/types. Навигация: NativeStackScreenProps из @react-navigation/native-stack и RootStackParamList из ../navigation/types.\n\nAvatar: круг, фон avatarColor, инициалы displayName, размеры 40/48.\nChatListItem: ряд 72px, аватар, title (displayName или chat.title или «Чат»), lastMessage preview (text или «Аудиосообщение»), время HH:mm, badge unreadCount, muted caption. Нажатие → navigate Chat {chatId,title}.\n\nLoginScreen: фон bg, логотип-текст «Msngr» accent, поля username/password (surface, без нативного белого), кнопка accent «Войти», ссылка на Register. Ошибка красным. Вызов login().\nRegisterScreen: username, displayName, password, «Создать аккаунт», ссылка на Login, register().\nChatListScreen: плоский список чатов listChats при фокусе, Pull-to-refresh, пустое «Нет чатов — нажмите +». Не рисовать header сами, если его ставит navigator.\nNewChatScreen: поиск searchUsers, тап → createChat({type:'direct', memberIds:[id]}) и navigate Chat.\nБез аудиозаписи и без пузырей сообщений.\nПроверка: экраны экспортируют те же имена, что ждёт RootNavigator; визуально тёмные, без светлого дефолта RN.\n\nУже готово и слито в ветку офиса: Основа проекта: стек, структура, сборка.\n\nРезультат — файлы в репозитории проекта (код, текст, таблицы, документы). Другие работники параллельно ведут другие карточки в своих ветках: меняй только то, что нужно для твоей карточки. Если карточка велика и делится на независимые части, не делай всё сам: до изменений ответь блоком ```json {\"cornelSplit\":1,\"tasks\":[{\"key\":\"a\",\"title\":\"…\",\"description\":\"…\",\"dependsOn\":[],\"priority\":\"high\"}]} ``` — подзадачи уйдут параллельным работникам, а этот чат закроется. Твоя ветка создана от ветки офиса cornel/office; после finish её слияние выполнит сборщик, PR открывать не нужно. Проверь результат доступным способом (для кода — тесты и сборка командами worker, для текстов и документов — вычитка и проверка структуры), при локальных правках сделай publish, затем finish с кратким итогом. Если карточку невозможно выполнить, напиши CORNEL_AI_BLOCKED и причину.",
+  "branch": "cornel/ekrany-vhod-i-spisok-chatov-b6f062",
+  "baseSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "READY",
+  "createdAt": "2026-09-18T04:36:22.303Z",
+  "updatedAt": "2026-09-18T04:36:24.971Z",
+  "issue": null,
+  "chatUrl": null,
+  "error": null
+}

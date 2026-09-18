@@ -1,0 +1,30 @@
+{
+  "id": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "projectId": "4d669471-97af-446b-9599-02751f6f341d",
+  "effort": "current",
+  "agent": "grok",
+  "model": "grok-4.5",
+  "thinking": "medium",
+  "attachments": [],
+  "office": {
+    "kind": "card",
+    "role": "developer",
+    "workerId": "dev-4",
+    "cardId": "ab5ba408-b4fe-4cf7-babd-4ef160eb833f",
+    "boardId": "main",
+    "module": null
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Клиент: API, WS, сессия",
+  "prompt": "Ты — Работник 4, работник AI-офиса проекта «msngr». \n\nЗадание владельца: Реализуй клиент-серверный мессенджер на react native (клиенты - ios/android) в современном стиле как telegram. Также там должны быть аудиосообщения\nПодход координатора: Пустой репозиторий: контракт моделей/REST/WS и Telegram-токены зафиксированы в карточках. Слои разведены по файлам — сервер (store/auth и чаты/медиа/ws), Expo-клиент (scaffold/тема/навигация и API/сессия), затем экраны, аудио и тесты. Все 4 работника заняты с первой волны, общих файлов нет.\n\nТвоя карточка: Клиент: API, WS, сессия\nСервисный слой мобильного клиента. НЕ трогать App.tsx, navigation, theme, screens, server/, package.json.\n\nФайлы только: mobile/src/api/types.ts, mobile/src/api/client.ts, mobile/src/api/ws.ts, mobile/src/session/storage.ts, mobile/src/session/AuthContext.tsx.\n\nТипы 1:1 с сервером: User, Chat (плюс lastMessage: Message|null, unreadCount: number), Message, AuthResponse {token,user}. База API: process.env.EXPO_PUBLIC_API_URL ?? 'http://127.0.0.1:8080'.\n\nstorage.ts: expo-secure-store ключ msngr.token и msngr.user JSON; getToken, setSession(token,user), clearSession.\n\nclient.ts: api(path, {method,body,token,formData?}). JSON Authorization Bearer. Функции: register, login, logout, me, searchUsers(q), listChats, createChat, listMessages(chatId,{before,limit}), sendText(chatId,text), sendAudio(chatId, {uri,durationMs,mime}), markRead(chatId,lastReadMessageId), mediaUrl(audioId) → `${base}/media/${id}`. sendAudio: FormData fields type=audio, durationMs, audio (файл). Ошибки бросать с полем error string.\n\nws.ts: connectWs(token, handlers), url base http→ws + /ws?token=, JSON {event,payload}. Методы sendTyping(chatId), close(). Переподключение с backoff 1s/2s/5s пока не close(). handlers: onMessageNew, onMessageStatus, onTyping, onChatUpdated, onOpen, onClose.\n\nAuthContext.tsx: React context. Стейт {user,token,ready}. boot: прочитать storage, me(); 401 → clear. login/register → setSession. logout → API+clear. Экспорт AuthProvider, useAuth(). Не импортировать экраны.\n\nПроверка: tsc по своим файлам/линтер; юнит не обязателен. Контракт путей и имён не менять — экраны импортнут отсюда.\n\nУже готово и слито в ветку офиса: Основа проекта: стек, структура, сборка.\n\nРезультат — файлы в репозитории проекта (код, текст, таблицы, документы). Другие работники параллельно ведут другие карточки в своих ветках: меняй только то, что нужно для твоей карточки. Если карточка велика и делится на независимые части, не делай всё сам: до изменений ответь блоком ```json {\"cornelSplit\":1,\"tasks\":[{\"key\":\"a\",\"title\":\"…\",\"description\":\"…\",\"dependsOn\":[],\"priority\":\"high\"}]} ``` — подзадачи уйдут параллельным работникам, а этот чат закроется. Твоя ветка создана от ветки офиса cornel/office; после finish её слияние выполнит сборщик, PR открывать не нужно. Проверь результат доступным способом (для кода — тесты и сборка командами worker, для текстов и документов — вычитка и проверка структуры), при локальных правках сделай publish, затем finish с кратким итогом. Если карточку невозможно выполнить, напиши CORNEL_AI_BLOCKED и причину.",
+  "branch": "cornel/klient-api-ws-sessiya-00a9b3",
+  "baseSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "READY",
+  "createdAt": "2026-09-18T04:36:17.297Z",
+  "updatedAt": "2026-09-18T04:36:20.063Z",
+  "issue": null,
+  "chatUrl": null,
+  "error": null
+}
