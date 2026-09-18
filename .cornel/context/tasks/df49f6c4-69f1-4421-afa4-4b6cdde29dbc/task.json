@@ -23,9 +23,9 @@
   "workspaceSyncedSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
   "status": "READY",
   "createdAt": "2026-09-18T04:16:22.819Z",
-  "updatedAt": "2026-09-18T04:17:54.599Z",
+  "updatedAt": "2026-09-18T04:21:11.141Z",
   "issue": null,
   "chatUrl": null,
   "error": null,
-  "cliActivity": "Grok CLI: думает"
+  "cliActivity": "Grok CLI: grep: ."
 }
