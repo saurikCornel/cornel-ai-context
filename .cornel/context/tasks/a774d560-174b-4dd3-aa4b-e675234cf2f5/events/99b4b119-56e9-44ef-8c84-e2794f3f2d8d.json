@@ -1,0 +1,17 @@
+{
+  "id": "99b4b119-56e9-44ef-8c84-e2794f3f2d8d",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-final-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "\n> @msngr/shared@0.1.0 build\n> tsc -p tsconfig.json\n\n\n> @msngr/server@0.1.0 build\n> tsc -p tsconfig.json\n\n\n> msngr@0.1.0 typecheck\n> npm run typecheck --workspaces --if-present\n\n\n> @msngr/mobile@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\n\n> @msngr/server@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\n\n> @msngr/shared@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\n\n> msngr@0.1.0 lint\n> npm run lint --workspaces --if-present\n\n\n> @msngr/mobile@0.1.0 lint\n> eslint App.tsx src --max-warnings=0\n\n\n> @msngr/server@0.1.0 lint\n> eslint src --max-warnings=0\n\n\n> @msngr/shared@0.1.0 lint\n> eslint src --max-warnings=0\n\n\n> msngr@0.1.0 test\n> npm run test --workspaces --if-present\n\n\n> @msngr/mobile@0.1.0 test\n> jest\n\nPASS __tests__/config.test.ts\n  getApiBaseUrl\n    ✓ defaults to localhost:3000 (1 ms)\n    ✓ reads EXPO_PUBLIC_API_URL\n\nTest Suites: 1 passed, 1 total\nTests:       2 passed, 2 total\nSnapshots:   0 total\nTime:        0.193 s, estimated 1 s\nRan all test suites.\n\n> @msngr/server@0.1.0 test\n> NODE_OPTIONS=--experimental-vm-modules jest\n\n(node:53283) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nPASS __tests__/app.test.ts\nPASS __tests__/config.test.ts\n\nTest Suites: 2 passed, 2 total\nTests:       3 passed, 3 total\nSnapshots:   0 total\nTime:        0.4 s, estimated 1 s\nRan all test suites.\n\n> @msngr/shared@0.1.0 test\n> NODE_OPTIONS=--experimental-vm-modules jest\n\n(node:53373) ExperimentalWarning: VM Modules is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nPASS __tests__/index.test.ts\n  @msngr/shared\n    ✓ exports package identity (1 ms)\n    ✓ exports API prefix\n\nTest Suites: 1 passed, 1 total\nTests:       2 passed, 2 total\nSnapshots:   0 total\nTime:        0.232 s, estimated 1 s\nRan all test suites.\nOK_FINAL\n",
+    "outputDigest": "1f8fefd1c0c8836948ea817457f543ac4ce37185fcd1708576296b47abc0c078",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:35:22.886Z"
+}
