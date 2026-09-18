@@ -1,0 +1,11 @@
+{
+  "id": "ef3ac64a-6556-447d-87a8-fc14e5a6af64",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "check-4-tsc-lint",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:45:47.677Z"
+}

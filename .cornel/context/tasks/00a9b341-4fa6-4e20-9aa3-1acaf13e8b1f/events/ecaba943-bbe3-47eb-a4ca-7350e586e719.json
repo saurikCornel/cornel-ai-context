@@ -1,0 +1,12 @@
+{
+  "id": "ecaba943-bbe3-47eb-a4ca-7350e586e719",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-4-tsc-lint",
+    "operation": "run",
+    "command": "npm run typecheck -w @msngr/mobile 2>&1 && npx eslint apps/mobile/src/api apps/mobile/src/session --max-warnings=0 2>&1"
+  },
+  "createdAt": "2026-09-18T04:45:47.676Z"
+}

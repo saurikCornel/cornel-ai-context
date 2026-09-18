@@ -1,0 +1,17 @@
+{
+  "id": "c88ae8ff-4bfa-4ac5-afbe-7a9368f8bbf0",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-4-tsc-lint",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "\n> @msngr/mobile@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\n",
+    "outputDigest": "c504a0fe914f56a39d6f47f0fd5139387feb7c1dbf7fa5f64fe201527306b2bc",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:45:52.347Z"
+}
