@@ -1,0 +1,17 @@
+{
+  "id": "176abd9f-a4ee-49af-bbe3-0c79d2bfe297",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "verify-published-head-15",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "e61ad45efe4628c5e936a86ec495019619cb5efa",
+    "output": "e61ad45efe4628c5e936a86ec495019619cb5efa\n\n> @msngr/mobile@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\n\n> @msngr/mobile@0.1.0 lint\n> eslint App.tsx src --max-warnings=0\n\n\n> @msngr/mobile@0.1.0 test\n> jest --runInBand\n\nPASS __tests__/config.test.ts\n  getApiBaseUrl\n    ✓ defaults to localhost:3000 (1 ms)\n    ✓ reads EXPO_PUBLIC_API_URL\n\nTest Suites: 1 passed, 1 total\nTests:       2 passed, 2 total\nSnapshots:   0 total\nTime:        0.198 s, estimated 1 s\nRan all test suites.\n",
+    "outputDigest": "8c6d6c3f101db8473706b321da3ea4642f0c4483b5bca7feefa322d523f862a2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:48:17.960Z"
+}
