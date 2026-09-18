@@ -1,0 +1,30 @@
+{
+  "id": "c3cd509f-c9cc-4e53-b86b-ceaadd73f294",
+  "projectId": "4d669471-97af-446b-9599-02751f6f341d",
+  "effort": "current",
+  "agent": "grok",
+  "model": "grok-4.5",
+  "thinking": "medium",
+  "attachments": [],
+  "office": {
+    "kind": "card",
+    "role": "developer",
+    "workerId": "dev-2",
+    "cardId": "04414225-948e-448a-99ef-c4bcc20476d0",
+    "boardId": "main",
+    "module": null
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Сервер: чаты, сообщения, медиа, WS",
+  "prompt": "Ты — Работник 2, работник AI-офиса проекта «msngr». \n\nЗадание владельца: Реализуй клиент-серверный мессенджер на react native (клиенты - ios/android) в современном стиле как telegram. Также там должны быть аудиосообщения\nПодход координатора: Пустой репозиторий: контракт моделей/REST/WS и Telegram-токены зафиксированы в карточках. Слои разведены по файлам — сервер (store/auth и чаты/медиа/ws), Expo-клиент (scaffold/тема/навигация и API/сессия), затем экраны, аудио и тесты. Все 4 работника заняты с первой волны, общих файлов нет.\n\nТвоя карточка: Сервер: чаты, сообщения, медиа, WS\nСлой сервисов переписки. НЕ менять server/src/index.ts, auth.ts, store.ts, package.json, mobile/.\n\nФайлы только: server/src/routes/chats.ts, server/src/routes/messages.ts, server/src/routes/media.ts, server/src/ws.ts, server/uploads/.gitkeep.\nИмпорты: store и types из '../store','../types'; authMiddleware из '../auth'. Экспорт имён СТРОГО: chatsRouter, messagesRouter, mediaRouter, attachWebSocket(httpServer). index из t1 подхватит их dynamic import. Роутеры БЕЗ префикса /chats внутри — пути полные: /chats, /chats/:chatId/messages, /media/:id.\n\nВсе чат-ручки под authMiddleware. Ошибки JSON {error}. Участник чата иначе 403 {error:'forbidden'}, нет чата 404 {error:'not_found'}.\n\nGET /chats → массив Chat, каждому lastMessage (последнее или null) и unreadCount (по lastRead). Сортировка updatedAt desc.\nPOST /chats {type,memberIds,title?} : creator всегда в memberIds. direct: ровно 1 другой userId, если пара уже есть — вернуть существующий 200; иначе 201. group: title 1–64, memberIds ≥1 кроме себя. 400 при мусоре.\nGET /users?q= (можно повесить на chatsRouter) → до 20 пользователей кроме себя, фильтр по username/displayName, без passwordHash.\nGET /chats/:chatId/messages?before=&limit= → limit default 50 max 100, before = message id, лента createdAt desc, затем можно отдать asc — в контракте клиенту: массив Message[] в порядке старые→новые.\nPOST /chats/:chatId/messages JSON {type:'text', text} text 1–4000 → 201 Message status 'sent', touchChat, broadcast WS message.new всем участникам онлайн; остальным участникам status delivered если онлайн — message.status.\nPOST /chats/:chatId/messages Content-Type multipart: поле type=audio, durationMs, файл field 'audio' (m4a/aac/mp4/webm, ≤5MB, duration 1–60000). Сохранить в server/uploads/<id>, saveMedia, Message type audio, audioId, audioDurationMs. 400 {error:'invalid_audio'}.\nPOST /chats/:chatId/read {lastReadMessageId} → 204, setLastRead.\nGET /media/:id (auth, участник чата, которому принадлежит медиа, либо проще: любой авторизованный) → файл stream, MIME из store. 404 если нет.\n\nws.ts: WebSocketServer path /ws, токен из query token. Невалидный — закрыть 4001. Карта userId→Set<ws>. Входящие JSON {event, payload}: typing {chatId} → typing {chatId,userId} другим в чате; ping → pong. Исходящие: message.new {message}, message.status {messageId,chatId,status}, typing {chatId,userId}, chat.updated {chatId}. Экспорт функции emitToUser(userId,event,payload) и emitToChat(chatId,event,payload,exceptUserId?) для routes.\n\nПроверка (после появления t1 в той же копии или мок store, если t1 ещё нет — писать против контракта store): register двух юзеров, POST direct chat, text message, multipart audio, GET messages, GET /media/:id, WS ?token= получить message.new. Не запускать npm install сервера, если package.json не ваш — только свои файлы.\n\nУже готово и слито в ветку офиса: Основа проекта: стек, структура, сборка.\n\nРезультат — файлы в репозитории проекта (код, текст, таблицы, документы). Другие работники параллельно ведут другие карточки в своих ветках: меняй только то, что нужно для твоей карточки. Если карточка велика и делится на независимые части, не делай всё сам: до изменений ответь блоком ```json {\"cornelSplit\":1,\"tasks\":[{\"key\":\"a\",\"title\":\"…\",\"description\":\"…\",\"dependsOn\":[],\"priority\":\"high\"}]} ``` — подзадачи уйдут параллельным работникам, а этот чат закроется. Твоя ветка создана от ветки офиса cornel/office; после finish её слияние выполнит сборщик, PR открывать не нужно. Проверь результат доступным способом (для кода — тесты и сборка командами worker, для текстов и документов — вычитка и проверка структуры), при локальных правках сделай publish, затем finish с кратким итогом. Если карточку невозможно выполнить, напиши CORNEL_AI_BLOCKED и причину.",
+  "branch": "cornel/server-chaty-soobscheniya-media-ws-c3cd50",
+  "baseSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "READY",
+  "createdAt": "2026-09-18T04:36:07.467Z",
+  "updatedAt": "2026-09-18T04:36:10.318Z",
+  "issue": null,
+  "chatUrl": null,
+  "error": null
+}

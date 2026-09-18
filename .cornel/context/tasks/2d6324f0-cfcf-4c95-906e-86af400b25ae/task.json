@@ -1,0 +1,30 @@
+{
+  "id": "2d6324f0-cfcf-4c95-906e-86af400b25ae",
+  "projectId": "4d669471-97af-446b-9599-02751f6f341d",
+  "effort": "current",
+  "agent": "rp-alex-ms-7e93ce-codex",
+  "model": "gpt-5.6-sol",
+  "thinking": "high",
+  "attachments": [],
+  "office": {
+    "kind": "card",
+    "role": "developer",
+    "workerId": "dev-3",
+    "cardId": "d5c0fcfa-6ec9-4b45-afd6-edfe47b89b7a",
+    "boardId": "main",
+    "module": null
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Expo: проект, тема, навигация",
+  "prompt": "Ты — Работник 3, работник AI-офиса проекта «msngr». \n\nЗадание владельца: Реализуй клиент-серверный мессенджер на react native (клиенты - ios/android) в современном стиле как telegram. Также там должны быть аудиосообщения\nПодход координатора: Пустой репозиторий: контракт моделей/REST/WS и Telegram-токены зафиксированы в карточках. Слои разведены по файлам — сервер (store/auth и чаты/медиа/ws), Expo-клиент (scaffold/тема/навигация и API/сессия), затем экраны, аудио и тесты. Все 4 работника заняты с первой волны, общих файлов нет.\n\nТвоя карточка: Expo: проект, тема, навигация\nИнфраструктура клиента iOS/Android. НЕ трогать server/ и корневой README.md.\n\nФайлы: mobile/package.json, mobile/app.json, mobile/App.tsx, mobile/index.js, mobile/babel.config.js, mobile/tsconfig.json, mobile/metro.config.js, mobile/.gitignore, mobile/README.md, mobile/src/theme/index.ts, mobile/src/navigation/types.ts, mobile/src/navigation/RootNavigator.tsx.\n\nСтек Expo SDK 51+, react-native, TypeScript. Зависимости явно в package.json (установка cd mobile && npm install): @react-navigation/native, @react-navigation/native-stack, react-native-screens, react-native-safe-area-context, expo-av, expo-secure-store, expo-status-bar. app.json: name Msngr, slug msngr, ios+android, plugins expo-av с microphonePermission «Msngr нужен микрофон для аудиосообщений», android.permissions RECORD_AUDIO, NSMicrophoneUsageDescription. New Architecture не включать принудительно.\n\nТема (экспорт theme): Telegram night. colors: bg #0E1621, surface #17212B, bar #232E3C, accent #2AABEE, outgoing #2B5278, incoming #182533, text #FFFFFF, muted #8A96A3, danger #E53935, unread #2AABEE, hairline #0F1A24. typography: title 17/600, body 16/400, caption 13/400, time 12/400. radii: bubble 16, avatar 24. spacing 4-base.\n\nnavigation/types.ts RootStackParamList: Login, Register, ChatList, NewChat, Chat { chatId: string, title: string }.\nRootNavigator: NavigationContainer theme тёмный. Импорты экранов из:\n../screens/LoginScreen, RegisterScreen, ChatListScreen, NewChatScreen, ChatScreen — именованные экспорты с этими именами (файлы появятся в других карточках). Обёртка: попытка import AuthProvider из ../session/AuthContext; если модуль ещё не в дереве — не падать на этапе написания, но в коде писать прямой import { AuthProvider, useAuth } from '../session/AuthContext'. Стек: если !user → Login/Register (headerShown false); иначе ChatList, NewChat, Chat. Header ChatList: фон bar, title «Чаты», цвет text, кнопка «+» → NewChat. Chat header: title из params, фон bar.\nApp.tsx: SafeAreaProvider + AuthProvider + RootNavigator, StatusBar light.\n\nmobile/README.md: npm start (expo), как указать EXPO_PUBLIC_API_URL (iOS sim localhost:8080, Android emu 10.0.2.2:8080), сервер отдельно на :8080.\nТяжёлое: npm install в mobile/. Не гонять xcodebuild/gradle/eject.\nПроверка: npx tsc --noEmit может ругаться на отсутствующие screens/session — это допустимо до сборки; проверить, что app.json содержит microphone и пакеты expo-av/navigation в package.json, theme экспортируется.\n\nУже готово и слито в ветку офиса: Основа проекта: стек, структура, сборка.\n\nРезультат — файлы в репозитории проекта (код, текст, таблицы, документы). Другие работники параллельно ведут другие карточки в своих ветках: меняй только то, что нужно для твоей карточки. Если карточка велика и делится на независимые части, не делай всё сам: до изменений ответь блоком ```json {\"cornelSplit\":1,\"tasks\":[{\"key\":\"a\",\"title\":\"…\",\"description\":\"…\",\"dependsOn\":[],\"priority\":\"high\"}]} ``` — подзадачи уйдут параллельным работникам, а этот чат закроется. Твоя ветка создана от ветки офиса cornel/office; после finish её слияние выполнит сборщик, PR открывать не нужно. Проверь результат доступным способом (для кода — тесты и сборка командами worker, для текстов и документов — вычитка и проверка структуры), при локальных правках сделай publish, затем finish с кратким итогом. Если карточку невозможно выполнить, напиши CORNEL_AI_BLOCKED и причину.",
+  "branch": "cornel/expo-proekt-tema-navigaciya-2d6324",
+  "baseSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "READY",
+  "createdAt": "2026-09-18T04:36:12.377Z",
+  "updatedAt": "2026-09-18T04:36:15.034Z",
+  "issue": null,
+  "chatUrl": null,
+  "error": null
+}

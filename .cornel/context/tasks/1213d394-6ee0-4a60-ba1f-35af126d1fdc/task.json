@@ -1,0 +1,30 @@
+{
+  "id": "1213d394-6ee0-4a60-ba1f-35af126d1fdc",
+  "projectId": "4d669471-97af-446b-9599-02751f6f341d",
+  "effort": "current",
+  "agent": "rp-alex-ms-7e93ce-codex",
+  "model": "gpt-5.6-sol",
+  "thinking": "high",
+  "attachments": [],
+  "office": {
+    "kind": "card",
+    "role": "developer",
+    "workerId": "dev-1",
+    "cardId": "bb454436-9989-42f7-9ad1-319d1544e2b1",
+    "boardId": "main",
+    "module": null
+  },
+  "autoRun": true,
+  "issueRepo": "saurikCornel/cornel-ai-context",
+  "title": "Сервер: store, auth, HTTP",
+  "prompt": "Ты — Работник 1, работник AI-офиса проекта «msngr». \n\nЗадание владельца: Реализуй клиент-серверный мессенджер на react native (клиенты - ios/android) в современном стиле как telegram. Также там должны быть аудиосообщения\nПодход координатора: Пустой репозиторий: контракт моделей/REST/WS и Telegram-токены зафиксированы в карточках. Слои разведены по файлам — сервер (store/auth и чаты/медиа/ws), Expo-клиент (scaffold/тема/навигация и API/сессия), затем экраны, аудио и тесты. Все 4 работника заняты с первой волны, общих файлов нет.\n\nТвоя карточка: Сервер: store, auth, HTTP\nСлой данных и входа. Создать Node ESM+TS сервер, НЕ трогать mobile/ и корневой README.md.\n\nФайлы только: server/package.json, server/tsconfig.json, server/.env.example, server/.gitignore, server/README.md, server/src/types.ts, server/src/config.ts, server/src/store.ts, server/src/auth.ts, server/src/index.ts.\n\nСтек: express, cors, tsx, vitest, supertest, multer, ws. Скрипты: start (tsx src/index.ts), test (vitest run). Порт из PORT или 8080, слушать 0.0.0.0. CORS открытый. JSON body. Папки server/data и server/uploads создавать при старте (gitignoring *.json в data, не сами аудио).\n\nКонтракт типов (server/src/types.ts), экспортировать User, Chat, Message, Session, MediaFile:\n- User { id: string, username: string, displayName: string, avatarColor: string, createdAt: string }\n- Chat { id, type: 'direct'|'group', title: string|null, memberIds: string[], createdAt, updatedAt }\n- Message { id, chatId, senderId, type: 'text'|'audio', text: string|null, audioId: string|null, audioDurationMs: number|null, createdAt, status: 'sent'|'delivered'|'read' }\n- Session { token, userId, createdAt }\n- MediaFile { id, path, mime, size, createdAt }\nid = crypto.randomUUID(), даты ISO UTC. Пароль не возвращать.\n\nstore.ts — JSON-файл server/data/db.json, очередь записи (без гонок), API:\ngetUserById, getUserByUsername, createUser({username,passwordHash,displayName,avatarColor}), createSession(userId)->token, getSession(token), deleteSession(token), listUsers({q,excludeId}), listChatsForUser(userId), getChatById, findDirectChat(userA,userB), createChat({type,memberIds,title}), touchChat(chatId), listMessages(chatId,{before,limit}), createMessage(...), updateMessageStatus(id,status), getUnreadCount(chatId,userId,lastReadId), setLastRead(chatId,userId,messageId), saveMedia, getMedia. lastRead хранить map chatId+userId.\n\nПароль: node:crypto scrypt (не bcrypt). username 3–32 [a-zA-Z0-9_], уникальный case-insensitive; password ≥6.\n\nauth.ts экспортирует authRouter (prefix монтирует index как /auth и /me) и authMiddleware(req,res,next) — Bearer token, 401 {error:'unauthorized'}, пишет req.user.\nМаршруты:\nPOST /auth/register {username,password,displayName} → 201 {token,user} | 409 {error:'username_taken'} | 400 {error:'invalid'}\nPOST /auth/login {username,password} → 200 {token,user} | 401 {error:'invalid_credentials'}\nPOST /auth/logout (auth) → 204\nGET /me (auth) → 200 user\n\nindex.ts: http.createServer(app), GET /health → {ok:true}. Монтировать auth. Роуты чатов/медиа/ws подключать ТОЛЬКО если файлы есть (existsSync + dynamic import): './routes/chats' экспорт chatsRouter; './routes/messages' messagesRouter; './routes/media' mediaRouter; './ws' attachWebSocket(httpServer). Без этих файлов сервер должен стартовать.\n\nУстановка: cd server && npm install (явно). Не собирать iOS/Android.\nПроверка: npm start, curl /health, register, login, GET /me с Bearer, повторный username → 409; npm test может быть пустым набором.\n\nУже готово и слито в ветку офиса: Основа проекта: стек, структура, сборка.\n\nРезультат — файлы в репозитории проекта (код, текст, таблицы, документы). Другие работники параллельно ведут другие карточки в своих ветках: меняй только то, что нужно для твоей карточки. Если карточка велика и делится на независимые части, не делай всё сам: до изменений ответь блоком ```json {\"cornelSplit\":1,\"tasks\":[{\"key\":\"a\",\"title\":\"…\",\"description\":\"…\",\"dependsOn\":[],\"priority\":\"high\"}]} ``` — подзадачи уйдут параллельным работникам, а этот чат закроется. Твоя ветка создана от ветки офиса cornel/office; после finish её слияние выполнит сборщик, PR открывать не нужно. Проверь результат доступным способом (для кода — тесты и сборка командами worker, для текстов и документов — вычитка и проверка структуры), при локальных правках сделай publish, затем finish с кратким итогом. Если карточку невозможно выполнить, напиши CORNEL_AI_BLOCKED и причину.",
+  "branch": "cornel/server-store-auth-http-1213d3",
+  "baseSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "workspaceSyncedSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "status": "READY",
+  "createdAt": "2026-09-18T04:36:02.422Z",
+  "updatedAt": "2026-09-18T04:36:05.180Z",
+  "issue": null,
+  "chatUrl": null,
+  "error": null
+}
