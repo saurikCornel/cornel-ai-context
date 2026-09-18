@@ -1,0 +1,13 @@
+{
+  "id": "eed51aae-124a-4e8a-8c4b-1ae49b63d5e6",
+  "taskId": "64e61d47-08d0-4d92-9f14-491fc2a736fd",
+  "type": "SUMMARY",
+  "text": "Чат завершён: Карточка «Экран переписки и пузыри» выполнена на 7306b5f0.\n\nСделано: ChatScreen (listMessages/WS/sendText/markRead/KeyboardAvoidingView), MessageBubble (incoming/outgoing + AudioBubble), MessageList (inverted + даты), Composer (send/HoldToRecord), Tick (read→accent).\n\nПроверка verify-3 на этом headSha: tsc mobile exit 0 (+ stub-зависимости соседних карточек, в commit не входили), structural OK.",
+  "detail": {
+    "commands": 19,
+    "failed": 2,
+    "headSha": "7306b5f0b0ff303fa317c92354ab8cd59197959f",
+    "branch": "cornel/ekran-perepiski-i-puzyri-64e61d"
+  },
+  "createdAt": "2026-09-18T04:49:53.628Z"
+}
