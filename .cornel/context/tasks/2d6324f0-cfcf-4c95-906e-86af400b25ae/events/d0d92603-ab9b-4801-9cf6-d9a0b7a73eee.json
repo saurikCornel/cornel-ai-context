@@ -1,0 +1,17 @@
+{
+  "id": "d0d92603-ab9b-4801-9cf6-d9a0b7a73eee",
+  "taskId": "2d6324f0-cfcf-4c95-906e-86af400b25ae",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "verify-mobile-tooling-6",
+    "status": "FAILED",
+    "exitCode": 1,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.\n\nadded 115 packages, and audited 1223 packages in 2s\n\n143 packages are looking for funding\n  run `npm fund` for details\n\n24 vulnerabilities (12 moderate, 11 high, 1 critical)\n\nTo address issues that do not require attention, run:\n  npm audit fix\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n\n> @msngr/mobile@0.1.0 lint\n> eslint App.tsx src --max-warnings=0\n\n\n> @msngr/mobile@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\nApp.tsx(4,30): error TS2307: Cannot find module './src/session/AuthContext' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(4,32): error TS2307: Cannot find module '../screens/ChatListScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(5,28): error TS2307: Cannot find module '../screens/ChatScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(6,29): error TS2307: Cannot find module '../screens/LoginScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(7,31): error TS2307: Cannot find module '../screens/NewChatScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(8,32): error TS2307: Cannot find module '../screens/RegisterScreen' or its corresponding type declarations.\nsrc/navigation/RootNavigator.tsx(9,25): error TS2307: Cannot find module '../session/AuthContext' or its corresponding type declarations.\nnpm error Lifecycle script `typecheck` failed with error:\nnpm error code 2\nnpm error path /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error workspace @msngr/mobile@0.1.0\nnpm error location /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error command failed\nnpm error command sh -c tsc -p tsconfig.json --noEmit\nUnexpected TypeScript diagnostic detected.\n",
+    "outputDigest": "8ae2d5461a307604ae7aaffd072071741a2fa500608e0663730a112e2dfc82d2",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:41:41.355Z"
+}

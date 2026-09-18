@@ -3,7 +3,7 @@
   "branch": "cornel/testy-api-servera-4ed445",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "На remote уже есть ветки `server-store-auth-http` и `server-chaty-soobscheniya-media-ws`. Снимаю с них контракт экспортов и маршрутов — по ним напишу тесты, не трогая прод-код.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"run-2\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"echo '=== store-auth ==='; git ls-tree -r --name-only origin/cornel/server-store-auth-http-1213d3 apps/server packages/shared | head -80; echo '=== chats-media-ws ==='; git ls-tree -r --name-only origin/cornel/server-chaty-soobscheniya-media-ws-c3cd50 apps/server packages/shared | head -80\",\"timeoutSeconds\":60}\n```\n\n",
+  "summary": "Ветки server-* пока без реализации. Смотрю их коммиты и клиентский API — оттуда можно вытащить ожидаемые эндпоинты.\n\n```json\n{\"version\":1,\"taskId\":\"4ed44558-2663-4f14-bd90-fb264785e1aa\",\"commandId\":\"run-3\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"echo '=== store-auth log ==='; git log --oneline origin/cornel/office..origin/cornel/server-store-auth-http-1213d3 | head -20; echo '=== chats log ==='; git log --oneline origin/cornel/office..origin/cornel/server-chaty-soobscheniya-media-ws-c3cd50 | head -20; echo '=== client-api log ==='; git log --oneline origin/cornel/office..origin/cornel/klient-api-ws-sessiya-00a9b3 | head -20; echo '=== client-api files ==='; git ls-tree -r --name-only origin/cornel/klient-api-ws-sessiya-00a9b3 apps/mobile/src packages/shared | head -80; echo '=== office vs store-auth diffstat ==='; git diff --stat origin/cornel/office...origin/cornel/server-store-auth-http-1213d3 | tail -30\",\"timeoutSeconds\":60}\n```\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -19,10 +19,16 @@
     },
     {
       "commandId": "run-2",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "run-3",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:39:52.969Z"
+  "createdAt": "2026-09-18T04:41:41.148Z"
 }
