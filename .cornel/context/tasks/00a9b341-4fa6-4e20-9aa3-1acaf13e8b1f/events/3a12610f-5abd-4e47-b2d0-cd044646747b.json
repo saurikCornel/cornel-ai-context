@@ -1,0 +1,12 @@
+{
+  "id": "3a12610f-5abd-4e47-b2d0-cd044646747b",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-3-tsc",
+    "operation": "run",
+    "command": "npm run typecheck -w @msngr/mobile 2>&1"
+  },
+  "createdAt": "2026-09-18T04:45:00.130Z"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "f1fec127-9b00-487a-a16b-9fbaf7f22a67",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "check-3-tsc",
+    "status": "FAILED",
+    "exitCode": 2,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "\n> @msngr/mobile@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\nsrc/session/storage.ts(1,30): error TS2307: Cannot find module 'expo-secure-store' or its corresponding type declarations.\nnpm error Lifecycle script `typecheck` failed with error:\nnpm error code 2\nnpm error path /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error workspace @msngr/mobile@0.1.0\nnpm error location /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error command failed\nnpm error command sh -c tsc -p tsconfig.json --noEmit\n",
+    "outputDigest": "eda6864f986dfc75f0030a3894d90ddd7a1618cde6bfbd5957ac568fdfcada10",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:45:03.552Z"
+}

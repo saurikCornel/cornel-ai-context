@@ -1,0 +1,12 @@
+{
+  "id": "8646a237-8626-487e-90c5-221f8d3fa667",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "verify-audio-9",
+    "operation": "run",
+    "command": "git diff --check && npm run typecheck --workspace @msngr/mobile && npm run lint --workspace @msngr/mobile && npm test --workspace @msngr/mobile -- --runInBand"
+  },
+  "createdAt": "2026-09-18T04:45:04.941Z"
+}
