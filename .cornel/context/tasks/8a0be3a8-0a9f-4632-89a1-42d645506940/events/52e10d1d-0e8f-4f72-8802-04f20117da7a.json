@@ -1,0 +1,11 @@
+{
+  "id": "52e10d1d-0e8f-4f72-8802-04f20117da7a",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "inspect-contracts-3",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:37:54.798Z"
+}

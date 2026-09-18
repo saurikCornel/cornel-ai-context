@@ -1,0 +1,11 @@
+{
+  "id": "f343ed28-e1b4-46eb-b37f-7043ee4894f4",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "inspect-contracts-3",
+    "operation": "read"
+  },
+  "createdAt": "2026-09-18T04:37:54.797Z"
+}
