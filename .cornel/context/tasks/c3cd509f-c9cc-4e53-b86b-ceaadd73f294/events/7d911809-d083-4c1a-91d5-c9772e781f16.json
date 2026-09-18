@@ -1,0 +1,12 @@
+{
+  "id": "7d911809-d083-4c1a-91d5-c9772e781f16",
+  "taskId": "c3cd509f-c9cc-4e53-b86b-ceaadd73f294",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "sql-1",
+    "operation": "run",
+    "command": "sqlite3 \"$HOME/Library/Application Support/Cornel AI/workspace/state.sqlite\" \".tables\" 2>/dev/null; ls -la \"$HOME/Library/Application Support/Cornel AI/workspace/memory/4d669471-97af-446b-9599-02751f6f341d/\" 2>/dev/null; ls \"$HOME/Library/Application Support/Cornel AI/workspace/worktrees\" | head"
+  },
+  "createdAt": "2026-09-18T04:38:39.388Z"
+}

@@ -3,14 +3,20 @@
   "branch": "cornel/server-chaty-soobscheniya-media-ws-c3cd50",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Сверяю структуру `apps/server` и контракт store/auth/types в рабочей копии.\n\n```json\n{\"version\":1,\"taskId\":\"c3cd509f-c9cc-4e53-b86b-ceaadd73f294\",\"commandId\":\"ls-1\",\"operation\":\"ls\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"path\":\"apps/server\",\"maxLines\":200}\n```\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"c3cd509f-c9cc-4e53-b86b-ceaadd73f294\",\"commandId\":\"sql-1\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"sqlite3 \\\"$HOME/Library/Application Support/Cornel AI/workspace/state.sqlite\\\" \\\".tables\\\" 2>/dev/null; ls -la \\\"$HOME/Library/Application Support/Cornel AI/workspace/memory/4d669471-97af-446b-9599-02751f6f341d/\\\" 2>/dev/null; ls \\\"$HOME/Library/Application Support/Cornel AI/workspace/worktrees\\\" | head\",\"timeoutSeconds\":60}\n```\n\n",
   "commands": [
     {
       "commandId": "ls-1",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "sql-1",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:37:00.501Z"
+  "createdAt": "2026-09-18T04:38:39.389Z"
 }
