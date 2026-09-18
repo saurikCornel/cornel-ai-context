@@ -1,0 +1,11 @@
+{
+  "id": "c7934e50-4fe4-4a2f-b1ae-4f09d73cc4be",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "ls-mobile-2",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:37:40.125Z"
+}

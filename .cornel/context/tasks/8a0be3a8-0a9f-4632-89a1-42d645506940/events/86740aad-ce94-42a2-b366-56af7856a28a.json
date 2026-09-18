@@ -1,0 +1,11 @@
+{
+  "id": "86740aad-ce94-42a2-b366-56af7856a28a",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "WORKTREE",
+  "text": "Репозиторий синхронизирован",
+  "detail": {
+    "commandId": "ls-mobile-2",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:37:42.226Z"
+}
