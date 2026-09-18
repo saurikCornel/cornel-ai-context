@@ -3,7 +3,7 @@
   "branch": "cornel/expo-proekt-tema-navigaciya-2d6324",
   "headSha": "1ddda5e0cc03b9823b5007bff2605c6043549192",
   "status": "RUNNING",
-  "summary": "Изменения опубликованы коммитом `1ddda5e0`. Закрываю карточку с зафиксированными результатами проверок.\n\n```json\n{\"version\":1,\"taskId\":\"2d6324f0-cfcf-4c95-906e-86af400b25ae\",\"commandId\":\"finish-mobile-shell-10\",\"operation\":\"finish\",\"headSha\":\"1ddda5e0cc03b9823b5007bff2605c6043549192\",\"message\":\"Готова инфраструктура Expo-клиента: зависимости SDK 52/React Navigation/audio/secure storage, app.json с разрешениями микрофона iOS/Android без принудительного New Architecture, Telegram Night theme, типизированный RootNavigator с auth-разветвлением, SafeArea/AuthProvider/StatusBar, Metro и README запуска. Проверки: npm install успешно; Expo config и обязательные поля манифеста валидны; Jest 2/2 успешно; ESLint успешно; git diff --check успешно. TypeScript до интеграции параллельных карточек выдаёт только ожидаемые TS2307 для пяти screens и AuthContext, иных диагностик нет.\"}\n```\n\nЖду результат worker.\n\n",
+  "summary": "`finish` отклонён только потому, что после публикации SHA изменился. Выполняю финальную проверку уже на опубликованном коммите `1ddda5e0`; это требуется протоколом worker.\n\n```json\n{\"version\":1,\"taskId\":\"2d6324f0-cfcf-4c95-906e-86af400b25ae\",\"commandId\":\"verify-published-mobile-11\",\"operation\":\"run\",\"headSha\":\"1ddda5e0cc03b9823b5007bff2605c6043549192\",\"command\":\"set -eu\\ncd apps/mobile\\nnode - <<'NODE'\\nconst fs = require('node:fs');\\nconst app = JSON.parse(fs.readFileSync('app.json', 'utf8')).expo;\\nconst pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));\\nfor (const name of ['@react-navigation/native', '@react-navigation/native-stack', 'react-native-screens', 'react-native-safe-area-context', 'expo-av', 'expo-secure-store', 'expo-status-bar']) {\\n  if (!pkg.dependencies[name]) throw new Error(`Missing dependency: ${name}`);\\n}\\nif (app.name !== 'Msngr' || app.slug !== 'msngr') throw new Error('Invalid app identity');\\nif (Object.hasOwn(app, 'newArchEnabled')) throw new Error('newArchEnabled must not be forced');\\nif (!app.android.permissions.includes('RECORD_AUDIO')) throw new Error('Missing Android permission');\\nif (!app.ios.infoPlist.NSMicrophoneUsageDescription) throw new Error('Missing iOS permission text');\\nconsole.log('Published mobile manifest is valid.');\\nNODE\\nnpm test -- --runInBand\\nnpm run lint\\nset +e\\nnpm run typecheck >/tmp/msngr-mobile-published-tsc.log 2>&1\\ntsc_status=$?\\nset -e\\ncat /tmp/msngr-mobile-published-tsc.log\\nif [ \\\"$tsc_status\\\" -ne 0 ]; then\\n  awk '/error TS/ && ($0 !~ /error TS2307:/ || $0 !~ /(screens|session)\\\\//) { unexpected = 1 } END { exit unexpected }' /tmp/msngr-mobile-published-tsc.log\\n  echo 'TypeScript diagnostics are limited to expected parallel-card modules.'\\nfi\\ncd ../..\\ngit diff --check\\ntest -z \\\"$(git status --porcelain)\\\"\\necho 'Published commit is clean and verified.'\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "inspect-mobile-1",
@@ -60,10 +60,16 @@
     },
     {
       "commandId": "finish-mobile-shell-10",
+      "status": "FAILED",
+      "headSha": "1ddda5e0cc03b9823b5007bff2605c6043549192",
+      "exitCode": null
+    },
+    {
+      "commandId": "verify-published-mobile-11",
       "status": "STARTED",
       "headSha": "1ddda5e0cc03b9823b5007bff2605c6043549192",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:43:36.261Z"
+  "createdAt": "2026-09-18T04:44:08.262Z"
 }
