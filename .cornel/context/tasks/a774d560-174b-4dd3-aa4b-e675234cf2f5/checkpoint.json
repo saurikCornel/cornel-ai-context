@@ -3,7 +3,7 @@
   "branch": "cornel/osnova-proekta-stek-struktura-sborka-a774d5",
   "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
   "status": "RUNNING",
-  "summary": "Клиент готов — добавляю README и CONVENTIONS.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"scaffold-docs-1\",\"operation\":\"run\",\"headSha\":\"d0db4c9c0b6931d24eaa55511e7f39a729109667\",\"timeoutSeconds\":60,\"command\":\"set -euo pipefail\\n\\ncat > README.md <<'EOF'\\n# msngr\\n\\nКлиент-серверный мессенджер в стиле Telegram: Expo (iOS/Android) + Node.js API, с аудиосообщениями.\\n\\n## Стек\\n\\n| Слой | Выбор | Зачем |\\n|------|--------|--------|\\n| Монорепо | npm workspaces | Простая связка `apps/*` и `packages/*` без лишнего tooling |\\n| Клиент | Expo (React Native) + TypeScript | Один код для iOS/Android, быстрый старт и OTA |\\n| Сервер | Node.js 20+ + TypeScript + Fastify | Типобезопасный REST, удобный WebSocket-хук |\\n| Realtime | WebSocket (`ws`) | Доставка сообщений без long-poll |\\n| Тесты | Jest | Единый раннер для server/shared/mobile |\\n| Линтер | ESLint (flat) + typescript-eslint | Единые правила TS в workspaces |\\n\\n## Структура\\n\\n```\\napps/server     — HTTP/WS API\\napps/mobile     — Expo-клиент (iOS/Android)\\npackages/shared — общие типы/контракты (заполняют соседние карточки)\\n```\\n\\nСоглашения: см. [CONVENTIONS.md](./CONVENTIONS.md).\\n\\n## Требования\\n\\n- Node.js >= 20\\n- npm >= 10\\n- Для мобильного клиента: Expo Go или симулятор/эмулятор\\n\\n## Установка\\n\\n```bash\\nnpm install\\n```\\n\\n## Команды\\n\\n| Команда | Назначение |\\n|---------|------------|\\n| `npm run dev:server` | Сервер в watch-режиме (`http://localhost:3000`) |\\n| `npm run start:server` | Сборка + запуск сервера |\\n| `npm run build:server` | Сборка сервера в `apps/server/dist` |\\n| `npm run dev:mobile` | Expo Dev Server |\\n| `npm run typecheck` | Проверка типов во всех workspaces |\\n| `npm run lint` | ESLint |\\n| `npm test` | Jest |\\n| `npm run build` | Сборка всех пакетов, где есть script `build` |\\n\\nПроверка здоровья API после `dev:server`:\\n\\n```bash\\ncurl -s http://localhost:3000/health\\n```\\n\\n## Переменные окружения\\n\\nСкопируйте `.env.example` → `.env` в корне. Секреты в git не коммитить.\\nEOF\\n\\ncat > CONVENTIONS.md <<'EOF'\\n# Договорённости проекта msngr\\n\\n## Именование\\n\\n- Пакеты: `@msngr/<name>` (`server`, `mobile`, `shared`).\\n- Файлы и папки: `kebab-case` для путей (`chat-list.tsx`, `auth-store.ts`).\\n- React-компоненты: `PascalCase` в коде и в имени файла экрана/компонента (`ChatScreen.tsx`).\\n- Функции/переменные: `camelCase`; типы/интерфейсы/enum: `PascalCase`.\\n- Константы окружения: `SCREAMING_SNAKE_CASE`.\\n- Тесты: рядом с модулем или в `__tests__/`, суффикс `.test.ts` / `.test.tsx`.\\n\\n## Импорты\\n\\n- Внутри пакета — относительные пути (`../lib/http`) или алиасы пакета из его `tsconfig`.\\n- Между пакетами — только через имя workspace (`@msngr/shared`), без deep-relative из другого app.\\n- Порядок импортов: внешние → `@msngr/*` → относительные.\\n- На сервере (`NodeNext`) при необходимости указывайте расширения `.js` в относительных импортах emit-путей.\\n\\n## Где что лежит\\n\\n| Путь | Содержимое |\\n|------|------------|\\n| `apps/server/src` | HTTP-роуты, WS, store, медиа |\\n| `apps/server/src/index.ts` | Точка входа сервера |\\n| `apps/mobile/src` | UI, навигация, API-клиент, сессия |\\n| `apps/mobile/App.tsx` | Корневой вход Expo |\\n| `apps/mobile/assets` | Иконки, сплэш, статика |\\n| `packages/shared/src` | DTO, REST/WS-контракты, общие константы |\\n| `**/__tests__` или `*.test.ts` | Юнит-тесты |\\n\\nРесурсы медиа пользователя (загрузки) — вне git (`/.data`, см. `.gitignore`).\\n\\n## Стиль кода\\n\\n- TypeScript `strict` включён во всех пакетах.\\n- Без `any` без явной причины; публичные API типизировать.\\n- Комментарии только для неочевидных ограничений.\\n- UI-токены и тема клиента — в `apps/mobile` (карточка scaffold/темы).\\nEOF\\n\\necho OK_DOCS\\nwc -l README.md CONVENTIONS.md\\n\"}\n```\n\nЖду `scaffold-docs-1`, затем `npm install` и проверки.\n\n",
+  "summary": "Документация на месте — ставлю зависимости (`npm install`).```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"npm-install-1\",\"operation\":\"run\",\"headSha\":\"d0db4c9c0b6931d24eaa55511e7f39a729109667\",\"timeoutSeconds\":600,\"command\":\"set -euo pipefail\\nnode -v\\nnpm -v\\nnpm install\\necho OK_INSTALL\\n\"}\n```\n\nЖду `npm-install-1`, затем прогоню typecheck, lint, test и build.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "scaffold-docs-1",
+      "status": "SUCCEEDED",
+      "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
+      "exitCode": 0
+    },
+    {
+      "commandId": "npm-install-1",
       "status": "STARTED",
       "headSha": "d0db4c9c0b6931d24eaa55511e7f39a729109667",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:29:15.439Z"
+  "createdAt": "2026-09-18T04:29:28.208Z"
 }
