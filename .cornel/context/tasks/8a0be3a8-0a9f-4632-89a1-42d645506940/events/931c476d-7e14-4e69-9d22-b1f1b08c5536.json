@@ -1,0 +1,17 @@
+{
+  "id": "931c476d-7e14-4e69-9d22-b1f1b08c5536",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "read-checkpoint-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "### .cornel/context/tasks/8a0be3a8-0a9f-4632-89a1-42d645506940/checkpoint.json\n(нет файла)",
+    "outputDigest": "f28e7a36b59858d85de506f148eba0c1c1f7e326d890b67365a0a0398130a0d8",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:37:24.108Z"
+}

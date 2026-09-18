@@ -1,0 +1,11 @@
+{
+  "id": "d7c43187-730d-4129-9e62-eac8df285126",
+  "taskId": "2d6324f0-cfcf-4c95-906e-86af400b25ae",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "read-mobile-config-2",
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763"
+  },
+  "createdAt": "2026-09-18T04:37:25.624Z"
+}
