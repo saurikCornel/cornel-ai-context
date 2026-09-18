@@ -3,7 +3,7 @@
   "branch": "cornel/server-chaty-soobscheniya-media-ws-c3cd50",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "```json\n{\"version\":1,\"taskId\":\"c3cd509f-c9cc-4e53-b86b-ceaadd73f294\",\"commandId\":\"write-chats\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"cat > apps/server/src/routes/chats.ts <<'EOF'\\nimport { Router, type Request, type Response } from 'express';\\nimport { authMiddleware } from '../auth.js';\\nimport {\\n  createChat,\\n  findDirectChat,\\n  getUnreadCount,\\n  listChatsForUser,\\n  listMessages,\\n  listUsers,\\n} from '../store.js';\\nimport type { Chat, Message, User } from '../types.js';\\nimport { emitToChat } from '../ws.js';\\n\\ntype AuthedRequest = Request & { user: User };\\n\\nexport type ChatListItem = Chat & {\\n  lastMessage: Message | null;\\n  unreadCount: number;\\n};\\n\\nfunction asAuthed(req: Request): AuthedRequest {\\n  return req as AuthedRequest;\\n}\\n\\nexport const chatsRouter = Router();\\n\\nchatsRouter.get('/users', authMiddleware, (req: Request, res: Response) => {\\n  const { user } = asAuthed(req);\\n  const q = typeof req.query.q === 'string' ? req.query.q : '';\\n  res.json(listUsers({ q, excludeId: user.id }).slice(0, 20));\\n});\\n\\nchatsRouter.get('/chats', authMiddleware, (req: Request, res: Response) => {\\n  const { user } = asAuthed(req);\\n  const chats = listChatsForUser(user.id)\\n    .slice()\\n    .sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : a.updatedAt > b.updatedAt ? -1 : 0));\\n\\n  const result: ChatListItem[] = chats.map((chat) => {\\n    const lastMessage = listMessages(chat.id, { limit: 1 })[0] ?? null;\\n    const unreadCount = getUnreadCount(chat.id, user.id, null);\\n    return { ...chat, lastMessage, unreadCount };\\n  });\\n  res.json(result);\\n});\\n\\nchatsRouter.post('/chats', authMiddleware, (req: Request, res: Response) => {\\n  const { user } = asAuthed(req);\\n  const body = req.body as { type?: unknown; memberIds?: unknown; title?: unknown };\\n  const type = body.type;\\n  if (type !== 'direct' && type !== 'group') {\\n    res.status(400).json({ error: 'invalid' });\\n    return;\\n  }\\n  if (!Array.isArray(body.memberIds) || !body.memberIds.every((id) => typeof id === 'string')) {\\n    res.status(400).json({ error: 'invalid' });\\n    return;\\n  }\\n  const rawMemberIds = body.memberIds as string[];\\n  const memberIds = Array.from(new Set([user.id, ...rawMemberIds]));\\n\\n  if (type === 'direct') {\\n    const others = memberIds.filter((id) => id !== user.id);\\n    if (others.length !== 1 || rawMemberIds.filter((id) => id !== user.id).length !== 1) {\\n      res.status(400).json({ error: 'invalid' });\\n      return;\\n    }\\n    const otherId = others[0]!;\\n    const existing = findDirectChat(user.id, otherId);\\n    if (existing) {\\n      res.status(200).json(existing);\\n      return;\\n    }\\n    const chat = createChat({ type: 'direct', memberIds: [user.id, otherId], title: null });\\n    emitToChat(chat.id, 'chat.updated', { chatId: chat.id });\\n    res.status(201).json(chat);\\n    return;\\n  }\\n\\n  const title = body.title;\\n  if (typeof title !== 'string' || title.length < 1 || title.length > 64) {\\n    res.status(400).json({ error: 'invalid' });\\n    return;\\n  }\\n  if (memberIds.filter((id) => id !== user.id).length < 1) {\\n    res.status(400).json({ error: 'invalid' });\\n    return;\\n  }\\n  const chat = createChat({ type: 'group', memberIds, title });\\n  emitToChat(chat.id, 'chat.updated', { chatId: chat.id });\\n  res.status(201).json(chat);\\n});\\nEOF\\nwc -c apps/server/src/routes/chats.ts\",\"timeoutSeconds\":60}\n```\n\n",
+  "summary": "```json\n{\"version\":1,\"taskId\":\"c3cd509f-c9cc-4e53-b86b-ceaadd73f294\",\"commandId\":\"write-media\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"cat > apps/server/src/routes/media.ts <<'EOF'\\nimport { createReadStream, existsSync } from 'node:fs';\\nimport { Router, type Request, type Response } from 'express';\\nimport { authMiddleware } from '../auth.js';\\nimport { getMedia } from '../store.js';\\n\\nexport const mediaRouter = Router();\\n\\nmediaRouter.get('/media/:id', authMiddleware, (req: Request, res: Response) => {\\n  const id = req.params.id as string;\\n  const media = getMedia(id);\\n  if (!media || !existsSync(media.path)) {\\n    res.status(404).json({ error: 'not_found' });\\n    return;\\n  }\\n  res.setHeader('Content-Type', media.mime);\\n  if (typeof media.size === 'number') {\\n    res.setHeader('Content-Length', String(media.size));\\n  }\\n  createReadStream(media.path).pipe(res);\\n});\\nEOF\\nwc -c apps/server/src/routes/media.ts\",\"timeoutSeconds\":60}\n```\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "write-chats",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "write-media",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:43:09.210Z"
+  "createdAt": "2026-09-18T04:43:31.428Z"
 }

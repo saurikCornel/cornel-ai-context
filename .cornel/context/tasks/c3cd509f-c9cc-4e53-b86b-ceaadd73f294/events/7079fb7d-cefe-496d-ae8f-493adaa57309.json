@@ -1,0 +1,17 @@
+{
+  "id": "7079fb7d-cefe-496d-ae8f-493adaa57309",
+  "taskId": "c3cd509f-c9cc-4e53-b86b-ceaadd73f294",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "write-media",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "     693 apps/server/src/routes/media.ts\n",
+    "outputDigest": "a08811e39783cc070496a0686f5601d9d3635523184c072dc9d1b28594d91837",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:43:33.537Z"
+}

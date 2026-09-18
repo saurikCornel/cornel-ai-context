@@ -1,0 +1,8 @@
+{
+  "role": "assistant",
+  "intentRevision": 0,
+  "attachments": [],
+  "mediaErrors": [],
+  "text": "```json\n{\"version\":1,\"taskId\":\"c3cd509f-c9cc-4e53-b86b-ceaadd73f294\",\"commandId\":\"write-media\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"cat > apps/server/src/routes/media.ts <<'EOF'\\nimport { createReadStream, existsSync } from 'node:fs';\\nimport { Router, type Request, type Response } from 'express';\\nimport { authMiddleware } from '../auth.js';\\nimport { getMedia } from '../store.js';\\n\\nexport const mediaRouter = Router();\\n\\nmediaRouter.get('/media/:id', authMiddleware, (req: Request, res: Response) => {\\n  const id = req.params.id as string;\\n  const media = getMedia(id);\\n  if (!media || !existsSync(media.path)) {\\n    res.status(404).json({ error: 'not_found' });\\n    return;\\n  }\\n  res.setHeader('Content-Type', media.mime);\\n  if (typeof media.size === 'number') {\\n    res.setHeader('Content-Length', String(media.size));\\n  }\\n  createReadStream(media.path).pipe(res);\\n});\\nEOF\\nwc -c apps/server/src/routes/media.ts\",\"timeoutSeconds\":60}\n```\n\nCORNEL_AI_YIELD",
+  "createdAt": "2026-09-18T04:43:31.427Z"
+}
