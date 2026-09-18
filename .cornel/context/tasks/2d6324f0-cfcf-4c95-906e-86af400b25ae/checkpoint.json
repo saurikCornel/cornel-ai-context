@@ -3,7 +3,7 @@
   "branch": "cornel/expo-proekt-tema-navigaciya-2d6324",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Файлы созданы без ошибок форматирования. Теперь устанавливаю зависимости именно из каталога клиента и валидирую Expo-конфигурацию, обязательные пакеты, микрофонные разрешения и экспорт темы. Полную TypeScript-сборку пока не считаю обязательной: экраны и `AuthContext` поступят из параллельных карточек.\n\n```json\n{\"version\":1,\"taskId\":\"2d6324f0-cfcf-4c95-906e-86af400b25ae\",\"commandId\":\"install-validate-mobile-4\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"set -eu\\ncd apps/mobile\\nnpm install\\nnpx expo config --type public >/tmp/msngr-expo-config.json\\nnode - <<'NODE'\\nconst fs = require('node:fs');\\nconst app = JSON.parse(fs.readFileSync('app.json', 'utf8')).expo;\\nconst pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));\\nconst required = [\\n  '@react-navigation/native',\\n  '@react-navigation/native-stack',\\n  'react-native-screens',\\n  'react-native-safe-area-context',\\n  'expo-av',\\n  'expo-secure-store',\\n  'expo-status-bar',\\n];\\nfor (const name of required) {\\n  if (!pkg.dependencies[name]) throw new Error(`Missing dependency: ${name}`);\\n}\\nif (app.name !== 'Msngr' || app.slug !== 'msngr') throw new Error('Invalid app identity');\\nif (Object.hasOwn(app, 'newArchEnabled')) throw new Error('newArchEnabled must not be forced');\\nif (!app.android?.permissions?.includes('RECORD_AUDIO')) throw new Error('Missing Android RECORD_AUDIO');\\nif (!app.ios?.infoPlist?.NSMicrophoneUsageDescription) throw new Error('Missing iOS microphone description');\\nconst avPlugin = app.plugins?.find((plugin) => Array.isArray(plugin) && plugin[0] === 'expo-av');\\nif (!avPlugin?.[1]?.microphonePermission) throw new Error('Missing expo-av microphone permission');\\nconst themeSource = fs.readFileSync('src/theme/index.ts', 'utf8');\\nif (!themeSource.includes('export const theme')) throw new Error('Theme is not exported');\\nconsole.log('Mobile manifest, permissions, dependencies, and theme export are valid.');\\nNODE\\ngit diff --check\\ngit status --short\",\"timeoutSeconds\":900}\n```\n\nЖду результат worker.\n\n",
+  "summary": "Установка и проверка манифеста прошли. `package-lock.json` обновлён штатно установкой workspace-зависимостей. Запускаю Jest, ESLint и TypeScript; для TypeScript отдельно допускаю только заранее ожидаемые ошибки отсутствующих модулей экранов/сессии из параллельных карточек, любые другие диагностики остановят проверку.\n\n```json\n{\"version\":1,\"taskId\":\"2d6324f0-cfcf-4c95-906e-86af400b25ae\",\"commandId\":\"verify-mobile-5\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"set -eu\\ncd apps/mobile\\nnpm test -- --runInBand\\nnpm run lint\\nset +e\\nnpm run typecheck >/tmp/msngr-mobile-tsc.log 2>&1\\ntsc_status=$?\\nset -e\\ncat /tmp/msngr-mobile-tsc.log\\nif [ \\\"$tsc_status\\\" -ne 0 ]; then\\n  if awk '/error TS/ && $0 !~ /Cannot find module .*\\\\.\\\\.\\\\/(screens|session)\\\\// { unexpected = 1 } END { exit unexpected }' /tmp/msngr-mobile-tsc.log; then\\n    echo 'TypeScript diagnostics are limited to expected parallel-card modules.'\\n  else\\n    echo 'Unexpected TypeScript diagnostic detected.' >&2\\n    exit 1\\n  fi\\nfi\\ngit diff --check\\ngit status --short\",\"timeoutSeconds\":600}\n```\n\nЖду результат worker.\n\n",
   "commands": [
     {
       "commandId": "inspect-mobile-1",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "install-validate-mobile-4",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "verify-mobile-5",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:39:41.051Z"
+  "createdAt": "2026-09-18T04:40:55.607Z"
 }

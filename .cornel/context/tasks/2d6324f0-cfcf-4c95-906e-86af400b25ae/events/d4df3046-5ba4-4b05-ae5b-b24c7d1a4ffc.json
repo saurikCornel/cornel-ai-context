@@ -1,0 +1,17 @@
+{
+  "id": "d4df3046-5ba4-4b05-ae5b-b24c7d1a4ffc",
+  "taskId": "2d6324f0-cfcf-4c95-906e-86af400b25ae",
+  "type": "RESULT",
+  "text": "Команда завершена с ошибкой",
+  "detail": {
+    "commandId": "verify-mobile-5",
+    "status": "FAILED",
+    "exitCode": 127,
+    "reason": null,
+    "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+    "output": "\n> @msngr/mobile@0.1.0 test\n> jest --runInBand\n\nPASS __tests__/config.test.ts\n  getApiBaseUrl\n    ✓ defaults to localhost:3000 (1 ms)\n    ✓ reads EXPO_PUBLIC_API_URL\n\nTest Suites: 1 passed, 1 total\nTests:       2 passed, 2 total\nSnapshots:   0 total\nTime:        0.63 s\nRan all test suites.\n\n> @msngr/mobile@0.1.0 lint\n> eslint App.tsx src --max-warnings=0\n\nsh: eslint: command not found\nnpm error Lifecycle script `lint` failed with error:\nnpm error code 127\nnpm error path /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error workspace @msngr/mobile@0.1.0\nnpm error location /Users/alex/Library/Application Support/Cornel AI/workspace/worktrees/***/apps/mobile\nnpm error command failed\nnpm error command sh -c eslint App.tsx src --max-warnings=0\n",
+    "outputDigest": "5d0b79fb43ba25ba6f5a9ac08098ee6c526938c1ea7bcbaa20fd342c928f5d96",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:40:59.645Z"
+}
