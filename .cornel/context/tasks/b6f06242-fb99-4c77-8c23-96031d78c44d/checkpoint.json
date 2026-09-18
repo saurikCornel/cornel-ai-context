@@ -3,7 +3,7 @@
   "branch": "cornel/ekrany-vhod-i-spisok-chatov-b6f062",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Разумное допущение: продолжать без актуального SHA небезопасно — worker гарантированно отклоняет операции, а угадывание SHA может применить изменения не к той версии. Завершаю карточку с точным описанием незавершённого состояния: код не изменён, проверки не запускались; осталось реализовать шесть назначенных файлов после восстановления синхронизации ветки.\n\n```json\n{\"version\":1,\"taskId\":\"b6f06242-fb99-4c77-8c23-96031d78c44d\",\"commandId\":\"finish-blocked-1\",\"operation\":\"finish\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"message\":\"Карточку выполнить не удалось из-за рассинхронизации назначения: после успешных read/ls worker сообщил, что ветка cornel/ekrany-vhod-i-spisok-chatov-b6f062 изменилась, но не вернул новый полный SHA; последующие операции требуют актуальный headSha. Изменений и публикации нет, тесты не запускались. Осталось реализовать LoginScreen, RegisterScreen, ChatListScreen, NewChatScreen, Avatar и ChatListItem и проверить typecheck/lint после выдачи актуального SHA.\"}\n```\n\n",
+  "summary": "`finish` достиг worker и был отклонён только из-за отсутствия успешной проверки, а не из-за SHA. Значит, старый SHA снова может быть валиден. Проверяю фактический `HEAD` и чистоту рабочей копии; если команда пройдёт, продолжу реализацию вместо досрочного завершения.\n\n```json\n{\"version\":1,\"taskId\":\"b6f06242-fb99-4c77-8c23-96031d78c44d\",\"commandId\":\"sync-check-1\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"command\":\"git rev-parse HEAD && git status --short\",\"timeoutSeconds\":300}\n```\n\n",
   "commands": [
     {
       "commandId": "inspect-3",
@@ -25,10 +25,16 @@
     },
     {
       "commandId": "finish-blocked-1",
+      "status": "FAILED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": null
+    },
+    {
+      "commandId": "sync-check-1",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:43:26.616Z"
+  "createdAt": "2026-09-18T04:43:58.302Z"
 }
