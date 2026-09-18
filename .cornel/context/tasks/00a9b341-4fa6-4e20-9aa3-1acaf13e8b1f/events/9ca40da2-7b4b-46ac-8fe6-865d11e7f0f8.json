@@ -1,0 +1,12 @@
+{
+  "id": "9ca40da2-7b4b-46ac-8fe6-865d11e7f0f8",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-1-tsc",
+    "operation": "run",
+    "command": "cd apps/mobile && npx tsc -p tsconfig.json --noEmit 2>&1 | head -80"
+  },
+  "createdAt": "2026-09-18T04:44:16.480Z"
+}

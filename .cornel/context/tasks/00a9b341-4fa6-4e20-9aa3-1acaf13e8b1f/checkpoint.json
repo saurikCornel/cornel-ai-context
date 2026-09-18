@@ -3,7 +3,7 @@
   "branch": "cornel/klient-api-ws-sessiya-00a9b3",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "RUNNING",
-  "summary": "Пишу последний файл — `AuthContext.tsx`.\n\n```json\n{\"version\":1,\"taskId\":\"00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f\",\"commandId\":\"write-4-auth\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"timeoutSeconds\":60,\"command\":\"cat > apps/mobile/src/session/AuthContext.tsx <<'EOF'\\nimport React, {\\n  createContext,\\n  useCallback,\\n  useContext,\\n  useEffect,\\n  useMemo,\\n  useState,\\n} from 'react';\\nimport {\\n  ApiError,\\n  login as apiLogin,\\n  logout as apiLogout,\\n  me,\\n  register as apiRegister,\\n} from '../api/client';\\nimport type { User } from '../api/types';\\nimport { clearSession, getStoredUser, getToken, setSession } from './storage';\\n\\ntype AuthContextValue = {\\n  user: User | null;\\n  token: string | null;\\n  ready: boolean;\\n  login: (username: string, password: [REDACTED] => Promise<void>;\\n  register: (username: string, password: [REDACTED], displayName?: string) => Promise<void>;\\n  logout: () => Promise<void>;\\n};\\n\\nconst AuthContext = createContext<AuthContextValue | null>(null);\\n\\nexport function AuthProvider({ children }: { children: React.ReactNode }) {\\n  const [user, setUser] = useState<User | null>(null);\\n  const [token, setToken] = useState<string | null>(null);\\n  const [ready, setReady] = useState(false);\\n\\n  useEffect(() => {\\n    let cancelled = false;\\n\\n    void (async () => {\\n      try {\\n        const storedToken = await getToken();\\n        const storedUser = await getStoredUser();\\n        if (!storedToken) {\\n          return;\\n        }\\n\\n        if (!cancelled && storedUser) {\\n          setToken(storedToken);\\n          setUser(storedUser);\\n        }\\n\\n        try {\\n          const fresh = await me(storedToken);\\n          if (cancelled) return;\\n          setToken(storedToken);\\n          setUser(fresh);\\n          await setSession(storedToken, fresh);\\n        } catch (err) {\\n          if (err instanceof ApiError && err.status === 401) {\\n            await clearSession();\\n            if (!cancelled) {\\n              setToken(null);\\n              setUser(null);\\n            }\\n          }\\n        }\\n      } finally {\\n        if (!cancelled) {\\n          setReady(true);\\n        }\\n      }\\n    })();\\n\\n    return () => {\\n      cancelled = true;\\n    };\\n  }, []);\\n\\n  const login = useCallback(async (username: string, password: [REDACTED] => {\\n    const res = await apiLogin(username, password);\\n    await setSession(res.token, res.user);\\n    setToken(res.token);\\n    setUser(res.user);\\n  }, []);\\n\\n  const register = useCallback(\\n    async (username: string, password: [REDACTED], displayName?: string) => {\\n      const res = await apiRegister(username, password, displayName);\\n      await setSession(res.token, res.user);\\n      setToken(res.token);\\n      setUser(res.user);\\n    },\\n    [],\\n  );\\n\\n  const logout = useCallback(async () => {\\n    const current = token;\\n    try {\\n      if (current) {\\n        await apiLogout(current);\\n      }\\n    } catch {\\n      // still clear local session\\n    }\\n    await clearSession();\\n    setToken(null);\\n    setUser(null);\\n  }, [token]);\\n\\n  const value = useMemo(\\n    () => ({ user, token, ready, login, register, logout }),\\n    [user, token, ready, login, register, logout],\\n  );\\n\\n  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;\\n}\\n\\nexport function useAuth(): AuthContextValue {\\n  const ctx = useContext(AuthContext);\\n  if (!ctx) {\\n    throw new Error('useAuth must be used within AuthProvider');\\n  }\\n  return ctx;\\n}\\nEOF\\nwc -c apps/mobile/src/session/AuthContext.tsx\"}\n```\n\nЖду результат worker.\n\n**Сводка:** `ws.ts` готов · пишу `AuthContext.tsx` · дальше typecheck/lint и publish.\n\n",
+  "summary": "Все пять файлов на месте — запускаю typecheck по мобильному пакету.\n\n```json\n{\"version\":1,\"taskId\":\"00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f\",\"commandId\":\"check-1-tsc\",\"operation\":\"run\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"timeoutSeconds\":120,\"command\":\"cd apps/mobile && npx tsc -p tsconfig.json --noEmit 2>&1 | head -80\"}\n```\n\nЖду результат проверки.\n\n**Сводка:** все 5 файлов записаны · сейчас `tsc` по `apps/mobile` · при ошибках (ожидаемо `expo-secure-store`) исправлю в рамках карточки.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -31,10 +31,16 @@
     },
     {
       "commandId": "write-4-auth",
+      "status": "SUCCEEDED",
+      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-1-tsc",
       "status": "STARTED",
       "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:43:41.028Z"
+  "createdAt": "2026-09-18T04:44:16.481Z"
 }
