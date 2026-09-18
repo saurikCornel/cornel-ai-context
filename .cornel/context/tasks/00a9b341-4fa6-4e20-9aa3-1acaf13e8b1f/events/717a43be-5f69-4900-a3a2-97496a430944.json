@@ -1,0 +1,17 @@
+{
+  "id": "717a43be-5f69-4900-a3a2-97496a430944",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "fin-1",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "642d49308172624118e912c02088fe7209a60337",
+    "output": "Клиент: API, WS, сессия готовы (642d4930).\n\nСделано:\n- apps/mobile/src/api/types.ts — User, Chat(+lastMessage, unreadCount), Message, AuthResponse\n- apps/mobile/src/api/client.ts — api()+register/login/logout/me/searchUsers/listChats/createChat/listMessages/sendText/sendAudio/markRead/mediaUrl; base EXPO_PUBLIC_API_URL ?? http://127.0.0.1:8080; ошибки с полем error\n- apps/mobile/src/api/ws.ts — connectWs, backoff 1s/2s/5s, sendTyping/close, handlers message.new|message.status|typing|chat.updated\n- apps/mobile/src/session/storage.ts — SecureStore msngr.token / msngr.user\n- apps/mobile/src/session/AuthContext.tsx — AuthProvider/useAuth, boot me()+401 clear\n\nПроверки: npm run typecheck -w @msngr/mobile; eslint api+session — OK.\n\nПодвох: в package.json mobile нет expo-secure-store (карточка запретила трогать package.json); storage грузит модуль через require — нужно добавить зависимость в apps/mobile.",
+    "outputDigest": "f6acd63e562db2142e479dc063018fcb4a5b59418fbee7a2b3ee4e3d4920b2ec",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:46:54.219Z"
+}

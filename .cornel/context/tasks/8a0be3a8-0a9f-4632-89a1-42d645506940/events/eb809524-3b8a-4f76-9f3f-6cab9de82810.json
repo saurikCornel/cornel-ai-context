@@ -1,0 +1,11 @@
+{
+  "id": "eb809524-3b8a-4f76-9f3f-6cab9de82810",
+  "taskId": "8a0be3a8-0a9f-4632-89a1-42d645506940",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "remember-audio-12",
+    "operation": "remember"
+  },
+  "createdAt": "2026-09-18T04:46:54.067Z"
+}
