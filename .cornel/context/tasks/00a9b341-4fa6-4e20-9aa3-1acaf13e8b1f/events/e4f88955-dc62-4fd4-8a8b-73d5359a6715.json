@@ -1,0 +1,12 @@
+{
+  "id": "e4f88955-dc62-4fd4-8a8b-73d5359a6715",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RECEIVED",
+  "text": "Команда получена",
+  "detail": {
+    "commandId": "check-5-verify",
+    "operation": "run",
+    "command": "npm run typecheck -w @msngr/mobile 2>&1 && npx eslint apps/mobile/src/api apps/mobile/src/session --max-warnings=0 2>&1 && ls -la apps/mobile/src/api apps/mobile/src/session"
+  },
+  "createdAt": "2026-09-18T04:46:23.375Z"
+}

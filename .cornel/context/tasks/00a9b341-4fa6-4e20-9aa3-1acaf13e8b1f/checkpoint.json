@@ -1,9 +1,9 @@
 {
   "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
   "branch": "cornel/klient-api-ws-sessiya-00a9b3",
-  "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+  "headSha": "642d49308172624118e912c02088fe7209a60337",
   "status": "RUNNING",
-  "summary": "Typecheck и lint прошли — публикую изменения в ветку.\n\n```json\n{\"version\":1,\"taskId\":\"00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f\",\"commandId\":\"pub-1\",\"operation\":\"publish\",\"headSha\":\"a4bf6e68d1ec87f6ea1faaf321505c380d437763\",\"message\":\"feat(mobile): API client, WebSocket, and auth session layer\"}\n```\n\nЖду результат publish.\n\n**Сводка:** `tsc` и eslint по api/session зелёные · публикую 5 файлов карточки · после нового SHA — remember про `expo-secure-store` и finish.\n\n",
+  "summary": "Публикация прошла на `642d4930` — быстро перепроверяю typecheck на этом SHA, затем finish.\n\n```json\n{\"version\":1,\"taskId\":\"00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f\",\"commandId\":\"check-5-verify\",\"operation\":\"run\",\"headSha\":\"642d49308172624118e912c02088fe7209a60337\",\"timeoutSeconds\":120,\"command\":\"npm run typecheck -w @msngr/mobile 2>&1 && npx eslint apps/mobile/src/api apps/mobile/src/session --max-warnings=0 2>&1 && ls -la apps/mobile/src/api apps/mobile/src/session\"}\n```\n\nЖду подтверждение на опубликованном commit.\n\n**Сводка:** publish → `642d4930` · финальная проверка на этом SHA · дальше remember + finish.\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -67,10 +67,16 @@
     },
     {
       "commandId": "pub-1",
+      "status": "SUCCEEDED",
+      "headSha": "642d49308172624118e912c02088fe7209a60337",
+      "exitCode": 0
+    },
+    {
+      "commandId": "check-5-verify",
       "status": "STARTED",
-      "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
+      "headSha": "642d49308172624118e912c02088fe7209a60337",
       "exitCode": null
     }
   ],
-  "createdAt": "2026-09-18T04:46:05.916Z"
+  "createdAt": "2026-09-18T04:46:23.376Z"
 }

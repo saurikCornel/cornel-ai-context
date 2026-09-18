@@ -1,0 +1,17 @@
+{
+  "id": "dd52f719-0c13-42a1-b8c2-e8cc50d7d54e",
+  "taskId": "00a9b341-4fa6-4e20-9aa3-1acaf13e8b1f",
+  "type": "RESULT",
+  "text": "Команда завершена успешно",
+  "detail": {
+    "commandId": "check-5-verify",
+    "status": "SUCCEEDED",
+    "exitCode": 0,
+    "reason": null,
+    "headSha": "642d49308172624118e912c02088fe7209a60337",
+    "output": "\n> @msngr/mobile@0.1.0 typecheck\n> tsc -p tsconfig.json --noEmit\n\napps/mobile/src/api:\ntotal 32\ndrwxr-xr-x@ 6 alex  staff   192 Sep 18 07:43 .\ndrwxr-xr-x@ 9 alex  staff   288 Sep 18 07:36 ..\n-rw-r--r--@ 1 alex  staff     0 Sep 18 07:36 .gitkeep\n-rw-r--r--@ 1 alex  staff  4608 Sep 18 07:42 client.ts\n-rw-r--r--@ 1 alex  staff   920 Sep 18 07:42 types.ts\n-rw-r--r--@ 1 alex  staff  3218 Sep 18 07:43 ws.ts\n\napps/mobile/src/session:\ntotal 16\ndrwxr-xr-x@ 5 alex  staff   160 Sep 18 07:43 .\ndrwxr-xr-x@ 9 alex  staff   288 Sep 18 07:36 ..\n-rw-r--r--@ 1 alex  staff     0 Sep 18 07:36 .gitkeep\n-rw-r--r--@ 1 alex  staff  3110 Sep 18 07:43 AuthContext.tsx\n-rw-r--r--@ 1 alex  staff  1411 Sep 18 07:45 storage.ts\n",
+    "outputDigest": "542c393cf7f64eaecdf94bf728c09ca2302ae872d150fd951cc35155e97e6fbb",
+    "truncated": false
+  },
+  "createdAt": "2026-09-18T04:46:28.299Z"
+}
