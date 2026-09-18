@@ -3,7 +3,7 @@
   "branch": "cornel/osnova-proekta-stek-struktura-sborka-a774d5",
   "headSha": "a4bf6e68d1ec87f6ea1faaf321505c380d437763",
   "status": "WAITING_CHATGPT",
-  "summary": "Публикация прошла (`a4bf6e68`). Записываю в память принятое решение по стеку.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"mem-stack-1\",\"operation\":\"remember\",\"kind\":\"decision\",\"module\":\"\",\"text\":\"Стек основы: npm workspaces monorepo; клиент Expo 52 + RN 0.76 + TS (iOS/Android); сервер Node 20+ + TS + Fastify + ws; тесты Jest; линтер ESLint flat + typescript-eslint. Обоснование — один код мобильных клиентов, простой REST/WS на Node, без лишнего monorepo-tooling.\",\"files\":[\"package.json\",\"apps/server/package.json\",\"apps/mobile/package.json\",\"README.md\"]}\n```\n\n",
+  "summary": "Дальше — память о структуре каталогов.```json\n{\"version\":1,\"taskId\":\"a774d560-174b-4dd3-aa4b-e675234cf2f5\",\"commandId\":\"mem-structure-1\",\"operation\":\"remember\",\"kind\":\"decision\",\"module\":\"\",\"text\":\"Структура: apps/server (HTTP/WS API, слоты auth/chats/media/ws/store), apps/mobile (Expo, слоты api/session/theme/navigation/screens/audio), packages/shared (DTO/контракты). Корень: tsconfig.base.json, eslint.config.js, README.md, CONVENTIONS.md.\",\"files\":[\"apps/server\",\"apps/mobile\",\"packages/shared\",\"CONVENTIONS.md\"]}\n```\n\n",
   "commands": [
     {
       "commandId": "ls-1",
@@ -75,7 +75,12 @@
       "commandId": "mem-stack-1",
       "status": "SUCCEEDED",
       "exitCode": 0
+    },
+    {
+      "commandId": "mem-structure-1",
+      "status": "SUCCEEDED",
+      "exitCode": 0
     }
   ],
-  "createdAt": "2026-09-18T04:33:47.909Z"
+  "createdAt": "2026-09-18T04:34:03.999Z"
 }

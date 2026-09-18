@@ -1,0 +1,10 @@
+{
+  "id": "1628bb7c-14e7-40d7-b317-3764de089707",
+  "taskId": "a774d560-174b-4dd3-aa4b-e675234cf2f5",
+  "type": "STARTED",
+  "text": "Подготавливаю рабочую копию",
+  "detail": {
+    "commandId": "mem-structure-1"
+  },
+  "createdAt": "2026-09-18T04:34:03.996Z"
+}
